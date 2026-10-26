@@ -1,0 +1,711 @@
+# =============================================================================
+#   Skill Master Database  (SKILL_MASTER_DB)
+# =============================================================================
+#   Table SkillMasterInfo of the ORIGINAL server data (GameInfoMgr sub_62E630, 230 rows): what
+#   mastering a skill (raising a level-10 skill to 11 at a skill master, C2S 560) asks for.
+#
+#   Fields
+#     SkillId  - the skill                                                      [key]
+#     ItemId   - the item it takes
+#     ItemCnt  - how many
+# =============================================================================
+
+Header:
+  Type: SKILL_MASTER_DB
+  Version: 1
+
+Body:
+  - SkillId: 1104
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 1204
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2114
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 2115
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 2116
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 2208
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2209
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 3104
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 3204
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 4104
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 4204
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 4105
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 3205
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 4106
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 2210
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 1105
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 1205
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 1206
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 3105
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 4205
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 1106
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 1207
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 2117
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2118
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2119
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2120
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2121
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2212
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 2213
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2214
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 3106
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 3206
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 4107
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 4206
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 4207
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 1301
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 1302
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 5
+  - SkillId: 1501
+    ItemId: 24038   # Myconid Card
+    ItemCnt: 5
+  - SkillId: 1502
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 1503
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 2301
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 5
+  - SkillId: 2302
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 5
+  - SkillId: 2303
+    ItemId: 24038   # Myconid Card
+    ItemCnt: 5
+  - SkillId: 2304
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 5
+  - SkillId: 2305
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 2502
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 2701
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 8
+  - SkillId: 2702
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 2703
+    ItemId: 24039   # Tooth Flower Card
+    ItemCnt: 5
+  - SkillId: 3301
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 3302
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 6
+  - SkillId: 3303
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 7
+  - SkillId: 3304
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 8
+  - SkillId: 3501
+    ItemId: 24039   # Tooth Flower Card
+    ItemCnt: 5
+  - SkillId: 3502
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 6
+  - SkillId: 4301
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 4302
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 6
+  - SkillId: 4501
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 4502
+    ItemId: 24039   # Tooth Flower Card
+    ItemCnt: 6
+  - SkillId: 1001
+    ItemId: 24338   # Clione Card
+    ItemCnt: 2
+  - SkillId: 1002
+    ItemId: 24219   # Mummy Card
+    ItemCnt: 2
+  - SkillId: 1003
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 2
+  - SkillId: 1004
+    ItemId: 24121   # Nephthys Card
+    ItemCnt: 2
+  - SkillId: 1005
+    ItemId: 24048   # Turvy Card
+    ItemCnt: 2
+  - SkillId: 1006
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 1007
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 1008
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 1009
+    ItemId: 24201   # Mimic Card
+    ItemCnt: 2
+  - SkillId: 1010
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 1011
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 2001
+    ItemId: 24338   # Clione Card
+    ItemCnt: 2
+  - SkillId: 2003
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 2004
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 2005
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 2
+  - SkillId: 2006
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 2007
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 2008
+    ItemId: 24121   # Nephthys Card
+    ItemCnt: 2
+  - SkillId: 2009
+    ItemId: 24142   # Larva Card
+    ItemCnt: 2
+  - SkillId: 2010
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 2011
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 2012
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 2013
+    ItemId: 24048   # Turvy Card
+    ItemCnt: 2
+  - SkillId: 3002
+    ItemId: 24338   # Clione Card
+    ItemCnt: 2
+  - SkillId: 3003
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 2
+  - SkillId: 3004
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 3005
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 3006
+    ItemId: 24338   # Clione Card
+    ItemCnt: 2
+  - SkillId: 3007
+    ItemId: 24021   # Oran G Card
+    ItemCnt: 2
+  - SkillId: 3009
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 3012
+    ItemId: 24048   # Turvy Card
+    ItemCnt: 2
+  - SkillId: 3013
+    ItemId: 24142   # Larva Card
+    ItemCnt: 2
+  - SkillId: 3014
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 4001
+    ItemId: 24338   # Clione Card
+    ItemCnt: 2
+  - SkillId: 4002
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 4003
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 2
+  - SkillId: 4004
+    ItemId: 24219   # Mummy Card
+    ItemCnt: 2
+  - SkillId: 4005
+    ItemId: 24319   # Gold G Card
+    ItemCnt: 2
+  - SkillId: 4006
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 4007
+    ItemId: 24048   # Turvy Card
+    ItemCnt: 2
+  - SkillId: 4008
+    ItemId: 24121   # Nephthys Card
+    ItemCnt: 2
+  - SkillId: 4009
+    ItemId: 24201   # Mimic Card
+    ItemCnt: 2
+  - SkillId: 4010
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 4011
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 4012
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 1103
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 1202
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 1203
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2101
+    ItemId: 24004   # Ironclad Turtle Card
+    ItemCnt: 2
+  - SkillId: 2103
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 2105
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 2107
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 2109
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 2111
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 2203
+    ItemId: 24316   # Chibcha Card
+    ItemCnt: 2
+  - SkillId: 2205
+    ItemId: 24051   # Requi Card
+    ItemCnt: 2
+  - SkillId: 2206
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 2207
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 3101
+    ItemId: 24004   # Ironclad Turtle Card
+    ItemCnt: 2
+  - SkillId: 3102
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 3103
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 3201
+    ItemId: 24004   # Ironclad Turtle Card
+    ItemCnt: 2
+  - SkillId: 3202
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 3203
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 4101
+    ItemId: 24004   # Ironclad Turtle Card
+    ItemCnt: 2
+  - SkillId: 4102
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 4201
+    ItemId: 24004   # Ironclad Turtle Card
+    ItemCnt: 2
+  - SkillId: 4203
+    ItemId: 24243   # Black Foe Card
+    ItemCnt: 2
+  - SkillId: 1107
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 1208
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 2122
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 2123
+    ItemId: 24026   # Madam Chiffon Card
+    ItemCnt: 3
+  - SkillId: 2124
+    ItemId: 24225   # Captain Arman Card
+    ItemCnt: 3
+  - SkillId: 2125
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 2126
+    ItemId: 24126   # Captn. Charman Card
+    ItemCnt: 3
+  - SkillId: 2215
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 2216
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 3107
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 3108
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 3207
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 4108
+    ItemId: 24126   # Captn. Charman Card
+    ItemCnt: 3
+  - SkillId: 4208
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 1108
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 4
+  - SkillId: 1209
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 4
+  - SkillId: 2217
+    ItemId: 24126   # Captn. Charman Card
+    ItemCnt: 4
+  - SkillId: 2218
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 5
+  - SkillId: 3109
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 4
+  - SkillId: 3208
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 4
+  - SkillId: 4109
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 4
+  - SkillId: 4209
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 4
+  - SkillId: 1303
+    ItemId: 24026   # Madam Chiffon Card
+    ItemCnt: 5
+  - SkillId: 1504
+    ItemId: 24026   # Madam Chiffon Card
+    ItemCnt: 5
+  - SkillId: 2306
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 2307
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 2308
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 2309
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 2310
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 2503
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 2704
+    ItemId: 24113   # L. Wormhole Card
+    ItemCnt: 5
+  - SkillId: 3305
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 5
+  - SkillId: 3503
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 4303
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 4503
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 1109
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 1210
+    ItemId: 24345   # Officer Okto Card
+    ItemCnt: 3
+  - SkillId: 2127
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2128
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2129
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2130
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2131
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2219
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 2220
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 3110
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 3209
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 4110
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 4210
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 1304
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 1505
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 5
+  - SkillId: 2311
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 2312
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 2313
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 2314
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 2315
+    ItemId: 24130   # Maid Lydia Card
+    ItemCnt: 3
+  - SkillId: 2504
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 2705
+    ItemId: 24113   # L. Wormhole Card
+    ItemCnt: 5
+  - SkillId: 3306
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 5
+  - SkillId: 3504
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 4304
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 4504
+    ItemId: 24233   # Purple Worm Card
+    ItemCnt: 5
+  - SkillId: 3016
+    ItemId: 24317   # Lima Card
+    ItemCnt: 2
+  - SkillId: 3111
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 1211
+    ItemId: 24354   # Malefic Matron Card
+    ItemCnt: 3
+  - SkillId: 2132
+    ItemId: 24070   # Ash Soldier Card
+    ItemCnt: 3
+  - SkillId: 3112
+    ItemId: 24169   # Burning Kili Card
+    ItemCnt: 3
+  - SkillId: 3210
+    ItemId: 24218   # Aabon Card
+    ItemCnt: 3
+  - SkillId: 4111
+    ItemId: 24355   # Doom Claw Card
+    ItemCnt: 3
+  - SkillId: 4211
+    ItemId: 24318   # Dekumanus Card
+    ItemCnt: 3
+  - SkillId: 1305
+    ItemId: 24328   # B. Salamander Card
+    ItemCnt: 5
+  - SkillId: 1506
+    ItemId: 24067   # Krybeth Card
+    ItemCnt: 5
+  - SkillId: 2316
+    ItemId: 24129   # Regent Orc Card
+    ItemCnt: 5
+  - SkillId: 2505
+    ItemId: 24350   # Skelefish Card
+    ItemCnt: 5
+  - SkillId: 2706
+    ItemId: 24229   # Reggae Orc Card
+    ItemCnt: 5
+  - SkillId: 3307
+    ItemId: 24329   # Fire Golem Card
+    ItemCnt: 5
+  - SkillId: 3505
+    ItemId: 24161   # Phantom Dame Card
+    ItemCnt: 5
+  - SkillId: 4305
+    ItemId: 24031   # Funky Orc Card
+    ItemCnt: 5
+  - SkillId: 4505
+    ItemId: 24306   # Fire Moth Card
+    ItemCnt: 5
+  - SkillId: 4702
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 2
+  - SkillId: 4703
+    ItemId: 24120   # Silver G Card
+    ItemCnt: 2
+  - SkillId: 4704
+    ItemId: 24048   # Turvy Card
+    ItemCnt: 2
+  - SkillId: 4705
+    ItemId: 24049   # Koom Card
+    ItemCnt: 2
+  - SkillId: 4706
+    ItemId: 24201   # Mimic Card
+    ItemCnt: 2
+  - SkillId: 4707
+    ItemId: 24215   # Guiana Card
+    ItemCnt: 2
+  - SkillId: 4708
+    ItemId: 24144   # Quiem Card
+    ItemCnt: 2
+  - SkillId: 4801
+    ItemId: 24341   # Crow Card
+    ItemCnt: 3
+  - SkillId: 4802
+    ItemId: 24151   # Officer Surapat Card
+    ItemCnt: 3
+  - SkillId: 4803
+    ItemId: 24056   # Chele Card
+    ItemCnt: 3
+  - SkillId: 4804
+    ItemId: 24226   # Dancer Michel Card
+    ItemCnt: 3
+  - SkillId: 4805
+    ItemId: 24324   # Dancer Isabelle Card
+    ItemCnt: 3
+  - SkillId: 4806
+    ItemId: 24133   # Slithis Card
+    ItemCnt: 3
+  - SkillId: 4807
+    ItemId: 24232   # Cobra Flower Card
+    ItemCnt: 3
+  - SkillId: 4901
+    ItemId: 24335   # Slug G Card
+    ItemCnt: 5
+  - SkillId: 4902
+    ItemId: 24354   # Malefic Matron Card
+    ItemCnt: 5
+  - SkillId: 4903
+    ItemId: 24306   # Fire Moth Card
+    ItemCnt: 5
+  - SkillId: 4904
+    ItemId: 24328   # B. Salamander Card
+    ItemCnt: 5
+  - SkillId: 4905
+    ItemId: 24329   # Fire Golem Card
+    ItemCnt: 5
+  - SkillId: 4906
+    ItemId: 24350   # Skelefish Card
+    ItemCnt: 5
+  - SkillId: 4907
+    ItemId: 24229   # Reggae Orc Card
+    ItemCnt: 5
+  - SkillId: 4908
+    ItemId: 24067   # Krybeth Card
+    ItemCnt: 5
+  - SkillId: 4909
+    ItemId: 24350   # Skelefish Card
+    ItemCnt: 5
+  - SkillId: 4910
+    ItemId: 24161   # Phantom Dame Card
+    ItemCnt: 5
+  - SkillId: 4709
+    ItemId: 24100   # Hula Octopus Card
+    ItemCnt: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/skill_master_db.yml

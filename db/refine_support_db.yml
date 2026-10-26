@@ -1,0 +1,480 @@
+# =============================================================================
+#   Refine Support Items  (REFINE_SUPPORT_DB)
+# =============================================================================
+#   Table RefineSupportItemLevel of the ORIGINAL server data (kto_libconfig.xml): the optional
+#   support item of a refine (C2S 696 carries the row's Id; sub_63D030). The item adds Prob % to
+#   the success rate and ItemCount of it are consumed. (Min/MaxRefineLevel bound the levels the
+#   client offers the row for; the 2012 server reads only ItemId / ItemCount / Prob.)
+# =============================================================================
+
+Header:
+  Type: REFINE_SUPPORT_DB
+  Version: 1
+
+Body:
+  - Id: 1
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19734
+    ItemCount: 1
+    Prob: 5
+  - Id: 2
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19734
+    ItemCount: 2
+    Prob: 5
+  - Id: 3
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19734
+    ItemCount: 3
+    Prob: 5
+  - Id: 4
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19734
+    ItemCount: 4
+    Prob: 5
+  - Id: 5
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19734
+    ItemCount: 5
+    Prob: 5
+  - Id: 6
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19734
+    ItemCount: 6
+    Prob: 5
+  - Id: 7
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19734
+    ItemCount: 7
+    Prob: 5
+  - Id: 8
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19734
+    ItemCount: 8
+    Prob: 5
+  - Id: 9
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19734
+    ItemCount: 9
+    Prob: 5
+  - Id: 10
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19735
+    ItemCount: 1
+    Prob: 10
+  - Id: 11
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19735
+    ItemCount: 2
+    Prob: 10
+  - Id: 12
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19735
+    ItemCount: 3
+    Prob: 10
+  - Id: 13
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19735
+    ItemCount: 4
+    Prob: 10
+  - Id: 14
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19735
+    ItemCount: 5
+    Prob: 10
+  - Id: 15
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19735
+    ItemCount: 6
+    Prob: 10
+  - Id: 16
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19735
+    ItemCount: 7
+    Prob: 10
+  - Id: 17
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19735
+    ItemCount: 8
+    Prob: 10
+  - Id: 18
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19735
+    ItemCount: 9
+    Prob: 10
+  - Id: 19
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19736
+    ItemCount: 1
+    Prob: 20
+  - Id: 20
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19736
+    ItemCount: 2
+    Prob: 20
+  - Id: 21
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19736
+    ItemCount: 3
+    Prob: 20
+  - Id: 22
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19736
+    ItemCount: 4
+    Prob: 20
+  - Id: 23
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19736
+    ItemCount: 5
+    Prob: 20
+  - Id: 64
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 63922
+    ItemCount: 1
+    Prob: 4
+  - Id: 65
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 63922
+    ItemCount: 2
+    Prob: 4
+  - Id: 66
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 63922
+    ItemCount: 3
+    Prob: 4
+  - Id: 67
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 63922
+    ItemCount: 4
+    Prob: 4
+  - Id: 68
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 63922
+    ItemCount: 5
+    Prob: 4
+  - Id: 69
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 63922
+    ItemCount: 6
+    Prob: 4
+  - Id: 70
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 63922
+    ItemCount: 7
+    Prob: 4
+  - Id: 71
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 63922
+    ItemCount: 8
+    Prob: 4
+  - Id: 72
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 63922
+    ItemCount: 9
+    Prob: 4
+  - Id: 73
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19737
+    ItemCount: 9
+    Prob: 10
+  - Id: 74
+    MinRefineLevel: 10
+    MaxRefineLevel: 10
+    ItemId: 19737
+    ItemCount: 10
+    Prob: 10
+  - Id: 75
+    MinRefineLevel: 11
+    MaxRefineLevel: 11
+    ItemId: 19737
+    ItemCount: 11
+    Prob: 10
+  - Id: 76
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19781
+    ItemCount: 1
+    Prob: 20
+  - Id: 77
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19781
+    ItemCount: 2
+    Prob: 20
+  - Id: 78
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19781
+    ItemCount: 3
+    Prob: 20
+  - Id: 79
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19781
+    ItemCount: 4
+    Prob: 20
+  - Id: 80
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19781
+    ItemCount: 5
+    Prob: 20
+  - Id: 81
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19781
+    ItemCount: 6
+    Prob: 20
+  - Id: 82
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19781
+    ItemCount: 7
+    Prob: 20
+  - Id: 83
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19781
+    ItemCount: 8
+    Prob: 20
+  - Id: 84
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19789
+    ItemCount: 1
+    Prob: 5
+  - Id: 85
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19789
+    ItemCount: 2
+    Prob: 5
+  - Id: 86
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19789
+    ItemCount: 3
+    Prob: 5
+  - Id: 87
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19789
+    ItemCount: 4
+    Prob: 5
+  - Id: 88
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19789
+    ItemCount: 5
+    Prob: 5
+  - Id: 89
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19789
+    ItemCount: 6
+    Prob: 5
+  - Id: 90
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19789
+    ItemCount: 7
+    Prob: 5
+  - Id: 91
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19789
+    ItemCount: 8
+    Prob: 5
+  - Id: 92
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19789
+    ItemCount: 9
+    Prob: 5
+  - Id: 93
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19790
+    ItemCount: 2
+    Prob: 10
+  - Id: 94
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19790
+    ItemCount: 3
+    Prob: 10
+  - Id: 95
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19790
+    ItemCount: 4
+    Prob: 10
+  - Id: 96
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19790
+    ItemCount: 5
+    Prob: 10
+  - Id: 97
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19790
+    ItemCount: 6
+    Prob: 10
+  - Id: 98
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19790
+    ItemCount: 1
+    Prob: 10
+  - Id: 99
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19790
+    ItemCount: 7
+    Prob: 10
+  - Id: 100
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19790
+    ItemCount: 8
+    Prob: 10
+  - Id: 101
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19790
+    ItemCount: 9
+    Prob: 10
+  - Id: 102
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19791
+    ItemCount: 1
+    Prob: 20
+  - Id: 103
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19791
+    ItemCount: 2
+    Prob: 20
+  - Id: 104
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19791
+    ItemCount: 3
+    Prob: 20
+  - Id: 105
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19791
+    ItemCount: 4
+    Prob: 20
+  - Id: 106
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19791
+    ItemCount: 5
+    Prob: 20
+  - Id: 107
+    MinRefineLevel: 9
+    MaxRefineLevel: 9
+    ItemId: 19792
+    ItemCount: 9
+    Prob: 10
+  - Id: 108
+    MinRefineLevel: 10
+    MaxRefineLevel: 10
+    ItemId: 19792
+    ItemCount: 10
+    Prob: 10
+  - Id: 109
+    MinRefineLevel: 11
+    MaxRefineLevel: 11
+    ItemId: 19792
+    ItemCount: 11
+    Prob: 10
+  - Id: 110
+    MinRefineLevel: 1
+    MaxRefineLevel: 1
+    ItemId: 19795
+    ItemCount: 1
+    Prob: 20
+  - Id: 111
+    MinRefineLevel: 2
+    MaxRefineLevel: 2
+    ItemId: 19795
+    ItemCount: 2
+    Prob: 20
+  - Id: 112
+    MinRefineLevel: 3
+    MaxRefineLevel: 3
+    ItemId: 19795
+    ItemCount: 3
+    Prob: 20
+  - Id: 113
+    MinRefineLevel: 4
+    MaxRefineLevel: 4
+    ItemId: 19795
+    ItemCount: 4
+    Prob: 20
+  - Id: 114
+    MinRefineLevel: 5
+    MaxRefineLevel: 5
+    ItemId: 19795
+    ItemCount: 5
+    Prob: 20
+  - Id: 115
+    MinRefineLevel: 6
+    MaxRefineLevel: 6
+    ItemId: 19795
+    ItemCount: 6
+    Prob: 20
+  - Id: 116
+    MinRefineLevel: 7
+    MaxRefineLevel: 7
+    ItemId: 19795
+    ItemCount: 7
+    Prob: 20
+  - Id: 117
+    MinRefineLevel: 8
+    MaxRefineLevel: 8
+    ItemId: 19795
+    ItemCount: 8
+    Prob: 20
+
+Footer:
+  Imports:
+#  - Path: db/import/refine_support_db.yml

@@ -1,0 +1,49 @@
+# ProjectPAULA - line endings and binary data
+#
+# Text is stored with LF in the repository; each checkout follows the user's
+# core.autocrlf / core.eol. In a new repository the first commit already stores
+# LF, and the files on disk are not rewritten, so no renormalisation commit is
+# needed (the 13 CRLF sources simply become LF blobs).
+* text=auto
+
+# Windows batch files must be CRLF: cmd.exe misreads LF-only scripts that use
+# labels, goto or call.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Sources, build files, config, SQL, docs
+*.cpp text diff=cpp
+*.hpp text diff=cpp
+*.h text diff=cpp
+*.txt text
+*.cmake text
+*.conf text
+*.ini text
+*.sql text
+*.md text diff=markdown
+
+# Game data tables: keep LF everywhere (25 MB of YAML; the loaders strip a
+# trailing CR anyway, so a CRLF copy would still load).
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Retail data and binaries: never convert, never diff or merge as text.
+# (*.fnt2 are tab-separated tables with CRLF; binary keeps the retail bytes.)
+*.fnt2 binary
+*.md3 binary
+*.bin binary
+*.dat binary
+*.nri binary
+*.pal binary
+*.dll binary
+*.exe binary
+*.lib binary
+*.pdb binary
+*.dmp binary
+*.png binary
+*.jpg binary
+*.ico binary
+
+# Vendored third-party code (asio, MySQL Connector/C): keep the upstream bytes
+# exactly as released, whatever the checkout's line-ending settings.
+/3rdparty/** -text

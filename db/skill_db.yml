@@ -1,0 +1,7935 @@
+# =============================================================================
+#   Skill Database  (SKILL_DB)
+# =============================================================================
+#   Generated from the ORIGINAL server data kto_libconfig.xml, table SkillParam2
+#   (402 skills). Field names are kept exactly as in SkillParam2. Client-display
+#   fields (icon / comment / tip files) are left out; every other field is written
+#   only when it has a real value (ID, Type, Name always).
+#
+#   Fields
+#     ID            - skill id                                  [key]
+#     Type          - 1 passive, 2 active, 3 buff, 4 (SkillParam2.Type)
+#     Name          - skill name (English from the Paula backup when it is the
+#                     same skill - same icon and ESAction -, else the original)
+#     SkillCardID   - the skill card item that teaches it
+#     MaxSKLV       - max skill level; MasterTMPoint - TM points to master
+#     bLevelUp      - can be leveled up
+#     ESAIC / ESAIITable  - invocation-condition kind / table
+#     ESAUI / ESAUITable  - use-interface kind / table
+#     EState / ESClass / ESAction / ESATable - effect state, class, action kind / table
+#     (other fields: raw SkillParam2 values, documented as they are reversed)
+# =============================================================================
+
+Header:
+  Type: SKILL_DB
+  Version: 1
+
+Body:
+  - ID: 1001
+    Type: 2
+    Name: Shock Wave
+    SkillCardID: 27001
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SteelPunch
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1078
+    ESATable: ESAction_Steel_Punch
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1002
+    Type: 3
+    Name: Pumping Heart
+    SkillCardID: 27002
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_HeartBeat
+    ESClass: 3
+    ESAction: 1125
+    ESATable: ESAction_HeartBeat
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 1003
+    Type: 3
+    Name: Bull's Eye
+    SkillCardID: 27003
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 2
+    ESAIITable: ESAII_AcUp
+    ESAction: 1079
+    ESATable: ESAction_Accuracy_Up
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1004
+    Type: 2
+    Name: Burning Rave
+    SkillCardID: 27004
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 10
+    QuestType: 2
+    ESAIC: 2
+    ESAIITable: ESAII_TwinHit
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1080
+    ESATable: ESAction_Combo_Punch
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1005
+    Type: 3
+    Name: Armor Breaker
+    SkillCardID: 27005
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 17
+    QuestType: 2
+    ESAIC: 2
+    ESAIITable: ESAII_DpDown
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1081
+    ESATable: ESAction_Unshield
+    SpellType: 1
+    SkillExp: 1
+    Grade: 932
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 65536
+    HarconPT: 4
+  - ID: 1006
+    Type: 3
+    Name: Shock Vibe
+    SkillCardID: 27006
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ACDown
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1098
+    ESATable: ESAction_ACDown
+    SkillExp: 1
+    Grade: 923
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1024
+    HarconPT: 4
+  - ID: 1007
+    Type: 3
+    Name: Sense Breaker
+    SkillCardID: 27007
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SenseDown
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1099
+    ESATable: ESAction_SenseDown
+    SkillExp: 1
+    Grade: 925
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 16384
+    HarconPT: 4
+  - ID: 1008
+    Type: 2
+    Name: Upper Smash
+    SkillCardID: 27008
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_UpperAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1100
+    ESATable: ESAction_UpperAttack
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1009
+    Type: 3
+    Name: Hyper Beat
+    SkillCardID: 27009
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_AgilityUp
+    ESAction: 1101
+    ESATable: ESAction_AgilityUp
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1010
+    Type: 3
+    Name: Luck Breaker
+    SkillCardID: 27010
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LuckDown
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1102
+    ESATable: ESAction_LuckDown
+    SkillExp: 1
+    Grade: 933
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 32768
+    HarconPT: 4
+  - ID: 1011
+    Type: 2
+    Name: Tornado Bomb
+    SkillCardID: 27011
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_TornadoAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1103
+    ESATable: ESAction_TornadoAttack
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1012
+    Type: 2
+    Name: Steel Punch
+    SkillCardID: 27012
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Punch
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1296
+    ESATable: ESAction_Punch
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1101
+    Type: 1
+    Name: Guard Break
+    SkillCardID: 27101
+    SkillOption: 514
+    AffectionRel: 32
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESAIITable: ESAll_DefenseParalysis
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1140
+    ESATable: ESAction_DefenseParalysis
+    SkillExp: 1
+    Grade: 522
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 32
+    HarconPT: 4
+  - ID: 1102
+    Type: 2
+    Name: Dash
+    SkillCardID: 27102
+    SkillOption: 2
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAll_Dash
+    ESAUI: 3
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1142
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1103
+    Type: 2
+    Name: Uppercut
+    SkillCardID: 27103
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_UpperCut
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1167
+    ESATable: ESAction_UpperCut
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1104
+    Type: 2
+    Name: Quad Punch
+    SkillCardID: 27104
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ChainPunch
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1195
+    ESATable: ESAction_ChainPunch
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1105
+    Type: 3
+    Name: Eagle Eye
+    SkillCardID: 27105
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_HawkEye
+    ESClass: 3
+    ESAction: 1210
+    ESATable: ESAction_HawkEye
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 1106
+    Type: 1
+    Name: Counter Punch
+    SkillCardID: 27106
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_CounterPunch
+    ESClass: -1
+    ESAction: 1241
+    ESATable: ESAction_CounterPunch
+    eSkillSymbolType: 1
+    Element: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1107
+    Type: 3
+    Name: Guard
+    SkillCardID: 27107
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Guard
+    ESAction: 1309
+    ESATable: ESAction_Guard
+    SpellType: 1
+    SkillExp: 1
+    Grade: 923
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1108
+    Type: 2
+    Name: Tetra Punch
+    SkillCardID: 27108
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ComboHit
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1327
+    ESATable: ESAction_ComboHit
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1109
+    Type: 3
+    Name: Desperate Rally
+    SkillCardID: 27109
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_DeadAlive
+    ESAction: 1351
+    ESATable: ESAction_DeadAlive
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1110
+    Type: 2
+    Name: Clinch Release
+    SkillCardID: 27110
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 10
+    ESAIITable: ESAII_StunCancel
+    ESClass: -1
+    ESAction: 1469
+    ESATable: ESAction_StunCancel
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 8
+  - ID: 1201
+    Type: 1
+    Name: Faint
+    SkillCardID: 27201
+    SkillOption: 514
+    AffectionRel: 32
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_PowerStun
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: 1
+    ESAction: 1143
+    ESATable: ESActoin_PowerStun
+    SkillExp: 1
+    Grade: 621
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+    HarconPT: 4
+  - ID: 1202
+    Type: 2
+    Name: Lacerator
+    SkillCardID: 27202
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_SharpBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1145
+    ESATable: ESAction_SharpBrandish
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1203
+    Type: 3
+    Name: Berserker
+    SkillCardID: 27203
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAll_Berserk
+    ESAction: 1171
+    ESATable: ESAction_Berserk
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1204
+    Type: 2
+    Name: Piercing Wave
+    SkillCardID: 27204
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FlyingAura
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1191
+    ESATable: ESAction_FlyingAura
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1205
+    Type: 2
+    Name: Blazing Strike
+    SkillCardID: 27205
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FastSword
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1218
+    ESATable: ESAction_FastSword
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1206
+    Type: 3
+    Name: Aura of Haste
+    SkillCardID: 27206
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_MultiAgilityUp
+    ESClass: 3
+    ESAction: 1212
+    ESATable: ESAction_MultiAgilityUp
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 1207
+    Type: 2
+    Name: Tidal Slash
+    SkillCardID: 27207
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PowerBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1244
+    ESATable: ESAction_PowerBrandish
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1208
+    Type: 2
+    Name: Inferno Blade
+    SkillCardID: 27208
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_BlastBrandish
+    ESClass: -1
+    ESAction: 1310
+    ESATable: ESAction_BlastBrandish
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1209
+    Type: 2
+    Name: Tempest Strike
+    SkillCardID: 27209
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WindBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1325
+    ESATable: ESAction_WindBrandish
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1210
+    Type: 2
+    Name: Earthquake Blade
+    SkillCardID: 27210
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_EarthquakeSword
+    ESClass: -1
+    ESAction: 1352
+    ESATable: ESAction_EarthquakeSword
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1211
+    Type: 2
+    Name: Lightning Strike
+    SkillCardID: 27211
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_ElecSword
+    ESClass: -1
+    ESAction: 1470
+    ESATable: ESAction_ElectricSword
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+    HarconPT: 4
+  - ID: 1301
+    Type: 3
+    Name: Adrenaline
+    SkillCardID: 27301
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Adrenaline
+    ESAction: 1274
+    ESATable: ESAction_Adrenaline
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 1302
+    Type: 2
+    Name: Flash Cut
+    SkillCardID: 27302
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FlashAttacking
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1275
+    ESATable: ESAction_FlashAttacking
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1303
+    Type: 2
+    Name: Flaming Fist
+    SkillCardID: 27303
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FightingFire
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1335
+    ESATable: ESAction_FightingFire
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1304
+    Type: 2
+    Name: Mega Flash Cut
+    SkillCardID: 27304
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PowerFlashAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1367
+    ESATable: ESAction_PowerFlashAttack
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1305
+    Type: 2
+    Name: Chi Release
+    SkillCardID: 27305
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_PhysicalMatch
+    ESClass: -1
+    ESAction: 1481
+    ESATable: ESAction_PhysicalMatch
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1501
+    Type: 2
+    Name: Shadow
+    SkillCardID: 27501
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_OnesOtherSelf
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1262
+    ESATable: ESAction_OnesOtherSelf
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1502
+    Type: 2
+    Name: Sonic Slash
+    SkillCardID: 27502
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PowerSeaBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1261
+    ESATable: ESAction_PowerSeaBrandish
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1503
+    Type: 3
+    Name: Suffocate
+    SkillCardID: 27503
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Fluorescene
+    ESClass: -1
+    ESAction: 1287
+    ESATable: ESAction_Fluorescene
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 931
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1504
+    Type: 2
+    Name: Gale Strike
+    SkillCardID: 27504
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WindCircleBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1336
+    ESATable: ESAction_WindCircleBrandish
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1505
+    Type: 3
+    Name: Chi Sword
+    SkillCardID: 27505
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_EnergySword
+    ESAction: 1368
+    ESATable: ESAction_EnergySword
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 1506
+    Type: 2
+    Name: Chakra Balance
+    SkillCardID: 27506
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_SelfCure
+    ESAction: 1482
+    ESATable: ESAction_SelfCure
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 8
+  - ID: 2001
+    Type: 2
+    Name: Mana Arrow
+    SkillCardID: 28001
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Magic_Arrow
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1082
+    ESATable: ESAction_Magic_Arrow
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2002
+    Type: 1
+    Name: Invicible Casting
+    SkillCardID: 28002
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 38
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    SkillExp: 1
+    PSAbility: 3
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2003
+    Type: 3
+    Name: Aura of Mana
+    SkillCardID: 28003
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_ManaFastRecover
+    ESClass: 3
+    ESAction: 1127
+    ESATable: ESAction_ManaFastRecover
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 1
+  - ID: 2004
+    Type: 1
+    Name: Bottle of Mana
+    SkillCardID: 28004
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESClass: -1
+    ESAction: 1084
+    ESATable: ESAction_Mana_Bottle
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2005
+    Type: 2
+    Name: Cure
+    SkillCardID: 28005
+    SkillOption: 36
+    AffectionRel: 18
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESAIC: 2
+    ESAIITable: ESAII_CardMagicM1
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicM1
+    ESClass: -1
+    ESAction: 1085
+    ESATable: ESAction_Heal
+    SpellType: 1
+    SkillExp: 10
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 8
+  - ID: 2006
+    Type: 3
+    Name: Mist of Mana
+    SkillCardID: 28006
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_MagicWind
+    ESAction: 1104
+    ESATable: ESAction_MagicWind
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2007
+    Type: 1
+    Name: Arrow Rush
+    SkillCardID: 28007
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1105
+    ESATable: ESAction_ChainArrow
+    SpellType: 1
+    eSkillSymbolType: 1
+    Surpport: true
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2008
+    Type: 2
+    Name: Mana Ring
+    SkillCardID: 28008
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Magic_Ring
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1086
+    ESATable: ESAction_Magic_Ring
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2009
+    Type: 2
+    Name: Mana Storm
+    SkillCardID: 28009
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_Magic_Storm
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_Magic_Storm
+    ESClass: -1
+    ESAction: 1087
+    ESATable: ESAction_Magic_Storm
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2010
+    Type: 3
+    Name: Mana Web
+    SkillCardID: 28010
+    SkillOption: 518
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_MagicWeb
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1106
+    ESATable: ESAction_MagicWeb
+    SkillExp: 1
+    Grade: 926
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 2048
+    HarconPT: 4
+  - ID: 2011
+    Type: 3
+    Name: Rust
+    SkillCardID: 28011
+    SkillOption: 518
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DarkFog
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1107
+    ESATable: ESAction_DarkFog
+    SpellType: 1
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 512
+    HarconPT: 4
+  - ID: 2012
+    Type: 1
+    Name: Mana Ring Booster
+    SkillCardID: 28012
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1108
+    ESATable: ESAction_SealOfMagic
+    SpellType: 1
+    Surpport: true
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2013
+    Type: 3
+    Name: Mana Shield
+    SkillCardID: 28013
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAll_MagicWall
+    ESAction: 1122
+    ESATable: ESAction_MagicWall
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2014
+    Type: 2
+    Name: Magical Soul
+    SkillCardID: 28014
+    SkillOption: 518
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FairyOfMagic
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1297
+    ESATable: ESAction_FairyOfMagic
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2101
+    Type: 3
+    Name: Bolster Ballad
+    SkillCardID: 28101
+    SkillOption: 548
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAll_CheerUp
+    ESClass: 3
+    ESAction: 1152
+    ESATable: ESAction_CheerUp
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 1
+  - ID: 2102
+    Type: 1
+    Name: Seal of Water
+    SkillCardID: 28102
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 6
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2103
+    Type: 2
+    Name: Drip Bomb
+    SkillCardID: 28103
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_WaterBall
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1156
+    ESATable: ESAction_WaterBall
+    SpellType: 1
+    eSkillSymbolType: 3
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2104
+    Type: 1
+    Name: Seal of Thunder
+    SkillCardID: 28104
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 2
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2105
+    Type: 2
+    Name: Electro Attack
+    SkillCardID: 28105
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_ThunderBolt
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1157
+    ESATable: ESAction_ThunderBolt
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2106
+    Type: 1
+    Name: Seal of Fire
+    SkillCardID: 28106
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 3
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2107
+    Type: 2
+    Name: Whirlwind Blaze
+    SkillCardID: 28107
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_WhirlFlame
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1158
+    ESATable: ESAction_WhirlFlame
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2108
+    Type: 1
+    Name: Seal of Earth
+    SkillCardID: 28108
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 4
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2109
+    Type: 2
+    Name: Cleaving Terra
+    SkillCardID: 28109
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAll_Earth_Divide
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_Earth_Divide
+    ESClass: -1
+    ESAction: 1159
+    ESATable: ESAction_Earth_Divide
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2110
+    Type: 1
+    Name: Seal of Wind
+    SkillCardID: 28110
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 5
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2111
+    Type: 2
+    Name: Wind Blade
+    SkillCardID: 28111
+    SkillOption: 6
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAll_WindSlash
+    ESClass: -1
+    ESAction: 1161
+    ESATable: ESAction_WindSlash
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2112
+    Type: 1
+    Name: Water Web
+    SkillCardID: 28112
+    SkillOption: 514
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_WaterNet
+    ESClass: 1
+    ESAction: 1188
+    ESATable: ESAction_WaterNet
+    SpellType: 1
+    Element: 6
+    SkillExp: 1
+    Grade: 929
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 2048
+    HarconPT: 4
+  - ID: 2113
+    Type: 1
+    Name: Electroshock
+    SkillCardID: 28113
+    SkillOption: 514
+    AffectionRel: 32
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_ElectricShock
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: 1
+    ESAction: 1182
+    ESATable: ESAction_ElectricShock
+    SpellType: 1
+    Element: 2
+    SkillExp: 1
+    Grade: 721
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 2
+    HarconPT: 4
+  - ID: 2114
+    Type: 2
+    Name: Incinerate
+    SkillCardID: 28114
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FireExplosion
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1185
+    ESATable: ESAction_FireExplosion
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2115
+    Type: 2
+    Name: Summon Boulder
+    SkillCardID: 28115
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_RockSummons
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1184
+    ESATable: ESAction_RockSummons
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2116
+    Type: 3
+    Name: Whirlwind
+    SkillCardID: 28116
+    SkillOption: 519
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WhirlWind
+    ESClass: -1
+    ESAction: 1186
+    ESATable: ESAction_WhirlWind
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2117
+    Type: 3
+    Name: Water Shield
+    SkillCardID: 28117
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WaterShield
+    ESAction: 1247
+    ESATable: ESAction_WaterShield
+    SpellType: 1
+    eSkillSymbolType: 3
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2118
+    Type: 3
+    Name: Thunder Shield
+    SkillCardID: 28118
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_ElectricShield
+    ESAction: 1250
+    ESATable: ESAction_ElectricShield
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2119
+    Type: 3
+    Name: Fire Shield
+    SkillCardID: 28119
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_FireShield
+    ESAction: 1251
+    ESATable: ESAction_FireShield
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2120
+    Type: 3
+    Name: Earth Shield
+    SkillCardID: 28120
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_EarthShield
+    ESAction: 1252
+    ESATable: ESAction_EarthShield
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2121
+    Type: 3
+    Name: Wind Shield
+    SkillCardID: 28121
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WindShield
+    ESAction: 1253
+    ESATable: ESAction_WindShield
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2122
+    Type: 3
+    Name: Shard of the Glacier
+    SkillCardID: 28122
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_IceCrystal
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1315
+    ESATable: ESAction_IceCrystal
+    SpellType: 1
+    eSkillSymbolType: 3
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 8388610
+    HarconPT: 4
+  - ID: 2123
+    Type: 3
+    Name: Tesla Field
+    SkillCardID: 28123
+    SkillOption: 519
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ElectricField
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1316
+    ESATable: ESAction_ElectricField
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2124
+    Type: 2
+    Name: Phoenix Rising
+    SkillCardID: 28124
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FireBurn
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1318
+    ESATable: ESAction_FireBurn
+    SpellType: 1
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 8
+    HarconPT: 4
+  - ID: 2125
+    Type: 3
+    Name: Botulism Cloud
+    SkillCardID: 28125
+    SkillOption: 518
+    AffectionRel: 48
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Harden
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1320
+    ESATable: ESAction_Harden
+    SpellType: 1
+    eSkillSymbolType: 5
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 4
+    HarconPT: 4
+  - ID: 2126
+    Type: 2
+    Name: Razor Gale
+    SkillCardID: 28126
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SharpWind
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1321
+    ESATable: ESAction_SharpWind
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2127
+    Type: 3
+    Name: Icey Shackles
+    SkillCardID: 28127
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ChillingPrison
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1355
+    ESATable: ESAction_ChillingPrison
+    SpellType: 1
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 4
+    HarconPT: 4
+  - ID: 2128
+    Type: 2
+    Name: Thunderbolt
+    SkillCardID: 28128
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CallLightning
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1356
+    ESATable: ESAction_CallLightning
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2129
+    Type: 3
+    Name: Scorching Earth
+    SkillCardID: 28129
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_FireField
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_FireField
+    ESClass: 1
+    ESAction: 1353
+    ESATable: ESAction_FireField
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2130
+    Type: 3
+    Name: Deadly Fen
+    SkillCardID: 28130
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_SwampField
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_SwampField
+    ESClass: 1
+    ESAction: 1358
+    ESATable: ESAction_SwampField
+    SpellType: 1
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 262144
+    HarconPT: 4
+  - ID: 2131
+    Type: 2
+    Name: Tornado Blast
+    SkillCardID: 28131
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_GaleBreak
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_GaleBreak
+    ESClass: -1
+    ESAction: 1357
+    ESATable: ESAction_GaleBreak
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2132
+    Type: 3
+    Name: Elemental Boost
+    SkillCardID: 28132
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_ElementUp
+    ESAction: 1472
+    ESATable: ESAction_ElementUp
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2201
+    Type: 3
+    Name: Hinder Snare
+    SkillCardID: 28201
+    SkillOption: 518
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_Bind
+    ESClass: 1
+    ESAction: 1154
+    ESATable: ESAction_Bind
+    SpellType: 1
+    SkillExp: 10
+    Grade: 324
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 2
+    HarconPT: 4
+  - ID: 2202
+    Type: 1
+    Name: Dark Pact
+    SkillCardID: 28202
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 8
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2203
+    Type: 2
+    Name: Hellfire
+    SkillCardID: 28203
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_HellFire
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1163
+    ESATable: ESAction_HellFire
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2204
+    Type: 1
+    Name: Light Pact
+    SkillCardID: 28204
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    Element: 7
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 32768
+  - ID: 2205
+    Type: 2
+    Name: Arrow of Light
+    SkillCardID: 28205
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_LightningBolt
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1164
+    ESATable: ESAction_LightningBolt
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2206
+    Type: 1
+    Name: Wicked Flame
+    SkillCardID: 28206
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAll_CruelFlame
+    ESClass: 1
+    ESAction: 1177
+    ESATable: ESAction_CruelFlame
+    SpellType: 1
+    Element: 8
+    SkillExp: 1
+    Grade: 421
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 8
+    HarconPT: 4
+  - ID: 2207
+    Type: 2
+    Name: Catastrophe Healing
+    SkillCardID: 28207
+    SkillOption: 36
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESAIITable: ESAll_FirstAid
+    ESClass: -1
+    ESAction: 1168
+    ESATable: ESAction_FirstAid
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 8
+  - ID: 2208
+    Type: 2
+    Name: Dark Lance
+    SkillCardID: 28208
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DarkSpear
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1187
+    ESATable: ESAction_DarkSpear
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2209
+    Type: 2
+    Name: Light Wave
+    SkillCardID: 28209
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LightWave
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1190
+    ESATable: ESAction_LightWave
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2210
+    Type: 2
+    Name: Gravity Crush
+    SkillCardID: 28210
+    SkillOption: 6
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Gravity
+    ESClass: -1
+    ESAction: 1215
+    ESATable: ESAction_Gravity
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    AssistSK: 2217
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2211
+    Type: 2
+    Name: Basic Healing
+    SkillCardID: 28211
+    SkillOption: 36
+    AffectionRel: 18
+    MaxSKLV: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PrimaryCure
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicM1
+    ESClass: -1
+    ESAction: 1219
+    ESATable: ESAction_PrimaryCure
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 5
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 8
+  - ID: 2212
+    Type: 3
+    Name: Dark Barrier
+    SkillCardID: 28212
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_DarkBarrier
+    ESAction: 1254
+    ESATable: ESAction_DarkBarrier
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2213
+    Type: 3
+    Name: Light Shield
+    SkillCardID: 28213
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_LightShield
+    ESAction: 1255
+    ESATable: ESAction_LightShield
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2214
+    Type: 2
+    Name: Radiant Strike
+    SkillCardID: 28214
+    SkillOption: 6
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_ShiningRay
+    ESClass: -1
+    ESAction: 1256
+    ESATable: ESAction_ShiningRay
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2215
+    Type: 3
+    Name: Dark Distractor
+    SkillCardID: 28215
+    SkillOption: 518
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DarkSlow
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1322
+    ESATable: ESAction_DarkSlow
+    SpellType: 1
+    Element: 8
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 262144
+    HarconPT: 4
+  - ID: 2216
+    Type: 2
+    Name: Heart's Grace
+    SkillCardID: 28216
+    SkillOption: 550
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WideFirstaid
+    ESClass: -1
+    ESAction: 1323
+    ESATable: ESAction_WideFirstaid
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 923
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 8
+  - ID: 2217
+    Type: 1
+    Name: Withering Disease
+    SkillCardID: 28217
+    SkillOption: 518
+    AffectionRel: 48
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_UnableRecovery
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1331
+    ESATable: ESAction_UnableRecovery
+    SpellType: 1
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 256
+    HarconPT: 4
+  - ID: 2218
+    Type: 3
+    Name: Shield of Heaven
+    SkillCardID: 28218
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIITable: ESAII_Shield
+    ESAction: 1333
+    ESATable: ESAction_Shield
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2219
+    Type: 3
+    Name: Blood Testament
+    SkillCardID: 28219
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_BloodyOath
+    ESAction: 1360
+    ESATable: ESAction_BloodyOath
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2220
+    Type: 3
+    Name: Oath of Light
+    SkillCardID: 28220
+    SkillOption: 550
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_SaintPromise
+    ESAction: 1361
+    ESATable: ESAction_SaintPromise
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2221
+    Type: 2
+    Name: Revival
+    SkillCardID: 28221
+    SkillOption: 2
+    AffectionRel: 16
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 10
+    ESAIC: 2
+    ESAIITable: ESAII_Revival
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Magic
+    ESClass: -1
+    ESAction: 1474
+    ESATable: ESAction_Revival
+    SpellType: 1
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 16
+  - ID: 2301
+    Type: 2
+    Name: Aqua Bomb
+    SkillCardID: 28301
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WaterShower
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1257
+    ESATable: ESAction_WaterShower
+    SpellType: 1
+    eSkillSymbolType: 3
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2302
+    Type: 2
+    Name: Staff of Thunder
+    SkillCardID: 28302
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ElectricSpear
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1263
+    ESATable: ESAction_ElectricSpear
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2303
+    Type: 2
+    Name: Dragon Storm
+    SkillCardID: 28303
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FireDragon
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1264
+    ESATable: ESAction_FireDragon
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2304
+    Type: 2
+    Name: Earthquake
+    SkillCardID: 28304
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_Earthquake
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_Earthquake
+    ESClass: -1
+    ESAction: 1265
+    ESATable: ESAction_Earthquake
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2305
+    Type: 2
+    Name: Raging Storm
+    SkillCardID: 28305
+    SkillOption: 6
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_MustangWind
+    ESClass: -1
+    ESAction: 1284
+    ESATable: ESAction_MustangWind
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2306
+    Type: 3
+    Name: Undine's Blessing
+    SkillCardID: 28306
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WaterCounter
+    ESAction: 1337
+    ESATable: ESAction_WaterCounter
+    SpellType: 1
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2307
+    Type: 3
+    Name: Raion's Blessing
+    SkillCardID: 28307
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_ThunderCounter
+    ESAction: 1338
+    ESATable: ESAction_ThunderCounter
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2308
+    Type: 3
+    Name: Salamander's Blessing
+    SkillCardID: 28308
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_FireCounter
+    ESAction: 1339
+    ESATable: ESAction_FireCounter
+    SpellType: 1
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2309
+    Type: 3
+    Name: Gnome's Blessing
+    SkillCardID: 28309
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_EarthCounter
+    ESAction: 1340
+    ESATable: ESAction_EarthCounter
+    SpellType: 1
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2310
+    Type: 3
+    Name: Sylph's Blessing
+    SkillCardID: 28310
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_WindCounter
+    ESAction: 1341
+    ESATable: ESAction_WindCounter
+    SpellType: 1
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2311
+    Type: 3
+    Name: Undine's Garden
+    SkillCardID: 28311
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_WaterArea
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_WaterArea
+    ESClass: 1
+    ESAction: 1369
+    ESATable: ESAction_WaterArea
+    SpellType: 1
+    Element: 6
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 8388608
+    HarconPT: 4
+  - ID: 2312
+    Type: 3
+    Name: Raion's Space
+    SkillCardID: 28312
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_ThunderArea
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_ThunderArea
+    ESClass: 1
+    ESAction: 1371
+    ESATable: ESAction_ThunderArea
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 134217728
+    HarconPT: 4
+  - ID: 2313
+    Type: 3
+    Name: Salamander's Territory
+    SkillCardID: 28313
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_FireArea
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_FireArea
+    ESClass: 1
+    ESAction: 1373
+    ESATable: ESAction_FireArea
+    SpellType: 1
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 67108864
+    HarconPT: 4
+  - ID: 2314
+    Type: 3
+    Name: Gnome's Domain
+    SkillCardID: 28314
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_EarthArea
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_EarthArea
+    ESClass: 1
+    ESAction: 1375
+    ESATable: ESAction_EarthArea
+    SpellType: 1
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 16777216
+    HarconPT: 4
+  - ID: 2315
+    Type: 3
+    Name: Sylph's Playground
+    SkillCardID: 28315
+    SkillOption: 7
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_WindArea
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_WindArea
+    ESClass: 1
+    ESAction: 1377
+    ESATable: ESAction_WindArea
+    SpellType: 1
+    Element: 5
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 33554432
+    HarconPT: 4
+  - ID: 2316
+    Type: 2
+    Name: 차원의틈
+    SkillCardID: 28316
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_DimensionCrack
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_DimensionCrack
+    ESClass: -1
+    ESAction: 1484
+    ESATable: ESAction_DimensionCrack
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2501
+    Type: 2
+    Name: Med. Cure
+    SkillCardID: 28501
+    SkillOption: 36
+    AffectionRel: 1
+    MaxSKLV: 1
+    ESAIC: 1
+    ESAIITable: ESAII_IntermediateCure
+    ESAUITable: ESAUI_STO_CardMagicM1
+    ESClass: -1
+    ESAction: 1259
+    ESATable: ESAction_IntermediateCure
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 5
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 8
+  - ID: 2502
+    Type: 2
+    Name: Searing Light
+    SkillCardID: 28502
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SkyRay
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1285
+    ESATable: ESAction_SkyRay
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2503
+    Type: 2
+    Name: Celestial Strike
+    SkillCardID: 28503
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_LightWeight
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_LightWeight
+    ESClass: -1
+    ESAction: 1343
+    ESATable: ESAction_LightWeight
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2504
+    Type: 3
+    Name: Sacred Oath
+    SkillCardID: 28504
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_SaintOath
+    ESAction: 1379
+    ESATable: ESAction_SaintOath
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 1
+  - ID: 2505
+    Type: 3
+    Name: Refreshing Dew
+    SkillCardID: 28505
+    SkillOption: 548
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_SettleDown
+    ESClass: -1
+    ESAction: 1486
+    ESATable: ESAction_SettleDown
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 2701
+    Type: 2
+    Name: Scythe
+    SkillCardID: 28701
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DeathScythe
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1282
+    ESATable: ESAction_DeathScythe
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2702
+    Type: 1
+    Name: Fear
+    SkillCardID: 28702
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1278
+    ESATable: ESAction_Fear
+    SpellType: 1
+    Element: 8
+    SkillExp: 1
+    Grade: 522
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 192
+    HarconPT: 4
+  - ID: 2703
+    Type: 2
+    Name: Staff of Agony
+    SkillCardID: 28703
+    SkillOption: 6
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DespairSpear
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1283
+    ESATable: ESAction_DespairSpear
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2704
+    Type: 3
+    Name: Dark Commando
+    SkillCardID: 28704
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 1
+    ESAIITable: ESAII_DarkGhost
+    ESAction: 1342
+    ESATable: ESAction_DarkGhost
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 2705
+    Type: 2
+    Name: Ghostly Whisper
+    SkillCardID: 28705
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIITable: ESAII_DarkWhisper
+    ESClass: 1
+    ESAction: 1380
+    ESATable: ESAction_DarkWhisper
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    SkillExp: 1
+    UseStyle: 8192
+    HarconPT: 4
+  - ID: 2706
+    Type: 3
+    Name: Dark Assimilation
+    SkillCardID: 28706
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_DarkUp
+    ESAction: 1488
+    ESATable: ESAction_DarkUp
+    SpellType: 1
+    Element: 8
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    HarconPT: 2
+  - ID: 3001
+    Type: 1
+    Name: Invicible Drill
+    SkillCardID: 29001
+    SkillOption: 32
+    MaxSKLV: 1
+    QuestID: 13
+    QuestType: 2
+    ESClass: -1
+    ESAction: 1023
+    SpellType: 1
+    SkillExp: 1
+    PSAbility: 6
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3002
+    Type: 2
+    Name: Stone Strike
+    SkillCardID: 29002
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Stone_Hit
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1090
+    ESATable: ESAction_Stone_Hit
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3003
+    Type: 1
+    Name: Heavy Carrier
+    SkillCardID: 29003
+    SkillOption: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 41
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1091
+    ESATable: ESAction_Big_Baggage
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3004
+    Type: 3
+    Name: Sticky Foot
+    SkillCardID: 29004
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SmoothFloor
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1109
+    ESATable: ESAction_SmoothFloor
+    SkillExp: 1
+    Grade: 924
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 131072
+    HarconPT: 4
+  - ID: 3005
+    Type: 3
+    Name: Armor Destructor
+    SkillCardID: 29005
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ShieldBreak
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1110
+    ESATable: ESAction_ShieldBreak
+    SkillExp: 1
+    Grade: 927
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 65536
+    HarconPT: 4
+  - ID: 3006
+    Type: 3
+    Name: Sixth Sense
+    SkillCardID: 29006
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 52
+    QuestType: 1
+    ESAIITable: ESAII_DaUp
+    ESAction: 1092
+    ESATable: ESAction_Sixth_Sense
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3007
+    Type: 2
+    Name: Shuriken Master
+    SkillCardID: 29007
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WeaponThrow
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1111
+    ESATable: ESAction_WeaponThrow
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3008
+    Type: 1
+    Name: Gun Carrier
+    SkillCardID: 29008
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 38
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    SkillExp: 1
+    PSAbility: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3009
+    Type: 3
+    Name: Lucky Seven
+    SkillCardID: 29009
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_LuckUp
+    ESAction: 1112
+    ESATable: ESAction_LuckUp
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3010
+    Type: 1
+    Name: Quick Reload
+    SkillCardID: 29010
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 38
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3011
+    Type: 1
+    Name: Invicible Reload
+    SkillCardID: 29011
+    SkillOption: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 13
+    QuestType: 2
+    ESClass: -1
+    ESAction: 1040
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3012
+    Type: 3
+    Name: Gun Booster
+    SkillCardID: 29012
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_PriMarkManship
+    ESAction: 1115
+    ESATable: ESAction_PriMarksmanship
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3013
+    Type: 3
+    Name: Basic Detection
+    SkillCardID: 29013
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAll_BasicDetector
+    ESClass: -1
+    ESAction: 1170
+    ESATable: ESAction_BasicDetector
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3014
+    Type: 1
+    Name: Compound Mastery
+    SkillCardID: 29014
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1200
+    ESATable: ESAction_CompoundMaster
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3015
+    Type: 2
+    Name: Stone Shower
+    SkillCardID: 29015
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_StoneThrowing
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1298
+    ESATable: ESAction_StoneThrowing
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3016
+    Type: 3
+    Name: Crazy Drilling
+    SkillCardID: 29016
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 1
+    ESAIITable: ESAII_Boiling
+    ESAction: 1391
+    ESATable: ESAction_Boiling
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3101
+    Type: 3
+    Name: Precise Pitch
+    SkillCardID: 29101
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESAIITable: ESAll_PowerThrow
+    ESAction: 1146
+    ESATable: ESAction_PowerThrow
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3102
+    Type: 3
+    Name: Item Detector
+    SkillCardID: 29102
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAll_ItemDetector
+    ESAUI: 6
+    ESAUITable: ESAUI_STC_ItemDetector
+    ESClass: -1
+    ESAction: 1147
+    ESATable: ESAction_ItemDetector
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3103
+    Type: 3
+    Name: Aura of Luck
+    SkillCardID: 29103
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAll_GoodLuck
+    ESClass: 3
+    ESAction: 1175
+    ESATable: ESAction_GoodLuck
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 3104
+    Type: 3
+    Name: Landmine
+    SkillCardID: 29104
+    SkillOption: 515
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_Mine
+    ESAUI: 10
+    ESAUITable: ESAUI_STO_Mine
+    ESClass: -1
+    ESAction: 1192
+    ESATable: ESAction_Mine
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 925
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3105
+    Type: 2
+    Name: Pouch of Pain
+    SkillCardID: 29105
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_HeavyBaggae
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1214
+    ESATable: ESAction_HeavyBaggage
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3106
+    Type: 3
+    Name: Sticky Icky
+    SkillCardID: 29106
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Adhesive
+    ESClass: 1
+    ESAction: 1242
+    ESATable: ESAction_Adhesive
+    SpellType: 1
+    SkillExp: 1
+    Grade: 931
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 229376
+    HarconPT: 4
+  - ID: 3107
+    Type: 3
+    Name: Gas Mask
+    SkillCardID: 29107
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_GasMask
+    ESAction: 1313
+    ESATable: ESAction_GasMask
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 1
+  - ID: 3108
+    Type: 3
+    Name: Lightning Rod
+    SkillCardID: 29108
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_InsulateArmor
+    ESAction: 1314
+    ESATable: ESAction_InsulateArmor
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 1
+  - ID: 3109
+    Type: 2
+    Name: Fan of Knives
+    SkillCardID: 29109
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WideThrow
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1326
+    ESATable: ESAction_WideThrow
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3110
+    Type: 2
+    Name: Chain of Knives
+    SkillCardID: 29110
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_ChainThrow
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1362
+    ESATable: ESAction_ChainThrow
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3111
+    Type: 1
+    Name: Mega Crazy Drilling
+    SkillCardID: 29111
+    SkillOption: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 1
+    ESClass: -1
+    ESAction: 1392
+    ESATable: ESAction_EnchantedCDM
+    SpellType: 1
+    SkillExp: 1
+    PSAbility: 12
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3112
+    Type: 2
+    Name: Rain of Knives
+    SkillCardID: 29112
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_UpThrow
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_UpThrow
+    ESClass: -1
+    ESAction: 1475
+    ESATable: ESAction_UpThrow
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3201
+    Type: 2
+    Name: Butt Plate
+    SkillCardID: 29201
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_GunStock
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1138
+    ESATable: ESAction_GunStock
+    eSkillSymbolType: 1
+    AssistSK: 3008
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3202
+    Type: 2
+    Name: Power Shot
+    SkillCardID: 29202
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_PowerShot
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1148
+    ESATable: ESAction_PowerShot
+    SpellType: 1
+    eSkillSymbolType: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 16384
+  - ID: 3203
+    Type: 2
+    Name: Shooting Spree
+    SkillCardID: 29203
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAll_MeleeShot
+    ESClass: -1
+    ESAction: 1174
+    ESATable: ESAction_MeleeShot
+    eSkillSymbolType: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 16384
+  - ID: 3204
+    Type: 2
+    Name: Lucky Fist
+    SkillCardID: 29204
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_UnHappyDay
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1196
+    ESATable: ESAction_UnHappyDay
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3205
+    Type: 3
+    Name: Keen Sense
+    SkillCardID: 29205
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_SharpSense
+    ESAction: 1217
+    ESATable: ESAction_SharpSense
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3206
+    Type: 2
+    Name: Double Shot
+    SkillCardID: 29206
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DoubleShot
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1249
+    ESATable: ESAction_DoubleShot
+    SpellType: 1
+    eSkillSymbolType: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 16384
+  - ID: 3207
+    Type: 3
+    Name: Shield Breaker
+    SkillCardID: 29207
+    SkillOption: 514
+    AffectionRel: 48
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_BreakBarrier
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1324
+    ESATable: ESAction_BreakBarrier
+    SpellType: 1
+    eSkillSymbolType: 9
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 16384
+    DebuffBitCode: 3145728
+    HarconPT: 4
+  - ID: 3208
+    Type: 3
+    Name: Leg Training
+    SkillCardID: 29208
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_PreventSlow
+    ESAction: 1328
+    ESATable: ESAction_PreventSlow
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 1
+  - ID: 3209
+    Type: 3
+    Name: Lock-on
+    SkillCardID: 29209
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LockOn
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1363
+    ESATable: ESAction_LockOn
+    SpellType: 1
+    SkillExp: 1
+    Grade: 926
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 131072
+    HarconPT: 4
+  - ID: 3210
+    Type: 3
+    Name: Speedloader
+    SkillCardID: 29210
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIITable: ESAII_FastLoad
+    ESAction: 1476
+    ESATable: ESAction_FastLoad
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3301
+    Type: 3
+    Name: Hide
+    SkillCardID: 29301
+    SkillOption: 770
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Hiding
+    ESAction: 1286
+    ESATable: ESAction_Hiding
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 131072
+  - ID: 3302
+    Type: 2
+    Name: Sudden Attack
+    SkillCardID: 29302
+    SkillOption: 130
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SuddenAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1290
+    ESATable: ESAction_SuddenAttack
+    eSkillSymbolType: 1
+    Element: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3303
+    Type: 3
+    Name: Strong Mind
+    SkillCardID: 29303
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Insulator
+    ESAction: 1269
+    ESATable: ESAction_Insulator
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    HarconPT: 1
+  - ID: 3304
+    Type: 3
+    Name: Explosives Expert
+    SkillCardID: 29304
+    SkillOption: 515
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_MineMaster
+    ESAUI: 10
+    ESAUITable: ESAUI_STO_MineMaster
+    ESClass: -1
+    ESAction: 1267
+    ESATable: ESAction_MineMaster
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3305
+    Type: 3
+    Name: Poison Pouch
+    SkillCardID: 29305
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PoisonBaggage
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: 1
+    ESAction: 1344
+    ESATable: ESAction_PoisonBaggage
+    SkillExp: 1
+    Grade: 622
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 16
+    HarconPT: 4
+  - ID: 3306
+    Type: 3
+    Name: Poison Assault
+    SkillCardID: 29306
+    SkillOption: 130
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_PoisonAssault
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: 1
+    ESAction: 1383
+    ESATable: ESAction_PoisonAssault
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 16
+    HarconPT: 4
+  - ID: 3307
+    Type: 2
+    Name: Exploit Weakness
+    SkillCardID: 29307
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CrackAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1490
+    ESATable: ESAction_CrackAttack
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 3501
+    Type: 2
+    Name: Berserk
+    SkillCardID: 29501
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Reckless
+    ESClass: -1
+    ESAction: 1277
+    ESATable: ESAction_Reckless
+    eSkillSymbolType: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 16384
+  - ID: 3502
+    Type: 3
+    Name: Revealing Eye
+    SkillCardID: 29502
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_OpticalEyes
+    ESAction: 1289
+    ESATable: ESAction_OpticalEyes
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 3503
+    Type: 3
+    Name: Gun Overdrive
+    SkillCardID: 29503
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 2
+    ESAIITable: ESAII_CustomizingGun
+    ESAction: 1345
+    ESATable: ESAction_CustomizingGun
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3504
+    Type: 3
+    Name: Sharp Sense
+    SkillCardID: 29504
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_SharpSense_EX
+    ESAction: 1385
+    ESATable: ESAction_SharpSense_EX
+    SpellType: 1
+    SkillExp: 1
+    Grade: 101
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3505
+    Type: 3
+    Name: Bunker
+    SkillCardID: 29505
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 2
+    ESAIITable: ESAII_Bunker
+    ESClass: -1
+    ESAction: 1491
+    ESATable: ESAction_Bunker
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 3506
+    Type: 3
+    Name: Bunker Release
+    SkillCardID: 29506
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestID: 10
+    QuestType: 2
+    ESAIITable: ESAII_EscapeBunker
+    ESClass: -1
+    ESAction: 1497
+    ESATable: ESAction_EscapeBunker
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4001
+    Type: 2
+    Name: Power Blow
+    SkillCardID: 30001
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Strike
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1094
+    ESATable: ESAction_Strike
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4002
+    Type: 2
+    Name: Galder Thrower
+    SkillCardID: 30002
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_GellderHit
+    ESAUI: 8
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1116
+    ESATable: ESAction_GellderHit
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4003
+    Type: 3
+    Name: Dodge Master
+    SkillCardID: 30003
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 16
+    QuestType: 2
+    ESAIITable: ESAII_HVUp
+    ESAction: 1095
+    ESATable: ESAction_Soft_Waist
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4004
+    Type: 3
+    Name: Shield All
+    SkillCardID: 30004
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_BigShield
+    ESClass: 3
+    ESAction: 1129
+    ESATable: ESAction_BigShield
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 4005
+    Type: 3
+    Name: Magic Meltdown
+    SkillCardID: 30005
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Sleepy_Voice
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1096
+    ESATable: ESAction_Sleepy_Voice
+    SkillExp: 1
+    Grade: 931
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 4096
+    HarconPT: 4
+  - ID: 4006
+    Type: 3
+    Name: Magic Defense Breaker
+    SkillCardID: 30006
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_MDDown
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1117
+    ESATable: ESAction_MDDown
+    SkillExp: 1
+    Grade: 922
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 8192
+    HarconPT: 4
+  - ID: 4007
+    Type: 3
+    Name: Sturdy Shield
+    SkillCardID: 30007
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_StaticShield
+    ESAction: 1118
+    ESATable: ESAction_StaticShield
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4008
+    Type: 3
+    Name: Mana Reflector
+    SkillCardID: 30008
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestID: 16
+    QuestType: 2
+    ESAIITable: ESAII_Magic_Reflect
+    ESAction: 1097
+    ESATable: ESAction_Magic_Reflect
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4009
+    Type: 1
+    Name: Physical Training
+    SkillCardID: 30009
+    SkillOption: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1169
+    ESATable: ESAction_Fitness
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 4010
+    Type: 3
+    Name: Skunk Pouch
+    SkillCardID: 30010
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SkunkBag
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: 1
+    ESAction: 1119
+    ESATable: ESAction_SkunkBag
+    SkillExp: 1
+    Grade: 622
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+    HarconPT: 4
+  - ID: 4011
+    Type: 1
+    Name: Titanium Wrist
+    SkillCardID: 30011
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestID: 13
+    QuestType: 2
+    ESClass: -1
+    ESAction: 1120
+    ESATable: ESAction_HandIntensification
+    SpellType: 1
+    eSkillSymbolType: 1
+    Surpport: true
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4012
+    Type: 2
+    Name: Final Blow
+    SkillCardID: 30012
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_StrikeOfSoul
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1123
+    ESATable: ESAction_StrikeOfSoul
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4013
+    Type: 2
+    Name: Warm Up
+    SkillCardID: 30013
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WarmingUp
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1299
+    ESATable: ESAction_WarmingUp
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4101
+    Type: 2
+    Name: Volley Kick
+    SkillCardID: 30101
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_Volley_Kick
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1139
+    ESATable: ESAction_Volley_Kick
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4102
+    Type: 2
+    Name: Galder Barrage
+    SkillCardID: 30102
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_MultiGellder
+    ESAUI: 8
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1165
+    ESATable: ESAction_MultiGellder
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4103
+    Type: 1
+    Name: Team Bolster
+    SkillCardID: 30103
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4104
+    Type: 2
+    Name: Siren Song
+    SkillCardID: 30104
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Siren
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1199
+    ESATable: ESAction_Siren
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4105
+    Type: 3
+    Name: Evolution
+    SkillCardID: 30105
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_WildMutation
+    ESAction: 1208
+    ESATable: ESAction_WildMutation
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4106
+    Type: 2
+    Name: Beast Claw
+    SkillCardID: 30106
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Rush
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1216
+    ESATable: ESAction_Rush
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 2
+    UseStyle: 4096
+  - ID: 4107
+    Type: 3
+    Name: Fatal Wound
+    SkillCardID: 30107
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SharpClaw
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1245
+    ESATable: ESAction_SharpClaw
+    SkillExp: 1
+    Grade: 927
+    StateType: 2
+    UseStyle: 4096
+    HarconPT: 4
+  - ID: 4108
+    Type: 3
+    Name: Sumo Suit
+    SkillCardID: 30108
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_Subcutaneous
+    ESAction: 1311
+    ESATable: ESAction_Subcutaneous
+    SpellType: 1
+    SkillExp: 1
+    Grade: 923
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4109
+    Type: 2
+    Name: Fist Full of Galders
+    SkillCardID: 30109
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_GellderChainHit
+    ESAUI: 8
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1329
+    ESATable: ESAction_GellderChainHit
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4110
+    Type: 3
+    Name: Deadly Funk
+    SkillCardID: 30110
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_smellEX
+    ESAUI: 6
+    ESAUITable: ESAUI_STC_SmellEX
+    ESClass: 1
+    ESAction: 1364
+    ESATable: ESAction_smellEX
+    SkillExp: 1
+    Grade: 622
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+    HarconPT: 4
+  - ID: 4111
+    Type: 2
+    Name: Aura Shatter
+    SkillCardID: 30111
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 2
+    ESAIC: 3
+    ESAIITable: ESAII_BuffCancler
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_BuffCancler
+    ESClass: -1
+    ESAction: 1477
+    ESATable: ESAction_BuffCancler
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+    DebuffBitCode: 524288
+    HarconPT: 4
+  - ID: 4201
+    Type: 2
+    Name: Card Strike
+    SkillCardID: 30201
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAll_CardThrow
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1150
+    ESATable: ESAction_CardThrow
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4202
+    Type: 1
+    Name: Super Hips
+    SkillCardID: 30202
+    SkillOption: 544
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAction: 1151
+    SpellType: 1
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4203
+    Type: 3
+    Name: Bodyguard
+    SkillCardID: 30203
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAll_WhiteKnight
+    ESClass: 3
+    ESAction: 1172
+    ESATable: ESAction_WhiteKnight
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 4204
+    Type: 2
+    Name: One Pair
+    SkillCardID: 30204
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_OnePair
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1194
+    ESATable: ESAction_OnePair
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4205
+    Type: 2
+    Name: Impelling Rage
+    SkillCardID: 30205
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_Charging
+    ESClass: -1
+    ESAction: 1220
+    ESATable: ESAction_Charging
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4206
+    Type: 3
+    Name: Metamorphosis
+    SkillCardID: 30206
+    SkillOption: 514
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Change
+    ESAction: 1248
+    ESATable: ESAction_Change
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4207
+    Type: 2
+    Name: Wild Nail
+    SkillCardID: 30207
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WildAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1246
+    ESATable: ESAction_WildAttack
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 3
+    UseStyle: 4096
+  - ID: 4208
+    Type: 2
+    Name: Flux Capacitor
+    SkillCardID: 30208
+    SkillOption: 34
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_ManaConvert
+    ESClass: -1
+    ESAction: 1312
+    ESATable: ESAction_ManaConvert
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 923
+    StateType: 1
+    UseStyle: 32768
+  - ID: 4209
+    Type: 2
+    Name: Furious Galder Throw
+    SkillCardID: 30209
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LuckyGellderHit
+    ESAUI: 8
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1330
+    ESATable: ESAction_LuckyGellderHit
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4210
+    Type: 1
+    Name: Lady Luck
+    SkillCardID: 30210
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LuckyGoddess
+    ESAUI: 7
+    ESAUITable: ESAUI_STO_ThrowAttack
+    ESClass: -1
+    ESAction: 1365
+    ESATable: ESAction_LuckyGoddess
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4211
+    Type: 2
+    Name: Mass Destruction
+    SkillCardID: 30211
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 2
+    ESAIITable: ESAII_Kamikaze
+    ESAUITable: ESAUI_STO_Power
+    ESClass: 1
+    ESAction: 1479
+    ESATable: ESAction_Kamikaze
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4301
+    Type: 3
+    Name: Entrancing Wink
+    SkillCardID: 30301
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WinkOfCharm
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1273
+    ESATable: ESAction_WinkOfCharm
+    SpellType: 1
+    SkillExp: 1
+    Grade: 921
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 128
+    HarconPT: 4
+  - ID: 4302
+    Type: 2
+    Name: 2 Hit Combo
+    SkillCardID: 30302
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_TwoChainAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1258
+    ESATable: ESAction_TwoChainAttack
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4303
+    Type: 2
+    Name: Raging Nail
+    SkillCardID: 30303
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WildTalon
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1346
+    ESATable: ESAction_WildTalon
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 2
+    UseStyle: 4096
+  - ID: 4304
+    Type: 2
+    Name: Sharp Scream
+    SkillCardID: 30304
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_SharpScream
+    ESClass: -1
+    ESAction: 1381
+    ESATable: ESAction_SharpScream
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 2
+    UseStyle: 4096
+  - ID: 4305
+    Type: 3
+    Name: Beast Instinct
+    SkillCardID: 30305
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 2
+    ESAIITable: ESAII_Beast
+    ESClass: -1
+    ESAction: 1493
+    ESATable: ESAction_Beast
+    SkillExp: 1
+    Grade: 100
+    StateType: 2
+    UseStyle: 32768
+  - ID: 4501
+    Type: 2
+    Name: Full House
+    SkillCardID: 30501
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_FullHouse
+    ESClass: -1
+    ESAction: 1280
+    ESATable: ESAction_FullHouse
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+  - ID: 4502
+    Type: 2
+    Name: Power Charging
+    SkillCardID: 30502
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_PowerCharging
+    ESClass: -1
+    ESAction: 1271
+    ESATable: ESAction_PowerCharging
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 2
+    HarconPT: 4
+  - ID: 4503
+    Type: 2
+    Name: Heavy Hit
+    SkillCardID: 30503
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_MassiveAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1347
+    ESATable: ESAction_MassiveAttack
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 3
+    UseStyle: 4096
+  - ID: 4504
+    Type: 2
+    Name: '[Summon]Card Soldier'
+    SkillCardID: 30504
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SummonSoldier
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1382
+    ESATable: ESAction_SummonSoldier
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 3
+    UseStyle: 4096
+  - ID: 4505
+    Type: 2
+    Name: Four of A Kind
+    SkillCardID: 30505
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestID: 10
+    QuestType: 2
+    ESAIC: 3
+    ESAIITable: ESAII_FourCard
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_FourCard
+    ESClass: -1
+    ESAction: 1495
+    ESATable: ESAction_FourCard
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4701
+    Type: 1
+    Name: Equip Hammer
+    SkillCardID: 31300
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    PSAbility: 13
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 4702
+    Type: 2
+    Name: Double Hammer
+    SkillCardID: 31301
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DoubleHammer
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1523
+    ESATable: ESAction_DoubleHammer
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4703
+    Type: 3
+    Name: Strength training
+    SkillCardID: 31302
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_MuscleUp
+    ESAction: 1524
+    ESATable: ESAction_MuscleUp
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4704
+    Type: 3
+    Name: Concentration
+    SkillCardID: 31303
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_MindUp
+    ESAction: 1525
+    ESATable: ESAction_MindUp
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4705
+    Type: 3
+    Name: Mental Breakdown
+    SkillCardID: 31304
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_MentalBreak
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1526
+    ESATable: ESAction_MentalBreak
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 1
+    HarconPT: 4
+  - ID: 4706
+    Type: 3
+    Name: Shield of will
+    SkillCardID: 31305
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_WillShield
+    ESAction: 1527
+    ESATable: ESAction_WillShield
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4707
+    Type: 3
+    Name: 모두의 가드
+    SkillCardID: 31306
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_PartyGuard
+    ESAction: 1528
+    ESATable: ESAction_PartyGuard
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 4708
+    Type: 2
+    Name: Earthquake Hammer
+    SkillCardID: 31307
+    SkillOption: 2
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_QuakeHammer
+    ESClass: -1
+    ESAction: 1530
+    ESATable: ESAction_QuakeHammer
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 2
+    HarconPT: 2
+  - ID: 4709
+    Type: 2
+    Name: Powerful Hammer
+    SkillCardID: 31308
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_HammerAp
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1551
+    ESATable: ESAction_HammerAp
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4801
+    Type: 1
+    Name: Crazy Hammer
+    SkillCardID: 31400
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CrazyHammer
+    ESAction: 1532
+    ESATable: ESAction_CrazyHammer
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4802
+    Type: 3
+    Name: Invisible Defence
+    SkillCardID: 31401
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIITable: ESAII_StrongDefense
+    ESAction: 1534
+    ESATable: ESAction_StrongDefense
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4803
+    Type: 2
+    Name: Over Swing
+    SkillCardID: 31402
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_OverSwing
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1535
+    ESATable: ESAction_OverSwing
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4804
+    Type: 4
+    Name: Crazy Hammer II
+    SkillCardID: 31403
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_DoubleCrazy
+    ESAction: 1536
+    ESATable: ESAction_DoubleCrazy
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4805
+    Type: 3
+    Name: Mole Hammer
+    SkillCardID: 31404
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_BbongHammer
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1537
+    ESATable: ESAction_BbongHammer
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 65552
+    HarconPT: 4
+  - ID: 4806
+    Type: 4
+    Name: Crazy Hammer III
+    SkillCardID: 31405
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_TripleCrazy
+    ESAction: 1538
+    ESATable: ESAction_TripleCrazy
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4807
+    Type: 2
+    Name: Flying Hammer
+    SkillCardID: 31406
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_FlyHammer
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: -1
+    ESAction: 1539
+    ESATable: ESAction_FlyHammer
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4901
+    Type: 3
+    Name: Aura of Anger
+    SkillCardID: 31500
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_AngerEnergy
+    ESAction: 1540
+    ESATable: ESAction_AngerEnergy
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4902
+    Type: 3
+    Name: Strong Arms
+    SkillCardID: 31501
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_StrongForearm
+    ESAction: 1541
+    ESATable: ESAction_StrongForearm
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4903
+    Type: 3
+    Name: Last Defence
+    SkillCardID: 31502
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_GoodDefence
+    ESAction: 1542
+    ESATable: ESAction_GoodDefence
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 2
+  - ID: 4904
+    Type: 3
+    Name: Bear Attack
+    SkillCardID: 31503
+    SkillOption: 514
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_BearAttack
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1543
+    ESATable: ESAction_BearAttack
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    DebuffBitCode: 327680
+    HarconPT: 4
+  - ID: 4905
+    Type: 3
+    Name: Best Shield
+    SkillCardID: 31504
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 4
+    QuestType: 1
+    ESAIITable: ESAII_BestShield
+    ESClass: 3
+    ESAction: 1544
+    ESATable: ESAction_BestShield
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+    HarconPT: 1
+  - ID: 4906
+    Type: 2
+    Name: Rain of Hammers
+    SkillCardID: 31505
+    SkillOption: 544
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_HighSpeedDrop
+    ESClass: -1
+    ESAction: 1546
+    ESATable: ESAction_HighSpeedDrop
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4907
+    Type: 3
+    Name: Hammer Spin
+    SkillCardID: 31506
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIITable: ESAII_HammerWheel
+    ESAction: 1547
+    ESATable: ESAction_HammerWheel
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4908
+    Type: 4
+    Name: Crazy Hammer IV
+    SkillCardID: 31507
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIITable: ESAII_QuadrupleCrazy
+    ESAction: 1548
+    ESATable: ESAction_QuadrupleCrazy
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4909
+    Type: 1
+    Name: Hammer Spin Booster
+    SkillCardID: 31508
+    SkillOption: 2
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_FireWheel
+    ESClass: -1
+    ESAction: 1549
+    ESATable: ESAction_FireWheel
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 4910
+    Type: 4
+    Name: Crazy Hammer V
+    SkillCardID: 31509
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 5
+    QuestType: 1
+    ESAIITable: ESAII_QuintupleCrazy
+    ESAction: 1550
+    ESATable: ESAction_QuintupleCrazy
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5001
+    Type: 2
+    Name: Fairy's Fireworks
+    SkillCardID: 31001
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_FireOfPerry
+    ESClass: -1
+    ESAction: 1121
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5002
+    Type: 2
+    Name: White Pearl
+    SkillCardID: 31002
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_WhitePearl
+    ESClass: -1
+    ESAction: 1124
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5003
+    Type: 2
+    Name: Choco of Love
+    SkillCardID: 31003
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LovelyChoco
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: -1
+    ESAction: 1137
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5004
+    Type: 2
+    Name: White Splash
+    SkillCardID: 31004
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_WhiteSplash
+    ESClass: -1
+    ESAction: 1179
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5005
+    Type: 2
+    Name: Butterfly
+    SkillCardID: 31005
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_ButterFly
+    ESClass: -1
+    ESAction: 1180
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5007
+    Type: 2
+    Name: Suprise Poppuri
+    SkillCardID: 31007
+    SkillOption: 32
+    AffectionRel: 16
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_AwakePopuri
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: -1
+    ESAction: 1197
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5008
+    Type: 2
+    Name: The Winner Firecracker
+    SkillCardID: 31008
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_FireCracker
+    ESAUI: 10
+    ESClass: -1
+    ESAction: 1209
+    SpellType: 1
+    eSkillSymbolType: 1
+    StateType: 1
+    UseStyle: 65536
+  - ID: 5009
+    Type: 2
+    Name: Heart Spring
+    SkillCardID: 31009
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_HeartBomb
+    ESClass: -1
+    ESAction: 1222
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5010
+    Type: 3
+    Name: 1st Anniversary Skill
+    SkillCardID: 31010
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_FirstAnniversary
+    ESAction: 1223
+    ESATable: ESAction_FirstAnniversary
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 5011
+    Type: 2
+    Name: Thump Up
+    SkillCardID: 31011
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_NumberOne
+    ESClass: -1
+    ESAction: 1224
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5012
+    Type: 2
+    Name: Little Cora Song
+    SkillCardID: 31012
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DancingCora
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: -1
+    ESAction: 1291
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5013
+    Type: 3
+    Name: 2nd Anniversary Skill
+    SkillCardID: 31013
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_2stAnniversary
+    ESAction: 1300
+    ESATable: ESAction_2stAnniversary
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 5014
+    Type: 2
+    Name: Flower Biscuit
+    SkillCardID: 31014
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_BiscuitFlower
+    ESClass: -1
+    ESAction: 1307
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5015
+    Type: 2
+    Name: Foam Fire
+    SkillCardID: 31015
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Bubble
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: -1
+    ESAction: 1306
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5016
+    Type: 2
+    Name: 3rd Anniversary Card
+    SkillCardID: 31016
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_3rdAnniversary
+    ESAction: 1349
+    ESATable: ESAction_3rdAnniversary
+    SpellType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 5017
+    Type: 3
+    Name: Match Lighting
+    SkillCardID: 31017
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_LightOfMatch
+    ESAction: 1387
+    ESATable: ESAction_LightOfMatch
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 5019
+    Type: 1
+    Name: Crazy Drilling
+    SkillCardID: 31019
+    SkillOption: 32
+    MaxSKLV: 1
+    ESClass: -1
+    ESAction: 1000
+    SpellType: 1
+    SkillExp: 1
+    PSAbility: 11
+    Grade: 100
+    StateType: 1
+    UseStyle: 32768
+  - ID: 5020
+    Type: 3
+    Name: Half Heart(Male)
+    SkillCardID: 31020
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_HeartM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1400
+    ESATable: ESAction_HeartM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5021
+    Type: 3
+    Name: Half Heart(Female)
+    SkillCardID: 31021
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_HeartW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1401
+    ESATable: ESAction_HeartW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5022
+    Type: 3
+    Name: I Love You(Male)
+    SkillCardID: 31022
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LoveM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1402
+    ESATable: ESAction_LoveM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5023
+    Type: 3
+    Name: I Love You(Female)
+    SkillCardID: 31023
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LoveW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1403
+    ESATable: ESAction_LoveW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5024
+    Type: 3
+    Name: Candle Heart(Male)
+    SkillCardID: 31024
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CandleM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1404
+    ESATable: ESAction_CandleM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5025
+    Type: 3
+    Name: Candle Heart(Female)
+    SkillCardID: 31025
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CandleW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1405
+    ESATable: ESAction_CandleW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5026
+    Type: 3
+    Name: Rose Heart(Male)
+    SkillCardID: 31026
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_RoseM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1406
+    ESATable: ESAction_RoseM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5027
+    Type: 3
+    Name: Rose Heart(Female)
+    SkillCardID: 31027
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_RoseW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1407
+    ESATable: ESAction_RoseW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5028
+    Type: 3
+    Name: Wish Heart(Male)
+    SkillCardID: 31028
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WishM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1408
+    ESATable: ESAction_WishM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5029
+    Type: 3
+    Name: Wish Heart(Female)
+    SkillCardID: 31029
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WishW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1409
+    ESATable: ESAction_WishW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5030
+    Type: 3
+    Name: Balloon Heart(Male)
+    SkillCardID: 31030
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_BalloonHeartM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1410
+    ESATable: ESAction_BalloonHeartM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5031
+    Type: 3
+    Name: Balloon Heart(Female)
+    SkillCardID: 31031
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_BalloonHeartW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1411
+    ESATable: ESAction_BalloonHeartW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5032
+    Type: 3
+    Name: Heart Cloud(Male)
+    SkillCardID: 31032
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CloudHeartM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1412
+    ESATable: ESAction_CloudHeartM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5033
+    Type: 3
+    Name: Heart Cloud(Female)
+    SkillCardID: 31033
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_CloudHeartW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1413
+    ESATable: ESAction_CloudHeartW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5034
+    Type: 3
+    Name: Flying Hearts(Male)
+    SkillCardID: 31034
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WingHeartM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1414
+    ESATable: ESAction_WingHeartM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5035
+    Type: 3
+    Name: Flying Hearts(Female)
+    SkillCardID: 31035
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_WingHeartW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1415
+    ESATable: ESAction_WingHeartW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5036
+    Type: 3
+    Name: Gem Heart(Male)
+    SkillCardID: 31036
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_JewelHeartM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1416
+    ESATable: ESAction_JewelHeartM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5037
+    Type: 3
+    Name: Gem Heart(Female)
+    SkillCardID: 31037
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_JewelHeartW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1417
+    ESATable: ESAction_JewelHeartW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5038
+    Type: 3
+    Name: Lips(Male)
+    SkillCardID: 31038
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_lipM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1418
+    ESATable: ESAction_lipM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5039
+    Type: 3
+    Name: Lips(Female)
+    SkillCardID: 31039
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_lipW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1419
+    ESATable: ESAction_lipW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5040
+    Type: 3
+    Name: So Into You(Male)
+    SkillCardID: 31040
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SpoonsWithYouM
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1420
+    ESATable: ESAction_SpoonsWithYouM
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5041
+    Type: 3
+    Name: So Into You(Female)
+    SkillCardID: 31041
+    SkillOption: 8224
+    AffectionRel: 64
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_SpoonsWithYouW
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESAction: 1421
+    ESATable: ESAction_SpoonsWithYouW
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5043
+    Type: 2
+    Name: Full Moon oktokki
+    SkillCardID: 31043
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    ESAIITable: ESAll_MoonRabbit
+    ESClass: -1
+    ESAction: 1451
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 5047
+    Type: 3
+    Name: Soul energy weapon (weapons)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESAction: 1553
+    ESATable: ESAction_SoulGoodBuff
+    UseStyle: 65536
+  - ID: 5048
+    Type: 3
+    Name: Soul energy weapon (hat)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESAction: 1554
+    ESATable: ESAction_SoulGoodBuff
+    UseStyle: 65536
+  - ID: 5049
+    Type: 3
+    Name: Soul energy weapons (shield)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESAction: 1555
+    ESATable: ESAction_SoulGoodBuff
+    UseStyle: 65536
+  - ID: 5050
+    Type: 3
+    Name: Soul energy weapon (Accessorize)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESAction: 1556
+    ESATable: ESAction_SoulGoodBuff
+    UseStyle: 65536
+  - ID: 5051
+    Type: 3
+    Name: Taroseu aura of deionized (weapon)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1553
+    ESATable: ESAction_SoulBadBuff
+    UseStyle: 65536
+  - ID: 5052
+    Type: 3
+    Name: De taroseu energy (cap) of
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1554
+    ESATable: ESAction_SoulBadBuff
+    UseStyle: 65536
+  - ID: 5053
+    Type: 3
+    Name: Taroseu aura of deionized (shield)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1555
+    ESATable: ESAction_SoulBadBuff
+    UseStyle: 65536
+  - ID: 5054
+    Type: 3
+    Name: Taroseu aura of deionized (Accessorize)
+    MaxSKLV: 11
+    QuestType: 1
+    ESAIC: 1
+    ESAUI: 1
+    ESClass: 1
+    ESAction: 1556
+    ESATable: ESAction_SoulBadBuff
+    UseStyle: 65536
+  - ID: 5101
+    Type: 2
+    Name: M Cure
+    SkillOption: 16
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESAIITable: ESAII_CardMagicM1
+    ESClass: -1
+    ESAction: 1131
+    ESATable: ESAction_Mon_Heal
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 10
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5102
+    Type: 2
+    Name: Marrow Rush
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_ChainArrow
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1132
+    ESATable: ESAction_Mon_ChainArrow
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5103
+    Type: 2
+    Name: M Mana Ring
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_MagicRing
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1133
+    ESATable: ESAction_Mon_MagicRing
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5104
+    Type: 2
+    Name: M Mana Storm
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_MagicStorm
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1134
+    ESATable: ESAction_Mon_MagicStorm
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5105
+    Type: 2
+    Name: M Fire Breath
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_Apocalypse
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1135
+    ESATable: ESAction_Mon_Apocalypse
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5106
+    Type: 2
+    Name: M Thunder Breath
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_ThunderBreath
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1136
+    ESATable: ESAction_Mon_ThunderBreath
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5107
+    Type: 3
+    Name: M Guard Break
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_DefenseParalysis
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: 1
+    ESAction: 1225
+    ESATable: ESAction_Mon_Defense_Paralysis
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 522
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5108
+    Type: 3
+    Name: M Faint
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_PowerStun
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: 1
+    ESAction: 1226
+    ESATable: ESAction_Mon_PowerStun
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 621
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5109
+    Type: 2
+    Name: M Lacerator
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_SharpBrandish
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1227
+    ESATable: ESAction_Mon_SharpBrandish
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5110
+    Type: 3
+    Name: M Berserker
+    SkillCardID: 27203
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Mon_Berserk
+    ESAction: 1228
+    ESATable: ESAction_Mon_Berserk
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5111
+    Type: 2
+    Name: M Electro Attack
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_ThunderBolt
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: -1
+    ESAction: 1229
+    ESATable: ESAction_Mon_Thunderbolt
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5112
+    Type: 2
+    Name: M Cleaving Terra
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_EarthDivide
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1230
+    ESATable: ESAction_Mon_EarthDivide
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5113
+    Type: 2
+    Name: M Wind Blade
+    SkillCardID: 27203
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Mon_WindSlash
+    ESClass: -1
+    ESAction: 1231
+    ESATable: ESAction_Mon_WindSlash
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5114
+    Type: 3
+    Name: M Water Web
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_WaterNet
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: 1
+    ESAction: 1232
+    ESATable: ESAction_Mon_WaterNet
+    SpellType: 1
+    eSkillSymbolType: 3
+    Element: 6
+    Grade: 929
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5115
+    Type: 3
+    Name: M Electroshock
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_ElectricShock
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Power
+    ESClass: 1
+    ESAction: 1233
+    ESATable: ESAction_Mon_ElectricShock
+    SpellType: 1
+    eSkillSymbolType: 6
+    Element: 2
+    Grade: 721
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5116
+    Type: 2
+    Name: M Incinerate
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_FireExplosion
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1234
+    ESATable: ESAction_Mon_FireExplosion
+    SpellType: 1
+    eSkillSymbolType: 2
+    Element: 3
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5117
+    Type: 2
+    Name: M Summon Boulder
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_RockSummons
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1235
+    ESATable: ESAction_Mon_RockSummons
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 4
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5118
+    Type: 3
+    Name: M Whirlwind
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_WhirlWind
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicM1
+    ESClass: 1
+    ESAction: 1236
+    ESATable: ESAction_Mon_WhirlWind
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5119
+    Type: 3
+    Name: M Wicked Flame
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_CruelFlame
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicM1
+    ESClass: 1
+    ESAction: 1237
+    ESATable: ESAction_Mon_CruelFlame
+    SpellType: 1
+    eSkillSymbolType: 8
+    Element: 8
+    Grade: 421
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5120
+    Type: 2
+    Name: M Light Wave
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_LightWave
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1238
+    ESATable: ESAction_Mon_LightWave
+    SpellType: 1
+    eSkillSymbolType: 7
+    Element: 7
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5121
+    Type: 2
+    Name: M Siren Song
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Mon_Siren
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_CardMagicP1
+    ESClass: -1
+    ESAction: 1239
+    ESATable: ESAction_Mon_Siren
+    eSkillSymbolType: 1
+    Element: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5122
+    Type: 3
+    Name: M Super Hips
+    SkillCardID: 27203
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Mon_FluentWaist
+    ESAction: 1240
+    ESATable: ESAction_Mon_FluentWaist
+    SpellType: 1
+    eSkillSymbolType: 1
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5123
+    Type: 3
+    Name: M Warp
+    SkillOption: 19
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    ESAIITable: ESAII_Mon_Warp
+    ESClass: -1
+    ESAction: 1295
+    ESATable: ESAction_Mon_Warp
+    SpellType: 1
+    eSkillSymbolType: 5
+    Element: 5
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5124
+    Type: 2
+    Name: M Impelling Rage
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Mon_Charging
+    ESClass: -1
+    ESAction: 1292
+    ESATable: ESAction_Mon_Charging
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5125
+    Type: 2
+    Name: M Self-Destruct
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 3
+    ESAIITable: ESAII_Mon_Destruction
+    ESClass: -1
+    ESAction: 1294
+    ESATable: ESAction_Mon_Destruction
+    SpellType: 1
+    eSkillSymbolType: 4
+    Element: 5
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5126
+    Type: 3
+    Name: M Bloodsucker
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_Vampiric
+    ESAUITable: ESAUI_STO_Monster
+    ESAction: 1460
+    ESATable: ESAction_Mon_Vampiric
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5127
+    Type: 2
+    Name: M Buff Canceler
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_BuffCancler
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1461
+    ESATable: ESAction_Mon_BuffCancler
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5128
+    Type: 3
+    Name: M Guard
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_Mguard
+    ESAUITable: ESAUI_STO_Monster
+    ESAction: 1463
+    ESATable: ESAction_Mon_Mguard
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5129
+    Type: 3
+    Name: M Poison Attack
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_Mpoison
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1464
+    ESATable: ESAction_Mon_Mpoison
+    SpellType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 16
+  - ID: 5130
+    Type: 3
+    Name: M Dark Barrier
+    SkillOption: 18
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_MDarkBarrier
+    ESAUITable: ESAUI_STO_Monster
+    ESAction: 1466
+    ESATable: ESAction_Mon_MDarkBarrier
+    SpellType: 1
+    eSkillSymbolType: 1
+    Element: 9
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 5131
+    Type: 2
+    Name: Whirlwind pillar
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_Hurricane
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1510
+    ESATable: ESAction_Mon_Hurricane
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 262144
+  - ID: 5132
+    Type: 2
+    Name: Tornado Storm Column
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_HurricaneStorm
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1511
+    ESATable: ESAction_Mon_HurricaneStorm
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 101
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 262144
+  - ID: 5133
+    Type: 2
+    Name: Pressure blast
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_Pressure
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1513
+    ESATable: ESAction_Mon_Pressure
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 102
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 512
+  - ID: 5134
+    Type: 2
+    Name: Huge explosion pressure
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_GiantPressure
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1514
+    ESATable: ESAction_Mon_GiantPressure
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 103
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 512
+  - ID: 5135
+    Type: 2
+    Name: Deadline collapse
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_TimeBreak
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1516
+    ESATable: ESAction_Mon_TimeBreak
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 104
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5136
+    Type: 2
+    Name: Explosion deadline
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_TimeBomb
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1517
+    ESATable: ESAction_Mon_TimeBomb
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 105
+    StateType: 1
+    UseStyle: 4096
+  - ID: 5137
+    Type: 2
+    Name: Intense light
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_BrillantLight
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1519
+    ESATable: ESAction_Mon_BrillantLight
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 106
+    StateType: 1
+    UseStyle: 8192
+    DebuffBitCode: 73728
+  - ID: 5138
+    Type: 2
+    Name: The plague of Kronos
+    SkillOption: 18
+    AffectionRel: 32
+    bLevelUp: true
+    MaxSKLV: 11
+    MasterTMPoint: 2
+    QuestType: 1
+    ESAIITable: ESAII_Mon_CronosImpact
+    ESAUITable: ESAUI_STO_Monster
+    ESClass: 1
+    ESAction: 1521
+    ESATable: ESAction_Mon_CronosImpact
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 107
+    StateType: 1
+    UseStyle: 4096
+  - ID: 7001
+    Type: 3
+    Name: AP Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_APUpScroll
+    ESClass: 4
+    ESAction: 1301
+    ESATable: ESAction_APUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7002
+    Type: 3
+    Name: MA Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_MAUpScroll
+    ESClass: 4
+    ESAction: 1302
+    ESATable: ESAction_MAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7003
+    Type: 3
+    Name: LK Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_LKUpScroll
+    ESClass: 4
+    ESAction: 1303
+    ESATable: ESAction_LKUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7004
+    Type: 3
+    Name: HV Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_HVUpScroll
+    ESClass: 4
+    ESAction: 1304
+    ESATable: ESAction_HVUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7005
+    Type: 3
+    Name: DA Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_DAUpScroll
+    ESClass: 4
+    ESAction: 1305
+    ESATable: ESAction_DAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7007
+    Type: 3
+    Name: Heart Scroll
+    SkillOption: 32
+    AffectionRel: 16
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_RainOfHeart_Scroll
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Magic
+    ESClass: 4
+    ESAction: 1334
+    ESATable: ESAction_RainOfHeart_Scroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7008
+    Type: 2
+    Name: Fairy's Fireworks
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_FireOfPerry
+    ESClass: 6
+    ESAction: 1121
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7009
+    Type: 2
+    Name: White Pearl
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_WhitePearl
+    ESClass: 6
+    ESAction: 1124
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7010
+    Type: 2
+    Name: Choco of Love
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_LovelyChoco
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1137
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7011
+    Type: 2
+    Name: White Splash
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_WhiteSplash
+    ESClass: 6
+    ESAction: 1179
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7012
+    Type: 2
+    Name: Butterfly
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_ButterFly
+    ESClass: 6
+    ESAction: 1180
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7013
+    Type: 2
+    Name: Ghost Busted
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_TemptationOfSoul
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1181
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7014
+    Type: 2
+    Name: Suprise Poppuri
+    SkillOption: 32
+    AffectionRel: 16
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_AwakePopuri
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1197
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7015
+    Type: 2
+    Name: The Winner Firecracker
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 3
+    ESAIITable: ESAII_FireCracker
+    ESAUI: 10
+    ESClass: 6
+    ESAction: 1209
+    SpellType: 1
+    eSkillSymbolType: 1
+    StateType: 1
+    UseStyle: 65536
+  - ID: 7016
+    Type: 2
+    Name: Heart Spring
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_HeartBomb
+    ESClass: 6
+    ESAction: 1222
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7017
+    Type: 3
+    Name: 1st Anniversary Skill
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_FirstAnniversary
+    ESClass: 6
+    ESAction: 1223
+    ESATable: ESAction_FirstAnniversary
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 7018
+    Type: 2
+    Name: Thump Up
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_NumberOne
+    ESClass: 6
+    ESAction: 1224
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7019
+    Type: 2
+    Name: Little Cora Song
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_DancingCora
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1291
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7020
+    Type: 3
+    Name: 2nd Anniversary Skill
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_2stAnniversary
+    ESClass: 6
+    ESAction: 1300
+    ESATable: ESAction_2stAnniversary
+    SpellType: 1
+    eSkillSymbolType: 1
+    SkillExp: 1
+    Grade: 100
+    UseStyle: 65536
+  - ID: 7021
+    Type: 2
+    Name: Flower Biscuit
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_BiscuitFlower
+    ESClass: 6
+    ESAction: 1307
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7022
+    Type: 2
+    Name: Foam Fire
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIC: 2
+    ESAIITable: ESAII_Bubble
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1306
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7024
+    Type: 2
+    Name: Star Dust Kiss
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_WhiteSplash
+    ESClass: 6
+    ESAction: 1366
+    SpellType: 1
+    eSkillSymbolType: 1
+    UseStyle: 65536
+  - ID: 7025
+    Type: 3
+    Name: Basic Detection Scroll
+    SkillOption: 546
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_BasicDetector
+    ESClass: 4
+    ESAction: 1170
+    ESATable: ESAction_BasicDetectorSC
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7026
+    Type: 3
+    Name: Super Detection Scroll
+    SkillOption: 546
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_ItemDetector
+    ESAUI: 6
+    ESAUITable: ESAUI_STC_ItemDetector
+    ESClass: 4
+    ESAction: 1147
+    ESATable: ESAction_ItemDetectorSC
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7027
+    Type: 3
+    Name: Secret Scroll(AP)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_S_APUpScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_S_APUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7028
+    Type: 3
+    Name: Secret Scroll(MA)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_S_MAUpScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_S_MAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7029
+    Type: 3
+    Name: Secret Scroll(LK)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_S_LKUpScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_S_LKUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7030
+    Type: 3
+    Name: Secret Scroll(HV)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_S_HVUpScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_S_HVUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7031
+    Type: 3
+    Name: Secret Scroll(DA)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_S_DAUpScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_S_DAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7032
+    Type: 3
+    Name: Secret Scroll(AP Party)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PT_APUpScroll
+    ESClass: 5
+    ESAction: 1387
+    ESATable: ESAction_PT_APUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7033
+    Type: 3
+    Name: Secret Scroll(MA Party)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PT_MAUpScroll
+    ESClass: 5
+    ESAction: 1387
+    ESATable: ESAction_PT_MAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7034
+    Type: 3
+    Name: Secret Scroll(LK Party)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PT_LKUpScroll
+    ESClass: 5
+    ESAction: 1387
+    ESATable: ESAction_PT_LKUPScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7035
+    Type: 3
+    Name: Secret Scroll(HV Party)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PT_HVUpScroll
+    ESClass: 5
+    ESAction: 1387
+    ESATable: ESAction_PT_HVUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7036
+    Type: 3
+    Name: Secret Scroll(DA Party)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PT_DAUpScroll
+    ESClass: 5
+    ESAction: 1387
+    ESATable: ESAction_PT_DAUpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7037
+    Type: 3
+    Name: Secret Scroll(Power)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_AttackScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_AttackScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7038
+    Type: 3
+    Name: Secret Scroll(Magic)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_MagicScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_MagicScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7039
+    Type: 3
+    Name: Secret Scroll(Sense)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_SenseScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_SenseScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7040
+    Type: 3
+    Name: Secret Scroll(Charm)
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_CharmScroll
+    ESClass: 4
+    ESAction: 1387
+    ESATable: ESAction_CharmScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7041
+    Type: 3
+    Name: Warp Defense Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PWarpScroll
+    ESClass: 4
+    ESAction: 1397
+    ESATable: ESAction_PWarpScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7042
+    Type: 3
+    Name: Protection Scroll
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PStunScroll
+    ESClass: 4
+    ESAction: 1398
+    ESATable: ESAction_PStunScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7043
+    Type: 3
+    Name: Scroll of the Resolute
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PExDieScroll
+    ESClass: 4
+    ESAction: 1399
+    ESATable: ESAction_PExDieScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7044
+    Type: 3
+    Name: Scroll of Illumination
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_LightScroll
+    ESClass: 4
+    ESAction: 1423
+    ESATable: ESAction_LightScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7045
+    Type: 2
+    Name: Scroll of Rejuvenation
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_WideHealingScroll
+    ESClass: 4
+    ESAction: 1424
+    ESATable: ESAction_WideHealingScroll
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7046
+    Type: 3
+    Name: Party Detection Scroll
+    SkillOption: 546
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_PItemDetectScroll
+    ESAUI: 6
+    ESAUITable: ESAUI_STC_ItemDetector
+    ESClass: 4
+    ESAction: 1425
+    ESATable: ESAction_PItemDetectScroll
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    StateType: 1
+    UseStyle: 8192
+  - ID: 7049
+    Type: 2
+    Name: Happy Merry Christmas
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_2011Cristmas
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1467
+    SpellType: 1
+    UseStyle: 65536
+  - ID: 7050
+    Type: 2
+    Name: Bangle Bangle Rudolph
+    SkillOption: 32
+    AffectionRel: 17
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_DancingRudolph
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1468
+    SpellType: 1
+    UseStyle: 65536
+  - ID: 7051
+    Type: 2
+    Name: Congratulations ninth anniversary
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_2011Cristmas
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1499
+    SpellType: 1
+    UseStyle: 65536
+  - ID: 7052
+    Type: 2
+    Name: Full Moon oktokki
+    SkillOption: 32
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAll_MoonRabbit
+    ESAUITable: ESAUI_STO_Special
+    ESClass: 6
+    ESAction: 1451
+    SpellType: 1
+    UseStyle: 65536
+  - ID: 8001
+    Type: 3
+    Name: Mind's Eye
+    SkillCardID: 31101
+    SkillOption: 32
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_ThirdEye
+    ESClass: 7
+    ESAction: 1390
+    ESATable: ESAction_ThirdEye
+    SpellType: 1
+    eSkillSymbolType: 1
+  - ID: 8002
+    Type: 2
+    Name: Identification Card
+    SkillCardID: 31102
+    SkillOption: 2080
+    AffectionRel: 1
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_CardIdentify
+    ESClass: -1
+    ESAction: 1393
+    SpellType: 1
+    eSkillSymbolType: 1
+  - ID: 8003
+    Type: 3
+    Name: Guardian Summon
+    SkillCardID: 31103
+    SkillOption: 546
+    AffectionRel: 1
+    bLevelUp: true
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_SummonSoulShade
+    ESClass: 7
+    ESAction: 1394
+    ESATable: ESAction_SummonSoulShade
+    eSkillSymbolType: 1
+  - ID: 20000
+    Type: 3
+    Name: GM's Support(Attack)
+    SkillCardID: 31200
+    AffectionRel: 16
+    MaxSKLV: 1
+    ESAIITable: ESAll_GMCheer
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Charm
+    ESAction: 1452
+    ESATable: ESAction_GMCheerAttack
+    SpellType: 1
+    Grade: 20
+    UseStyle: 32768
+  - ID: 20001
+    Type: 3
+    Name: GM's Support(Defense)
+    SkillCardID: 31201
+    AffectionRel: 16
+    MaxSKLV: 1
+    ESAIITable: ESAll_GMCheer
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Charm
+    ESAction: 1455
+    ESATable: ESAction_GMCheerDefence
+    SpellType: 1
+    Grade: 20
+    UseStyle: 32768
+  - ID: 20002
+    Type: 3
+    Name: GM's Dignity(Attack)
+    SkillCardID: 31202
+    AffectionRel: 16
+    MaxSKLV: 1
+    ESAIITable: ESAll_GMCheer
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_GMCheer
+    ESAction: 1454
+    ESATable: ESAction_GMDignityAtk
+    SpellType: 1
+    Grade: 20
+    UseStyle: 32768
+  - ID: 20003
+    Type: 3
+    Name: GM's Dignity(Defense)
+    SkillCardID: 31203
+    AffectionRel: 16
+    MaxSKLV: 1
+    ESAIITable: ESAll_GMCheer
+    ESAUI: 6
+    ESAUITable: ESAUI_STO_GMCheer
+    ESAction: 1457
+    ESATable: ESAction_GMDignityDfc
+    SpellType: 1
+    Grade: 20
+    UseStyle: 32768
+  - ID: 21000
+    Type: 3
+    Name: Help of Leviathan
+    SkillOption: 32
+    AffectionRel: 16
+    MaxSKLV: 1
+    QuestType: 1
+    ESAIITable: ESAII_RainOfHeart_Scroll
+    ESAUI: 1
+    ESAUITable: ESAUI_STO_Magic
+    ESClass: 4
+    ESAction: 1500
+    ESATable: ESAction_NpcBuffer
+    SpellType: 1
+    eSkillSymbolType: 10
+    SkillExp: 1
+    Grade: 100
+    StateType: 1
+    UseStyle: 8192
+
+Footer:
+  Imports:
+#  - Path: db/import/skill_db.yml

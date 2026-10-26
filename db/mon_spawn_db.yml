@@ -1,0 +1,10894 @@
+# =============================================================================
+#   Monster Spawn Database  (MON_SPAWN_DB)
+# =============================================================================
+#
+#   The Mon_<area> tables of the ORIGINAL server data (kto_libconfig.xml, 577 tables,
+#   2111 rows), referenced by maps_db.yml MonsterTable. One record per table row, in the
+#   table's order; field names kept exactly as in the tables; a field is written only
+#   when it has a value (zero / empty left out: Avr, Max, Region default to 0).
+#
+#   Fields
+#     Table      - table name                                         [key]
+#     MonsterID  - the monster (mob_db.yml Id)
+#     Ratio      - the monster's share of the map's MonsterAvrNum (float; the
+#                  retail keeps the LAST row's Ratio of a MonsterID)
+#     Avr        - the target count in this region (0 -> MonsterAvrNum * Ratio /
+#                  the table's sum of (int)Ratio)
+#     Max        - the cap in this region
+#     Region     - the region: 0 = the map's type-3 .md3 points, else the type-6
+#                  points whose id is this region
+#     TimeTable / RetrMonNumType / RetrMonNum - unused by this data (all empty / 0)
+#
+#   Regeneration (retail MonsterManager, GameServer sub_859AA0 / sub_859760 /
+#   sub_858C90): while a map holds fewer monsters than its MonsterAvrNum, each
+#   (MonsterID, Region) below its target and its Max gets one more monster per
+#   tick, at a random point of the region; MonsterParamEx2 Type 3 is never
+#   regenerated (sub_858B00).
+# =============================================================================
+
+Header:
+  Type: MON_SPAWN_DB
+  Version: 1
+
+Body:
+  - Table: Mon_Relics
+    MonsterID: 2010
+    Ratio: 4
+    Avr: 25
+    Max: 50
+  - Table: Mon_Relics
+    MonsterID: 2011
+    Ratio: 3
+    Avr: 20
+    Max: 40
+  - Table: Mon_Relics
+    MonsterID: 2012
+    Ratio: 2
+    Avr: 10
+    Max: 20
+  - Table: Mon_Relics
+    MonsterID: 2013
+    Ratio: 1
+    Avr: 5
+    Max: 10
+  - Table: Mon_Relics
+    MonsterID: 2014
+    Avr: 2
+    Max: 5
+  - Table: Mon_Relics
+    MonsterID: 2035
+    Ratio: 1
+    Avr: 5
+    Max: 10
+  - Table: Mon_Relics
+    MonsterID: 2036
+    Avr: 2
+    Max: 5
+  - Table: Mon_Seabed
+    MonsterID: 2005
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Seabed
+    MonsterID: 2042
+    Ratio: 2
+    Avr: 23
+    Max: 23
+  - Table: Mon_Seabed
+    MonsterID: 2063
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Seabed
+    MonsterID: 16005
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed
+    MonsterID: 16107
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach
+    MonsterID: 2000
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach
+    MonsterID: 2053
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach
+    MonsterID: 16000
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Beach
+    MonsterID: 16118
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Swamp
+    MonsterID: 2015
+    Ratio: 2
+    Avr: 38
+    Max: 38
+  - Table: Mon_Swamp
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp
+    MonsterID: 2272
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Swamp
+    MonsterID: 16015
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp
+    MonsterID: 16017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano
+    MonsterID: 2027
+    Ratio: 2
+    Avr: 15
+    Max: 20
+  - Table: Mon_Volcano
+    MonsterID: 2029
+    Avr: 1
+    Max: 2
+    Region: 1
+  - Table: Mon_Volcano
+    MonsterID: 2029
+    Ratio: 1
+    Avr: 1
+    Max: 2
+  - Table: Mon_Relics_Play
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 43
+    Max: 43
+  - Table: Mon_Relics_Play
+    MonsterID: 2012
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Play
+    MonsterID: 2268
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Relics_Play
+    MonsterID: 2560
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Play
+    MonsterID: 16011
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Play
+    MonsterID: 16012
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play
+    MonsterID: 2050
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Beach_Play
+    MonsterID: 2051
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Beach_Play
+    MonsterID: 2035
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play
+    MonsterID: 16115
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play
+    MonsterID: 16116
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play
+    MonsterID: 16100
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Wharf
+    MonsterID: 2021
+    Ratio: 3
+    Avr: 7
+    Max: 10
+  - Table: Mon_Wharf
+    MonsterID: 2022
+    Ratio: 2
+    Avr: 7
+    Max: 10
+  - Table: Mon_Wharf_Play
+    MonsterID: 2015
+    Ratio: 3
+    Avr: 3
+    Max: 40
+    Region: 6
+  - Table: Mon_Wharf_Play
+    MonsterID: 2000
+    Ratio: 3
+    Avr: 5
+    Max: 40
+    Region: 1
+  - Table: Mon_Wharf_Play
+    MonsterID: 2001
+    Ratio: 3
+    Avr: 3
+    Max: 50
+    Region: 2
+  - Table: Mon_Wharf_Play
+    MonsterID: 2020
+    Ratio: 1
+    Avr: 3
+    Max: 20
+    Region: 3
+  - Table: Mon_Wharf_Play
+    MonsterID: 2022
+    Ratio: 1
+    Avr: 5
+    Max: 20
+    Region: 1
+  - Table: Mon_Wharf_Play
+    MonsterID: 2020
+    Ratio: 2
+    Avr: 5
+    Max: 30
+    Region: 4
+  - Table: Mon_Wharf_Play
+    MonsterID: 2022
+    Ratio: 1
+    Avr: 5
+    Max: 30
+    Region: 5
+  - Table: Mon_Wharf_Play
+    MonsterID: 2020
+    Ratio: 1
+    Avr: 5
+    Max: 30
+    Region: 6
+  - Table: Mon_Wharf_Play
+    MonsterID: 2022
+    Ratio: 1
+    Avr: 5
+    Max: 20
+    Region: 6
+  - Table: Mon_Wharf_Play
+    MonsterID: 2035
+    Ratio: 4
+    Avr: 5
+    Max: 50
+    Region: 7
+  - Table: Mon_Wharf_Play
+    MonsterID: 2015
+    Ratio: 2
+    Avr: 5
+    Max: 30
+    Region: 7
+  - Table: Mon_Wharf_Play
+    MonsterID: 2020
+    Ratio: 3
+    Avr: 5
+    Max: 30
+    Region: 8
+  - Table: Mon_Wharf_Play
+    MonsterID: 2036
+    Ratio: 1
+    Avr: 1
+    Max: 10
+    Region: 8
+  - Table: Mon_Wharf_Play
+    MonsterID: 2024
+    Ratio: 1
+    Avr: 5
+    Max: 10
+    Region: 9
+  - Table: Mon_Wharf_Play
+    MonsterID: 2000
+    Ratio: 2
+    Avr: 5
+    Max: 40
+    Region: 9
+  - Table: Mon_Wharf_Play
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 5
+    Max: 10
+    Region: 3
+  - Table: Mon_Beach_Play2
+    MonsterID: 2052
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Beach_Play2
+    MonsterID: 2001
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Beach_Play2
+    MonsterID: 2061
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_Play2
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play2
+    MonsterID: 16001
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play2
+    MonsterID: 16117
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play3
+    MonsterID: 2043
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play3
+    MonsterID: 2000
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play3
+    MonsterID: 2053
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play3
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play3
+    MonsterID: 16000
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play3
+    MonsterID: 16118
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Play3
+    MonsterID: 16108
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play2
+    MonsterID: 2015
+    Ratio: 2
+    Avr: 32
+    Max: 32
+  - Table: Mon_Swamp_Play2
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Swamp_Play2
+    MonsterID: 2272
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Swamp_Play2
+    MonsterID: 16015
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play2
+    MonsterID: 16016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play3
+    MonsterID: 2078
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Play3
+    MonsterID: 2044
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Play3
+    MonsterID: 2018
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Swamp_Play3
+    MonsterID: 16109
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play3
+    MonsterID: 16143
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play3
+    MonsterID: 16018
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE
+    MonsterID: 2041
+    Ratio: 3
+    Avr: 80
+    Max: 80
+  - Table: Mon_Path_SE
+    MonsterID: 2039
+    Ratio: 3
+    Avr: 80
+    Max: 80
+  - Table: Mon_Path_SE
+    MonsterID: 16106
+    Ratio: 3
+    Avr: 16
+    Max: 16
+  - Table: Mon_Path_SE
+    MonsterID: 16104
+    Ratio: 3
+    Avr: 16
+    Max: 16
+  - Table: Mon_Path_SW
+    MonsterID: 2106
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW
+    MonsterID: 2107
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW
+    MonsterID: 16172
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW
+    MonsterID: 16171
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW
+    MonsterID: 16170
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW
+    MonsterID: 2105
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_NW
+    MonsterID: 2040
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Path_NW
+    MonsterID: 2036
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_NW
+    MonsterID: 16105
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_NW
+    MonsterID: 16101
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Beach
+    MonsterID: 2038
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Beach
+    MonsterID: 2041
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Beach
+    MonsterID: 16103
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Beach
+    MonsterID: 16106
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW_Relics
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_SW_Relics
+    MonsterID: 2010
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW_Relics
+    MonsterID: 16010
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW_Relics
+    MonsterID: 16011
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW_Swamp
+    MonsterID: 2267
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW_Swamp
+    MonsterID: 2015
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_SW_Swamp
+    MonsterID: 16015
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW_Swamp
+    MonsterID: 16332
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_NW_Wharf
+    MonsterID: 2021
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_NW_Wharf
+    MonsterID: 2022
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_NW_Wharf
+    MonsterID: 16021
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_NW_Wharf
+    MonsterID: 16022
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_NW_Volcano
+    MonsterID: 2045
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Path_NW_Volcano
+    MonsterID: 2036
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_NW_Volcano
+    MonsterID: 16110
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_NW_Volcano
+    MonsterID: 16101
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play2
+    MonsterID: 2012
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Play2
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Play2
+    MonsterID: 2560
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Play2
+    MonsterID: 16012
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play2
+    MonsterID: 16013
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 2048
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 2049
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 16113
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 16114
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_SE_Seabed
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Relics_Play3
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Relics_Play3
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Relics_Play3
+    MonsterID: 2560
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Play3
+    MonsterID: 16013
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play3
+    MonsterID: 16014
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play2
+    MonsterID: 2042
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play2
+    MonsterID: 2007
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play2
+    MonsterID: 2058
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play2
+    MonsterID: 16107
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play2
+    MonsterID: 16007
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play2
+    MonsterID: 16123
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play4
+    MonsterID: 2009
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play4
+    MonsterID: 2006
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4
+    MonsterID: 16009
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play4
+    MonsterID: 16006
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play4
+    MonsterID: 16008
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play3
+    MonsterID: 2007
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play3
+    MonsterID: 2058
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play3
+    MonsterID: 2009
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play3
+    MonsterID: 16007
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play3
+    MonsterID: 16123
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play3
+    MonsterID: 16009
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 2054
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 2049
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 16114
+    Ratio: 3
+    Avr: 6
+    Max: 6
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 16119
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_SE_Seabed2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Play4
+    MonsterID: 2002
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play4
+    MonsterID: 2004
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Play4
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play4
+    MonsterID: 16004
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Play4
+    MonsterID: 16002
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Play5
+    MonsterID: 2052
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play5
+    MonsterID: 2051
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play5
+    MonsterID: 2035
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play5
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play5
+    MonsterID: 16116
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Beach_Play5
+    MonsterID: 16100
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Beach_Play5
+    MonsterID: 16117
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Beach_Play6
+    MonsterID: 2001
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Beach_Play6
+    MonsterID: 2061
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Beach_Play6
+    MonsterID: 2043
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play6
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play6
+    MonsterID: 16001
+    Ratio: 2
+    Avr: 14
+    Max: 14
+  - Table: Mon_Beach_Play6
+    MonsterID: 16108
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Beach_Play7
+    MonsterID: 2050
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play7
+    MonsterID: 2051
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Beach_Play7
+    MonsterID: 2035
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Beach_Play7
+    MonsterID: 2559
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Beach_Play7
+    MonsterID: 16115
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Beach_Play7
+    MonsterID: 16116
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Beach_Play7
+    MonsterID: 16100
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Beach_Dungeon1
+    MonsterID: 2047
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_Dungeon1
+    MonsterID: 2037
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Play4
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Relics_Play4
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play4
+    MonsterID: 2560
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Play4
+    MonsterID: 16013
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Relics_Play4
+    MonsterID: 16014
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Beach_Dungeon2
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Beach_Dungeon2
+    MonsterID: 2054
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2055
+    Ratio: 2
+    Avr: 3
+    Max: 3
+    Region: 3
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2055
+    Ratio: 2
+    Avr: 17
+    Max: 17
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2056
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2056
+    Ratio: 2
+    Avr: 3
+    Max: 3
+    Region: 4
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2056
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 7
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2056
+    Ratio: 2
+    Avr: 13
+    Max: 13
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2057
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2057
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 6
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2057
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 2057
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 16120
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 16121
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 16122
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Seabed_Dungeon2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Play4
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Swamp_Play4
+    MonsterID: 2019
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Play4
+    MonsterID: 16016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play4
+    MonsterID: 16019
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Dungeon3
+    MonsterID: 2066
+    Ratio: 2
+    Avr: 22
+    Max: 22
+  - Table: Mon_Seabed_Dungeon3
+    MonsterID: 2059
+    Ratio: 2
+    Avr: 23
+    Max: 23
+  - Table: Mon_Seabed_Dungeon3
+    MonsterID: 2067
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Seabed_Dungeon4
+    MonsterID: 2066
+    Ratio: 2
+    Avr: 18
+    Max: 18
+  - Table: Mon_Seabed_Dungeon4
+    MonsterID: 2059
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_Dungeon4
+    MonsterID: 2067
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Play5
+    MonsterID: 2060
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play5
+    MonsterID: 2069
+    Ratio: 2
+    Avr: 33
+    Max: 33
+  - Table: Mon_Seabed_Play5
+    MonsterID: 2070
+    Ratio: 2
+    Avr: 3
+    Max: 4
+    Region: 1
+  - Table: Mon_Seabed_Play5
+    MonsterID: 2070
+    Ratio: 2
+    Avr: 4
+    Max: 5
+    Region: 2
+  - Table: Mon_Beach_Play5_815
+    MonsterID: 2052
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play5_815
+    MonsterID: 2050
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Path_SE_815
+    MonsterID: 2038
+    Ratio: 3
+    Avr: 70
+    Max: 80
+  - Table: Mon_Path_SE_815
+    MonsterID: 2041
+    Ratio: 3
+    Avr: 60
+    Max: 60
+  - Table: Mon_Path_SE_815
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 250
+    Max: 300
+  - Table: Mon_Path_SE_Seabed_815
+    MonsterID: 2048
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Seabed_815
+    MonsterID: 2047
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SE_Seabed_815
+    MonsterID: 2031
+    Avr: 100
+    Max: 100
+  - Table: Mon_Seabed_Play3_815
+    MonsterID: 2006
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play3_815
+    MonsterID: 2005
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play3_815
+    MonsterID: 2032
+    Avr: 100
+    Max: 100
+  - Table: Mon_Seabed_Play4_815
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4_815
+    MonsterID: 2009
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4_815
+    MonsterID: 2032
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Relics_Play2_815
+    MonsterID: 2012
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play2_815
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play2_815
+    MonsterID: 2046
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play2_815
+    MonsterID: 2033
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Play3_815
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Play3_815
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Relics_Play3_815
+    MonsterID: 2033
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Swamp_Play2_815
+    MonsterID: 2019
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Swamp_Play2_815
+    MonsterID: 2018
+    Ratio: 3
+    Avr: 10
+    Max: 10
+  - Table: Mon_Swamp_Play2_815
+    MonsterID: 2034
+    Ratio: 2
+    Avr: 20
+    Max: 25
+  - Table: Mon_Swamp_Play2_815
+    MonsterID: 2016
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_815
+    MonsterID: 2015
+    Ratio: 1
+    Avr: 10
+    Max: 15
+  - Table: Mon_Swamp_815
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 10
+    Max: 15
+  - Table: Mon_Swamp_815
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 10
+    Max: 15
+  - Table: Mon_Swamp_815
+    MonsterID: 2034
+    Avr: 20
+    Max: 25
+  - Table: Mon_Beach_Play4_815
+    MonsterID: 2001
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_Play4_815
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 150
+    Max: 200
+  - Table: Mon_Beach_Play4_815
+    MonsterID: 2035
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_Play4_815
+    MonsterID: 2050
+    Avr: 30
+    Max: 30
+  - Table: Mon_Swamp_Play5
+    MonsterID: 2018
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Swamp_Play5
+    MonsterID: 2019
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Play5
+    MonsterID: 16018
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Play5
+    MonsterID: 16019
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 2074
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 2076
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 2077
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 16142
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 16141
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 16139
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon1
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 2076
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 2077
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 2075
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 16142
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 16141
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 16140
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 2076
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 2073
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 2074
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 16141
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 16139
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 16138
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon3
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 2076
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 2073
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 2075
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 2280
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 16140
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 16141
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 16138
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Relics_Dungeon4
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Relics_Dungeon5
+    MonsterID: 2072
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 1
+  - Table: Mon_Relics_Dungeon5
+    MonsterID: 2072
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 2
+  - Table: Mon_Path_Wharf_Play1
+    MonsterID: 2079
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Path_Wharf_Play1
+    MonsterID: 2080
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play1
+    MonsterID: 2274
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Path_Wharf_Play1
+    MonsterID: 16145
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play1
+    MonsterID: 16144
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play2
+    MonsterID: 2079
+    Ratio: 2
+    Avr: 33
+    Max: 33
+  - Table: Mon_Path_Wharf_Play2
+    MonsterID: 2274
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Path_Wharf_Play2
+    MonsterID: 2083
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play2
+    MonsterID: 16144
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play2
+    MonsterID: 16148
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 2081
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 2082
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 2083
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 16148
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 16146
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play3
+    MonsterID: 16147
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play4
+    MonsterID: 2084
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Wharf_Play4
+    MonsterID: 2085
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Wharf_Play4
+    MonsterID: 16150
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play4
+    MonsterID: 16149
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon3
+    MonsterID: 2090
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Beach_Dungeon3
+    MonsterID: 2091
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Beach_Dungeon3
+    MonsterID: 16155
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon3
+    MonsterID: 16156
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon3
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 2089
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 2088
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 2087
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 16154
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 16153
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 16152
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon5
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 2094
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 2087
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 2096
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 16152
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 16159
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 16161
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon6
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 2086
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 2092
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 2093
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 16151
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 16157
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 16158
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon4
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 2088
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 2096
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 2094
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 16153
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 16159
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 16161
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon7
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 2094
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 2087
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 2095
+    Ratio: 2
+    Avr: 22
+    Max: 22
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 16152
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 16159
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 16160
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Beach_Dungeon8
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Play6
+    MonsterID: 2065
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Swamp_Play6
+    MonsterID: 2019
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Play6
+    MonsterID: 16019
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Play6
+    MonsterID: 16130
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1
+    MonsterID: 2098
+    Ratio: 2
+    Avr: 32
+    Max: 32
+  - Table: Mon_Snow_Play1
+    MonsterID: 2099
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1
+    MonsterID: 2273
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Snow_Play1
+    MonsterID: 2563
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Play1
+    MonsterID: 16163
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1
+    MonsterID: 16164
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1
+    MonsterID: 2778
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Play2
+    MonsterID: 2100
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Snow_Play2
+    MonsterID: 2101
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Snow_Play2
+    MonsterID: 2563
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Play2
+    MonsterID: 16165
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play2
+    MonsterID: 16166
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play2
+    MonsterID: 2778
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Play3
+    MonsterID: 2100
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 2102
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 2103
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 2563
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Play3
+    MonsterID: 16165
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 16167
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 16168
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play3
+    MonsterID: 2778
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Play1_Event
+    MonsterID: 2099
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1_Event
+    MonsterID: 2098
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1_Event
+    MonsterID: 2273
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play1_Event
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Rose_Play1
+    MonsterID: 2116
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2108
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2109
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2110
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2111
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2112
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2113
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2114
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play1
+    MonsterID: 2115
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play
+    MonsterID: 2111
+    Ratio: 2
+    Avr: 22
+    Max: 22
+  - Table: Mon_Rose_Play
+    MonsterID: 2112
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play
+    MonsterID: 2271
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Rose_Play
+    MonsterID: 2562
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Rose_Play
+    MonsterID: 16176
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play
+    MonsterID: 16177
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play2
+    MonsterID: 2110
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play2
+    MonsterID: 2109
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play2
+    MonsterID: 2108
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play2
+    MonsterID: 2562
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Rose_Play2
+    MonsterID: 16175
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play2
+    MonsterID: 16174
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play2
+    MonsterID: 16173
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play3
+    MonsterID: 2113
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play3
+    MonsterID: 2114
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play3
+    MonsterID: 2115
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Rose_Play3
+    MonsterID: 2562
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Rose_Play3
+    MonsterID: 16178
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play3
+    MonsterID: 16179
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play3
+    MonsterID: 16180
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Play4
+    MonsterID: 2108
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Rose_Play4
+    MonsterID: 2115
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Rose_Play4
+    MonsterID: 2116
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Rose_Play4
+    MonsterID: 2562
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Rose_Play4
+    MonsterID: 16173
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play4
+    MonsterID: 16180
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Play4
+    MonsterID: 16181
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 2117
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 2118
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 2119
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16182
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16183
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16184
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon1
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 2118
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 2119
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 2120
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16183
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16184
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16185
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 2119
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 2120
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 2122
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16184
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16185
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16187
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon3
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 2120
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 2121
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 2122
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16185
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16186
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16187
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Dungeon4
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Play4
+    MonsterID: 2104
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play4
+    MonsterID: 2563
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Play4
+    MonsterID: 16169
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play4
+    MonsterID: 2777
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Snow_Play4
+    MonsterID: 2778
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_NW_Snow
+    MonsterID: 2028
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_NW_Snow
+    MonsterID: 2098
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_NW_Snow
+    MonsterID: 16028
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_NW_Snow
+    MonsterID: 16163
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play1
+    MonsterID: 2027
+    Ratio: 2
+    Avr: 22
+    Max: 22
+  - Table: Mon_Volcano_Play1
+    MonsterID: 2282
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Volcano_Play1
+    MonsterID: 2124
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play1
+    MonsterID: 2564
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Play1
+    MonsterID: 16027
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play1
+    MonsterID: 16189
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play2
+    MonsterID: 2027
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play2
+    MonsterID: 2282
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Volcano_Play2
+    MonsterID: 2125
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play2
+    MonsterID: 2129
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Play2
+    MonsterID: 2564
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Play2
+    MonsterID: 16027
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play2
+    MonsterID: 16190
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play2
+    MonsterID: 16194
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play3
+    MonsterID: 2126
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play3
+    MonsterID: 2127
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play3
+    MonsterID: 2128
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play3
+    MonsterID: 2564
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Play3
+    MonsterID: 16191
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play3
+    MonsterID: 16192
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play3
+    MonsterID: 16193
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play4
+    MonsterID: 2127
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play4
+    MonsterID: 2128
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Play4
+    MonsterID: 2129
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play4
+    MonsterID: 2564
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Play4
+    MonsterID: 16192
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play4
+    MonsterID: 16193
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Play4
+    MonsterID: 16194
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 2136
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 2137
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 16201
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 16202
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon1
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 2135
+    Ratio: 2
+    Avr: 18
+    Max: 18
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 2136
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 2137
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16200
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16201
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16202
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 2132
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 2131
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 16197
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 16196
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon3
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 2131
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 2133
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 2130
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16196
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16195
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16198
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon4
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 2133
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 2134
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 16198
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 16199
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon5
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Dungeon2
+    MonsterID: 2141
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 2167
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Wharf_Dungeon1
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 14
+  - Table: Mon_Wharf_Dungeon3
+    MonsterID: 2140
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon4
+    MonsterID: 2139
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon5
+    MonsterID: 2142
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Path_NW_Wharf2
+    MonsterID: 2143
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_NW_Wharf2
+    MonsterID: 2144
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Dungeon6
+    MonsterID: 2159
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon6
+    MonsterID: 2165
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 2146
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 2145
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16210
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16211
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon1
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 2146
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 2147
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16211
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16212
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 2147
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 2148
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16212
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16213
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon3
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 2149
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 2064
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16214
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16129
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon4
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 2064
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 2150
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16129
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16215
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon5
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 2150
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 2151
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16215
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16216
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Swamp_Dungeon6
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Seabed_0813
+    MonsterID: 2005
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_0813
+    MonsterID: 2042
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_0813
+    MonsterID: 2063
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_0813
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Seabed_Play4_0813
+    MonsterID: 2009
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play4_0813
+    MonsterID: 2006
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Play4_0813
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Seabed_Play4_0813
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play_0813
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 23
+    Max: 23
+  - Table: Mon_Relics_Play_0813
+    MonsterID: 2012
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play_0813
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Play_0813
+    MonsterID: 2268
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Relics_Play4_0813
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Play4_0813
+    MonsterID: 2014
+    Avr: 20
+    Max: 20
+    RetrMonNumType: 1
+  - Table: Mon_Relics_Play4_0813
+    MonsterID: 2013
+    Avr: 20
+    Max: 20
+    RetrMonNumType: 1
+  - Table: Mon_Swamp_0813
+    MonsterID: 2015
+    Ratio: 1
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_0813
+    MonsterID: 2272
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_0813
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_0813
+    MonsterID: 2156
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Swamp_Play4_0813
+    MonsterID: 2019
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Play4_0813
+    MonsterID: 2156
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Swamp_Play4_0813
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2081
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2079
+    Ratio: 3
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2080
+    Ratio: 3
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2083
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2082
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Path_Wharf_Play2_0813
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_Wharf_Play3_0813
+    MonsterID: 2081
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play3_0813
+    MonsterID: 2082
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play3_0813
+    MonsterID: 2083
+    Ratio: 3
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play3_0813
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2004
+    Ratio: 4
+    Avr: 5
+    Max: 5
+    Region: 10
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 3
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 3
+    Avr: 5
+    Max: 5
+    Region: 4
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 2
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 4
+    Avr: 5
+    Max: 5
+    Region: 1
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2004
+    Ratio: 3
+    Avr: 5
+    Max: 5
+    Region: 9
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 1
+    Avr: 5
+    Max: 5
+    Region: 7
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2004
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 7
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2004
+    Ratio: 3
+    Avr: 5
+    Max: 5
+    Region: 8
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 4
+    Avr: 5
+    Max: 5
+    Region: 2
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 5
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 6
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2004
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2043
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2043
+    Ratio: 2
+    Avr: 3
+    Max: 3
+    Region: 11
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2043
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Beach_Play_0813
+    MonsterID: 2158
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Beach_0813
+    MonsterID: 2039
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_0813
+    MonsterID: 2002
+    Ratio: 3
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_0813
+    MonsterID: 2040
+    Avr: 10
+    Max: 10
+  - Table: Mon_Beach_0813
+    MonsterID: 2158
+    Avr: 80
+    Max: 80
+  - Table: Mon_Path_SE_0813
+    MonsterID: 2038
+    Ratio: 3
+    Avr: 100
+    Max: 100
+  - Table: Mon_Path_SE_0813
+    MonsterID: 2041
+    Ratio: 3
+    Avr: 100
+    Max: 100
+  - Table: Mon_Path_SE_0813
+    MonsterID: 2158
+    Ratio: 2
+    Avr: 150
+    Max: 150
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 2167
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Wharf_Dungeon7
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Wharf_Dungeon8
+    MonsterID: 2161
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon9
+    MonsterID: 2160
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon10
+    MonsterID: 2162
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon11
+    MonsterID: 2163
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Wharf_Dungeon12
+    MonsterID: 2159
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon12
+    MonsterID: 2165
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 2167
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Wharf_Dungeon13
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Wharf_Dungeon14
+    MonsterID: 2170
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon15
+    MonsterID: 2166
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon16
+    MonsterID: 2168
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon17
+    MonsterID: 2169
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Wharf_Dungeon18
+    MonsterID: 2165
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon18
+    MonsterID: 2159
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 2171
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Wharf_Dungeon19
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Wharf_Dungeon20
+    MonsterID: 2174
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon20
+    MonsterID: 2175
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon21
+    MonsterID: 2172
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Wharf_Dungeon21
+    MonsterID: 2173
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Beach_Dungeon9
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 15
+    Max: 30
+  - Table: Mon_Beach_Dungeon9
+    MonsterID: 2054
+    Ratio: 2
+    Avr: 15
+    Max: 30
+  - Table: Mon_Path_NW_Volcano3
+    MonsterID: 2025
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_NW_Volcano3
+    MonsterID: 2026
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_NW_Volcano3
+    MonsterID: 16025
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_NW_Volcano3
+    MonsterID: 16026
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_NW_Volcano4
+    MonsterID: 2026
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_NW_Volcano4
+    MonsterID: 2080
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_NW_Volcano4
+    MonsterID: 16026
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_NW_Volcano4
+    MonsterID: 16145
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play1
+    MonsterID: 2184
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Coral_Play1
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play1
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play1
+    MonsterID: 2190
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Coral_Play2
+    MonsterID: 2188
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Coral_Play2
+    MonsterID: 2189
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Coral_Dungeon1
+    MonsterID: 2037
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Coral_Dungeon1
+    MonsterID: 2047
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Coral_Dungeon2
+    MonsterID: 2003
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 2
+  - Table: Mon_Coral_Dungeon2
+    MonsterID: 2037
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 1
+  - Table: Mon_Coral_Dungeon2
+    MonsterID: 16003
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Dungeon2
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Play2_0813
+    MonsterID: 2109
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play2_0813
+    MonsterID: 2110
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play2_0813
+    MonsterID: 2108
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play2_0813
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 46
+    Max: 46
+  - Table: Mon_Rose_Play3_0813
+    MonsterID: 2113
+    Ratio: 2
+    Avr: 4
+    Max: 5
+  - Table: Mon_Rose_Play3_0813
+    MonsterID: 2114
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play3_0813
+    MonsterID: 2115
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play3_0813
+    MonsterID: 2108
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Rose_Play3_0813
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 46
+    Max: 46
+  - Table: Mon_Coral_Play3
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 50
+    Max: 50
+    Region: 1
+  - Table: Mon_Coral_Play3
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 50
+    Max: 50
+    Region: 2
+  - Table: Mon_Coral_Play3
+    MonsterID: 16248
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 3
+  - Table: Mon_Coral_Play3
+    MonsterID: 16250
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 4
+  - Table: Mon_Coral_Play3
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 5
+  - Table: Mon_Coral_Play3
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 6
+  - Table: Mon_Coral_Play4
+    MonsterID: 2184
+    Ratio: 2
+    Avr: 50
+    Max: 50
+    Region: 1
+  - Table: Mon_Coral_Play4
+    MonsterID: 2188
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play4
+    MonsterID: 2186
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Coral_Play4
+    MonsterID: 16251
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play4
+    MonsterID: 16253
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play4
+    MonsterID: 16249
+    Ratio: 2
+    Avr: 14
+    Max: 14
+  - Table: Mon_Coral_Play4
+    MonsterID: 2188
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Coral_Play4
+    MonsterID: 2186
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Coral_Play5
+    MonsterID: 2020
+    Ratio: 2
+    Avr: 70
+    Max: 70
+    Region: 1
+  - Table: Mon_Coral_Play5
+    MonsterID: 2187
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Coral_Play5
+    MonsterID: 2189
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play5
+    MonsterID: 16020
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play5
+    MonsterID: 16252
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play5
+    MonsterID: 16254
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play6
+    MonsterID: 2186
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Coral_Play6
+    MonsterID: 2187
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Coral_Play6
+    MonsterID: 2189
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Coral_Play6
+    MonsterID: 16251
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Coral_Play6
+    MonsterID: 16252
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Coral_Play6
+    MonsterID: 16254
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 2176
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 2180
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 16241
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 16245
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon1
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 2178
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 2181
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 16243
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 16246
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon2
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 2179
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 2181
+    Ratio: 2
+    Avr: 18
+    Max: 18
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 2182
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 2416
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 16244
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 16246
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 16247
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon3
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 2177
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 2179
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 2180
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 16242
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 16244
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 16245
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon4
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 2176
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 2178
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 16241
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 16243
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon5
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 2171
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Wharf_Dungeon22
+    MonsterID: 3365
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Wharf_Dungeon23
+    MonsterID: 2198
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Wharf_Dungeon23
+    MonsterID: 2199
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Wharf_Dungeon24
+    MonsterID: 2196
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Wharf_Dungeon24
+    MonsterID: 2197
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Coral_Play1_0214
+    MonsterID: 2184
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Coral_Play1_0214
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Coral_Play1_0214
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Coral_Play1_0214
+    MonsterID: 2190
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Coral_Play1_0214
+    MonsterID: 2153
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Coral_Play3_0214
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play3_0214
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Play3_0214
+    MonsterID: 2153
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Seabed_Play6
+    MonsterID: 2200
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Seabed_Play6
+    MonsterID: 2223
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Relics_Play5
+    MonsterID: 2203
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Relics_Play5
+    MonsterID: 2224
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play5
+    MonsterID: 2204
+    Ratio: 2
+    Avr: 55
+    Max: 55
+  - Table: Mon_Rose_Play5
+    MonsterID: 2225
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Wharf_Play1
+    MonsterID: 2192
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Play1
+    MonsterID: 2193
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Play1
+    MonsterID: 16257
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play1
+    MonsterID: 16258
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play2
+    MonsterID: 2192
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Wharf_Play2
+    MonsterID: 2191
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play2
+    MonsterID: 16257
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play2
+    MonsterID: 16256
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play3
+    MonsterID: 2193
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Wharf_Play3
+    MonsterID: 2191
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Play3
+    MonsterID: 2192
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Wharf_Play3
+    MonsterID: 16257
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play3
+    MonsterID: 16258
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play3
+    MonsterID: 16256
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play4
+    MonsterID: 2194
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Wharf_Play4
+    MonsterID: 2195
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play4
+    MonsterID: 2269
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Play4
+    MonsterID: 16259
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wharf_Play4
+    MonsterID: 16260
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_TestZone
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Seabed_Dungeon5
+    MonsterID: 2295
+    Ratio: 3
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon10
+    MonsterID: 2097
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_wtest_01
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2009
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2010
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2012
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2015
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_01
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2019
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2025
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2026
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2028
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2036
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2064
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2065
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2116
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2130
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_02
+    MonsterID: 2131
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2102
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2104
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2134
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2179
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2135
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2136
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2137
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2083
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2081
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_03
+    MonsterID: 2082
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2118
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2119
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2120
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2121
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2122
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2125
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2126
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2127
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2128
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_04
+    MonsterID: 2129
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_wtest_05
+    MonsterID: 2097
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2072
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2152
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2138
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2068
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2123
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_wtest_05
+    MonsterID: 2029
+    Ratio: 2
+    Avr: 20
+    Max: 30
+  - Table: Mon_Wharf_Dungeon25
+    MonsterID: 2205
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon25
+    MonsterID: 2226
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon7
+    MonsterID: 2152
+    Ratio: 3
+    Avr: 1
+    Max: 1
+  - Table: Mon_Volcano_Play5
+    MonsterID: 3030
+    Ratio: 3
+    Avr: 1
+    Max: 1
+  - Table: Mon_Rose_Dungeon6
+    MonsterID: 2138
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Snow_Play5
+    MonsterID: 2206
+    Ratio: 2
+    Avr: 55
+    Max: 55
+  - Table: Mon_Snow_Play5
+    MonsterID: 2227
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Snow_Dungeon5
+    MonsterID: 2123
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Dungeon26
+    MonsterID: 2214
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Play5
+    MonsterID: 2213
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Coral_Play7
+    MonsterID: 2215
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Path_Wharf_Play5
+    MonsterID: 2216
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Play6_Halloween
+    MonsterID: 2001
+    Ratio: 2
+    Avr: 110
+    Max: 110
+  - Table: Mon_Beach_Play6_Halloween
+    MonsterID: 2061
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Beach_Play6_Halloween
+    MonsterID: 2153
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Seabed_Halloween
+    MonsterID: 2006
+    Ratio: 1
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Halloween
+    MonsterID: 2008
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Seabed_Halloween
+    MonsterID: 2009
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_Halloween
+    MonsterID: 2031
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Seabed_Play4_Halloween
+    MonsterID: 2005
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4_Halloween
+    MonsterID: 2042
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play4_Halloween
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_Play4_Halloween
+    MonsterID: 2063
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 1
+    Avr: 2
+    Max: 2
+    Region: 4
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 3
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2012
+    Ratio: 3
+    Avr: 3
+    Max: 3
+    Region: 12
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 3
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 5
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 4
+    Avr: 2
+    Max: 2
+    Region: 6
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 7
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 3
+    Avr: 2
+    Max: 2
+    Region: 9
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 1
+    Avr: 2
+    Max: 2
+    Region: 8
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 10
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2012
+    Ratio: 1
+    Avr: 3
+    Max: 3
+    Region: 15
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 1
+    Avr: 2
+    Max: 2
+    Region: 11
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2012
+    Ratio: 1
+    Avr: 3
+    Max: 3
+    Region: 14
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2011
+    Ratio: 3
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2012
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Relics_Play_Halloween
+    MonsterID: 2032
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Play4_Halloween
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Play4_Halloween
+    MonsterID: 2014
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Play4_Halloween
+    MonsterID: 2013
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Swamp_Halloween
+    MonsterID: 2015
+    Ratio: 1
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Halloween
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Halloween
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_Halloween
+    MonsterID: 2033
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Relics_Play5_Pepero
+    MonsterID: 2203
+    Ratio: 2
+    Avr: 65
+    Max: 65
+  - Table: Mon_Relics_Play5_Pepero
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Relics_Play5_Pepero
+    MonsterID: 2224
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Seabed_Play6_Pepero
+    MonsterID: 2200
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Seabed_Play6_Pepero
+    MonsterID: 2153
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Seabed_Play6_Pepero
+    MonsterID: 2223
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Rose_Play5_Pepero
+    MonsterID: 2032
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Rose_Play5_Pepero
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Wharf_Dungeon25_Pepero
+    MonsterID: 2033
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Dungeon25_Pepero
+    MonsterID: 2156
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Snow_Play5_Pepero
+    MonsterID: 2034
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Snow_Play5_Pepero
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_TestZone2
+    MonsterID: 3995
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Marine_Play1
+    MonsterID: 2217
+    Ratio: 2
+    Avr: 45
+    Max: 45
+  - Table: Mon_Marine_Play1
+    MonsterID: 2270
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Marine_Play1
+    MonsterID: 2561
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Marine_Play1
+    MonsterID: 16282
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Marine_Play2
+    MonsterID: 2217
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Marine_Play2
+    MonsterID: 2218
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Marine_Play2
+    MonsterID: 2270
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Marine_Play2
+    MonsterID: 2561
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Marine_Play2
+    MonsterID: 16282
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Marine_Play2
+    MonsterID: 16283
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Marine_Play3
+    MonsterID: 2218
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Marine_Play3
+    MonsterID: 2219
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Marine_Play3
+    MonsterID: 2222
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Marine_Play3
+    MonsterID: 2561
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Marine_Play3
+    MonsterID: 16283
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Play3
+    MonsterID: 16284
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Play3
+    MonsterID: 16287
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Play4
+    MonsterID: 2220
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Marine_Play4
+    MonsterID: 2221
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Marine_Play4
+    MonsterID: 2561
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Marine_Play4
+    MonsterID: 16285
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Play4
+    MonsterID: 16285
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Play4
+    MonsterID: 16286
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Event_Dungeon1
+    MonsterID: 2980
+    Ratio: 3
+    Avr: 25
+    Max: 25
+  - Table: Mon_Event_Dungeon1
+    MonsterID: 2981
+    Ratio: 3
+    Avr: 25
+    Max: 25
+  - Table: Mon_Event_Dungeon1
+    MonsterID: 2982
+    Ratio: 3
+    Avr: 25
+    Max: 25
+  - Table: Mon_Event_Dungeon2
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Event_Dungeon3
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Event_Dungeon4
+    MonsterID: 2156
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Event_Dungeon5
+    MonsterID: 2157
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Beach_Play2_Event
+    MonsterID: 2053
+    Ratio: 3
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play2_Event
+    MonsterID: 2002
+    Ratio: 3
+    Avr: 60
+    Max: 60
+  - Table: Mon_Beach_Play2_Event
+    MonsterID: 2153
+    Ratio: 3
+    Avr: 30
+    Max: 30
+  - Table: Mon_SkillShrine_Dun1
+    MonsterID: 2228
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun2
+    MonsterID: 2229
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun3
+    MonsterID: 2230
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun4
+    MonsterID: 2231
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun5
+    MonsterID: 2232
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun6
+    MonsterID: 2233
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun7
+    MonsterID: 2234
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun8
+    MonsterID: 2235
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun9
+    MonsterID: 2236
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun10
+    MonsterID: 2237
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun11
+    MonsterID: 2238
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun12
+    MonsterID: 2239
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun13
+    MonsterID: 2240
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun14
+    MonsterID: 2241
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun15
+    MonsterID: 2242
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_SkillShrine_Dun16
+    MonsterID: 2243
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 2276
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 2597
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 2275
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16341
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16662
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16340
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play6
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 2276
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 2275
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 2277
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16341
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16340
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16342
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play7
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 2597
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 2275
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 2277
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16662
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16340
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16342
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play8
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 2275
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 2277
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16340
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16342
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16134
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16374
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16354
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Play9
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Marine_Dungeon1
+    MonsterID: 2244
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Marine_Dungeon1
+    MonsterID: 2245
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Marine_Dungeon1
+    MonsterID: 16309
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Marine_Dungeon1
+    MonsterID: 16310
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Marine_Dungeon1
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 2245
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 2246
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 2247
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 2247
+    Ratio: 2
+    Avr: 3
+    Max: 3
+    Region: 2
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 16310
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 16311
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 16312
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Marine_Dungeon2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Mirage_Play1
+    MonsterID: 2251
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Play1
+    MonsterID: 2252
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Mirage_Play1
+    MonsterID: 2253
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Play2
+    MonsterID: 2250
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Mirage_Play2
+    MonsterID: 2254
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Play3
+    MonsterID: 2248
+    Ratio: 2
+    Avr: 17
+    Max: 17
+  - Table: Mon_Mirage_Play3
+    MonsterID: 2249
+    Ratio: 2
+    Avr: 13
+    Max: 13
+  - Table: Mon_Mirage_Dungeon1
+    MonsterID: 2249
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Mirage_Dungeon1
+    MonsterID: 2256
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Mirage_Dungeon2
+    MonsterID: 2257
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Mirage_Dungeon2
+    MonsterID: 2254
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Wharf_Play6
+    MonsterID: 2255
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2281
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 7
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 8
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 9
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 11
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 12
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 13
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 14
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 15
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 16
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2261
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 17
+  - Table: Mon_Beach_Dungeon11
+    MonsterID: 2262
+    Ratio: 2
+    Avr: 40
+    Max: 40
+    Region: 18
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2263
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2265
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 2
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 3
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 4
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 5
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 6
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 7
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 8
+  - Table: Mon_Beach_Dungeon12
+    MonsterID: 2264
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 9
+  - Table: Mon_Beach_Dungeon15
+    MonsterID: 2258
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon15
+    MonsterID: 2259
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon15
+    MonsterID: 2260
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Beach_Dungeon16
+    MonsterID: 2283
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Beach_Dungeon17
+    MonsterID: 2284
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Coral_Gate
+    MonsterID: 2285
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 1
+  - Table: Mon_Path_Marine1
+    MonsterID: 2046
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Path_Marine1
+    MonsterID: 2047
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_Marine1
+    MonsterID: 16111
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Marine1
+    MonsterID: 16112
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Marine1
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Marine2
+    MonsterID: 2047
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Marine2
+    MonsterID: 2266
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_Marine2
+    MonsterID: 16112
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Marine2
+    MonsterID: 16331
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Marine2
+    MonsterID: 16135
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Play7
+    MonsterID: 2290
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Wharf_Play7
+    MonsterID: 2331
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_NW_Volcano2
+    MonsterID: 2045
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Path_NW_Volcano2
+    MonsterID: 2028
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Path_NW_Volcano2
+    MonsterID: 16110
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_NW_Volcano2
+    MonsterID: 16028
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2300
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Seabed_Mine3
+    MonsterID: 2301
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Seabed_Mine4
+    MonsterID: 2291
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Seabed_Mine4
+    MonsterID: 2301
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2302
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Relics_Mine3
+    MonsterID: 2303
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Relics_Mine4
+    MonsterID: 2292
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Mine4
+    MonsterID: 2303
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Mine4
+    MonsterID: 2308
+    Ratio: 2
+    Avr: 3
+    Max: 3
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2304
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Swamp_Mine3
+    MonsterID: 2305
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Swamp_Mine4
+    MonsterID: 2293
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Swamp_Mine4
+    MonsterID: 2305
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2306
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Snow_Mine3
+    MonsterID: 2307
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Snow_Mine4
+    MonsterID: 2294
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Mine4
+    MonsterID: 2307
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_EVT
+    MonsterID: 2015
+    Ratio: 1
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_EVT
+    MonsterID: 2016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_EVT
+    MonsterID: 2017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Swamp_EVT
+    MonsterID: 2033
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Rose_Dungeon7
+    MonsterID: 2310
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Rose_Dungeon7
+    MonsterID: 2311
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Rose_Dungeon8
+    MonsterID: 2312
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Rose_Dungeon8
+    MonsterID: 2313
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Rose_Dungeon10
+    MonsterID: 2310
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Dungeon10
+    MonsterID: 2311
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Rose_Play6
+    MonsterID: 2316
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Beach_Play8
+    MonsterID: 2329
+    Ratio: 2
+    Avr: 70
+    Max: 70
+  - Table: Mon_Beach_Play8
+    MonsterID: 2330
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon1
+    MonsterID: 2823
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon1
+    MonsterID: 2824
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon1
+    MonsterID: 2825
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon2
+    MonsterID: 2825
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon2
+    MonsterID: 2826
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon2
+    MonsterID: 2827
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon4
+    MonsterID: 2829
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon4
+    MonsterID: 2830
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon4
+    MonsterID: 2831
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon5
+    MonsterID: 2831
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon5
+    MonsterID: 2832
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon5
+    MonsterID: 2833
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon6
+    MonsterID: 2340
+    Ratio: 2
+    Avr: 25
+    Max: 35
+  - Table: Mon_Chaos1_Dungeon6
+    MonsterID: 2341
+    Ratio: 2
+    Avr: 25
+    Max: 35
+  - Table: Mon_Chaos1_Dungeon6
+    MonsterID: 2357
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos1_Dungeon8
+    MonsterID: 2835
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon8
+    MonsterID: 2836
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon8
+    MonsterID: 2837
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon9
+    MonsterID: 2837
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon9
+    MonsterID: 2838
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon9
+    MonsterID: 2839
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon10
+    MonsterID: 2839
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon10
+    MonsterID: 2840
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon10
+    MonsterID: 2841
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon11
+    MonsterID: 2841
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon11
+    MonsterID: 2842
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon11
+    MonsterID: 2843
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Snow_Play4_Event
+    MonsterID: 2101
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Snow_Play4_Event
+    MonsterID: 2104
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Snow_Play4_Event
+    MonsterID: 2157
+    Avr: 50
+    Max: 50
+  - Table: Mon_Seabed_Dungeon6
+    MonsterID: 2405
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 1
+  - Table: Mon_Seabed_Dungeon6
+    MonsterID: 2406
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 2
+  - Table: Mon_Seabed_Dungeon6
+    MonsterID: 2407
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Seabed_Dungeon7
+    MonsterID: 2408
+    Ratio: 2
+    Avr: 150
+    Max: 150
+  - Table: Mon_Seabed_Dungeon8
+    MonsterID: 2409
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Seabed_Dungeon8
+    MonsterID: 2410
+    Ratio: 2
+    Avr: 80
+    Max: 80
+  - Table: Mon_Seabed_Dungeon9
+    MonsterID: 2411
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Seabed_Dungeon9
+    MonsterID: 2412
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Seabed_Dungeon10
+    MonsterID: 2413
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2414
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Volcano_Mine3
+    MonsterID: 2414
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Volcano_Mine4
+    MonsterID: 2364
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Volcano_Mine4
+    MonsterID: 2415
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2394
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2394
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2394
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2395
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2395
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2395
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2396
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2396
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2396
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 9
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2397
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 10
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2397
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 11
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2398
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 12
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2398
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 13
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2399
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 14
+  - Table: Mon_Mirage_Play4
+    MonsterID: 2399
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 15
+  - Table: Mon_Mirage_Play5
+    MonsterID: 2400
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Play5
+    MonsterID: 2251
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Mirage_Play6
+    MonsterID: 2402
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Mirage_Play6
+    MonsterID: 2401
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Play7
+    MonsterID: 2252
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Mirage_Play7
+    MonsterID: 2400
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Mirage_Dungeon3
+    MonsterID: 2403
+    Ratio: 2
+    Avr: 12
+    Max: 12
+  - Table: Mon_Mirage_Dungeon3
+    MonsterID: 2404
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Guardian_Dungeon1
+    MonsterID: 2392
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Guardian_Dungeon1
+    MonsterID: 2393
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Path_SE_Beach_Event
+    MonsterID: 2038
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_SE_Beach_Event
+    MonsterID: 2041
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Path_SE_Beach_Event
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Chaos2_Dungeon1
+    MonsterID: 2843
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon1
+    MonsterID: 2844
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon1
+    MonsterID: 2845
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon2
+    MonsterID: 2845
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon2
+    MonsterID: 2846
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon2
+    MonsterID: 2847
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon4
+    MonsterID: 2849
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon4
+    MonsterID: 2850
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon4
+    MonsterID: 2851
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon5
+    MonsterID: 2851
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon5
+    MonsterID: 2852
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon5
+    MonsterID: 2853
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon6
+    MonsterID: 2427
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon6
+    MonsterID: 2428
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon6
+    MonsterID: 2444
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos2_Dungeon8
+    MonsterID: 2855
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon8
+    MonsterID: 2856
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon8
+    MonsterID: 2857
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon9
+    MonsterID: 2857
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon9
+    MonsterID: 2858
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon9
+    MonsterID: 2859
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon10
+    MonsterID: 2859
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon10
+    MonsterID: 2860
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon10
+    MonsterID: 2861
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon11
+    MonsterID: 2861
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon11
+    MonsterID: 2862
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon11
+    MonsterID: 2863
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon13
+    MonsterID: 2863
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon13
+    MonsterID: 2864
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon13
+    MonsterID: 2865
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2452
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 2
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 9
+  - Table: Mon_Swamp_Dungeon8
+    MonsterID: 2418
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2451
+    Ratio: 2
+    Avr: 4
+    Max: 4
+    Region: 6
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2454
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2455
+    Ratio: 2
+    Avr: 3
+    Max: 3
+    Region: 3
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2456
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2457
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 5
+  - Table: Mon_Swamp_Dungeon9
+    MonsterID: 2453
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Swamp_Dungeon10
+    MonsterID: 2451
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Swamp_Dungeon11
+    MonsterID: 2451
+    Ratio: 2
+    Avr: 60
+    Max: 60
+    Region: 1
+  - Table: Mon_Swamp_Dungeon12
+    MonsterID: 2451
+    Ratio: 2
+    Avr: 60
+    Max: 60
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2458
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Swamp_Dungeon13
+    MonsterID: 2417
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Chaos3_Dungeon1
+    MonsterID: 2867
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon1
+    MonsterID: 2868
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon1
+    MonsterID: 2869
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon2
+    MonsterID: 2869
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon2
+    MonsterID: 2870
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon2
+    MonsterID: 2871
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon4
+    MonsterID: 2463
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon4
+    MonsterID: 2464
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon4
+    MonsterID: 2483
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos3_Dungeon5
+    MonsterID: 2873
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon5
+    MonsterID: 2874
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon5
+    MonsterID: 2875
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon6
+    MonsterID: 2875
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon6
+    MonsterID: 2876
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon6
+    MonsterID: 2877
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon8
+    MonsterID: 2879
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon8
+    MonsterID: 2880
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon8
+    MonsterID: 2881
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon9
+    MonsterID: 2881
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon9
+    MonsterID: 2882
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon9
+    MonsterID: 2883
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon10
+    MonsterID: 2473
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon10
+    MonsterID: 2474
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon10
+    MonsterID: 2488
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos3_Dungeon11
+    MonsterID: 2883
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon11
+    MonsterID: 2884
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon11
+    MonsterID: 2885
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon11
+    MonsterID: 2889
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos3_Dungeon13
+    MonsterID: 2887
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon13
+    MonsterID: 2888
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon13
+    MonsterID: 2891
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon13
+    MonsterID: 2889
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon1
+    MonsterID: 2893
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon1
+    MonsterID: 2894
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon1
+    MonsterID: 2895
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon1
+    MonsterID: 2890
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon2
+    MonsterID: 2493
+    Ratio: 2
+    Avr: 30
+    Max: 35
+  - Table: Mon_Chaos4_Dungeon2
+    MonsterID: 2494
+    Ratio: 2
+    Avr: 30
+    Max: 35
+  - Table: Mon_Chaos4_Dungeon2
+    MonsterID: 2514
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon4
+    MonsterID: 2897
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon4
+    MonsterID: 2898
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon4
+    MonsterID: 2901
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon4
+    MonsterID: 2899
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon5
+    MonsterID: 2901
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon5
+    MonsterID: 2902
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon5
+    MonsterID: 2903
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon5
+    MonsterID: 2899
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon6
+    MonsterID: 2903
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon6
+    MonsterID: 2904
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon6
+    MonsterID: 2905
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon6
+    MonsterID: 2900
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon8
+    MonsterID: 2501
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos4_Dungeon8
+    MonsterID: 2502
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos4_Dungeon8
+    MonsterID: 2518
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos4_Dungeon9
+    MonsterID: 2907
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon9
+    MonsterID: 2908
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon9
+    MonsterID: 2909
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon9
+    MonsterID: 2911
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon10
+    MonsterID: 2909
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon10
+    MonsterID: 2910
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon10
+    MonsterID: 2913
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon10
+    MonsterID: 2911
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon11
+    MonsterID: 2913
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon11
+    MonsterID: 2914
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon11
+    MonsterID: 2915
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon11
+    MonsterID: 2911
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon13
+    MonsterID: 2917
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon13
+    MonsterID: 2918
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon13
+    MonsterID: 2919
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon13
+    MonsterID: 2912
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon1
+    MonsterID: 2919
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon1
+    MonsterID: 2920
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon1
+    MonsterID: 2921
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon1
+    MonsterID: 2925
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon2
+    MonsterID: 2921
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon2
+    MonsterID: 2922
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon2
+    MonsterID: 2923
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon2
+    MonsterID: 2925
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon4
+    MonsterID: 2927
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon4
+    MonsterID: 2928
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon4
+    MonsterID: 2929
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon4
+    MonsterID: 2931
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon5
+    MonsterID: 2929
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon5
+    MonsterID: 2930
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon5
+    MonsterID: 2933
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon5
+    MonsterID: 2931
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon6
+    MonsterID: 2535
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos5_Dungeon6
+    MonsterID: 2536
+    Ratio: 2
+    Avr: 25
+    Max: 30
+  - Table: Mon_Chaos5_Dungeon6
+    MonsterID: 2553
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Chaos5_Dungeon8
+    MonsterID: 2935
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon8
+    MonsterID: 2936
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon8
+    MonsterID: 2937
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon8
+    MonsterID: 2939
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon9
+    MonsterID: 2937
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon9
+    MonsterID: 2938
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon9
+    MonsterID: 2941
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon9
+    MonsterID: 2939
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon10
+    MonsterID: 2941
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon10
+    MonsterID: 2942
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon10
+    MonsterID: 2943
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon10
+    MonsterID: 2940
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon11
+    MonsterID: 2943
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon11
+    MonsterID: 2944
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon11
+    MonsterID: 2945
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon11
+    MonsterID: 2949
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon13
+    MonsterID: 2945
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon13
+    MonsterID: 2946
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon13
+    MonsterID: 2947
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon13
+    MonsterID: 2949
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Abyss_Play1
+    MonsterID: 2523
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play1
+    MonsterID: 2525
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play1
+    MonsterID: 16588
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play1
+    MonsterID: 16590
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play2
+    MonsterID: 2524
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Abyss_Play2
+    MonsterID: 2526
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play2
+    MonsterID: 16589
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Abyss_Play2
+    MonsterID: 16591
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play3
+    MonsterID: 2568
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play3
+    MonsterID: 2571
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play3
+    MonsterID: 16588
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play3
+    MonsterID: 16591
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play4
+    MonsterID: 2569
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Abyss_Play4
+    MonsterID: 2570
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Abyss_Play4
+    MonsterID: 2296
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Abyss_Play4
+    MonsterID: 16589
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Abyss_Play4
+    MonsterID: 16590
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Abyss_Play4
+    MonsterID: 16361
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Path_SW_test
+    MonsterID: 2105
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW_test
+    MonsterID: 2106
+    Ratio: 3
+    Avr: 40
+    Max: 40
+  - Table: Mon_Path_SW_test
+    MonsterID: 2317
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Relics_Dungeon6
+    MonsterID: 2578
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Relics_Dungeon6
+    MonsterID: 2579
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon6
+    MonsterID: 2577
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2580
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2581
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2582
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2583
+    Ratio: 2
+    Avr: 4
+    Max: 4
+    Region: 3
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2580
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2581
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2582
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2580
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 4
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2581
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 4
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2582
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 4
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2580
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2581
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Relics_Dungeon7
+    MonsterID: 2582
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Relics_Dungeon9
+    MonsterID: 2584
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 5
+  - Table: Mon_Relics_Dungeon9
+    MonsterID: 2585
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 6
+  - Table: Mon_Wharf_Dungeon28
+    MonsterID: 2593
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon28
+    MonsterID: 2594
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon28
+    MonsterID: 2586
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon28
+    MonsterID: 2587
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Wharf_Dungeon29
+    MonsterID: 2588
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 1
+  - Table: Mon_Wharf_Dungeon29
+    MonsterID: 2589
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 2
+  - Table: Mon_Wharf_Dungeon29
+    MonsterID: 2590
+    Ratio: 2
+    Avr: 2
+    Max: 2
+    Region: 3
+  - Table: Mon_Wharf_Dungeon29
+    MonsterID: 2586
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Dungeon29
+    MonsterID: 2587
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Dungeon30
+    MonsterID: 2591
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon30
+    MonsterID: 2592
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Wharf_Dungeon30
+    MonsterID: 2586
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Dungeon30
+    MonsterID: 2587
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Snow_Dungeon6
+    MonsterID: 2600
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Snow_Dungeon7
+    MonsterID: 2601
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Snow_Dungeon7
+    MonsterID: 2616
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon7
+    MonsterID: 2617
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon7
+    MonsterID: 2601
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Snow_Dungeon7
+    MonsterID: 2601
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2602
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2615
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2616
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2617
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2602
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Snow_Dungeon8
+    MonsterID: 2602
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Snow_Dungeon9
+    MonsterID: 2603
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Snow_Dungeon9
+    MonsterID: 2604
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Snow_Dungeon9
+    MonsterID: 2606
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Snow_Dungeon9
+    MonsterID: 2606
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Snow_Dungeon10
+    MonsterID: 2608
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Snow_Dungeon10
+    MonsterID: 2620
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon11
+    MonsterID: 2609
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Snow_Dungeon11
+    MonsterID: 2618
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Snow_Dungeon12
+    MonsterID: 2607
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Snow_Dungeon12
+    MonsterID: 2605
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Snow_Dungeon12
+    MonsterID: 2619
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Event_6th_Play
+    MonsterID: 2153
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 1
+  - Table: Mon_Event_6th_Play
+    MonsterID: 2154
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 3
+  - Table: Mon_Event_6th_Play
+    MonsterID: 2155
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 4
+  - Table: Mon_Event_6th_Play
+    MonsterID: 2156
+    Ratio: 2
+    Avr: 29
+    Max: 29
+    Region: 2
+  - Table: Mon_Office_Path
+    MonsterID: 2622
+    Avr: 10
+    Max: 10
+  - Table: Mon_Office_Path
+    MonsterID: 2626
+    Avr: 15
+    Max: 15
+  - Table: Mon_Office_Path
+    MonsterID: 2630
+    Avr: 15
+    Max: 15
+  - Table: Mon_Office_Play1
+    MonsterID: 2621
+    Avr: 25
+    Max: 25
+  - Table: Mon_Office_Play1
+    MonsterID: 2622
+    Avr: 5
+    Max: 5
+  - Table: Mon_Office_Play1
+    MonsterID: 2627
+    Avr: 8
+    Max: 8
+  - Table: Mon_Office_Play1
+    MonsterID: 2628
+    Avr: 2
+    Max: 2
+  - Table: Mon_Office_Play1
+    MonsterID: 2629
+    Avr: 20
+    Max: 20
+  - Table: Mon_Office_Play2
+    MonsterID: 2622
+    Avr: 5
+    Max: 5
+  - Table: Mon_Office_Play2
+    MonsterID: 2623
+    Avr: 20
+    Max: 20
+  - Table: Mon_Office_Play2
+    MonsterID: 2627
+    Avr: 10
+    Max: 10
+  - Table: Mon_Office_Play2
+    MonsterID: 2628
+    Avr: 2
+    Max: 2
+  - Table: Mon_Office_Play2
+    MonsterID: 2631
+    Avr: 23
+    Max: 23
+  - Table: Mon_Office_Dungeon6
+    MonsterID: 2661
+    Avr: 1
+    Max: 1
+  - Table: Mon_Office_Play
+    MonsterID: 2626
+    Avr: 5
+    Max: 5
+  - Table: Mon_Office_Play
+    MonsterID: 2627
+    Avr: 5
+    Max: 5
+  - Table: Mon_Office_Play
+    MonsterID: 2628
+    Avr: 2
+    Max: 2
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2640
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2640
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2640
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2640
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2640
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2643
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2643
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2643
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2643
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 9
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2643
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 10
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2645
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 11
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2645
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 12
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2645
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 13
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2645
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 14
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2645
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 15
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2644
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 16
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2644
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 17
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2644
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 18
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2644
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 19
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2644
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 20
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2641
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 21
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2641
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 22
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2641
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 23
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2641
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 24
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2641
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 25
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2646
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 26
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2646
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 27
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2646
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 28
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2646
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 29
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2646
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 30
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2647
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 31
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2647
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 32
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2647
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 33
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2647
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 34
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2647
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 35
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2642
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 36
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2642
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 37
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2642
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 38
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2642
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 39
+  - Table: Mon_Office_Dungeon16
+    MonsterID: 2642
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 40
+  - Table: Mon_Office_Dungeon19
+    MonsterID: 2649
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 1
+  - Table: Mon_Office_Dungeon19
+    MonsterID: 2649
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 2
+  - Table: Mon_Office_Dungeon19
+    MonsterID: 2649
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 3
+  - Table: Mon_Office_Dungeon19
+    MonsterID: 2649
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 4
+  - Table: Mon_Office_Dungeon10
+    MonsterID: 2633
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon8
+    MonsterID: 2636
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon9
+    MonsterID: 2637
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon10
+    MonsterID: 2638
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Forest_Dungeon11
+    MonsterID: 2639
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Wharf_Dungeon24_Event
+    MonsterID: 2196
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Wharf_Dungeon24_Event
+    MonsterID: 2197
+    Ratio: 2
+    Avr: 4
+    Max: 4
+  - Table: Mon_Wharf_Dungeon24_Event
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 8
+    Max: 8
+  - Table: Mon_Wharf_Dungeon32_Event
+    MonsterID: 2983
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Wharf_Dungeon32_Event
+    MonsterID: 2984
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Wharf_Dungeon32_Event
+    MonsterID: 3008
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Wharf_Dungeon32_Event
+    MonsterID: 3009
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Wharf_Dungeon32_Event
+    MonsterID: 3010
+    Ratio: 2
+    Avr: 50
+    Max: 50
+  - Table: Mon_Event_Park_Play2
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Event_Park_Play2
+    MonsterID: 2031
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Event_Park_Play2
+    MonsterID: 2032
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Shadow
+    MonsterID: 2659
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Shadow
+    MonsterID: 2659
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Shadow
+    MonsterID: 2659
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Shadow
+    MonsterID: 2659
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Shadow
+    MonsterID: 2659
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Shadow
+    MonsterID: 16718
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Shadow
+    MonsterID: 16722
+    Ratio: 3
+    Avr: 4
+    Max: 4
+    Region: 7
+  - Table: Mon_Shadow
+    MonsterID: 16720
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Shadow
+    MonsterID: 16721
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Shadow
+    MonsterID: 16723
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 9
+  - Table: Mon_Shadow
+    MonsterID: 16719
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 8
+  - Table: Mon_Shadow
+    MonsterID: 16354
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Shadow
+    MonsterID: 16374
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Shadow
+    MonsterID: 16134
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Shadow
+    MonsterID: 16135
+    Ratio: 3
+    Avr: 5
+    Max: 5
+  - Table: Mon_Shadow
+    MonsterID: 16701
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 1
+  - Table: Mon_Shadow
+    MonsterID: 16702
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 2
+  - Table: Mon_Shadow
+    MonsterID: 16703
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 3
+  - Table: Mon_Shadow
+    MonsterID: 16704
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 4
+  - Table: Mon_Shadow
+    MonsterID: 16727
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 5
+  - Table: Mon_Shadow
+    MonsterID: 16728
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 6
+  - Table: Mon_Shadow
+    MonsterID: 16729
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 7
+  - Table: Mon_Shadow
+    MonsterID: 16730
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Shadow
+    MonsterID: 16731
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Shadow
+    MonsterID: 16732
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 9
+  - Table: Mon_Shadow
+    MonsterID: 16733
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Shadow
+    MonsterID: 16748
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 5
+  - Table: Mon_Shadow
+    MonsterID: 16749
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 6
+  - Table: Mon_Shadow
+    MonsterID: 16750
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 7
+  - Table: Mon_Shadow
+    MonsterID: 16751
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Path_Wharf_Dungeon3
+    MonsterID: 2675
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Path_Wharf_Dungeon4
+    MonsterID: 2673
+    Ratio: 2
+    Avr: 10
+    Max: 10
+    Region: 1
+  - Table: Mon_Path_Wharf_Dungeon4
+    MonsterID: 2671
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 2
+  - Table: Mon_Path_Wharf_Dungeon4
+    MonsterID: 2672
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 3
+  - Table: Mon_Path_Wharf_Dungeon5
+    MonsterID: 2674
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Wedding_Play
+    MonsterID: 2678
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Wedding_Play
+    MonsterID: 2679
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Wedding_Play
+    MonsterID: 2678
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Wedding_Play
+    MonsterID: 2679
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Wedding_Play
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wedding_Play
+    MonsterID: 2185
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Wedding_Play
+    MonsterID: 2183
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Harcon1th
+    MonsterID: 2687
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2688
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2689
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2690
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2691
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2692
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2693
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2694
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2695
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2696
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2697
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2698
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2699
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2700
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2701
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2702
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2735
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2738
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2739
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2740
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2741
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon1th
+    MonsterID: 2753
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Harcon1th
+    MonsterID: 2753
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Harcon1th
+    MonsterID: 2753
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Harcon1th
+    MonsterID: 2753
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Harcon1th
+    MonsterID: 2753
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Harcon2th
+    MonsterID: 2703
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2704
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2705
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2706
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2707
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2708
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2709
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2710
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2711
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2712
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2713
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2714
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2715
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2716
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2717
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2718
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2736
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2742
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2743
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2744
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2745
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon2th
+    MonsterID: 2754
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Harcon2th
+    MonsterID: 2754
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Harcon2th
+    MonsterID: 2754
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Harcon2th
+    MonsterID: 2754
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Harcon2th
+    MonsterID: 2754
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Harcon3th
+    MonsterID: 2719
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2720
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2721
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2722
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2723
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2724
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2725
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2726
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2727
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2728
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2729
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2730
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2731
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2732
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2733
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2734
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2737
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2746
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2747
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2748
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2749
+    Ratio: 3
+    Avr: 40
+    Max: 40
+    Region: 10
+  - Table: Mon_Harcon3th
+    MonsterID: 2755
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Harcon3th
+    MonsterID: 2755
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Harcon3th
+    MonsterID: 2755
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Harcon3th
+    MonsterID: 2755
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Harcon3th
+    MonsterID: 2755
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Fiesta_Play
+    MonsterID: 2775
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play2
+    MonsterID: 2329
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play3
+    MonsterID: 2203
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play4
+    MonsterID: 2290
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play5
+    MonsterID: 2200
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play6
+    MonsterID: 2204
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play7
+    MonsterID: 2756
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play8
+    MonsterID: 2206
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play9
+    MonsterID: 2758
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play10
+    MonsterID: 2760
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Playa
+    MonsterID: 2776
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play2a
+    MonsterID: 2330
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play3a
+    MonsterID: 2224
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play4a
+    MonsterID: 2331
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play5a
+    MonsterID: 2223
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play6a
+    MonsterID: 2225
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play7a
+    MonsterID: 2757
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play8a
+    MonsterID: 2227
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play9a
+    MonsterID: 2759
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Fiesta_Play10a
+    MonsterID: 2761
+    Ratio: 2
+    Avr: 100
+    Max: 100
+  - Table: Mon_Snow_Town
+    MonsterID: 2779
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Alteo_Play1
+    MonsterID: 2968
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play1
+    MonsterID: 2969
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play1
+    MonsterID: 2970
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play1
+    MonsterID: 2972
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play2
+    MonsterID: 2968
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play2
+    MonsterID: 2969
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play2
+    MonsterID: 2972
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play2
+    MonsterID: 2973
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play3
+    MonsterID: 2968
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play3
+    MonsterID: 2969
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play3
+    MonsterID: 2970
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play3
+    MonsterID: 2971
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Alteo_Play4
+    MonsterID: 2966
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Alteo_Play5
+    MonsterID: 2966
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Alteo_Dungeon3
+    MonsterID: 2249
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Alteo_Dungeon3
+    MonsterID: 2256
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Alteo_Dungeon4
+    MonsterID: 2967
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_EP6_Harcon
+    MonsterID: 2985
+    Ratio: 3
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Alteo_Dungeon13
+    MonsterID: 2976
+    Region: 1
+  - Table: Mon_Alteo_Dungeon13
+    MonsterID: 2975
+    Ratio: 2
+    Avr: 45
+    Max: 45
+  - Table: Mon_3monthEvent
+    MonsterID: 2030
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_3monthEvent
+    MonsterID: 2031
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_3monthEvent
+    MonsterID: 2032
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_3monthEvent
+    MonsterID: 2033
+    Ratio: 2
+    Avr: 35
+    Max: 35
+  - Table: Mon_Chaos1_Dungeon3
+    MonsterID: 2827
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon3
+    MonsterID: 2828
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon3
+    MonsterID: 2829
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos1_Dungeon7
+    MonsterID: 2833
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon7
+    MonsterID: 2834
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos1_Dungeon7
+    MonsterID: 2835
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon3
+    MonsterID: 2847
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon3
+    MonsterID: 2848
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon3
+    MonsterID: 2849
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon7
+    MonsterID: 2854
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos2_Dungeon7
+    MonsterID: 2855
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos2_Dungeon7
+    MonsterID: 2853
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon_Gate
+    MonsterID: 2866
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon_Gate
+    MonsterID: 2867
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon_Gate
+    MonsterID: 2865
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon3
+    MonsterID: 2872
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon3
+    MonsterID: 2873
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon3
+    MonsterID: 2871
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon7
+    MonsterID: 2878
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon7
+    MonsterID: 2879
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon7
+    MonsterID: 2877
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos3_Dungeon12
+    MonsterID: 2886
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon12
+    MonsterID: 2887
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos3_Dungeon12
+    MonsterID: 2885
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos3_Dungeon12
+    MonsterID: 2889
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon_Gate
+    MonsterID: 2892
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon_Gate
+    MonsterID: 2893
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon_Gate
+    MonsterID: 2891
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon_Gate
+    MonsterID: 2890
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon3
+    MonsterID: 2896
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon3
+    MonsterID: 2897
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon3
+    MonsterID: 2899
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon3
+    MonsterID: 2895
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon7
+    MonsterID: 2906
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon7
+    MonsterID: 2907
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon7
+    MonsterID: 2905
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon7
+    MonsterID: 2900
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos4_Dungeon12
+    MonsterID: 2916
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon12
+    MonsterID: 2917
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos4_Dungeon12
+    MonsterID: 2915
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos4_Dungeon12
+    MonsterID: 2912
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon3
+    MonsterID: 2926
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos5_Dungeon3
+    MonsterID: 2927
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon3
+    MonsterID: 2923
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon3
+    MonsterID: 2924
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon7
+    MonsterID: 2934
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon7
+    MonsterID: 2935
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos5_Dungeon7
+    MonsterID: 2933
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos5_Dungeon7
+    MonsterID: 2932
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos6_Dungeon1
+    MonsterID: 2950
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos6_Dungeon1
+    MonsterID: 2951
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos6_Dungeon1
+    MonsterID: 2947
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon1
+    MonsterID: 2948
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon2
+    MonsterID: 2952
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon2
+    MonsterID: 2953
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos6_Dungeon2
+    MonsterID: 2951
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon2
+    MonsterID: 2955
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos6_Dungeon3
+    MonsterID: 2955
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon3
+    MonsterID: 2957
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos6_Dungeon3
+    MonsterID: 2956
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon3
+    MonsterID: 2953
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos6_Dungeon4
+    MonsterID: 2958
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon4
+    MonsterID: 2959
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos6_Dungeon4
+    MonsterID: 2957
+    Ratio: 2
+    Avr: 25
+    Max: 25
+  - Table: Mon_Chaos6_Dungeon4
+    MonsterID: 2954
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos6_Dungeon5
+    MonsterID: 2780
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Chaos6_Dungeon6
+    MonsterID: 2781
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Chaos6_Dungeon7
+    MonsterID: 2782
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Chaos6_Dungeon8
+    MonsterID: 2783
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Chaos6_Dungeon9
+    MonsterID: 2784
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Chaos6_Dungeon10
+    MonsterID: 2785
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 3023
+    Ratio: 2
+    Avr: 16
+    Max: 16
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 2
+    Max: 2
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2297
+    Ratio: 2
+    Avr: 8
+    Max: 8
+    Region: 1
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 12
+    Max: 12
+    Region: 2
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2299
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 4
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 2298
+    Ratio: 2
+    Avr: 6
+    Max: 6
+    Region: 5
+  - Table: Mon_Path_Wharf_Mine3
+    MonsterID: 3024
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 6
+  - Table: Mon_Path_Wharf_Mine4
+    MonsterID: 3022
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Path_Wharf_Mine4
+    MonsterID: 3021
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3016
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3017
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3018
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 4
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 5
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 6
+  - Table: Mon_Volcano_Dungeon1
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 7
+  - Table: Mon_Volcano_Dungeon2
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 1
+  - Table: Mon_Volcano_Dungeon2
+    MonsterID: 3019
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 3
+  - Table: Mon_Volcano_Dungeon2
+    MonsterID: 3020
+    Ratio: 2
+    Avr: 9
+    Max: 9
+    Region: 2
+  - Table: Mon_Volcano_Dungeon2
+    MonsterID: 3020
+    Ratio: 2
+    Avr: 9
+    Max: 9
+    Region: 4
+  - Table: Mon_Volcano_Dungeon2
+    MonsterID: 3020
+    Ratio: 2
+    Avr: 9
+    Max: 9
+    Region: 5
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3026
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 2
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3026
+    Ratio: 2
+    Avr: 7
+    Max: 7
+    Region: 4
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3025
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 1
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3025
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 3
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3025
+    Ratio: 2
+    Avr: 5
+    Max: 5
+    Region: 5
+  - Table: Mon_Volcano_Dungeon3
+    MonsterID: 3027
+    Ratio: 2
+    Avr: 15
+    Max: 15
+  - Table: Mon_Volcano_Dungeon4
+    MonsterID: 3028
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 1
+  - Table: Mon_Volcano_Dungeon4
+    MonsterID: 3049
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 2
+  - Table: Mon_Volcano_Dungeon4
+    MonsterID: 3028
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 3
+  - Table: Mon_Volcano_Dungeon4
+    MonsterID: 3049
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 4
+  - Table: Mon_Volcano_Dungeon5
+    MonsterID: 3033
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Volcano_Dungeon5
+    MonsterID: 3040
+    Ratio: 2
+    Avr: 20
+    Max: 20
+    Region: 1
+  - Table: Mon_Volcano_Dungeon6
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Volcano_Dungeon6
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Volcano_Dungeon6
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Volcano_Dungeon6
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Volcano_Dungeon6
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 7
+  - Table: Mon_Volcano_Dungeon12
+    MonsterID: 3034
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 8
+  - Table: Mon_Volcano_Dungeon11
+    MonsterID: 3036
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 1
+  - Table: Mon_Volcano_Dungeon11
+    MonsterID: 3037
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 2
+  - Table: Mon_Volcano_Dungeon11
+    MonsterID: 3038
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 3
+  - Table: Mon_Volcano_Dungeon11
+    MonsterID: 3039
+    Ratio: 2
+    Avr: 15
+    Max: 15
+    Region: 4
+  - Table: Mon_Volcano_Dungeon16
+    MonsterID: 3041
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Volcano_Dungeon17
+    MonsterID: 3035
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Volcano_Dungeon18
+    MonsterID: 3031
+    Ratio: 3
+    Avr: 1
+    Max: 1
+  - Table: Mon_HarconDef_Magma
+    MonsterID: 3056
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Magma
+    MonsterID: 3056
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_HarconDef_Magma
+    MonsterID: 3056
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_HarconDef_Magma
+    MonsterID: 3056
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_HarconDef_Magma
+    MonsterID: 3056
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_HarconDef_Boss
+    MonsterID: 3032
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Ice
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Ancient
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Endless
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Endless
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_HarconDef_Endless
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_HarconDef_Endless
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_HarconDef_Endless
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_HarconDef_EagleEv
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Fantasy
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_HarconDef_Fantasy
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_HarconDef_Fantasy
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_HarconDef_Fantasy
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_HarconDef_Fantasy
+    MonsterID: 3048
+    Ratio: 2
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Chaos7_Dungeon1
+    MonsterID: 3218
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon1
+    MonsterID: 3219
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon1
+    MonsterID: 3226
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Chaos7_Dungeon2
+    MonsterID: 3219
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon2
+    MonsterID: 3220
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon2
+    MonsterID: 3221
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon2
+    MonsterID: 3227
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Chaos7_Dungeon3
+    MonsterID: 3220
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon3
+    MonsterID: 3221
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon3
+    MonsterID: 3222
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon3
+    MonsterID: 3228
+    Ratio: 2
+    Avr: 40
+    Max: 40
+  - Table: Mon_Chaos7_Dungeon4
+    MonsterID: 3221
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon4
+    MonsterID: 3222
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon4
+    MonsterID: 3223
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon4
+    MonsterID: 3229
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos7_Dungeon5
+    MonsterID: 3222
+    Ratio: 2
+    Avr: 20
+    Max: 20
+  - Table: Mon_Chaos7_Dungeon5
+    MonsterID: 3223
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon5
+    MonsterID: 3224
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Chaos7_Dungeon5
+    MonsterID: 3230
+    Ratio: 2
+    Avr: 30
+    Max: 30
+  - Table: Mon_Chaos7_Dungeon6
+    MonsterID: 3217
+    Ratio: 1
+    Avr: 1
+    Max: 1
+  - Table: Mon_Office2_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Office2_Dungeon1
+    MonsterID: 3232
+    Avr: 30
+    Max: 30
+  - Table: Mon_Office2_Dungeon1
+    MonsterID: 3233
+    Avr: 3
+    Max: 3
+  - Table: Mon_Office2_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Office2_Dungeon2
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Office2_Dungeon2
+    MonsterID: 3232
+    Avr: 5
+    Max: 5
+  - Table: Mon_Office2_Dungeon2
+    MonsterID: 3233
+    Avr: 25
+    Max: 25
+  - Table: Mon_Office2_Dungeon2
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Office2_Dungeon3
+    MonsterID: 3234
+    Avr: 1
+    Max: 1
+  - Table: Mon_Office2_Dungeon4
+    MonsterID: 16752
+    Avr: 20
+    Max: 20
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3305
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3235
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Tartaros1_Dungeon1
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Tartaros1_Dungeon2
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon2
+    MonsterID: 3237
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon3
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon3
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon4
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon4
+    MonsterID: 3237
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon5
+    MonsterID: 3238
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon5
+    MonsterID: 3237
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon6
+    MonsterID: 3238
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon6
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon7
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon7
+    MonsterID: 3237
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon8
+    MonsterID: 3236
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon8
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon8
+    MonsterID: 3240
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon9
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon9
+    MonsterID: 3237
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon10
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon10
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon11
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon11
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon11
+    MonsterID: 3241
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon12
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon12
+    MonsterID: 3237
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon13
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon13
+    MonsterID: 3237
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon14
+    MonsterID: 3236
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon14
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon14
+    MonsterID: 3240
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon15
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon15
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon15
+    MonsterID: 3241
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon16
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon16
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon17
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon17
+    MonsterID: 3237
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon17
+    MonsterID: 3240
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon18
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon18
+    MonsterID: 3237
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon19
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon19
+    MonsterID: 3237
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon20
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon20
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon21
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon21
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon21
+    MonsterID: 3241
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon22
+    MonsterID: 3238
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon22
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon23
+    MonsterID: 3238
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon23
+    MonsterID: 3237
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon24
+    MonsterID: 3236
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon24
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon24
+    MonsterID: 3240
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon25
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon25
+    MonsterID: 3237
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon25
+    MonsterID: 3241
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon26
+    MonsterID: 3238
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon26
+    MonsterID: 3237
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon27
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon27
+    MonsterID: 3239
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon27
+    MonsterID: 3242
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 1
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3305
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3235
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 2
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 3
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 4
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 5
+  - Table: Mon_Tartaros1_Dungeon28
+    MonsterID: 3231
+    Avr: 1
+    Max: 1
+    Region: 6
+  - Table: Mon_Tartaros1_Dungeon29
+    MonsterID: 3236
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon29
+    MonsterID: 3238
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon30
+    MonsterID: 3236
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon30
+    MonsterID: 3238
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon31
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon31
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon32
+    MonsterID: 3236
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon32
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon33
+    MonsterID: 3236
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon33
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon34
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon34
+    MonsterID: 3239
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon34
+    MonsterID: 3241
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon35
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon35
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon36
+    MonsterID: 3236
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon36
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon37
+    MonsterID: 3236
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon37
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon38
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon38
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon39
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon39
+    MonsterID: 3239
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon39
+    MonsterID: 3240
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon40
+    MonsterID: 3236
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon40
+    MonsterID: 3238
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon41
+    MonsterID: 3236
+    Avr: 8
+    Max: 8
+  - Table: Mon_Tartaros1_Dungeon41
+    MonsterID: 3238
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon42
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon42
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon43
+    MonsterID: 3236
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon43
+    MonsterID: 3238
+    Avr: 9
+    Max: 9
+  - Table: Mon_Tartaros1_Dungeon44
+    MonsterID: 3236
+    Avr: 9
+    Max: 9
+  - Table: Mon_Tartaros1_Dungeon44
+    MonsterID: 3238
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon45
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon45
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon46
+    MonsterID: 3236
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon46
+    MonsterID: 3238
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon47
+    MonsterID: 3236
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros1_Dungeon47
+    MonsterID: 3238
+    Avr: 3
+    Max: 3
+  - Table: Mon_Tartaros1_Dungeon48
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon48
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon49
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon49
+    MonsterID: 3238
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros1_Dungeon50
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon50
+    MonsterID: 3239
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon50
+    MonsterID: 3242
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon51
+    MonsterID: 3236
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros1_Dungeon51
+    MonsterID: 3238
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon52
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon52
+    MonsterID: 3239
+    Avr: 2
+    Max: 2
+  - Table: Mon_Tartaros1_Dungeon52
+    MonsterID: 3243
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros1_Dungeon53
+    MonsterID: 3236
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon53
+    MonsterID: 3238
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros1_Dungeon54
+    MonsterID: 3236
+    Avr: 4
+    Max: 4
+  - Table: Mon_Tartaros1_Dungeon54
+    MonsterID: 3238
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros1_Dungeon55
+    MonsterID: 3244
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon2
+    MonsterID: 3316
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon2
+    MonsterID: 3330
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon3
+    MonsterID: 3316
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon3
+    MonsterID: 3329
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon4
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon5
+    MonsterID: 3316
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros2_Dungeon5
+    MonsterID: 3311
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros2_Dungeon6
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon7
+    MonsterID: 3316
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon7
+    MonsterID: 3330
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon8
+    MonsterID: 3316
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon8
+    MonsterID: 3329
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon9
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon10
+    MonsterID: 3317
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros2_Dungeon10
+    MonsterID: 3312
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros2_Dungeon11
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon12
+    MonsterID: 3317
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon12
+    MonsterID: 3311
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon13
+    MonsterID: 3317
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon13
+    MonsterID: 3312
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon14
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon15
+    MonsterID: 3317
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros2_Dungeon15
+    MonsterID: 3313
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros2_Dungeon16
+    MonsterID: 3315
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon17
+    MonsterID: 3318
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon17
+    MonsterID: 3314
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon18
+    MonsterID: 3318
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon18
+    MonsterID: 3313
+    Ratio: 2
+    Avr: 6
+    Max: 6
+  - Table: Mon_Tartaros2_Dungeon19
+    MonsterID: 3318
+    Ratio: 2
+    Avr: 5
+    Max: 5
+  - Table: Mon_Tartaros2_Dungeon19
+    MonsterID: 3314
+    Ratio: 2
+    Avr: 7
+    Max: 7
+  - Table: Mon_Tartaros2_Dungeon20
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon21
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon22
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon23
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon24
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon25
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon26
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon27
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon28
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon29
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon30
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon31
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon32
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon33
+    MonsterID: 3319
+    Ratio: 2
+    Avr: 10
+    Max: 10
+  - Table: Mon_Tartaros2_Dungeon35
+    MonsterID: 3320
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon36
+    MonsterID: 3306
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon36
+    MonsterID: 3326
+    Ratio: 2
+    Avr: 39
+    Max: 39
+  - Table: Mon_Tartaros2_Dungeon37
+    MonsterID: 3321
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon38
+    MonsterID: 3322
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon39
+    MonsterID: 3307
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon39
+    MonsterID: 3327
+    Ratio: 2
+    Avr: 39
+    Max: 39
+  - Table: Mon_Tartaros2_Dungeon40
+    MonsterID: 3323
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon41
+    MonsterID: 3308
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon41
+    MonsterID: 3328
+    Ratio: 2
+    Avr: 39
+    Max: 39
+  - Table: Mon_Tartaros2_Dungeon42
+    MonsterID: 3324
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon43
+    MonsterID: 3309
+    Ratio: 2
+    Avr: 1
+    Max: 1
+  - Table: Mon_Tartaros2_Dungeon44
+    MonsterID: 3310
+    Ratio: 2
+    Avr: 1
+    Max: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/mon_spawn_db.yml

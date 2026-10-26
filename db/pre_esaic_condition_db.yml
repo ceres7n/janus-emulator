@@ -1,0 +1,39 @@
+# =============================================================================
+#   PreESAICondition Database  (PRE_ESAIC_CONDITION_DB)
+# =============================================================================
+#
+#   Table PreESAICondition of the ORIGINAL server data (kto_libconfig.xml,
+#   3 rows, in its order): the HP / MP a skill needs before it fires.
+#   Field names verbatim; Name = the skill's name in skill_db.yml (display only).
+#
+#   Fields
+#     ID      - the skill (skill_db.yml)                                 [key]
+#     MpRate  - MP / MaxMP (as a float) must be at least this
+#     HpRate  - HP / MaxHP (as a float) must be at least this
+#   Retail use: the checks right before a skill fires (sub_890B30 ->
+#   sub_890DD0, the GameInfoMgr map loaded by sub_625470 "PreESAICondition"): a
+#   skill with a row and less HP or MP -> S2C 0x01E4 [10][0][0] and the
+#   cancel reason 15 (S2C 239); a skill without a row always passes.
+# =============================================================================
+
+Header:
+  Type: PRE_ESAIC_CONDITION_DB
+  Version: 1
+
+Body:
+  - ID: 4105
+    Name: Evolution
+    MpRate: 0.6
+    HpRate: 0.6
+  - ID: 4206
+    Name: Metamorphosis
+    MpRate: 0.6
+    HpRate: 0.6
+  - ID: 4211
+    Name: Mass Destruction
+    MpRate: 0
+    HpRate: 0.8
+
+Footer:
+  Imports:
+#  - Path: db/import/pre_esaic_condition_db.yml

@@ -1,0 +1,462 @@
+# =============================================================================
+#   Skill Shop Item Database  (SKILL_SHOP_ITEM_DB)
+# =============================================================================
+#   The SkillShopItem_* tables of the ORIGINAL server data named by skill_shop_db.yml ItemTable
+#   (GameInfoMgr sub_62A1C0: at most 128 rows, in order) — what a skill master sells / buys.
+#
+#   Fields
+#     Table        - the table                                                  [key]
+#     ItemId       - the item
+#     PurchaseRate / SellingRate - its own rates (0: the master's)
+#     OutOfStock   - 1: not sold
+# =============================================================================
+
+Header:
+  Type: SKILL_SHOP_ITEM_DB
+  Version: 1
+
+Body:
+  - Table: SkillShopItem_Square1
+    ItemId: 27001
+  - Table: SkillShopItem_Square1
+    ItemId: 27003
+  - Table: SkillShopItem_Square1
+    ItemId: 27004
+  - Table: SkillShopItem_Square1
+    ItemId: 27005
+  - Table: SkillShopItem_Square1
+    ItemId: 27006
+  - Table: SkillShopItem_Square1
+    ItemId: 27007
+  - Table: SkillShopItem_Square1
+    ItemId: 27008
+  - Table: SkillShopItem_Square1
+    ItemId: 27009
+  - Table: SkillShopItem_Square1
+    ItemId: 27010
+  - Table: SkillShopItem_Square1
+    ItemId: 27011
+  - Table: SkillShopItem_Square1
+    ItemId: 27002
+  - Table: SkillShopItem_Square1
+    ItemId: 31301
+  - Table: SkillShopItem_Square1
+    ItemId: 31302
+  - Table: SkillShopItem_Square1
+    ItemId: 31303
+  - Table: SkillShopItem_Square1
+    ItemId: 31304
+  - Table: SkillShopItem_Square1
+    ItemId: 31305
+  - Table: SkillShopItem_Square1
+    ItemId: 31306
+  - Table: SkillShopItem_Square1
+    ItemId: 31307
+  - Table: SkillShopItem_Square1
+    ItemId: 31300
+  - Table: SkillShopItem_Square2
+    ItemId: 28001
+  - Table: SkillShopItem_Square2
+    ItemId: 28002
+  - Table: SkillShopItem_Square2
+    ItemId: 28004
+  - Table: SkillShopItem_Square2
+    ItemId: 28005
+  - Table: SkillShopItem_Square2
+    ItemId: 28008
+  - Table: SkillShopItem_Square2
+    ItemId: 28009
+  - Table: SkillShopItem_Square2
+    ItemId: 28006
+  - Table: SkillShopItem_Square2
+    ItemId: 28007
+  - Table: SkillShopItem_Square2
+    ItemId: 28010
+  - Table: SkillShopItem_Square2
+    ItemId: 28011
+  - Table: SkillShopItem_Square2
+    ItemId: 28012
+  - Table: SkillShopItem_Square2
+    ItemId: 28003
+  - Table: SkillShopItem_Square2
+    ItemId: 28013
+  - Table: SkillShopItem_Square3
+    ItemId: 29001
+  - Table: SkillShopItem_Square3
+    ItemId: 29002
+  - Table: SkillShopItem_Square3
+    ItemId: 29003
+  - Table: SkillShopItem_Square3
+    ItemId: 29006
+  - Table: SkillShopItem_Square3
+    ItemId: 29008
+  - Table: SkillShopItem_Square3
+    ItemId: 29004
+  - Table: SkillShopItem_Square3
+    ItemId: 29005
+  - Table: SkillShopItem_Square3
+    ItemId: 29007
+  - Table: SkillShopItem_Square3
+    ItemId: 29009
+  - Table: SkillShopItem_Square3
+    ItemId: 29010
+  - Table: SkillShopItem_Square3
+    ItemId: 29011
+  - Table: SkillShopItem_Square3
+    ItemId: 29012
+  - Table: SkillShopItem_Square3
+    ItemId: 29013
+  - Table: SkillShopItem_Square3
+    ItemId: 29014
+  - Table: SkillShopItem_Square3
+    ItemId: 29016
+  - Table: SkillShopItem_Square4
+    ItemId: 30001
+  - Table: SkillShopItem_Square4
+    ItemId: 30003
+  - Table: SkillShopItem_Square4
+    ItemId: 30005
+  - Table: SkillShopItem_Square4
+    ItemId: 30008
+  - Table: SkillShopItem_Square4
+    ItemId: 30002
+  - Table: SkillShopItem_Square4
+    ItemId: 30006
+  - Table: SkillShopItem_Square4
+    ItemId: 30010
+  - Table: SkillShopItem_Square4
+    ItemId: 30011
+  - Table: SkillShopItem_Square4
+    ItemId: 30007
+  - Table: SkillShopItem_Square4
+    ItemId: 30004
+  - Table: SkillShopItem_Square4
+    ItemId: 30009
+  - Table: SkillShopItem_Square4
+    ItemId: 30012
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27101
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27102
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27103
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27104
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27105
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27106
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27107
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27108
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27109
+  - Table: SkillShopItem_Relics_Town1
+    ItemId: 27110
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27201
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27202
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27203
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27204
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27205
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27206
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27207
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27208
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27209
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27210
+  - Table: SkillShopItem_Relics_Town2
+    ItemId: 27211
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28101
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28102
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28103
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28104
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28105
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28106
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28107
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28108
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28109
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28110
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28111
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28112
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28113
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28114
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28115
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28116
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28117
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28118
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28119
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28120
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28121
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28122
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28123
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28124
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28125
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28126
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28127
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28128
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28129
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28130
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28131
+  - Table: SkillShopItem_Relics_Town3
+    ItemId: 28132
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28201
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28202
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28203
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28204
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28205
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28206
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28207
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28208
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28209
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28210
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28211
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28212
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28213
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28214
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28215
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28216
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28217
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28218
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28219
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28220
+  - Table: SkillShopItem_Relics_Town4
+    ItemId: 28221
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29101
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29102
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29103
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29104
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29105
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29106
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29107
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29108
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29109
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29110
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29111
+  - Table: SkillShopItem_Relics_Town5
+    ItemId: 29112
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29201
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29202
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29203
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29204
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29205
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29206
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29207
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29208
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29209
+  - Table: SkillShopItem_Relics_Town6
+    ItemId: 29210
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30101
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30102
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30103
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30104
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30105
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30106
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30107
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30108
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30109
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30110
+  - Table: SkillShopItem_Relics_Town7
+    ItemId: 30111
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30201
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30202
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30203
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30204
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30205
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30206
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30207
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30208
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30209
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30210
+  - Table: SkillShopItem_Relics_Town8
+    ItemId: 30211
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31400
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31401
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31402
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31403
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31404
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31405
+  - Table: SkillShopItem_Relics_Town9
+    ItemId: 31406
+  - Table: SkillShopItem_Cora1
+    ItemId: 27001
+  - Table: SkillShopItem_Cora1
+    ItemId: 27003
+  - Table: SkillShopItem_Cora1
+    ItemId: 27004
+  - Table: SkillShopItem_Cora1
+    ItemId: 27006
+  - Table: SkillShopItem_Cora1
+    ItemId: 27007
+  - Table: SkillShopItem_Cora1
+    ItemId: 27010
+  - Table: SkillShopItem_Cora1
+    ItemId: 31301
+  - Table: SkillShopItem_Cora1
+    ItemId: 31302
+  - Table: SkillShopItem_Cora1
+    ItemId: 31303
+  - Table: SkillShopItem_Cora1
+    ItemId: 31304
+  - Table: SkillShopItem_Cora1
+    ItemId: 31305
+  - Table: SkillShopItem_Cora1
+    ItemId: 31306
+  - Table: SkillShopItem_Cora1
+    ItemId: 31307
+  - Table: SkillShopItem_Cora1
+    ItemId: 31300
+  - Table: SkillShopItem_Cora2
+    ItemId: 28001
+  - Table: SkillShopItem_Cora2
+    ItemId: 28002
+  - Table: SkillShopItem_Cora2
+    ItemId: 28004
+  - Table: SkillShopItem_Cora2
+    ItemId: 28005
+  - Table: SkillShopItem_Cora2
+    ItemId: 28008
+  - Table: SkillShopItem_Cora2
+    ItemId: 28010
+  - Table: SkillShopItem_Cora2
+    ItemId: 28011
+  - Table: SkillShopItem_Cora2
+    ItemId: 28003
+  - Table: SkillShopItem_Cora3
+    ItemId: 29001
+  - Table: SkillShopItem_Cora3
+    ItemId: 29002
+  - Table: SkillShopItem_Cora3
+    ItemId: 29003
+  - Table: SkillShopItem_Cora3
+    ItemId: 29006
+  - Table: SkillShopItem_Cora3
+    ItemId: 29008
+  - Table: SkillShopItem_Cora3
+    ItemId: 29004
+  - Table: SkillShopItem_Cora3
+    ItemId: 29007
+  - Table: SkillShopItem_Cora3
+    ItemId: 29011
+  - Table: SkillShopItem_Cora4
+    ItemId: 30001
+  - Table: SkillShopItem_Cora4
+    ItemId: 30003
+  - Table: SkillShopItem_Cora4
+    ItemId: 30005
+  - Table: SkillShopItem_Cora4
+    ItemId: 30008
+  - Table: SkillShopItem_Cora4
+    ItemId: 30002
+  - Table: SkillShopItem_Cora4
+    ItemId: 30006
+
+Footer:
+  Imports:
+#  - Path: db/import/skill_shop_item_db.yml

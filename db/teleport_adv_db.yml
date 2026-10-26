@@ -1,0 +1,138 @@
+# =============================================================================
+#   Teleport ADV Database  (TELEPORT_ADV_DB)
+# =============================================================================
+#
+#   Table TeleportAdvInfo of the ORIGINAL server data (kto_libconfig.xml, 31 rows,
+#   in its order): the destinations of the Portable Port AD items (Type 15, Effect
+#   20, used with C2S 0x0108 [u32 ZoneIndex]). Field names verbatim.
+#
+#   Fields
+#     ZoneIndex - the index the client sends                       [key]
+#     ZoneType  - the client's grouping (display)
+#     Name      - the destination's name (display)
+#     ZoneID    - the zone
+# =============================================================================
+
+Header:
+  Type: TELEPORT_ADV_DB
+  Version: 1
+
+Body:
+  - ZoneIndex: 0
+    Name: Gate of Desert Beach
+    ZoneID: 3
+  - ZoneIndex: 1
+    Name: Gate of Ghost Blue
+    ZoneID: 4
+  - ZoneIndex: 2
+    Name: Gate of Caballa Relics
+    ZoneID: 2
+  - ZoneIndex: 3
+    Name: Gate of Black Swamp
+    ZoneID: 6
+  - ZoneIndex: 4
+    Name: Gate of Oops Wharf
+    ZoneID: 284
+  - ZoneIndex: 5
+    Name: Gate of Tapasco Volcano
+    ZoneID: 7
+  - ZoneIndex: 6
+    ZoneType: 1
+    Name: Megalopolis
+    ZoneID: 1
+  - ZoneIndex: 7
+    ZoneType: 1
+    Name: Blooming Cora
+    ZoneID: 148
+  - ZoneIndex: 8
+    ZoneType: 1
+    Name: Paradise
+    ZoneID: 33
+  - ZoneIndex: 9
+    ZoneType: 1
+    Name: Aquarius
+    ZoneID: 43
+  - ZoneIndex: 10
+    ZoneType: 1
+    Name: Azteca
+    ZoneID: 54
+  - ZoneIndex: 11
+    ZoneType: 1
+    Name: Carbigal
+    ZoneID: 69
+  - ZoneIndex: 12
+    ZoneType: 3
+    Name: Event Garden
+    ZoneID: 86
+  - ZoneIndex: 13
+    ZoneType: 3
+    Name: Spicy Island
+    ZoneID: 104
+  - ZoneIndex: 15
+    ZoneType: 3
+    Name: Tango Cabin
+    ZoneID: 67
+  - ZoneIndex: 16
+    ZoneType: 3
+    Name: Snow Hill Gift Factory
+    ZoneID: 84
+  - ZoneIndex: 17
+    ZoneType: 2
+    Name: Gate of Phantom School
+    ZoneID: 116
+  - ZoneIndex: 18
+    ZoneType: 2
+    Name: Gate of Poppuri Dungeon
+    ZoneID: 159
+  - ZoneIndex: 19
+    ZoneType: 2
+    Name: Gate of Vamp Castle
+    ZoneID: 168
+  - ZoneIndex: 20
+    Name: Gate of Snow Hill
+    ZoneID: 169
+  - ZoneIndex: 21
+    ZoneType: 2
+    Name: Gate of Blue Ice Dungeon
+    ZoneID: 170
+  - ZoneIndex: 22
+    Name: Gate of Techichi
+    ZoneID: 171
+  - ZoneIndex: 24
+    ZoneType: 1
+    Name: Oops Wharf
+    ZoneID: 5
+  - ZoneIndex: 25
+    Name: Gate of Abyss
+    ZoneID: 429
+  - ZoneIndex: 26
+    ZoneType: 1
+    Name: Platonia
+    ZoneID: 430
+  - ZoneIndex: 27
+    ZoneType: 2
+    Name: Gate of Mermaid Dungeon
+    ZoneID: 267
+  - ZoneIndex: 28
+    ZoneType: 2
+    Name: Gate of Black Ash
+    ZoneID: 462
+  - ZoneIndex: 29
+    Name: Entrance of Mermaid Palace
+    ZoneID: 574
+  - ZoneIndex: 30
+    ZoneType: 1
+    Name: Laplanoel
+    ZoneID: 589
+  - ZoneIndex: 31
+    ZoneType: 1
+    Name: Neil Camp
+    ZoneID: 637
+  - ZoneIndex: 32
+    ZoneType: 2
+    Name: Tapasco Theme Spa
+    ZoneID: 643
+
+Footer:
+  Imports:
+#  - Path: db/import/teleport_adv_db.yml

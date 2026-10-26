@@ -1,0 +1,3274 @@
+# =============================================================================
+#   Scenario Quest Database  (SCENARIO_QUEST_DB)
+# =============================================================================
+#   Table ScenarioQuestInfo of the ORIGINAL server data (221 rows) — a scenario quest (GameInfoMgr
+#   sub_626D20 area: the QuestInfo record without the skill). Its results are QuestResult tables
+#   (quest_result_db.yml). The texts are sent when it is taken (S2C 0x033D); the Paula backup's
+#   English when it is the same quest and intact, else the original Korean.
+#
+#   Fields
+#     Id                - quest id                                            [key]
+#     Name, Client, Pos, Comment - the quest's texts
+#     MinLevel/MaxLevel - the level range (both 0: any)
+#     Exp / Tmxp        - EXP / TM EXP added to the result's own
+#     SrcItemN / CntN   - the items it asks for (N = 0..5)
+#     SrcGelder         - the money needed to be offered it
+#     ResultTable       - its QuestResult table
+#     MaxCount          - how many times (0 or less: 25; 99 and more: no limit)
+#     RefId, Options
+# =============================================================================
+
+Header:
+  Type: SCENARIO_QUEST_DB
+  Version: 1
+
+Body:
+  - Id: 1079
+    Name: Rosaline's Worry.
+    Client: Rosaline Gracia
+    Pos: Oops Wharf
+    Comment: Show her the knife.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11745   # Sword of Vengeance
+    Cnt0: 1
+    ResultTable: QuestResult_1079
+    MaxCount: 1
+    RefId: 1079
+  - Id: 1080
+    Name: Fate of the Portrait.
+    Client: Rosaline Gracia
+    Pos: Oops Wharf
+    Comment: Get a letter from Robin after handing over the portrait.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11698   # Robin's Letter
+    Cnt0: 1
+    ResultTable: QuestResult_1080
+    MaxCount: 1
+    RefId: 1080
+  - Id: 1081
+    Name: Robin's Acceptance
+    Client: Love Hunter Robin
+    Pos: Path to Caballa Relics
+    Comment: Bring 3 [Dark Clothes
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11566   # Nefertiti's Portrait
+    Cnt0: 1
+    SrcItem1: 11696   # Dark Cloth
+    Cnt1: 3
+    ResultTable: QuestResult_1081
+    MaxCount: 1
+    RefId: 1081
+  - Id: 1083
+    Name: Marx's Sheath
+    Client: Blacksmith Marx
+    Pos: Gate of Mermaid Dungeon
+    Comment: Bring me 3 [Sturdy Scales], 3 [Pearls] and 3 [Black Pearls
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11724   # Sturdy Scale
+    Cnt0: 3
+    SrcItem1: 11021   # Pearl
+    Cnt1: 3
+    SrcItem2: 11022   # Black pearl
+    Cnt2: 3
+    ResultTable: QuestResult_1083
+    MaxCount: 1
+    RefId: 1083
+  - Id: 1086
+    Name: Clay Tablet Discovered
+    Client: Indiana John
+    Pos: Relics Field 2 - Hand of Giant
+    Comment: Bring 5 Clay Tablets.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11723   # Clay Tablet
+    Cnt0: 5
+    ResultTable: QuestResult_1086
+    MaxCount: 1
+    RefId: 1086
+  - Id: 1087
+    Name: Incense of Flame 1
+    Client: Bard La Fimmel
+    Pos: Gate of Mirage Island
+    Comment: Get Smoke of Yellow Flames from Portina
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11700   # Yellow Flame Incense
+    Cnt0: 1
+    ResultTable: QuestResult_1087
+    MaxCount: 1
+    RefId: 1087
+  - Id: 1089
+    Name: Incense of Flame 2
+    Client: Bard La Fimmel
+    Pos: Gate of Mirage Island
+    Comment: Get Smoke of Purple Flames from Nefertiti
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11701   # Purple Flame Incense
+    Cnt0: 1
+    ResultTable: QuestResult_1089
+    MaxCount: 1
+    RefId: 1089
+  - Id: 1091
+    Name: Magical Silver Platter
+    Client: Fortune Teller
+    Pos: Mirage Island Field 1 - Alteo
+    Comment: Bring 1 Silver Platter and 1 Mirror Spring Water
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11703   # Silver Platter
+    Cnt0: 1
+    SrcItem1: 11725   # Mirror Spring Water
+    Cnt1: 1
+    ResultTable: QuestResult_1091
+    MaxCount: 1
+    RefId: 1091
+  - Id: 1092
+    Name: Gift from La Fimmel
+    Client: Bard La Fimmel
+    Pos: Gate of Mirage Island
+    Comment: Bring 5 Moonlight Corals and 5 Baleen of Whale
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 7095200
+    Tmxp: 13551300
+    SrcItem0: 11707   # Moonlight Coral
+    Cnt0: 5
+    SrcItem1: 11726   # Whale Baleen
+    Cnt1: 5
+    ResultTable: QuestResult_1092
+    MaxCount: 1
+    RefId: 1092
+  - Id: 1101
+    Name: Robin's Secret
+    Client: Love Hunter Robin
+    Pos: Mirage Island Field 1 - Alteo
+    Comment: Bring 1 Papyrus and 1 Ancient Feathered Pen
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11023   # Papyrus
+    Cnt0: 1
+    SrcItem1: 11729   # Ancient Feather Pen
+    Cnt1: 1
+    ResultTable: QuestResult_1101
+    MaxCount: 1
+    RefId: 1101
+  - Id: 1082
+    Name: Knife's New Owner
+    Client: Don Giuvanni
+    Pos: Oops Wharf
+    Comment: Blacksmith Marx
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11745   # Sword of Vengeance
+    Cnt0: 1
+    SrcItem1: 11693   # Scabbard
+    Cnt1: 1
+    ResultTable: QuestResult_1082
+    MaxCount: 1
+    RefId: 1082
+  - Id: 1084
+    Name: Man's Tears
+    Client: Don Giuvanni
+    Pos: Oops Wharf
+    Comment: Knock [Don Giuvanni] out and get his manly [Tears
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11744   # Giuvanni's Tear
+    Cnt0: 1
+    SrcItem1: 11694   # Blank Check
+    Cnt1: 1
+    ResultTable: QuestResult_1084
+    MaxCount: 1
+    RefId: 1084
+  - Id: 1085
+    Name: Writing on the Knife
+    Client: Don Giuvanni
+    Pos: Oops Wharf
+    Comment: Meet with [Indiana John] at [Caballa Relices Field 2] and get the [Decoder
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 7095200
+    Tmxp: 13551300
+    SrcItem0: 11697   # Decoded Document
+    Cnt0: 1
+    ResultTable: QuestResult_1085
+    MaxCount: 1
+    RefId: 1085
+  - Id: 1090
+    Name: Remember Queen Nefertiti
+    Client: Queen Nefertiti
+    Pos: Mirage Island Field 3 - Fremeia
+    Comment: Get Magical Silver Platter from a Fortune Teller
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11704   # Magical Silver Platter
+    Cnt0: 1
+    ResultTable: QuestResult_1090
+    MaxCount: 1
+    RefId: 1090
+  - Id: 1097
+    Name: 'Act 1 Scene 4: Curse of Moirae'
+    Client: Clotho
+    Pos: Mirage Island Dungeon 2 - Deepest Cave
+    Comment: Bring 5 Fluorescent Marbles
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11711   # Fluorescent Marble
+    Cnt0: 5
+    ResultTable: QuestResult_1097
+    MaxCount: 1
+    RefId: 1097
+  - Id: 1098
+    Name: 'Act 2 Sc 1: Reunion of Nefertiti'
+    Client: Queen Nefertiti
+    Pos: Mirage Island Field 3 - Fremeia
+    Comment: Go talk to Rumor, Spirit of the Ocean.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11712   # Earthen Fate Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1098
+    MaxCount: 1
+    RefId: 1098
+  - Id: 1099
+    Name: Confession of Spirit of the Ocean
+    Client: Sea Spirit Rumo
+    Pos: Mirage Island Field 3 - Fremeia
+    Comment: Bring 5 Anklets of Ocean Spirit.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11741   # Anklet of Ocean Spirit
+    Cnt0: 5
+    ResultTable: QuestResult_1099
+    MaxCount: 1
+    RefId: 1099
+  - Id: 1102
+    Name: 'Act 3 Scene 1: Death of Enkicladus'
+    Client: Queen Nefertiti
+    Pos: Mirage Island Dungeon 1 - Ocean's End
+    Comment: Get something from Enkicladus that shows how he feels.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11714   # Sky's Fate Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1102
+    MaxCount: 1
+    RefId: 1102
+    Options: 1
+  - Id: 1104
+    Name: 'Act 3 Scene 2: Recall of Spirit'
+    Client: Lachesis
+    Pos: Mirage Island Dungeon 2 - Deepest Cave
+    Comment: Bring 1 Shard of Spirit from Sea Hyena.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11722   # Shard of Spirit
+    Cnt0: 1
+    ResultTable: QuestResult_1104
+    MaxCount: 1
+    RefId: 1104
+  - Id: 1105
+    Name: 'Final Act: Waiting'
+    Client: Queen Nefertiti
+    Pos: Mirage Island Dungeon 1 - Ocean's End
+    Comment: Give her 2 Scrolls and Dark Necklace of Fate (Earth)
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 7095200
+    Tmxp: 13551300
+    SrcItem0: 11713   # Dark Earth Fate Necklace
+    Cnt0: 1
+    SrcItem1: 11717   # Blessed Scroll
+    Cnt1: 1
+    SrcItem2: 11716   # Cursed Scroll
+    Cnt2: 1
+    ResultTable: QuestResult_1105
+    MaxCount: 1
+    RefId: 1105
+  - Id: 1077
+    Name: Kahlihara's Request
+    Client: Kahlihara
+    Pos: Gate of Mermaid Dungeon
+    Comment: Find [Tanya's Sword]!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11691   # Tanya's Sword
+    Cnt0: 1
+    ResultTable: QuestResult_1077
+    MaxCount: 1
+    RefId: 1077
+  - Id: 1078
+    Name: The Sword Deal
+    Client: Kahlihara
+    Pos: Gate of Mermaid Dungeon
+    Comment: Bring Don Giuvanni's [Tear Soaked Check]!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11695   # Tear Soaked Check
+    Cnt0: 1
+    ResultTable: QuestResult_1078
+    MaxCount: 1
+    RefId: 1078
+  - Id: 1088
+    Name: Remember Portina
+    Client: Portina
+    Pos: Mirage Island Field 2 - Cliff of Fate
+    Comment: Bring 5 Abiox
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11702   # Abiox
+    Cnt0: 5
+    ResultTable: QuestResult_1088
+    MaxCount: 1
+    RefId: 1088
+  - Id: 1093
+    Name: Act 1 Scene 1. End of the Cliff
+    Client: Enkicladus
+    Pos: Mirage Island Field 2 - Cliff of Fate
+    Comment: Bring 3 [Dark Choco Pieces] to calm down the monster!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11727   # Dark Choco Piece
+    Cnt0: 3
+    ResultTable: QuestResult_1093
+    MaxCount: 1
+    RefId: 1093
+    Options: 1
+  - Id: 1094
+    Name: 'Act 1 Sc.2: Badly Aimed Spear'
+    Client: Knight Scar
+    Pos: Mirage Island Field 2 - Cliff of Fate
+    Comment: Bring 1 Deadly Poison and 1 Sharp Spear to defeat the monster.
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11708   # Witch's Deadly Poison
+    Cnt0: 1
+    SrcItem1: 11709   # Sharp Spear
+    Cnt1: 1
+    ResultTable: QuestResult_1094
+    MaxCount: 1
+    RefId: 1094
+  - Id: 1095
+    Name: Witch's Deadly Poison
+    Client: Kahlihara
+    Pos: Gate of Mermaid Dungeon
+    Comment: Bring 5 [Fabilsag's Stingers] and 5 [Venomous Canine] to make Deadly Poison!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11720   # Fabilsag's Stinger
+    Cnt0: 5
+    SrcItem1: 10081   # Venomous Canine
+    Cnt1: 5
+    SrcItem2: 11692   # Voucher of Promise
+    Cnt2: 1
+    ResultTable: QuestResult_1095
+    MaxCount: 1
+    RefId: 1095
+  - Id: 1096
+    Name: Act 1 Scene 3. Love's Sacrifice
+    Client: Enkicladus
+    Pos: Mirage Island Field 2 - Cliff of Fate
+    Comment: Bring 1 [White Lily Bouquet] to console Portina's soul!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11710   # White Lily Bouquet
+    Cnt0: 1
+    ResultTable: QuestResult_1096
+    MaxCount: 1
+    RefId: 1096
+  - Id: 1100
+    Name: Act 2 Scene 2. Reunion of Enkicladus
+    Client: Enkicladus
+    Pos: Mirage Island Field 3 - Fremeia
+    Comment: Bring 5 [Ocean Conches] that will change the [Wave Spirit's] mind!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11715   # Ocean Conch
+    Cnt0: 5
+    ResultTable: QuestResult_1100
+    MaxCount: 1
+    RefId: 1100
+  - Id: 1103
+    Name: The Final Request
+    Client: Enkicladus
+    Pos: Mirage Island Dungeon 1 - Ocean's End
+    Comment: Retrieve the lost Bloody Rune of Fate!
+    MinLevel: 80
+    MaxLevel: 400
+    Exp: 506800
+    Tmxp: 967950
+    SrcItem0: 11721   # Bloody Rune of Fate
+    Cnt0: 1
+    ResultTable: QuestResult_1103
+    MaxCount: 1
+    RefId: 1103
+  - Id: 1000
+    Name: Monkey Business
+    Client: Monkey T
+    Pos: Gate of Caballa Relics
+    Comment: Bring 5 [50 Galder Coupons
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 102   # 50 Galder Coupon
+    Cnt0: 5
+    ResultTable: QuestResult_1000
+    MaxCount: 1
+    RefId: 1000
+  - Id: 1001
+    Name: Old Artist's Request
+    Client: Old Artist
+    Pos: Relics Field 1 - Atlas
+    Comment: Bring 1 Faded Necklace and 1 [Ginseng Tea
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11564   # Faded Necklace
+    Cnt0: 1
+    SrcItem1: 63002   # Ginseng Tea
+    Cnt1: 1
+    ResultTable: QuestResult_1001
+    MaxCount: 1
+    RefId: 1001
+  - Id: 1002
+    Name: Old Artist's Errand
+    Client: Old Artist
+    Pos: Relics Field 1 - Atlas
+    Comment: Bring 1 [Fully Filled Container
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11586   # Fully-Filled Container
+    Cnt0: 1
+    ResultTable: QuestResult_1002
+    MaxCount: 1
+    RefId: 1002
+  - Id: 1003
+    Name: Sabrina's Sacred Water
+    Client: Guide Sabrina
+    Pos: Relics Town - Azteca
+    Comment: Bring back 1 [Artist's Empty Container], 5 [Gold], and 1 [Golden Egg].
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11585   # Empty Container
+    Cnt0: 1
+    SrcItem1: 10414   # Gold
+    Cnt1: 5
+    SrcItem2: 11024   # Golden Egg
+    Cnt2: 1
+    ResultTable: QuestResult_1003
+    MaxCount: 1
+    RefId: 1003
+  - Id: 1004
+    Name: Help Old Artist
+    Client: Old Artist
+    Pos: Relics Field 1 - Atlas
+    Comment: Bring 1 [Chuu~ Check
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11567   # Chuu~ Check
+    Cnt0: 1
+    ResultTable: QuestResult_1004
+    MaxCount: 1
+    RefId: 1004
+  - Id: 1005
+    Name: Mermaid Babe's Complaint
+    Client: Model Babe Mermaid
+    Pos: Relics Field 1 - Atlas
+    Comment: Bring 1 [Mermaid Babe's Portrait] and 1 [Fantastic Hand Mirror
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11587   # Mermaid Babe's Portrait
+    Cnt0: 1
+    SrcItem1: 11588   # Antique Mirror
+    Cnt1: 1
+    ResultTable: QuestResult_1005
+    MaxCount: 1
+    RefId: 1005
+  - Id: 1006
+    Name: A Mirror for the Beauty
+    Client: Model Babe Mermaid
+    Pos: Relics Field 1 - Atlas
+    Comment: Bring a [Fantastic Hand Mirror
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11589   # Fantastic Hand Mirror
+    Cnt0: 1
+    ResultTable: QuestResult_1006
+    MaxCount: 1
+    RefId: 1006
+  - Id: 1007
+    Name: Louis the Great!
+    Client: Louis Bitton
+    Pos: Azteca
+    Comment: Get 1 Antique Mirror and 1 Fantastic Powder.
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11588   # Antique Mirror
+    Cnt0: 1
+    SrcItem1: 11590   # Fantastic Powder
+    Cnt1: 1
+    ResultTable: QuestResult_1007
+    MaxCount: 1
+    RefId: 1007
+  - Id: 1008
+    Name: Necklace's Owner
+    Client: Love Hunter Robin
+    Pos: Path to Caballa Relics
+    Comment: Get 1 [Restored Necklace].
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 11565   # Restored Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1008
+    MaxCount: 1
+    RefId: 1008
+  - Id: 1009
+    Name: Rosaline's archives
+    Client: Rosaline
+    Pos: Megalo Plaza
+    Comment: Find Honey Tea and Nefertiti's Portrait.
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 1288065
+    Tmxp: 606262
+    SrcItem0: 11566   # Nefertiti's Portrait
+    Cnt0: 1
+    SrcItem1: 11592   # Honey Tea
+    Cnt1: 1
+    ResultTable: QuestResult_1009
+    MaxCount: 1
+    RefId: 1009
+  - Id: 1015
+    Name: Weird Box.
+    Client: Indiana John
+    Pos: Caballa Relics Dungeon 1
+    Comment: Find Weird Piece 1, 2, and 3.
+    MinLevel: 50
+    MaxLevel: 400
+    Exp: 331296
+    Tmxp: 376990
+    SrcItem0: 11570   # Weird Piece 1
+    Cnt0: 1
+    SrcItem1: 11571   # Weird Piece 2
+    Cnt1: 1
+    SrcItem2: 11572   # Weird Piece 3
+    Cnt2: 1
+    ResultTable: QuestResult_1015
+    MaxCount: 1
+    RefId: 1015
+  - Id: 1016
+    Name: Skipper Min's Sightings
+    Client: Skipper Min
+    Pos: Path to Oops Wharf
+    Comment: Bring 3 [Thick Rope] and 5 [Pieces of Lumber
+    MinLevel: 50
+    MaxLevel: 400
+    Exp: 331296
+    Tmxp: 376990
+    SrcItem0: 11367   # Thick Rope
+    Cnt0: 3
+    SrcItem1: 11595   # Piece of Lumber
+    Cnt1: 5
+    ResultTable: QuestResult_1016
+    MaxCount: 1
+    RefId: 1016
+  - Id: 1017
+    Name: Jia's Deja vu
+    Client: Shaman Jia
+    Pos: Wharf Field 4 - Chrono Wharf
+    Comment: Bring 2 [Bell Cluster
+    MinLevel: 50
+    MaxLevel: 400
+    Exp: 331296
+    Tmxp: 376990
+    SrcItem0: 11574   # Bell Cluster
+    Cnt0: 2
+    ResultTable: QuestResult_1017
+    MaxCount: 1
+    RefId: 1017
+  - Id: 1018
+    Name: Eloy's Tale.
+    Client: Vagabond Eloy
+    Pos: Oops Wharf
+    Comment: Find 3 Baby Powders.
+    MinLevel: 50
+    MaxLevel: 400
+    Exp: 331296
+    Tmxp: 376990
+    SrcItem0: 63000   # Baby Powder
+    Cnt0: 3
+    ResultTable: QuestResult_1018
+    MaxCount: 1
+    RefId: 1018
+  - Id: 1020
+    Name: Reina's Preparation.
+    Client: Explorer Reina
+    Pos: Path to Mermaid Palace 1
+    Comment: Get 5 Power Plan Batteries.
+    MinLevel: 52
+    MaxLevel: 400
+    Exp: 363639
+    Tmxp: 429317
+    SrcItem0: 63005   # Power Plan Battery
+    Cnt0: 5
+    ResultTable: QuestResult_1020
+    MaxCount: 1
+    RefId: 1020
+  - Id: 1019
+    Name: Final Love of Tango
+    Client: Tango
+    Pos: Path to Oops Wharf
+    Comment: Find a Harkon Necklace.
+    MinLevel: 52
+    MaxLevel: 400
+    Exp: 363639
+    Tmxp: 429317
+    SrcItem0: 11583   # Harkon Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1019
+    MaxCount: 1
+    RefId: 1019
+  - Id: 1021
+    Name: Fairy in a Harkon.
+    Client: Fairy Nono
+    Pos: Path to Mermaid Palace 2
+    Comment: Find 1 Silk Handkerchief, 1 Special Polisher, and 1 Volcano Water.
+    MinLevel: 52
+    MaxLevel: 400
+    Exp: 363639
+    Tmxp: 429317
+    SrcItem0: 11584   # Silk Handkerchief
+    Cnt0: 1
+    SrcItem1: 11596   # Volcano Water
+    Cnt1: 1
+    SrcItem2: 63001   # Special Polisher
+    Cnt2: 1
+    ResultTable: QuestResult_1021
+    MaxCount: 1
+    RefId: 1021
+  - Id: 1106
+    Name: Getting the paperwork ready.
+    Client: Esther
+    Pos: Blooming Cora
+    Comment: Hunt Torobbie and get Entry Application.
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 979
+    Tmxp: 396
+    SrcItem0: 11809   # Entry Application
+    Cnt0: 1
+    ResultTable: QuestResult_1106
+    MaxCount: 1
+    RefId: 1106
+  - Id: 1107
+    Name: Getting the paperwork ready.
+    Client: Esther
+    Pos: Blooming Cora
+    Comment: Get 1 Pen and Official Megalo Documents
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 1378
+    Tmxp: 568
+    SrcItem0: 11806   # Pen
+    Cnt0: 1
+    SrcItem1: 11803   # Official Megalo Documents
+    Cnt1: 1
+    ResultTable: QuestResult_1107
+    MaxCount: 1
+    RefId: 1107
+  - Id: 1108
+    Name: Obtaining Official Documents
+    Client: Bunny Maid
+    Pos: Blooming Cora
+    Comment: Get 1 Luxury Socks and 5 10 Galder Coupons.
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 1979
+    Tmxp: 797
+    SrcItem0: 101   # 10 galder coupon
+    Cnt0: 5
+    SrcItem1: 11233   # Luxury Socks
+    Cnt1: 1
+    ResultTable: QuestResult_1108
+    MaxCount: 1
+    RefId: 1108
+  - Id: 1109
+    Name: Getting it stamped!
+    Client: Esther
+    Pos: Blooming Cora
+    Comment: Get Stamp and Completed Entry Application
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 2822
+    Tmxp: 1090
+    SrcItem0: 11804   # Stamp
+    Cnt0: 1
+    SrcItem1: 11810   # Completed Entry Application
+    Cnt1: 1
+    ResultTable: QuestResult_1109
+    MaxCount: 1
+    RefId: 1109
+  - Id: 1110
+    Name: Stamp! Stamp!
+    Client: Dorothy
+    Pos: Blooming Cora
+    Comment: Get Cool Spring Water, Cool Ice and 5 50 Galder Coupons.
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 3944
+    Tmxp: 1454
+    SrcItem0: 102   # 50 Galder Coupon
+    Cnt0: 5
+    SrcItem1: 10221   # Cool Spring Water
+    Cnt1: 1
+    SrcItem2: 10421   # Cool Ice
+    Cnt2: 1
+    ResultTable: QuestResult_1110
+    MaxCount: 1
+    RefId: 1110
+  - Id: 1111
+    Name: Filed!
+    Client: Esther
+    Pos: Blooming Cora
+    Comment: Get Registration Paper and Entry App. w/Stamp.
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 29882
+    Tmxp: 10514
+    SrcItem0: 11805   # Registration Form
+    Cnt0: 1
+    SrcItem1: 11811   # Entry App. w/Stamp
+    Cnt1: 1
+    ResultTable: QuestResult_1111
+    MaxCount: 1
+  - Id: 1136
+    Name: Meet the Natives!
+    Client: Andrew
+    Pos: Beach Town - Paradise
+    Comment: Return to [Andrew] with 8 [Heart Gems].
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 176960
+    Tmxp: 50160
+    SrcItem0: 11907   # Heart Gem
+    Cnt0: 8
+    ResultTable: QuestResult_1136
+    MaxCount: 1
+    RefId: 1136
+  - Id: 1137
+    Name: Selling [Fantastic Hand Mirror]s
+    Client: Monkey T
+    Pos: Gate of Caballa Relics
+    Comment: Bring 2 [500 Galder Coupons
+    MinLevel: 45
+    MaxLevel: 400
+    Exp: 257613
+    Tmxp: 121252
+    SrcItem0: 104   # 500 galder coupon
+    Cnt0: 2
+    ResultTable: QuestResult_1137
+    MaxCount: 1
+    RefId: 1137
+  - Id: 1138
+    Name: Box's Identity!
+    Client: Indiana John
+    Pos: Caballa Relics Dungeon 1
+    Comment: Find 2 Lamplights and Memo from Weird Box.
+    MinLevel: 50
+    MaxLevel: 400
+    Exp: 1656480
+    Tmxp: 1884952
+    SrcItem0: 63004   # Doc from Weird Box
+    Cnt0: 1
+    SrcItem1: 10068   # Lamplight
+    Cnt1: 2
+    ResultTable: QuestResult_1138
+    MaxCount: 1
+    RefId: 1138
+  - Id: 1139
+    Name: Reina's Exploration.
+    Client: Explorer Reina
+    Pos: Path to Mermaid Palace 1
+    Comment: Get 3 Harkon Ornaments.
+    MinLevel: 52
+    MaxLevel: 400
+    Exp: 363639
+    Tmxp: 429317
+    SrcItem0: 11582   # Harkon Ornament
+    Cnt0: 3
+    ResultTable: QuestResult_1139
+    MaxCount: 1
+    RefId: 1139
+  - Id: 1140
+    Name: Fairy's Favor.
+    Client: Fairy Nono
+    Pos: Path to Mermaid Palace 2
+    Comment: Return Nono's memo. Get Transparent Medicine.
+    MinLevel: 52
+    MaxLevel: 400
+    Exp: 1818198
+    Tmxp: 2146586
+    SrcItem0: 63006   # Transparent Medicine
+    Cnt0: 1
+    SrcItem1: 570   # Nono's Note
+    Cnt1: 1
+    ResultTable: QuestResult_1140
+    MaxCount: 1
+    RefId: 1140
+  - Id: 1158
+    Name: Robin's Advice
+    Client: Love Hunter Robin
+    Pos: Nefertiti's Shrine
+    Comment: Robin's Necklace
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63440   # Robin's Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1158
+    MaxCount: 1
+    RefId: 1158
+  - Id: 1159
+    Name: Rose Fairy's Message - 1
+    Client: Rose Fairy 'Harmony'
+    Pos: Nefertiti's Shrine
+    Comment: Bring 1 Rose Certificate A
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63431   # Rose Certificate A
+    Cnt0: 1
+    ResultTable: QuestResult_1159
+    MaxCount: 1
+    RefId: 1159
+  - Id: 1160
+    Name: Rose Fairy's Message - 2
+    Client: Rose Fairy 'Harmony'
+    Pos: Nefertiti's Shrine
+    Comment: Bring 1 Rose Certificate B
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63432   # Rose Certificate B
+    Cnt0: 1
+    ResultTable: QuestResult_1160
+    MaxCount: 1
+    RefId: 1160
+  - Id: 1161
+    Name: The Rhodonite Guardian
+    Client: Rosaspina
+    Pos: Guardian's Room
+    Comment: Fight with Rosaspina to acquire Robin's Necklace
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63440   # Robin's Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1161
+    MaxCount: 1
+    RefId: 1161
+  - Id: 1162
+    Name: Harkon Statue
+    Client: Love Hunter Robin
+    Pos: Nefertiti's Shrine
+    Comment: Earthen Fate Necklace
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 11712   # Earthen Fate Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1162
+    MaxCount: 1
+    RefId: 1162
+  - Id: 1163
+    Name: The Voice from the Statue
+    Client: Poseidon's Blessing
+    Pos: Nefertiti's Shrine
+    Comment: Soul Summoning Scroll 3, Voice of Spirits, Sincere Heart, Crystal of Light, Spirit of Light
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63417   # Crystal of Light
+    Cnt0: 1
+    SrcItem1: 63445   # Sincere Heart
+    Cnt1: 1
+    SrcItem2: 63421   # Voice of Spirits
+    Cnt2: 1
+    SrcItem3: 63420   # Spirit of Light
+    Cnt3: 1
+    SrcItem4: 585   # Soul Summoning Scroll 3
+    Cnt4: 1
+    ResultTable: QuestResult_1163
+    MaxCount: 1
+    RefId: 1163
+    Options: 1
+  - Id: 1164
+    Name: Reunion with Nono
+    Client: Fairy Nono
+    Pos: Nefertiti's Shrine
+    Comment: Soul Summoning Scroll 1, Fairy Eyedrops
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 583   # Soul Summoning Scroll 1
+    Cnt0: 1
+    SrcItem1: 63444   # Fairy Eyedrops
+    Cnt1: 1
+    ResultTable: QuestResult_1164
+    MaxCount: 1
+    RefId: 1164
+  - Id: 1165
+    Name: Decipher the Scroll
+    Client: Indiana John
+    Pos: Mirage Island Field 7 - Guardian's Square
+    Comment: Bindi, Soul Summoning Scroll 2
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 584   # Soul Summoning Scroll 2
+    Cnt0: 1
+    SrcItem1: 63441   # Bindi
+    Cnt1: 1
+    ResultTable: QuestResult_1165
+    MaxCount: 1
+    RefId: 1165
+  - Id: 1166
+    Name: Spirit Nefertiti's Message
+    Client: Spirit of Nefertiti
+    Pos: Room of Light
+    Comment: Earthen Fate Necklace
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2778411
+    Tmxp: 1038494
+    SrcItem0: 11712   # Earthen Fate Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1166
+    MaxCount: 1
+    RefId: 1166
+  - Id: 1167
+    Name: Robert the Spy
+    Client: Officer Robert
+    Pos: Mirage Island Field 6 - Water Garden
+    Comment: Collect Ancient Feather Pen, Papyrus, and Red Ink Pad
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 11729   # Ancient Feather Pen
+    Cnt0: 1
+    SrcItem1: 11023   # Papyrus
+    Cnt1: 1
+    SrcItem2: 63422   # Red Ink Pad
+    Cnt2: 1
+    ResultTable: QuestResult_1167
+    MaxCount: 1
+    RefId: 1167
+  - Id: 1168
+    Name: Don Cavallier's Proposal
+    Client: Don Cavalier
+    Pos: Hologram Room
+    Comment: Deliver the Earthen Fate Necklace
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 11113644
+    Tmxp: 4153977
+    SrcItem0: 11712   # Earthen Fate Necklace
+    Cnt0: 1
+    ResultTable: QuestResult_1168
+    MaxCount: 1
+    RefId: 1168
+  - Id: 1141
+    Name: Amos' Orders
+    Client: Chief Architect Amos
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Acquire signatures from all 4 of the workers.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2593183
+    Tmxp: 969261
+    SrcItem0: 63410   # Signed Document 4
+    Cnt0: 1
+    ResultTable: QuestResult_1141
+    MaxCount: 1
+    RefId: 1141
+  - Id: 1142
+    Name: Hard Job Pt. 1 Pick Rocks
+    Client: Ancient Sandman A
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Colelct 20 shards of Caliche.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2074547
+    Tmxp: 775409
+    SrcItem0: 63435   # Shard of Caliche
+    Cnt0: 20
+    SrcItem1: 63406   # Unsigned Statement
+    Cnt1: 1
+    ResultTable: QuestResult_1142
+    MaxCount: 1
+    RefId: 1142
+  - Id: 1143
+    Name: Hard Job Pt. 2 Collect Bricks
+    Client: Ancient Sandman B
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: 'Collect 10 of each: Red Lump of Clay, Pale Lump of Clay, and Gray Lump of Clay.'
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2074547
+    Tmxp: 775409
+    SrcItem0: 63411   # Lump of Red Clay
+    Cnt0: 10
+    SrcItem1: 63412   # Lump of Pale Clay
+    Cnt1: 10
+    SrcItem2: 63413   # Lump of Gray Clay
+    Cnt2: 10
+    ResultTable: QuestResult_1143
+    MaxCount: 1
+    RefId: 1143
+  - Id: 1144
+    Name: Hard Job Pt. 2 Collect Timber
+    Client: Ancient Sandman B
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: 'Bring 10 of each: Poplar Wood, Cherry Wood, and Walnut Wood.'
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2074547
+    Tmxp: 775409
+    SrcItem0: 63414   # Poplar Wood
+    Cnt0: 10
+    SrcItem1: 63415   # Cherry Wood
+    Cnt1: 10
+    SrcItem2: 63416   # Walnut Wood
+    Cnt2: 10
+    SrcItem3: 63407   # Signed Statement 1
+    Cnt3: 1
+    ResultTable: QuestResult_1144
+    MaxCount: 1
+    RefId: 1144
+  - Id: 1145
+    Name: Hard Job Pt. 3 Prepare Snacks
+    Client: Ancient Sandman C
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Bring 5 Chickensaurus' Leg
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2074547
+    Tmxp: 775409
+    SrcItem0: 11747   # Chickensaurus's Leg
+    Cnt0: 5
+    SrcItem1: 63408   # Signed Document 2
+    Cnt1: 1
+    ResultTable: QuestResult_1145
+    MaxCount: 1
+    RefId: 1145
+  - Id: 1146
+    Name: Hard Job Pt. 4 Transport Gems
+    Client: Ancient Sandman D
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Bring back the Gem Supply Box
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2074547
+    Tmxp: 775409
+    SrcItem0: 63436   # Gem Supply Box
+    Cnt0: 1
+    SrcItem1: 63409   # Signed Document 3
+    Cnt1: 1
+    ResultTable: QuestResult_1146
+    MaxCount: 1
+    RefId: 1146
+  - Id: 1169
+    Name: Find the Missing Blueprints
+    Client: Chief Architect Amos
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Find one City Pamphlet.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 63487   # City Blueprint
+    Cnt0: 1
+    ResultTable: QuestResult_1169
+    MaxCount: 1
+    RefId: 1169
+  - Id: 1170
+    Name: Who is the Criminal?
+    Client: Ancient Sandman A
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Find 1 Secretly Hidden Gem.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 63447   # Secretly Hidden Gem
+    Cnt0: 1
+    ResultTable: QuestResult_1170
+    MaxCount: 1
+    RefId: 1170
+  - Id: 1171
+    Name: Who is the Criminal?
+    Client: Ancient Sandman B
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Find 1 Secretly Hidden Gem.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 63447   # Secretly Hidden Gem
+    Cnt0: 1
+    ResultTable: QuestResult_1171
+    MaxCount: 1
+    RefId: 1171
+  - Id: 1172
+    Name: Who is the Criminal?
+    Client: Ancient Sandman C
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Find 1 Secretly Hidden Gem.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 63447   # Secretly Hidden Gem
+    Cnt0: 1
+    ResultTable: QuestResult_1172
+    MaxCount: 1
+    RefId: 1172
+  - Id: 1173
+    Name: Who is the Criminal?
+    Client: Ancient Sandman D
+    Pos: Mirage Island Field 4 - Alteo Construction Site
+    Comment: Find 1 Secretly Hidden Gem.
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 63447   # Secretly Hidden Gem
+    Cnt0: 1
+    ResultTable: QuestResult_1173
+    MaxCount: 1
+    RefId: 1173
+  - Id: 1174
+    Name: 범인의 자백
+    Client: 티프몽 콩콩
+    Pos: 신기루 섬 필드1 - 알테오
+    Comment: 복구한 계약서 1개, 몰래 숨긴 보석 4개 가져오기
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 2646105
+    SrcItem0: 586   # Restored Contract
+    Cnt0: 1
+    SrcItem1: 63447   # Secretly Hidden Gem
+    Cnt1: 4
+    ResultTable: QuestResult_1174
+    MaxCount: 1
+    RefId: 1174
+  - Id: 1147
+    Name: The very first Trickster is born
+    Client: Light Filled Egg
+    Pos: Trickster's Shrine
+    Comment: Bring 2 fabilsag's stinger and 5 Ancient Faces
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 11720   # Fabilsag's Stinger
+    Cnt0: 2
+    SrcItem1: 10196   # Ancient Face
+    Cnt1: 5
+    ResultTable: QuestResult_1147
+    MaxCount: 1
+    RefId: 1147
+  - Id: 1148
+    Name: The Story of the Mural - Birth
+    Client: Curator Morgos
+    Pos: Trickster's Shrine
+    Comment: Status Report
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63438   # Status Report
+    Cnt0: 1
+    ResultTable: QuestResult_1148
+    MaxCount: 1
+    RefId: 1148
+  - Id: 1149
+    Name: Mural's Analysis
+    Client: Indiana John
+    Pos: Mirage Island Field 7 - Guardian's Square
+    Comment: Bring Fatigue Medicine
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63437   # Fatigue Medicine
+    Cnt0: 1
+    ResultTable: QuestResult_1149
+    MaxCount: 1
+    RefId: 1149
+  - Id: 1150
+    Name: The Story of the Mural - Growth
+    Client: Curator Morgos
+    Pos: Trickster's Shrine
+    Comment: Restoration Details
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63439   # Restoration Details
+    Cnt0: 1
+    ResultTable: QuestResult_1150
+    MaxCount: 1
+    RefId: 1150
+  - Id: 1151
+    Name: Mural's Restoration
+    Client: Old Artist
+    Pos: Mirage Island Field 7 - Guardian's Square
+    Comment: Bring Restoration Box and Status Report
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63438   # Status Report
+    Cnt0: 1
+    SrcItem1: 63419   # Restoration Box
+    Cnt1: 1
+    ResultTable: QuestResult_1151
+    MaxCount: 1
+    RefId: 1151
+  - Id: 1152
+    Name: The Story of the Mural - Hero
+    Client: Curator Morgos
+    Pos: Trickster's Shrine
+    Comment: Bindi, Crystal of Light
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63441   # Bindi
+    Cnt0: 1
+    SrcItem1: 63417   # Crystal of Light
+    Cnt1: 1
+    ResultTable: QuestResult_1152
+    MaxCount: 1
+    RefId: 1152
+  - Id: 1153
+    Name: Reunion with the Princess
+    Client: Queen Nefertiti
+    Pos: Mirage Island Field 6 - Water Garden
+    Comment: Bring Morgos's Message
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 5186367
+    Tmxp: 1938522
+    SrcItem0: 63443   # Morgos's Message
+    Cnt0: 1
+    ResultTable: QuestResult_1153
+    MaxCount: 1
+    RefId: 1153
+  - Id: 1154
+    Name: Hyper Mind Control
+    Client: Curator Morgos
+    Pos: Mirage Island Field 6 - Water Garden
+    Comment: Bring 3 Mythical Weapon Boxes
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63483   # Folkan Weapon Box
+    Cnt0: 1
+    SrcItem1: 63484   # Byzantine Weapon Box
+    Cnt1: 1
+    SrcItem2: 63485   # Ra Weapon Box
+    Cnt2: 1
+    ResultTable: QuestResult_1154
+    MaxCount: 1
+    RefId: 1154
+  - Id: 1155
+    Name: The Folkan's Complaints
+    Client: Merchant Vinny
+    Pos: Mirage Island Field 5 - Alteo City
+    Comment: Change the Folkan Family's Discontent Feelings to Folkan Family's Feeling of Unity
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63428   # Folkan Family's Feeling of Unity
+    Cnt0: 1
+    ResultTable: QuestResult_1155
+    MaxCount: 1
+    RefId: 1155
+  - Id: 1156
+    Name: The Byzantine's Complaints
+    Client: Chief Architect Amos
+    Pos: Mirage Island Field 5 - Alteo City
+    Comment: Byzantine Family's Feeling of Unity
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63429   # Byzantine Family's Feeling of Unity
+    Cnt0: 1
+    ResultTable: QuestResult_1156
+    MaxCount: 1
+    RefId: 1156
+  - Id: 1157
+    Name: The Ra's Complaints
+    Client: Dancer Olinda
+    Pos: Mirage Island Field 5 - Alteo City
+    Comment: Change the Ra Family's Discontent Feelings to Ra Family's Feeling of Unity
+    MinLevel: 130
+    MaxLevel: 400
+    Exp: 1852274
+    Tmxp: 692329
+    SrcItem0: 63430   # Ra Family's Feeling of Unity
+    Cnt0: 1
+    ResultTable: QuestResult_1157
+    MaxCount: 1
+    RefId: 1157
+  - Id: 1175
+    Name: Broken Elevator
+    Client: Coward Craven
+    Pos: Underground Dev Room - Underground Passage 4
+    Comment: Bring 5 Merchant Mon Bags
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 5075677
+    Tmxp: 1403525
+    SrcItem0: 63867   # Merchant Mon's Bag
+    Cnt0: 5
+    ResultTable: QuestResult_1175
+    MaxCount: 1
+    RefId: 1175
+  - Id: 1176
+    Name: Welcome!
+    Client: Don Giuvanni
+    Pos: Underground Dev Room - Lobby
+    Comment: Bring 1 Nondisclosure Agreement and a Pen
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63866   # Nondisclosure Agreement
+    Cnt0: 1
+    SrcItem1: 63894   # Pen
+    Cnt1: 1
+    ResultTable: QuestResult_1176
+    MaxCount: 1
+    RefId: 1176
+  - Id: 1177
+    Name: The Star of Developer Photo 2
+    Client: CRMM Panda
+    Pos: Underground Dev Room - Lobby
+    Comment: Bring 1 Americano
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63848   # Americano
+    Cnt0: 1
+    ResultTable: QuestResult_1177
+    MaxCount: 1
+    RefId: 1177
+  - Id: 1199
+    Name: Autograph Request
+    Client: CRMM Panda
+    Pos: Underground Dev Room - Lobby
+    Comment: Bring 1 Pen, Developer Photo 2, and Americano
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3262935
+    SrcItem0: 63894   # Pen
+    Cnt0: 1
+    SrcItem1: 11785   # Developer Photo 2
+    Cnt1: 1
+    SrcItem2: 63848   # Americano
+    Cnt2: 1
+    ResultTable: QuestResult_1199
+    MaxCount: 1
+    RefId: 1199
+  - Id: 1194
+    Name: A Request from a Long Time Ago
+    Client: CRMM Panda
+    Pos: Underground Dev Room - Lobby
+    Comment: Speak with him again
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 611   # Secret Letter 1
+    Cnt0: 1
+    ResultTable: QuestResult_1194
+    MaxCount: 1
+    RefId: 1194
+  - Id: 1178
+    Name: Dev J Quest
+    Client: Cookza
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring 10 Merchant Mon's Leaflet Bundle
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63838   # Merchant Mon's Leaflet Bundle
+    Cnt0: 10
+    ResultTable: QuestResult_1178
+    MaxCount: 1
+    RefId: 1178
+  - Id: 1179
+    Name: Dev H's Request
+    Client: NuCarrot
+    Pos: Underground Dev Room - System Control Room
+    Comment: Bring 1 Hot Cup Noodles
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63839   # Hot Cup Noodles
+    Cnt0: 1
+    ResultTable: QuestResult_1179
+    MaxCount: 1
+    RefId: 1179
+  - Id: 1180
+    Name: Dev K Quest
+    Client: Ohmmy
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring back 6 unique pieces of Fan Art.
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 5075677
+    Tmxp: 1403525
+    SrcItem0: 63880   # Fan Art A
+    Cnt0: 1
+    SrcItem1: 63881   # Fan Art B
+    Cnt1: 1
+    SrcItem2: 63882   # Fan Art C
+    Cnt2: 1
+    SrcItem3: 63883   # Fan Art D
+    Cnt3: 1
+    SrcItem4: 63884   # Fan Art E
+    Cnt4: 1
+    SrcItem5: 63885   # Fan Art F
+    Cnt5: 1
+    ResultTable: QuestResult_1180
+    MaxCount: 1
+    RefId: 1180
+  - Id: 1181
+    Name: Defeat the Virus!
+    Client: Developer's PC
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring a H, O, T, S and G key of the keyboard.
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 5075677
+    Tmxp: 1403525
+    SrcItem0: 63886   # G Key
+    Cnt0: 1
+    SrcItem1: 63887   # H Key
+    Cnt1: 1
+    SrcItem2: 63888   # O Key
+    Cnt2: 1
+    SrcItem3: 63889   # S Key
+    Cnt3: 1
+    SrcItem4: 63890   # T Key
+    Cnt4: 1
+    ResultTable: QuestResult_1181
+    MaxCount: 1
+    RefId: 1181
+  - Id: 1183
+    Name: Find the vaccine
+    Client: Developer's PC
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring 1 Antivirus Program
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63891   # Antivirus Program
+    Cnt0: 1
+    ResultTable: QuestResult_1183
+    MaxCount: 1
+    RefId: 1183
+  - Id: 1184
+    Name: Preparing for User Conference
+    Client: Tang-O
+    Pos: Underground Dev Room - System Control Room
+    Comment: Bring 5 Cafe Cappuccinos and 5 Green Teas
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63846   # Cappuccino
+    Cnt0: 5
+    SrcItem1: 63847   # Green Tea
+    Cnt1: 5
+    ResultTable: QuestResult_1184
+    MaxCount: 1
+    RefId: 1184
+  - Id: 1185
+    Name: 개발실 괴담
+    Client: 휴지통
+    Pos: 지하 개발실 - 개발실
+    Comment: 쓰레기 100개 가져오기
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 5075677
+    Tmxp: 1403525
+    SrcItem0: 63868   # Trash
+    Cnt0: 100
+    ResultTable: QuestResult_1185
+    MaxCount: 1
+    RefId: 1185
+  - Id: 1186
+    Name: Find Missing Item
+    Client: Waste Basket
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring an Urban Legend Note and a Trash Bag
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3262935
+    SrcItem0: 614   # Urban Legend Note
+    Cnt0: 1
+    SrcItem1: 63876   # Trash Bag
+    Cnt1: 1
+    ResultTable: QuestResult_1186
+    MaxCount: 1
+    RefId: 1186
+  - Id: 1198
+    Name: Lost Galder
+    Client: Guild Clerk Esther
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring Esther's Lost 10,000 Galder
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3262935
+    SrcItem0: 63877   # Lost 10,000 Galder
+    Cnt0: 1
+    ResultTable: QuestResult_1198
+    MaxCount: 1
+    RefId: 1198
+  - Id: 1187
+    Name: The Star of the Ghost Story
+    Client: Don Danihen
+    Pos: Underground Dev Room - Dev Room
+    Comment: Deliver the Delicate Key to Rosalina
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 5075677
+    Tmxp: 1403525
+    ResultTable: QuestResult_1187
+    MaxCount: 1
+    RefId: 1187
+  - Id: 1188
+    Name: Key Necklace
+    Client: Rosealine Gracia
+    Pos: Underground Dev Room - Lobby
+    Comment: Bring a Delicate Key and a Necklace Chain
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63892   # Delicate Key
+    Cnt0: 1
+    SrcItem1: 63873   # Necklace Chain
+    Cnt1: 1
+    ResultTable: QuestResult_1188
+    MaxCount: 1
+    RefId: 1188
+  - Id: 1189
+    Name: Interrupt Craven's Investigation
+    Client: Don Danihen
+    Pos: Underground Dev Room - Dev Room
+    Comment: Block Coward Craven's investigation
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    ResultTable: QuestResult_1189
+    MaxCount: 1
+    RefId: 1189
+  - Id: 1190
+    Name: What a Craven Wants
+    Client: Coward Craven
+    Pos: Underground Dev Room - System Control Room
+    Comment: Bring [Pork Bellies] and [Green Bull Tonic
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63843   # Pork Bellies
+    Cnt0: 1
+    SrcItem1: 63844   # Green Bull Tonic
+    Cnt1: 1
+    ResultTable: QuestResult_1190
+    MaxCount: 1
+    RefId: 1190
+  - Id: 1191
+    Name: What a Craven Needs
+    Client: Coward Craven
+    Pos: Underground Dev Room - System Control Room
+    Comment: Bring an [Emergency Lantern
+    MinLevel: 150
+    MaxLevel: 400
+    SrcItem0: 63875   # Emergency Lantern
+    Cnt0: 1
+    ResultTable: QuestResult_1191
+    MaxCount: 1
+    RefId: 1191
+  - Id: 1192
+    Name: Commissioned Painting - 1
+    Client: Don Danihen
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring back 1 Receipt Envelope
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63878   # Receipt Envelope
+    Cnt0: 1
+    ResultTable: QuestResult_1192
+    MaxCount: 1
+    RefId: 1192
+  - Id: 1193
+    Name: Commissioned Painting - 2
+    Client: Old Artist
+    Pos: Underground Dev Room - Lobby
+    Comment: Bring a Blank Check and a Dark Cloth
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63895   # Blank Check
+    Cnt0: 1
+    SrcItem1: 11696   # Dark Cloth
+    Cnt1: 1
+    ResultTable: QuestResult_1193
+    MaxCount: 1
+    RefId: 1193
+  - Id: 1195
+    Name: A Request from a Long Time Ago - 2
+    Client: Secret Robert
+    Pos: Underground Dev Room - Lobby
+    Comment: Secret Letter 2
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 612   # Secret Letter 2
+    Cnt0: 1
+    ResultTable: QuestResult_1195
+    MaxCount: 1
+    RefId: 1195
+  - Id: 1196
+    Name: A Request from a Long Time Ago
+    Client: Rosealine Gracia
+    Pos: Underground Dev Room - Lobby
+    Comment: Speak to her again with Secret Letter 3
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 613   # Secret Letter 3
+    Cnt0: 1
+    ResultTable: QuestResult_1196
+    MaxCount: 1
+    RefId: 1196
+  - Id: 1197
+    Name: Memory Storage Device
+    Client: Don Cavalier
+    Pos: Hologram Room
+    Comment: Speak with Don again
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 17764872
+    Tmxp: 4912339
+    ResultTable: QuestResult_1197
+    MaxCount: 1
+    RefId: 1197
+  - Id: 1182
+    Name: Find the backup CD
+    Client: Developer's PC
+    Pos: Underground Dev Room - Dev Room
+    Comment: Bring 1 Backup CD
+    MinLevel: 150
+    MaxLevel: 400
+    Exp: 3045406
+    Tmxp: 842115
+    SrcItem0: 63870   # Backup CD
+    Cnt0: 1
+    ResultTable: QuestResult_1182
+    MaxCount: 1
+    RefId: 1182
+  - Id: 1200
+    Name: Security System JOKER
+    Client: JOKER
+    Pos: Underground Dev Room - Control Room
+    Comment: Enter passcode
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 5844468
+    Tmxp: 1471057
+    ResultTable: QuestResult_1200
+    MaxCount: 1
+    RefId: 1200
+  - Id: 1201
+    Name: Don Giuvanni's Hair
+    Client: Don Giuvanni
+    Pos: Underground Dev Room - Lobby
+    Comment: Obtain hair through duel with Don Giuvanni
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 5260021
+    Tmxp: 1323951
+    SrcItem0: 10536   # Don Giuvanni's Hair
+    Cnt0: 1
+    ResultTable: QuestResult_1201
+    MaxCount: 1
+    RefId: 1201
+  - Id: 1202
+    Name: Memory of Don Giuvanni
+    Client: JOKER
+    Pos: Underground Dev Room - Control Room
+    Comment: Memory Kit 1
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64092   # Memory Kit 1
+    Cnt0: 1
+    ResultTable: QuestResult_1202
+    MaxCount: 1
+    RefId: 1202
+  - Id: 1203
+    Name: Don Giuvanni's Memory
+    Client: Don Giuvanni
+    Pos: Giuvanni's Memory
+    Comment: Hear Don Giuvanni's Memory by obtaining a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1203
+    MaxCount: 1
+    RefId: 1203
+  - Id: 1204
+    Name: Don Cavalier's Memory
+    Client: Don Cavalier
+    Pos: Giuvanni's Memory
+    Comment: View Don Cavalier's Memory by obtaining her voice chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1204
+    MaxCount: 1
+    RefId: 1204
+  - Id: 1205
+    Name: Rosaline's Hair
+    Client: Rosaline Gracia
+    Pos: Underground Dev Room - Control Room
+    Comment: Comb
+    MinLevel: 160
+    MaxLevel: 400
+    SrcItem0: 64108   # Comb
+    Cnt0: 1
+    ResultTable: QuestResult_1205
+    MaxCount: 99
+    RefId: 1205
+  - Id: 1206
+    Name: Memory of Rosaline
+    Client: JOKER
+    Pos: Underground Dev Room - Control Room
+    Comment: Memory Kit 2
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64093   # Memory Kit 2
+    Cnt0: 1
+    ResultTable: QuestResult_1206
+    MaxCount: 1
+    RefId: 1206
+  - Id: 1207
+    Name: Rosaline's Memory
+    Client: Little Rosaline
+    Pos: Rosaline's Memory
+    Comment: Hear Rosaline's Memory by obtaining a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1207
+    MaxCount: 1
+    RefId: 1207
+  - Id: 1208
+    Name: Don Danihen's memory
+    Client: Don Danihen
+    Pos: Rosaline's Memory
+    Comment: Hear Don Danihen's memory by obtaining a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1208
+    MaxCount: 1
+    RefId: 1208
+  - Id: 1209
+    Name: Locked Desk Drawer
+    Client: Drawer
+    Pos: Cavalier's Office
+    Comment: Obtain the key for the desk drawer
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64115   # Desk Key
+    Cnt0: 1
+    ResultTable: QuestResult_1209
+    MaxCount: 1
+    RefId: 1209
+  - Id: 1210
+    Name: Danihen's Diary
+    Client: Rosaline Gracia
+    Pos: Underground Dev Room - Control Room
+    Comment: Danihen's Diary (locked)
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64098   # Danihen's Diary (locked)
+    Cnt0: 1
+    ResultTable: QuestResult_1210
+    MaxCount: 1
+    RefId: 1210
+  - Id: 1211
+    Name: The Frame's Secret 1
+    Client: Mysterious Frame
+    Pos: Cavalier's Office
+    Comment: Bring a Ladder
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 10538   # Ladder
+    Cnt0: 1
+    ResultTable: QuestResult_1211
+    MaxCount: 1
+    RefId: 1211
+  - Id: 1212
+    Name: The Frame's 1st Tale
+    Client: Enkicladus
+    Pos: Ocean of the Past
+    Comment: Bring 1 Lily and 1 Chrysanthemum
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 4208016
+    Tmxp: 1059161
+    SrcItem0: 11834   # Pure lily
+    Cnt0: 1
+    SrcItem1: 11835   # Chrysanthemum
+    Cnt1: 1
+    ResultTable: QuestResult_1212
+    MaxCount: 1
+    RefId: 1212
+  - Id: 1213
+    Name: The Frame's 2nd Tale
+    Client: Queen Nefertiti
+    Pos: Ocean of the Past
+    Comment: Gift from Enkicladus
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 11834   # Pure lily
+    Cnt0: 1
+    SrcItem1: 11835   # Chrysanthemum
+    Cnt1: 1
+    SrcItem2: 64104   # Enkicladus's Scale
+    Cnt2: 1
+    ResultTable: QuestResult_1213
+    MaxCount: 1
+    RefId: 1213
+  - Id: 1214
+    Name: The Frame's Secret 2
+    Client: Mysterious Frame
+    Pos: Cavalier's Office
+    Comment: Bring an Emergency Lantern
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 63875   # Emergency Lantern
+    Cnt0: 1
+    ResultTable: QuestResult_1214
+    MaxCount: 1
+    RefId: 1214
+  - Id: 1215
+    Name: Entrance to the Secret Room
+    Client: Bookcase
+    Pos: Cavalier's Office
+    Comment: Obtain Danihen's Diary (unlocked)
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 625   # Danihen's Diary (unlocked)
+    Cnt0: 1
+    ResultTable: QuestResult_1215
+    MaxCount: 1
+    RefId: 1215
+  - Id: 1216
+    Name: Mysterious Sarcophagus
+    Client: Mysterious Sarcophagus
+    Pos: Secret Room of Rosetta
+    Comment: Bring 1 Emergency Lantern, 1 Magnifying Glass
+    MinLevel: 160
+    MaxLevel: 400
+    SrcItem0: 63875   # Emergency Lantern
+    Cnt0: 1
+    SrcItem1: 64096   # Magnifying Glasses
+    Cnt1: 1
+    ResultTable: QuestResult_1216
+    MaxCount: 1
+    RefId: 1216
+  - Id: 1217
+    Name: Mysterious Hair
+    Client: JOKER
+    Pos: Underground Dev Room - Control Room
+    Comment: Memory Kit 3
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64094   # Memory Kit 3
+    Cnt0: 1
+    ResultTable: QuestResult_1217
+    MaxCount: 1
+    RefId: 1217
+  - Id: 1218
+    Name: Someone's Memory
+    Client: Bandaged Man
+    Pos: Memory of a Nightmare
+    Comment: Hear the Bandaged Man's memory by finding a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1218
+    MaxCount: 1
+    RefId: 1218
+  - Id: 1219
+    Name: Dark Nightmare
+    Client: Bandaged Man
+    Pos: Memory of a Nightmare
+    Comment: Get 5 bandages
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64101   # Bandage
+    Cnt0: 5
+    ResultTable: QuestResult_1219
+    MaxCount: 1
+    RefId: 1219
+  - Id: 1220
+    Name: The Code
+    Client: Mysterious Sarcophagus
+    Pos: Secret Room of Rosetta
+    Comment: Bring 1 Pen and 1 Paper
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 63894   # Pen
+    Cnt0: 1
+    SrcItem1: 11093   # Paper
+    Cnt1: 1
+    ResultTable: QuestResult_1220
+    MaxCount: 1
+    RefId: 1220
+  - Id: 1221
+    Name: The Code of Two
+    Client: Rosaline Gracia
+    Pos: Underground Dev Room - Control Room
+    Comment: Message for Rosie, Paper with Passcodes
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 629   # Message for Rosie
+    Cnt0: 1
+    SrcItem1: 626   # Paper with passcodes
+    Cnt1: 1
+    ResultTable: QuestResult_1221
+    MaxCount: 1
+    RefId: 1221
+  - Id: 1222
+    Name: It's Open!
+    Client: Mysterious Sarcophagus
+    Pos: Secret Room of Rosetta
+    Comment: Bring Sky's Fate Necklace, Earthen Fate Necklace
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 2805344
+    Tmxp: 706107
+    SrcItem0: 11714   # Sky's Fate Necklace
+    Cnt0: 1
+    SrcItem1: 11712   # Earthen Fate Necklace
+    Cnt1: 1
+    ResultTable: QuestResult_1222
+    MaxCount: 1
+    RefId: 1222
+  - Id: 1223
+    Name: Into the Dark
+    Client: Mysterious Sarcophagus
+    Pos: Secret Room of Rosetta
+    Comment: Bring 1 Emergency Lantern and a rope.
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3506680
+    Tmxp: 882634
+    SrcItem0: 64114   # Rope
+    Cnt0: 1
+    SrcItem1: 63875   # Emergency Lantern
+    Cnt1: 1
+    ResultTable: QuestResult_1223
+    MaxCount: 1
+    RefId: 1223
+  - Id: 1224
+    Name: Enounter
+    Client: Don Cavalier
+    Pos: Sarcophagus
+    Comment: Talk to Don Cavalier
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 20455638
+    Tmxp: 5148701
+    ResultTable: QuestResult_1224
+    MaxCount: 1
+    RefId: 1224
+  - Id: 1225
+    Name: Danihen's Lost Song
+    Client: Bard La Fimmel
+    Pos: Underground Dev Room - Underground Passage 5
+    Comment: Don Danihen's Music Sheet
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64103   # Don Danihen's Music Sheet
+    Cnt0: 1
+    ResultTable: QuestResult_1225
+    MaxCount: 1
+    RefId: 1225
+  - Id: 1226
+    Name: Hair in the Pumpkin
+    Client: Explorer Reina
+    Pos: Underground Dev Room - Underground Passage 5
+    Comment: Bring 50 Baseball Video CD, 50 Baseball Game CD
+    MinLevel: 160
+    MaxLevel: 400
+    SrcItem0: 63871   # Baseball Video DVD
+    Cnt0: 50
+    SrcItem1: 63872   # Baseball Game CD
+    Cnt1: 50
+    ResultTable: QuestResult_1226
+    MaxCount: 99
+    RefId: 1226
+  - Id: 1227
+    Name: Memory of Pumpkin
+    Client: JOKER
+    Pos: Underground Dev Room - Control Room
+    Comment: Memory Kit 4
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3757158
+    SrcItem0: 64095   # Memory Kit 4
+    Cnt0: 1
+    ResultTable: QuestResult_1227
+    MaxCount: 1
+    RefId: 1227
+  - Id: 1228
+    Name: Prophecy
+    Client: Knight Scar
+    Pos: The Prophecy
+    Comment: Hear Knight Scar's memory by recovering a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1228
+    MaxCount: 1
+    RefId: 1228
+  - Id: 1229
+    Name: The First Prophecy
+    Client: Clotho
+    Pos: The Prophecy
+    Comment: Hear Clotho's prophecy by recovering a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1229
+    MaxCount: 1
+    RefId: 1229
+  - Id: 1230
+    Name: Second Prophecy
+    Client: Lachesis
+    Pos: The Prophecy
+    Comment: Hear Lachesis' memory by recovering a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1230
+    MaxCount: 1
+    RefId: 1230
+  - Id: 1231
+    Name: Third Prophecy
+    Client: Atropos
+    Pos: The Prophecy
+    Comment: Hear Atropos' memory by recovering a Voice Chip
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64102   # Voice Chip
+    Cnt0: 1
+    ResultTable: QuestResult_1231
+    MaxCount: 1
+    RefId: 1231
+  - Id: 1232
+    Name: Memory of a Student
+    Client: Farmer Tsersech
+    Pos: Swamp Town - Carbigal
+    Comment: Show him Don Danihen's Picture
+    MinLevel: 160
+    MaxLevel: 400
+    Exp: 3005726
+    SrcItem0: 64097   # Don Danihen's Picture
+    Cnt0: 1
+    ResultTable: QuestResult_1232
+    MaxCount: 1
+    RefId: 1232
+  - Id: 1233
+    Name: Trickster Registration
+    Client: Heidi
+    Pos: Blooming Coral
+    Comment: Find [Bunny Maid]
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 256
+    Tmxp: 256
+    SrcItem0: 11805   # Registration Form
+    Cnt0: 1
+    ResultTable: QuestResult_1233
+    MaxCount: 1
+    RefId: 1233
+  - Id: 1234
+    Name: Prove Your Spirit!
+    Client: Bunny Maid
+    Pos: Coral Beach Town - Blooming Coral
+    Comment: Hunt [Torobbies] in [Coral Beach Field 1] and bring back 2 [Baby Carrots
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 1374
+    Tmxp: 1374
+    SrcItem0: 11908   # Baby Carrot
+    Cnt0: 2
+    ResultTable: QuestResult_1234
+    MaxCount: 1
+    RefId: 1234
+  - Id: 1235
+    Name: Helping Others
+    Client: Bunny Maid
+    Pos: Coral Beach Town - Blooming Coral
+    Comment: Head north and find [Winnie]. She will be standing next to the portal.
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 2739
+    Tmxp: 2739
+    ResultTable: QuestResult_1235
+    MaxCount: 1
+    RefId: 1235
+  - Id: 1236
+    Name: Winnie's Request
+    Client: Winnie
+    Pos: Blooming Coral
+    Comment: Take the [portal] to [Coral Beach Field 1] and speak with [Lifeguard Dean] in front of the [Lifeguard Building]
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 3735
+    Tmxp: 3735
+    ResultTable: QuestResult_1236
+    MaxCount: 1
+    RefId: 1236
+  - Id: 1237
+    Name: Deen's Request - 2
+    Client: Lifeguard Dean
+    Pos: Coral Field 1 - Blue Wave
+    Comment: Head to [Coral Beach Field 2] and meet with [Tinnie] who's standing by the [Beach Volleyball Court]
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 4970
+    Tmxp: 4970
+    ResultTable: QuestResult_1237
+    MaxCount: 1
+    RefId: 1237
+  - Id: 1238
+    Name: Tinnie's Request
+    Client: Tinnie
+    Pos: Coral Field 2 - Passionate Sun
+    Comment: Meet with [Lifeguard Bean], who is standing in front of a pond in [Coral Beach Field 3]
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 4970
+    Tmxp: 4970
+    ResultTable: QuestResult_1238
+    MaxCount: 1
+    RefId: 1238
+  - Id: 1239
+    Name: Bean's Request
+    Client: Lifeguard Bean
+    Pos: Coral Field 3 - Sunny Beach
+    Comment: Hunt the [Blue Penguin] and bring back 5 [Cool Ice
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 32928
+    Tmxp: 32928
+    SrcItem0: 10421   # Cool Ice
+    Cnt0: 5
+    ResultTable: QuestResult_1239
+    MaxCount: 1
+    RefId: 1239
+  - Id: 1240
+    Name: Meet Don Giuvanni
+    Client: Lifeguard Bean
+    Pos: Coral Field 3 - Sunny Beach
+    Comment: Meet [Don Giuvanni] in [Gate of Desert Beach]
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 12664
+    Tmxp: 12664
+    ResultTable: QuestResult_1240
+    MaxCount: 1
+    RefId: 1240
+  - Id: 1112
+    Name: Don Giuvanni's Training Pt. 1
+    Client: Don Giuvanni
+    Pos: Gate of Desert Beach
+    Comment: Learn how to drill from [Driller Marky] and bring back [Drilling for Dummies].]
+    MinLevel: 13
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    SrcItem0: 503   # Drilling for Dummies
+    Cnt0: 1
+    ResultTable: QuestResult_1112
+    MaxCount: 1
+    RefId: 1112
+  - Id: 1113
+    Name: Master Drilling!
+    Client: Driller Marky
+    Pos: Gate of Desert Beach
+    Comment: Drill and bring back 2 bottles of [Tanning Oil] from Gate of Desert Beach.]
+    MinLevel: 13
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    SrcItem0: 11044   # Tanning Oil
+    Cnt0: 2
+    ResultTable: QuestResult_1113
+    MaxCount: 1
+    RefId: 1113
+  - Id: 1114
+    Name: Don Giuvanni's Training Pt. 2
+    Client: Secret Robert
+    Pos: Beach Town - Paradise
+    Comment: Meet [Compounder Paul] in [Paradise Shop] and compound a [Desert Potion].
+    MinLevel: 15
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    SrcItem0: 11899   # Desert Potion
+    Cnt0: 1
+    ResultTable: QuestResult_1114
+    MaxCount: 1
+    RefId: 1114
+  - Id: 1115
+    Name: Don's Push - 3rd Stage
+    Client: Secret Robert
+    Pos: Beach Town - Paradise
+    Comment: Take your Life Jacket to Nate
+    MinLevel: 15
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    SrcItem0: 11808   # Nate's Certification
+    Cnt0: 1
+    ResultTable: QuestResult_1115
+    MaxCount: 1
+    RefId: 1115
+  - Id: 1116
+    Name: Don's Push - 4th Stage
+    Client: Secret Robert
+    Pos: Beach Town - Paradise
+    Comment: Reach Refine Level 1 on Rookie Sword and get Refine Guide
+    MinLevel: 15
+    MaxLevel: 400
+    Exp: 87054
+    Tmxp: 43527
+    SrcItem0: 555   # Refining Guide
+    Cnt0: 1
+    ResultTable: QuestResult_1116
+    MaxCount: 1
+    RefId: 1116
+  - Id: 1117
+    Name: Let's try Mature Compounding!
+    Client: Nate
+    Pos: Paradise Shop
+    Comment: Compound a [Life Vest] using [Hard Scales].
+    MinLevel: 15
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    ResultTable: QuestResult_1117
+    MaxCount: 1
+    RefId: 1117
+  - Id: 1135
+    Name: Learn to Refine!
+    Client: Blacksmith Marx
+    Pos: Paradise Shop
+    Comment: Bring 7 [Bronze Gemstones] from the [Desert Mine] in [Desert Beach Field 2]
+    MinLevel: 15
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    SrcItem0: 11254   # Bronze Fragment
+    Cnt0: 7
+    ResultTable: QuestResult_1135
+    MaxCount: 1
+    RefId: 1135
+  - Id: 1241
+    Name: Meet Officer Robert
+    Client: Don Giuvanni
+    Pos: Gate of Desert Beach
+    Comment: Meet [Officer Robert] in [Desert Beach Town - Paradise]
+    MinLevel: 13
+    MaxLevel: 400
+    Exp: 21763
+    Tmxp: 21763
+    ResultTable: QuestResult_1241
+    MaxCount: 1
+    RefId: 1241
+  - Id: 1118
+    Name: Wacky Confession
+    Client: Steve Ryu
+    Pos: Beach Town - Paradise
+    Comment: Bring the [Kiss] from [Mermaid Babe] in [Desert Beach Field 2].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11800   # Handkerchief of Challenge
+    Cnt0: 1
+    ResultTable: QuestResult_1118
+    MaxCount: 1
+    RefId: 1118
+  - Id: 1119
+    Name: The Mark of Love!
+    Client: Mermaid Babe
+    Pos: Beach Field 2 - Sand Palace
+    Comment: Drill 3 tubes of [Red Lipstick] and a [Written Challenge] from [Desert Beach Field 2]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11448   # Red Lipstick
+    Cnt0: 3
+    SrcItem1: 11814   # Written Challenge
+    Cnt1: 1
+    ResultTable: QuestResult_1119
+    MaxCount: 1
+    RefId: 1119
+  - Id: 1120
+    Name: Helping Confess
+    Client: Steve Ryu
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Hula Octopus] in [Desert Beach Field 2] and bring 3 [Bouquets].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10402   # Bouquet
+    Cnt0: 3
+    ResultTable: QuestResult_1120
+    MaxCount: 1
+    RefId: 1120
+  - Id: 1121
+    Name: Enemies in a Place like this?
+    Client: Don Giuvanni
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Shell Trap] in [Desert Beach Field 1] and bring back 3 [Clam Meat].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10046   # Clam meat
+    Cnt0: 3
+    ResultTable: QuestResult_1121
+    MaxCount: 1
+    RefId: 1121
+  - Id: 1122
+    Name: A Famous Model's Picture
+    Client: Don Giuvanni
+    Pos: Beach Town - Paradise
+    Comment: Drill [Jenny's Photo B] from [Desert Beach Field 1].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11796   # Jenny's Photo B
+    Cnt0: 1
+    ResultTable: QuestResult_1122
+    MaxCount: 1
+    RefId: 1122
+  - Id: 1123
+    Name: The Owl from that Time
+    Client: Clever Owl
+    Pos: Beach Town - Paradise
+    Comment: Drill a [Magic Sealed Letter] from [Desert Beach Field 1].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11802   # Magic Sealed Letter
+    Cnt0: 1
+    ResultTable: QuestResult_1123
+    MaxCount: 1
+    RefId: 1123
+  - Id: 1124
+    Name: The Owl's Worry
+    Client: Clever Owl
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Golden Mole] in [Desert Beach Field 1] and bring 3 [Golden Mole Feathers].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10431   # Golden Mole Feather
+    Cnt0: 3
+    ResultTable: QuestResult_1124
+    MaxCount: 1
+    RefId: 1124
+  - Id: 1125
+    Name: Fished Up Scroll
+    Client: Kristoffer J.
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Golden Mole] in [Desert Beach Field 1] and bring 3 [[Earthworms]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10030   # Earthworm
+    Cnt0: 3
+    ResultTable: QuestResult_1125
+    MaxCount: 1
+    RefId: 1125
+  - Id: 1126
+    Name: Weird Fisherman
+    Client: Kristoffer J.
+    Pos: Beach Town - Paradise
+    Comment: Drill 3 [Salt] from [Desert Beach Field 1].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11813   # Salt
+    Cnt0: 3
+    ResultTable: QuestResult_1126
+    MaxCount: 1
+    RefId: 1126
+  - Id: 1127
+    Name: Guardian of Dreams
+    Client: Dorothy
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Fanta Slimes] in [Desert Beach Field 1] and bring 3 [Twinkle Stars].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10246   # Twinkle Star
+    Cnt0: 3
+    ResultTable: QuestResult_1127
+    MaxCount: 1
+    RefId: 1127
+  - Id: 1128
+    Name: A Present for a Sick Friend
+    Client: Dorothy
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Sea Scorpions] in [Desert Beach Field 3] and bring 3 pieces of [Scorpion Jerky].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 10000   # Scorpion Jerky
+    Cnt0: 3
+    ResultTable: QuestResult_1128
+    MaxCount: 1
+    RefId: 1128
+  - Id: 1129
+    Name: An Unexpected Encounter
+    Client: Tera
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Grumpy Octopus] in [Desert Beach Field 2] and bring 3 [Illegal CDs].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11853   # Illegal CD
+    Cnt0: 3
+    ResultTable: QuestResult_1129
+    MaxCount: 1
+    RefId: 1129
+  - Id: 1130
+    Name: Help Keep the Peace
+    Client: Tera
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Grumpy Octopus] in [Desert Beach Field 2] and bring 3 [Illegal CDs].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11853   # Illegal CD
+    Cnt0: 3
+    ResultTable: QuestResult_1130
+    MaxCount: 1
+    RefId: 1130
+  - Id: 1131
+    Name: The Painter from Notre Dame
+    Client: Old Artist
+    Pos: Beach Field 2 - Sand Palace
+    Comment: Drill 1 [Paper] from [Desert Beach Field 2] and collect 2 [Color Pencils] from the [Fanta Fish].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11093   # Paper
+    Cnt0: 1
+    SrcItem1: 11801   # Color Pencils
+    Cnt1: 2
+    ResultTable: QuestResult_1131
+    MaxCount: 1
+    RefId: 1131
+  - Id: 1132
+    Name: Cherishing Destinies
+    Client: Old Artist
+    Pos: Beach Field 2 - Sand Palace
+    Comment: Drill 1 [Paper] from [Desert Beach Field 2] and collect 2 [Color Pencils] from the [Fanta Fish].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11093   # Paper
+    Cnt0: 1
+    SrcItem1: 11801   # Color Pencils
+    Cnt1: 2
+    ResultTable: QuestResult_1132
+    MaxCount: 1
+    RefId: 1132
+  - Id: 1133
+    Name: Runaway Student
+    Client: Rosemary
+    Pos: Beach Town - Paradise
+    Comment: Hunt the [Fanta Fish] for 2 [Pens] and [drill] in [Desert Beach Field 2] for 2 pieces of [Paper].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11093   # Paper
+    Cnt0: 2
+    SrcItem1: 11806   # Pen
+    Cnt1: 2
+    ResultTable: QuestResult_1133
+    MaxCount: 1
+    RefId: 1133
+  - Id: 1134
+    Name: Lookin' Good!
+    Client: Rosemary
+    Pos: Beach Town - Paradise
+    Comment: Drill 2 [Swimsuits] from [Desert Beach Field 2].]
+    MinLevel: 20
+    MaxLevel: 400
+    Exp: 35392
+    Tmxp: 10032
+    SrcItem0: 11043   # Swimsuit
+    Cnt0: 2
+    ResultTable: QuestResult_1134
+    MaxCount: 1
+    RefId: 1134
+  - Id: 1242
+    Name: Final Mission for Inheritance
+    Client: Don Cavalier
+    Pos: Sarcophagus
+    Comment: Find Harkon Statue [Poseidon's Blessing]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64628   # Temporary Harkon Sculpture
+    Cnt0: 1
+    SrcItem1: 64630   # Special Teleporting Device
+    Cnt1: 1
+    ResultTable: QuestResult_1242
+    MaxCount: 1
+    RefId: 1242
+    Options: 1
+  - Id: 1243
+    Name: Robin's Memory
+    Client: Love Hunter Robin
+    Pos: The Shrine's Secret Passage
+    Comment: Talk to [Queen Nefertiti] and [Enkicladus] in Robin's memory
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64640   # The Truth in Memories (A)
+    Cnt0: 1
+    SrcItem1: 64641   # The Truth in Memories (B)
+    Cnt1: 1
+    ResultTable: QuestResult_1243
+    MaxCount: 1
+    RefId: 1243
+  - Id: 1244
+    Name: Nefertiti in Robin's Memory
+    Client: Queen Nefertiti
+    Pos: Robin's Memory
+    Comment: Gather 10x[Enkicladus' Heart
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64638   # Enkicladus' Heart
+    Cnt0: 10
+    ResultTable: QuestResult_1244
+    MaxCount: 1
+    RefId: 1244
+  - Id: 1245
+    Name: Enkicladus in Robin's Memory
+    Client: Enkicladus
+    Pos: Robin's Memory
+    Comment: Gather 10x[Nefertiti's Heart
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64639   # Nefertiti's Heart
+    Cnt0: 10
+    ResultTable: QuestResult_1245
+    MaxCount: 1
+    RefId: 1245
+  - Id: 1246
+    Name: Harkon Guardian Battle
+    Client: King Poppuri
+    Pos: Gate of Nefertiti's Shrine
+    Comment: Defeat [Chronos] in the [Harkon Guardian Battle] and bring 1x [Dark Heart
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 10635   # Dark Heart
+    Cnt0: 1
+    ResultTable: QuestResult_1246
+    MaxCount: 1
+    RefId: 1246
+  - Id: 1247
+    Name: Nefertiti's Descendant Trickster
+    Client: King Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: Meet [Nefertiti] in Harkon Sculpture [Poseidon's Blessing]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    ResultTable: QuestResult_1247
+    MaxCount: 1
+    RefId: 1247
+  - Id: 1248
+    Name: Temporary Harkon Sculpture
+    Client: Mirage Island Lady
+    Pos: Space of Light
+    Comment: Bring 16x[Harkon Crystal
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 10641   # Harkon Crystal
+    Cnt0: 16
+    ResultTable: QuestResult_1248
+    MaxCount: 1
+    RefId: 1248
+  - Id: 1249
+    Name: Spirit Infused Harkon
+    Client: Mirage Island Lady
+    Pos: Space of Light
+    Comment: Take the [Spirit Infused Harkon] to [Rosaline]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64626   # Spirit Infused Harkon
+    Cnt0: 1
+    ResultTable: QuestResult_1249
+    MaxCount: 1
+    RefId: 1249
+  - Id: 1250
+    Name: Seal the Shrine
+    Client: King Poppuri
+    Pos: Gate of Nefertiti's Shrine
+    Comment: Collect the [Shrine Sealing Device] with the help from the Poppuris]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64621   # Shrine Block (A)
+    Cnt0: 1
+    SrcItem1: 64622   # Shrine Block (B)
+    Cnt1: 1
+    SrcItem2: 64623   # Shrine Block (C)
+    Cnt2: 1
+    ResultTable: QuestResult_1250
+    MaxCount: 1
+    RefId: 1250
+  - Id: 1251
+    Name: Guardian Robin
+    Client: King Poppuri
+    Pos: Gate of Nefertiti's Shrine
+    Comment: Talk to Guardian [Robin Van Peruoza]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    ResultTable: QuestResult_1251
+    MaxCount: 1
+    RefId: 1251
+  - Id: 1252
+    Name: Seal the Shrine Mission (1)
+    Client: Artisan Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: Hunt the [Spirit of Light] and bring 10x[Light Spirit Stone
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 10640   # Light Spirit Stone
+    Cnt0: 10
+    ResultTable: QuestResult_1252
+    MaxCount: 1
+    RefId: 1252
+  - Id: 1253
+    Name: Seal the Shrine Mission (2)
+    Client: Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: Drill 10x[Marble Piece] at the [Gate of Nefertiti's Shrine]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64624   # Marble Piece
+    Cnt0: 10
+    ResultTable: QuestResult_1253
+    MaxCount: 1
+    RefId: 1253
+  - Id: 1254
+    Name: Seal the Shrine Mission (3)
+    Client: Blue Muffler Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: Drill 10x[Holy Leaf] at the [Gate of Nefertiti's Shrine]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64625   # Holy Leaf
+    Cnt0: 10
+    ResultTable: QuestResult_1254
+    MaxCount: 1
+    RefId: 1254
+  - Id: 1255
+    Name: Preparations to Be One
+    Client: Rosaline Gracia
+    Pos: Tree Sanctuary
+    Comment: Meet with the [Stargazer] in the [Alteo Empire Field]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64627   # Pain in the Butt Daily Pill
+    Cnt0: 1
+    ResultTable: QuestResult_1255
+    MaxCount: 1
+    RefId: 1255
+    Options: 1
+  - Id: 1256
+    Name: Unite as One
+    Client: Rosaline Gracia
+    Pos: Tree Sanctuary
+    Comment: Help Spirit of Nefertiti and Rosaline
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64626   # Spirit Infused Harkon
+    Cnt0: 1
+    ResultTable: QuestResult_1256
+    MaxCount: 1
+    RefId: 1256
+  - Id: 1257
+    Name: Inconvenient Request
+    Client: Stargazer Ethel
+    Pos: Alteo Empire Field 3
+    Comment: Get 10x[Wind Spirit Stone], 10x[Water Spirit Stone], 10x[Earth Spirit Stone] and 1x[Star Dust
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 10637   # Wind Spirit Stone
+    Cnt0: 10
+    SrcItem1: 10636   # Water Spirit Stone
+    Cnt1: 10
+    SrcItem2: 10639   # Earth Spirit Stone
+    Cnt2: 10
+    SrcItem3: 64620   # Star Dust
+    Cnt3: 1
+    ResultTable: QuestResult_1257
+    MaxCount: 1
+    RefId: 1257
+  - Id: 1258
+    Name: Honest Grandpa T
+    Client: Grandpa T
+    Pos: Alteo Empire Field 2
+    Comment: Drill 20x[Ancient Nutritious Mushroom
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64637   # Ancient Nutritious Mushroom
+    Cnt0: 20
+    ResultTable: QuestResult_1258
+    MaxCount: 1
+    RefId: 1258
+  - Id: 1259
+    Name: Metamorphosed Rosaline's Request
+    Client: Transformed Rosaline
+    Pos: Tree Sanctuary
+    Comment: Find the scientist who can make the [Teleporting] device among the Megalo Company employees
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64630   # Special Teleporting Device
+    Cnt0: 1
+    ResultTable: QuestResult_1259
+    MaxCount: 1
+    RefId: 1259
+  - Id: 1260
+    Name: Make a Special Transporting Device
+    Client: Willie
+    Pos: Gate of Alteo Empire
+    Comment: Bring 10x[Transporting Decive (Alteo)], 15x[Electricity Spirit Stone] and 15x[Homunculus' Debris
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64629   # Teleporting Device (Alteo)
+    Cnt0: 10
+    SrcItem1: 10638   # Electricity Spirit Stone
+    Cnt1: 15
+    SrcItem2: 64635   # Homunculus' Debris
+    Cnt2: 15
+    ResultTable: QuestResult_1260
+    MaxCount: 1
+    RefId: 1260
+  - Id: 1261
+    Name: Song of Destiny
+    Client: Transformed Don Danihen
+    Pos: Matrix
+    Comment: Bring [Janus' Feather] after defeating [Janus
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 15161552
+    Tmxp: 2808382
+    SrcItem0: 10642   # 야누스의 날개깃
+    Cnt0: 1
+    ResultTable: QuestResult_1261
+    MaxCount: 1
+    RefId: 1261
+  - Id: 1262
+    Name: An Apology
+    Client: Don Giuvanni
+    Pos: Matrix
+    Comment: Talk to the Transformed Don Danihen
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    ResultTable: QuestResult_1262
+    MaxCount: 1
+    RefId: 1262
+  - Id: 1263
+    Name: Birth of a True Trickster
+    Client: Transformed Rosaline
+    Pos: Matrix
+    Comment: Talk to Transformed Rosaline
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 37903880
+    Tmxp: 7020957
+    ResultTable: QuestResult_1263
+    MaxCount: 1
+    RefId: 1263
+  - Id: 1264
+    Name: Sarah's Concerns
+    Client: Madam Sarah
+    Pos: Gate of Alteo Empire
+    Comment: Go see [King Poppuri] and find [Tau] and [Chagan]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    SrcItem0: 64633   # Jade Ring
+    Cnt0: 1
+    ResultTable: QuestResult_1264
+    MaxCount: 1
+    RefId: 1264
+    Options: 1
+  - Id: 1265
+    Name: Holy Preparations?
+    Client: King Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: With the help of Poppuris, collect the materials need for the holy ceremony
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    SrcItem0: 64645   # Poppuri Incense Burner
+    Cnt0: 1
+    SrcItem1: 64646   # Poppuri Incense
+    Cnt1: 1
+    SrcItem2: 64647   # Poppuri Snack Set
+    Cnt2: 1
+    ResultTable: QuestResult_1265
+    MaxCount: 1
+    RefId: 1265
+  - Id: 1266
+    Name: Make Holy Incense
+    Client: Artisan Poppuri
+    Pos: Gate of Nefertiti's Shrine
+    Comment: Get 10x[Wind Feather] from [Intermediate Wind Spirit] in the [Alteo Empire Field].]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    SrcItem0: 10644   # Wind Feather
+    Cnt0: 10
+    ResultTable: QuestResult_1266
+    MaxCount: 1
+    RefId: 1266
+  - Id: 1267
+    Name: Make a Holy Incense Burner
+    Client: Poppuri
+    Pos: Gate of Nefertiti Shrine
+    Comment: Get 10x[Strong Teeth] from the [Intermediate Earth Spirit] in the [Alteo Empire Field].]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    SrcItem0: 10643   # Strong Tooth
+    Cnt0: 10
+    ResultTable: QuestResult_1267
+    MaxCount: 1
+    RefId: 1267
+  - Id: 1268
+    Name: Make Holy Snacks
+    Client: Blue Muffler Poppuri
+    Pos: Gate of Nefertiti's Shrine
+    Comment: Drill 15x[Red Flower Cotton Candy] and 15x[Blue Flower Cotton Candy] in the [Alteo Empire Field
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    SrcItem0: 64643   # Red Flower Cotton Candy
+    Cnt0: 15
+    SrcItem1: 64644   # BlueFlower Cotton Candy
+    Cnt1: 15
+    ResultTable: QuestResult_1268
+    MaxCount: 1
+    RefId: 1268
+  - Id: 1269
+    Name: Chagan's Heart
+    Client: Pastor Tau
+    Pos: Chagan's Heart (Purification)
+    Comment: Move while protecting [Young Pastor Tau]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 6064620
+    Tmxp: 1123353
+    ResultTable: QuestResult_1269
+    MaxCount: 1
+    RefId: 1269
+  - Id: 1270
+    Name: Nefertiti's Crown
+    Client: Happisto Stallone
+    Pos: Gate of Alteo Empire
+    Comment: Drill 10 [Homunculus' Debris] in the [Alteo Empire Field
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64631   # Broken Sword of Vengeance (A)
+    Cnt0: 1
+    SrcItem1: 64632   # Broken Sword of Vengeance (B)
+    Cnt1: 1
+    SrcItem2: 64635   # Homunculus' Debris
+    Cnt2: 10
+    ResultTable: QuestResult_1270
+    MaxCount: 1
+    RefId: 1270
+  - Id: 1271
+    Name: Trickster Cloak
+    Client: Baron Andre
+    Pos: Gate of Alteo Empire
+    Comment: Bring 10x[Tattered Silk Piece] in the [Alteo Empire Field]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64636   # Harkon Crystal Dust
+    Cnt0: 1
+    SrcItem1: 64642   # Tattered Silk Piece
+    Cnt1: 10
+    ResultTable: QuestResult_1271
+    MaxCount: 1
+    RefId: 1271
+  - Id: 1272
+    Name: Song About Love and Destiny
+    Client: Bard La Fimmel
+    Pos: Gate of Alteo Empire
+    Comment: Bring 10 Clear Spring Water by hunting the Water Spirit in [Alteo Empire Field
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64650   # Rosaline's Music Sheet
+    Cnt0: 1
+    SrcItem1: 10645   # Clear Spring Water
+    Cnt1: 10
+    ResultTable: QuestResult_1272
+    MaxCount: 1
+    RefId: 1272
+  - Id: 1273
+    Name: Office Albert's Test
+    Client: Officer Albert
+    Pos: Gate of Alteo Empire
+    Comment: Pass Officer Albert's quiz
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    ResultTable: QuestResult_1273
+    MaxCount: 1
+    RefId: 1273
+  - Id: 1274
+    Name: Relics Specialist Researcher
+    Client: Officer Albert
+    Pos: Gate of Alteo Empire
+    Comment: Give the [Secret Contract] to [Indiana John] in the [Alteo Empire Field 1]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64662   # Secret Contract
+    Cnt0: 1
+    ResultTable: QuestResult_1274
+    MaxCount: 1
+    RefId: 1274
+  - Id: 1275
+    Name: Alteo Empire Survey 1
+    Client: Indiana John
+    Pos: Alteo Empire Field 1
+    Comment: Drill 10x[Old Slate Piece] scattered in [Alteo Empire Field ]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64663   # Old Slate Piece
+    Cnt0: 10
+    ResultTable: QuestResult_1275
+    MaxCount: 1
+    RefId: 1275
+  - Id: 1276
+    Name: The Slate's Secret
+    Client: Indiana John
+    Pos: Alteo Empire Field 1
+    Comment: Bring the surveyed relic from [Explorer Reina] in [Alteo Empire Field 2]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64666   # Collection of Shiny Pieces
+    Cnt0: 1
+    ResultTable: QuestResult_1276
+    MaxCount: 1
+    RefId: 1276
+    Options: 1
+  - Id: 1277
+    Name: Gate of Hidden Shrine
+    Client: Indiana John
+    Pos: Alteo Empire Field 1
+    Comment: Find the hidden door in [Alteo Empire Field 1]
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 3790388
+    Tmxp: 702095
+    SrcItem0: 64665   # Ancient Alteo Slate
+    Cnt0: 1
+    SrcItem1: 64666   # Collection of Shiny Pieces
+    Cnt1: 1
+    ResultTable: QuestResult_1277
+    MaxCount: 1
+    RefId: 1277
+  - Id: 1278
+    Name: Alteo Empire Survey 2
+    Client: Explorer Reina
+    Pos: Alteo Empire Field 2
+    Comment: 'Drill 10x[Shiny Piece] scattered in [Alteo Empire Field '
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 64664   # Shiny Piece
+    Cnt0: 10
+    ResultTable: QuestResult_1278
+    MaxCount: 1
+    RefId: 1278
+  - Id: 1279
+    Name: Alteo Empire Survey 3
+    Client: Explorer Reina
+    Pos: Alteo Empire Field 2
+    Comment: Bring 1x[Spirit Stone] from each of the [Spirits of Water, Electricity, Earth and Wind
+    MinLevel: 200
+    MaxLevel: 400
+    Exp: 7580776
+    Tmxp: 1404191
+    SrcItem0: 10636   # Water Spirit Stone
+    Cnt0: 1
+    SrcItem1: 10637   # Wind Spirit Stone
+    Cnt1: 1
+    SrcItem2: 10638   # Electricity Spirit Stone
+    Cnt2: 1
+    SrcItem3: 10639   # Earth Spirit Stone
+    Cnt3: 1
+    ResultTable: QuestResult_1279
+    MaxCount: 1
+    RefId: 1279
+  - Id: 1283
+    Name: 최초의 만남
+    Client: 드루이드
+    Pos: 신성한 공간
+    Comment: 드루이드와 대화하기
+    MinLevel: 1
+    MaxLevel: 400
+    Exp: 100
+    Tmxp: 100
+    ResultTable: QuestResult_1283
+    MaxCount: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/scenario_quest_db.yml

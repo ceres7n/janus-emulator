@@ -1,0 +1,102 @@
+# =============================================================================
+#   Drill Client Database  (DRILL_CLIENT_DB)
+# =============================================================================
+#
+#   The Item_DrillParam values of other clients, for the drills the server has
+#   (drill_db.yml) where they differ. A client keys the C2S 0x31 dig result's CRC
+#   with ITS libconfig's BarEffArea / BarSpeed / ScoopMass and stops its gauge at
+#   its DigDepth (client sub_494880 / sub_422D80, the same code in the Paula and the
+#   Season 2 builds), so a Season 2 client (its data\libconfig_twn.dat) fails the
+#   server's check with the Paula values and is cut (CMD_END_DRILL: crc is
+#   invalid). The Season 2 GameServer does the very same check with its own data
+#   (GameServer sub_4EF5A0 CMD_END_DRILL, the shortest time sub_59D820).
+#   drill.cpp tries the server's row first, then these rows of that drill: the one
+#   whose CRC matches gives the depth limit and the shortest dig time; the life,
+#   the ground, the Grade (EXP / TM) stay the server's.
+#
+#   Fields
+#     Id         - the drill's item id (drill_db.yml)                       [key, repeated]
+#     Source     - where the values come from
+#     DigDepth / BarEffArea / BarSpeed / ScoopMass - that client's values
+#
+#   Sources (decrypted with the TO-Toolbox libconfig key, XTEA "#ShowMeTheMoney#"):
+#     PolarPandaS2 - the PolarPandaTO (Season 2) game files: PandaTO\data\libconfig_twn.dat
+#     S2Release    - the trickster-online-s2-server-release package:
+#                    TS_TUpdate\GameServer1\data\libconfig_twn.dat
+# =============================================================================
+
+Header:
+  Type: DRILL_CLIENT_DB
+  Version: 1
+
+Body:
+  - Id: 8213   # server: DigDepth 250, BarEffArea 100, BarSpeed 120, ScoopMass 5
+    Source: PolarPandaS2
+    DigDepth: 120
+    BarEffArea: 100
+    BarSpeed: 120
+    ScoopMass: 5
+  - Id: 8219   # server: DigDepth 150, BarEffArea 80, BarSpeed 120, ScoopMass 3
+    Source: PolarPandaS2
+    DigDepth: 40
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 3
+  - Id: 8219   # server: DigDepth 150, BarEffArea 80, BarSpeed 120, ScoopMass 3
+    Source: S2Release
+    DigDepth: 180
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 4
+  - Id: 19900   # server: DigDepth 120, BarEffArea 120, BarSpeed 110, ScoopMass 4
+    Source: S2Release
+    DigDepth: 60
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+  - Id: 19901   # server: DigDepth 300, BarEffArea 120, BarSpeed 150, ScoopMass 5
+    Source: PolarPandaS2
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 175
+    ScoopMass: 5
+  - Id: 19909   # server: DigDepth 300, BarEffArea 120, BarSpeed 120, ScoopMass 5
+    Source: S2Release
+    DigDepth: 60
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+  - Id: 19928   # server: DigDepth 350, BarEffArea 120, BarSpeed 110, ScoopMass 5
+    Source: PolarPandaS2
+    DigDepth: 800
+    BarEffArea: 160
+    BarSpeed: 185
+    ScoopMass: 25
+  - Id: 19934   # server: DigDepth 350, BarEffArea 120, BarSpeed 120, ScoopMass 6
+    Source: PolarPandaS2
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 6
+  - Id: 19938   # server: DigDepth 350, BarEffArea 120, BarSpeed 120, ScoopMass 8
+    Source: S2Release
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 6
+  - Id: 19939   # server: DigDepth 450, BarEffArea 150, BarSpeed 140, ScoopMass 12
+    Source: S2Release
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 140
+    ScoopMass: 7
+  - Id: 19942   # server: DigDepth 500, BarEffArea 160, BarSpeed 160, ScoopMass 13
+    Source: PolarPandaS2
+    DigDepth: 800
+    BarEffArea: 160
+    BarSpeed: 185
+    ScoopMass: 25
+
+Footer:
+  Imports:
+#  - Path: db/import/drill_client_db.yml

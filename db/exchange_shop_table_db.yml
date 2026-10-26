@@ -1,0 +1,2242 @@
+# =============================================================================
+#   Exchange Shop Table Database  (EXCHANGE_SHOP_TABLE_DB)
+# =============================================================================
+#   The NpcTalk ExcShopTable tables of the ORIGINAL server data (86 tables) — the
+#   ExchangeIDs an NPC's exchange shop lists (GameInfoMgr sub_62C060; S2C 0x00F9), in order.
+#
+#   Fields
+#     Table       - the table's name (npc_db.yml ExcShopTable)                [key]
+#     ExchangeID  - an exchange (exchange_shop_db.yml)
+# =============================================================================
+
+Header:
+  Type: EXCHANGE_SHOP_TABLE_DB
+  Version: 1
+
+Body:
+  - Table: Exchange_Shop_Square
+    ExchangeID: 172
+  - Table: Exchange_Shop_Square
+    ExchangeID: 173
+  - Table: Exchange_Shop_Square
+    ExchangeID: 174
+  - Table: Exchange_Shop_Square
+    ExchangeID: 175
+  - Table: Exchange_Shop_Square
+    ExchangeID: 176
+  - Table: Exchange_Shop_Square
+    ExchangeID: 177
+  - Table: Exchange_Shop_Square
+    ExchangeID: 178
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3111
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3112
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3113
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3133
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3134
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3135
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3136
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3137
+  - Table: Exchange_Shop_Square
+    ExchangeID: 3138
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 277
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 278
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 279
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 280
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 286
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 293
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 2472
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 2479
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Mon
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 9
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 10
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 11
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 23
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 24
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 25
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 26
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 1040
+  - Table: Exchange_Shop_Wharf_1
+    ExchangeID: 1106
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3501
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3502
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3503
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3504
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3505
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3506
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3507
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3508
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3509
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3510
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3511
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3512
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3513
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3514
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3515
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3516
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3517
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3518
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3519
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3520
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3521
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3522
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3523
+  - Table: Exchange_Shop_SD1
+    ExchangeID: 3524
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3525
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3526
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3527
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3528
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3529
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3530
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3531
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3532
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3533
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3534
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3535
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3536
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3537
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3538
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3539
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3540
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3541
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3542
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3543
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3544
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3545
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3546
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3547
+  - Table: Exchange_Shop_SD2
+    ExchangeID: 3548
+  - Table: Exchange_Shop_SD3
+    ExchangeID: 3549
+  - Table: Exchange_Shop_SD3
+    ExchangeID: 3550
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 281
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 282
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 283
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 284
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 285
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 291
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 298
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 2477
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 2484
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Satur
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Key
+    ExchangeID: 1
+  - Table: Exchange_Shop_Key
+    ExchangeID: 2
+  - Table: Exchange_Shop_Key
+    ExchangeID: 3
+  - Table: Exchange_Shop_Key
+    ExchangeID: 4
+  - Table: Exchange_Shop_Key
+    ExchangeID: 1104
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 277
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 278
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 279
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 280
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 290
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 297
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 2476
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 2483
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Fri
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 36
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 37
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 38
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 39
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 40
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 41
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 42
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 43
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 44
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 60
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 1042
+  - Table: Exchange_Shop_Seabed
+    ExchangeID: 1108
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 6
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 7
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 8
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 17
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 18
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 19
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 20
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 21
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 22
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 1039
+  - Table: Exchange_Shop_Relic
+    ExchangeID: 1105
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 47
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 48
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 66
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 67
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 68
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 69
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 70
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 71
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 72
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 73
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 1044
+  - Table: Exchange_Shop_Swamp
+    ExchangeID: 1110
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2345
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2346
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2347
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2348
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2349
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2350
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2351
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2352
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2353
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2354
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2355
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2356
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2357
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2358
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2359
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2360
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2361
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2362
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2363
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2364
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2365
+  - Table: Exchange_Attr_Elec
+    ExchangeID: 2366
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 82
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 83
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 84
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 85
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 86
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 87
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 88
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 89
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 90
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 91
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 92
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 93
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 94
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 95
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 96
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 97
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 98
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 99
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 100
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 101
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 102
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 103
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 104
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 105
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 106
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 107
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 108
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 109
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 110
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 111
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 112
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 113
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 114
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 115
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 116
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 117
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 118
+  - Table: Exchange_Shop_OnQu
+    ExchangeID: 119
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 234
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 235
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 244
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 259
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 268
+  - Table: Exchange_Shop_Aria_Mon
+    ExchangeID: 2488
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 228
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 229
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 245
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 260
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 269
+  - Table: Exchange_Shop_Aria_Tues
+    ExchangeID: 2489
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 230
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 231
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 246
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 261
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 270
+  - Table: Exchange_Shop_Aria_Wednes
+    ExchangeID: 2490
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 236
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 237
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 247
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 262
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 271
+  - Table: Exchange_Shop_Aria_Thurs
+    ExchangeID: 2491
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 226
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 227
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 248
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 263
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 272
+  - Table: Exchange_Shop_Aria_Fri
+    ExchangeID: 2492
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 238
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 239
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 249
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 264
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 273
+  - Table: Exchange_Shop_Aria_Satur
+    ExchangeID: 2493
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 208
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 209
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 210
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 211
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 212
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 213
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 214
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 215
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 216
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 217
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 218
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 258
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 232
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 233
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 250
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 265
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 274
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 2494
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 219
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 220
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 221
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 222
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 275
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 223
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 224
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 225
+  - Table: Exchange_Shop_Aria_Sun
+    ExchangeID: 276
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 45
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 46
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 57
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 58
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 59
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 51
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 52
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 53
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 54
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 1043
+  - Table: Exchang_Shop_Rose
+    ExchangeID: 1109
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2367
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2368
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2369
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2370
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2371
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2372
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2373
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2374
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2375
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2376
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2377
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2378
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2379
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2380
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2381
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2382
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2383
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2384
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2385
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2386
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2387
+  - Table: Exchange_Attr_Dark
+    ExchangeID: 2388
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2411
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2412
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2413
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2414
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2415
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2416
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2417
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2418
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2419
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2420
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2421
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2422
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2423
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2424
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2425
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2426
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2427
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2428
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2429
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2430
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2431
+  - Table: Exchange_Attr_Light
+    ExchangeID: 2432
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 12
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 13
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 14
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 15
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 16
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 65
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 149
+  - Table: Exchange_Shop_FDG
+    ExchangeID: 1038
+  - Table: Exchange_Shop_SnowKey
+    ExchangeID: 74
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 277
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 278
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 279
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 280
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 292
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 299
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 2478
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 2485
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Sun
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Wharf
+    ExchangeID: 5
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2323
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2324
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2325
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2326
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2327
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2328
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2329
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2330
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2331
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2332
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2333
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2334
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2335
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2336
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2337
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2338
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2339
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2340
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2341
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2342
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2343
+  - Table: Exchange_Attr_Soil
+    ExchangeID: 2344
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 27
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 28
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 29
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 30
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 31
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 32
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 33
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 34
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 35
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 160
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 1041
+  - Table: Exchange_Shop_Marine
+    ExchangeID: 1107
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2433
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2434
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2435
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2436
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2437
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2438
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2439
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2440
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2441
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2442
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2443
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2444
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2445
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2446
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2447
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2448
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2449
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2450
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2451
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2452
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2453
+  - Table: Exchange_Attr_Wind
+    ExchangeID: 2454
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2389
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2390
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2391
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2392
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2393
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2394
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2395
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2396
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2397
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2398
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2399
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2400
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2401
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2402
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2403
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2404
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2405
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2406
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2407
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2408
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2409
+  - Table: Exchange_Attr_Water
+    ExchangeID: 2410
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 277
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 278
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 279
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 280
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 288
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 295
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 2474
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 2481
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Wednes
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 281
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 282
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 283
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 284
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 285
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 287
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 294
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 2473
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 2480
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Tues
+    ExchangeID: 2487
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2301
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2302
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2303
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2304
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2305
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2306
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2307
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2308
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2309
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2310
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2311
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2312
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2313
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2314
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2315
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2316
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2317
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2318
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2319
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2320
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2321
+  - Table: Exchange_Attr_Fire
+    ExchangeID: 2322
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2601
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2602
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2603
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2604
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2605
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2606
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2607
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2608
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2609
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2610
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2611
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2612
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2613
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2614
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 2741
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 1070
+  - Table: Exchange_Shop_Chaos1_1
+    ExchangeID: 1071
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2746
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2747
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2766
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2767
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2786
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2787
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2806
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2807
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2826
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2827
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2846
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2847
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2866
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 2867
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 1050
+  - Table: Exchange_Shop_ChaosJ1_1
+    ExchangeID: 1051
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2615
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2616
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2617
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2618
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2619
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2620
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2621
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2622
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2623
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2624
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2625
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2626
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2627
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2628
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 2741
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 1072
+  - Table: Exchange_Shop_Chaos1_6
+    ExchangeID: 1073
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2748
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2749
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2768
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2769
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2788
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2789
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2808
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2809
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2828
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2829
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2848
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2849
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2868
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 2869
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 1052
+  - Table: Exchange_Shop_ChaosJ1_6
+    ExchangeID: 1053
+  - Table: Exchange_Shop_Ep3
+    ExchangeID: 61
+  - Table: Exchange_Shop_Mirage_Npc210
+    ExchangeID: 62
+  - Table: Exchange_Shop_Mirage_Npc210
+    ExchangeID: 63
+  - Table: Exchange_Shop_Mirage_Npc210
+    ExchangeID: 64
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2629
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2630
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2631
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2632
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2633
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2634
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2635
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2636
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2637
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2638
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2639
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2640
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2641
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2642
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 2741
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 1074
+  - Table: Exchange_Shop_Chaos2_G
+    ExchangeID: 1075
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2750
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2751
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2770
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2771
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2790
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2791
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2810
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2811
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2830
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2831
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2850
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2851
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2870
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 2871
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 1054
+  - Table: Exchange_Shop_ChaosJ2_G
+    ExchangeID: 1055
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2643
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2644
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2645
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2646
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2647
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2648
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2649
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2650
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2651
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2652
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2653
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2654
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2655
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2656
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 2742
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 1076
+  - Table: Exchange_Shop_Chaos2_6
+    ExchangeID: 1077
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2752
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2753
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2772
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2773
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2792
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2793
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2812
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2813
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2832
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2833
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2852
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2853
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2872
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 2873
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 1056
+  - Table: Exchange_Shop_ChaosJ2_6
+    ExchangeID: 1057
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2657
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2658
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2659
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2660
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2661
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2662
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2663
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2664
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2665
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2666
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2667
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2668
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2669
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2670
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 2742
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 1079
+  - Table: Exchange_Shop_Chaos2_12
+    ExchangeID: 1078
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2754
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2755
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2774
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2775
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2794
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2795
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2814
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2815
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2834
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2835
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2854
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2855
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2874
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 2875
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 1058
+  - Table: Exchange_Shop_ChaosJ2_12
+    ExchangeID: 1059
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2671
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2672
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2673
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2674
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2675
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2676
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2677
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2678
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2679
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2680
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2681
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2682
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2683
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2684
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 2742
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 1080
+  - Table: Exchange_Shop_Chaos3_4
+    ExchangeID: 1081
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2756
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2757
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2776
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2777
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2796
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2797
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2816
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2817
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2836
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2837
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2856
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2857
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2876
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 2877
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 1060
+  - Table: Exchange_Shop_ChaosJ3_4
+    ExchangeID: 1061
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2685
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2686
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2687
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2688
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2689
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2690
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2691
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2692
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2693
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2694
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2695
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2696
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2697
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2698
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 2743
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 1082
+  - Table: Exchange_Shop_Chaos3_10
+    ExchangeID: 1083
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2758
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2759
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2778
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2779
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2798
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2799
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2818
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2819
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2838
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2839
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2858
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2859
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2878
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 2879
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 1062
+  - Table: Exchange_Shop_ChaosJ3_10
+    ExchangeID: 1063
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2699
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2700
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2701
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2702
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2703
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2704
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2705
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2706
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2707
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2708
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2709
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2710
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2711
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2712
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 2743
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 1084
+  - Table: Exchange_Shop_Chaos4_2
+    ExchangeID: 1085
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2760
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2761
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2780
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2781
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2800
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2801
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2820
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2821
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2840
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2841
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2860
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2861
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2880
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 2881
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 1064
+  - Table: Exchange_Shop_ChaosJ4_2
+    ExchangeID: 1065
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2713
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2714
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2715
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2716
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2717
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2718
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2719
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2720
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2721
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2722
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2723
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2724
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2725
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2726
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 2744
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 1086
+  - Table: Exchange_Shop_Chaos4_8
+    ExchangeID: 1087
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2762
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2763
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2782
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2783
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2802
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2803
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2822
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2823
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2842
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2843
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2862
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2863
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2882
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 2883
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 1066
+  - Table: Exchange_Shop_ChaosJ4_8
+    ExchangeID: 1067
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2727
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2728
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2729
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2730
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2731
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2732
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2733
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 2744
+  - Table: Exchange_Shop_Chaos5_G
+    ExchangeID: 1088
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2764
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2784
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2804
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2824
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2844
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2864
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 2884
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 1068
+  - Table: Exchange_Shop_ChaosJ5_G
+    ExchangeID: 1069
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2734
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2735
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2736
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2737
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2738
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2739
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2740
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 2745
+  - Table: Exchange_Shop_Chaos5_6
+    ExchangeID: 1089
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2765
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2785
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2805
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2825
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2845
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2865
+  - Table: Exchange_Shop_ChaosJ5_6
+    ExchangeID: 2885
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2734
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2735
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2736
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2737
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2738
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2739
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2740
+  - Table: Exchange_Shop_Chaos5_12
+    ExchangeID: 2745
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2765
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2785
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2805
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2825
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2845
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2865
+  - Table: Exchange_Shop_ChaosJ5_12
+    ExchangeID: 2885
+  - Table: Exchange_Event
+    ExchangeID: 3107
+  - Table: Exchange_Event
+    ExchangeID: 3108
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 123
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 124
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 125
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 134
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 135
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 136
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 137
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 138
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 1048
+  - Table: Exchange_Shop_Ep4
+    ExchangeID: 1049
+  - Table: Exchange_Shop_EP5_2
+    ExchangeID: 130
+  - Table: Exchange_Shop_EP5_2
+    ExchangeID: 131
+  - Table: Exchange_Shop_EP5_2
+    ExchangeID: 132
+  - Table: Exchange_Shop_EP5_2
+    ExchangeID: 133
+  - Table: Exchang_Shop_Npc12
+    ExchangeID: 120
+  - Table: Exchang_Shop_Npc12
+    ExchangeID: 121
+  - Table: Exchang_Shop_Npc12
+    ExchangeID: 122
+  - Table: Exchange_Shop_EP5_1
+    ExchangeID: 126
+  - Table: Exchange_Shop_EP5_1
+    ExchangeID: 127
+  - Table: Exchange_Shop_EP5_1
+    ExchangeID: 128
+  - Table: Exchange_Shop_EP5_1
+    ExchangeID: 129
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 745
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 746
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 747
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 748
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 749
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 750
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 751
+  - Table: Exchange_Beach_Spot
+    ExchangeID: 1090
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 758
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 759
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 760
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 761
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 762
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 763
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 764
+  - Table: Exchange_SPS_Spot
+    ExchangeID: 1091
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 768
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 769
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 770
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 771
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 772
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 773
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 774
+  - Table: Exchange_Relics_Spot
+    ExchangeID: 1092
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 778
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 779
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 780
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 781
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 782
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 783
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 784
+  - Table: Exchange_Wharf_Spot
+    ExchangeID: 1093
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 791
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 792
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 793
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 794
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 795
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 796
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 797
+  - Table: Exchange_Marine_Spot
+    ExchangeID: 1094
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 798
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 799
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 800
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 801
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 802
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 803
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 804
+  - Table: Exchange_Mirage_Spot
+    ExchangeID: 1095
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 809
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 810
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 811
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 812
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 813
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 814
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 815
+  - Table: Exchange_Seabed_Spot
+    ExchangeID: 1096
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 819
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 820
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 821
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 822
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 823
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 824
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 825
+  - Table: Exchange_Rose_Spot
+    ExchangeID: 1097
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 830
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 831
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 832
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 833
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 834
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 835
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 836
+  - Table: Exchange_Swamp_Spot
+    ExchangeID: 1098
+  - Table: Exchange_Office_Spot
+    ExchangeID: 837
+  - Table: Exchange_Office_Spot
+    ExchangeID: 838
+  - Table: Exchange_Office_Spot
+    ExchangeID: 839
+  - Table: Exchange_Office_Spot
+    ExchangeID: 840
+  - Table: Exchange_Office_Spot
+    ExchangeID: 841
+  - Table: Exchange_Office_Spot
+    ExchangeID: 842
+  - Table: Exchange_Office_Spot
+    ExchangeID: 843
+  - Table: Exchange_Office_Spot
+    ExchangeID: 1099
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 954
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 955
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 956
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 957
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 958
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 959
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 960
+  - Table: Exchange_Snow_Spot
+    ExchangeID: 1100
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 848
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 849
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 850
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 851
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 852
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 853
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 854
+  - Table: Exchange_Path_Wharf_Spot
+    ExchangeID: 1101
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 858
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 859
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 860
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 861
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 862
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 863
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 864
+  - Table: Exchange_Volcano_Spot
+    ExchangeID: 1102
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 865
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 866
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 867
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 868
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 869
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 870
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 871
+  - Table: Exchange_Abyss_Spot
+    ExchangeID: 1103
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 281
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 282
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 283
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 284
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 285
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 289
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 296
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 300
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 2471
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 2475
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 2482
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 2486
+  - Table: Exchange_Shop_Card_Thurs
+    ExchangeID: 2487
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 49
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 50
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 75
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 76
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 77
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 78
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 79
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 80
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 81
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 159
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 1045
+  - Table: Exchange_Shop_Snow
+    ExchangeID: 1111
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 161
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 162
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 163
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 164
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 165
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 166
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 167
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 168
+  - Table: Exchange_Shop_EP6
+    ExchangeID: 169
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 139
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 140
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 141
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 142
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 143
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 144
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 145
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 146
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 147
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 1046
+  - Table: Exchange_Shop_Techichi
+    ExchangeID: 1112
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 150
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 151
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 152
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 153
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 154
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 155
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 156
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 157
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 158
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 875
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 1047
+  - Table: Exchange_Shop_Volcano
+    ExchangeID: 1113
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 179
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 180
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 181
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 182
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 183
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 184
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 185
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 186
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 187
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 188
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 189
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 190
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 191
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 192
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 193
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 194
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 195
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 196
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 197
+  - Table: Exchange_Shop_Ghost
+    ExchangeID: 198
+
+Footer:
+  Imports:
+#  - Path: db/import/exchange_shop_table_db.yml

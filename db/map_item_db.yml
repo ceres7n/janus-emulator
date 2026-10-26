@@ -1,0 +1,7013 @@
+# =============================================================================
+#   Map Item Database  (MAP_ITEM_DB)
+# =============================================================================
+#
+#   Table MapItem_All of the ORIGINAL server data (376 rows, in its order): what a
+#   drill digs up in each map. Field names verbatim; Name = the map's name in
+#   maps_db.yml (display only); the item comments are item_db.yml names.
+#
+#   Fields
+#     Id                       - the map (maps_db.yml ID)                         [key]
+#     SpecialT / S_Rate        - type 0: a map_item_table_db.yml table and its rate
+#     EquipT / E_Rate          - type 1
+#     Normal1T..3T / N1..3_Rate - types 2..4
+#     ItemN / RateN (0..29)    - type 5: the map's own items (both non-zero)
+#   Retail: GameInfoMgr::LoadMapItemInfo (sub_640AE0) — the first row of the map;
+#   type k's rate = (i16)(int)(Rate * (1 + Rate_Add) ) with Rate_Add of
+#   map_item_event_add_db.yml Type 0 (S), 1 (E), 2 (N1..N3); the items of every
+#   map_item_table_db.yml row named so; type 5's rate = the sum of its RateN.
+#   MapItemManager::PopItemByRandom (sub_850890) picks a type by its rate, then an
+#   item by the items' rates (type 5: the items an open quest needs x 4, Type 3).
+# =============================================================================
+
+Header:
+  Type: MAP_ITEM_DB
+  Version: 1
+
+Body:
+  - Id: 2
+    Name: Gate of Caballa Relics
+    Normal1T: Relics_Nor1
+    N1_Rate: 9600
+    Normal2T: Relics_Nor2
+    N2_Rate: 400
+  - Id: 4
+    Name: Gate of Ghost Blue
+    Normal1T: Seabed_Nor1
+    N1_Rate: 6000
+    Normal2T: Seabed_Nor2
+    N2_Rate: 400
+    Item0: 11001   # Old bowl
+    Rate0: 700
+  - Id: 6
+    Name: Gate of Black Swamp
+    Normal1T: Swamp_Nor1
+    N1_Rate: 9600
+    Normal2T: Swamp_Nor2
+    N2_Rate: 400
+  - Id: 7
+    Name: Gate of Tapasco Volcano
+    Normal1T: Volcano_Nor1
+    N1_Rate: 9600
+    Normal2T: Volcano_Nor2
+    N2_Rate: 400
+  - Id: 10
+    Name: Phantom School - 2F Chilly Hallway
+  - Id: 14
+    Name: Swamp Field 2 - Beaver's Swamp
+    EquipT: Swamp_Play2_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play2_Nor1
+    N1_Rate: 5200
+    Normal2T: Swamp_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 15
+    Name: Swamp Field 3 - Maze of Forest
+    EquipT: Swamp_Play3_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play3_Nor1
+    N1_Rate: 5200
+    Normal2T: Swamp_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 20
+    Name: Path to Ghost Blue 1
+    EquipT: Path_SE_Seabed_EQ
+    E_Rate: 400
+    Normal1T: Path_SE_Seabed_Nor1
+    N1_Rate: 6000
+    Normal2T: Path_SE_Seabed_Nor2
+    N2_Rate: 100
+    Item0: 11001   # Old bowl
+    Rate0: 1000
+  - Id: 21
+    Name: Path to Caballa Relics
+    Normal1T: Path_SW_Relics_Nor1
+    N1_Rate: 9000
+    Normal2T: Path_SW_Relics_Nor2
+    N2_Rate: 1000
+  - Id: 22
+    Name: Path to Black Swamp
+    EquipT: Path_SW_Swamp_EQ
+    E_Rate: 400
+    Normal1T: Path_SW_Swamp_Nor1
+    N1_Rate: 9500
+    Normal2T: Path_SW_Swamp_Nor2
+    N2_Rate: 100
+  - Id: 23
+    Name: Path to Oops Wharf
+    Normal1T: Path_NW_Wharf_Nor1
+    N1_Rate: 9000
+    Normal2T: Path_NW_Wharf_Nor2
+    N2_Rate: 1000
+  - Id: 24
+    Name: Frost Wind Forest 1
+    EquipT: Path_NW_Volcano_EQ
+    E_Rate: 300
+    Normal1T: Path_NW_Volcano_Nor1
+    N1_Rate: 9600
+    Normal2T: Path_NW_Volcano_Nor2
+    N2_Rate: 100
+  - Id: 28
+    Name: Seabed Field 2 - East
+    EquipT: Seabed_Play2_EQ
+    E_Rate: 400
+    Normal1T: Seabed_Play2_Nor1
+    N1_Rate: 4700
+    Normal2T: Seabed_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11053   # Petroleum
+    Rate0: 471
+    Item1: 11054   # Natural gas
+    Rate1: 471
+    Item2: 11055   # Rusty nail
+    Rate2: 85
+    Item3: 11056   # Empty liquor bottle
+    Rate3: 85
+    Item4: 11057   # Premium liquor
+    Rate4: 471
+    Item5: 11058   # Empty box
+    Rate5: 85
+    Item6: 11059   # Shackles
+    Rate6: 85
+    Item7: 11061   # Anchor
+    Rate7: 85
+    Item8: 11062   # Ship steering wheel
+    Rate8: 85
+    Item9: 11063   # Broken compass
+    Rate9: 85
+    Item10: 11067   # Fragmented map 3
+    Rate10: 471
+    Item11: 11068   # Premium wine
+    Rate11: 1000
+    Item12: 11070   # Brush
+    Rate12: 500
+    Item13: 11071   # Paint
+    Rate13: 500
+    Item14: 11072   # Earplug
+    Rate14: 85
+    Item15: 11073   # Plane for skin
+    Rate15: 471
+    Item16: 11475   # Pure Water
+    Rate16: 400
+    Item17: 11488   # Sensible charm
+    Rate17: 206
+    Item18: 63076   # Whale Essence
+    Rate18: 206
+    Item19: 63466   # Pencil Case
+    Rate19: 100
+    Item20: 64023   # Worn Ocean Map A
+    Rate20: 294
+    Item21: 64024   # Worn Ocean Map B
+    Rate21: 294
+    Item22: 64025   # Old Ocean Map A
+    Rate22: 206
+    Item23: 64026   # Old Ocean Map B
+    Rate23: 206
+    Item24: 64027   # Weird Ocean Map A
+    Rate24: 206
+    Item25: 64028   # Weird Ocean Map B
+    Rate25: 206
+  - Id: 29
+    Name: Path to Ghost Blue 2
+    EquipT: Path_SE_Seabed2_EQ
+    E_Rate: 400
+    Normal1T: Path_SE_Seabed2_Nor1
+    N1_Rate: 6000
+    Normal2T: Path_SE_Seabed2_Nor2
+    N2_Rate: 100
+    Item0: 11001   # Old bowl
+    Rate0: 1000
+  - Id: 31
+    Name: Seabed Field 3 - Undersea Park
+    EquipT: Seabed_Play3_EQ
+    E_Rate: 400
+    Normal1T: Seabed_Play3_Nor1
+    N1_Rate: 4700
+    Normal2T: Seabed_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11053   # Petroleum
+    Rate0: 471
+    Item1: 11054   # Natural gas
+    Rate1: 471
+    Item2: 11055   # Rusty nail
+    Rate2: 85
+    Item3: 11056   # Empty liquor bottle
+    Rate3: 85
+    Item4: 11057   # Premium liquor
+    Rate4: 471
+    Item5: 11058   # Empty box
+    Rate5: 85
+    Item6: 11059   # Shackles
+    Rate6: 85
+    Item7: 11061   # Anchor
+    Rate7: 85
+    Item8: 11062   # Ship steering wheel
+    Rate8: 85
+    Item9: 11063   # Broken compass
+    Rate9: 85
+    Item10: 11067   # Fragmented map 3
+    Rate10: 471
+    Item11: 11068   # Premium wine
+    Rate11: 1000
+    Item12: 11070   # Brush
+    Rate12: 500
+    Item13: 11071   # Paint
+    Rate13: 500
+    Item14: 11072   # Earplug
+    Rate14: 85
+    Item15: 11073   # Plane for skin
+    Rate15: 471
+    Item16: 11475   # Pure Water
+    Rate16: 400
+    Item17: 11488   # Sensible charm
+    Rate17: 206
+    Item18: 63076   # Whale Essence
+    Rate18: 206
+    Item19: 63466   # Pencil Case
+    Rate19: 100
+    Item20: 64023   # Worn Ocean Map A
+    Rate20: 294
+    Item21: 64024   # Worn Ocean Map B
+    Rate21: 294
+    Item22: 64025   # Old Ocean Map A
+    Rate22: 206
+    Item23: 64026   # Old Ocean Map B
+    Rate23: 206
+    Item24: 64027   # Weird Ocean Map A
+    Rate24: 206
+    Item25: 64028   # Weird Ocean Map B
+    Rate25: 206
+  - Id: 50
+    Name: Nora Sewer
+    EquipT: Seabed_Dungeon1_EQ
+    E_Rate: 1000
+    Normal2T: Seabed_Dungeon1_Nor2
+    N2_Rate: 400
+    Item0: 11074   # R stone
+    Rate0: 1433
+    Item1: 11075   # Y stone
+    Rate1: 1433
+    Item2: 11076   # B stone
+    Rate2: 1433
+    Item3: 11077   # P stone
+    Rate3: 1433
+    Item4: 11078   # G stone
+    Rate4: 1433
+    Item5: 11079   # Kryptonite
+    Rate5: 1433
+    Item6: 64296   # Copper Nora Stone
+    Rate6: 1300
+  - Id: 62
+    Name: Swamp Field 5 - Futher Maze of Forest
+    EquipT: Swamp_Play5_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play5_Nor1
+    N1_Rate: 5000
+    Normal2T: Swamp_Play5_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 63
+    Name: Techichi Field 1
+    SpecialT: Path_Wharf_Play1_SP
+    S_Rate: 1
+    EquipT: Path_Wharf_Play1_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play1_Nor1
+    N1_Rate: 4399
+    Normal2T: Path_Wharf_Play1_Nor2
+    N2_Rate: 400
+    Item0: 10074   # Basalt piece
+    Rate0: 241
+    Item1: 10075   # Sulfur stone
+    Rate1: 241
+    Item2: 10275   # Granite piece
+    Rate2: 241
+    Item3: 11121   # Spinel
+    Rate3: 241
+    Item4: 11122   # Selinomarina
+    Rate4: 241
+    Item5: 11123   # Amethystos
+    Rate5: 241
+    Item6: 11124   # Serpentine
+    Rate6: 241
+    Item7: 11125   # Lithosmasso
+    Rate7: 241
+    Item8: 11582   # Harkon Ornament
+    Rate8: 241
+    Item9: 63746   # Dry wood
+    Rate9: 870
+    Item10: 63747   # Glass Slipper
+    Rate10: 241
+    Item11: 63815   # Portable Icepack
+    Rate11: 241
+    Item12: 64053   # Worn Ruins Map A
+    Rate12: 309
+    Item13: 64054   # Worn Ruins Map B
+    Rate13: 309
+    Item14: 64055   # Old Ruins Map A
+    Rate14: 216
+    Item15: 64056   # Old Ruins Map B
+    Rate15: 216
+    Item16: 64057   # Weird Ruins Map A
+    Rate16: 216
+    Item17: 64058   # Weird Ruins Map B
+    Rate17: 216
+    Item18: 64682   # Unknown Seed
+    Rate18: 241
+  - Id: 64
+    Name: Techichi Field 2
+    SpecialT: Path_Wharf_Play2_SP
+    S_Rate: 1
+    EquipT: Path_Wharf_Play2_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play2_Nor1
+    N1_Rate: 4399
+    Normal2T: Path_Wharf_Play2_Nor2
+    N2_Rate: 400
+    Item0: 10074   # Basalt piece
+    Rate0: 241
+    Item1: 10075   # Sulfur stone
+    Rate1: 241
+    Item2: 10275   # Granite piece
+    Rate2: 241
+    Item3: 11121   # Spinel
+    Rate3: 241
+    Item4: 11122   # Selinomarina
+    Rate4: 241
+    Item5: 11123   # Amethystos
+    Rate5: 241
+    Item6: 11124   # Serpentine
+    Rate6: 241
+    Item7: 11125   # Lithosmasso
+    Rate7: 241
+    Item8: 11582   # Harkon Ornament
+    Rate8: 241
+    Item9: 63746   # Dry wood
+    Rate9: 870
+    Item10: 63747   # Glass Slipper
+    Rate10: 241
+    Item11: 63815   # Portable Icepack
+    Rate11: 241
+    Item12: 64053   # Worn Ruins Map A
+    Rate12: 309
+    Item13: 64054   # Worn Ruins Map B
+    Rate13: 309
+    Item14: 64055   # Old Ruins Map A
+    Rate14: 216
+    Item15: 64056   # Old Ruins Map B
+    Rate15: 216
+    Item16: 64057   # Weird Ruins Map A
+    Rate16: 216
+    Item17: 64058   # Weird Ruins Map B
+    Rate17: 216
+    Item18: 64682   # Unknown Seed
+    Rate18: 241
+  - Id: 65
+    Name: Techichi Field 3
+    SpecialT: Path_Wharf_Play3_SP
+    S_Rate: 1
+    EquipT: Path_Wharf_Play3_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play3_Nor1
+    N1_Rate: 4399
+    Normal2T: Path_Wharf_Play3_Nor2
+    N2_Rate: 400
+    Item0: 10074   # Basalt piece
+    Rate0: 241
+    Item1: 10075   # Sulfur stone
+    Rate1: 241
+    Item2: 10275   # Granite piece
+    Rate2: 241
+    Item3: 11121   # Spinel
+    Rate3: 241
+    Item4: 11122   # Selinomarina
+    Rate4: 241
+    Item5: 11123   # Amethystos
+    Rate5: 241
+    Item6: 11124   # Serpentine
+    Rate6: 241
+    Item7: 11125   # Lithosmasso
+    Rate7: 241
+    Item8: 11582   # Harkon Ornament
+    Rate8: 241
+    Item9: 63746   # Dry wood
+    Rate9: 870
+    Item10: 63747   # Glass Slipper
+    Rate10: 241
+    Item11: 63815   # Portable Icepack
+    Rate11: 241
+    Item12: 64053   # Worn Ruins Map A
+    Rate12: 309
+    Item13: 64054   # Worn Ruins Map B
+    Rate13: 309
+    Item14: 64055   # Old Ruins Map A
+    Rate14: 216
+    Item15: 64056   # Old Ruins Map B
+    Rate15: 216
+    Item16: 64057   # Weird Ruins Map A
+    Rate16: 216
+    Item17: 64058   # Weird Ruins Map B
+    Rate17: 216
+    Item18: 64682   # Unknown Seed
+    Rate18: 241
+  - Id: 66
+    Name: Techichi Field 4
+    SpecialT: Path_Wharf_Play4_SP
+    S_Rate: 1
+    EquipT: Path_Wharf_Play4_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play4_Nor1
+    N1_Rate: 4399
+    Normal2T: Path_Wharf_Play4_Nor2
+    N2_Rate: 400
+    Item0: 10074   # Basalt piece
+    Rate0: 241
+    Item1: 10075   # Sulfur stone
+    Rate1: 241
+    Item2: 10275   # Granite piece
+    Rate2: 241
+    Item3: 11121   # Spinel
+    Rate3: 241
+    Item4: 11122   # Selinomarina
+    Rate4: 241
+    Item5: 11123   # Amethystos
+    Rate5: 241
+    Item6: 11124   # Serpentine
+    Rate6: 241
+    Item7: 11125   # Lithosmasso
+    Rate7: 241
+    Item8: 11582   # Harkon Ornament
+    Rate8: 241
+    Item9: 63746   # Dry wood
+    Rate9: 870
+    Item10: 63747   # Glass Slipper
+    Rate10: 241
+    Item11: 63815   # Portable Icepack
+    Rate11: 241
+    Item12: 64053   # Worn Ruins Map A
+    Rate12: 309
+    Item13: 64054   # Worn Ruins Map B
+    Rate13: 309
+    Item14: 64055   # Old Ruins Map A
+    Rate14: 216
+    Item15: 64056   # Old Ruins Map B
+    Rate15: 216
+    Item16: 64057   # Weird Ruins Map A
+    Rate16: 216
+    Item17: 64058   # Weird Ruins Map B
+    Rate17: 216
+    Item18: 64682   # Unknown Seed
+    Rate18: 241
+  - Id: 68
+    Name: Frost Wind Forest 2
+    EquipT: Path_NW_Volcano2_EQ
+    E_Rate: 300
+    Normal1T: Path_NW_Volcano2_Nor1
+    N1_Rate: 9600
+    Normal2T: Path_NW_Volcano2_Nor2
+    N2_Rate: 100
+  - Id: 75
+    Name: Pyramid Dungeon 3 - Hall of Bastet
+    EquipT: Beach_Dungeon5_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon5_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon5_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 191
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 191
+    Item3: 11135   # Round Bone Seal
+    Rate3: 191
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 91
+  - Id: 76
+    Name: Pyramid Dungeon 4 - Hall of Dead
+    EquipT: Beach_Dungeon6_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon6_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon6_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 191
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 191
+    Item3: 11135   # Round Bone Seal
+    Rate3: 191
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 91
+  - Id: 77
+    Name: Pyramid Dungeon 5 - Hall of Love Affair
+    EquipT: Beach_Dungeon7_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon7_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon7_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 191
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 191
+    Item3: 11135   # Round Bone Seal
+    Rate3: 191
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 91
+  - Id: 78
+    Name: Pyramid Dungeon 6 - Hall of the Queen
+    EquipT: Beach_Dungeon8_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon8_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon8_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 191
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 191
+    Item3: 11135   # Round Bone Seal
+    Rate3: 191
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 91
+  - Id: 79
+    Name: Swamp Field 6 - Lake of Illusion
+    EquipT: Swamp_Play6_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play6_Nor1
+    N1_Rate: 5200
+    Normal2T: Swamp_Play6_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 83
+    Name: Snow Field 2 - Snowflake Park
+    EquipT: Snow_Play2_EQ
+    E_Rate: 300
+    Normal1T: Snow_Play2_Nor1
+    N1_Rate: 5300
+    Normal2T: Snow_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11144   # Sea scorpion fossil
+    Rate0: 157
+    Item1: 11145   # Footprint of pterosaur
+    Rate1: 157
+    Item2: 11146   # Ammonite fossil
+    Rate2: 157
+    Item3: 11147   # Dragonfly fossil
+    Rate3: 157
+    Item4: 11148   # Dinosaur egg fossil
+    Rate4: 157
+    Item5: 11155   # Red nose
+    Rate5: 157
+    Item6: 11157   # Udambara
+    Rate6: 157
+    Item7: 11158   # Blue orchid
+    Rate7: 157
+    Item8: 11159   # Bamboo flower
+    Rate8: 157
+    Item9: 11160   # Agave
+    Rate9: 157
+    Item10: 11161   # Edelweiss
+    Rate10: 300
+    Item11: 63643   # Portable AC
+    Rate11: 400
+    Item12: 64408   # Letter to Santa
+    Rate12: 300
+    Item13: 64047   # Worn Snow Map A
+    Rate13: 354
+    Item14: 64048   # Worn Snow Map B
+    Rate14: 354
+    Item15: 64049   # Old Snow Map A
+    Rate15: 248
+    Item16: 64050   # Old Snow Map B
+    Rate16: 248
+    Item17: 64051   # Weird Snow Map A
+    Rate17: 248
+    Item18: 64052   # Weird Snow Map B
+    Rate18: 248
+  - Id: 85
+    Name: Snow Field 3 - Stairway of Snowflake
+    EquipT: Snow_Play3_EQ
+    E_Rate: 300
+    Normal1T: Snow_Play3_Nor1
+    N1_Rate: 5300
+    Normal2T: Snow_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11144   # Sea scorpion fossil
+    Rate0: 157
+    Item1: 11145   # Footprint of pterosaur
+    Rate1: 157
+    Item2: 11146   # Ammonite fossil
+    Rate2: 157
+    Item3: 11147   # Dragonfly fossil
+    Rate3: 157
+    Item4: 11148   # Dinosaur egg fossil
+    Rate4: 157
+    Item5: 11155   # Red nose
+    Rate5: 157
+    Item6: 11157   # Udambara
+    Rate6: 157
+    Item7: 11158   # Blue orchid
+    Rate7: 157
+    Item8: 11159   # Bamboo flower
+    Rate8: 157
+    Item9: 11160   # Agave
+    Rate9: 157
+    Item10: 11161   # Edelweiss
+    Rate10: 300
+    Item11: 63643   # Portable AC
+    Rate11: 400
+    Item12: 64408   # Letter to Santa
+    Rate12: 300
+    Item13: 64047   # Worn Snow Map A
+    Rate13: 354
+    Item14: 64048   # Worn Snow Map B
+    Rate14: 354
+    Item15: 64049   # Old Snow Map A
+    Rate15: 248
+    Item16: 64050   # Old Snow Map B
+    Rate16: 248
+    Item17: 64051   # Weird Snow Map A
+    Rate17: 248
+    Item18: 64052   # Weird Snow Map B
+    Rate18: 248
+  - Id: 86
+    Name: Event Garden - Ceremonia
+    Normal1T: Path_NE_Nor1
+    N1_Rate: 9600
+    Normal2T: Path_NE_Nor2
+    N2_Rate: 400
+  - Id: 89
+    Name: Rose Field 1 - Stairway to Sorrow
+    EquipT: Rose_Play1_EQ
+    E_Rate: 400
+    Normal1T: Rose_Play1_Nor1
+    N1_Rate: 4400
+    Normal2T: Rose_Play1_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 131
+    Item1: 11169   # Red Clay Doll Shoes
+    Rate1: 700
+    Item2: 11170   # Pocket watch
+    Rate2: 300
+    Item3: 11171   # Gold Hand Mirror
+    Rate3: 131
+    Item4: 11172   # Monocle
+    Rate4: 300
+    Item5: 11173   # Eagle feather pen
+    Rate5: 270
+    Item6: 11174   # Whalebone
+    Rate6: 131
+    Item7: 11175   # White powder
+    Rate7: 500
+    Item8: 11176   # Golden Cup
+    Rate8: 300
+    Item9: 11177   # Cocoa powder
+    Rate9: 500
+    Item10: 11178   # Silver rose
+    Rate10: 131
+    Item11: 11197   # Jewel box
+    Rate11: 300
+    Item12: 61280   # Rosaline's Jewel Box
+    Rate12: 200
+    Item13: 63218   # Worm from Rose Garden
+    Rate13: 400
+    Item14: 63224   # Magic Crystal
+    Rate14: 300
+    Item15: 63225   # Rose Petal
+    Rate15: 1000
+    Item16: 63892   # Delicate Key
+    Rate16: 131
+    Item17: 64029   # Worn Garden Map A
+    Rate17: 363
+    Item18: 64030   # Worn Garden Map B
+    Rate18: 363
+    Item19: 64031   # Old Garden Map A
+    Rate19: 254
+    Item20: 64032   # Old Garden Map B
+    Rate20: 254
+    Item21: 64033   # Weird Garden Map A
+    Rate21: 254
+    Item22: 64034   # Weird Garden Map B
+    Rate22: 254
+  - Id: 90
+    Name: Rose Field 2 - Maze of Black Rose
+    EquipT: Rose_Play2_EQ
+    E_Rate: 400
+    Normal1T: Rose_Play2_Nor1
+    N1_Rate: 4400
+    Normal2T: Rose_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 131
+    Item1: 11170   # Pocket watch
+    Rate1: 300
+    Item2: 11171   # Gold Hand Mirror
+    Rate2: 131
+    Item3: 11172   # Monocle
+    Rate3: 300
+    Item4: 11173   # Eagle feather pen
+    Rate4: 270
+    Item5: 11174   # Whalebone
+    Rate5: 131
+    Item6: 11175   # White powder
+    Rate6: 500
+    Item7: 11176   # Golden Cup
+    Rate7: 300
+    Item8: 11177   # Cocoa powder
+    Rate8: 500
+    Item9: 11178   # Silver rose
+    Rate9: 131
+    Item10: 11197   # Jewel box
+    Rate10: 300
+    Item11: 61280   # Rosaline's Jewel Box
+    Rate11: 200
+    Item12: 63218   # Worm from Rose Garden
+    Rate12: 400
+    Item13: 63224   # Magic Crystal
+    Rate13: 300
+    Item14: 63225   # Rose Petal
+    Rate14: 1000
+    Item15: 63892   # Delicate Key
+    Rate15: 131
+    Item16: 64029   # Worn Garden Map A
+    Rate16: 363
+    Item17: 64030   # Worn Garden Map B
+    Rate17: 363
+    Item18: 64031   # Old Garden Map A
+    Rate18: 254
+    Item19: 64032   # Old Garden Map B
+    Rate19: 254
+    Item20: 64033   # Weird Garden Map A
+    Rate20: 254
+    Item21: 64034   # Weird Garden Map B
+    Rate21: 254
+  - Id: 91
+    Name: Rose Field 3 - Maze of Blue Rose
+    EquipT: Rose_Play3_EQ
+    E_Rate: 400
+    Normal1T: Rose_Play3_Nor1
+    N1_Rate: 4400
+    Normal2T: Rose_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 127
+    Item1: 11170   # Pocket watch
+    Rate1: 300
+    Item2: 11171   # Gold Hand Mirror
+    Rate2: 127
+    Item3: 11172   # Monocle
+    Rate3: 300
+    Item4: 11173   # Eagle feather pen
+    Rate4: 270
+    Item5: 11174   # Whalebone
+    Rate5: 127
+    Item6: 11175   # White powder
+    Rate6: 500
+    Item7: 11176   # Golden Cup
+    Rate7: 300
+    Item8: 11177   # Cocoa powder
+    Rate8: 500
+    Item9: 11178   # Silver rose
+    Rate9: 127
+    Item10: 11197   # Jewel box
+    Rate10: 300
+    Item11: 61280   # Rosaline's Jewel Box
+    Rate11: 200
+    Item12: 63218   # Worm from Rose Garden
+    Rate12: 400
+    Item13: 63223   # Golden Carriage Contract
+    Rate13: 300
+    Item14: 63224   # Magic Crystal
+    Rate14: 300
+    Item15: 63225   # Rose Petal
+    Rate15: 1000
+    Item16: 63892   # Delicate Key
+    Rate16: 127
+    Item17: 64029   # Worn Garden Map A
+    Rate17: 353
+    Item18: 64030   # Worn Garden Map B
+    Rate18: 353
+    Item19: 64031   # Old Garden Map A
+    Rate19: 247
+    Item20: 64032   # Old Garden Map B
+    Rate20: 247
+    Item21: 64033   # Weird Garden Map A
+    Rate21: 247
+    Item22: 64034   # Weird Garden Map B
+    Rate22: 247
+  - Id: 92
+    Name: Rose Field 4 - Bloom Grave
+    EquipT: Rose_Play4_EQ
+    E_Rate: 400
+    Normal1T: Rose_Play4_Nor1
+    N1_Rate: 4400
+    Normal2T: Rose_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 131
+    Item1: 11170   # Pocket watch
+    Rate1: 300
+    Item2: 11171   # Gold Hand Mirror
+    Rate2: 131
+    Item3: 11172   # Monocle
+    Rate3: 300
+    Item4: 11173   # Eagle feather pen
+    Rate4: 270
+    Item5: 11174   # Whalebone
+    Rate5: 131
+    Item6: 11175   # White powder
+    Rate6: 500
+    Item7: 11176   # Golden Cup
+    Rate7: 300
+    Item8: 11177   # Cocoa powder
+    Rate8: 500
+    Item9: 11178   # Silver rose
+    Rate9: 131
+    Item10: 11197   # Jewel box
+    Rate10: 300
+    Item11: 61280   # Rosaline's Jewel Box
+    Rate11: 200
+    Item12: 63218   # Worm from Rose Garden
+    Rate12: 400
+    Item13: 63224   # Magic Crystal
+    Rate13: 300
+    Item14: 63225   # Rose Petal
+    Rate14: 1000
+    Item15: 63892   # Delicate Key
+    Rate15: 131
+    Item16: 64029   # Worn Garden Map A
+    Rate16: 363
+    Item17: 64030   # Worn Garden Map B
+    Rate17: 363
+    Item18: 64031   # Old Garden Map A
+    Rate18: 254
+    Item19: 64032   # Old Garden Map B
+    Rate19: 254
+    Item20: 64033   # Weird Garden Map A
+    Rate20: 254
+    Item21: 64034   # Weird Garden Map B
+    Rate21: 254
+  - Id: 94
+    Name: Ice Dungeon 1 - Cave of Darkblue
+    EquipT: Snow_Dungeon1_EQ
+    E_Rate: 300
+    Normal2T: Snow_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 11181   # Ice flower ring
+    Rate0: 1600
+    Item1: 11182   # Bear fur
+    Rate1: 1600
+    Item2: 11183   # Bone needle
+    Rate2: 1600
+    Item3: 11184   # Dry ice
+    Rate3: 1600
+    Item4: 11191   # Ivory
+    Rate4: 1600
+    Item5: 63654   # Icy Flower Earrings
+    Rate5: 1600
+  - Id: 95
+    Name: Ice Dungeon 2 - Cave of Crystal
+    EquipT: Snow_Dungeon2_EQ
+    E_Rate: 300
+    Normal2T: Snow_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 11181   # Ice flower ring
+    Rate0: 1600
+    Item1: 11182   # Bear fur
+    Rate1: 1600
+    Item2: 11183   # Bone needle
+    Rate2: 1600
+    Item3: 11184   # Dry ice
+    Rate3: 1600
+    Item4: 11191   # Ivory
+    Rate4: 1600
+    Item5: 63654   # Icy Flower Earrings
+    Rate5: 1600
+  - Id: 96
+    Name: Ice Dungeon 3 - Heart of Crystal
+    EquipT: Snow_Dungeon3_EQ
+    E_Rate: 300
+    Normal2T: Snow_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 11181   # Ice flower ring
+    Rate0: 1600
+    Item1: 11182   # Bear fur
+    Rate1: 1600
+    Item2: 11183   # Bone needle
+    Rate2: 1600
+    Item3: 11184   # Dry ice
+    Rate3: 1600
+    Item4: 11191   # Ivory
+    Rate4: 1600
+    Item5: 63654   # Icy Flower Earrings
+    Rate5: 1600
+  - Id: 97
+    Name: Ice Dungeon 4 - Teardrop Walkways
+    EquipT: Snow_Dungeon4_EQ
+    E_Rate: 300
+    Normal2T: Snow_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 11181   # Ice flower ring
+    Rate0: 1600
+    Item1: 11182   # Bear fur
+    Rate1: 1600
+    Item2: 11183   # Bone needle
+    Rate2: 1600
+    Item3: 11184   # Dry ice
+    Rate3: 1600
+    Item4: 11191   # Ivory
+    Rate4: 1600
+    Item5: 63654   # Icy Flower Earrings
+    Rate5: 1600
+  - Id: 99
+    Name: Path to Snow Hill
+    EquipT: Path_NW_Snow_EQ
+    E_Rate: 300
+    Normal1T: Path_NW_Snow_Nor1
+    N1_Rate: 5300
+    Normal2T: Path_NW_Snow_Nor2
+    N2_Rate: 100
+    Item0: 64407   # Closed Circuit
+    Rate0: 300
+  - Id: 100
+    Name: Tapasco Field 1 - Net of Lava
+    SpecialT: Volcano_Play1_SP
+    S_Rate: 10
+    EquipT: Volcano_Play1_EQ
+    E_Rate: 200
+    Normal1T: Volcano_Play1_Nor1
+    N1_Rate: 4590
+    Normal2T: Volcano_Play1_Nor2
+    N2_Rate: 400
+    Item0: 11185   # Shackle ring
+    Rate0: 225
+    Item1: 11186   # Gollum trousers
+    Rate1: 225
+    Item2: 11187   # Spicy egg
+    Rate2: 225
+    Item3: 11188   # Tapasco Pepper
+    Rate3: 358
+    Item4: 11189   # Hot Iron
+    Rate4: 225
+    Item5: 11190   # Whetstone
+    Rate5: 225
+    Item6: 11192   # Pupa of tiger moth
+    Rate6: 225
+    Item7: 11194   # Salt Jar
+    Rate7: 502
+    Item8: 11596   # Volcano Water
+    Rate8: 225
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+    Item15: 64229   # Roasted Sweet Potato
+    Rate15: 645
+    Item16: 64719   # Tapasco Peppercorn
+    Rate16: 225
+    Item17: 64727   # Brave Fire
+    Rate17: 225
+    Item18: 64718   # Old Time Capsule
+    Rate18: 300
+    Item19: 64754   # Shattered Amethyst Piece 1
+    Rate19: 150
+  - Id: 101
+    Name: Tapasco Field 2 - Rhythm of Hammer
+    SpecialT: Volcano_Play2_SP
+    S_Rate: 10
+    EquipT: Volcano_Play2_EQ
+    E_Rate: 200
+    Normal1T: Volcano_Play2_Nor1
+    N1_Rate: 4590
+    Normal2T: Volcano_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11185   # Shackle ring
+    Rate0: 225
+    Item1: 11186   # Gollum trousers
+    Rate1: 225
+    Item2: 11187   # Spicy egg
+    Rate2: 225
+    Item3: 11188   # Tapasco Pepper
+    Rate3: 358
+    Item4: 11189   # Hot Iron
+    Rate4: 225
+    Item5: 11190   # Whetstone
+    Rate5: 225
+    Item6: 11192   # Pupa of tiger moth
+    Rate6: 225
+    Item7: 11194   # Salt Jar
+    Rate7: 502
+    Item8: 11596   # Volcano Water
+    Rate8: 225
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+    Item15: 64229   # Roasted Sweet Potato
+    Rate15: 645
+    Item16: 64719   # Tapasco Peppercorn
+    Rate16: 225
+    Item17: 64727   # Brave Fire
+    Rate17: 225
+    Item18: 64718   # Old Time Capsule
+    Rate18: 300
+    Item19: 64754   # Shattered Amethyst Piece 1
+    Rate19: 150
+  - Id: 102
+    Name: Tapasco Field 3 - Valley of Flame
+    SpecialT: Volcano_Play3_SP
+    S_Rate: 10
+    EquipT: Volcano_Play3_EQ
+    E_Rate: 200
+    Normal1T: Volcano_Play3_Nor1
+    N1_Rate: 4590
+    Normal2T: Volcano_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11185   # Shackle ring
+    Rate0: 225
+    Item1: 11186   # Gollum trousers
+    Rate1: 225
+    Item2: 11187   # Spicy egg
+    Rate2: 225
+    Item3: 11188   # Tapasco Pepper
+    Rate3: 358
+    Item4: 11189   # Hot Iron
+    Rate4: 225
+    Item5: 11190   # Whetstone
+    Rate5: 225
+    Item6: 11192   # Pupa of tiger moth
+    Rate6: 225
+    Item7: 11194   # Salt Jar
+    Rate7: 502
+    Item8: 11596   # Volcano Water
+    Rate8: 225
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+    Item15: 64229   # Roasted Sweet Potato
+    Rate15: 645
+    Item16: 64719   # Tapasco Peppercorn
+    Rate16: 225
+    Item17: 64727   # Brave Fire
+    Rate17: 225
+    Item18: 64718   # Old Time Capsule
+    Rate18: 300
+    Item19: 64754   # Shattered Amethyst Piece 1
+    Rate19: 150
+  - Id: 103
+    Name: Tapasco Field 4 - Stairway to Fire
+    SpecialT: Volcano_Play4_SP
+    S_Rate: 10
+    EquipT: Volcano_Play4_EQ
+    E_Rate: 200
+    Normal1T: Volcano_Play4_Nor1
+    N1_Rate: 4590
+    Normal2T: Volcano_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11185   # Shackle ring
+    Rate0: 225
+    Item1: 11186   # Gollum trousers
+    Rate1: 225
+    Item2: 11187   # Spicy egg
+    Rate2: 225
+    Item3: 11188   # Tapasco Pepper
+    Rate3: 358
+    Item4: 11189   # Hot Iron
+    Rate4: 225
+    Item5: 11190   # Whetstone
+    Rate5: 225
+    Item6: 11192   # Pupa of tiger moth
+    Rate6: 225
+    Item7: 11194   # Salt Jar
+    Rate7: 502
+    Item8: 11596   # Volcano Water
+    Rate8: 225
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+    Item15: 64229   # Roasted Sweet Potato
+    Rate15: 645
+    Item16: 64719   # Tapasco Peppercorn
+    Rate16: 225
+    Item17: 64727   # Brave Fire
+    Rate17: 225
+    Item18: 64718   # Old Time Capsule
+    Rate18: 300
+    Item19: 64754   # Shattered Amethyst Piece 1
+    Rate19: 150
+  - Id: 105
+    Name: Vamp Dungeon 5 - Resurrection of Dark
+    EquipT: Rose_Dungeon1_EQ
+    E_Rate: 300
+    Normal2T: Rose_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 11195   # Holy Water Marble
+    Rate0: 873
+    Item1: 11196   # Solar Stone
+    Rate1: 873
+    Item2: 11197   # Jewel box
+    Rate2: 873
+    Item3: 11198   # Sealed letter
+    Rate3: 873
+    Item4: 11199   # Castle map
+    Rate4: 873
+    Item5: 11200   # Portrait of a woman
+    Rate5: 873
+    Item6: 11201   # Diary
+    Rate6: 873
+    Item7: 11202   # Rusty sword
+    Rate7: 873
+    Item8: 11203   # Rusty helmet
+    Rate8: 873
+    Item9: 11204   # Rusty shield
+    Rate9: 600
+    Item10: 11627   # Moonstone
+    Rate10: 600
+    Item11: 64381   # Star Sapphire
+    Rate11: 500
+  - Id: 106
+    Name: Vamp Dungeon 4 - Center of the Dark
+    EquipT: Rose_Dungeon2_EQ
+    E_Rate: 300
+    Normal2T: Rose_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 11195   # Holy Water Marble
+    Rate0: 873
+    Item1: 11196   # Solar Stone
+    Rate1: 873
+    Item2: 11197   # Jewel box
+    Rate2: 873
+    Item3: 11198   # Sealed letter
+    Rate3: 873
+    Item4: 11199   # Castle map
+    Rate4: 873
+    Item5: 11200   # Portrait of a woman
+    Rate5: 873
+    Item6: 11201   # Diary
+    Rate6: 873
+    Item7: 11202   # Rusty sword
+    Rate7: 873
+    Item8: 11203   # Rusty helmet
+    Rate8: 873
+    Item9: 11204   # Rusty shield
+    Rate9: 600
+    Item10: 11627   # Moonstone
+    Rate10: 600
+    Item11: 64381   # Star Sapphire
+    Rate11: 500
+  - Id: 107
+    Name: Vamp Dungeon 1 - Banquet of the Vamp
+    EquipT: Rose_Dungeon3_EQ
+    E_Rate: 300
+    Normal2T: Rose_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 11195   # Holy Water Marble
+    Rate0: 873
+    Item1: 11196   # Solar Stone
+    Rate1: 873
+    Item2: 11197   # Jewel box
+    Rate2: 873
+    Item3: 11198   # Sealed letter
+    Rate3: 873
+    Item4: 11199   # Castle map
+    Rate4: 873
+    Item5: 11200   # Portrait of a woman
+    Rate5: 873
+    Item6: 11201   # Diary
+    Rate6: 873
+    Item7: 11202   # Rusty sword
+    Rate7: 873
+    Item8: 11203   # Rusty helmet
+    Rate8: 873
+    Item9: 11204   # Rusty shield
+    Rate9: 600
+    Item10: 11627   # Moonstone
+    Rate10: 600
+    Item11: 64381   # Star Sapphire
+    Rate11: 500
+  - Id: 108
+    Name: Vamp Dungeon 2 - Banquet of the Dead
+    EquipT: Rose_Dungeon4_EQ
+    E_Rate: 300
+    Normal2T: Rose_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 11195   # Holy Water Marble
+    Rate0: 873
+    Item1: 11196   # Solar Stone
+    Rate1: 873
+    Item2: 11197   # Jewel box
+    Rate2: 873
+    Item3: 11198   # Sealed letter
+    Rate3: 873
+    Item4: 11199   # Castle map
+    Rate4: 873
+    Item5: 11200   # Portrait of a woman
+    Rate5: 873
+    Item6: 11201   # Diary
+    Rate6: 873
+    Item7: 11202   # Rusty sword
+    Rate7: 873
+    Item8: 11203   # Rusty helmet
+    Rate8: 873
+    Item9: 11204   # Rusty shield
+    Rate9: 600
+    Item10: 11627   # Moonstone
+    Rate10: 600
+    Item11: 64381   # Star Sapphire
+    Rate11: 500
+  - Id: 109
+    Name: Vamp Dungeon 3 - Song of Moonlight
+    EquipT: Rose_Dungeon5_EQ
+    E_Rate: 300
+    Normal2T: Rose_Dungeon5_Nor2
+    N2_Rate: 100
+    Item0: 11195   # Holy Water Marble
+    Rate0: 873
+    Item1: 11196   # Solar Stone
+    Rate1: 873
+    Item2: 11197   # Jewel box
+    Rate2: 873
+    Item3: 11198   # Sealed letter
+    Rate3: 873
+    Item4: 11199   # Castle map
+    Rate4: 873
+    Item5: 11200   # Portrait of a woman
+    Rate5: 873
+    Item6: 11201   # Diary
+    Rate6: 873
+    Item7: 11202   # Rusty sword
+    Rate7: 873
+    Item8: 11203   # Rusty helmet
+    Rate8: 873
+    Item9: 11204   # Rusty shield
+    Rate9: 600
+    Item10: 11627   # Moonstone
+    Rate10: 600
+    Item11: 64381   # Star Sapphire
+    Rate11: 500
+  - Id: 111
+    Name: Phantom School - 1F Silent Hallway
+  - Id: 112
+    Name: Phantom School 1-1
+    EquipT: Wharf_Dungeon2_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon2_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 113
+    Name: Phantom School 1-2
+    EquipT: Wharf_Dungeon3_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon3_Nor1
+    N1_Rate: 1100
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 1400
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 114
+    Name: Phantom School 1-3
+  - Id: 115
+    Name: Phantom School 1-4
+  - Id: 117
+    Name: Path to Phantom School
+    Normal1T: Path_NW_Wharf2_Nor1
+    N1_Rate: 9600
+    Item0: 11011   # Jenny's Picture A
+    Rate0: 70
+    Item1: 11012   # Dye spray
+    Rate1: 70
+    Item2: 11014   # Empty Potion Bottle
+    Rate2: 9
+    Item3: 11027   # Jenny doll
+    Rate3: 47
+    Item4: 11110   # Three-leafed clover
+    Rate4: 187
+    Item5: 11111   # Four-leafed clover
+    Rate5: 12
+    Item6: 11215   # Gold medal
+    Rate6: 5
+  - Id: 118
+    Name: Swamp Dungeon 1 - Marshy Trail
+    EquipT: Swamp_Dungeon1_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 119
+    Name: Swamp Dungeon 2 - Marshy Pool
+    EquipT: Swamp_Dungeon2_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 120
+    Name: Swamp Dungeon 3 - Marshy Vacant Lot
+    EquipT: Swamp_Dungeon3_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 121
+    Name: Swamp Dungeon 4 - Marshy Garden
+    EquipT: Swamp_Dungeon4_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 122
+    Name: Swamp Dungeon 5 - Marshy Lawn
+    EquipT: Swamp_Dungeon5_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon5_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 123
+    Name: Swamp Dungeon 6 - Suu's Muddy pool
+    EquipT: Swamp_Dungeon6_EQ
+    E_Rate: 400
+    Normal2T: Swamp_Dungeon6_Nor2
+    N2_Rate: 100
+    Item0: 11216   # Coal
+    Rate0: 1056
+    Item1: 11217   # Mud
+    Rate1: 1056
+    Item2: 11218   # Fragrant candle
+    Rate2: 1056
+    Item3: 11221   # Thorn Lotus Seed
+    Rate3: 1056
+    Item4: 11222   # Milk Vetch Seed
+    Rate4: 1056
+    Item5: 11223   # White Hair Moss
+    Rate5: 1056
+    Item6: 11224   # Litmus moss
+    Rate6: 1056
+    Item7: 11225   # Wing moss
+    Rate7: 1056
+    Item8: 11593   # Ticket of the Valiant
+    Rate8: 1056
+  - Id: 124
+    Name: Phantom School - 1F Toilet
+    EquipT: Wharf_Dungeon6_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon6_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 125
+    Name: Phantom School - 2-1
+    EquipT: Wharf_Dungeon8_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon8_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 126
+    Name: Phantom School - 2-2
+    EquipT: Wharf_Dungeon9_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon9_Nor1
+    N1_Rate: 1200
+    Item0: 11017   # Pocket Guide Vol.2
+    Rate0: 1000
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 127
+    Name: Phantom School - 2-3
+  - Id: 128
+    Name: Phantom School - 2-4
+  - Id: 129
+    Name: Phantom School - 2F Toilet
+    EquipT: Wharf_Dungeon12_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon12_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 130
+    Name: Phantom School - 3F Shiver Hallway
+  - Id: 131
+    Name: Phantom School - 3-1
+    EquipT: Wharf_Dungeon14_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon14_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 132
+    Name: Phantom School - 3-2
+    EquipT: Wharf_Dungeon15_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon15_Nor1
+    N1_Rate: 1300
+    Item0: 11018   # Pocket Guide Vol.3
+    Rate0: 500
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 133
+    Name: Phantom School - 3-3
+  - Id: 134
+    Name: Phantom School - 3-4
+  - Id: 135
+    Name: Phantom School - 3F Toilet
+    EquipT: Wharf_Dungeon18_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon18_Nor1
+    N1_Rate: 1300
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 141
+    Name: Phantom School Annex - 2F Hallway
+  - Id: 142
+    Name: Phantom School - Music Room
+  - Id: 143
+    Name: Phantom School - Art Room
+  - Id: 146
+    Name: Path to Techichi 1
+    SpecialT: Path_NW_Volcano3_SP
+    S_Rate: 1
+    EquipT: Path_NW_Volcano3_EQ
+    E_Rate: 300
+    Normal1T: Path_NW_Volcano3_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_NW_Volcano3_Nor2
+    N2_Rate: 100
+    Item0: 64677   # Volcanic Rock
+    Rate0: 950
+  - Id: 147
+    Name: Path to Techichi 2
+    SpecialT: Path_NW_Volcano4_SP
+    S_Rate: 1
+    EquipT: Path_NW_Volcano4_EQ
+    E_Rate: 300
+    Normal1T: Path_NW_Volcano4_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_NW_Volcano4_Nor2
+    N2_Rate: 100
+    Item0: 64677   # Volcanic Rock
+    Rate0: 950
+  - Id: 152
+    Name: Coral Beach - Dark Cave
+    Normal2T: Coral_Dungeon2_Nor2
+    N2_Rate: 800
+    Item0: 11006   # Pebbles
+    Rate0: 1902
+    Item1: 11008   # Iron ore
+    Rate1: 1902
+    Item2: 11009   # Limestone
+    Rate2: 1902
+    Item3: 11142   # Piece of stone
+    Rate3: 1902
+  - Id: 153
+    Name: Coral Field 1 - Blue Wave
+    Normal1T: Coral_Play3_Nor1
+    N1_Rate: 7200
+    Normal2T: Coral_Play3_Nor2
+    N2_Rate: 800
+    Item0: 11002   # Rusty chain
+    Rate0: 333
+    Item1: 11005   # Plastic bag
+    Rate1: 333
+    Item2: 11033   # Wind Pendant
+    Rate2: 333
+    Item3: 11236   # Firecracker
+    Rate3: 667
+    Item4: 11719   # Cacao
+    Rate4: 667
+  - Id: 154
+    Name: Coral Field 2 - Passionate Sun
+    Normal1T: Coral_Play4_Nor1
+    N1_Rate: 7200
+    Normal2T: Coral_Play4_Nor2
+    N2_Rate: 800
+    Item0: 11002   # Rusty chain
+    Rate0: 333
+    Item1: 11005   # Plastic bag
+    Rate1: 333
+    Item2: 11033   # Wind Pendant
+    Rate2: 333
+    Item3: 11236   # Firecracker
+    Rate3: 667
+    Item4: 11719   # Cacao
+    Rate4: 667
+  - Id: 155
+    Name: Coral Field 3 - Sunny Beach
+    Normal1T: Coral_Play5_Nor1
+    N1_Rate: 7200
+    Normal2T: Coral_Play5_Nor2
+    N2_Rate: 800
+    Item0: 11002   # Rusty chain
+    Rate0: 333
+    Item1: 11005   # Plastic bag
+    Rate1: 333
+    Item2: 11033   # Wind Pendant
+    Rate2: 333
+    Item3: 11236   # Firecracker
+    Rate3: 667
+    Item4: 11719   # Cacao
+    Rate4: 667
+  - Id: 159
+    Name: Gate of Poppuri Dungeon
+    Normal1T: Forest_Dungeon_Gate_Nor1
+    N1_Rate: 9500
+    Normal2T: Forest_Dungeon_Gate_Nor2
+    N2_Rate: 500
+  - Id: 165
+    Name: Phantom School Annex - 1F Hallway
+  - Id: 166
+    Name: Phantom School - Machinery Room
+    EquipT: Wharf_Dungeon23_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon23_Nor1
+    N1_Rate: 1345
+    Item0: 11019   # Pocket Guide Vol.4
+    Rate0: 100
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 167
+    Name: Phantom School - Science Lab
+    EquipT: Wharf_Dungeon24_EQ
+    E_Rate: 150
+    Normal1T: Wharf_Dungeon24_Nor1
+    N1_Rate: 1345
+    Item1: 11026   # White day candy
+    Rate1: 400
+    Item2: 11210   # Blackboard eraser
+    Rate2: 300
+    Item3: 11213   # Book bag
+    Rate3: 300
+    Item4: 11209   # Roll book
+    Rate4: 400
+    Item5: 11211   # School badge
+    Rate5: 300
+    Item6: 11212   # Name Card
+    Rate6: 300
+    Item7: 11373   # White Paint
+    Rate7: 200
+    Item8: 11371   # Snapped String
+    Rate8: 200
+  - Id: 174
+    Name: Wharf Field 1 - Haunted Town
+    EquipT: Wharf_Play1_EQ
+    E_Rate: 400
+    Normal1T: Wharf_Play1_Nor1
+    N1_Rate: 4700
+    Normal2T: Wharf_Play1_Nor2
+    N2_Rate: 400
+    Item0: 10023   # Sea Ivory
+    Rate0: 1000
+    Item1: 11367   # Thick Rope
+    Rate1: 400
+    Item2: 11368   # Sculpture of Poseidon
+    Rate2: 300
+    Item3: 11369   # Galatea Statuette
+    Rate3: 209
+    Item4: 11370   # Torn Sail
+    Rate4: 209
+    Item5: 11372   # Portable Sunshade
+    Rate5: 100
+    Item6: 11922   # Pirate Coin
+    Rate6: 700
+    Item7: 11595   # Piece of Lumber
+    Rate7: 500
+    Item8: 64005   # Worn Wharf Map A
+    Rate8: 327
+    Item9: 64006   # Worn Wharf Map B
+    Rate9: 327
+    Item10: 64007   # Old Wharf Map A
+    Rate10: 229
+    Item11: 64008   # Old Wharf Map B
+    Rate11: 229
+    Item12: 64009   # Weird Wharf Map A
+    Rate12: 229
+    Item13: 64010   # Weird Wharf Map B
+    Rate13: 229
+    Item29: 64087   # Fire extinguisher
+    Rate29: 1000
+  - Id: 175
+    Name: Wharf Field 2 - Devil Crow
+    EquipT: Wharf_Play2_EQ
+    E_Rate: 400
+    Normal1T: Wharf_Play2_Nor1
+    N1_Rate: 4700
+    Normal2T: Wharf_Play2_Nor2
+    N2_Rate: 400
+    Item0: 10023   # Sea Ivory
+    Rate0: 1000
+    Item1: 11367   # Thick Rope
+    Rate1: 400
+    Item2: 11368   # Sculpture of Poseidon
+    Rate2: 300
+    Item3: 11369   # Galatea Statuette
+    Rate3: 209
+    Item4: 11370   # Torn Sail
+    Rate4: 209
+    Item5: 11372   # Portable Sunshade
+    Rate5: 100
+    Item6: 11922   # Pirate Coin
+    Rate6: 700
+    Item7: 11595   # Piece of Lumber
+    Rate7: 500
+    Item8: 64005   # Worn Wharf Map A
+    Rate8: 327
+    Item9: 64006   # Worn Wharf Map B
+    Rate9: 327
+    Item10: 64007   # Old Wharf Map A
+    Rate10: 229
+    Item11: 64008   # Old Wharf Map B
+    Rate11: 229
+    Item12: 64009   # Weird Wharf Map A
+    Rate12: 229
+    Item13: 64010   # Weird Wharf Map B
+    Rate13: 229
+    Item29: 64087   # Fire extinguisher
+    Rate29: 1000
+  - Id: 176
+    Name: Wharf Field 3 - Phantom Park
+    EquipT: Wharf_Play3_EQ
+    E_Rate: 400
+    Normal1T: Wharf_Play3_Nor1
+    N1_Rate: 4700
+    Normal2T: Wharf_Play3_Nor2
+    N2_Rate: 400
+    Item0: 10023   # Sea Ivory
+    Rate0: 1000
+    Item1: 11367   # Thick Rope
+    Rate1: 400
+    Item2: 11368   # Sculpture of Poseidon
+    Rate2: 300
+    Item3: 11369   # Galatea Statuette
+    Rate3: 209
+    Item4: 11370   # Torn Sail
+    Rate4: 209
+    Item5: 11372   # Portable Sunshade
+    Rate5: 100
+    Item6: 11922   # Pirate Coin
+    Rate6: 700
+    Item7: 11595   # Piece of Lumber
+    Rate7: 500
+    Item8: 64005   # Worn Wharf Map A
+    Rate8: 327
+    Item9: 64006   # Worn Wharf Map B
+    Rate9: 327
+    Item10: 64007   # Old Wharf Map A
+    Rate10: 229
+    Item11: 64008   # Old Wharf Map B
+    Rate11: 229
+    Item12: 64009   # Weird Wharf Map A
+    Rate12: 229
+    Item13: 64010   # Weird Wharf Map B
+    Rate13: 229
+    Item29: 64087   # Fire extinguisher
+    Rate29: 1000
+  - Id: 177
+    Name: Wharf Field 4 - Chrono Wharf
+    EquipT: Wharf_Play4_EQ
+    E_Rate: 400
+    Normal1T: Wharf_Play4_Nor1
+    N1_Rate: 4700
+    Normal2T: Wharf_Play4_Nor2
+    N2_Rate: 400
+    Item0: 10023   # Sea Ivory
+    Rate0: 1000
+    Item1: 11367   # Thick Rope
+    Rate1: 400
+    Item2: 11368   # Sculpture of Poseidon
+    Rate2: 300
+    Item3: 11369   # Galatea Statuette
+    Rate3: 209
+    Item4: 11370   # Torn Sail
+    Rate4: 209
+    Item5: 11372   # Portable Sunshade
+    Rate5: 100
+    Item6: 11922   # Pirate Coin
+    Rate6: 700
+    Item7: 11595   # Piece of Lumber
+    Rate7: 500
+    Item8: 11986   # Nausea Drink
+    Rate8: 507
+    Item9: 11987   # Nausea Patch
+    Rate9: 507
+    Item10: 64005   # Worn Wharf Map A
+    Rate10: 253
+    Item11: 64006   # Worn Wharf Map B
+    Rate11: 253
+    Item12: 64007   # Old Wharf Map A
+    Rate12: 177
+    Item13: 64008   # Old Wharf Map B
+    Rate13: 177
+    Item14: 64009   # Weird Wharf Map A
+    Rate14: 177
+    Item15: 64010   # Weird Wharf Map B
+    Rate15: 177
+    Item29: 64087   # Fire extinguisher
+    Rate29: 1000
+  - Id: 179
+    Name: 자연동굴대전장
+    Normal1T: Guildbattle_Play1_Nor1
+    N1_Rate: 10000
+  - Id: 180
+    Name: Ball Room 5 - Jelly Fish Alert
+    EquipT: Seabed_Play6_EQ
+    E_Rate: 400
+    Normal1T: Seabed_Play6_Nor1
+    N1_Rate: 8500
+    Normal2T: Seabed_Play6_Nor2
+    N2_Rate: 100
+    Item0: 63246   # Weathered Stone
+    Rate0: 1000
+  - Id: 181
+    Name: Ball Room 3 - Cucool Alert
+    EquipT: Relics_Play5_EQ
+    E_Rate: 800
+    Normal1T: Relics_Play5_Nor1
+    N1_Rate: 8600
+    Normal2T: Relics_Play5_Nor2
+    N2_Rate: 100
+    Item0: 63244   # Alteo Vase
+    Rate0: 500
+  - Id: 182
+    Name: Ball Room 6 - Mask Alert
+    EquipT: Rose_Play5_EQ
+    E_Rate: 400
+    Normal1T: Rose_Play5_Nor1
+    N1_Rate: 8500
+    Normal2T: Rose_Play5_Nor2
+    N2_Rate: 100
+    Item0: 63247   # Thousand Year Petal
+    Rate0: 1000
+  - Id: 187
+    Name: Battlefield 1 - Battlefield of Desert
+    Normal1T: Colosseum_Play1_Nor1
+    N1_Rate: 10000
+  - Id: 188
+    Name: Battlefield 2 - Battlefield of Garden
+    Normal1T: Colosseum_Play2_Nor1
+    N1_Rate: 10000
+  - Id: 189
+    Name: 환영학원 대전장
+    Normal1T: Guildbattle_Play2_Nor1
+    N1_Rate: 10000
+  - Id: 190
+    Name: 화염의 대전장
+    Normal1T: Guildbattle_Play3_Nor1
+    N1_Rate: 10000
+  - Id: 194
+    Name: Ball Room 8 - Snow Lady Alert
+    EquipT: Snow_Play5_EQ
+    E_Rate: 500
+    Normal1T: Snow_Play5_Nor1
+    N1_Rate: 8300
+    Normal2T: Snow_Play5_Nor2
+    N2_Rate: 200
+    Item0: 63248   # Bitter Cold Icicle
+    Rate0: 1000
+  - Id: 195
+    Name: Battlefield 3 - Battlefield of Duel
+    Normal1T: Colosseum_Play3_Nor1
+    N1_Rate: 10000
+  - Id: 201
+    Name: Tapasco boss Room
+    SpecialT: Volcano_Play5_SP
+    S_Rate: 10
+    EquipT: Volcano_Play5_EQ
+    E_Rate: 200
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 4590
+    Normal2T: Volcano_Play5_Nor2
+    N2_Rate: 400
+    Item0: 11185   # Shackle ring
+    Rate0: 225
+    Item1: 11186   # Gollum trousers
+    Rate1: 225
+    Item2: 11187   # Spicy egg
+    Rate2: 225
+    Item3: 11188   # Tapasco Pepper
+    Rate3: 358
+    Item4: 11189   # Hot Iron
+    Rate4: 225
+    Item5: 11190   # Whetstone
+    Rate5: 225
+    Item6: 11192   # Pupa of tiger moth
+    Rate6: 225
+    Item7: 11194   # Salt Jar
+    Rate7: 502
+    Item8: 11596   # Volcano Water
+    Rate8: 225
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+    Item15: 64229   # Roasted Sweet Potato
+    Rate15: 645
+  - Id: 212
+    Name: 노라의 대전장
+    Normal1T: Guildbattle_Play4_Nor1
+    N1_Rate: 10000
+  - Id: 213
+    Name: 화염의 대전장M
+    Normal1T: Guildbattle_Play5_Nor1
+    N1_Rate: 10000
+  - Id: 215
+    Name: Phantom School - Mad Ray Laboratory
+  - Id: 216
+    Name: Coral Beach Boss Room
+    Normal1T: Coral_Play7_Nor1
+    N1_Rate: 7200
+    Normal2T: Coral_Play7_Nor2
+    N2_Rate: 800
+    Item0: 11002   # Rusty chain
+    Rate0: 333
+    Item1: 11005   # Plastic bag
+    Rate1: 333
+    Item2: 11033   # Wind Pendant
+    Rate2: 333
+    Item3: 11236   # Firecracker
+    Rate3: 333
+    Item4: 11719   # Cacao
+    Rate4: 667
+  - Id: 217
+    Name: Soki's Hamlet
+    SpecialT: Path_Wharf_Play5_SP
+    S_Rate: 1
+    EquipT: Path_Wharf_Play5_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play5_Nor1
+    N1_Rate: 4399
+    Normal2T: Path_Wharf_Play5_Nor2
+    N2_Rate: 400
+    Item0: 10074   # Basalt piece
+    Rate0: 241
+    Item1: 10075   # Sulfur stone
+    Rate1: 241
+    Item2: 10275   # Granite piece
+    Rate2: 241
+    Item3: 11121   # Spinel
+    Rate3: 241
+    Item4: 11122   # Selinomarina
+    Rate4: 241
+    Item5: 11123   # Amethystos
+    Rate5: 241
+    Item6: 11124   # Serpentine
+    Rate6: 241
+    Item7: 11125   # Lithosmasso
+    Rate7: 241
+    Item8: 11582   # Harkon Ornament
+    Rate8: 241
+    Item9: 63746   # Dry wood
+    Rate9: 870
+    Item10: 63747   # Glass Slipper
+    Rate10: 241
+    Item11: 63815   # Portable Icepack
+    Rate11: 241
+    Item12: 64053   # Worn Ruins Map A
+    Rate12: 309
+    Item13: 64054   # Worn Ruins Map B
+    Rate13: 309
+    Item14: 64055   # Old Ruins Map A
+    Rate14: 216
+    Item15: 64056   # Old Ruins Map B
+    Rate15: 216
+    Item16: 64057   # Weird Ruins Map A
+    Rate16: 216
+    Item17: 64058   # Weird Ruins Map B
+    Rate17: 216
+  - Id: 219
+    Name: Mermaid Palace Field 1 - Water Park
+    EquipT: Marine_Play1_EQ
+    E_Rate: 400
+    Normal1T: Marine_Play1_Nor1
+    N1_Rate: 4700
+    Normal2T: Marine_Play1_Nor2
+    N2_Rate: 400
+    Item0: 11021   # Pearl
+    Rate0: 400
+    Item1: 11022   # Black pearl
+    Rate1: 288
+    Item2: 11631   # Scraggy Towel
+    Rate2: 800
+    Item3: 11066   # Fragmented map 2
+    Rate3: 288
+    Item4: 11629   # Lip Brush
+    Rate4: 1000
+    Item5: 11064   # Old Picture
+    Rate5: 288
+    Item6: 11674   # Royal Mermaid Linen
+    Rate6: 577
+    Item7: 11991   # Whale Jawbone
+    Rate7: 350
+    Item8: 64011   # Worn Sea Map A
+    Rate8: 288
+    Item9: 64012   # Worn Sea Map B
+    Rate9: 288
+    Item10: 64013   # Old Sea Map A
+    Rate10: 202
+    Item11: 64014   # Old Sea Map B
+    Rate11: 202
+    Item12: 64015   # Weird Sea Map A
+    Rate12: 202
+    Item13: 64016   # Weird Sea Map B
+    Rate13: 202
+  - Id: 220
+    Name: Mermaid Palace Field 2 - Seaweeds Square
+    EquipT: Marine_Play2_EQ
+    E_Rate: 400
+    Normal1T: Marine_Play2_Nor1
+    N1_Rate: 4700
+    Normal2T: Marine_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11021   # Pearl
+    Rate0: 400
+    Item1: 11022   # Black pearl
+    Rate1: 288
+    Item2: 11631   # Scraggy Towel
+    Rate2: 800
+    Item3: 11066   # Fragmented map 2
+    Rate3: 288
+    Item4: 11629   # Lip Brush
+    Rate4: 1000
+    Item5: 11064   # Old Picture
+    Rate5: 288
+    Item6: 11674   # Royal Mermaid Linen
+    Rate6: 577
+    Item7: 11991   # Whale Jawbone
+    Rate7: 350
+    Item8: 64011   # Worn Sea Map A
+    Rate8: 288
+    Item9: 64012   # Worn Sea Map B
+    Rate9: 288
+    Item10: 64013   # Old Sea Map A
+    Rate10: 202
+    Item11: 64014   # Old Sea Map B
+    Rate11: 202
+    Item12: 64015   # Weird Sea Map A
+    Rate12: 202
+    Item13: 64016   # Weird Sea Map B
+    Rate13: 202
+  - Id: 221
+    Name: Mermaid Palace Field 3 - Coral Square
+    EquipT: Marine_Play3_EQ
+    E_Rate: 400
+    Normal1T: Marine_Play3_Nor1
+    N1_Rate: 4700
+    Normal2T: Marine_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11021   # Pearl
+    Rate0: 400
+    Item1: 11022   # Black pearl
+    Rate1: 288
+    Item2: 11674   # Royal Mermaid Linen
+    Rate2: 600
+    Item3: 11066   # Fragmented map 2
+    Rate3: 288
+    Item4: 11991   # Whale Jawbone
+    Rate4: 400
+    Item5: 11064   # Old Picture
+    Rate5: 288
+    Item6: 64011   # Worn Sea Map A
+    Rate6: 288
+    Item7: 64012   # Worn Sea Map B
+    Rate7: 288
+    Item8: 64013   # Old Sea Map A
+    Rate8: 202
+    Item9: 64014   # Old Sea Map B
+    Rate9: 202
+    Item10: 64015   # Weird Sea Map A
+    Rate10: 202
+    Item11: 64016   # Weird Sea Map B
+    Rate11: 202
+  - Id: 222
+    Name: Mermaid Palace Field 4 - Rock Square
+    EquipT: Marine_Play4_EQ
+    E_Rate: 400
+    Normal1T: Marine_Play4_Nor1
+    N1_Rate: 4700
+    Normal2T: Marine_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11021   # Pearl
+    Rate0: 400
+    Item1: 11022   # Black pearl
+    Rate1: 288
+    Item2: 11674   # Royal Mermaid Linen
+    Rate2: 600
+    Item3: 11066   # Fragmented map 2
+    Rate3: 288
+    Item4: 11991   # Whale Jawbone
+    Rate4: 400
+    Item5: 11064   # Old Picture
+    Rate5: 288
+    Item6: 64011   # Worn Sea Map A
+    Rate6: 288
+    Item7: 64012   # Worn Sea Map B
+    Rate7: 288
+    Item8: 64013   # Old Sea Map A
+    Rate8: 202
+    Item9: 64014   # Old Sea Map B
+    Rate9: 202
+    Item10: 64015   # Weird Sea Map A
+    Rate10: 202
+    Item11: 64016   # Weird Sea Map B
+    Rate11: 202
+  - Id: 228
+    Name: Battlefield 4 - Beach Battlefield
+    Normal1T: Colosseum_Play4_Nor1
+    N1_Rate: 10000
+  - Id: 229
+    Name: 대전장5 - 늪지의 대전장
+    Normal1T: Colosseum_Play5_Nor1
+    N1_Rate: 10000
+  - Id: 230
+    Name: Battlefield 6 - Winter Battlefield
+    Normal1T: Colosseum_Play6_Nor1
+    N1_Rate: 10000
+  - Id: 231
+    Name: Battlefield 7 - Volcanic Battlefield
+    Normal1T: Colosseum_Play7_Nor1
+    N1_Rate: 10000
+  - Id: 236
+    Name: Soccer Arena
+    Normal1T: Guildbattle_Play6_Nor1
+    N1_Rate: 10000
+  - Id: 237
+    Name: Battlefield 8 - Soccer Battlefield
+    Normal1T: Colosseum_Play8_Nor1
+    N1_Rate: 10000
+  - Id: 238
+    Name: 원수의 대전장
+    Normal1T: Guildbattle_Play7_Nor1
+    N1_Rate: 10000
+  - Id: 263
+    Name: Black Ash Dungeon 1
+    SpecialT: Path_Wharf_Play6_SP
+    S_Rate: 2
+    EquipT: Path_Wharf_Play6_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play6_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_Wharf_Play6_Nor2
+    N2_Rate: 100
+    Item0: 11121   # Spinel
+    Rate0: 147
+    Item1: 11122   # Selinomarina
+    Rate1: 147
+    Item2: 11123   # Amethystos
+    Rate2: 147
+    Item3: 11124   # Serpentine
+    Rate3: 147
+    Item4: 11125   # Lithosmasso
+    Rate4: 147
+    Item5: 63814   # Black Volcanic Ash
+    Rate5: 588
+    Item6: 63816   # Crystal Blue Water
+    Rate6: 588
+    Item7: 63817   # Sulfurous Mud
+    Rate7: 588
+  - Id: 264
+    Name: Black Ash Dungeon 2
+    SpecialT: Path_Wharf_Play7_SP
+    S_Rate: 2
+    EquipT: Path_Wharf_Play7_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play7_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_Wharf_Play7_Nor2
+    N2_Rate: 100
+    Item0: 11121   # Spinel
+    Rate0: 147
+    Item1: 11122   # Selinomarina
+    Rate1: 147
+    Item2: 11123   # Amethystos
+    Rate2: 147
+    Item3: 11124   # Serpentine
+    Rate3: 147
+    Item4: 11125   # Lithosmasso
+    Rate4: 147
+    Item5: 63814   # Black Volcanic Ash
+    Rate5: 588
+    Item6: 63816   # Crystal Blue Water
+    Rate6: 588
+    Item7: 63817   # Sulfurous Mud
+    Rate7: 588
+  - Id: 265
+    Name: Black Ash Dungeon 3
+    SpecialT: Path_Wharf_Play8_SP
+    S_Rate: 2
+    EquipT: Path_Wharf_Play8_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play8_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_Wharf_Play8_Nor2
+    N2_Rate: 100
+    Item0: 11121   # Spinel
+    Rate0: 147
+    Item1: 11122   # Selinomarina
+    Rate1: 147
+    Item2: 11123   # Amethystos
+    Rate2: 147
+    Item3: 11124   # Serpentine
+    Rate3: 147
+    Item4: 11125   # Lithosmasso
+    Rate4: 147
+    Item5: 63814   # Black Volcanic Ash
+    Rate5: 588
+    Item6: 63816   # Crystal Blue Water
+    Rate6: 588
+    Item7: 63817   # Sulfurous Mud
+    Rate7: 588
+  - Id: 266
+    Name: Black Ash Dungeon 4
+    SpecialT: Path_Wharf_Play9_SP
+    S_Rate: 2
+    EquipT: Path_Wharf_Play9_EQ
+    E_Rate: 200
+    Normal1T: Path_Wharf_Play9_Nor1
+    N1_Rate: 7198
+    Normal2T: Path_Wharf_Play9_Nor2
+    N2_Rate: 100
+    Item0: 11121   # Spinel
+    Rate0: 147
+    Item1: 11122   # Selinomarina
+    Rate1: 147
+    Item2: 11123   # Amethystos
+    Rate2: 147
+    Item3: 11124   # Serpentine
+    Rate3: 147
+    Item4: 11125   # Lithosmasso
+    Rate4: 147
+    Item5: 63814   # Black Volcanic Ash
+    Rate5: 588
+    Item6: 63816   # Crystal Blue Water
+    Rate6: 588
+    Item7: 63817   # Sulfurous Mud
+    Rate7: 588
+  - Id: 268
+    Name: Mermaid Dungeon 1 - Underworld
+    EquipT: Marine_Dungeon1_EQ
+    E_Rate: 600
+    Normal1T: Marine_Dungeon1_Nor1
+    N1_Rate: 6800
+    Normal2T: Marine_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 11021   # Pearl
+    Rate0: 1250
+    Item1: 11022   # Black pearl
+    Rate1: 1250
+    Item2: 64378   # Abalone Pearl
+    Rate2: 900
+    Item3: 64379   # Conch Pearl
+    Rate3: 800
+    Item4: 64380   # Melo Pearl
+    Rate4: 800
+  - Id: 269
+    Name: Mermaid Dungeon 2 - Legend of the Sea
+    EquipT: Marine_Dungeon2_EQ
+    E_Rate: 600
+    Normal1T: Marine_Dungeon2_Nor1
+    N1_Rate: 6800
+    Normal2T: Marine_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 11021   # Pearl
+    Rate0: 1250
+    Item1: 11022   # Black pearl
+    Rate1: 1250
+    Item2: 64378   # Abalone Pearl
+    Rate2: 900
+    Item3: 64379   # Conch Pearl
+    Rate3: 800
+    Item4: 64380   # Melo Pearl
+    Rate4: 800
+  - Id: 271
+    Name: Mirage Island Field 1 - Alteo
+    EquipT: Mirage_Play1_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play1_Nor1
+    N1_Rate: 6500
+    Normal2T: Mirage_Play1_Nor2
+    N2_Rate: 400
+    Item0: 11023   # Papyrus
+    Rate0: 300
+    Item1: 11725   # Mirror Spring Water
+    Rate1: 300
+    Item2: 11729   # Ancient Feather Pen
+    Rate2: 300
+    Item3: 64017   # Worn Island Map A
+    Rate3: 467
+    Item4: 64018   # Worn Island Map B
+    Rate4: 467
+    Item5: 64019   # Old Island Map A
+    Rate5: 327
+    Item6: 64020   # Old Island Map B
+    Rate6: 327
+    Item7: 64021   # Weird Island Map A
+    Rate7: 327
+    Item8: 64022   # Weird Island Map B
+    Rate8: 327
+  - Id: 272
+    Name: Mirage Island Field 2 - Cliff of Fate
+    EquipT: Mirage_Play2_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play2_Nor1
+    N1_Rate: 6500
+    Normal2T: Mirage_Play2_Nor2
+    N2_Rate: 400
+    Item0: 64017   # Worn Island Map A
+    Rate0: 583
+    Item1: 64018   # Worn Island Map B
+    Rate1: 583
+    Item2: 64019   # Old Island Map A
+    Rate2: 408
+    Item3: 64020   # Old Island Map B
+    Rate3: 408
+    Item4: 64021   # Weird Island Map A
+    Rate4: 408
+    Item5: 64022   # Weird Island Map B
+    Rate5: 408
+  - Id: 273
+    Name: Mirage Island Field 3 - Fremeia
+    EquipT: Mirage_Play3_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play3_Nor1
+    N1_Rate: 6500
+    Normal2T: Mirage_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11707   # Moonlight Coral
+    Rate0: 500
+    Item1: 64017   # Worn Island Map A
+    Rate1: 500
+    Item2: 64018   # Worn Island Map B
+    Rate2: 500
+    Item3: 64019   # Old Island Map A
+    Rate3: 350
+    Item4: 64020   # Old Island Map B
+    Rate4: 350
+    Item5: 64021   # Weird Island Map A
+    Rate5: 350
+    Item6: 64022   # Weird Island Map B
+    Rate6: 350
+  - Id: 274
+    Name: Mirage Island Dungeon 1 - Ocean's End
+    SpecialT: Mirage_Dungeon1_SP
+    S_Rate: 30
+    EquipT: Mirage_Dungeon1_EQ
+    E_Rate: 700
+    Normal1T: Mirage_Dungeon1_Nor1
+    N1_Rate: 9185
+    Normal2T: Mirage_Dungeon1_Nor2
+    N2_Rate: 100
+  - Id: 275
+    Name: Mirage Island Dungeon 2 - Deepest Cave
+    EquipT: Mirage_Dungeon2_EQ
+    E_Rate: 600
+    Normal1T: Mirage_Dungeon2_Nor1
+    N1_Rate: 9300
+    Normal2T: Mirage_Dungeon2_Nor2
+    N2_Rate: 100
+  - Id: 284
+    Name: Gate of Oops Wharf
+    Normal1T: Wharf_Gate_Nor1
+    N1_Rate: 9600
+    Normal2T: Wharf_Gate_Nor2
+    N2_Rate: 400
+  - Id: 285
+    Name: Mermaid Palace Dark Cave1
+    Normal2T: Path_Marine1_Nor2
+    N2_Rate: 600
+    Item0: 11006   # Pebbles
+    Rate0: 1861
+    Item1: 11008   # Iron ore
+    Rate1: 1861
+    Item2: 11009   # Limestone
+    Rate2: 1861
+    Item3: 11142   # Piece of stone
+    Rate3: 1861
+    Item4: 61020   # Harkon Heirloom
+    Rate4: 2000
+    Item5: 63003   # Fairy's Drink
+    Rate5: 1000
+    Item6: 64315   # Stone Ginseng
+    Rate6: 1500
+  - Id: 286
+    Name: Mermaid Palace Dark Cave2
+    Normal2T: Path_Marine2_Nor2
+    N2_Rate: 600
+    Item0: 11006   # Pebbles
+    Rate0: 1861
+    Item1: 11008   # Iron ore
+    Rate1: 1861
+    Item2: 11009   # Limestone
+    Rate2: 1861
+    Item3: 11142   # Piece of stone
+    Rate3: 1861
+    Item4: 61020   # Harkon Heirloom
+    Rate4: 2000
+    Item5: 63003   # Fairy's Drink
+    Rate5: 1000
+    Item6: 64315   # Stone Ginseng
+    Rate6: 1500
+  - Id: 292
+    Name: Ball Room 4 - Skull Alert
+    EquipT: Wharf_Play7_EQ
+    E_Rate: 700
+    Normal1T: Wharf_Play7_Nor1
+    N1_Rate: 8200
+    Normal2T: Wharf_Play7_Nor2
+    N2_Rate: 100
+    Item0: 63245   # Weathered Anchor
+    Rate0: 1000
+  - Id: 310
+    Name: Beast Garden
+    EquipT: Rose_Play6_EQ
+    E_Rate: 200
+    Normal1T: Rose_Play6_Nor1
+    N1_Rate: 4600
+    Normal2T: Rose_Play6_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 131
+    Item1: 11169   # Red Clay Doll Shoes
+    Rate1: 131
+    Item2: 11170   # Pocket watch
+    Rate2: 131
+    Item3: 11171   # Gold Hand Mirror
+    Rate3: 131
+    Item4: 11172   # Monocle
+    Rate4: 131
+    Item5: 11173   # Eagle feather pen
+    Rate5: 131
+    Item6: 11174   # Whalebone
+    Rate6: 131
+    Item7: 11175   # White powder
+    Rate7: 131
+    Item8: 11176   # Golden Cup
+    Rate8: 131
+    Item9: 11177   # Cocoa powder
+    Rate9: 363
+    Item10: 11178   # Silver rose
+    Rate10: 131
+    Item11: 11197   # Jewel box
+    Rate11: 131
+    Item12: 61280   # Rosaline's Jewel Box
+    Rate12: 131
+    Item13: 63218   # Worm from Rose Garden
+    Rate13: 363
+    Item14: 63224   # Magic Crystal
+    Rate14: 131
+    Item15: 63225   # Rose Petal
+    Rate15: 508
+    Item16: 63892   # Delicate Key
+    Rate16: 131
+    Item17: 64029   # Worn Garden Map A
+    Rate17: 363
+    Item18: 64030   # Worn Garden Map B
+    Rate18: 363
+    Item19: 64031   # Old Garden Map A
+    Rate19: 254
+    Item20: 64032   # Old Garden Map B
+    Rate20: 254
+    Item21: 64033   # Weird Garden Map A
+    Rate21: 254
+    Item22: 64034   # Weird Garden Map B
+    Rate22: 254
+  - Id: 311
+    Name: Beast Garden
+    EquipT: Rose_Play7_EQ
+    E_Rate: 200
+    Normal1T: Rose_Play7_Nor1
+    N1_Rate: 4600
+    Normal2T: Rose_Play7_Nor2
+    N2_Rate: 400
+    Item0: 11025   # Music box
+    Rate0: 131
+    Item1: 11169   # Red Clay Doll Shoes
+    Rate1: 131
+    Item2: 11170   # Pocket watch
+    Rate2: 131
+    Item3: 11171   # Gold Hand Mirror
+    Rate3: 131
+    Item4: 11172   # Monocle
+    Rate4: 131
+    Item5: 11173   # Eagle feather pen
+    Rate5: 131
+    Item6: 11174   # Whalebone
+    Rate6: 131
+    Item7: 11175   # White powder
+    Rate7: 131
+    Item8: 11176   # Golden Cup
+    Rate8: 131
+    Item9: 11177   # Cocoa powder
+    Rate9: 363
+    Item10: 11178   # Silver rose
+    Rate10: 131
+    Item11: 11197   # Jewel box
+    Rate11: 131
+    Item12: 61280   # Rosaline's Jewel Box
+    Rate12: 131
+    Item13: 63218   # Worm from Rose Garden
+    Rate13: 363
+    Item14: 63224   # Magic Crystal
+    Rate14: 131
+    Item15: 63225   # Rose Petal
+    Rate15: 508
+    Item16: 63892   # Delicate Key
+    Rate16: 131
+    Item17: 64029   # Worn Garden Map A
+    Rate17: 363
+    Item18: 64030   # Worn Garden Map B
+    Rate18: 363
+    Item19: 64031   # Old Garden Map A
+    Rate19: 254
+    Item20: 64032   # Old Garden Map B
+    Rate20: 254
+    Item21: 64033   # Weird Garden Map A
+    Rate21: 254
+    Item22: 64034   # Weird Garden Map B
+    Rate22: 254
+  - Id: 312
+    Name: Grand Ball Room 5 - Jelly Fish Alert
+    Normal1T: Fiesta_Seabed_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 313
+    Name: Grand Ball Room 3 - Cucool Alert
+    Normal1T: Fiesta_Relics_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 314
+    Name: Grand Ball Room 6 - Mask Alert
+    Normal1T: Fiesta_Rose_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 315
+    Name: Grand Ball Room 8 - Snow Lady Alert
+    Normal1T: Fiesta_Snow_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 316
+    Name: Grand Ball Room 4 - Skull Alert
+    Normal1T: Fiesta_Wharf_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 317
+    Name: Grand Ball Room 2 - Sand Alert
+    Normal1T: Fiesta_Beach_Gate_Nor1
+    N1_Rate: 10000
+  - Id: 318
+    Name: Ball Room 2 - Sand Alert
+    EquipT: Beach_Play8_EQ
+    E_Rate: 500
+    Normal1T: Beach_Play8_Nor1
+    N1_Rate: 8700
+    Normal2T: Beach_Play8_Nor2
+    N2_Rate: 200
+    Item0: 63243   # Star Sand Powder
+    Rate0: 600
+  - Id: 319
+    Name: X-Mas Square
+    Normal1T: Path_NE_Christmas_Nor1
+    N1_Rate: 10000
+  - Id: 325
+    Name: Tower of Chaos 2nd Floor
+    SpecialT: Chaos1_Dungeon1_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon1_Nor1
+    N1_Rate: 8299
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63298   # Chaos Shard 1
+    Rate1: 1286
+  - Id: 326
+    Name: Tower of Chaos 3rd Floor
+    SpecialT: Chaos1_Dungeon2_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon2_Nor1
+    N1_Rate: 8299
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63299   # Chaos Shard 2
+    Rate1: 1286
+  - Id: 328
+    Name: Tower of Chaos 5th Floor
+    SpecialT: Chaos1_Dungeon4_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon4_Nor1
+    N1_Rate: 8299
+    Item0: 63295   # Requiem Crystal 185
+    Rate0: 214
+    Item1: 63301   # Chaos Shard 4
+    Rate1: 1286
+  - Id: 329
+    Name: Tower of Chaos 6th Floor
+    SpecialT: Chaos1_Dungeon5_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon5_Nor1
+    N1_Rate: 8299
+    Item0: 63295   # Requiem Crystal 185
+    Rate0: 214
+    Item1: 63302   # Chaos Shard 5
+    Rate1: 1286
+  - Id: 330
+    Name: Tower of Chaos 7th Floor (Safe Floor)
+    SpecialT: Chaos1_Dungeon6_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon6_Nor1
+    N1_Rate: 8299
+    Item0: 63295   # Requiem Crystal 185
+    Rate0: 214
+    Item1: 63303   # Chaos Shard 6
+    Rate1: 1286
+  - Id: 332
+    Name: Tower of Chaos 9th Floor
+    SpecialT: Chaos1_Dungeon8_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon8_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon8_Nor1
+    N1_Rate: 8299
+    Item0: 63296   # Requiem Crystal 215
+    Rate0: 214
+    Item1: 63305   # Chaos Shard 8
+    Rate1: 1286
+  - Id: 333
+    Name: Tower of Chaos 10th Floor
+    SpecialT: Chaos1_Dungeon9_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon9_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon9_Nor1
+    N1_Rate: 8299
+    Item0: 63296   # Requiem Crystal 215
+    Rate0: 214
+    Item1: 63306   # Chaos Shard 9
+    Rate1: 1286
+  - Id: 334
+    Name: Tower of Chaos 11th Floor
+    SpecialT: Chaos1_Dungeon10_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon10_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon10_Nor1
+    N1_Rate: 8299
+    Item0: 63296   # Requiem Crystal 215
+    Rate0: 214
+    Item1: 63307   # Chaos Shard 10
+    Rate1: 1286
+  - Id: 335
+    Name: Tower of Chaos 12th Floor
+    SpecialT: Chaos1_Dungeon11_SP
+    S_Rate: 1
+    EquipT: Chaos1_Dungeon11_EQ
+    E_Rate: 200
+    Normal1T: Chaos1_Dungeon11_Nor1
+    N1_Rate: 8299
+    Item0: 63297   # Requiem Crystal 275
+    Rate0: 214
+    Item1: 63308   # Chaos Shard 11
+    Rate1: 1286
+  - Id: 343
+    Name: Phantom School - 1F Silent Hallway
+    EquipT: Wharf2_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon1_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 344
+    Name: Phantom School 1-1
+    EquipT: Wharf2_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon2_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 345
+    Name: Phantom School 1-2
+    EquipT: Wharf2_Dungeon3_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon3_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 346
+    Name: Phantom School 1-3
+    EquipT: Wharf2_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon4_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 347
+    Name: Phantom School 1-4
+    EquipT: Wharf2_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon5_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 348
+    Name: Phantom School - 1F Toilet
+    EquipT: Wharf2_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Wharf2_Dungeon6_Nor1
+    N1_Rate: 6300
+    Item0: 11016   # Pocket Guide Vol.1
+    Rate0: 138
+    Item1: 11017   # Pocket Guide Vol.2
+    Rate1: 121
+    Item2: 11026   # White day candy
+    Rate2: 78
+    Item3: 11205   # study note
+    Rate3: 60
+    Item4: 11206   # Red tissue
+    Rate4: 207
+    Item5: 11207   # Blue book
+    Rate5: 78
+    Item6: 11208   # Cup noodle
+    Rate6: 78
+    Item7: 11209   # Roll book
+    Rate7: 1379
+    Item8: 11210   # Blackboard eraser
+    Rate8: 1207
+    Item9: 11213   # Book bag
+    Rate9: 78
+    Item10: 11214   # Mini cassette
+    Rate10: 78
+  - Id: 370
+    Name: Mirage Island Field 4 - Alteo Construction Site
+    EquipT: Mirage_Play4_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play4_Nor1
+    N1_Rate: 7200
+    Item0: 63435   # Shard of Caliche
+    Rate0: 2344
+    Item1: 63447   # Secretly Hidden Gem
+    Rate1: 156
+  - Id: 371
+    Name: Mirage Island Field 5 - Alteo City
+    EquipT: Mirage_Play5_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play5_Nor1
+    N1_Rate: 5800
+    Normal2T: Mirage_Play5_Nor2
+    N2_Rate: 400
+    Item0: 11023   # Papyrus
+    Rate0: 681
+    Item1: 11729   # Ancient Feather Pen
+    Rate1: 486
+    Item2: 64017   # Worn Island Map A
+    Rate2: 486
+    Item3: 64018   # Worn Island Map B
+    Rate3: 486
+    Item4: 64019   # Old Island Map A
+    Rate4: 340
+    Item5: 64020   # Old Island Map B
+    Rate5: 340
+    Item6: 64021   # Weird Island Map A
+    Rate6: 340
+    Item7: 64022   # Weird Island Map B
+    Rate7: 340
+  - Id: 372
+    Name: Mirage Island Field 6 - Water Garden
+    EquipT: Mirage_Play6_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play6_Nor1
+    N1_Rate: 5800
+    Normal2T: Mirage_Play6_Nor2
+    N2_Rate: 400
+    Item0: 11023   # Papyrus
+    Rate0: 681
+    Item1: 11729   # Ancient Feather Pen
+    Rate1: 486
+    Item2: 64017   # Worn Island Map A
+    Rate2: 486
+    Item3: 64018   # Worn Island Map B
+    Rate3: 486
+    Item4: 64019   # Old Island Map A
+    Rate4: 340
+    Item5: 64020   # Old Island Map B
+    Rate5: 340
+    Item6: 64021   # Weird Island Map A
+    Rate6: 340
+    Item7: 64022   # Weird Island Map B
+    Rate7: 340
+  - Id: 373
+    Name: Mirage Island Field 7 - Guardian's Square
+    EquipT: Mirage_Play7_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Play7_Nor1
+    N1_Rate: 5800
+    Normal2T: Mirage_Play7_Nor2
+    N2_Rate: 400
+    Item0: 11023   # Papyrus
+    Rate0: 681
+    Item1: 11729   # Ancient Feather Pen
+    Rate1: 486
+    Item2: 64017   # Worn Island Map A
+    Rate2: 486
+    Item3: 64018   # Worn Island Map B
+    Rate3: 486
+    Item4: 64019   # Old Island Map A
+    Rate4: 340
+    Item5: 64020   # Old Island Map B
+    Rate5: 340
+    Item6: 64021   # Weird Island Map A
+    Rate6: 340
+    Item7: 64022   # Weird Island Map B
+    Rate7: 340
+  - Id: 376
+    Name: Room of Light
+    EquipT: Mirage_Dungeon5_EQ
+    E_Rate: 300
+    Normal1T: Mirage_Dungeon5_Nor1
+    N1_Rate: 9600
+    Item0: 11712   # Earthen Fate Necklace
+    Rate0: 100
+  - Id: 381
+    Name: Tower of Chaos 14th Floor
+    EquipT: Chaos2_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon1_Nor1
+    N1_Rate: 8300
+    Item0: 63561   # Requiem Crystal 20
+    Rate0: 214
+    Item1: 63564   # Chaos Shard M 1
+    Rate1: 1286
+  - Id: 382
+    Name: Tower of Chaos 15th Floor
+    EquipT: Chaos2_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon2_Nor1
+    N1_Rate: 8300
+    Item0: 63561   # Requiem Crystal 20
+    Rate0: 214
+    Item1: 63565   # Chaos Shard M 2
+    Rate1: 1286
+  - Id: 384
+    Name: Tower of Chaos 17th Floor
+    EquipT: Chaos2_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon4_Nor1
+    N1_Rate: 8300
+    Item0: 63561   # Requiem Crystal 20
+    Rate0: 214
+    Item1: 63567   # Chaos Shard M 4
+    Rate1: 1286
+  - Id: 385
+    Name: Tower of Chaos 18th Floor
+    EquipT: Chaos2_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon5_Nor1
+    N1_Rate: 8300
+    Item0: 63561   # Requiem Crystal 20
+    Rate0: 214
+    Item1: 63568   # Chaos Shard M 5
+    Rate1: 1286
+  - Id: 386
+    Name: Tower of Chaos 19th Floor (Safe Floor)
+    EquipT: Chaos2_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon6_Nor1
+    N1_Rate: 8300
+    Item0: 63562   # Requiem Crystal 35
+    Rate0: 214
+    Item1: 63569   # Chaos Shard M 6
+    Rate1: 1286
+  - Id: 388
+    Name: Tower of Chaos 21st Floor
+    EquipT: Chaos2_Dungeon8_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon8_Nor1
+    N1_Rate: 8300
+    Item0: 63562   # Requiem Crystal 35
+    Rate0: 214
+    Item1: 63571   # Chaos Shard M 8
+    Rate1: 1286
+  - Id: 389
+    Name: Tower of Chaos 22nd Floor
+    EquipT: Chaos2_Dungeon9_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon9_Nor1
+    N1_Rate: 8300
+    Item0: 63562   # Requiem Crystal 35
+    Rate0: 214
+    Item1: 63572   # Chaos Shard M 9
+    Rate1: 1286
+  - Id: 390
+    Name: Tower of Chaos 23rd Floor
+    EquipT: Chaos2_Dungeon10_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon10_Nor1
+    N1_Rate: 8300
+    Item0: 63562   # Requiem Crystal 35
+    Rate0: 214
+    Item1: 63573   # Chaos Shard M 10
+    Rate1: 1286
+  - Id: 391
+    Name: Tower of Chaos 24th Floor
+    EquipT: Chaos2_Dungeon11_EQ
+    E_Rate: 200
+    Normal1T: Chaos2_Dungeon11_Nor1
+    N1_Rate: 8300
+    Item0: 63563   # Requiem Crystal 50
+    Rate0: 214
+    Item1: 63574   # Chaos Shard M 11
+    Rate1: 1286
+  - Id: 402
+    Name: Tower of Chaos 28th Floor
+    EquipT: Chaos3_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon1_Nor1
+    N1_Rate: 8300
+    Item0: 63625   # Requiem Crystal 65
+    Rate0: 214
+    Item1: 63628   # Chaos Shard P 1
+    Rate1: 1286
+  - Id: 403
+    Name: Tower of Chaos 29th Floor
+    EquipT: Chaos3_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon2_Nor1
+    N1_Rate: 8300
+    Item0: 63625   # Requiem Crystal 65
+    Rate0: 214
+    Item1: 63629   # Chaos Shard P 2
+    Rate1: 1286
+  - Id: 405
+    Name: Tower of Chaos 31st Floor (Safe Floor)
+    EquipT: Chaos3_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon4_Nor1
+    N1_Rate: 8300
+    Item0: 63625   # Requiem Crystal 65
+    Rate0: 214
+    Item1: 63631   # Chaos Shard P 4
+    Rate1: 1286
+  - Id: 406
+    Name: Tower of Chaos 32nd Floor
+    EquipT: Chaos3_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon5_Nor1
+    N1_Rate: 8300
+    Item0: 63625   # Requiem Crystal 65
+    Rate0: 214
+    Item1: 63632   # Chaos Shard P 5
+    Rate1: 1286
+  - Id: 407
+    Name: Tower of Chaos 33rd Floor
+    EquipT: Chaos3_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon6_Nor1
+    N1_Rate: 8300
+    Item0: 63626   # Requiem Crystal 80
+    Rate0: 214
+    Item1: 63633   # Chaos Shard P 6
+    Rate1: 1286
+  - Id: 409
+    Name: Tower of Chaos 35th Floor
+    EquipT: Chaos3_Dungeon8_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon8_Nor1
+    N1_Rate: 8300
+    Item0: 63626   # Requiem Crystal 80
+    Rate0: 214
+    Item1: 63635   # Chaos Shard P 8
+    Rate1: 1286
+  - Id: 410
+    Name: Tower of Chaos 36th Floor
+    EquipT: Chaos3_Dungeon9_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon9_Nor1
+    N1_Rate: 8300
+    Item0: 63626   # Requiem Crystal 80
+    Rate0: 214
+    Item1: 63636   # Chaos Shard P 9
+    Rate1: 1286
+  - Id: 411
+    Name: Tower of Chaos 37th Floor (Safe Floor)
+    EquipT: Chaos3_Dungeon10_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon10_Nor1
+    N1_Rate: 8300
+    Item0: 63626   # Requiem Crystal 80
+    Rate0: 214
+    Item1: 63637   # Chaos Shard P 10
+    Rate1: 1286
+  - Id: 412
+    Name: Tower of Chaos 38th Floor
+    EquipT: Chaos3_Dungeon11_EQ
+    E_Rate: 200
+    Normal1T: Chaos3_Dungeon11_Nor1
+    N1_Rate: 8300
+    Item0: 63627   # Requiem Crystal 95
+    Rate0: 214
+    Item1: 63638   # Chaos Shard P 11
+    Rate1: 1286
+  - Id: 416
+    Name: Tower of Chaos 42nd Floor
+    EquipT: Chaos4_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon1_Nor1
+    N1_Rate: 8300
+    Item0: 63662   # Requiem Crystal 110
+    Rate0: 214
+    Item1: 63665   # Chaos Shard G 1
+    Rate1: 1286
+  - Id: 417
+    Name: Tower of Chaos 43rdFloor (Safe Floor)
+    EquipT: Chaos4_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon2_Nor1
+    N1_Rate: 8300
+    Item0: 63662   # Requiem Crystal 110
+    Rate0: 214
+    Item1: 63666   # Chaos Shard G 2
+    Rate1: 1286
+  - Id: 418
+    Name: Tower of Chaos 44th Floor
+    EquipT: Chaos4_Dungeon3_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon3_Nor1
+    N1_Rate: 8300
+    Item0: 63662   # Requiem Crystal 110
+    Rate0: 150
+    Item1: 63667   # Chaos Shard G 3
+    Rate1: 1350
+  - Id: 419
+    Name: Tower of Chaos 45th Floor
+    EquipT: Chaos4_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon4_Nor1
+    N1_Rate: 8300
+    Item0: 63662   # Requiem Crystal 110
+    Rate0: 214
+    Item1: 63668   # Chaos Shard G 4
+    Rate1: 1286
+  - Id: 420
+    Name: Tower of Chaos 46th Floor
+    EquipT: Chaos4_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon5_Nor1
+    N1_Rate: 8300
+    Item0: 63662   # Requiem Crystal 110
+    Rate0: 214
+    Item1: 63669   # Chaos Shard G 5
+    Rate1: 1286
+  - Id: 421
+    Name: Tower of Chaos 47th Floor
+    EquipT: Chaos4_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon6_Nor1
+    N1_Rate: 8300
+    Item0: 63663   # Requiem Crystal 125
+    Rate0: 214
+    Item1: 63670   # Chaos Shard G 6
+    Rate1: 1286
+  - Id: 422
+    Name: Tower of Chaos 48th Floor
+    EquipT: Chaos4_Dungeon7_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon7_Nor1
+    N1_Rate: 8300
+    Item0: 63663   # Requiem Crystal 125
+    Rate0: 150
+    Item1: 63671   # Chaos Shard G 7
+    Rate1: 1350
+  - Id: 423
+    Name: Tower of Chaos 49th Floor (Safe Floor)
+    EquipT: Chaos4_Dungeon8_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon8_Nor1
+    N1_Rate: 8300
+    Item0: 63663   # Requiem Crystal 125
+    Rate0: 214
+    Item1: 63672   # Chaos Shard G 8
+    Rate1: 1286
+  - Id: 424
+    Name: Tower of Chaos 50th Floor
+    EquipT: Chaos4_Dungeon9_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon9_Nor1
+    N1_Rate: 8300
+    Item0: 63663   # Requiem Crystal 125
+    Rate0: 214
+    Item1: 63673   # Chaos Shard G 9
+    Rate1: 1286
+  - Id: 425
+    Name: Tower of Chaos 51st Floor
+    EquipT: Chaos4_Dungeon10_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon10_Nor1
+    N1_Rate: 8300
+    Item0: 63663   # Requiem Crystal 125
+    Rate0: 214
+    Item1: 63674   # Chaos Shard G 10
+    Rate1: 1286
+  - Id: 426
+    Name: Tower of Chaos 52nd Floor
+    EquipT: Chaos4_Dungeon11_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon11_Nor1
+    N1_Rate: 8300
+    Item0: 63664   # Requiem Crystal 140
+    Rate0: 214
+    Item1: 63675   # Chaos Shard G 11
+    Rate1: 1286
+  - Id: 428
+    Name: Tower of Chaos 54th Floor
+    EquipT: Chaos4_Dungeon13_EQ
+    E_Rate: 200
+    Normal1T: Chaos4_Dungeon13_Nor1
+    N1_Rate: 9100
+    Item0: 63664   # Requiem Crystal 140
+    Rate0: 150
+    Item1: 63676   # Crystallized Chaos G
+    Rate1: 1350
+  - Id: 429
+    Name: Gate of Abyss
+    Normal1T: Abyss_Gate_Nor1
+    N1_Rate: 9900
+    Normal2T: Abyss_Gate_Nor2
+    N2_Rate: 100
+  - Id: 431
+    Name: Abyss Field 1 - The Valley Mouth
+    SpecialT: Abyss_Play1_SP
+    S_Rate: 1
+    EquipT: Abyss_Play1_EQ
+    E_Rate: 200
+    Normal1T: Abyss_Play1_Nor1
+    N1_Rate: 6399
+    Normal2T: Abyss_Play1_Nor2
+    N2_Rate: 400
+    Item0: 63711   # Random Part
+    Rate0: 84
+    Item1: 63712   # Random Bearing
+    Rate1: 84
+    Item2: 63713   # Black Box L-SH01
+    Rate2: 130
+    Item3: 63714   # Black Box JJ-00H
+    Rate3: 42
+    Item4: 63715   # Giant Octopus Leg
+    Rate4: 84
+    Item5: 63716   # Sea Whale Sinew
+    Rate5: 84
+    Item6: 63717   # Sea Whale Bone Needle
+    Rate6: 84
+    Item7: 63718   # Sea Whale Fluff
+    Rate7: 84
+    Item8: 63719   # Sea Whale Leather
+    Rate8: 84
+    Item9: 63720   # Hydelite
+    Rate9: 84
+    Item10: 64065   # Worn Abyss Map A
+    Rate10: 232
+    Item11: 64066   # Worn Abyss Map B
+    Rate11: 232
+    Item12: 64067   # Old Abyss Map A
+    Rate12: 139
+    Item13: 64068   # Old Abyss Map B
+    Rate13: 139
+    Item14: 64069   # Weird Abyss Map A
+    Rate14: 139
+    Item15: 64070   # Weird Abyss Map B
+    Rate15: 139
+    Item29: 64091   # Gasoline
+    Rate29: 1000
+  - Id: 432
+    Name: Abyss Field 2 - Living Boneyard
+    SpecialT: Abyss_Play2_SP
+    S_Rate: 1
+    EquipT: Abyss_Play2_EQ
+    E_Rate: 200
+    Normal1T: Abyss_Play2_Nor1
+    N1_Rate: 6399
+    Normal2T: Abyss_Play2_Nor2
+    N2_Rate: 400
+    Item0: 63711   # Random Part
+    Rate0: 84
+    Item1: 63712   # Random Bearing
+    Rate1: 84
+    Item2: 63713   # Black Box L-SH01
+    Rate2: 130
+    Item3: 63714   # Black Box JJ-00H
+    Rate3: 42
+    Item4: 63715   # Giant Octopus Leg
+    Rate4: 84
+    Item5: 63716   # Sea Whale Sinew
+    Rate5: 84
+    Item6: 63717   # Sea Whale Bone Needle
+    Rate6: 84
+    Item7: 63718   # Sea Whale Fluff
+    Rate7: 84
+    Item8: 63719   # Sea Whale Leather
+    Rate8: 84
+    Item9: 63720   # Hydelite
+    Rate9: 84
+    Item10: 64065   # Worn Abyss Map A
+    Rate10: 232
+    Item11: 64066   # Worn Abyss Map B
+    Rate11: 232
+    Item12: 64067   # Old Abyss Map A
+    Rate12: 139
+    Item13: 64068   # Old Abyss Map B
+    Rate13: 139
+    Item14: 64069   # Weird Abyss Map A
+    Rate14: 139
+    Item15: 64070   # Weird Abyss Map B
+    Rate15: 139
+    Item29: 64091   # Gasoline
+    Rate29: 1000
+  - Id: 433
+    Name: Abyss Field 3 - The Dark Hills
+    SpecialT: Abyss_Play3_SP
+    S_Rate: 1
+    EquipT: Abyss_Play3_EQ
+    E_Rate: 200
+    Normal1T: Abyss_Play3_Nor1
+    N1_Rate: 6399
+    Normal2T: Abyss_Play3_Nor2
+    N2_Rate: 400
+    Item0: 63711   # Random Part
+    Rate0: 84
+    Item1: 63712   # Random Bearing
+    Rate1: 84
+    Item2: 63713   # Black Box L-SH01
+    Rate2: 130
+    Item3: 63714   # Black Box JJ-00H
+    Rate3: 42
+    Item4: 63715   # Giant Octopus Leg
+    Rate4: 84
+    Item5: 63716   # Sea Whale Sinew
+    Rate5: 84
+    Item6: 63717   # Sea Whale Bone Needle
+    Rate6: 84
+    Item7: 63718   # Sea Whale Fluff
+    Rate7: 84
+    Item8: 63719   # Sea Whale Leather
+    Rate8: 84
+    Item9: 63720   # Hydelite
+    Rate9: 84
+    Item10: 64065   # Worn Abyss Map A
+    Rate10: 232
+    Item11: 64066   # Worn Abyss Map B
+    Rate11: 232
+    Item12: 64067   # Old Abyss Map A
+    Rate12: 139
+    Item13: 64068   # Old Abyss Map B
+    Rate13: 139
+    Item14: 64069   # Weird Abyss Map A
+    Rate14: 139
+    Item15: 64070   # Weird Abyss Map B
+    Rate15: 139
+    Item29: 64091   # Gasoline
+    Rate29: 1000
+  - Id: 434
+    Name: Abyss Field 4 - The Crushing Depths
+    SpecialT: Abyss_Play4_SP
+    S_Rate: 1
+    EquipT: Abyss_Play4_EQ
+    E_Rate: 200
+    Normal1T: Abyss_Play4_Nor1
+    N1_Rate: 6399
+    Normal2T: Abyss_Play4_Nor2
+    N2_Rate: 400
+    Item0: 63711   # Random Part
+    Rate0: 84
+    Item1: 63712   # Random Bearing
+    Rate1: 84
+    Item2: 63713   # Black Box L-SH01
+    Rate2: 130
+    Item3: 63714   # Black Box JJ-00H
+    Rate3: 42
+    Item4: 63715   # Giant Octopus Leg
+    Rate4: 84
+    Item5: 63716   # Sea Whale Sinew
+    Rate5: 84
+    Item6: 63717   # Sea Whale Bone Needle
+    Rate6: 84
+    Item7: 63718   # Sea Whale Fluff
+    Rate7: 84
+    Item8: 63719   # Sea Whale Leather
+    Rate8: 84
+    Item9: 63720   # Hydelite
+    Rate9: 84
+    Item10: 64065   # Worn Abyss Map A
+    Rate10: 232
+    Item11: 64066   # Worn Abyss Map B
+    Rate11: 232
+    Item12: 64067   # Old Abyss Map A
+    Rate12: 139
+    Item13: 64068   # Old Abyss Map B
+    Rate13: 139
+    Item14: 64069   # Weird Abyss Map A
+    Rate14: 139
+    Item15: 64070   # Weird Abyss Map B
+    Rate15: 139
+    Item29: 64091   # Gasoline
+    Rate29: 1000
+  - Id: 436
+    Name: Tower of Chaos 56th Floor
+    EquipT: Chaos5_Dungeon1_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon1_Nor1
+    N1_Rate: 8300
+    Item0: 63689   # Requiem Crystal 155
+    Rate0: 214
+    Item1: 63692   # Chaos Shard R 1
+    Rate1: 1286
+  - Id: 437
+    Name: Tower of Chaos 57th Floor
+    EquipT: Chaos5_Dungeon2_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon2_Nor1
+    N1_Rate: 8300
+    Item0: 63689   # Requiem Crystal 155
+    Rate0: 214
+    Item1: 63693   # Chaos Shard R 2
+    Rate1: 1286
+  - Id: 438
+    Name: Tower of Chaos 58th Floor
+    EquipT: Chaos5_Dungeon3_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon3_Nor1
+    N1_Rate: 8300
+    Item0: 63689   # Requiem Crystal 155
+    Rate0: 150
+    Item1: 63694   # Chaos Shard R 3
+    Rate1: 1350
+  - Id: 439
+    Name: Tower of Chaos 59th Floor
+    EquipT: Chaos5_Dungeon4_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon4_Nor1
+    N1_Rate: 8300
+    Item0: 63689   # Requiem Crystal 155
+    Rate0: 214
+    Item1: 63695   # Chaos Shard R 4
+    Rate1: 1286
+  - Id: 440
+    Name: Tower of Chaos 60th Floor
+    EquipT: Chaos5_Dungeon5_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon5_Nor1
+    N1_Rate: 8300
+    Item0: 63689   # Requiem Crystal 155
+    Rate0: 214
+    Item1: 63696   # Chaos Shard R 5
+    Rate1: 1286
+  - Id: 441
+    Name: Tower of Chaos 61st Floor (Safe Floor)
+    EquipT: Chaos5_Dungeon6_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon6_Nor1
+    N1_Rate: 8300
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63697   # Chaos Shard R 6
+    Rate1: 1286
+  - Id: 442
+    Name: Tower of Chaos 62nd Floor
+    EquipT: Chaos5_Dungeon7_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon7_Nor1
+    N1_Rate: 8300
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 150
+    Item1: 63698   # Chaos Shard R 7
+    Rate1: 1350
+  - Id: 443
+    Name: Tower of Chaos 63rd Floor
+    EquipT: Chaos5_Dungeon8_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon8_Nor1
+    N1_Rate: 8300
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63699   # Chaos Shard R 8
+    Rate1: 1286
+  - Id: 444
+    Name: Tower of Chaos 64th Floor
+    EquipT: Chaos5_Dungeon9_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon9_Nor1
+    N1_Rate: 8300
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63700   # Chaos Shard R 9
+    Rate1: 1286
+  - Id: 445
+    Name: Tower of Chaos 65th Floor
+    EquipT: Chaos5_Dungeon10_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon10_Nor1
+    N1_Rate: 8300
+    Item0: 63294   # Requiem Crystal 170
+    Rate0: 214
+    Item1: 63701   # Chaos Shard R 10
+    Rate1: 1286
+  - Id: 446
+    Name: Tower of Chaos 66th Floor
+    EquipT: Chaos5_Dungeon11_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon11_Nor1
+    N1_Rate: 8300
+    Item0: 63295   # Requiem Crystal 185
+    Rate0: 214
+    Item1: 63702   # Chaos Shard R 11
+    Rate1: 1286
+  - Id: 448
+    Name: Tower of Chaos 68th Floor
+    EquipT: Chaos5_Dungeon13_EQ
+    E_Rate: 200
+    Normal1T: Chaos5_Dungeon13_Nor1
+    N1_Rate: 9100
+    Item0: 63295   # Requiem Crystal 185
+    Rate0: 162
+    Item1: 63703   # Crystallized Chaos R
+    Rate1: 538
+  - Id: 453
+    Name: Caballa Relics Boss Path 1 - Waking Dream
+    Item0: 12000   # Compound Waste
+    Rate0: 4000
+    Item1: 63750   # Torn Clue 1
+    Rate1: 3000
+    Item2: 63751   # Torn Clue 2
+    Rate2: 3000
+  - Id: 454
+    Name: Caballa Relics Boss Path 2 - Dread Slumber
+    Item0: 12000   # Compound Waste
+    Rate0: 6000
+    Item1: 63757   # Chaotic Guide Stone
+    Rate1: 4000
+  - Id: 455
+    Name: Caballa Relics Boss Path 2 - Dread Slumber
+    Item0: 12000   # Compound Waste
+    Rate0: 6000
+    Item1: 63757   # Chaotic Guide Stone
+    Rate1: 4000
+  - Id: 457
+    Name: Path to Oops Wharf Boss 1 - Not This Ship
+    Item0: 12000   # Compound Waste
+    Rate0: 8571
+    Item1: 63782   # Love Crystal
+    Rate1: 1429
+  - Id: 458
+    Name: Path to Oops Wharf Boss 1 - Not This Ship
+    Item0: 12000   # Compound Waste
+    Rate0: 5714
+    Item1: 63782   # Love Crystal
+    Rate1: 4286
+  - Id: 459
+    Name: Path to Oops Wharf Boss 2 - Not This Map
+    Item0: 12000   # Compound Waste
+    Rate0: 8750
+    Item1: 63786   # Crystallized Sound 4
+    Rate1: 1250
+  - Id: 460
+    Name: Path to Oops Wharf Boss 3 - Real Wharf of Darkness
+    Item0: 12000   # Compound Waste
+    Rate0: 7865
+    Item1: 63787   # Requiem Mass Candle
+    Rate1: 1124
+    Item2: 63788   # Requiem Mass Candelabrum
+    Rate2: 337
+    Item3: 63792   # Requiem Mass Brush
+    Rate3: 337
+    Item4: 63793   # Requiem Mass Sword
+    Rate4: 337
+  - Id: 461
+    Name: Path to Oops Wharf Boss 4 - Real Dock of Darkness
+    Item0: 12000   # Compound Waste
+    Rate0: 6667
+    Item1: 63798   # F note
+    Rate1: 1111
+    Item2: 63799   # G note
+    Rate2: 1111
+    Item3: 63800   # A note
+    Rate3: 1111
+  - Id: 476
+    Name: Blue Ice Trial 2 - Ice Palace Stairs
+    Item0: 63830   # Blue Plank
+    Rate0: 3333
+    Item1: 63831   # Red Plank
+    Rate1: 3333
+    Item2: 63832   # Green Plank
+    Rate2: 3333
+  - Id: 477
+    Name: Blue Ice Trial 3 - Ice Palace Hallway
+    Item0: 63833   # Special Broom
+    Rate0: 1429
+    Item1: 12000   # Compound Waste
+    Rate1: 8571
+  - Id: 487
+    Name: Underground Dev Room - Underground Passage
+    EquipT: Office_Path_EQ
+    E_Rate: 500
+    Normal1T: Office_Path_Nor1
+    N1_Rate: 6600
+    Normal2T: Office_Path_Nor2
+    N2_Rate: 400
+    Item0: 63868   # Trash
+    Rate0: 1136
+    Item1: 64041   # Worn Underground Map A
+    Rate1: 284
+    Item2: 64042   # Worn Underground Map B
+    Rate2: 284
+    Item3: 64043   # Old Underground Map A
+    Rate3: 199
+    Item4: 64044   # Old Underground Map B
+    Rate4: 199
+    Item5: 64045   # Weird Underground Map A
+    Rate5: 199
+    Item6: 64046   # Weird Underground Map B
+    Rate6: 199
+  - Id: 489
+    Name: Underground Dev Room - Dev Room
+    EquipT: Office_Play1_EQ
+    E_Rate: 300
+    Normal1T: Office_Play1_Nor1
+    N1_Rate: 5600
+    Normal2T: Office_Play1_Nor2
+    N2_Rate: 100
+    Item0: 63868   # Trash
+    Rate0: 800
+    Item1: 63873   # Necklace Chain
+    Rate1: 800
+    Item2: 63876   # Trash Bag
+    Rate2: 800
+    Item3: 63880   # Fan Art A
+    Rate3: 800
+    Item4: 63881   # Fan Art B
+    Rate4: 800
+  - Id: 490
+    Name: Underground Dev Room - System Control Room
+    EquipT: Office_Play2_EQ
+    E_Rate: 300
+    Normal1T: Office_Play2_Nor1
+    N1_Rate: 4100
+    Normal2T: Office_Play2_Nor2
+    N2_Rate: 100
+    Item0: 63840   # Wooden Chopsticks
+    Rate0: 550
+    Item1: 63841   # Instant Coffee
+    Rate1: 550
+    Item2: 63842   # Green Tea Bag
+    Rate2: 550
+    Item3: 63843   # Pork Bellies
+    Rate3: 550
+    Item4: 63844   # Green Bull Tonic
+    Rate4: 550
+    Item5: 63845   # Company Mug
+    Rate5: 550
+    Item6: 63868   # Trash
+    Rate6: 550
+    Item7: 63869   # Cup Noodles
+    Rate7: 550
+    Item8: 63875   # Emergency Lantern
+    Rate8: 550
+    Item9: 64108   # Comb
+    Rate9: 550
+  - Id: 497
+    Name: Underground Dev Room - Underground Passage 2
+    EquipT: Office_Path1_EQ
+    E_Rate: 500
+    Normal1T: Office_Path1_Nor1
+    N1_Rate: 6600
+    Normal2T: Office_Path1_Nor2
+    N2_Rate: 400
+    Item0: 63868   # Trash
+    Rate0: 1136
+    Item1: 64041   # Worn Underground Map A
+    Rate1: 284
+    Item2: 64042   # Worn Underground Map B
+    Rate2: 284
+    Item3: 64043   # Old Underground Map A
+    Rate3: 199
+    Item4: 64044   # Old Underground Map B
+    Rate4: 199
+    Item5: 64045   # Weird Underground Map A
+    Rate5: 199
+    Item6: 64046   # Weird Underground Map B
+    Rate6: 199
+  - Id: 498
+    Name: Underground Dev Room - Underground Passage 3
+    EquipT: Office_Path2_EQ
+    E_Rate: 500
+    Normal1T: Office_Path2_Nor1
+    N1_Rate: 6600
+    Normal2T: Office_Path2_Nor2
+    N2_Rate: 400
+    Item0: 63868   # Trash
+    Rate0: 1136
+    Item1: 64041   # Worn Underground Map A
+    Rate1: 284
+    Item2: 64042   # Worn Underground Map B
+    Rate2: 284
+    Item3: 64043   # Old Underground Map A
+    Rate3: 199
+    Item4: 64044   # Old Underground Map B
+    Rate4: 199
+    Item5: 64045   # Weird Underground Map A
+    Rate5: 199
+    Item6: 64046   # Weird Underground Map B
+    Rate6: 199
+  - Id: 499
+    Name: Underground Dev Room - Underground Passage 4
+    EquipT: Office_Path3_EQ
+    E_Rate: 500
+    Normal1T: Office_Path3_Nor1
+    N1_Rate: 6600
+    Normal2T: Office_Path3_Nor2
+    N2_Rate: 400
+    Item0: 63868   # Trash
+    Rate0: 1136
+    Item1: 64041   # Worn Underground Map A
+    Rate1: 284
+    Item2: 64042   # Worn Underground Map B
+    Rate2: 284
+    Item3: 64043   # Old Underground Map A
+    Rate3: 199
+    Item4: 64044   # Old Underground Map B
+    Rate4: 199
+    Item5: 64045   # Weird Underground Map A
+    Rate5: 199
+    Item6: 64046   # Weird Underground Map B
+    Rate6: 199
+  - Id: 502
+    Name: Underground Dev Room - Underground Passage 5
+    EquipT: Office_Path4_EQ
+    E_Rate: 500
+    Normal1T: Office_Path4_Nor1
+    N1_Rate: 6600
+    Normal2T: Office_Path4_Nor2
+    N2_Rate: 400
+    Item0: 63868   # Trash
+    Rate0: 1136
+    Item1: 64041   # Worn Underground Map A
+    Rate1: 284
+    Item2: 64042   # Worn Underground Map B
+    Rate2: 284
+    Item3: 64043   # Old Underground Map A
+    Rate3: 199
+    Item4: 64044   # Old Underground Map B
+    Rate4: 199
+    Item5: 64045   # Weird Underground Map A
+    Rate5: 199
+    Item6: 64046   # Weird Underground Map B
+    Rate6: 199
+  - Id: 503
+    Name: Underground Dev Room - Control Room
+    EquipT: Office_Play_EQ
+    E_Rate: 300
+    Normal1T: Office_Play_Nor1
+    N1_Rate: 8600
+    Normal2T: Office_Play_Nor2
+    N2_Rate: 100
+    Item0: 64114   # Rope
+    Rate0: 1000
+  - Id: 504
+    Name: Memory of a Nightmare
+    EquipT: Office_Dungeon1_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon1_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 64101   # Bandage
+    Rate0: 850
+    Item1: 64102   # Voice Chip
+    Rate1: 850
+  - Id: 505
+    Name: Giuvanni's Memory
+    EquipT: Office_Dungeon2_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon2_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 64102   # Voice Chip
+    Rate0: 1700
+  - Id: 506
+    Name: Rosaline's Memory
+    EquipT: Office_Dungeon3_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon3_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 64102   # Voice Chip
+    Rate0: 1700
+  - Id: 507
+    Name: Cavalier's Office
+    EquipT: Office_Dungeon4_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon4_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 64115   # Desk Key
+    Rate0: 1700
+  - Id: 508
+    Name: Secret Room
+    EquipT: Office_Dungeon5_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon5_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon5_Nor2
+    N2_Rate: 100
+    Item0: 64096   # Magnifying Glasses
+    Rate0: 1700
+  - Id: 510
+    Name: Ocean of the Past
+    EquipT: Office_Dungeon7_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon7_Nor1
+    N1_Rate: 7900
+    Normal2T: Office_Dungeon7_Nor2
+    N2_Rate: 100
+    Item0: 11834   # Pure lily
+    Rate0: 850
+    Item1: 11835   # Chrysanthemum
+    Rate1: 850
+  - Id: 512
+    Name: The Prophecy
+    EquipT: Office_Dungeon8_EQ
+    E_Rate: 300
+    Normal1T: Office_Dungeon8_Nor1
+    N1_Rate: 8500
+    Normal2T: Office_Dungeon8_Nor2
+    N2_Rate: 100
+    Item0: 64102   # Voice Chip
+    Rate0: 1100
+  - Id: 595
+    Name: Tower of Chaos 70th Floor
+    EquipT: TestZone2_EQ
+    E_Rate: 800
+    Normal1T: TestZone2_Nor1
+    N1_Rate: 8100
+    Normal2T: TestZone2_Nor2
+    N2_Rate: 100
+    Item0: 63245   # Weathered Anchor
+    Rate0: 1000
+  - Id: 491
+    Name: Techichi Path to Soki 1 - Maze of Death
+    Item0: 63897   # Red Bone 1
+    Rate0: 1000
+  - Id: 492
+    Name: Techichi Path to Soki 1 - Maze of Death
+    Item0: 63903   # Blue Bone 1
+    Rate0: 1000
+  - Id: 493
+    Name: Techichi Path to Soki 2 - Origin of Death
+    Item0: 63911   # Worn Magical Rune
+    Rate0: 1000
+  - Id: 495
+    Name: Techichi Path to Soki 4 - Test of Death
+    Item0: 63914   # Cat Doll Part 1
+    Rate0: 1000
+    Item1: 63915   # Cat Doll Part 2
+    Rate1: 800
+    Item2: 63916   # Cat Doll Part 3
+    Rate2: 600
+  - Id: 17
+    Name: Southwest Forest
+    EquipT: Path_SW_EQ
+    E_Rate: 500
+    Normal1T: Path_SW_Nor1
+    N1_Rate: 4100
+    Normal2T: Path_SW_Nor2
+    N2_Rate: 400
+    Item0: 11485   # Ginseng
+    Rate0: 444
+    Item1: 11749   # Sweet Lemon
+    Rate1: 1331
+    Item2: 11750   # Fresh Lemon
+    Rate2: 1331
+    Item3: 63993   # Worn Forest Map A
+    Rate3: 148
+    Item4: 63994   # Worn Forest Map B
+    Rate4: 148
+    Item5: 63995   # Old Forest Map A
+    Rate5: 104
+    Item6: 63996   # Old Forest Map B
+    Rate6: 104
+    Item7: 63997   # Weird Forest Map A
+    Rate7: 104
+    Item8: 63998   # Weird Forest Map B
+    Rate8: 104
+  - Id: 16
+    Name: Southeast Forest
+    EquipT: Path_SE_EQ
+    E_Rate: 500
+    Normal1T: Path_SE_Nor1
+    N1_Rate: 4100
+    Normal2T: Path_SE_Nor2
+    N2_Rate: 400
+    Item0: 11485   # Ginseng
+    Rate0: 444
+    Item1: 11749   # Sweet Lemon
+    Rate1: 1331
+    Item2: 11750   # Fresh Lemon
+    Rate2: 1331
+    Item3: 63993   # Worn Forest Map A
+    Rate3: 148
+    Item4: 63994   # Worn Forest Map B
+    Rate4: 148
+    Item5: 63995   # Old Forest Map A
+    Rate5: 104
+    Item6: 63996   # Old Forest Map B
+    Rate6: 104
+    Item7: 63997   # Weird Forest Map A
+    Rate7: 104
+    Item8: 63998   # Weird Forest Map B
+    Rate8: 104
+  - Id: 18
+    Name: Northwest Forest
+    EquipT: Path_NW_EQ
+    E_Rate: 400
+    Normal1T: Path_NW_Nor1
+    N1_Rate: 7000
+    Normal2T: Path_NW_Nor2
+    N2_Rate: 100
+    Item0: 11749   # Sweet Lemon
+    Rate0: 1250
+    Item1: 11750   # Fresh Lemon
+    Rate1: 1250
+  - Id: 27
+    Name: Seabed Field 1 - North
+    EquipT: Seabed_Play_EQ
+    E_Rate: 400
+    Normal1T: Seabed_Play_Nor1
+    N1_Rate: 4700
+    Normal2T: Seabed_Play_Nor2
+    N2_Rate: 400
+    Item0: 11053   # Petroleum
+    Rate0: 471
+    Item1: 11054   # Natural gas
+    Rate1: 471
+    Item2: 11055   # Rusty nail
+    Rate2: 85
+    Item3: 11056   # Empty liquor bottle
+    Rate3: 85
+    Item4: 11057   # Premium liquor
+    Rate4: 471
+    Item5: 11058   # Empty box
+    Rate5: 85
+    Item6: 11059   # Shackles
+    Rate6: 85
+    Item7: 11061   # Anchor
+    Rate7: 85
+    Item8: 11062   # Ship steering wheel
+    Rate8: 85
+    Item9: 11063   # Broken compass
+    Rate9: 85
+    Item10: 11067   # Fragmented map 3
+    Rate10: 471
+    Item11: 11068   # Premium wine
+    Rate11: 1000
+    Item12: 11070   # Brush
+    Rate12: 500
+    Item13: 11071   # Paint
+    Rate13: 500
+    Item14: 11072   # Earplug
+    Rate14: 85
+    Item15: 11073   # Plane for skin
+    Rate15: 471
+    Item16: 11475   # Pure Water
+    Rate16: 400
+    Item17: 11488   # Sensible charm
+    Rate17: 206
+    Item18: 63076   # Whale Essence
+    Rate18: 206
+    Item19: 63466   # Pencil Case
+    Rate19: 100
+    Item20: 64023   # Worn Ocean Map A
+    Rate20: 294
+    Item21: 64024   # Worn Ocean Map B
+    Rate21: 294
+    Item22: 64025   # Old Ocean Map A
+    Rate22: 206
+    Item23: 64026   # Old Ocean Map B
+    Rate23: 206
+    Item24: 64027   # Weird Ocean Map A
+    Rate24: 206
+    Item25: 64028   # Weird Ocean Map B
+    Rate25: 206
+  - Id: 32
+    Name: Seabed Field 4 - Undersea Grave
+    EquipT: Seabed_Play4_EQ
+    E_Rate: 400
+    Normal1T: Seabed_Play4_Nor1
+    N1_Rate: 4700
+    Normal2T: Seabed_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11053   # Petroleum
+    Rate0: 471
+    Item1: 11054   # Natural gas
+    Rate1: 471
+    Item2: 11055   # Rusty nail
+    Rate2: 85
+    Item3: 11056   # Empty liquor bottle
+    Rate3: 85
+    Item4: 11057   # Premium liquor
+    Rate4: 471
+    Item5: 11058   # Empty box
+    Rate5: 85
+    Item6: 11059   # Shackles
+    Rate6: 85
+    Item7: 11061   # Anchor
+    Rate7: 85
+    Item8: 11062   # Ship steering wheel
+    Rate8: 85
+    Item9: 11063   # Broken compass
+    Rate9: 85
+    Item10: 11067   # Fragmented map 3
+    Rate10: 471
+    Item11: 11068   # Premium wine
+    Rate11: 1000
+    Item12: 11070   # Brush
+    Rate12: 500
+    Item13: 11071   # Paint
+    Rate13: 500
+    Item14: 11072   # Earplug
+    Rate14: 85
+    Item15: 11073   # Plane for skin
+    Rate15: 471
+    Item16: 11475   # Pure Water
+    Rate16: 400
+    Item17: 11488   # Sensible charm
+    Rate17: 206
+    Item18: 63076   # Whale Essence
+    Rate18: 206
+    Item19: 63466   # Pencil Case
+    Rate19: 100
+    Item20: 64023   # Worn Ocean Map A
+    Rate20: 294
+    Item21: 64024   # Worn Ocean Map B
+    Rate21: 294
+    Item22: 64025   # Old Ocean Map A
+    Rate22: 206
+    Item23: 64026   # Old Ocean Map B
+    Rate23: 206
+    Item24: 64027   # Weird Ocean Map A
+    Rate24: 206
+    Item25: 64028   # Weird Ocean Map B
+    Rate25: 206
+  - Id: 11
+    Name: Swamp Field 1 - Black Hole
+    EquipT: Swamp_Play_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play_Nor1
+    N1_Rate: 5200
+    Normal2T: Swamp_Play_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 49
+    Name: Swamp Field 4 - Dark Omen
+    EquipT: Swamp_Play4_EQ
+    E_Rate: 400
+    Normal1T: Swamp_Play4_Nor1
+    N1_Rate: 5200
+    Normal2T: Swamp_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11030   # Amber
+    Rate0: 227
+    Item1: 11105   # Pottery doll
+    Rate1: 227
+    Item2: 11107   # Platinum ring
+    Rate2: 227
+    Item3: 11109   # Platinum necklace
+    Rate3: 227
+    Item4: 11219   # Grass-leaf doll
+    Rate4: 1000
+    Item5: 11220   # Ceramic Shoes
+    Rate5: 227
+    Item6: 11620   # Sacred Water
+    Rate6: 500
+    Item7: 63537   # Swamp Worms
+    Rate7: 1000
+    Item8: 63577   # Swamp Leaf
+    Rate8: 575
+    Item9: 63579   # Golden Ball
+    Rate9: 500
+    Item10: 64035   # Worn Swamp Map A
+    Rate10: 288
+    Item11: 64036   # Worn Swamp Map B
+    Rate11: 288
+    Item12: 64037   # Old Swamp Map A
+    Rate12: 201
+    Item13: 64038   # Old Swamp Map B
+    Rate13: 201
+    Item14: 64039   # Weird Swamp Map A
+    Rate14: 201
+    Item15: 64040   # Weird Swamp Map B
+    Rate15: 201
+  - Id: 82
+    Name: Snow Field 1 - Merry Christmas
+    EquipT: Snow_Play1_EQ
+    E_Rate: 300
+    Normal1T: Snow_Play1_Nor1
+    N1_Rate: 5300
+    Normal2T: Snow_Play1_Nor2
+    N2_Rate: 400
+    Item0: 11144   # Sea scorpion fossil
+    Rate0: 157
+    Item1: 11145   # Footprint of pterosaur
+    Rate1: 157
+    Item2: 11146   # Ammonite fossil
+    Rate2: 157
+    Item3: 11147   # Dragonfly fossil
+    Rate3: 157
+    Item4: 11148   # Dinosaur egg fossil
+    Rate4: 157
+    Item5: 11155   # Red nose
+    Rate5: 157
+    Item6: 11157   # Udambara
+    Rate6: 157
+    Item7: 11158   # Blue orchid
+    Rate7: 157
+    Item8: 11159   # Bamboo flower
+    Rate8: 157
+    Item9: 11160   # Agave
+    Rate9: 157
+    Item10: 11161   # Edelweiss
+    Rate10: 300
+    Item11: 63643   # Portable AC
+    Rate11: 400
+    Item12: 64408   # Letter to Santa
+    Rate12: 300
+    Item13: 64406   # Potion Drops
+    Rate13: 500
+    Item14: 64047   # Worn Snow Map A
+    Rate14: 354
+    Item15: 64048   # Worn Snow Map B
+    Rate15: 354
+    Item16: 64049   # Old Snow Map A
+    Rate16: 248
+    Item17: 64050   # Old Snow Map B
+    Rate17: 248
+    Item18: 64051   # Weird Snow Map A
+    Rate18: 248
+    Item19: 64052   # Weird Snow Map B
+    Rate19: 248
+  - Id: 98
+    Name: Snow Field 4 - Happy New Year
+    EquipT: Snow_Play4_EQ
+    E_Rate: 300
+    Normal1T: Snow_Play4_Nor1
+    N1_Rate: 5300
+    Normal2T: Snow_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11144   # Sea scorpion fossil
+    Rate0: 157
+    Item1: 11145   # Footprint of pterosaur
+    Rate1: 157
+    Item2: 11146   # Ammonite fossil
+    Rate2: 157
+    Item3: 11147   # Dragonfly fossil
+    Rate3: 157
+    Item4: 11148   # Dinosaur egg fossil
+    Rate4: 157
+    Item5: 11155   # Red nose
+    Rate5: 157
+    Item6: 11157   # Udambara
+    Rate6: 157
+    Item7: 11158   # Blue orchid
+    Rate7: 157
+    Item8: 11159   # Bamboo flower
+    Rate8: 157
+    Item9: 11160   # Agave
+    Rate9: 157
+    Item10: 11161   # Edelweiss
+    Rate10: 300
+    Item11: 63643   # Portable AC
+    Rate11: 400
+    Item12: 64408   # Letter to Santa
+    Rate12: 300
+    Item13: 64047   # Worn Snow Map A
+    Rate13: 354
+    Item14: 64048   # Worn Snow Map B
+    Rate14: 354
+    Item15: 64049   # Old Snow Map A
+    Rate15: 248
+    Item16: 64050   # Old Snow Map B
+    Rate16: 248
+    Item17: 64051   # Weird Snow Map A
+    Rate17: 248
+    Item18: 64052   # Weird Snow Map B
+    Rate18: 248
+  - Id: 561
+    Name: Lovers' Maze
+    Item0: 65362   # Eternium Ore
+    Rate0: 450
+    Item1: 65363   # Consentium Ore
+    Rate1: 450
+  - Id: 574
+    Name: Entrance of Mermaid Palace
+    EquipT: Marine_Play1_EQ
+    E_Rate: 400
+    Normal1T: Marine_Play1_Nor1
+    N1_Rate: 4700
+    Normal2T: Marine_Play1_Nor2
+    N2_Rate: 400
+  - Id: 501
+    Name: Quest Test Map
+    Normal1T: Test_Nor1
+    N1_Rate: 10000
+    Item0: 64412   # Karan information paper
+    Rate0: 1
+    Item1: 64418   # Count information paper
+    Rate1: 1
+    Item2: 64413   # Karan Photos
+    Rate2: 1
+    Item3: 64419   # Count of pictures
+    Rate3: 1
+    Item4: 92020   # Hammer Test
+    Rate4: 1000
+  - Id: 3
+    Name: Gate of Desert Beach
+    Normal1T: Beach_Nor1
+    N1_Rate: 2000
+    Normal2T: Beach_Nor2
+    N2_Rate: 200
+    Item0: 11044   # Tanning Oil
+    Rate0: 2105
+    Item1: 11858   # Oasis Water
+    Rate1: 500
+  - Id: 19
+    Name: Path to Desert Beach
+    Normal1T: Path_SE_Beach_Nor1
+    N1_Rate: 9600
+    Normal2T: Path_SE_Beach_Nor2
+    N2_Rate: 400
+  - Id: 9
+    Name: Beach Field 1 - Delta Island
+    EquipT: Beach_Play_EQ
+    E_Rate: 500
+    Normal1T: Beach_Play_Nor1
+    N1_Rate: 2000
+    Normal2T: Beach_Play_Nor2
+    N2_Rate: 400
+    Item0: 11014   # Empty Potion Bottle
+    Rate0: 100
+    Item1: 11813   # Salt
+    Rate1: 2000
+    Item2: 11796   # Jenny's Photo B
+    Rate2: 2000
+    Item3: 11802   # Magic Sealed Letter
+    Rate3: 2000
+    Item4: 11858   # Oasis Water
+    Rate4: 1000
+    Item5: 11007   # Garden Trowel
+    Rate5: 1000
+    Item6: 11009   # Limestone
+    Rate6: 1000
+    Item7: 11042   # Fishbone
+    Rate7: 100
+    Item8: 11129   # Cocos nucifera's shell
+    Rate8: 100
+    Item9: 63987   # Worn Beach Map A
+    Rate9: 297
+    Item10: 63988   # Worn Beach Map B
+    Rate10: 297
+    Item11: 63989   # Old Beach Map A
+    Rate11: 148
+    Item12: 63990   # Old Beach Map B
+    Rate12: 148
+    Item13: 63991   # Weird Beach Map A
+    Rate13: 148
+    Item14: 63992   # Weird Beach Map B
+    Rate14: 148
+  - Id: 73
+    Name: Pyramid Dungeon 1 - Hall of the Slave
+    EquipT: Beach_Dungeon3_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon3_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 1000
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 1000
+    Item3: 11135   # Round Bone Seal
+    Rate3: 1000
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 1500
+  - Id: 74
+    Name: Pyramid Dungeon 2 - Hall of Harpy
+    EquipT: Beach_Dungeon4_EQ
+    E_Rate: 500
+    Normal1T: Beach_Dungeon4_Nor1
+    N1_Rate: 7400
+    Normal2T: Beach_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 11023   # Papyrus
+    Rate0: 191
+    Item1: 11133   # Uraeus Statue
+    Rate1: 1000
+    Item2: 11134   # Nekhbet Statue
+    Rate2: 1000
+    Item3: 11135   # Round Bone Seal
+    Rate3: 1000
+    Item4: 11136   # Book of the Dead
+    Rate4: 191
+    Item5: 11137   # Glyph Stone
+    Rate5: 191
+    Item6: 11138   # Qebehsenuef
+    Rate6: 191
+    Item7: 11139   # Harpy
+    Rate7: 191
+    Item8: 11140   # Duamutef
+    Rate8: 191
+    Item9: 11141   # Imsety
+    Rate9: 191
+    Item10: 11859   # Glyph Tablet
+    Rate10: 1500
+  - Id: 12
+    Name: Beach Field 2 - Sand Palace
+    EquipT: Beach_Play2_EQ
+    E_Rate: 500
+    Normal1T: Beach_Play2_Nor1
+    N1_Rate: 2000
+    Normal2T: Beach_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11014   # Empty Potion Bottle
+    Rate0: 100
+    Item1: 11043   # Swimsuit
+    Rate1: 2000
+    Item2: 11093   # Paper
+    Rate2: 2500
+    Item3: 11232   # Sun Cream
+    Rate3: 2000
+    Item4: 11448   # Red Lipstick
+    Rate4: 2000
+    Item5: 11858   # Oasis Water
+    Rate5: 500
+    Item6: 11007   # Garden Trowel
+    Rate6: 1000
+    Item7: 11009   # Limestone
+    Rate7: 1000
+    Item8: 63858   # Driller King Necklace
+    Rate8: 1000
+    Item9: 11042   # Fishbone
+    Rate9: 100
+    Item10: 11129   # Cocos nucifera's shell
+    Rate10: 100
+    Item11: 63987   # Worn Beach Map A
+    Rate11: 164
+    Item12: 63988   # Worn Beach Map B
+    Rate12: 164
+    Item13: 63989   # Old Beach Map A
+    Rate13: 99
+    Item14: 63990   # Old Beach Map B
+    Rate14: 99
+    Item15: 63991   # Weird Beach Map A
+    Rate15: 99
+    Item16: 63992   # Weird Beach Map B
+    Rate16: 99
+  - Id: 13
+    Name: Beach Field 3 - Statue of Anubis
+    EquipT: Beach_Play3_EQ
+    E_Rate: 500
+    Normal1T: Beach_Play3_Nor1
+    N1_Rate: 2000
+    Normal2T: Beach_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11014   # Empty Potion Bottle
+    Rate0: 100
+    Item1: 11048   # Soap
+    Rate1: 2000
+    Item2: 11049   # Shampoo
+    Rate2: 2000
+    Item3: 11050   # Bath Sponge
+    Rate3: 2000
+    Item4: 11858   # Oasis Water
+    Rate4: 1000
+    Item5: 11007   # Garden Trowel
+    Rate5: 1000
+    Item6: 11009   # Limestone
+    Rate6: 1000
+    Item7: 63859   # Driller King Ring
+    Rate7: 1000
+    Item8: 11042   # Fishbone
+    Rate8: 100
+    Item9: 11129   # Cocos nucifera's shell
+    Rate9: 100
+    Item10: 63987   # Worn Beach Map A
+    Rate10: 164
+    Item11: 63988   # Worn Beach Map B
+    Rate11: 164
+    Item12: 63989   # Old Beach Map A
+    Rate12: 99
+    Item13: 63990   # Old Beach Map B
+    Rate13: 99
+    Item14: 63991   # Weird Beach Map A
+    Rate14: 99
+    Item15: 63992   # Weird Beach Map B
+    Rate15: 99
+  - Id: 30
+    Name: Beach Field 4 - Parasol River
+    EquipT: Beach_Play4_EQ
+    E_Rate: 500
+    Normal1T: Beach_Play4_Nor1
+    N1_Rate: 2000
+    Normal2T: Beach_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11014   # Empty Potion Bottle
+    Rate0: 100
+    Item1: 11035   # Lucky Letter
+    Rate1: 1500
+    Item2: 11036   # Cursed Letter
+    Rate2: 1500
+    Item3: 11037   # Love Letter
+    Rate3: 1600
+    Item4: 11038   # Confession Letter
+    Rate4: 1800
+    Item5: 11039   # Farewell Letter
+    Rate5: 1900
+    Item6: 11858   # Oasis Water
+    Rate6: 500
+    Item7: 11007   # Garden Trowel
+    Rate7: 500
+    Item8: 11009   # Limestone
+    Rate8: 500
+    Item9: 63860   # Driller King Bag
+    Rate9: 1000
+    Item10: 11042   # Fishbone
+    Rate10: 100
+    Item11: 11129   # Cocos nucifera's shell
+    Rate11: 100
+    Item12: 63987   # Worn Beach Map A
+    Rate12: 164
+    Item13: 63988   # Worn Beach Map B
+    Rate13: 164
+    Item14: 63989   # Old Beach Map A
+    Rate14: 99
+    Item15: 63990   # Old Beach Map B
+    Rate15: 99
+    Item16: 63991   # Weird Beach Map A
+    Rate16: 99
+    Item17: 63992   # Weird Beach Map B
+    Rate17: 99
+  - Id: 160
+    Name: Poppuri Dungeon - Slide Cave
+    EquipT: Forest_Dungeon1_EQ
+    E_Rate: 500
+    Normal1T: Forest_Dungeon1_Nor1
+    N1_Rate: 5400
+    Normal2T: Forest_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 10043   # Poison mushroom
+    Rate0: 140
+    Item1: 11030   # Amber
+    Rate1: 700
+    Item2: 11110   # Three-leafed clover
+    Rate2: 140
+    Item3: 11111   # Four-leafed clover
+    Rate3: 140
+    Item4: 11215   # Gold medal
+    Rate4: 140
+    Item5: 11249   # Poppuri whistle
+    Rate5: 1500
+    Item6: 11250   # Ginseng Seed
+    Rate6: 140
+    Item7: 11251   # 12-year-old pupa
+    Rate7: 140
+    Item8: 11252   # Moss water
+    Rate8: 700
+    Item9: 11253   # Mulberry fungus
+    Rate9: 140
+    Item10: 11494   # Battery lasting long
+    Rate10: 1000
+    Item11: 11848   # Red Petal
+    Rate11: 1500
+    Item12: 63523   # Poppuri Fur
+    Rate12: 140
+  - Id: 161
+    Name: Poppuri Dungeon - Rainbow Cave
+    EquipT: Forest_Dungeon2_EQ
+    E_Rate: 500
+    Normal1T: Forest_Dungeon2_Nor1
+    N1_Rate: 5400
+    Normal2T: Forest_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 10043   # Poison mushroom
+    Rate0: 140
+    Item1: 11030   # Amber
+    Rate1: 700
+    Item2: 11110   # Three-leafed clover
+    Rate2: 140
+    Item3: 11111   # Four-leafed clover
+    Rate3: 140
+    Item4: 11215   # Gold medal
+    Rate4: 140
+    Item5: 11249   # Poppuri whistle
+    Rate5: 1500
+    Item6: 11250   # Ginseng Seed
+    Rate6: 140
+    Item7: 11251   # 12-year-old pupa
+    Rate7: 140
+    Item8: 11252   # Moss water
+    Rate8: 700
+    Item9: 11253   # Mulberry fungus
+    Rate9: 140
+    Item10: 11494   # Battery lasting long
+    Rate10: 1000
+    Item11: 11848   # Red Petal
+    Rate11: 1500
+    Item12: 63523   # Poppuri Fur
+    Rate12: 140
+  - Id: 162
+    Name: Poppuri Dungeon - Moss Cave
+    EquipT: Forest_Dungeon3_EQ
+    E_Rate: 500
+    Normal1T: Forest_Dungeon3_Nor1
+    N1_Rate: 5400
+    Normal2T: Forest_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 10043   # Poison mushroom
+    Rate0: 140
+    Item1: 11030   # Amber
+    Rate1: 700
+    Item2: 11110   # Three-leafed clover
+    Rate2: 140
+    Item3: 11111   # Four-leafed clover
+    Rate3: 140
+    Item4: 11215   # Gold medal
+    Rate4: 140
+    Item5: 11249   # Poppuri whistle
+    Rate5: 1500
+    Item6: 11250   # Ginseng Seed
+    Rate6: 140
+    Item7: 11251   # 12-year-old pupa
+    Rate7: 140
+    Item8: 11252   # Moss water
+    Rate8: 700
+    Item9: 11253   # Mulberry fungus
+    Rate9: 140
+    Item10: 11494   # Battery lasting long
+    Rate10: 1000
+    Item11: 11848   # Red Petal
+    Rate11: 1500
+    Item12: 63523   # Poppuri Fur
+    Rate12: 140
+  - Id: 163
+    Name: Poppuri Dungeon - Spore Cave
+    EquipT: Forest_Dungeon4_EQ
+    E_Rate: 500
+    Normal1T: Forest_Dungeon4_Nor1
+    N1_Rate: 5400
+    Normal2T: Forest_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 10043   # Poison mushroom
+    Rate0: 140
+    Item1: 11030   # Amber
+    Rate1: 700
+    Item2: 11110   # Three-leafed clover
+    Rate2: 140
+    Item3: 11111   # Four-leafed clover
+    Rate3: 140
+    Item4: 11215   # Gold medal
+    Rate4: 140
+    Item5: 11249   # Poppuri whistle
+    Rate5: 1500
+    Item6: 11250   # Ginseng Seed
+    Rate6: 140
+    Item7: 11251   # 12-year-old pupa
+    Rate7: 140
+    Item8: 11252   # Moss water
+    Rate8: 700
+    Item9: 11253   # Mulberry fungus
+    Rate9: 140
+    Item10: 11494   # Battery lasting long
+    Rate10: 1000
+    Item11: 11848   # Red Petal
+    Rate11: 1500
+    Item12: 63523   # Poppuri Fur
+    Rate12: 140
+  - Id: 164
+    Name: Poppuri Dungeon - Root Cave
+    EquipT: Forest_Dungeon5_EQ
+    E_Rate: 500
+    Normal1T: Forest_Dungeon5_Nor1
+    N1_Rate: 5400
+    Normal2T: Forest_Dungeon5_Nor2
+    N2_Rate: 100
+    Item0: 10043   # Poison mushroom
+    Rate0: 140
+    Item1: 11030   # Amber
+    Rate1: 700
+    Item2: 11110   # Three-leafed clover
+    Rate2: 140
+    Item3: 11111   # Four-leafed clover
+    Rate3: 140
+    Item4: 11215   # Gold medal
+    Rate4: 140
+    Item5: 11249   # Poppuri whistle
+    Rate5: 1500
+    Item6: 11250   # Ginseng Seed
+    Rate6: 140
+    Item7: 11251   # 12-year-old pupa
+    Rate7: 140
+    Item8: 11252   # Moss water
+    Rate8: 700
+    Item9: 11253   # Mulberry fungus
+    Rate9: 140
+    Item10: 11494   # Battery lasting long
+    Rate10: 1000
+    Item11: 11848   # Red Petal
+    Rate11: 1500
+    Item12: 63523   # Poppuri Fur
+    Rate12: 140
+  - Id: 8
+    Name: Relics Field 1 - Atlas
+    EquipT: Relics_Play_EQ
+    E_Rate: 500
+    Normal1T: Relics_Play_Nor1
+    N1_Rate: 5100
+    Normal2T: Relics_Play_Nor2
+    N2_Rate: 400
+    Item0: 11010   # Aposis statue
+    Rate0: 700
+    Item1: 11024   # Golden Egg
+    Rate1: 700
+    Item2: 11028   # Patterned pottery
+    Rate2: 1000
+    Item3: 11029   # Plain pottery
+    Rate3: 1000
+    Item4: 11106   # Gold ring
+    Rate4: 700
+    Item5: 11108   # Gold necklace
+    Rate5: 700
+    Item6: 11723   # Clay Tablet
+    Rate6: 400
+    Item7: 63999   # Worn Relics Map A
+    Rate7: 245
+    Item8: 64000   # Worn Relics Map B
+    Rate8: 245
+    Item9: 64001   # Old Relics Map A
+    Rate9: 172
+    Item10: 64002   # Old Relics Map B
+    Rate10: 172
+    Item11: 64003   # Weird Relics Map A
+    Rate11: 172
+    Item12: 64004   # Weird Relics Map B
+    Rate12: 172
+    Item20: 64488   # Expensive Film
+    Rate20: 700
+    Item21: 64485   # Optical Glass Crystal
+    Rate21: 400
+    Item22: 64486   # Animal Bone
+    Rate22: 400
+  - Id: 25
+    Name: Relics Field 2 - Hand of Giant
+    EquipT: Relics_Play2_EQ
+    E_Rate: 500
+    Normal1T: Relics_Play2_Nor1
+    N1_Rate: 5100
+    Normal2T: Relics_Play2_Nor2
+    N2_Rate: 400
+    Item0: 11010   # Aposis statue
+    Rate0: 700
+    Item1: 11024   # Golden Egg
+    Rate1: 700
+    Item2: 11028   # Patterned pottery
+    Rate2: 1000
+    Item3: 11029   # Plain pottery
+    Rate3: 1000
+    Item4: 11106   # Gold ring
+    Rate4: 700
+    Item5: 11108   # Gold necklace
+    Rate5: 700
+    Item6: 11723   # Clay Tablet
+    Rate6: 400
+    Item7: 63999   # Worn Relics Map A
+    Rate7: 245
+    Item8: 64000   # Worn Relics Map B
+    Rate8: 245
+    Item9: 64001   # Old Relics Map A
+    Rate9: 172
+    Item10: 64002   # Old Relics Map B
+    Rate10: 172
+    Item11: 64003   # Weird Relics Map A
+    Rate11: 172
+    Item12: 64004   # Weird Relics Map B
+    Rate12: 172
+    Item20: 64488   # Expensive Film
+    Rate20: 700
+    Item21: 64485   # Optical Glass Crystal
+    Rate21: 400
+    Item22: 64486   # Animal Bone
+    Rate22: 400
+  - Id: 26
+    Name: Relics Field3 - Monkey Statues
+    EquipT: Relics_Play3_EQ
+    E_Rate: 500
+    Normal1T: Relics_Play3_Nor1
+    N1_Rate: 5100
+    Normal2T: Relics_Play3_Nor2
+    N2_Rate: 400
+    Item0: 11010   # Aposis statue
+    Rate0: 700
+    Item1: 11024   # Golden Egg
+    Rate1: 700
+    Item2: 11028   # Patterned pottery
+    Rate2: 1000
+    Item3: 11029   # Plain pottery
+    Rate3: 1000
+    Item4: 11106   # Gold ring
+    Rate4: 700
+    Item5: 11108   # Gold necklace
+    Rate5: 700
+    Item6: 11723   # Clay Tablet
+    Rate6: 400
+    Item7: 63999   # Worn Relics Map A
+    Rate7: 245
+    Item8: 64000   # Worn Relics Map B
+    Rate8: 245
+    Item9: 64001   # Old Relics Map A
+    Rate9: 172
+    Item10: 64002   # Old Relics Map B
+    Rate10: 172
+    Item11: 64003   # Weird Relics Map A
+    Rate11: 172
+    Item12: 64004   # Weird Relics Map B
+    Rate12: 172
+    Item20: 64488   # Expensive Film
+    Rate20: 700
+    Item21: 64485   # Optical Glass Crystal
+    Rate21: 400
+    Item22: 64486   # Animal Bone
+    Rate22: 400
+  - Id: 42
+    Name: Relics Field 4 - An Altar for Sacrifice
+    EquipT: Relics_Play4_EQ
+    E_Rate: 500
+    Normal1T: Relics_Play4_Nor1
+    N1_Rate: 5100
+    Normal2T: Relics_Play4_Nor2
+    N2_Rate: 400
+    Item0: 11010   # Aposis statue
+    Rate0: 700
+    Item1: 11024   # Golden Egg
+    Rate1: 700
+    Item2: 11028   # Patterned pottery
+    Rate2: 1000
+    Item3: 11029   # Plain pottery
+    Rate3: 1000
+    Item4: 11106   # Gold ring
+    Rate4: 700
+    Item5: 11108   # Gold necklace
+    Rate5: 700
+    Item6: 11590   # Fantastic Powder
+    Rate6: 700
+    Item7: 11723   # Clay Tablet
+    Rate7: 400
+    Item8: 63999   # Worn Relics Map A
+    Rate8: 228
+    Item9: 64000   # Worn Relics Map B
+    Rate9: 228
+    Item10: 64001   # Old Relics Map A
+    Rate10: 160
+    Item11: 64002   # Old Relics Map B
+    Rate11: 160
+    Item12: 64003   # Weird Relics Map A
+    Rate12: 160
+    Item13: 64004   # Weird Relics Map B
+    Rate13: 160
+    Item20: 64488   # Expensive Film
+    Rate20: 700
+    Item21: 64485   # Optical Glass Crystal
+    Rate21: 400
+    Item22: 64486   # Animal Bone
+    Rate22: 400
+  - Id: 57
+    Name: Caballa Relics Dungeon 1
+    EquipT: Relics_Dungeon1_EQ
+    E_Rate: 500
+    Normal1T: Relics_Dungeon1_Nor1
+    N1_Rate: 4600
+    Normal2T: Relics_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 11096   # Jade
+    Rate0: 200
+    Item1: 11097   # Copal
+    Rate1: 200
+    Item2: 11098   # Obsidian
+    Rate2: 200
+    Item3: 11103   # Incense burner
+    Rate3: 300
+    Item4: 11104   # Ash box
+    Rate4: 300
+    Item5: 11116   # Tortoise Shell
+    Rate5: 700
+    Item6: 11117   # Selinolite
+    Rate6: 700
+    Item7: 11118   # Malachite
+    Rate7: 700
+    Item8: 11119   # Tachyslite
+    Rate8: 700
+    Item9: 11120   # Lapis Penna
+    Rate9: 700
+    Item10: 11099   # Letter earring
+    Rate10: 76
+    Item11: 11100   # Copper bell
+    Rate11: 76
+    Item12: 11101   # Gold bell
+    Rate12: 76
+    Item13: 11102   # Bead necklace
+    Rate13: 76
+  - Id: 58
+    Name: Caballa Relics Dungeon 2
+    EquipT: Relics_Dungeon2_EQ
+    E_Rate: 500
+    Normal1T: Relics_Dungeon2_Nor1
+    N1_Rate: 4600
+    Normal2T: Relics_Dungeon2_Nor2
+    N2_Rate: 100
+    Item0: 11096   # Jade
+    Rate0: 200
+    Item1: 11097   # Copal
+    Rate1: 200
+    Item2: 11098   # Obsidian
+    Rate2: 200
+    Item3: 11103   # Incense burner
+    Rate3: 300
+    Item4: 11104   # Ash box
+    Rate4: 300
+    Item5: 11116   # Tortoise Shell
+    Rate5: 700
+    Item6: 11117   # Selinolite
+    Rate6: 700
+    Item7: 11118   # Malachite
+    Rate7: 700
+    Item8: 11119   # Tachyslite
+    Rate8: 700
+    Item9: 11120   # Lapis Penna
+    Rate9: 700
+    Item10: 11099   # Letter earring
+    Rate10: 76
+    Item11: 11100   # Copper bell
+    Rate11: 76
+    Item12: 11101   # Gold bell
+    Rate12: 76
+    Item13: 11102   # Bead necklace
+    Rate13: 76
+  - Id: 59
+    Name: Caballa Relics Dungeon 3
+    EquipT: Relics_Dungeon3_EQ
+    E_Rate: 500
+    Normal1T: Relics_Dungeon3_Nor1
+    N1_Rate: 4600
+    Normal2T: Relics_Dungeon3_Nor2
+    N2_Rate: 100
+    Item0: 11096   # Jade
+    Rate0: 200
+    Item1: 11097   # Copal
+    Rate1: 200
+    Item2: 11098   # Obsidian
+    Rate2: 200
+    Item3: 11103   # Incense burner
+    Rate3: 300
+    Item4: 11104   # Ash box
+    Rate4: 300
+    Item5: 11116   # Tortoise Shell
+    Rate5: 700
+    Item6: 11117   # Selinolite
+    Rate6: 700
+    Item7: 11118   # Malachite
+    Rate7: 700
+    Item8: 11119   # Tachyslite
+    Rate8: 700
+    Item9: 11120   # Lapis Penna
+    Rate9: 700
+    Item10: 11099   # Letter earring
+    Rate10: 76
+    Item11: 11100   # Copper bell
+    Rate11: 76
+    Item12: 11101   # Gold bell
+    Rate12: 76
+    Item13: 11102   # Bead necklace
+    Rate13: 76
+  - Id: 60
+    Name: Caballa Relics Dungeon 4
+    EquipT: Relics_Dungeon4_EQ
+    E_Rate: 500
+    Normal1T: Relics_Dungeon4_Nor1
+    N1_Rate: 4600
+    Normal2T: Relics_Dungeon4_Nor2
+    N2_Rate: 100
+    Item0: 11096   # Jade
+    Rate0: 200
+    Item1: 11097   # Copal
+    Rate1: 200
+    Item2: 11098   # Obsidian
+    Rate2: 200
+    Item3: 11103   # Incense burner
+    Rate3: 300
+    Item4: 11104   # Ash box
+    Rate4: 300
+    Item5: 11116   # Tortoise Shell
+    Rate5: 700
+    Item6: 11117   # Selinolite
+    Rate6: 700
+    Item7: 11118   # Malachite
+    Rate7: 700
+    Item8: 11119   # Tachyslite
+    Rate8: 700
+    Item9: 11120   # Lapis Penna
+    Rate9: 700
+    Item10: 11099   # Letter earring
+    Rate10: 76
+    Item11: 11100   # Copper bell
+    Rate11: 76
+    Item12: 11101   # Gold bell
+    Rate12: 76
+    Item13: 11102   # Bead necklace
+    Rate13: 76
+  - Id: 233
+    Name: Cherry Blossom Garden
+    Normal1T: Path_NE_Nor1
+    N1_Rate: 9600
+    Normal2T: Path_NE_Nor2
+    N2_Rate: 400
+  - Id: 196
+    Name: 1st Mining Lot of Crystal Copper
+    Item0: 11254   # Bronze Fragment
+    Rate0: 6458
+    Item1: 11255   # Impure Bronze
+    Rate1: 490
+    Item2: 11256   # Pure Bronze
+    Rate2: 261
+    Item3: 11258   # Tin Fragment
+    Rate3: 674
+    Item4: 11259   # Impure Tin
+    Rate4: 429
+    Item5: 11260   # Pure Tin
+    Rate5: 229
+    Item6: 11262   # Sulfurous Fragment
+    Rate6: 633
+    Item7: 11263   # Impure Sulfur
+    Rate7: 367
+    Item8: 11264   # Pure Sulfur
+    Rate8: 196
+  - Id: 197
+    Name: 1st Mining Lot of Jade Steel
+    Item0: 11266   # Lead Fragment
+    Rate0: 2226
+    Item1: 11267   # Impure Lead
+    Rate1: 965
+    Item2: 11268   # Pure Lead
+    Rate2: 401
+    Item3: 11270   # Soft Iron
+    Rate3: 1892
+    Item4: 11271   # Impure Soft Iron
+    Rate4: 890
+    Item5: 11272   # Pure Soft Iron
+    Rate5: 378
+    Item6: 11274   # Steel
+    Rate6: 1558
+    Item7: 11275   # Impure Steel
+    Rate7: 816
+    Item8: 11276   # Pure Steel
+    Rate8: 356
+    Item9: 11286   # Ancient Steel
+    Rate9: 50
+  - Id: 198
+    Name: 1st Mining Lot of Silver Jewel
+    Item0: 11278   # Silver Fragment
+    Rate0: 5908
+    Item1: 11279   # Impure Silver
+    Rate1: 2954
+    Item2: 11280   # Pure Silver
+    Rate2: 886
+    Item3: 11287   # Mithril
+    Rate3: 74
+  - Id: 199
+    Name: 1st Mining Lot of Precious Jewel
+    SpecialT: Snow_Mine1_SP
+    S_Rate: 10
+    Item0: 11282   # Tantalum Fragment
+    Rate0: 5828
+    Item1: 11283   # Impure Tantalum
+    Rate1: 2997
+    Item2: 11284   # Pure Tantalum
+    Rate2: 932
+    Item3: 64385   # Titanium Fragment
+    Rate3: 1582
+    Item4: 64386   # Impure Titanium
+    Rate4: 1007
+    Item5: 64387   # Pure Titanium
+    Rate5: 537
+    Item6: 11288   # Ori-Harkon
+    Rate6: 67
+  - Id: 206
+    Name: 2nd Mining Lot of Crystal Copper
+    Item0: 11290   # Quartz Fragment
+    Rate0: 1678
+    Item1: 11291   # Quartz Gem
+    Rate1: 1151
+    Item2: 11292   # Flawless Quartz
+    Rate2: 614
+    Item3: 11294   # Amethyst Fragment
+    Rate3: 1582
+    Item4: 11295   # Amethyst Gem
+    Rate4: 1007
+    Item5: 11296   # Flawless Amethyst
+    Rate5: 537
+    Item6: 11298   # Agate Fragment
+    Rate6: 1486
+    Item7: 11299   # Agate Gem
+    Rate7: 863
+    Item8: 11300   # Flawless Agate
+    Rate8: 460
+  - Id: 207
+    Name: 2nd Mining Lot of Jade Steel
+    Item0: 11302   # Jasper Fragment
+    Rate0: 2399
+    Item1: 11303   # Jasper Gem
+    Rate1: 866
+    Item2: 11304   # Flawless Jasper
+    Rate2: 360
+    Item3: 11306   # Cat's Eye Fragment
+    Rate3: 2039
+    Item4: 11307   # Cat's Eye Gem
+    Rate4: 800
+    Item5: 11308   # Flawless Cat's Eye
+    Rate5: 340
+    Item6: 11310   # Kunzite Fragment
+    Rate6: 1679
+    Item7: 11311   # Kunzite Gem
+    Rate7: 733
+    Item8: 11312   # Flawless Kunzite
+    Rate8: 320
+    Item9: 11322   # Moonstone
+    Rate9: 45
+  - Id: 208
+    Name: 2nd Mining Lot of Silver Jewel
+    Item0: 11314   # Turquoise Fragment
+    Rate0: 5908
+    Item1: 11315   # Turquoise Gem
+    Rate1: 2954
+    Item2: 11316   # Flawless Turquoise
+    Rate2: 886
+    Item3: 11323   # Garnet
+    Rate3: 74
+  - Id: 209
+    Name: 2nd Mining Lot of Precious Jewel
+    SpecialT: Snow_Mine2_SP
+    S_Rate: 10
+    Item0: 11318   # Opal Fragment
+    Rate0: 5828
+    Item1: 11319   # Opal Gem
+    Rate1: 2997
+    Item2: 11320   # Flawless Opal
+    Rate2: 932
+    Item3: 64388   # Tiger's Eye Fragment
+    Rate3: 1582
+    Item4: 64389   # Tiger's Eye Gem
+    Rate4: 1007
+    Item5: 64390   # Flawless Tiger's Eye
+    Rate5: 537
+    Item6: 11324   # Zircon
+    Rate6: 67
+  - Id: 321
+    Name: 1st Closed Lot of Silent Lava
+    SpecialT: Volcano_Mine1_SP
+    S_Rate: 10
+    Item0: 63195   # Scolecite Fragment
+    Rate0: 4500
+    Item1: 63196   # Impure Scolecite
+    Rate1: 2312
+    Item2: 63197   # Pure Scolecite
+    Rate2: 719
+    Item3: 64391   # Pyrrhotite Fragment
+    Rate3: 1220
+    Item4: 64392   # Impure Pyrrhotite
+    Rate4: 776
+    Item5: 64393   # Pure Pyrrhotite
+    Rate5: 414
+    Item6: 11288   # Ori-Harkon
+    Rate6: 47
+  - Id: 322
+    Name: 2nd Closed Lot of Silent Lava
+    SpecialT: Volcano_Mine2_SP
+    S_Rate: 10
+    Item0: 63209   # Chrysocolla Fragment
+    Rate0: 4500
+    Item1: 63210   # Chrysocolla Gem
+    Rate1: 2312
+    Item2: 63211   # Flawless Chrysocolla
+    Rate2: 719
+    Item3: 64397   # Jacinth Fragment
+    Rate3: 1220
+    Item4: 64398   # Jacinth Gem
+    Rate4: 776
+    Item5: 64399   # Flawless Jacinth
+    Rate5: 414
+    Item6: 11324   # Zircon
+    Rate6: 47
+  - Id: 608
+    Name: Alteo Empire Field 1 - Secret Garden
+    SpecialT: Alteo_Play1_SP
+    S_Rate: 1
+    EquipT: Alteo_Play1_EQ
+    E_Rate: 100
+    Normal1T: Alteo_Play1_Nor1
+    N1_Rate: 5000
+    Item0: 64663   # Old Slate Piece
+    Rate0: 500
+    Item1: 64664   # Shiny Piece
+    Rate1: 490
+    Item2: 64604   # Rachel's Picture
+    Rate2: 200
+    Item3: 64608   # Glue Stick
+    Rate3: 200
+    Item4: 64635   # Homunculus' Debris
+    Rate4: 150
+    Item5: 64637   # Ancient Nutritious Mushroom
+    Rate5: 150
+    Item6: 64642   # Tattered Silk Piece
+    Rate6: 150
+    Item7: 64643   # Red Flower Cotton Candy
+    Rate7: 150
+    Item8: 64644   # BlueFlower Cotton Candy
+    Rate8: 150
+    Item9: 64605   # Dearly Beloved
+    Rate9: 100
+  - Id: 609
+    Name: Alteo Empire Field 2 - Time Cascade
+    SpecialT: Alteo_Play2_SP
+    S_Rate: 1
+    EquipT: Alteo_Play2_EQ
+    E_Rate: 100
+    Normal1T: Alteo_Play2_Nor1
+    N1_Rate: 5000
+    Item0: 64663   # Old Slate Piece
+    Rate0: 500
+    Item1: 64664   # Shiny Piece
+    Rate1: 490
+    Item2: 64604   # Rachel's Picture
+    Rate2: 200
+    Item3: 64608   # Glue Stick
+    Rate3: 200
+    Item4: 64635   # Homunculus' Debris
+    Rate4: 150
+    Item5: 64637   # Ancient Nutritious Mushroom
+    Rate5: 150
+    Item6: 64642   # Tattered Silk Piece
+    Rate6: 150
+    Item7: 64643   # Red Flower Cotton Candy
+    Rate7: 150
+    Item8: 64644   # BlueFlower Cotton Candy
+    Rate8: 150
+  - Id: 610
+    Name: Alteo Empire Field 3 - Sanctuary Forest
+    SpecialT: Alteo_Play3_SP
+    S_Rate: 1
+    EquipT: Alteo_Play3_EQ
+    E_Rate: 100
+    Normal1T: Alteo_Play3_Nor1
+    N1_Rate: 5000
+    Item0: 64663   # Old Slate Piece
+    Rate0: 500
+    Item1: 64664   # Shiny Piece
+    Rate1: 490
+    Item2: 64604   # Rachel's Picture
+    Rate2: 200
+    Item3: 64608   # Glue Stick
+    Rate3: 200
+    Item4: 64635   # Homunculus' Debris
+    Rate4: 150
+    Item5: 64637   # Ancient Nutritious Mushroom
+    Rate5: 150
+    Item6: 64642   # Tattered Silk Piece
+    Rate6: 150
+    Item7: 64643   # Red Flower Cotton Candy
+    Rate7: 150
+    Item8: 64644   # BlueFlower Cotton Candy
+    Rate8: 150
+  - Id: 611
+    Name: Gate of Nefertiti Shrine
+    EquipT: Alteo_Play4_EQ
+    E_Rate: 100
+    Normal1T: Alteo_Play4_Nor1
+    N1_Rate: 5000
+    Item0: 64624   # Marble Piece
+    Rate0: 200
+    Item1: 64625   # Holy Leaf
+    Rate1: 200
+    Item2: 64635   # Homunculus' Debris
+    Rate2: 150
+  - Id: 612
+    Name: Gate of Nefertiti Shrine
+    EquipT: Alteo_Play5_EQ
+    E_Rate: 100
+    Normal1T: Alteo_Play5_Nor1
+    N1_Rate: 5000
+    Item0: 64624   # Marble Piece
+    Rate0: 200
+    Item1: 64625   # Holy Leaf
+    Rate1: 200
+    Item2: 64635   # Homunculus' Debris
+    Rate2: 150
+  - Id: 617
+    Name: Robin's Memory
+    EquipT: Mirage_Dungeon1_EQ
+    E_Rate: 700
+    Normal1T: Mirage_Dungeon1_Nor1
+    N1_Rate: 9185
+    Normal2T: Mirage_Dungeon1_Nor2
+    N2_Rate: 100
+    Item0: 64638   # Enkicladus' Heart
+    Rate0: 700
+    Item1: 64639   # Nefertiti's Heart
+    Rate1: 700
+  - Id: 639
+    Name: Golden Ash Mine 1
+    SpecialT: Path_Wharf_Mine1_SP
+    S_Rate: 10
+    Item0: 63187   # Stibnite Fragment
+    Rate0: 4496
+    Item1: 63188   # Impure Stibnite
+    Rate1: 2312
+    Item2: 63189   # Pure Stibnite
+    Rate2: 719
+    Item3: 63191   # Okenite Fragment
+    Rate3: 1220
+    Item4: 63192   # Impure Okenite
+    Rate4: 776
+    Item5: 63193   # Pure Okenite
+    Rate5: 414
+    Item6: 11288   # Ori-Harkon
+    Rate6: 56
+  - Id: 640
+    Name: Golden Ash Mine 2
+    SpecialT: Path_Wharf_Mine2_SP
+    S_Rate: 10
+    Item0: 63201   # Spinel Fragment
+    Rate0: 4496
+    Item1: 63202   # Spinel Gem
+    Rate1: 2312
+    Item2: 63203   # Flawless Spinel
+    Rate2: 719
+    Item3: 63205   # Hyacinth Fragment
+    Rate3: 1220
+    Item4: 63206   # Hyacinth Gem
+    Rate4: 776
+    Item5: 63207   # Flawless Hyacinth
+    Rate5: 414
+    Item6: 11324   # Zircon
+    Rate6: 56
+  - Id: 644
+    Name: Tapasco Theme Spa 1st Floor - Bath
+    SpecialT: Volcano_DG1_SP
+    S_Rate: 10
+    EquipT: Volcano_DG1_EQ
+    E_Rate: 200
+    Normal1T: Volcano_DG1_Nor1
+    N1_Rate: 5000
+    Normal2T: Volcano_DG1_Nor2
+    N2_Rate: 100
+    Item0: 64721   # Coin Purse
+    Rate0: 400
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+  - Id: 645
+    Name: Tapasco Theme Spa 2nd Floor - Flower Spa
+    SpecialT: Volcano_DG2_SP
+    S_Rate: 10
+    EquipT: Volcano_DG2_EQ
+    E_Rate: 200
+    Normal1T: Volcano_DG2_Nor1
+    N1_Rate: 5000
+    Normal2T: Volcano_DG2_Nor2
+    N2_Rate: 100
+    Item0: 64722   # Fruit Basket
+    Rate0: 300
+    Item1: 64723   # Flower Basket
+    Rate1: 300
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+  - Id: 646
+    Name: Tapasco Theme Spa 3rd Floor - Herbs Spa
+    SpecialT: Volcano_DG3_SP
+    S_Rate: 10
+    EquipT: Volcano_DG3_EQ
+    E_Rate: 200
+    Normal1T: Volcano_DG3_Nor1
+    N1_Rate: 5000
+    Normal2T: Volcano_DG3_Nor2
+    N2_Rate: 100
+    Item0: 64717   # Model Photo Collection
+    Rate0: 250
+    Item1: 64724   # Herbs Pocket
+    Rate1: 250
+    Item2: 64730   # Mud Herbs
+    Rate2: 250
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+  - Id: 647
+    Name: Tapasco Theme Spa 4th Floor - Lava Spa
+    SpecialT: Volcano_DG4_SP
+    S_Rate: 10
+    EquipT: Volcano_DG4_EQ
+    E_Rate: 200
+    Normal1T: Volcano_DG4_Nor1
+    N1_Rate: 5000
+    Normal2T: Volcano_DG4_Nor2
+    N2_Rate: 100
+    Item0: 64720   # 타바스코 핫소스
+    Rate0: 200
+    Item1: 64725   # Magma Moss
+    Rate1: 200
+    Item2: 64726   # Magma Earthworm
+    Rate2: 200
+    Item3: 64752   # Spa Salamander Egg
+    Rate3: 200
+    Item9: 64059   # Worn Volcano Map A
+    Rate9: 358
+    Item10: 64060   # Worn Volcano Map B
+    Rate10: 358
+    Item11: 64061   # Old Volcano Map A
+    Rate11: 251
+    Item12: 64062   # Old Volcano Map B
+    Rate12: 251
+    Item13: 64063   # Weird Volcano Map A
+    Rate13: 251
+    Item14: 64064   # Weird Volcano Map B
+    Rate14: 251
+  - Id: 651
+    Name: Tapasco boss Room - path 2-2
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 4000
+    Item0: 64711   # Gem Ring Candy 1
+    Rate0: 150
+    Item1: 64746   # Fake Gem Ring Candy
+    Rate1: 400
+    Item2: 64747   # Fake Gem Ring Candy
+    Rate2: 400
+    Item3: 64748   # Fake Gem Ring Candy
+    Rate3: 400
+    Item4: 64749   # Fake Gem Ring Candy
+    Rate4: 400
+  - Id: 652
+    Name: Tapasco boss Room - path 2-3
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 4000
+    Item0: 64712   # Gem Ring Candy 2
+    Rate0: 200
+    Item1: 64746   # Fake Gem Ring Candy
+    Rate1: 400
+    Item2: 64747   # Fake Gem Ring Candy
+    Rate2: 400
+    Item3: 64748   # Fake Gem Ring Candy
+    Rate3: 400
+    Item4: 64749   # Fake Gem Ring Candy
+    Rate4: 400
+  - Id: 653
+    Name: Tapasco boss Room - path 2-4
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 4000
+    Item0: 64713   # Gem Ring Candy 3
+    Rate0: 150
+    Item1: 64746   # Fake Gem Ring Candy
+    Rate1: 400
+    Item2: 64747   # Fake Gem Ring Candy
+    Rate2: 400
+    Item3: 64748   # Fake Gem Ring Candy
+    Rate3: 400
+    Item4: 64749   # Fake Gem Ring Candy
+    Rate4: 400
+  - Id: 654
+    Name: Tapasco boss Room - path 2-5
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 4000
+    Item0: 64714   # Gem Ring Candy 4
+    Rate0: 200
+    Item1: 64746   # Fake Gem Ring Candy
+    Rate1: 400
+    Item2: 64747   # Fake Gem Ring Candy
+    Rate2: 400
+    Item3: 64748   # Fake Gem Ring Candy
+    Rate3: 400
+    Item4: 64749   # Fake Gem Ring Candy
+    Rate4: 400
+  - Id: 660
+    Name: Tapasco boss Room - path 4
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 8000
+    Item0: 64715   # Volcano Ashes
+    Rate0: 250
+  - Id: 671
+    Name: Tapasco boss Room (past)
+    Normal1T: Volcano_Play5_Nor1
+    N1_Rate: 8000
+    Item0: 64756   # Last Shattered Amethyst Piece
+    Rate0: 150
+  - Id: 756
+    Name: 환영학원 - 악령의 실험실
+  - Id: 688
+    Name: New Content Development Office - the first basement
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item1: 767   # Content concept rough one
+    Rate1: 45
+    Item2: 768   # Content concept rough 2
+    Rate2: 45
+    Item3: 769   # Content concept rough 3
+    Rate3: 45
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 689
+    Name: New Content Development Office - the second floor underground
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item1: 767   # Content concept rough one
+    Rate1: 45
+    Item2: 768   # Content concept rough 2
+    Rate2: 45
+    Item3: 769   # Content concept rough 3
+    Rate3: 45
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 699
+    Name: Tartarus - Steel God B1 Cage 1
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 700
+    Name: Tartarus - Steel God B1 Cage 2
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 701
+    Name: Tartarus - Steel God B1 Cage 3
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 702
+    Name: Tartarus - Steel God B1 Cage 4
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64818   # 3 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 703
+    Name: Tartarus - Steel God B1 Cage 5
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 704
+    Name: Tartarus - Steel God B1 Cage 6
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 705
+    Name: Tartarus - Steel God B1 Cage 7
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64816   # Debris 1 of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 706
+    Name: Tartarus - Steel God B1 Cage 8
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 707
+    Name: Tartarus - Steel God B1 Cage 9
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 708
+    Name: Tartarus - Steel God B1 Cage 10
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64819   # 4 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 709
+    Name: Tartarus - Steel God B1 Cage 11
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 710
+    Name: Tartarus - Steel God B1 Cage 12
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 711
+    Name: Tartarus - Steel God B1 Cage 13
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64817   # 2 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 712
+    Name: Tartarus - Steel God B1 Cage 14
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 713
+    Name: Tartarus - Steel God B1 Cage 15
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 714
+    Name: Tartarus - Steel God B1 Cage 16
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64819   # 4 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 715
+    Name: Tartarus - Steel God B1 Cage 17
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 716
+    Name: Tartarus - Steel God B1 Cage 18
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 717
+    Name: Tartarus - Steel God B1 Cage 19
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64816   # Debris 1 of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 718
+    Name: Tartarus - Steel God B1 Cage 20
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 719
+    Name: Tartarus - Steel God B1 Cage 21
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 720
+    Name: Tartarus - Steel God B1 Cage 22
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64818   # 3 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 721
+    Name: Tartarus - Steel God B1 Cage 23
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64817   # 2 pieces of Tartarus
+    Rate0: 227
+    Item1: 64820   # 5 pieces of Tartarus
+    Rate1: 227
+    Item2: 64821   # 6 pieces of Tartarus
+    Rate2: 227
+    Item3: 64822   # 7 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 722
+    Name: Tartarus - Steel God B1 Cage 24
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 723
+    Name: Tartarus - Steel God B1 Cage 25
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 724
+    Name: Tartarus - Steel God B1 Cage 26
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 726
+    Name: Tartarus - Steel God B2 Cage 1
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 727
+    Name: Tartarus - Steel God B2 Cage 2
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64818   # 3 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 728
+    Name: Tartarus - Steel God B2 Cage 3
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 729
+    Name: Tartarus - Steel God B2 Cage 4
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 730
+    Name: Tartarus - Steel God B2 Cage 5
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 731
+    Name: Tartarus - Steel God B2 Cage 6
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 732
+    Name: Tartarus - Steel God B2 Cage 7
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 733
+    Name: Tartarus - Steel God B2 Cage 8
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64819   # 4 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 734
+    Name: Tartarus - Steel God B2 Cage 9
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64816   # Debris 1 of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 735
+    Name: Tartarus - Steel God B2 Cage 10
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 736
+    Name: Tartarus - Steel God B2 Cage 11
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 737
+    Name: Tartarus - Steel God B2 Cage 12
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64819   # 4 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 738
+    Name: Tartarus - Steel God B2 Cage 13
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 739
+    Name: Tartarus - Steel God B2 Cage 14
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 740
+    Name: Tartarus - Steel God B2 Cage 15
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64817   # 2 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 741
+    Name: Tartarus - Steel God B2 Cage 16
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 742
+    Name: Tartarus - Steel God B2 Cage 17
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 743
+    Name: Tartarus - Steel God B2 Cage 18
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64818   # 3 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 744
+    Name: Tartarus - Steel God B2 Cage 19
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 745
+    Name: Tartarus - Steel God B2 Cage 20
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 746
+    Name: Tartarus - Steel God B2 Cage 21
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64816   # Debris 1 of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 747
+    Name: Tartarus - Steel God B2 Secret Cage 1
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 748
+    Name: Tartarus - Steel God B2 Cage 22
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 749
+    Name: Tartarus - Steel God B2 Secret Cage 2
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64817   # 2 pieces of Tartarus
+    Rate0: 227
+    Item1: 64823   # 8 pieces of Tartarus
+    Rate1: 227
+    Item2: 64824   # 9 pieces of Tartarus
+    Rate2: 227
+    Item3: 64825   # 10 pieces of Tartarus
+    Rate3: 227
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 750
+    Name: Tartarus - Steel God B2 Cage 23
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 751
+    Name: Tartarus - Steel God B2 Cage 24
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 698
+    Name: Tartarus - Steel God B1
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64860   # Hair of Eil
+    Rate0: 25
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 725
+    Name: Tartarus - Steel God B2
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros1_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 400
+    Item0: 64860   # Hair of Eil
+    Rate0: 25
+    Item5: 1000   # Crystal
+    Rate5: 500
+  - Id: 760
+    Name: Tartarus - Ancient God B3 Cage 2
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66345   # Key 8 material 1
+    Rate3: 85
+  - Id: 761
+    Name: Tartarus - Ancient God B3 Cage 3
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64867   # 2K debris of Tartarus
+    Rate0: 215
+    Item1: 64891   # Tartarus branch 1K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66346   # Key 8 material 2
+    Rate3: 85
+  - Id: 762
+    Name: Tartarus - Ancient God B3 Cage 4
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item1: 64892   # Tartarus branch 2K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66347   # Key 8 material 3
+    Rate3: 85
+  - Id: 763
+    Name: Tartarus - Ancient God B3 Cage 5
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64868   # 3K debris of Tartarus
+    Rate0: 215
+    Item1: 64893   # Tartarus branch 3K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66348   # Key 8 material 4
+    Rate3: 85
+  - Id: 764
+    Name: Tartarus - Ancient God B3 Cage 6
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66345   # Key 8 material 1
+    Rate3: 85
+  - Id: 765
+    Name: Tartarus - Ancient God B3 Cage 7
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64868   # 3K debris of Tartarus
+    Rate0: 215
+    Item1: 64894   # Tartarus branch 4K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66346   # Key 8 material 2
+    Rate3: 85
+  - Id: 766
+    Name: Tartarus - Ancient God B3 Cage 8
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64867   # 2K debris of Tartarus
+    Rate0: 215
+    Item1: 64895   # Tartarus branch 5K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66347   # Key 8 material 3
+    Rate3: 85
+  - Id: 767
+    Name: Tartarus - Ancient God B3 Cage 9
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item1: 64896   # Tartarus branch 6K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66348   # Key 8 material 4
+    Rate3: 85
+  - Id: 768
+    Name: Tartarus - Ancient God B3 Cage 10
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64869   # 4K debris of Tartarus
+    Rate0: 215
+    Item1: 64897   # Tartarus branch 7K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66345   # Key 8 material 1
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 769
+    Name: Tartarus - Ancient God B3 Cage 11
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64872   # 7K debris of Tartarus
+    Rate0: 215
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66346   # Key 8 material 2
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 770
+    Name: Tartarus - Ancient God B3 Cage 12
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64871   # 6K debris of Tartarus
+    Rate0: 215
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66347   # Key 8 material 3
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 771
+    Name: Tartarus - Ancient God B3 Cage 13
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64870   # 5K debris of Tartarus
+    Rate0: 215
+    Item1: 64891   # Tartarus branch 1K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66348   # Key 8 material 4
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 772
+    Name: Tartarus - Ancient God B3 Cage 14
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64873   # 8K debris of Tartarus
+    Rate0: 215
+    Item1: 64892   # Tartarus branch 2K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66345   # Key 8 material 1
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 773
+    Name: Tartarus - Ancient God B3 Cage 15
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64874   # 9K debris of Tartarus
+    Rate0: 215
+    Item1: 64893   # Tartarus branch 3K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66346   # Key 8 material 2
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 774
+    Name: Tartarus - Ancient God B3 Cage 16
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item1: 64894   # Tartarus branch 4K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66347   # Key 8 material 3
+    Rate3: 85
+  - Id: 775
+    Name: Tartarus - Ancient God B3 Cage 17
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item1: 64895   # Tartarus branch 5K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66348   # Key 8 material 4
+    Rate3: 85
+  - Id: 776
+    Name: Tartarus - Ancient God B3 Cage 18
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64875   # 10K pieces of Tartarus
+    Rate0: 215
+    Item1: 64896   # Tartarus branch 6K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66345   # Key 8 material 1
+    Rate3: 85
+    Item4: 66324   # Jewel of blue light
+    Rate4: 30
+  - Id: 777
+    Name: Tartarus - Ancient God B3 Cage 19
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 64866   # 1K debris of Tartarus
+    Rate0: 215
+    Item1: 64897   # Tartarus branch 7K
+    Rate1: 100
+    Item2: 66364   # Full jade mobile space
+    Rate2: 100
+    Item3: 66346   # Key 8 material 2
+    Rate3: 85
+  - Id: 792
+    Name: Tartarus - Ancient God B4
+    SpecialT: Tartaros1_SP
+    S_Rate: 1
+    EquipT: Tartaros2_EQ
+    E_Rate: 200
+    Normal1T: Tartaros1_Nor1
+    N1_Rate: 6399
+    Normal2T: Tartaros1_Nor2
+    N2_Rate: 600
+    Item0: 105   # 5 galder coupon
+    Rate0: 120
+    Item1: 101   # 10 galder coupon
+    Rate1: 120
+    Item2: 103   # 100 galder coupon
+    Rate2: 120
+    Item3: 66336   # Key 2
+    Rate3: 100
+    Item4: 66339   # Key 5
+    Rate4: 100
+    Item5: 66341   # Key 7
+    Rate5: 100
+    Item6: 66364   # Full jade mobile space
+    Rate6: 100
+
+Footer:
+  Imports:
+#  - Path: db/import/map_item_db.yml

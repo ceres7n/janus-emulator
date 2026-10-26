@@ -1,0 +1,1344 @@
+# =============================================================================
+#   Party Quest Database  (PARTY_QUEST_DB)
+# =============================================================================
+#   PartyMonQuestInfo of the ORIGINAL server data (78 quests): a party kills Cnt0 x its member
+#   count of SrcMonster0 within Time minutes (the retail takes grade 0 only, sub_7E1CC0). The loader
+#   (sub_6271xx area) gives every SrcMonster grade the quest's Time / MinLevel / MaxLevel / Exp / Tmxp;
+#   MaxCount <= 0 -> 25; ResultTable names a PMonQuestResult table (party_quest_result_db.yml).
+#   Weight0..4 and PQuestType are kept but unused by the server. Field names verbatim.
+# =============================================================================
+
+Header:
+  Type: PARTY_QUEST_DB
+  Version: 1
+
+Body:
+  - Id: 3005
+    PQuestType: 1
+    Name: '데저트해안 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '파라다이스 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 1
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2053
+    Cnt0: 45
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3005
+    Exp: 9822
+    Tmxp: 2697
+    MaxCount: 0
+    ReturnMapID: 35
+  - Id: 3006
+    PQuestType: 1
+    Name: '피라미드던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '파라다이스 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 25
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2094
+    Cnt0: 32
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3006
+    Exp: 34025
+    Tmxp: 10521
+    MaxCount: 0
+    ReturnMapID: 35
+  - Id: 3007
+    PQuestType: 1
+    Name: '포푸리던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '포푸리 동굴 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 30
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2181
+    Cnt0: 38
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3007
+    Exp: 55187
+    Tmxp: 19638
+    MaxCount: 0
+    ReturnMapID: 159
+  - Id: 3008
+    PQuestType: 1
+    Name: '까발라유적지 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '아즈테카 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 50
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2013
+    Cnt0: 48
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3008
+    Exp: 202555
+    Tmxp: 230492
+    MaxCount: 0
+    ReturnMapID: 55
+  - Id: 3009
+    PQuestType: 1
+    Name: '지하유적지던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '아즈테카 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 55
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2073
+    Cnt0: 30
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3009
+    Exp: 245117
+    Tmxp: 297171
+    MaxCount: 0
+    ReturnMapID: 55
+  - Id: 3010
+    PQuestType: 1
+    Name: '웁스부두 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '웁스부두 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 60
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2191
+    Cnt0: 24
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3010
+    Exp: 294988
+    Tmxp: 356013
+    MaxCount: 0
+    ReturnMapID: 284
+  - Id: 3011
+    PQuestType: 1
+    Name: '인어궁전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '인어궁전 던전입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2222
+    Cnt0: 24
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3011
+    Exp: 430495
+    Tmxp: 413466
+    MaxCount: 0
+    ReturnMapID: 267
+  - Id: 3012
+    PQuestType: 1
+    Name: '인어궁전던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '인어궁전 던전입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 75
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2246
+    Cnt0: 19
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3012
+    Exp: 502723
+    Tmxp: 413122
+    MaxCount: 0
+    ReturnMapID: 267
+  - Id: 3013
+    PQuestType: 1
+    Name: '고스트블루 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '아쿠아리스 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 95
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2006
+    Cnt0: 54
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3013
+    Exp: 1016875
+    Tmxp: 583932
+    MaxCount: 0
+    ReturnMapID: 45
+  - Id: 3014
+    PQuestType: 1
+    Name: '노라하수관 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '아쿠아리스 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 100
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2056
+    Cnt0: 45
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3014
+    Exp: 1119090
+    Tmxp: 608437
+    MaxCount: 0
+    ReturnMapID: 45
+  - Id: 3015
+    PQuestType: 1
+    Name: '로즈가든 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '이벤트가든'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 115
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2114
+    Cnt0: 48
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3015
+    Exp: 1606349
+    Tmxp: 655255
+    MaxCount: 0
+    ReturnMapID: 86
+  - Id: 3016
+    PQuestType: 1
+    Name: '뱀프캐슬 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '뱀프캐슬 던전'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 125
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2131
+    Cnt0: 44
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3016
+    Exp: 1975320
+    Tmxp: 772655
+    MaxCount: 0
+    ReturnMapID: 168
+  - Id: 3017
+    PQuestType: 1
+    Name: '늪지대 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '카르바이갈 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 135
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2065
+    Cnt0: 50
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3017
+    Exp: 2406493
+    Tmxp: 849666
+    MaxCount: 0
+    ReturnMapID: 71
+  - Id: 3018
+    PQuestType: 1
+    Name: '늪지대던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '카르바이갈 몬스터길드'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 145
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2146
+    Cnt0: 37
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3018
+    Exp: 2779707
+    Tmxp: 834112
+    MaxCount: 0
+    ReturnMapID: 71
+  - Id: 3019
+    PQuestType: 1
+    Name: '스노우힐 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '크리스마스 선물공장'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2103
+    Cnt0: 48
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3019
+    Exp: 3668864
+    Tmxp: 923456
+    MaxCount: 0
+    ReturnMapID: 84
+  - Id: 3020
+    PQuestType: 1
+    Name: '블루아이스던전 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '블루아이스던전 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 180
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2122
+    Cnt0: 29
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3020
+    Exp: 4740383
+    Tmxp: 1047467
+    MaxCount: 0
+    ReturnMapID: 170
+  - Id: 3021
+    PQuestType: 1
+    Name: '테치치화산 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '검은재화산 던전 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 210
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2082
+    Cnt0: 45
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3021
+    Exp: 5424752
+    Tmxp: 992762
+    MaxCount: 0
+    ReturnMapID: 462
+  - Id: 3022
+    PQuestType: 1
+    Name: '타바스코화산 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '타바스코화산 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 230
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 2126
+    Cnt0: 43
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3022
+    Exp: 6995049
+    Tmxp: 1123389
+    MaxCount: 0
+    ReturnMapID: 7
+  - Id: 3023
+    PQuestType: 1
+    Name: '크리스탈코퍼 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '데저트해안 광산 - 크리스탈코퍼'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 120
+    MaxLevel: 149
+    Time: 10
+    SrcMonster0: 2291
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3023
+    Exp: 1990544
+    Tmxp: 814139
+    MaxCount: 0
+    ReturnMapID: 202
+  - Id: 3024
+    PQuestType: 1
+    Name: '제이드스틸 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '까발라유적지 광산 - 제이드스틸'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 179
+    Time: 10
+    SrcMonster0: 2292
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3024
+    Exp: 3472571
+    Tmxp: 960234
+    MaxCount: 0
+    ReturnMapID: 203
+  - Id: 3025
+    PQuestType: 1
+    Name: '실버쥬얼 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '늪지대 광산 - 실버쥬얼'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 180
+    MaxLevel: 199
+    Time: 10
+    SrcMonster0: 2293
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3025
+    Exp: 5485177
+    Tmxp: 1212042
+    MaxCount: 0
+    ReturnMapID: 204
+  - Id: 3026
+    PQuestType: 1
+    Name: '프레셔스쥬얼 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '스노우힐 광산 - 프레셔스쥬얼'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 200
+    MaxLevel: 400
+    Time: 10
+    SrcMonster0: 2294
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3026
+    Exp: 7332577
+    Tmxp: 1358217
+    MaxCount: 0
+    ReturnMapID: 205
+  - Id: 3027
+    PQuestType: 1
+    Name: '모래 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존1 - 모래 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 10
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2330
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3027
+    Exp: 684
+    Tmxp: 1498
+    MaxCount: 0
+    ReturnMapID: 317
+  - Id: 3028
+    PQuestType: 1
+    Name: '쿠쿨 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존2 - 쿠쿨 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 40
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2224
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3028
+    Exp: 21335
+    Tmxp: 67622
+    MaxCount: 0
+    ReturnMapID: 313
+  - Id: 3029
+    PQuestType: 1
+    Name: '해골 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존3 - 해골 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2331
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3029
+    Exp: 86117
+    Tmxp: 578977
+    MaxCount: 0
+    ReturnMapID: 316
+  - Id: 3030
+    PQuestType: 1
+    Name: '젤리 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존4 - 젤리 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 110
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2223
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3030
+    Exp: 257408
+    Tmxp: 818415
+    MaxCount: 0
+    ReturnMapID: 312
+  - Id: 3031
+    PQuestType: 1
+    Name: '가면 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존5 - 가면 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2225
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3031
+    Exp: 552016
+    Tmxp: 1068504
+    MaxCount: 0
+    ReturnMapID: 314
+  - Id: 3032
+    PQuestType: 1
+    Name: '설녀 주의보 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '피에스타 존6 - 설녀 주의보 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 200
+    MaxLevel: 400
+    Time: 30
+    SrcMonster0: 2227
+    Cnt0: 14
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3032
+    Exp: 1106357
+    Tmxp: 1434518
+    MaxCount: 0
+    ReturnMapID: 315
+  - Id: 3500
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(1)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 1층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2333
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3500
+    Exp: 1178242
+    Tmxp: 461322
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3501
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(2)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 2층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2335
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3501
+    Exp: 1195569
+    Tmxp: 468106
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3502
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(3)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 4층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 170
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2337
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3502
+    Exp: 1383977
+    Tmxp: 519423
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3503
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(4)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 5층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 170
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2339
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3503
+    Exp: 1403748
+    Tmxp: 526844
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3504
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(5)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 6층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 170
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2341
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3504
+    Exp: 1423519
+    Tmxp: 534264
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3505
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(6)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 8층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 180
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2343
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3505
+    Exp: 1678505
+    Tmxp: 576946
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3506
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(7)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 9층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 180
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2345
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3506
+    Exp: 1723265
+    Tmxp: 592331
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3507
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(8)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 10층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 180
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2347
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3507
+    Exp: 1768025
+    Tmxp: 607716
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3508
+    PQuestType: 1
+    Name: '혼돈의 탑 파티퀘스트(9)'
+    Client: '치안담당요원 테라'
+    Pos: '혼돈의 탑 11층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 190
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2349
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3508
+    Exp: 2087793
+    Tmxp: 636393
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3033
+    PQuestType: 1
+    Name: '사일런트라바 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '타바스코 광산 - 사일런트라바'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 260
+    MaxLevel: 400
+    Time: 10
+    SrcMonster0: 2364
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3033
+    Exp: 8000437
+    Tmxp: 1919430
+    MaxCount: 0
+    ReturnMapID: 320
+  - Id: 3511
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(1)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 1층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 25
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2420
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3511
+    Exp: 17766
+    Tmxp: 8545
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3512
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(2)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 2층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 25
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2422
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3512
+    Exp: 17902
+    Tmxp: 8611
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3513
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(3)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 4층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 25
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2424
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3513
+    Exp: 18039
+    Tmxp: 8677
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3514
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(4)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 5층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 25
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2426
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3514
+    Exp: 18176
+    Tmxp: 8743
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3515
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(5)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 6층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 30
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2428
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3515
+    Exp: 28689
+    Tmxp: 15881
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3516
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(6)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 8층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 30
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2430
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3516
+    Exp: 28903
+    Tmxp: 15999
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3517
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(7)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 9층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 30
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2432
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3517
+    Exp: 29170
+    Tmxp: 16147
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3518
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(8)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 10층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 30
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2434
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3518
+    Exp: 29438
+    Tmxp: 16295
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3519
+    PQuestType: 1
+    Name: '마른 해안의 탑 파티퀘스트(9)'
+    Client: '치안담당요원 테라'
+    Pos: '마른 해안의 탑 11층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 40
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2436
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3519
+    Exp: 59864
+    Tmxp: 42163
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3520
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(1)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 1층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2460
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3520
+    Exp: 231333
+    Tmxp: 345616
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3521
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(2)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 2층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2462
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3521
+    Exp: 233362
+    Tmxp: 348648
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3522
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(3)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 4층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2464
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3522
+    Exp: 235391
+    Tmxp: 351680
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3523
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(4)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 5층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 70
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2466
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3523
+    Exp: 237420
+    Tmxp: 354711
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3524
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(5)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 6층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 80
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2468
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3524
+    Exp: 325781
+    Tmxp: 360706
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3525
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(6)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 8층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 80
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2470
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3525
+    Exp: 328542
+    Tmxp: 363763
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3526
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(7)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 9층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 80
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2472
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3526
+    Exp: 331303
+    Tmxp: 366820
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3527
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(8)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 10층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 80
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2474
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3527
+    Exp: 334064
+    Tmxp: 369876
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3528
+    PQuestType: 1
+    Name: '폐쇄된 항구의 탑 파티퀘스트(9)'
+    Client: '치안담당요원 테라'
+    Pos: '폐쇄된 항구의 탑 11층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 90
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2476
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3528
+    Exp: 444359
+    Tmxp: 417624
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3529
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(1)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 1층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 110
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2492
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3529
+    Exp: 704364
+    Tmxp: 497663
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3530
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(2)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 2층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 110
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2494
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3530
+    Exp: 711180
+    Tmxp: 502479
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3531
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(3)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 4층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 110
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2496
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3531
+    Exp: 717997
+    Tmxp: 507295
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3532
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(4)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 5층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 110
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2498
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3532
+    Exp: 724813
+    Tmxp: 512111
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3533
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(5)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 6층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 120
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2500
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3533
+    Exp: 888385
+    Tmxp: 565215
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3534
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(6)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 8층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 120
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2502
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3534
+    Exp: 896662
+    Tmxp: 570481
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3535
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(7)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 9층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 120
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2504
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3535
+    Exp: 904939
+    Tmxp: 575747
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3536
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(8)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 10층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 120
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2506
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3536
+    Exp: 913216
+    Tmxp: 581013
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3537
+    PQuestType: 1
+    Name: '유령 바다의 탑 파티퀘스트(9)'
+    Client: '치안담당요원 테라'
+    Pos: '유령 바다의 탑 11층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 130
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2508
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3537
+    Exp: 1100483
+    Tmxp: 639847
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3538
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(1)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 1층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2528
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3538
+    Exp: 1512309
+    Tmxp: 650507
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3539
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(2)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 2층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2530
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3539
+    Exp: 1528110
+    Tmxp: 657304
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3540
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(3)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 4층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2532
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3540
+    Exp: 1543910
+    Tmxp: 664100
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3541
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(4)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 5층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 150
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2534
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3541
+    Exp: 1559710
+    Tmxp: 670897
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3542
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(5)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 6층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2536
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3542
+    Exp: 1814146
+    Tmxp: 710301
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3543
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(6)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 8층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2538
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3543
+    Exp: 1832339
+    Tmxp: 717424
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3544
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(7)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 9층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2540
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3544
+    Exp: 1850533
+    Tmxp: 724547
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3545
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(8)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 10층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 160
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2542
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3545
+    Exp: 1868726
+    Tmxp: 731671
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3546
+    PQuestType: 1
+    Name: '장미 정원의 탑 파티퀘스트(9)'
+    Client: '치안담당요원 테라'
+    Pos: '장미 정원의 탑 11층'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 170
+    MaxLevel: 400
+    Time: 5
+    SrcMonster0: 2544
+    Cnt0: 15
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3546
+    Exp: 2153073
+    Tmxp: 808075
+    MaxCount: 0
+    ReturnMapID: 0
+  - Id: 3034
+    PQuestType: 1
+    Name: '골든애쉬 파티퀘스트'
+    Client: '치안담당요원 테라'
+    Pos: '테치치화산 광산 - 골든애쉬'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 230
+    MaxLevel: 400
+    Time: 10
+    SrcMonster0: 3021
+    Cnt0: 4
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3034
+    Exp: 7666507
+    Tmxp: 1638824
+    MaxCount: 0
+    ReturnMapID: 638
+  - Id: 3035
+    PQuestType: 1
+    Name: '타바스코 테마탕 파티퀘스트(상)'
+    Client: '치안담당요원 테라'
+    Pos: '타바스코 테마탕 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 240
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 3028
+    Cnt0: 45
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3035
+    Exp: 8463282
+    Tmxp: 1326015
+    MaxCount: 0
+    ReturnMapID: 643
+  - Id: 3036
+    PQuestType: 1
+    Name: '타바스코 테마탕 파티퀘스트(중)'
+    Client: '치안담당요원 테라'
+    Pos: '타바스코 테마탕 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 235
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 3026
+    Cnt0: 45
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3036
+    Exp: 8290562
+    Tmxp: 1298954
+    MaxCount: 0
+    ReturnMapID: 643
+  - Id: 3037
+    PQuestType: 1
+    Name: '타바스코 테마탕 파티퀘스트(하)'
+    Client: '치안담당요원 테라'
+    Pos: '타바스코 테마탕 입구'
+    Comment: '%s %d분만에 %d마리 사냥'
+    MinLevel: 235
+    MaxLevel: 400
+    Time: 20
+    SrcMonster0: 3019
+    Cnt0: 40
+    Weight0: 1.000000
+    ResultTable: PMonQuestResult_3037
+    Exp: 7782977
+    Tmxp: 1219426
+    MaxCount: 0
+    ReturnMapID: 643
+
+Footer:
+  Imports: []

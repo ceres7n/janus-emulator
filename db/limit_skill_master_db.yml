@@ -1,0 +1,480 @@
+# =============================================================================
+#   Limit Skill Master Database  (LIMIT_SKILL_MASTER_DB)
+# =============================================================================
+#   The LimitSkillMaster_* tables of the ORIGINAL server data named by skill_shop_db.yml
+#   LimitSkillMaster (GameInfoMgr sub_62A2E0: at most 128 rows) — the skills a master masters.
+#
+#   Fields
+#     Table    - the table                                                      [key]
+#     SkillID  - a skill
+# =============================================================================
+
+Header:
+  Type: LIMIT_SKILL_MASTER_DB
+  Version: 1
+
+Body:
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1001
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1002
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1003
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1004
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1005
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1006
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1007
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1008
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1009
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1010
+  - Table: LimitSkillMaster_P_1
+    SkillID: 1011
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4702
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4703
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4704
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4705
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4706
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4707
+  - Table: LimitSkillMaster_P_1
+    SkillID: 4708
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2001
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2003
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2004
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2005
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2006
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2007
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2008
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2009
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2010
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2011
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2012
+  - Table: LimitSkillMaster_M_1
+    SkillID: 2013
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3002
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3003
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3004
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3005
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3006
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3007
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3009
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3012
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3013
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3014
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3011
+  - Table: LimitSkillMaster_S_1
+    SkillID: 3016
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4003
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4004
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4005
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4002
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4006
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4007
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4008
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4010
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4011
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4012
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4001
+  - Table: LimitSkillMaster_C_1
+    SkillID: 4009
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1103
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1104
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1105
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1106
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1107
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1108
+  - Table: LimitSkillMaster_P_2
+    SkillID: 1109
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1202
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1203
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1204
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1205
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1206
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1207
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1208
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1209
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1210
+  - Table: LimitSkillMaster_P_3
+    SkillID: 1211
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2101
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2103
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2105
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2107
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2109
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2111
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2114
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2115
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2116
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2117
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2118
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2119
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2120
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2121
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2122
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2123
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2124
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2125
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2126
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2127
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2128
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2129
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2130
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2131
+  - Table: LimitSkillMaster_M_2
+    SkillID: 2132
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2203
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2205
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2206
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2207
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2208
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2209
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2210
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2212
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2213
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2214
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2215
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2216
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2217
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2218
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2219
+  - Table: LimitSkillMaster_M_3
+    SkillID: 2220
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3101
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3102
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3103
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3104
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3105
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3106
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3107
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3108
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3109
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3110
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3111
+  - Table: LimitSkillMaster_S_2
+    SkillID: 3112
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3201
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3202
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3203
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3204
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3205
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3206
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3207
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3208
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3209
+  - Table: LimitSkillMaster_S_3
+    SkillID: 3210
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4101
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4102
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4104
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4105
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4106
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4107
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4108
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4109
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4110
+  - Table: LimitSkillMaster_C_2
+    SkillID: 4111
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4201
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4203
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4204
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4205
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4206
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4207
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4208
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4209
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4210
+  - Table: LimitSkillMaster_C_3
+    SkillID: 4211
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4801
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4802
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4803
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4804
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4805
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4806
+  - Table: LimitSkillMaster_P_6
+    SkillID: 4807
+  - Table: LimitSkillMaster_P_4
+    SkillID: 1301
+  - Table: LimitSkillMaster_P_4
+    SkillID: 1302
+  - Table: LimitSkillMaster_P_4
+    SkillID: 1303
+  - Table: LimitSkillMaster_P_4
+    SkillID: 1304
+  - Table: LimitSkillMaster_P_4
+    SkillID: 1305
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1501
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1502
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1503
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1504
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1505
+  - Table: LimitSkillMaster_P_5
+    SkillID: 1506
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2301
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2302
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2303
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2304
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2305
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2306
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2307
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2308
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2309
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2310
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2311
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2312
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2313
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2314
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2315
+  - Table: LimitSkillMaster_M_4
+    SkillID: 2316
+  - Table: LimitSkillMaster_M_5
+    SkillID: 2502
+  - Table: LimitSkillMaster_M_5
+    SkillID: 2503
+  - Table: LimitSkillMaster_M_5
+    SkillID: 2504
+  - Table: LimitSkillMaster_M_5
+    SkillID: 2505
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2701
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2702
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2703
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2704
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2705
+  - Table: LimitSkillMaster_M_6
+    SkillID: 2706
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3301
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3302
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3303
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3304
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3305
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3306
+  - Table: LimitSkillMaster_S_4
+    SkillID: 3307
+  - Table: LimitSkillMaster_S_5
+    SkillID: 3501
+  - Table: LimitSkillMaster_S_5
+    SkillID: 3502
+  - Table: LimitSkillMaster_S_5
+    SkillID: 3503
+  - Table: LimitSkillMaster_S_5
+    SkillID: 3504
+  - Table: LimitSkillMaster_S_5
+    SkillID: 3505
+  - Table: LimitSkillMaster_C_4
+    SkillID: 4301
+  - Table: LimitSkillMaster_C_4
+    SkillID: 4302
+  - Table: LimitSkillMaster_C_4
+    SkillID: 4303
+  - Table: LimitSkillMaster_C_4
+    SkillID: 4304
+  - Table: LimitSkillMaster_C_4
+    SkillID: 4305
+  - Table: LimitSkillMaster_C_5
+    SkillID: 4501
+  - Table: LimitSkillMaster_C_5
+    SkillID: 4502
+  - Table: LimitSkillMaster_C_5
+    SkillID: 4503
+  - Table: LimitSkillMaster_C_5
+    SkillID: 4504
+  - Table: LimitSkillMaster_C_5
+    SkillID: 4505
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4901
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4902
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4903
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4904
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4905
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4906
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4907
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4908
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4909
+  - Table: LimitSkillMaster_P_7
+    SkillID: 4910
+
+Footer:
+  Imports:
+#  - Path: db/import/limit_skill_master_db.yml

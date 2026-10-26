@@ -1,0 +1,5206 @@
+# =============================================================================
+#   Compound Database  (COMPOUND_DB)
+# =============================================================================
+#   Tables Compound_Potion, Compound_Rare and Compound_Throw of the ORIGINAL server data (GameInfoMgr
+#   sub_62AD60: CompoundInfo, type 0 / 1 / 2 by table, keyed by CompoundID; Compound_Test is not read).
+#   The player gives the ReqIDs (ReqNum each, times the spin count) and the Fee (times the spins, 10%
+#   off from 10 spins); each spin succeeds with Probability (+ a DA bonus, at most 100) %: the ResIDs
+#   for the successes, the WasteItem for the failures.
+#
+#   Fields
+#     Table             - Compound_Potion (type 0), Compound_Rare (1: one spin only), Compound_Throw (2)
+#     CompoundID        - the compound                                       [key]
+#     Name, Comment     - display aids (the client names it)
+#     ResLv             - (not read by the compound itself)
+#     ResID1..3         - the items made (up to the first blank one)
+#     ReqID1..5 / ReqNum1..5 - the items asked for (up to the first blank ReqID)
+#     Probability       - the success rate, %
+#     Fee               - the money it costs (per spin)
+#     WasteItem         - the item a failed spin leaves
+# =============================================================================
+
+Header:
+  Type: COMPOUND_DB
+  Version: 1
+
+Body:
+  - Table: Compound_Potion
+    CompoundID: 280
+    Name: 황금렌즈
+    Comment: 광학 유리 결정(1) + 동물의 뼈(1) + 황금(5)
+    ResLv: 60
+    ResID1: 64487   # Gold Lens
+    ReqID1: 64485   # Optical Glass Crystal
+    ReqNum1: 1
+    ReqID2: 64486   # Animal Bone
+    ReqNum2: 1
+    ReqID3: 10414   # Gold
+    ReqNum3: 5
+    Probability: 30
+    Fee: 1000
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 101
+    Name: 크리스탈 쿠폰
+    Comment: 크리스탈 + 5겔더 쿠폰 + 종이
+    ResLv: 1
+    ResID1: 12005   # Crystal coupon
+    ReqID1: 1000   # Crystal
+    ReqNum1: 1
+    ReqID2: 105   # 5 galder coupon
+    ReqNum2: 1
+    ReqID3: 11093   # Paper
+    ReqNum3: 1
+    Probability: 45
+    Fee: 3
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 102
+    Name: 영양 비타스낵
+    Comment: 새우스낵 + 포테이토 칩 + 멀티비타민(2) + 비닐팩
+    ResLv: 1
+    ResID1: 12007   # Nutritional Vita-snack
+    ReqID1: 10438   # Shrimp snack
+    ReqNum1: 1
+    ReqID2: 10036   # Potato chip
+    ReqNum2: 1
+    ReqID3: 10237   # Multi-vitamin
+    ReqNum3: 2
+    ReqID4: 11092   # Plastic pack
+    ReqNum4: 1
+    Probability: 45
+    Fee: 2
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 103
+    Name: 발효치즈 주스R
+    Comment: 말미잘 주스 + 고급 포션빈병
+    ResLv: 1
+    ResID1: 63110   # Healthy Yogurt R
+    ReqID1: 10005   # Sea anemone juice
+    ReqNum1: 1
+    ReqID2: 11086   # Empty bottle
+    ReqNum2: 1
+    Probability: 50
+    Fee: 2
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 104
+    Name: 응급 핑크포션
+    Comment: 회복의 물 + 포션 빈병 + 증류수
+    ResLv: 1
+    ResID1: 12008   # First-aid pink potion
+    ReqID1: 11082   # Replenishing Water
+    ReqNum1: 1
+    ReqID2: 11014   # Empty Potion Bottle
+    ReqNum2: 1
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 1
+    Probability: 45
+    Fee: 3
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 105
+    Name: 응급 블루포션
+    Comment: 마나의 물 + 포션빈병 + 증류수
+    ResLv: 1
+    ResID1: 12009   # First-aid blue potion
+    ReqID1: 11083   # Mana Water
+    ReqNum1: 1
+    ReqID2: 11014   # Empty Potion Bottle
+    ReqNum2: 1
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 1
+    Probability: 45
+    Fee: 3
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 106
+    Name: 메갈로 맛바
+    Comment: 문어다리 + 비닐팩
+    ResLv: 1
+    ResID1: 12010   # Megalo yummy stick
+    ReqID1: 10001   # Octopus Legs
+    ReqNum1: 1
+    ReqID2: 11092   # Plastic pack
+    ReqNum2: 1
+    Probability: 50
+    Fee: 1
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 107
+    Name: 네이비블루 포션
+    Comment: 라피스라줄리 + 포션 빈병 + 마나의 물
+    ResLv: 1
+    ResID1: 12011   # Navy blue Potion
+    ReqID1: 1001   # Lapis Lazuli
+    ReqNum1: 1
+    ReqID2: 11014   # Empty Potion Bottle
+    ReqNum2: 1
+    ReqID3: 11083   # Mana Water
+    ReqNum3: 1
+    Probability: 50
+    Fee: 1
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 108
+    Name: 와레즈 맛바
+    Comment: 생선 가시 + 비닐팩
+    ResLv: 1
+    ResID1: 12012   # Warez Yummy Stick
+    ReqID1: 11042   # Fishbone
+    ReqNum1: 1
+    ReqID2: 11092   # Plastic pack
+    ReqNum2: 1
+    Probability: 45
+    Fee: 1
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 115
+    Name: 러브초콜렛
+    Comment: 블랙초콜렛(2)+사랑의 조미료(1)
+    ResLv: 1
+    ResID1: 11426   # Love Chocolate
+    ReqID1: 11423   # BlackChocolate
+    ReqNum1: 2
+    ReqID2: 11429   # Seasoning of Love
+    ReqNum2: 1
+    Probability: 50
+    Fee: 10
+    WasteItem: 11166   # Chocomana drink
+  - Table: Compound_Potion
+    CompoundID: 116
+    Name: 3주년 기념케이크
+    Comment: 딸기, 인삼, 밀가루, 휘핑크림
+    ResLv: 1
+    ResID1: 11482   # 3rd Anniversary Cake
+    ReqID1: 11484   # Strawberry
+    ReqNum1: 1
+    ReqID2: 11485   # Ginseng
+    ReqNum2: 1
+    ReqID3: 11486   # Flour
+    ReqNum3: 1
+    ReqID4: 11487   # Whipping Cream
+    ReqNum4: 1
+    Probability: 20
+    Fee: 3
+    WasteItem: 11483   # Ruined Ginseng Cake
+  - Table: Compound_Potion
+    CompoundID: 117
+    Name: 중급 청동
+    Comment: 청동 원석 7
+    ResLv: 1
+    ResID1: 11255   # Impure Bronze
+    ReqID1: 11254   # Bronze Fragment
+    ReqNum1: 7
+    Probability: 50
+    Fee: 2
+    WasteItem: 11254   # Bronze Fragment
+  - Table: Compound_Potion
+    CompoundID: 118
+    Name: 상급 청동
+    Comment: 중급 청동 5
+    ResLv: 1
+    ResID1: 11256   # Pure Bronze
+    ReqID1: 11255   # Impure Bronze
+    ReqNum1: 5
+    Probability: 48
+    Fee: 4
+    WasteItem: 11254   # Bronze Fragment
+  - Table: Compound_Potion
+    CompoundID: 119
+    Name: 청동
+    Comment: 상급 청동 3
+    ResLv: 1
+    ResID1: 11257   # Bronze
+    ReqID1: 11256   # Pure Bronze
+    ReqNum1: 3
+    Probability: 46
+    Fee: 6
+    WasteItem: 11254   # Bronze Fragment
+  - Table: Compound_Potion
+    CompoundID: 120
+    Name: 중급 주석
+    Comment: 주석 원석 7
+    ResLv: 1
+    ResID1: 11259   # Impure Tin
+    ReqID1: 11258   # Tin Fragment
+    ReqNum1: 7
+    Probability: 48
+    Fee: 3
+    WasteItem: 11258   # Tin Fragment
+  - Table: Compound_Potion
+    CompoundID: 121
+    Name: 상급 주석
+    Comment: 중급 주석 5
+    ResLv: 1
+    ResID1: 11260   # Pure Tin
+    ReqID1: 11259   # Impure Tin
+    ReqNum1: 5
+    Probability: 46
+    Fee: 6
+    WasteItem: 11258   # Tin Fragment
+  - Table: Compound_Potion
+    CompoundID: 122
+    Name: 주석
+    Comment: 상급 주석 3
+    ResLv: 1
+    ResID1: 11261   # Tin
+    ReqID1: 11260   # Pure Tin
+    ReqNum1: 3
+    Probability: 44
+    Fee: 9
+    WasteItem: 11258   # Tin Fragment
+  - Table: Compound_Potion
+    CompoundID: 123
+    Name: 중급 유황
+    Comment: 유황 원석 7
+    ResLv: 1
+    ResID1: 11263   # Impure Sulfur
+    ReqID1: 11262   # Sulfurous Fragment
+    ReqNum1: 7
+    Probability: 46
+    Fee: 12
+    WasteItem: 11262   # Sulfurous Fragment
+  - Table: Compound_Potion
+    CompoundID: 124
+    Name: 상급 유황
+    Comment: 중급 유황 5
+    ResLv: 1
+    ResID1: 11264   # Pure Sulfur
+    ReqID1: 11263   # Impure Sulfur
+    ReqNum1: 5
+    Probability: 44
+    Fee: 15
+    WasteItem: 11262   # Sulfurous Fragment
+  - Table: Compound_Potion
+    CompoundID: 125
+    Name: 유황
+    Comment: 상급 유황 3
+    ResLv: 1
+    ResID1: 11265   # Sulfur
+    ReqID1: 11264   # Pure Sulfur
+    ReqNum1: 3
+    Probability: 42
+    Fee: 18
+    WasteItem: 11262   # Sulfurous Fragment
+  - Table: Compound_Potion
+    CompoundID: 126
+    Name: 중급 납
+    Comment: 납 원석 7
+    ResLv: 1
+    ResID1: 11267   # Impure Lead
+    ReqID1: 11266   # Lead Fragment
+    ReqNum1: 7
+    Probability: 44
+    Fee: 21
+    WasteItem: 11266   # Lead Fragment
+  - Table: Compound_Potion
+    CompoundID: 127
+    Name: 상급 납
+    Comment: 중급 납 5
+    ResLv: 1
+    ResID1: 11268   # Pure Lead
+    ReqID1: 11267   # Impure Lead
+    ReqNum1: 5
+    Probability: 42
+    Fee: 24
+    WasteItem: 11266   # Lead Fragment
+  - Table: Compound_Potion
+    CompoundID: 128
+    Name: 납
+    Comment: 상급 납 3
+    ResLv: 1
+    ResID1: 11269   # Lead
+    ReqID1: 11268   # Pure Lead
+    ReqNum1: 3
+    Probability: 40
+    Fee: 27
+    WasteItem: 11266   # Lead Fragment
+  - Table: Compound_Potion
+    CompoundID: 129
+    Name: 중급 연철
+    Comment: 연철 원석 7
+    ResLv: 1
+    ResID1: 11271   # Impure Soft Iron
+    ReqID1: 11270   # Soft Iron
+    ReqNum1: 7
+    Probability: 42
+    Fee: 30
+    WasteItem: 11270   # Soft Iron
+  - Table: Compound_Potion
+    CompoundID: 130
+    Name: 상급 연철
+    Comment: 중급 연철 5
+    ResLv: 1
+    ResID1: 11272   # Pure Soft Iron
+    ReqID1: 11271   # Impure Soft Iron
+    ReqNum1: 5
+    Probability: 40
+    Fee: 33
+    WasteItem: 11270   # Soft Iron
+  - Table: Compound_Potion
+    CompoundID: 131
+    Name: 연철
+    Comment: 상급 연철 8
+    ResLv: 1
+    ResID1: 11273   # Iron
+    ReqID1: 11272   # Pure Soft Iron
+    ReqNum1: 3
+    Probability: 38
+    Fee: 36
+    WasteItem: 11270   # Soft Iron
+  - Table: Compound_Potion
+    CompoundID: 132
+    Name: 중급 강철
+    Comment: 강철 원석 7
+    ResLv: 1
+    ResID1: 11275   # Impure Steel
+    ReqID1: 11274   # Steel
+    ReqNum1: 7
+    Probability: 40
+    Fee: 39
+    WasteItem: 11274   # Steel
+  - Table: Compound_Potion
+    CompoundID: 133
+    Name: 상급 강철
+    Comment: 중급 강철 5
+    ResLv: 1
+    ResID1: 11276   # Pure Steel
+    ReqID1: 11275   # Impure Steel
+    ReqNum1: 5
+    Probability: 38
+    Fee: 42
+    WasteItem: 11274   # Steel
+  - Table: Compound_Potion
+    CompoundID: 134
+    Name: 강철
+    Comment: 상급 강철 3
+    ResLv: 1
+    ResID1: 11277   # Steel
+    ReqID1: 11276   # Pure Steel
+    ReqNum1: 3
+    Probability: 36
+    Fee: 45
+    WasteItem: 11274   # Steel
+  - Table: Compound_Potion
+    CompoundID: 135
+    Name: 중급 백은
+    Comment: 백은 원석 7
+    ResLv: 1
+    ResID1: 11279   # Impure Silver
+    ReqID1: 11278   # Silver Fragment
+    ReqNum1: 7
+    Probability: 38
+    Fee: 48
+    WasteItem: 11278   # Silver Fragment
+  - Table: Compound_Potion
+    CompoundID: 136
+    Name: 상급 백은
+    Comment: 중급 백은 5
+    ResLv: 1
+    ResID1: 11280   # Pure Silver
+    ReqID1: 11279   # Impure Silver
+    ReqNum1: 5
+    Probability: 36
+    Fee: 51
+    WasteItem: 11278   # Silver Fragment
+  - Table: Compound_Potion
+    CompoundID: 137
+    Name: 백은
+    Comment: 상급 백은 3
+    ResLv: 1
+    ResID1: 11281   # White Silver
+    ReqID1: 11280   # Pure Silver
+    ReqNum1: 3
+    Probability: 34
+    Fee: 54
+    WasteItem: 11278   # Silver Fragment
+  - Table: Compound_Potion
+    CompoundID: 138
+    Name: 중급 탄탈
+    Comment: 탄탈 원석 7
+    ResLv: 1
+    ResID1: 11283   # Impure Tantalum
+    ReqID1: 11282   # Tantalum Fragment
+    ReqNum1: 7
+    Probability: 36
+    Fee: 57
+    WasteItem: 11282   # Tantalum Fragment
+  - Table: Compound_Potion
+    CompoundID: 139
+    Name: 상급 탄탈
+    Comment: 중급 탄탈 5
+    ResLv: 1
+    ResID1: 11284   # Pure Tantalum
+    ReqID1: 11283   # Impure Tantalum
+    ReqNum1: 5
+    Probability: 34
+    Fee: 60
+    WasteItem: 11282   # Tantalum Fragment
+  - Table: Compound_Potion
+    CompoundID: 140
+    Name: 탄탈
+    Comment: 상급 탄탈 3
+    ResLv: 1
+    ResID1: 11285   # Tantalum
+    ReqID1: 11284   # Pure Tantalum
+    ReqNum1: 3
+    Probability: 32
+    Fee: 63
+    WasteItem: 11282   # Tantalum Fragment
+  - Table: Compound_Potion
+    CompoundID: 141
+    Name: 석영 조각
+    Comment: 석영 원석
+    ResLv: 1
+    ResID1: 11291   # Quartz Gem
+    ReqID1: 11290   # Quartz Fragment
+    ReqNum1: 7
+    Probability: 50
+    Fee: 2
+    WasteItem: 11290   # Quartz Fragment
+  - Table: Compound_Potion
+    CompoundID: 142
+    Name: 석영 결정
+    Comment: 석영 조각
+    ResLv: 1
+    ResID1: 11292   # Flawless Quartz
+    ReqID1: 11291   # Quartz Gem
+    ReqNum1: 5
+    Probability: 48
+    Fee: 4
+    WasteItem: 11290   # Quartz Fragment
+  - Table: Compound_Potion
+    CompoundID: 143
+    Name: 석영
+    Comment: 석영 결정
+    ResLv: 1
+    ResID1: 11293   # Quartz
+    ReqID1: 11292   # Flawless Quartz
+    ReqNum1: 3
+    Probability: 46
+    Fee: 6
+    WasteItem: 11290   # Quartz Fragment
+  - Table: Compound_Potion
+    CompoundID: 144
+    Name: 자수정 조각
+    Comment: 자수정 원석
+    ResLv: 1
+    ResID1: 11295   # Amethyst Gem
+    ReqID1: 11294   # Amethyst Fragment
+    ReqNum1: 7
+    Probability: 48
+    Fee: 3
+    WasteItem: 11294   # Amethyst Fragment
+  - Table: Compound_Potion
+    CompoundID: 145
+    Name: 자수정 결정
+    Comment: 자수정 조각
+    ResLv: 1
+    ResID1: 11296   # Flawless Amethyst
+    ReqID1: 11295   # Amethyst Gem
+    ReqNum1: 5
+    Probability: 46
+    Fee: 6
+    WasteItem: 11294   # Amethyst Fragment
+  - Table: Compound_Potion
+    CompoundID: 146
+    Name: 자수정
+    Comment: 자수정 결정
+    ResLv: 1
+    ResID1: 11297   # Amethyst
+    ReqID1: 11296   # Flawless Amethyst
+    ReqNum1: 3
+    Probability: 44
+    Fee: 9
+    WasteItem: 11294   # Amethyst Fragment
+  - Table: Compound_Potion
+    CompoundID: 147
+    Name: 마노 조각
+    Comment: 마노 원석
+    ResLv: 1
+    ResID1: 11299   # Agate Gem
+    ReqID1: 11298   # Agate Fragment
+    ReqNum1: 7
+    Probability: 46
+    Fee: 12
+    WasteItem: 11298   # Agate Fragment
+  - Table: Compound_Potion
+    CompoundID: 148
+    Name: 마노 결정
+    Comment: 마노 조각
+    ResLv: 1
+    ResID1: 11300   # Flawless Agate
+    ReqID1: 11299   # Agate Gem
+    ReqNum1: 5
+    Probability: 44
+    Fee: 15
+    WasteItem: 11298   # Agate Fragment
+  - Table: Compound_Potion
+    CompoundID: 149
+    Name: 마노
+    Comment: 마노 결정
+    ResLv: 1
+    ResID1: 11301   # Agate
+    ReqID1: 11300   # Flawless Agate
+    ReqNum1: 3
+    Probability: 42
+    Fee: 18
+    WasteItem: 11298   # Agate Fragment
+  - Table: Compound_Potion
+    CompoundID: 150
+    Name: 벽옥 조각
+    Comment: 벽옥 원석
+    ResLv: 1
+    ResID1: 11303   # Jasper Gem
+    ReqID1: 11302   # Jasper Fragment
+    ReqNum1: 7
+    Probability: 44
+    Fee: 21
+    WasteItem: 11302   # Jasper Fragment
+  - Table: Compound_Potion
+    CompoundID: 151
+    Name: 벽옥 결정
+    Comment: 벽옥 조각
+    ResLv: 1
+    ResID1: 11304   # Flawless Jasper
+    ReqID1: 11303   # Jasper Gem
+    ReqNum1: 5
+    Probability: 42
+    Fee: 24
+    WasteItem: 11302   # Jasper Fragment
+  - Table: Compound_Potion
+    CompoundID: 152
+    Name: 벽옥
+    Comment: 벽옥 결정
+    ResLv: 1
+    ResID1: 11305   # Jasper
+    ReqID1: 11304   # Flawless Jasper
+    ReqNum1: 3
+    Probability: 40
+    Fee: 27
+    WasteItem: 11302   # Jasper Fragment
+  - Table: Compound_Potion
+    CompoundID: 153
+    Name: 묘안석 조각
+    Comment: 묘안석 원석
+    ResLv: 1
+    ResID1: 11307   # Cat's Eye Gem
+    ReqID1: 11306   # Cat's Eye Fragment
+    ReqNum1: 7
+    Probability: 42
+    Fee: 30
+    WasteItem: 11306   # Cat's Eye Fragment
+  - Table: Compound_Potion
+    CompoundID: 154
+    Name: 묘안석 결정
+    Comment: 묘안석 조각
+    ResLv: 1
+    ResID1: 11308   # Flawless Cat's Eye
+    ReqID1: 11307   # Cat's Eye Gem
+    ReqNum1: 5
+    Probability: 40
+    Fee: 33
+    WasteItem: 11306   # Cat's Eye Fragment
+  - Table: Compound_Potion
+    CompoundID: 155
+    Name: 묘안석
+    Comment: 묘안석 결정
+    ResLv: 1
+    ResID1: 11309   # Cat's Eye
+    ReqID1: 11308   # Flawless Cat's Eye
+    ReqNum1: 3
+    Probability: 38
+    Fee: 36
+    WasteItem: 11306   # Cat's Eye Fragment
+  - Table: Compound_Potion
+    CompoundID: 156
+    Name: 쿤차이트 조각
+    Comment: 쿤차이트 원석
+    ResLv: 1
+    ResID1: 11311   # Kunzite Gem
+    ReqID1: 11310   # Kunzite Fragment
+    ReqNum1: 7
+    Probability: 40
+    Fee: 39
+    WasteItem: 11310   # Kunzite Fragment
+  - Table: Compound_Potion
+    CompoundID: 157
+    Name: 쿤차이트 결정
+    Comment: 쿤차이트 조각
+    ResLv: 1
+    ResID1: 11312   # Flawless Kunzite
+    ReqID1: 11311   # Kunzite Gem
+    ReqNum1: 5
+    Probability: 38
+    Fee: 42
+    WasteItem: 11310   # Kunzite Fragment
+  - Table: Compound_Potion
+    CompoundID: 158
+    Name: 쿤차이트
+    Comment: 쿤차이트 결정
+    ResLv: 1
+    ResID1: 11313   # Kunzite
+    ReqID1: 11312   # Flawless Kunzite
+    ReqNum1: 3
+    Probability: 36
+    Fee: 45
+    WasteItem: 11310   # Kunzite Fragment
+  - Table: Compound_Potion
+    CompoundID: 159
+    Name: 터키석 조각
+    Comment: 터키석 원석
+    ResLv: 1
+    ResID1: 11315   # Turquoise Gem
+    ReqID1: 11314   # Turquoise Fragment
+    ReqNum1: 7
+    Probability: 38
+    Fee: 48
+    WasteItem: 11314   # Turquoise Fragment
+  - Table: Compound_Potion
+    CompoundID: 160
+    Name: 터키석 결정
+    Comment: 터키석 조각
+    ResLv: 1
+    ResID1: 11316   # Flawless Turquoise
+    ReqID1: 11315   # Turquoise Gem
+    ReqNum1: 5
+    Probability: 36
+    Fee: 51
+    WasteItem: 11314   # Turquoise Fragment
+  - Table: Compound_Potion
+    CompoundID: 161
+    Name: 터키석
+    Comment: 터키석 결정
+    ResLv: 1
+    ResID1: 11317   # Turquoise
+    ReqID1: 11316   # Flawless Turquoise
+    ReqNum1: 3
+    Probability: 34
+    Fee: 54
+    WasteItem: 11314   # Turquoise Fragment
+  - Table: Compound_Potion
+    CompoundID: 162
+    Name: 오팔 조각
+    Comment: 오팔 원석
+    ResLv: 1
+    ResID1: 11319   # Opal Gem
+    ReqID1: 11318   # Opal Fragment
+    ReqNum1: 7
+    Probability: 36
+    Fee: 57
+    WasteItem: 11318   # Opal Fragment
+  - Table: Compound_Potion
+    CompoundID: 163
+    Name: 오팔 결정
+    Comment: 오팔 조각
+    ResLv: 1
+    ResID1: 11320   # Flawless Opal
+    ReqID1: 11319   # Opal Gem
+    ReqNum1: 5
+    Probability: 34
+    Fee: 60
+    WasteItem: 11318   # Opal Fragment
+  - Table: Compound_Potion
+    CompoundID: 164
+    Name: 오팔
+    Comment: 오팔 결정
+    ResLv: 1
+    ResID1: 11321   # Opal
+    ReqID1: 11320   # Flawless Opal
+    ReqNum1: 3
+    Probability: 32
+    Fee: 63
+    WasteItem: 11318   # Opal Fragment
+  - Table: Compound_Potion
+    CompoundID: 168
+    Name: 신비한 연필
+    Comment: 연필(5) + 라피스라즐리(5)
+    ResLv: 1
+    ResID1: 11533   # 신비한 연필
+    ReqID1: 11532   # 연필
+    ReqNum1: 5
+    ReqID2: 1001   # Lapis Lazuli
+    ReqNum2: 5
+    Probability: 35
+    Fee: 10
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 169
+    Name: 마음이 담긴 종이
+    Comment: 심장석(2) + 종이(5)
+    ResLv: 1
+    ResID1: 11534   # 마음이 담긴 종이
+    ReqID1: 11531   # 심장석
+    ReqNum1: 2
+    ReqID2: 11093   # Paper
+    ReqNum2: 5
+    Probability: 45
+    Fee: 10
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 170
+    Name: 꿀차
+    Comment: 벌꿀(1) + 로얄제리(2) + 증류수(2)
+    ResLv: 1
+    ResID1: 11592   # Honey Tea
+    ReqID1: 10101   # Honey
+    ReqNum1: 1
+    ReqID2: 10302   # Royal jelly
+    ReqNum2: 2
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 2
+    Probability: 40
+    Fee: 5
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 179
+    Name: 마녀의 신비 묘약 A
+    Comment: 두꺼비 알1 + 신비버섯1 + 증류수1
+    ResLv: 1
+    ResID1: 2013   # Witch's Mysterious Elixir A
+    ReqID1: 11738   # 두꺼비 알
+    ReqNum1: 1
+    ReqID2: 11740   # 신비버섯
+    ReqNum2: 1
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 1
+    Probability: 45
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 180
+    Name: 마녀의 신비 묘약 B
+    Comment: 낙지다리1 + 신비버섯1 + 증류수1
+    ResLv: 1
+    ResID1: 2213   # Witch's Mysterious Elixir B
+    ReqID1: 11737   # 낙지다리
+    ReqNum1: 1
+    ReqID2: 11740   # 신비버섯
+    ReqNum2: 1
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 1
+    Probability: 45
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 181
+    Name: 다크 초콜릿덩이
+    Comment: 카카오(2) + 신비의 우유(1)
+    ResLv: 1
+    ResID1: 11727   # Dark Choco Piece
+    ReqID1: 11719   # Cacao
+    ReqNum1: 2
+    ReqID2: 11728   # Mysterious Milk
+    ReqNum2: 1
+    Probability: 40
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 182
+    Name: 달콤한 레몬에이드
+    Comment: 달콤한 레몬(1) + 반짝이는 물(1) + 포션빈병(1)
+    ResLv: 1
+    ResID1: 2014   # Sweet Lemonade
+    ReqID1: 11749   # Sweet Lemon
+    ReqNum1: 1
+    ReqID2: 11751   # Sparkling Water
+    ReqNum2: 1
+    ReqID3: 11014   # Empty Potion Bottle
+    ReqNum3: 1
+    Probability: 45
+    Fee: 50
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 183
+    Name: 상큼한 레몬에이드
+    Comment: 상큼한 레몬(1) + 반짝이는 물(1) + 포션 빈병(1)
+    ResLv: 1
+    ResID1: 2214   # Refreshing Lemonade
+    ReqID1: 11750   # Fresh Lemon
+    ReqNum1: 1
+    ReqID2: 11751   # Sparkling Water
+    ReqNum2: 1
+    ReqID3: 11014   # Empty Potion Bottle
+    ReqNum3: 1
+    Probability: 45
+    Fee: 50
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 185
+    Name: 기적의 물약
+    Comment: 인삼(3) + 회복의 물(1)
+    ResLv: 1
+    ResID1: 11769   # Miracle Potion
+    ReqID1: 11485   # Ginseng
+    ReqNum1: 3
+    ReqID2: 11082   # Replenishing Water
+    ReqNum2: 1
+    Probability: 50
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 190
+    Name: 완전한 회복물약
+    Comment: 인삼(1), 약한 회복물약(1)
+    ResLv: 1
+    ResID1: 11824   # Drug Rehabilitation high quality
+    ReqID1: 11485   # Ginseng
+    ReqNum1: 1
+    ReqID2: 11823   # Drug rehabilitation weakly
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 191
+    Name: 사막의 포션
+    Comment: 사막의 생명수+포션 빈병+증류수
+    ResLv: 1
+    ResID1: 11899   # Desert Potion
+    ReqID1: 11858   # Oasis Water
+    ReqNum1: 1
+    ReqID2: 11084   # Distilled Water
+    ReqNum2: 1
+    ReqID3: 11014   # Empty Potion Bottle
+    ReqNum3: 1
+    Probability: 45
+    Fee: 3
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 192
+    Name: 까발라 원두커피
+    Comment: 커피원두(2) + 증류수(1) + 포션빈병(1)
+    ResLv: 40
+    ResID1: 2021   # Caballa Coffee
+    ReqID1: 10072   # Coffee beans
+    ReqNum1: 2
+    ReqID2: 11084   # Distilled Water
+    ReqNum2: 1
+    ReqID3: 11014   # Empty Potion Bottle
+    ReqNum3: 1
+    Probability: 45
+    Fee: 1000
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 196
+    Name: 인삼차
+    Comment: 인삼(2) + 벌꿀(1) + 증류수(1)
+    ResLv: 1
+    ResID1: 63002   # Ginseng Tea
+    ReqID1: 11485   # Ginseng
+    ReqNum1: 2
+    ReqID2: 10101   # Honey
+    ReqNum2: 1
+    ReqID3: 11084   # Distilled Water
+    ReqNum3: 1
+    Probability: 45
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 197
+    Name: 투명약
+    Comment: 하르콘조각(1) + 초강력 콩깍지(1) + 요정술 (1)
+    ResLv: 1
+    ResID1: 63006   # Transparent Medicine
+    ReqID1: 11999   # Harkon Shard
+    ReqNum1: 1
+    ReqID2: 63007   # Super Bean Shell
+    ReqNum2: 2
+    ReqID3: 63003   # Fairy's Drink
+    ReqNum3: 1
+    Probability: 45
+    Fee: 100
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 202
+    Name: 중급 휘안석
+    Comment: 휘안 원석
+    ResLv: 1
+    ResID1: 63188   # Impure Stibnite
+    ReqID1: 63187   # Stibnite Fragment
+    ReqNum1: 7
+    Probability: 34
+    Fee: 66
+    WasteItem: 63187   # Stibnite Fragment
+  - Table: Compound_Potion
+    CompoundID: 203
+    Name: 상급 휘안석
+    Comment: 중급 휘안석
+    ResLv: 1
+    ResID1: 63189   # Pure Stibnite
+    ReqID1: 63188   # Impure Stibnite
+    ReqNum1: 5
+    Probability: 32
+    Fee: 69
+    WasteItem: 63187   # Stibnite Fragment
+  - Table: Compound_Potion
+    CompoundID: 204
+    Name: 휘안석
+    Comment: 상급 휘안석
+    ResLv: 1
+    ResID1: 63190   # Stibnite
+    ReqID1: 63189   # Pure Stibnite
+    ReqNum1: 3
+    Probability: 30
+    Fee: 72
+    WasteItem: 63187   # Stibnite Fragment
+  - Table: Compound_Potion
+    CompoundID: 205
+    Name: 중급 오케나이트
+    Comment: 오케나이트 원석
+    ResLv: 1
+    ResID1: 63192   # Impure Okenite
+    ReqID1: 63191   # Okenite Fragment
+    ReqNum1: 7
+    Probability: 32
+    Fee: 75
+    WasteItem: 63191   # Okenite Fragment
+  - Table: Compound_Potion
+    CompoundID: 206
+    Name: 상급 오케나이트
+    Comment: 중급 오케나이트
+    ResLv: 1
+    ResID1: 63193   # Pure Okenite
+    ReqID1: 63192   # Impure Okenite
+    ReqNum1: 5
+    Probability: 30
+    Fee: 78
+    WasteItem: 63191   # Okenite Fragment
+  - Table: Compound_Potion
+    CompoundID: 207
+    Name: 오케나이트
+    Comment: 상급 오케나이트
+    ResLv: 1
+    ResID1: 63194   # Okenite
+    ReqID1: 63193   # Pure Okenite
+    ReqNum1: 3
+    Probability: 28
+    Fee: 81
+    WasteItem: 63191   # Okenite Fragment
+  - Table: Compound_Potion
+    CompoundID: 208
+    Name: 중급 스콜레사이트
+    Comment: 스콜레사이트 원석
+    ResLv: 1
+    ResID1: 63196   # Impure Scolecite
+    ReqID1: 63195   # Scolecite Fragment
+    ReqNum1: 7
+    Probability: 30
+    Fee: 84
+    WasteItem: 63195   # Scolecite Fragment
+  - Table: Compound_Potion
+    CompoundID: 209
+    Name: 상급 스콜레사이트
+    Comment: 중급 스콜레사이트
+    ResLv: 1
+    ResID1: 63197   # Pure Scolecite
+    ReqID1: 63196   # Impure Scolecite
+    ReqNum1: 5
+    Probability: 28
+    Fee: 87
+    WasteItem: 63195   # Scolecite Fragment
+  - Table: Compound_Potion
+    CompoundID: 210
+    Name: 스콜레사이트
+    Comment: 상급 휘안석
+    ResLv: 1
+    ResID1: 63198   # Scolecite
+    ReqID1: 63197   # Pure Scolecite
+    ReqNum1: 3
+    Probability: 26
+    Fee: 90
+    WasteItem: 63195   # Scolecite Fragment
+  - Table: Compound_Potion
+    CompoundID: 211
+    Name: 스피넬 조각
+    Comment: 스피넬 원석
+    ResLv: 1
+    ResID1: 63202   # Spinel Gem
+    ReqID1: 63201   # Spinel Fragment
+    ReqNum1: 7
+    Probability: 34
+    Fee: 66
+    WasteItem: 63201   # Spinel Fragment
+  - Table: Compound_Potion
+    CompoundID: 212
+    Name: 스피넬 결정
+    Comment: 스피넬 조각
+    ResLv: 1
+    ResID1: 63203   # Flawless Spinel
+    ReqID1: 63202   # Spinel Gem
+    ReqNum1: 5
+    Probability: 32
+    Fee: 69
+    WasteItem: 63201   # Spinel Fragment
+  - Table: Compound_Potion
+    CompoundID: 213
+    Name: 스피넬
+    Comment: 스피넬 결정
+    ResLv: 1
+    ResID1: 63204   # Spinel
+    ReqID1: 63203   # Flawless Spinel
+    ReqNum1: 3
+    Probability: 30
+    Fee: 72
+    WasteItem: 63201   # Spinel Fragment
+  - Table: Compound_Potion
+    CompoundID: 214
+    Name: 히아신스 조각
+    Comment: 히아신스 원석
+    ResLv: 1
+    ResID1: 63206   # Hyacinth Gem
+    ReqID1: 63205   # Hyacinth Fragment
+    ReqNum1: 7
+    Probability: 32
+    Fee: 75
+    WasteItem: 63205   # Hyacinth Fragment
+  - Table: Compound_Potion
+    CompoundID: 215
+    Name: 히아신스 결정
+    Comment: 히아신스 조각
+    ResLv: 1
+    ResID1: 63207   # Flawless Hyacinth
+    ReqID1: 63206   # Hyacinth Gem
+    ReqNum1: 5
+    Probability: 30
+    Fee: 78
+    WasteItem: 63205   # Hyacinth Fragment
+  - Table: Compound_Potion
+    CompoundID: 216
+    Name: 히아신스
+    Comment: 히아신스 결정
+    ResLv: 1
+    ResID1: 63208   # Hyacinth
+    ReqID1: 63207   # Flawless Hyacinth
+    ReqNum1: 3
+    Probability: 28
+    Fee: 81
+    WasteItem: 63205   # Hyacinth Fragment
+  - Table: Compound_Potion
+    CompoundID: 217
+    Name: 규공작석 조각
+    Comment: 규공작석 원석
+    ResLv: 1
+    ResID1: 63210   # Chrysocolla Gem
+    ReqID1: 63209   # Chrysocolla Fragment
+    ReqNum1: 7
+    Probability: 30
+    Fee: 84
+    WasteItem: 63209   # Chrysocolla Fragment
+  - Table: Compound_Potion
+    CompoundID: 218
+    Name: 규공작석 결정
+    Comment: 규공작석 조각
+    ResLv: 1
+    ResID1: 63211   # Flawless Chrysocolla
+    ReqID1: 63210   # Chrysocolla Gem
+    ReqNum1: 5
+    Probability: 28
+    Fee: 87
+    WasteItem: 63209   # Chrysocolla Fragment
+  - Table: Compound_Potion
+    CompoundID: 219
+    Name: 규공작석
+    Comment: 규공작석 결정
+    ResLv: 1
+    ResID1: 63212   # Chrysocolla
+    ReqID1: 63211   # Flawless Chrysocolla
+    ReqNum1: 3
+    Probability: 26
+    Fee: 90
+    WasteItem: 63209   # Chrysocolla Fragment
+  - Table: Compound_Potion
+    CompoundID: 220
+    Name: 몸살약
+    Comment: 불로초5개+한방포션1개
+    ResLv: 1
+    ResID1: 63437   # Fatigue Medicine
+    ReqID1: 11746   # Panacea
+    ReqNum1: 5
+    ReqID2: 2003   # Herb Potion
+    ReqNum2: 1
+    Probability: 30
+    Fee: 8850
+    WasteItem: 2000   # Pink Potion A
+  - Table: Compound_Potion
+    CompoundID: 221
+    Name: 포푸리 장인 지팡이 Neo
+    Comment: 포푸리 지팡이 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 40167   # Poppuri Artisan Staff Neo
+    ReqID1: 40154   # Handmade Poppuri Staff Neo
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Potion
+    CompoundID: 222
+    Name: 포푸리 장인 단도 Neo
+    Comment: 포푸리수제 단도 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 40166   # Artisan Poppuri Dagger Neo
+    ReqID1: 40153   # Handmade Poppuri Dagger Neo
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Potion
+    CompoundID: 223
+    Name: 포푸리 장인 두건 Neo
+    Comment: 포푸리수제 두건 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 44119   # Artisan Poppuri Bandana Neo
+    ReqID1: 44107   # Handmade Poppuri Bandana Neo
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Potion
+    CompoundID: 224
+    Name: 포푸리 장인 투구 Neo
+    Comment: 포푸리수제 투구 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 44118   # Artisan Poppuri Helmet Neo
+    ReqID1: 44106   # Handmade Poppuri Helmet Neo
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Potion
+    CompoundID: 225
+    Name: 곰탕
+    Comment: 곰발바닥(1) + 한방포션(1) + 에델바이스(1)
+    ResLv: 1
+    ResID1: 63649   # Bear Stew
+    ReqID1: 10096   # Bear paw
+    ReqNum1: 1
+    ReqID2: 2003   # Herb Potion
+    ReqNum2: 1
+    ReqID3: 11161   # Edelweiss
+    ReqNum3: 1
+    Probability: 30
+    Fee: 1000
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 229
+    Name: 고백의 초콜렛
+    Comment: 카카오 50%(5) + 부드러운 생크림(5)
+    ResLv: 1
+    ResID1: 65109   # 고백의 초콜렛
+    ReqID1: 65103   # 50% Dark Choco
+    ReqNum1: 5
+    ReqID2: 65104   # Soft Whipped Cream
+    ReqNum2: 5
+    Probability: 40
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 230
+    Name: 고급성냥
+    Comment: 마른 나뭇가지(2) + 발화연소제(1)
+    ResLv: 1
+    ResID1: 63813   # Long Lasting Matchsticks
+    ReqID1: 63746   # Dry wood
+    ReqNum1: 2
+    ReqID2: 10520   # Phosphorus Paste
+    ReqNum2: 1
+    Probability: 30
+    Fee: 1000
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 231
+    Name: 아메리카노
+    Comment: 커피원두(1) + 머그컵(1)
+    ResLv: 1
+    ResID1: 63848   # Americano
+    ReqID1: 10072   # Coffee beans
+    ReqNum1: 1
+    ReqID2: 63845   # Company Mug
+    ReqNum2: 1
+    Probability: 30
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 232
+    Name: 다방커피
+    Comment: 커피믹서(1) + 머그컵(1)
+    ResLv: 1
+    ResID1: 63846   # Cappuccino
+    ReqID1: 63841   # Instant Coffee
+    ReqNum1: 1
+    ReqID2: 63845   # Company Mug
+    ReqNum2: 1
+    Probability: 30
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 233
+    Name: 녹차
+    Comment: 녹차티백(1) + 머그컵(1)
+    ResLv: 1
+    ResID1: 63847   # Green Tea
+    ReqID1: 63842   # Green Tea Bag
+    ReqNum1: 1
+    ReqID2: 63845   # Company Mug
+    ReqNum2: 1
+    Probability: 30
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 234
+    Name: 끓인 컵라면
+    Comment: 컵라면(1) + 나무 젓가락(1)
+    ResLv: 1
+    ResID1: 63839   # Hot Cup Noodles
+    ReqID1: 63869   # Cup Noodles
+    ReqNum1: 1
+    ReqID2: 63840   # Wooden Chopsticks
+    ReqNum2: 1
+    Probability: 30
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 235
+    Name: 솜사탕
+    Comment: 설탕(2) + 나무젓가락(1)
+    ResLv: 1
+    ResID1: 63917   # Cotton Candy
+    ReqID1: 65168   # Sugar
+    ReqNum1: 2
+    ReqID2: 65169   # Chopstick
+    ReqNum2: 1
+    Probability: 40
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 236
+    Name: 망사 1야드
+    Comment: 방직 거미줄 3개
+    ResLv: 1
+    ResID1: 63918   # Yard of Fabric
+    ReqID1: 63919   # Silk Webbing
+    ReqNum1: 3
+    Probability: 35
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 237
+    Name: 니케리움
+    Comment: 니케리움 조각(5)
+    ResLv: 1
+    ResID1: 63923   # Nikarium
+    ReqID1: 63925   # Nikarium Fragment
+    ReqNum1: 5
+    Probability: 40
+    Fee: 10000
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 238
+    Name: 생선 구이
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2033   # Roasted Fish
+    ReqID1: 63929   # Glazing Sauce
+    ReqNum1: 1
+    ReqID2: 11813   # Salt
+    ReqNum2: 1
+    ReqID3: 64072   # Frozen Fish
+    ReqNum3: 1
+    Probability: 49
+    Fee: 50
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 239
+    Name: 달콤 경단꼬치
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2233   # Sweet Dango
+    ReqID1: 63929   # Glazing Sauce
+    ReqNum1: 1
+    ReqID2: 10046   # Clam meat
+    ReqNum2: 1
+    ReqID3: 10101   # Honey
+    ReqNum3: 1
+    Probability: 49
+    Fee: 50
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 240
+    Name: 사과 사탕
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2034   # Candied Apple
+    ReqID1: 63929   # Glazing Sauce
+    ReqNum1: 1
+    ReqID2: 10101   # Honey
+    ReqNum2: 1
+    ReqID3: 10302   # Royal jelly
+    ReqNum3: 1
+    Probability: 47
+    Fee: 80
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 241
+    Name: 큰 잎 쌈밥
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2234   # Rice Wrap
+    ReqID1: 63929   # Glazing Sauce
+    ReqNum1: 1
+    ReqID2: 10411   # Millet
+    ReqNum2: 1
+    ReqID3: 10437   # Popo's leaflet
+    ReqNum3: 1
+    Probability: 47
+    Fee: 80
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 242
+    Name: 큰 잎 쌈떡
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2035   # Rice Cake Wrap
+    ReqID1: 63928   # Blue Sauce
+    ReqNum1: 1
+    ReqID2: 10437   # Popo's leaflet
+    ReqNum2: 1
+    ReqID3: 11326   # Rice Flour
+    ReqNum3: 1
+    Probability: 45
+    Fee: 110
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 243
+    Name: 경단
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2235   # Dango
+    ReqID1: 63928   # Blue Sauce
+    ReqNum1: 1
+    ReqID2: 11326   # Rice Flour
+    ReqNum2: 1
+    ReqID3: 11559   # Red Bean
+    ReqNum3: 1
+    Probability: 45
+    Fee: 110
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 244
+    Name: 삼딸기 요리
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2036   # Ginseng Strawberry
+    ReqID1: 63928   # Blue Sauce
+    ReqNum1: 1
+    ReqID2: 11484   # Strawberry
+    ReqNum2: 1
+    ReqID3: 64173   # Pretty Ginseng
+    ReqNum3: 1
+    ReqID4: 10101   # Honey
+    ReqNum4: 1
+    Probability: 43
+    Fee: 140
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 245
+    Name: 타코야키
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2236   # Takoyaki
+    ReqID1: 63928   # Blue Sauce
+    ReqNum1: 1
+    ReqID2: 10001   # Octopus Legs
+    ReqNum2: 1
+    ReqID3: 11486   # Flour
+    ReqNum3: 1
+    ReqID4: 11752   # Secret Spices
+    ReqNum4: 1
+    Probability: 43
+    Fee: 140
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 246
+    Name: 망고 파르페
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2037   # Mango Parfait
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 11556   # Mango
+    ReqNum2: 1
+    ReqID3: 11555   # Ice
+    ReqNum3: 1
+    ReqID4: 10303   # Biscuit
+    ReqNum4: 1
+    Probability: 41
+    Fee: 170
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 247
+    Name: 키위 파르페
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2237   # Kiwi Parfait
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 11557   # Kiwi
+    ReqNum2: 1
+    ReqID3: 11555   # Ice
+    ReqNum3: 1
+    ReqID4: 10303   # Biscuit
+    ReqNum4: 1
+    Probability: 41
+    Fee: 170
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 248
+    Name: 수박 파르페
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2038   # Watermelon Parfait
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 11558   # Watermelon
+    ReqNum2: 1
+    ReqID3: 11555   # Ice
+    ReqNum3: 1
+    ReqID4: 10303   # Biscuit
+    ReqNum4: 1
+    Probability: 39
+    Fee: 200
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 249
+    Name: 팥 파르페
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2238   # Red Bean Parfait
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 11559   # Red Bean
+    ReqNum2: 1
+    ReqID3: 11555   # Ice
+    ReqNum3: 1
+    ReqID4: 10303   # Biscuit
+    ReqNum4: 1
+    Probability: 39
+    Fee: 200
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 250
+    Name: 꽃 화채
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2039   # Flower Punch
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 10221   # Cool Spring Water
+    ReqNum2: 1
+    ReqID3: 64071   # Pink Petal
+    ReqNum3: 1
+    ReqID4: 10302   # Royal jelly
+    ReqNum4: 1
+    Probability: 37
+    Fee: 230
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 251
+    Name: 꽃 찹살떡
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2239   # Flower Rice Cake
+    ReqID1: 63930   # Green Sauce
+    ReqNum1: 1
+    ReqID2: 10437   # Popo's leaflet
+    ReqNum2: 1
+    ReqID3: 64071   # Pink Petal
+    ReqNum3: 1
+    ReqID4: 11559   # Red Bean
+    ReqNum4: 1
+    Probability: 37
+    Fee: 230
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 252
+    Name: 물만두
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2040   # Water Dumpling
+    ReqID1: 63926   # White Sauce
+    ReqNum1: 1
+    ReqID2: 11326   # Rice Flour
+    ReqNum2: 1
+    ReqID3: 11516   # Pea
+    ReqNum3: 1
+    ReqID4: 10046   # Clam meat
+    ReqNum4: 1
+    Probability: 35
+    Fee: 260
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 253
+    Name: 해물 군만두
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2240   # Seafood Fried Dumpling
+    ReqID1: 63926   # White Sauce
+    ReqNum1: 1
+    ReqID2: 11328   # Mung Bean
+    ReqNum2: 1
+    ReqID3: 11515   # Carrot
+    ReqNum3: 1
+    ReqID4: 10201   # pincers
+    ReqNum4: 1
+    Probability: 35
+    Fee: 260
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 254
+    Name: 초코말이 요리
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2041   # Chocolate Roll
+    ReqID1: 63926   # White Sauce
+    ReqNum1: 1
+    ReqID2: 11428   # Good Cocoa Powder
+    ReqNum2: 1
+    ReqID3: 10222   # Ironclad turtle's egg
+    ReqNum3: 1
+    ReqID4: 10010   # Boiled corn
+    ReqNum4: 1
+    Probability: 33
+    Fee: 290
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 255
+    Name: 볶음 국수
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2241   # Pan Fried Noodle
+    ReqID1: 63926   # White Sauce
+    ReqNum1: 1
+    ReqID2: 11486   # Flour
+    ReqNum2: 1
+    ReqID3: 64071   # Pink Petal
+    ReqNum3: 1
+    ReqID4: 10000   # Scorpion Jerky
+    ReqNum4: 1
+    Probability: 33
+    Fee: 290
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 256
+    Name: 고기 덮밥
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2042   # Beef Rice Bowl
+    ReqID1: 63927   # Red Sauce
+    ReqNum1: 1
+    ReqID2: 11515   # Carrot
+    ReqNum2: 1
+    ReqID3: 64071   # Pink Petal
+    ReqNum3: 1
+    ReqID4: 11328   # Mung Bean
+    ReqNum4: 1
+    Probability: 31
+    Fee: 320
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 257
+    Name: 문어 볶음
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2242   # Pan Fried Octopus
+    ReqID1: 63927   # Red Sauce
+    ReqNum1: 1
+    ReqID2: 10001   # Octopus Legs
+    ReqNum2: 1
+    ReqID3: 11486   # Flour
+    ReqNum3: 1
+    ReqID4: 11057   # Premium liquor
+    ReqNum4: 1
+    Probability: 31
+    Fee: 320
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 258
+    Name: 야채 덮밥
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2043   # Vegetable Rice Bowl
+    ReqID1: 63927   # Red Sauce
+    ReqNum1: 1
+    ReqID2: 11516   # Pea
+    ReqNum2: 1
+    ReqID3: 11327   # Sesame
+    ReqNum3: 1
+    ReqID4: 10412   # Ginseng Root
+    ReqNum4: 1
+    ReqID5: 10302   # Royal jelly
+    ReqNum5: 1
+    Probability: 29
+    Fee: 350
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 259
+    Name: 김치
+    Comment: 서프라이즈 스팟 포션
+    ResLv: 1
+    ResID1: 2243   # Kimchi
+    ReqID1: 63927   # Red Sauce
+    ReqNum1: 1
+    ReqID2: 11748   # Cabbage
+    ReqNum2: 1
+    ReqID3: 10011   # Thick Radish
+    ReqNum3: 1
+    ReqID4: 11813   # Salt
+    ReqNum4: 1
+    ReqID5: 11782   # Red Pepper
+    ReqNum5: 1
+    Probability: 29
+    Fee: 350
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 261
+    Name: 마늘버터 팝콘
+    Comment: 마른 옥수수(1)+마늘(1)+버터(1)
+    ResLv: 1
+    ResID1: 2051   # Garlic Butter Popcorn
+    ReqID1: 64205   # 마른 옥수수
+    ReqNum1: 1
+    ReqID2: 64236   # Garlic
+    ReqNum2: 1
+    ReqID3: 64237   # Butter
+    ReqNum3: 1
+    Probability: 20
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 262
+    Name: 카라멜 팝콘
+    Comment: 마른 옥수수(1)+카라멜
+    ResLv: 1
+    ResID1: 2251   # Caramel Popcorn
+    ReqID1: 64205   # 마른 옥수수
+    ReqNum1: 1
+    ReqID2: 64238   # Caramel Syrup
+    ReqNum2: 1
+    Probability: 20
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 263
+    Name: 츄러스
+    Comment: 박력분(1)+계란(1)+설탕(1)
+    ResLv: 1
+    ResID1: 2053   # Churros
+    ReqID1: 64239   # Cake Flour
+    ReqNum1: 1
+    ReqID2: 64242   # Grade AA Egg
+    ReqNum2: 1
+    ReqID3: 65168   # Sugar
+    ReqNum3: 1
+    Probability: 20
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 264
+    Name: 딸기 솜사탕
+    Comment: 설탕(1)+딸기향(1)
+    ResLv: 1
+    ResID1: 2052   # Strawberry Cotton Candy
+    ReqID1: 65168   # Sugar
+    ReqNum1: 1
+    ReqID2: 64240   # Strawberry Sugar
+    ReqNum2: 1
+    Probability: 20
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 265
+    Name: 민트 솜사탕
+    Comment: 설탕(1)+민트향(1)
+    ResLv: 1
+    ResID1: 2252   # Mint Cotton Candy
+    ReqID1: 65168   # Sugar
+    ReqNum1: 1
+    ReqID2: 64241   # Mint Sugar
+    ReqNum2: 1
+    Probability: 20
+    Fee: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 266
+    Name: 바위의 표식
+    Comment: 낡은 표식(1)+향 찌꺼기(1)
+    ResLv: 1
+    ResID1: 63912   # Rune Stone
+    ReqID1: 63911   # Worn Magical Rune
+    ReqNum1: 1
+    ReqID2: 10602   # Incense Remnants
+    ReqNum2: 1
+    Probability: 20
+    Fee: 100
+    WasteItem: 10602   # Incense Remnants
+  - Table: Compound_Potion
+    CompoundID: 267
+    Name: 슈퍼 건강 음료
+    Comment: 허니레몬(1), 벌꿀(1), 고려 인삼(1), 영양 버섯(1)
+    ResLv: 1
+    ResID1: 65344
+    ReqID1: 11749   # Sweet Lemon
+    ReqNum1: 1
+    ReqID2: 10101   # Honey
+    ReqNum2: 1
+    ReqID3: 11485   # Ginseng
+    ReqNum3: 1
+    ReqID4: 10444   # Nutritious mushroom
+    ReqNum4: 1
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 268
+    Name: 순백의 비단
+    Comment: 순백의 비단실(5)
+    ResLv: 30
+    ResID1: 65359   # Pure White Silk
+    ReqID1: 64272   # Pure Silk Thread
+    ReqNum1: 5
+    Probability: 30
+    Fee: 1000
+    WasteItem: 64272   # Pure Silk Thread
+  - Table: Compound_Potion
+    CompoundID: 269
+    Name: 매력의 비단
+    Comment: 매력의 비단실(5)
+    ResLv: 30
+    ResID1: 64274   # Charming Black Silk
+    ReqID1: 64273   # Charming Silk Thread
+    ReqNum1: 5
+    Probability: 30
+    Fee: 1000
+    WasteItem: 64273   # Charming Silk Thread
+  - Table: Compound_Potion
+    CompoundID: 270
+    Name: 영원의 금속
+    Comment: 영원의 원석(5)
+    ResLv: 30
+    ResID1: 65360   # Eternium
+    ReqID1: 65362   # Eternium Ore
+    ReqNum1: 5
+    Probability: 30
+    Fee: 1000
+    WasteItem: 65362   # Eternium Ore
+  - Table: Compound_Potion
+    CompoundID: 271
+    Name: 약속의 금속
+    Comment: 약속의 원석(5)
+    ResLv: 30
+    ResID1: 65361   # Consentium
+    ReqID1: 65363   # Consentium Ore
+    ReqNum1: 5
+    Probability: 30
+    Fee: 1000
+    WasteItem: 65363   # Consentium Ore
+  - Table: Compound_Potion
+    CompoundID: 279
+    Name: 포푸리 장인 방패  Neo
+    Comment: 포푸리수제 방패 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 46112   # Artisan Poppuri Shield Neo
+    ReqID1: 46101   # Poppuri Shield Neo
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Potion
+    CompoundID: 281
+    Name: 중급티타늄
+    Comment: 티타늄 원석 (7)
+    ResLv: 1
+    ResID1: 64386   # Impure Titanium
+    ReqID1: 64385   # Titanium Fragment
+    ReqNum1: 7
+    Probability: 34
+    Fee: 60
+    WasteItem: 64385   # Titanium Fragment
+  - Table: Compound_Potion
+    CompoundID: 282
+    Name: 상급티타늄
+    Comment: 중급티타늄 (5)
+    ResLv: 1
+    ResID1: 64387   # Pure Titanium
+    ReqID1: 64386   # Impure Titanium
+    ReqNum1: 5
+    Probability: 32
+    Fee: 63
+    WasteItem: 64385   # Titanium Fragment
+  - Table: Compound_Potion
+    CompoundID: 283
+    Name: 금록석조각
+    Comment: 금록석원석 (7)
+    ResLv: 1
+    ResID1: 64389   # Tiger's Eye Gem
+    ReqID1: 64388   # Tiger's Eye Fragment
+    ReqNum1: 7
+    Probability: 34
+    Fee: 60
+    WasteItem: 64388   # Tiger's Eye Fragment
+  - Table: Compound_Potion
+    CompoundID: 284
+    Name: 금록석결정
+    Comment: 금록석조각 (5)
+    ResLv: 1
+    ResID1: 64390   # Flawless Tiger's Eye
+    ReqID1: 64389   # Tiger's Eye Gem
+    ReqNum1: 5
+    Probability: 32
+    Fee: 63
+    WasteItem: 64388   # Tiger's Eye Fragment
+  - Table: Compound_Potion
+    CompoundID: 285
+    Name: 중급 자황철석
+    Comment: 자황철석 원석 (7)
+    ResLv: 1
+    ResID1: 64392   # Impure Pyrrhotite
+    ReqID1: 64391   # Pyrrhotite Fragment
+    ReqNum1: 7
+    Probability: 26
+    Fee: 90
+    WasteItem: 64391   # Pyrrhotite Fragment
+  - Table: Compound_Potion
+    CompoundID: 286
+    Name: 상급 자황철석
+    Comment: 중급 자황철석 (5)
+    ResLv: 1
+    ResID1: 64393   # Pure Pyrrhotite
+    ReqID1: 64392   # Impure Pyrrhotite
+    ReqNum1: 5
+    Probability: 24
+    Fee: 93
+    WasteItem: 64391   # Pyrrhotite Fragment
+  - Table: Compound_Potion
+    CompoundID: 287
+    Name: 제신스석 조각
+    Comment: 재신스석 원석 (7)
+    ResLv: 1
+    ResID1: 64398   # Jacinth Gem
+    ReqID1: 64397   # Jacinth Fragment
+    ReqNum1: 7
+    Probability: 26
+    Fee: 90
+    WasteItem: 64397   # Jacinth Fragment
+  - Table: Compound_Potion
+    CompoundID: 100
+    Name: 아쿠아블루 포션R
+    Comment: 청수 + 고급포션 빈병
+    ResLv: 1
+    ResID1: 63109   # Aqua Blue Potion R
+    ReqID1: 11475   # Pure Water
+    ReqNum1: 1
+    ReqID2: 11086   # Empty bottle
+    ReqNum2: 1
+    Probability: 40
+    Fee: 10
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 288
+    Name: 재신스석 결정
+    Comment: 재신스석 조각 (5)
+    ResLv: 1
+    ResID1: 64399   # Flawless Jacinth
+    ReqID1: 64398   # Jacinth Gem
+    ReqNum1: 5
+    Probability: 24
+    Fee: 93
+    WasteItem: 64397   # Jacinth Fragment
+  - Table: Compound_Potion
+    CompoundID: 290
+    Name: 핫소스 번데기 탕
+    Comment: 타바스코 핫소스(2) + 불나방 번데기(2)
+    ResLv: 1
+    ResID1: 64753   # Hot Sauce Pupa Soup
+    ReqID1: 64720   # 타바스코 핫소스
+    ReqNum1: 2
+    ReqID2: 11192   # Pupa of tiger moth
+    ReqNum2: 2
+    Probability: 20
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Potion
+    CompoundID: 291
+    Name: 제 8관문 감옥열쇠(재료1 보존)
+    Comment: 제 8관문 감옥열쇠 재료1(1) + 제 8관문 감옥열쇠 재료2(1) + 제 8관문 감옥열쇠 재료3(1) + 제 8관문 감옥열쇠 재료4(1)
+    ResLv: 1
+    ResID1: 66342   # Key 8
+    ReqID1: 66345   # Key 8 material 1
+    ReqNum1: 1
+    ReqID2: 66346   # Key 8 material 2
+    ReqNum2: 1
+    ReqID3: 66347   # Key 8 material 3
+    ReqNum3: 1
+    ReqID4: 66348   # Key 8 material 4
+    ReqNum4: 1
+    Probability: 50
+    WasteItem: 66345   # Key 8 material 1
+  - Table: Compound_Potion
+    CompoundID: 292
+    Name: 제 8관문 감옥열쇠(재료2 보존)
+    Comment: 제 8관문 감옥열쇠 재료1(1) + 제 8관문 감옥열쇠 재료2(1) + 제 8관문 감옥열쇠 재료3(1) + 제 8관문 감옥열쇠 재료4(1)
+    ResLv: 1
+    ResID1: 66342   # Key 8
+    ReqID1: 66345   # Key 8 material 1
+    ReqNum1: 1
+    ReqID2: 66346   # Key 8 material 2
+    ReqNum2: 1
+    ReqID3: 66347   # Key 8 material 3
+    ReqNum3: 1
+    ReqID4: 66348   # Key 8 material 4
+    ReqNum4: 1
+    Probability: 50
+    WasteItem: 66346   # Key 8 material 2
+  - Table: Compound_Potion
+    CompoundID: 293
+    Name: 제 8관문 감옥열쇠(재료3 보존)
+    Comment: 제 8관문 감옥열쇠 재료1(1) + 제 8관문 감옥열쇠 재료2(1) + 제 8관문 감옥열쇠 재료3(1) + 제 8관문 감옥열쇠 재료4(1)
+    ResLv: 1
+    ResID1: 66342   # Key 8
+    ReqID1: 66345   # Key 8 material 1
+    ReqNum1: 1
+    ReqID2: 66346   # Key 8 material 2
+    ReqNum2: 1
+    ReqID3: 66347   # Key 8 material 3
+    ReqNum3: 1
+    ReqID4: 66348   # Key 8 material 4
+    ReqNum4: 1
+    Probability: 50
+    WasteItem: 66347   # Key 8 material 3
+  - Table: Compound_Potion
+    CompoundID: 294
+    Name: 제 8관문 감옥열쇠(재료4 보존)
+    Comment: 제 8관문 감옥열쇠 재료1(1) + 제 8관문 감옥열쇠 재료2(1) + 제 8관문 감옥열쇠 재료3(1) + 제 8관문 감옥열쇠 재료4(1)
+    ResLv: 1
+    ResID1: 66342   # Key 8
+    ReqID1: 66345   # Key 8 material 1
+    ReqNum1: 1
+    ReqID2: 66346   # Key 8 material 2
+    ReqNum2: 1
+    ReqID3: 66347   # Key 8 material 3
+    ReqNum3: 1
+    ReqID4: 66348   # Key 8 material 4
+    ReqNum4: 1
+    Probability: 50
+    WasteItem: 66348   # Key 8 material 4
+  - Table: Compound_Potion
+    CompoundID: 295
+    Name: 킹 포푸리의 지도
+    Comment: 킹 포푸리의 지도조각1(1) + 킹 포푸리의 지도조각2(1)
+    ResLv: 1
+    ResID1: 66362   # Map of Giant potpourri
+    ReqID1: 66360   # Fragments of one giant map of potpourri
+    ReqNum1: 1
+    ReqID2: 66361   # 2 Fragment of map of giant potpourri
+    ReqNum2: 1
+    Probability: 40
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1000
+    Name: 힘을 주는 반지
+    Comment: 애닥스의 뿔(4) + 강철조각(4) + 크리스탈(3) + 금반지(2) + 앰플(5)
+    ResLv: 1
+    ResID1: 7015   # Strength Ring
+    ReqID1: 10003   # Addax's horn
+    ReqNum1: 4
+    ReqID2: 10208   # Steel piece
+    ReqNum2: 4
+    ReqID3: 1000   # Crystal
+    ReqNum3: 3
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 2
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1029
+    Name: 생명이 샘솟는 목걸이
+    Comment: 연잎(10) + 불나방의 가루(5) + 루비(10) + 백금반지(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7042   # Life Ring
+    ReqID1: 10217   # Lotus leaf
+    ReqNum1: 10
+    ReqID2: 10027   # Fire Moth' powder
+    ReqNum2: 5
+    ReqID3: 1006   # Ruby
+    ReqNum3: 10
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1001
+    Name: 힘이 솟는 반지
+    Comment: 메로우의 아가미(2) + 굵은 무(2) + 다이아몬드 + 금반지(3) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7016   # Might Ring
+    ReqID1: 10210   # Merrow's gills
+    ReqNum1: 2
+    ReqID2: 10011   # Thick Radish
+    ReqNum2: 2
+    ReqID3: 1008   # Diamond
+    ReqNum3: 1
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 3
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1002
+    Name: 파괴의 반지
+    Comment: 공기주입기(2) + 철갑거북이알 + 다이아몬드(2) + 백금반지(2) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7017   # Ring of Demolition
+    ReqID1: 10418   # Pump
+    ReqNum1: 2
+    ReqID2: 10222   # Ironclad turtle's egg
+    ReqNum2: 1
+    ReqID3: 1008   # Diamond
+    ReqNum3: 1
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 2
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1003
+    Name: 잘 맞추는 목걸이
+    Comment: 안약(3) + 뱃글라스(2) + 사파이어 + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7018   # Accuracy Necklace
+    ReqID1: 10406   # Eye Drop
+    ReqNum1: 3
+    ReqID2: 10044   # Batglasses
+    ReqNum2: 2
+    ReqID3: 1007   # Sapphire
+    ReqNum3: 1
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1004
+    Name: 정확한 목걸이
+    Comment: 갈고리(4) + 은팔찌(3) + 사파이어(2) + 금반지(3) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7019   # Precision Necklace
+    ReqID1: 10209   # Hook
+    ReqNum1: 4
+    ReqID2: 10214   # Silver bracelet
+    ReqNum2: 3
+    ReqID3: 1007   # Sapphire
+    ReqNum3: 2
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 3
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1005
+    Name: 다 맞추는 목걸이
+    Comment: 아라크네 귀걸이(4) + 작은 대포알(2) + 사파이어(4) + 백금반지(2) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7020   # Bull's eye Necklace
+    ReqID1: 10420   # Arachne's earrings
+    ReqNum1: 4
+    ReqID2: 10226   # Small cannonball
+    ReqNum2: 2
+    ReqID3: 1007   # Sapphire
+    ReqNum3: 4
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 2
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1006
+    Name: 빠른 반지
+    Comment: 모래시계(5) + 오리두더지발(2) + 투어말린(2) + 금반지(3) + 앰플(5)
+    ResLv: 1
+    ResID1: 7021   # Quickee Ring
+    ReqID1: 10439   # Sand Glass
+    ReqNum1: 5
+    ReqID2: 10233   # Duck mole's paws
+    ReqNum2: 2
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 2
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 3
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1007
+    Name: 재빠른 반지
+    Comment: 좁쌀(10) + 금박바퀴(10) + 투어말린(20) + 금반지(20) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7022   # Nimble Ring
+    ReqID1: 10411   # Millet
+    ReqNum1: 10
+    ReqID2: 10413   # Gold Plated Wheel
+    ReqNum2: 10
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 20
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 20
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1008
+    Name: 눈 깜짝할 새 반지
+    Comment: 캐릭터 고무(10) + 기분나쁜 호루라기(8) + 투어말린(40) + 백금반지(20) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7023   # Eye Blink Ring
+    ReqID1: 10240   # Mingo Jelly
+    ReqNum1: 10
+    ReqID2: 10242   # Unpleasant whistle
+    ReqNum2: 8
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 40
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 20
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1009
+    Name: 마나 도는 목걸이
+    Comment: 소라껍질(3) + 미니배터리(2) + 라피스라줄리(4) + 금목걸이(2) + 앰플(5)
+    ResLv: 1
+    ResID1: 7024   # Mana Aura Necklace
+    ReqID1: 10405   # Turban shell
+    ReqNum1: 3
+    ReqID2: 10445   # Mini-battery
+    ReqNum2: 2
+    ReqID3: 1001   # Lapis Lazuli
+    ReqNum3: 4
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 2
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1010
+    Name: 마나 왕성한 목걸이
+    Comment: 초록나뭇잎(10) + 나뭇가지(10) + 토파즈(10) + 금목걸이(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7025   # Mana Filled Necklace
+    ReqID1: 10211   # Green tree leaf
+    ReqNum1: 10
+    ReqID2: 10212   # Bough
+    ReqNum2: 10
+    ReqID3: 1004   # Topaz
+    ReqNum3: 10
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1011
+    Name: 마나 샘솟는 목걸이
+    Comment: 시원한 생수(20) + 깊은 물속 지렁이(20) + 토파즈(20) + 백금 목걸이(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7026   # Mana Generator Necklace
+    ReqID1: 10221   # Cool Spring Water
+    ReqNum1: 20
+    ReqID2: 10442   # Waterworm
+    ReqNum2: 20
+    ReqID3: 1004   # Topaz
+    ReqNum3: 20
+    ReqID4: 11109   # Platinum necklace
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1012
+    Name: 영리한 반지
+    Comment: 현자의 돌조각(2) + 깊은 산속 지렁이(2) + 에메랄드 + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7027   # Clever Ring
+    ReqID1: 10443   # Wise man's pebble
+    ReqNum1: 2
+    ReqID2: 10433   # Mountain Earthworm
+    ReqNum2: 2
+    ReqID3: 1005   # Emerald
+    ReqNum3: 1
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 5
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1013
+    Name: 지혜로운 반지
+    Comment: 딱딱한 비늘(5) + 사포닌뿌리(10) + 에메랄드(10) + 금반지(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7028   # Wise Ring
+    ReqID1: 10009   # Hard scales
+    ReqNum1: 5
+    ReqID2: 10412   # Ginseng Root
+    ReqNum2: 10
+    ReqID3: 1005   # Emerald
+    ReqNum3: 10
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1014
+    Name: 토트의 반지
+    Comment: 오래된 책(10) + 불꽃(5) + 에메랄드(20) + 백금반지(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7029   # Tot's Ring
+    ReqID1: 10215   # Old book
+    ReqNum1: 10
+    ReqID2: 10428   # Fire Flower
+    ReqNum2: 5
+    ReqID3: 1005   # Emerald
+    ReqNum3: 20
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1015
+    Name: 마법 대처 반지
+    Comment: 멍구스 헬멧(2) + 사탄 플러그(2) + 진주(1) + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7030   # Magic Guard Ring
+    ReqID1: 10238   # Monguse Helmet
+    ReqNum1: 2
+    ReqID2: 10245   # Satan Plug
+    ReqNum2: 2
+    ReqID3: 11021   # Pearl
+    ReqNum3: 1
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1017
+    Name: 마법 무효화 반지
+    Comment: 늪상어가죽(10) + 철갑거북이알(10) + 흑진주(10) + 백금반지(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7032   # Magic Vanishing Ring
+    ReqID1: 10018   # Swamp shark leather
+    ReqNum1: 10
+    ReqID2: 10222   # Ironclad turtle's egg
+    ReqNum2: 10
+    ReqID3: 11022   # Black pearl
+    ReqNum3: 10
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1016
+    Name: 마법 막는 반지
+    Comment: 투명한 천조각(10) + 메로우의 트렁크(10) + 진주(10) + 금반지(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7031   # Magic-Def Ring
+    ReqID1: 10008   # Transparent cloth
+    ReqNum1: 10
+    ReqID2: 10410   # Merrow's trunk
+    ReqNum2: 10
+    ReqID3: 11021   # Pearl
+    ReqNum3: 10
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1018
+    Name: 가벼운 목걸이
+    Comment: 발굽(3) + 프로펠러(3) + 투어말린(2) + 금목걸이 + 앰플(5)
+    ResLv: 1
+    ResID1: 7013   # Light necklace
+    ReqID1: 10404   # Hoof
+    ReqNum1: 3
+    ReqID2: 10408   # Propeller
+    ReqNum2: 3
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 2
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1019
+    Name: 힘센자의 목걸이
+    Comment: 영비촌(20) + 석병모자(20) + 투어말린(20) + 금목걸이(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7033   # Carry-more Necklace
+    ReqID1: 10244   # Yeongbi-chon
+    ReqNum1: 20
+    ReqID2: 10213   # Stone Soldier Hat
+    ReqNum2: 20
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 20
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1020
+    Name: 괴력의 목걸이
+    Comment: 늪상어지느러미(10) + 철갑거북이알(10) + 투어말린(50) + 백금목걸이(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7034   # Carry-all Necklace
+    ReqID1: 10419   # Swamp shark's fin
+    ReqNum1: 10
+    ReqID2: 10222   # Ironclad turtle's egg
+    ReqNum2: 10
+    ReqID3: 1002   # Tourmaline
+    ReqNum3: 50
+    ReqID4: 11109   # Platinum necklace
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1021
+    Name: 미세한 감의 반지
+    Comment: 시원한 부채(10) + 모래시계(3) + 시트린(2) + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7035   # Feel-a-bit Ring
+    ReqID1: 10002   # Cooling fan
+    ReqNum1: 10
+    ReqID2: 10439   # Sand Glass
+    ReqNum2: 3
+    ReqID3: 1003   # Citrin
+    ReqNum3: 2
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1022
+    Name: 익숙한 감의 반지
+    Comment: 연분홍산호(10) + 금팔찌(10) + 에메랄드(10) + 금반지(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7036   # Feel-more Ring
+    ReqID1: 10206   # Light pink coral
+    ReqNum1: 10
+    ReqID2: 10013   # Golden bracelet
+    ReqNum2: 10
+    ReqID3: 1005   # Emerald
+    ReqNum3: 10
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1023
+    Name: 완벽한 감의 반지
+    Comment: 색종이(10) + 물범수염(10) + 시트린(40) + 백금 반지(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7037   # Feel-all Ring
+    ReqID1: 10417   # Colored Paper
+    ReqNum1: 10
+    ReqID2: 10223   # Seal's beard
+    ReqNum2: 10
+    ReqID3: 1003   # Citrin
+    ReqNum3: 40
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1024
+    Name: 기분 좋은 목걸이
+    Comment: 네잎 클로버(3) + 열쇠고리(3) + 라피스라줄리(3) + 금 목걸이 + 앰플(5)
+    ResLv: 1
+    ResID1: 7038   # Lucky Day Necklace
+    ReqID1: 11111   # Four-leafed clover
+    ReqNum1: 3
+    ReqID2: 10409   # Keychain
+    ReqNum2: 3
+    ReqID3: 1001   # Lapis Lazuli
+    ReqNum3: 3
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1025
+    Name: 운수 좋은 목걸이
+    Comment: 제니의 사진(5) + 수정구슬(5) + 에메랄드(10) + 금 목걸이(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7039   # Perfect-day Ring
+    ReqID1: 11011   # Jenny's Picture A
+    ReqNum1: 5
+    ReqID2: 10415   # Crystal Marble
+    ReqNum2: 5
+    ReqID3: 1005   # Emerald
+    ReqNum3: 10
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1026
+    Name: 티케의 목걸이
+    Comment: 조커의 공(5) + 지저분한 털뭉치(5) + 에메랄드(20) + 백금 목걸이(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7040   # Tike's Necklace
+    ReqID1: 10031   # Joker's ball
+    ReqNum1: 5
+    ReqID2: 10028   # Dirty floccus
+    ReqNum2: 5
+    ReqID3: 1005   # Emerald
+    ReqNum3: 20
+    ReqID4: 11109   # Platinum necklace
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1027
+    Name: 붉은기운의 목걸이
+    Comment: 연분홍 산호 + 글리코겐가루 + 루비 + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7014   # Red Aura Necklace
+    ReqID1: 10206   # Light pink coral
+    ReqNum1: 1
+    ReqID2: 10037   # Glycogen powder
+    ReqNum2: 1
+    ReqID3: 1006   # Ruby
+    ReqNum3: 1
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1028
+    Name: 혈기왕성한 목걸이
+    Comment: 바람의 펜던트(3) + 석병모자(10) + 루비(5) + 금반지(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7041   # Vitality Ring
+    ReqID1: 11033   # Wind Pendant
+    ReqNum1: 3
+    ReqID2: 10213   # Stone Soldier Hat
+    ReqNum2: 10
+    ReqID3: 1006   # Ruby
+    ReqNum3: 5
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2001
+    Name: 써니피버 메이스
+    Comment: 리토스마쏘 + 태양의 눈(10) + 폴리스 클럽 + 금방울(5) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 3007   # Sunny fever Mece
+    ReqID1: 11125   # Lithosmasso
+    ReqNum1: 1
+    ReqID2: 10071   # Eye of the Sun
+    ReqNum2: 10
+    ReqID3: 3004   # Police Club
+    ReqNum3: 1
+    ReqID4: 11101   # Gold bell
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 38
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1030
+    Name: 튼튼한 목걸이
+    Comment: 말미잘주스 + 멍구스헬멧 + 사파이어 + 금목걸이 + 앰플(5)
+    ResLv: 1
+    ResID1: 7043   # Guard-a-bit Necklace
+    ReqID1: 10005   # Sea anemone juice
+    ReqNum1: 1
+    ReqID2: 10238   # Monguse Helmet
+    ReqNum2: 1
+    ReqID3: 1007   # Sapphire
+    ReqNum3: 1
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1031
+    Name: 맷집 좋은 목걸이
+    Comment: 바다상아 + 돌(10) + 사파이어(2) + 금목걸이(5) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7044   # Guard-well Necklace
+    ReqID1: 10023   # Sea Ivory
+    ReqNum1: 1
+    ReqID2: 10012   # Stone
+    ReqNum2: 10
+    ReqID3: 1007   # Sapphire
+    ReqNum3: 2
+    ReqID4: 11108   # Gold necklace
+    ReqNum4: 5
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1032
+    Name: 맷집 훌륭한 목걸이
+    Comment: 찜질파스(10) + 물고호환(10) + 다이아몬드 + 백금 목걸이(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7045   # Guard-all Necklace
+    ReqID1: 10020   # Poultice
+    ReqNum1: 10
+    ReqID2: 10022   # Black Herbal Medicine
+    ReqNum2: 10
+    ReqID3: 1008   # Diamond
+    ReqNum3: 1
+    ReqID4: 11109   # Platinum necklace
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1033
+    Name: 좀 피하는 반지
+    Comment: 호박조각 + 메이드의 비늘(10) + 크리스탈(5) + 금반지 + 앰플(5)
+    ResLv: 1
+    ResID1: 7046   # Dodge-lil Necklace
+    ReqID1: 11030   # Amber
+    ReqNum1: 1
+    ReqID2: 10407   # Maid's scales
+    ReqNum2: 10
+    ReqID3: 1000   # Crystal
+    ReqNum3: 5
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11112   # Ample
+    ReqNum5: 5
+    Probability: 30
+    Fee: 700
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1034
+    Name: 잘 피하는 반지
+    Comment: 메이드의 비늘(20) + 금팔찌(10) + 루비(5) + 금반지(1) + 중급 앰플(5)
+    ResLv: 1
+    ResID1: 7047   # Dodge-all Necklace
+    ReqID1: 10407   # Maid's scales
+    ReqNum1: 20
+    ReqID2: 10013   # Golden bracelet
+    ReqNum2: 10
+    ReqID3: 1006   # Ruby
+    ReqNum3: 5
+    ReqID4: 11106   # Gold ring
+    ReqNum4: 1
+    ReqID5: 11113   # Med-level ample
+    ReqNum5: 5
+    Probability: 25
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1035
+    Name: 비사이로 막가 반지
+    Comment: 호피무늬담요(10) + 거북이 등껍질(10) + 루비(10) + 백금 반지(5) + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 7048   # 2Fast2Hit Ring
+    ReqID1: 10423   # Tiger Blanket
+    ReqNum1: 10
+    ReqID2: 10021   # Turtle shell
+    ReqNum2: 10
+    ReqID3: 1006   # Ruby
+    ReqNum3: 10
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3000
+    Name: 루나슬러시 쉴드
+    Comment: 애머시스토스 + 조커의 공 + 원형합금 방패 + 백금반지(5) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 6512   # Luna Slush shield
+    ReqID1: 11123   # Amethystos
+    ReqNum1: 1
+    ReqID2: 10031   # Joker's ball
+    ReqNum2: 1
+    ReqID3: 6501   # Alloy Shield
+    ReqNum3: 1
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 40
+    Fee: 1800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3001
+    Name: 써니피버 쉴드
+    Comment: 리토스마쏘 + 황금 머리카락 + 폴리스 방패 + 금방울(6) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 6513   # Sunny fever shield
+    ReqID1: 11125   # Lithosmasso
+    ReqNum1: 1
+    ReqID2: 10063   # Golden hair
+    ReqNum2: 1
+    ReqID3: 6504   # Police Shield
+    ReqNum3: 1
+    ReqID4: 11101   # Gold bell
+    ReqNum4: 6
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 38
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4000
+    Name: 루나슬러시 마스크
+    Comment: 애머시스토스 + 리바이어선 비늘 + 패션 철모 + 백금반지(2) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 4007   # Luna Slush mask
+    ReqID1: 11123   # Amethystos
+    ReqNum1: 1
+    ReqID2: 10266   # Leviathan scale
+    ReqNum2: 1
+    ReqID3: 4003   # Trendy Steel Helmet
+    ReqNum3: 1
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 2
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 40
+    Fee: 1800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2000
+    Name: 루나슬러시 갈퀴
+    Comment: 애머시스토스 + 두번째 손톱(3) + 소프트 방망이 + 백금반지(5) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 3006   # Luna Slush rake
+    ReqID1: 11123   # Amethystos
+    ReqNum1: 1
+    ReqID2: 10066   # Second fingernail
+    ReqNum2: 3
+    ReqID3: 3003   # Soft bat
+    ReqNum3: 1
+    ReqID4: 11107   # Platinum ring
+    ReqNum4: 5
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 40
+    Fee: 1800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4001
+    Name: 써니피버 크레스트
+    Comment: 리토스마쏘 + 붉은 구슬 + 가시 프로텍터 + 금방울(4) +  최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 4008   # Sunny fever crest
+    ReqID1: 11125   # Lithosmasso
+    ReqNum1: 1
+    ReqID2: 10065   # Red bead
+    ReqNum2: 1
+    ReqID3: 4004   # Thorn protector
+    ReqNum3: 1
+    ReqID4: 11101   # Gold bell
+    ReqNum4: 4
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 38
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1036
+    Name: 아기 어룡
+    Comment: 어룡의 알 (1) + 인공 부화기 (1) + 부화 촉진제 (1) + 최고급 앰플 (5)
+    ResLv: 1
+    ResID1: 1530   # Baby Ichthyosaur
+    ReqID1: 10425   # Ichthyosaur's eggs
+    ReqNum1: 1
+    ReqID2: 11126   # Artificial incubator
+    ReqNum2: 1
+    ReqID3: 11127   # Hatching booster
+    ReqNum3: 1
+    ReqID4: 11114   # Premium ample
+    ReqNum4: 5
+    Probability: 20
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2002
+    Name: 노라 랜스
+    Comment: R스톤(5) + Y스톤 + 크립톤나이트(2) + 안전 지휘봉 + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 3022   # Nora Lance
+    ReqID1: 11074   # R stone
+    ReqNum1: 5
+    ReqID2: 11075   # Y stone
+    ReqNum2: 1
+    ReqID3: 11079   # Kryptonite
+    ReqNum3: 2
+    ReqID4: 3002   # Safety baton
+    ReqNum4: 1
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 45
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4002
+    Name: 노라 모자
+    Comment: P스톤(2) + Y스톤(2) + 노라 붕대(2) + 안전 제일모 + 최고급 앰플(5)
+    ResLv: 1
+    ResID1: 4022   # Nora Hat
+    ReqID1: 11077   # P stone
+    ReqNum1: 3
+    ReqID2: 11075   # Y stone
+    ReqNum2: 2
+    ReqID3: 10051   # Nora Bandage
+    ReqNum3: 2
+    ReqID4: 4002   # Cutesy duck cap
+    ReqNum4: 1
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 45
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3002
+    Name: 노라 방패
+    Comment: B스톤(3) + Y스톤(2) + 노라 스프링(2) + 표지판 방패 + 최고급 앰프(5)
+    ResLv: 1
+    ResID1: 6522   # Nora Shield
+    ReqID1: 11076   # B stone
+    ReqNum1: 3
+    ReqID2: 11075   # Y stone
+    ReqNum2: 2
+    ReqID3: 10050   # Nora Spring
+    ReqNum3: 2
+    ReqID4: 6502   # Signpost shield
+    ReqNum4: 1
+    ReqID5: 11114   # Premium ample
+    ReqNum5: 5
+    Probability: 45
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4004
+    Name: 트리트펌프킨 온탑
+    Comment: 마녀의 트리트반지(1) + 베이직캡(1)
+    ResLv: 1
+    ResID1: 4041   # Treat pumpkin on top
+    ReqID1: 7114   # Witch's treat ring
+    ReqNum1: 1
+    ReqID2: 520006   # Basic Cap
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 11333   # Witch's broomstick
+  - Table: Compound_Rare
+    CompoundID: 4003
+    Name: 트릭혼 헤어밴드
+    Comment: 마녀의 트릭반지(1) + 우드헤드기어(1)
+    ResLv: 1
+    ResID1: 4040   # Trick horn hair band
+    ReqID1: 7113   # Witch's trick ring
+    ReqNum1: 1
+    ReqID2: 520079   # Wood Gear
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 11333   # Witch's broomstick
+  - Table: Compound_Rare
+    CompoundID: 2003
+    Name: 아몬드스틱
+    Comment: 메론스틱 + 딸기스틱
+    ResID1: 3044   # ChocoAlmond Stick
+    ReqID1: 3042   # Melon Stick
+    ReqNum1: 1
+    ReqID2: 3043   # Strawberry Stick
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3003
+    Name: 아몬드커버춰방패
+    Comment: 메론커버춰방패 + 딸기커버춰방패
+    ResLv: 1
+    ResID1: 6544   # ChocoAlmond Shield
+    ReqID1: 6542   # Melon Covered Shield
+    ReqNum1: 1
+    ReqID2: 6543   # Berry Covered Shield
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4005
+    Name: 아몬드모자
+    Comment: 메론모자 + 딸기모자
+    ResLv: 1
+    ResID1: 4044   # Almond Hat
+    ReqID1: 4042   # Melon Hat
+    ReqNum1: 1
+    ReqID2: 4043   # Strawberry Hat
+    ReqNum2: 1
+    Probability: 40
+    Fee: 100
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1037
+    Name: 울 보온복대 패턴1
+    Comment: 보온복대1(1) + 울 소재(2)
+    ResLv: 1
+    ResID1: 5017
+    ReqID1: 5016   # Thermal Stomach Band1
+    ReqNum1: 1
+    ReqID2: 11346
+    ReqNum2: 2
+    Probability: 40
+    Fee: 100
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 1040
+    Name: 캐시미어 보온복대 패턴1
+    Comment: 보온복대1(1) + 캐시미어 소재(2)
+    ResLv: 1
+    ResID1: 5018
+    ReqID1: 5016   # Thermal Stomach Band1
+    ReqNum1: 1
+    ReqID2: 11347
+    ReqNum2: 2
+    Probability: 40
+    Fee: 200
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 1038
+    Name: 울 보온복대 패턴2
+    Comment: 보온복대2(1) + 울 소재(2)
+    ResLv: 1
+    ResID1: 5017
+    ReqID1: 5025
+    ReqNum1: 1
+    ReqID2: 11346
+    ReqNum2: 2
+    Probability: 40
+    Fee: 100
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 1039
+    Name: 울 보온복대 패턴3
+    Comment: 보온복대3(1) + 울 소재(2)
+    ResLv: 1
+    ResID1: 5017
+    ReqID1: 5026
+    ReqNum1: 1
+    ReqID2: 11346
+    ReqNum2: 2
+    Probability: 40
+    Fee: 100
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 1041
+    Name: 캐시미어 보온복대 패턴2
+    Comment: 보온복대2(1) + 캐시미어 소재(2)
+    ResLv: 1
+    ResID1: 5018
+    ReqID1: 5025
+    ReqNum1: 1
+    ReqID2: 11347
+    ReqNum2: 2
+    Probability: 40
+    Fee: 200
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 1042
+    Name: 캐시미어 보온복대 패턴3
+    Comment: 보온복대3(1) + 캐시미어 소재(2)
+    ResLv: 1
+    ResID1: 5018
+    ReqID1: 5026
+    ReqNum1: 1
+    ReqID2: 11347
+    ReqNum2: 2
+    Probability: 40
+    Fee: 200
+    WasteItem: 5019
+  - Table: Compound_Rare
+    CompoundID: 2004
+    Name: 재물신의 지팡이
+    Comment: 물만두 2개, 원석 2개, 금가루 2개
+    ResLv: 1
+    ResID1: 3050
+    ReqID1: 11392
+    ReqNum1: 2
+    ReqID2: 11391
+    ReqNum2: 2
+    ReqID3: 11393   # Gold Powder
+    ReqNum3: 2
+    Probability: 40
+    Fee: 100
+    WasteItem: 7843
+  - Table: Compound_Rare
+    CompoundID: 3004
+    Name: 재물신의 방패
+    Comment: 물만두 2개, 춘권말이1개, 금가루 3개
+    ResLv: 1
+    ResID1: 6550   # Gold Father's Shield
+    ReqID1: 11392
+    ReqNum1: 2
+    ReqID2: 11390
+    ReqNum2: 1
+    ReqID3: 11393   # Gold Powder
+    ReqNum3: 3
+    Probability: 40
+    Fee: 100
+    WasteItem: 7843
+  - Table: Compound_Rare
+    CompoundID: 4006
+    Name: 재물신의 모자
+    Comment: 춘권말이 2개, 원석 1개, 금가루 3개
+    ResLv: 1
+    ResID1: 4050
+    ReqID1: 11390
+    ReqNum1: 2
+    ReqID2: 11391
+    ReqNum2: 1
+    ReqID3: 11393   # Gold Powder
+    ReqNum3: 3
+    Probability: 40
+    Fee: 100
+    WasteItem: 7843
+  - Table: Compound_Rare
+    CompoundID: 165
+    Name: 새침떼기 베프
+    Comment: 빨강 선물함(10) + 파랑 선물함(10) + 보라 선물함(10) + 노랑 선물함(10) + 회색 선물함(10)
+    ResLv: 1
+    ResID1: 1571
+    ReqID1: 7864
+    ReqNum1: 10
+    ReqID2: 7865
+    ReqNum2: 10
+    ReqID3: 7866
+    ReqNum3: 10
+    ReqID4: 7867
+    ReqNum4: 10
+    ReqID5: 7868
+    ReqNum5: 10
+    Probability: 40
+    Fee: 500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 166
+    Name: 말괄량이 베프
+    Comment: 빨강 선물함(20) + 파랑 선물함(20) + 보라 선물함(20) + 노랑 선물함(20) + 회색 선물함(20)
+    ResLv: 1
+    ResID1: 1572
+    ReqID1: 7864
+    ReqNum1: 20
+    ReqID2: 7865
+    ReqNum2: 20
+    ReqID3: 7866
+    ReqNum3: 20
+    ReqID4: 7867
+    ReqNum4: 20
+    ReqID5: 7868
+    ReqNum5: 20
+    Probability: 30
+    Fee: 1000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 167
+    Name: 터프한 베프
+    Comment: 빨강 선물함(30) + 파랑 선물함(30) + 보라 선물함(30) + 노랑 선물함(30) + 회색 선물함(30)
+    ResLv: 1
+    ResID1: 1573
+    ReqID1: 7864
+    ReqNum1: 30
+    ReqID2: 7865
+    ReqNum2: 30
+    ReqID3: 7866
+    ReqNum3: 30
+    ReqID4: 7867
+    ReqNum4: 30
+    ReqID5: 7868
+    ReqNum5: 30
+    Probability: 30
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 171
+    Name: 클리너AD 드릴
+    Comment: 클리너 드릴 + 묘안석 조각
+    ResLv: 1
+    ResID1: 8010   # Cleaner AD Drill
+    ReqID1: 8001   # Cleaner Drill
+    ReqNum1: 1
+    ReqID2: 11307   # Cat's Eye Gem
+    ReqNum2: 3
+    Probability: 40
+    Fee: 30000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 172
+    Name: 블렌드AD 드릴
+    Comment: 블렌드 드릴 + 묘안석 조각
+    ResLv: 1
+    ResID1: 8011   # Blend AD Drill
+    ReqID1: 8002   # Blend Drill
+    ReqNum1: 1
+    ReqID2: 11307   # Cat's Eye Gem
+    ReqNum2: 3
+    Probability: 40
+    Fee: 30000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 173
+    Name: 멀티포인트AD 드릴
+    Comment: 멀티포인트 드릴 + 묘안석 조각
+    ResLv: 1
+    ResID1: 8012   # Multi-point AD Drill
+    ReqID1: 8003   # Multi-point Drill
+    ReqNum1: 1
+    ReqID2: 11307   # Cat's Eye Gem
+    ReqNum2: 3
+    Probability: 40
+    Fee: 30000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 174
+    Name: 토네이도AD 드릴
+    Comment: 토네이도 드릴 + 터키석 조각
+    ResLv: 1
+    ResID1: 8013   # Tornado AD Drill
+    ReqID1: 8004   # Tornado Drill
+    ReqNum1: 1
+    ReqID2: 11315   # Turquoise Gem
+    ReqNum2: 3
+    Probability: 38
+    Fee: 32000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 175
+    Name: 제트펌프AD 드릴
+    Comment: 제트펌프 드릴 + 터키석 조각
+    ResLv: 1
+    ResID1: 8014   # Jetpump AD Drill
+    ReqID1: 8005   # Jetpump Drill
+    ReqNum1: 1
+    ReqID2: 11315   # Turquoise Gem
+    ReqNum2: 3
+    Probability: 38
+    Fee: 32000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 176
+    Name: 멀티피스톨AD 드릴
+    Comment: 멀티피스톨 드릴 + 터키석 조각
+    ResLv: 1
+    ResID1: 8015   # Multi-pistol AD Drill
+    ReqID1: 8006   # Multi-pistol Drill
+    ReqNum1: 1
+    ReqID2: 11315   # Turquoise Gem
+    ReqNum2: 3
+    Probability: 38
+    Fee: 32000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 177
+    Name: 가오AD 드릴
+    Comment: 가오 드릴 + 터키석 조각
+    ResLv: 1
+    ResID1: 8016   # Gao AD Drill
+    ReqID1: 8205   # Gao Drill
+    ReqNum1: 1
+    ReqID2: 11315   # Turquoise Gem
+    ReqNum2: 3
+    Probability: 38
+    Fee: 32000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1043
+    Name: 기분 좋은 목걸이
+    Comment: 네잎 클로버(3) + 금 목걸이 + 앰플(5) ==> 미국 이벤트용
+    ResLv: 1
+    ResID1: 7210   # Lucky-Day Necklace
+    ReqID1: 11111   # Four-leafed clover
+    ReqNum1: 3
+    ReqID2: 11108   # Gold necklace
+    ReqNum2: 1
+    ReqID3: 11112   # Ample
+    ReqNum3: 5
+    Probability: 50
+    Fee: 10
+    WasteItem: 7210   # Lucky-Day Necklace
+  - Table: Compound_Rare
+    CompoundID: 2005
+    Name: 무적의 브림캡
+    ResLv: 1
+    ResID1: 620046   # Ult. Brim Cap
+    ReqID1: 2201   # Blue Potion B
+    ReqNum1: 2
+    Probability: 50
+    WasteItem: 12000   # Compound Waste
+  - Table: Compound_Rare
+    CompoundID: 2006
+    Name: 강의 흑룡로드
+    Comment: 낡은 흑룡로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603246   # Powerful Black Dragon Rod
+    ReqID1: 603096   # Old Black Dragon Rod
+    ReqNum1: 1
+    ReqID2: 603096   # Old Black Dragon Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 14000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2007
+    Name: 강의 배턴로드
+    Comment: 낡은 배턴로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603236   # Powerful Baton Rod
+    ReqID1: 603016   # Old Baton Rod
+    ReqNum1: 1
+    ReqID2: 603016   # Old Baton Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2008
+    Name: 강의 청동로드
+    Comment: 낡은 청동로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603237   # Powerful Bronze Rod
+    ReqID1: 603024   # Old Bronze Rod
+    ReqNum1: 1
+    ReqID2: 603024   # Old Bronze Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 35000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2009
+    Name: 강의 우드로드
+    Comment: 낡은 우드로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603238   # Powerful Wood Rod
+    ReqID1: 603032   # Old Wood Rod
+    ReqNum1: 1
+    ReqID2: 603032   # Old Wood Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 45500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2010
+    Name: 강의 스톤로드
+    Comment: 낡은 스톤로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603239   # Powerful Stone Rod
+    ReqID1: 603040   # Old Stone Rod
+    ReqNum1: 1
+    ReqID2: 603040   # Old Stone Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 56000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2011
+    Name: 강의 룬스태프
+    Comment: 낡은 룬스태프(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603240   # Powerful Rune Staff
+    ReqID1: 603048   # Old Rune Staff
+    ReqNum1: 1
+    ReqID2: 603048   # Old Rune Staff
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 66500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2012
+    Name: 강의 배틀로드
+    Comment: 낡은 배틀로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603241   # Powerful Battle Rod
+    ReqID1: 603056   # Old Battle Rod
+    ReqNum1: 1
+    ReqID2: 603056   # Old Battle Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 77000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2013
+    Name: 강의 실버로드
+    Comment: 낡은 실버로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603242   # Powerful Silver Rod
+    ReqID1: 603064   # Old Silver Rod
+    ReqNum1: 1
+    ReqID2: 603064   # Old Silver Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 87500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2014
+    Name: 강의 골드로드
+    Comment: 낡은 골드로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603243   # Powerful Gold Rod
+    ReqID1: 603072   # Old Gold Rod
+    ReqNum1: 1
+    ReqID2: 603072   # Old Gold Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 98000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2015
+    Name: 강의 풀문로드
+    Comment: 낡은 풀문로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603244   # Powerful Celestial Rod
+    ReqID1: 603080   # Old Celestial Rod
+    ReqNum1: 1
+    ReqID2: 603080   # Old Celestial Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 108500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2016
+    Name: 강의 청룡로드
+    Comment: 낡은 청룡로드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603245   # Powerful Blue Dragon Rod
+    ReqID1: 603088   # Old Blue Dragon Rod
+    ReqNum1: 1
+    ReqID2: 603088   # Old Blue Dragon Rod
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 119000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2017
+    Name: 강의 스틱
+    Comment: 낡은 스틱(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603248   # Powerful Stick
+    ReqID1: 603105   # Old Stick
+    ReqNum1: 1
+    ReqID2: 603105   # Old Stick
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 150500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2018
+    Name: 강의 아크스틱
+    Comment: 낡은 아크스틱(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603252   # Powerful Arc Stick
+    ReqID1: 603113   # Old Arc Stick
+    ReqNum1: 1
+    ReqID2: 603113   # Old Arc Stick
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 192500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2019
+    Name: 강의 크롬스텝
+    Comment: 낡은 크롬스텝(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 603254   # Powerful Chrome Staff
+    ReqID1: 603121   # Old Chrome Staff
+    ReqNum1: 1
+    ReqID2: 603121   # Old Chrome Staff
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 213500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2020
+    Name: 강의 데빌건
+    Comment: 낡은 데빌건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610246   # Powerful Hand Cannon
+    ReqID1: 610096   # Old Hand Cannon
+    ReqNum1: 1
+    ReqID2: 610096   # Old Hand Cannon
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 14000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2021
+    Name: 강의 클래식건
+    Comment: 낡은 클래식건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610236   # Powerful Classic Gun
+    ReqID1: 610016   # Old Classic Gun
+    ReqNum1: 1
+    ReqID2: 610016   # Old Classic Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2022
+    Name: 강의 앤틱건
+    Comment: 낡은 앤틱건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610237   # Powerful Antique Gun
+    ReqID1: 610024   # Old Antique Gun
+    ReqNum1: 1
+    ReqID2: 610024   # Old Antique Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 35000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2023
+    Name: 강의 메탈건
+    Comment: 낡은 메탈건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610238   # Powerful Metal Gun
+    ReqID1: 610032   # Old Metal Gun
+    ReqNum1: 1
+    ReqID2: 610032   # Old Metal Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 45500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2024
+    Name: 강의 스텐건
+    Comment: 낡은 스텐건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610239   # Powerful Sten Gun
+    ReqID1: 610040   # Old Sten Gun
+    ReqNum1: 1
+    ReqID2: 610040   # Old Sten Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 56000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2025
+    Name: 강의 티탄건
+    Comment: 낡은 티탄건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610240   # Powerful Titan Gun
+    ReqID1: 610048   # Old Titan Gun
+    ReqNum1: 1
+    ReqID2: 610048   # Old Titan Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 66500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2026
+    Name: 강의 밀리건
+    Comment: 낡은 밀리건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610241   # Powerful Milli-Gun
+    ReqID1: 610056   # Old Milli-Gun
+    ReqNum1: 1
+    ReqID2: 610056   # Old Milli-Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 77000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2027
+    Name: 강의 블루씰건
+    Comment: 낡은 블루씰건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610242   # Powerful Blue Seal Gun
+    ReqID1: 610064   # Old Blue Seal Gun
+    ReqNum1: 1
+    ReqID2: 610064   # Old Blue Seal Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 87500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2028
+    Name: 강의 피어스건
+    Comment: 낡은 피어스건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610243   # Powerful Pierce Gun
+    ReqID1: 610072   # Old Pierce Gun
+    ReqNum1: 1
+    ReqID2: 610072   # Old Pierce Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 98000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2029
+    Name: 강의 브루틀건
+    Comment: 낡은 브루틀건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610244   # Powerful Blunderbuss
+    ReqID1: 610080   # Old Blunderbuss
+    ReqNum1: 1
+    ReqID2: 610080   # Old Blunderbuss
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 108500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2030
+    Name: 강의 크루얼건
+    Comment: 낡은 크루얼건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610245   # Powerful Shotgun
+    ReqID1: 610088   # Old Shotgun
+    ReqNum1: 1
+    ReqID2: 610088   # Old Shotgun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 119000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2031
+    Name: 강의 스팅어건
+    Comment: 낡은 스팅어건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610248   # Powerful Stinger Gun
+    ReqID1: 610105   # Old Stinger Gun
+    ReqNum1: 1
+    ReqID2: 610105   # Old Stinger Gun
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 150500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2032
+    Name: 강의 MJS-G5
+    Comment: 낡은 MJS-G5(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610252   # Powerful MJS-G5
+    ReqID1: 610113   # Old MJS-G5
+    ReqNum1: 1
+    ReqID2: 610113   # Old MJS-G5
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 192500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2033
+    Name: 강의 스트라이커
+    Comment: 낡은 스트라이커(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 610254   # Powerful Striker
+    ReqID1: 610121   # Old Striker
+    ReqNum1: 1
+    ReqID2: 610121   # Old Striker
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 213500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2034
+    Name: 강의 기사단도
+    Comment: 낡은 기사단도(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601246   # Powerful Pugio
+    ReqID1: 601096   # Old Pugio
+    ReqNum1: 1
+    ReqID2: 601096   # Old Pugio
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 14000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2035
+    Name: 강의 은장도
+    Comment: 낡은 은장도(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601236   # Powerful Silver Knife
+    ReqID1: 601016   # Old Silver Knife
+    ReqNum1: 1
+    ReqID2: 601016   # Old Silver Knife
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2036
+    Name: 강의 대거
+    Comment: 낡은 대거(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601237   # Powerful Dagger
+    ReqID1: 601024   # Old Dagger
+    ReqNum1: 1
+    ReqID2: 601024   # Old Dagger
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 35000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2037
+    Name: 강의 더크
+    Comment: 낡은 더크(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601238   # Powerful Dirk
+    ReqID1: 601032   # Old Dirk
+    ReqNum1: 1
+    ReqID2: 601032   # Old Dirk
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 45500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2038
+    Name: 강의 넓적단도
+    Comment: 낡은 넓적단도(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601239   # Powerful Flat sword
+    ReqID1: 601040   # Old Flat Sword
+    ReqNum1: 1
+    ReqID2: 601040   # Old Flat Sword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 56000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2039
+    Name: 강의 카르드
+    Comment: 낡은 카르드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601240   # Powerful Kaldo
+    ReqID1: 601048   # Old Kaldo
+    ReqNum1: 1
+    ReqID2: 601048   # Old Kaldo
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 66500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2040
+    Name: 강의 쿠쿠리
+    Comment: 낡은 쿠쿠리(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601241   # Powerful Kukri
+    ReqID1: 601056   # Old Kukri
+    ReqNum1: 1
+    ReqID2: 601056   # Old Kukri
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 77000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2041
+    Name: 강의 망고슈
+    Comment: 낡은 망고슈(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601242   # Powerful Main-Gauche
+    ReqID1: 601064   # Old Main-Gauche
+    ReqNum1: 1
+    ReqID2: 601064   # Old Main-Gauche
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 87500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2042
+    Name: 강의 스틸레토
+    Comment: 낡은 스틸레토(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601243   # Powerful Stiletto
+    ReqID1: 601072   # Old Stiletto
+    ReqNum1: 1
+    ReqID2: 601072   # Old Stiletto
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 98000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2043
+    Name: 강의 카타르
+    Comment: 낡은 카타르(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601244   # Powerful Bundi Dagger
+    ReqID1: 601080   # Old Bundi Dagger
+    ReqNum1: 1
+    ReqID2: 601080   # Old Bundi Dagger
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 108500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2044
+    Name: 강의 크리스
+    Comment: 낡은 크리스(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601245   # Powerful Kalis
+    ReqID1: 601088   # Old Kalis
+    ReqNum1: 1
+    ReqID2: 601088   # Old Kalis
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 119000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2045
+    Name: 강의 파냐드
+    Comment: 낡은 파냐드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601248   # Powerful Poignard
+    ReqID1: 601105   # Old Poignard
+    ReqNum1: 1
+    ReqID2: 601105   # Old Poignard
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 150500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2046
+    Name: 강의 칸자르
+    Comment: 낡은 칸자르(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601252   # Powerful Khanjar
+    ReqID1: 601113   # Old Khanjar
+    ReqNum1: 1
+    ReqID2: 601113   # Old Khanjar
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 192500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2047
+    Name: 강의 캐터르
+    Comment: 낡은 캐터르(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 601254   # Powerful Jur
+    ReqID1: 601121   # Old Jur
+    ReqNum1: 1
+    ReqID2: 601121   # Old Jur
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 213500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3005
+    Name: 강의 이지스
+    Comment: 낡은 이지스(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640237   # Powerful Defender
+    ReqID1: 640088   # Old Defender
+    ReqNum1: 1
+    ReqID2: 640088   # Old Defender
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 9800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3006
+    Name: 강의 청동방패
+    Comment: 낡은 청동방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640227   # Powerful Bronze Shield
+    ReqID1: 640008   # Old Bronze Shield
+    ReqNum1: 1
+    ReqID2: 640008   # Old Bronze Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 17150
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3007
+    Name: 강의 금속방패
+    Comment: 낡은 금속방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640228   # Powerful Metal Shield
+    ReqID1: 640016   # Old Metal Shield
+    ReqNum1: 1
+    ReqID2: 640016   # Old Metal Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3008
+    Name: 강의 가시방패
+    Comment: 낡은 가시방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640229   # Powerful Thorn Shield
+    ReqID1: 640024   # Old Thorn Shield
+    ReqNum1: 1
+    ReqID2: 640024   # Old Thorn Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 31850
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3009
+    Name: 강의 사각방패
+    Comment: 낡은 사각방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640230   # Powerful Square Shield
+    ReqID1: 640032   # Old Square Shield
+    ReqNum1: 1
+    ReqID2: 640032   # Old Square Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 39200
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3010
+    Name: 강의 수호방패
+    Comment: 낡은 수호방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640231   # Powerful Guardian Shield
+    ReqID1: 640040   # Old Guardian Shield
+    ReqNum1: 1
+    ReqID2: 640040   # Old Guardian Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 46550
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3011
+    Name: 강의 기사방패
+    Comment: 낡은 기사방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640232   # Powerful Knight Shield
+    ReqID1: 640048   # Old Knight Shield
+    ReqNum1: 1
+    ReqID2: 640048   # Old Knight Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 53900
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3012
+    Name: 강의 문장방패
+    Comment: 낡은 문장방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640233   # Powerful Crest Shield
+    ReqID1: 640056   # Old Crest Shield
+    ReqNum1: 1
+    ReqID2: 640056   # Old Crest Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 61250
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3013
+    Name: 강의 옥색방패
+    Comment: 낡은 옥색방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640234   # Powerful Jade Shield
+    ReqID1: 640064   # Old Jade Shield
+    ReqNum1: 1
+    ReqID2: 640064   # Old Jade Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 68600
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3014
+    Name: 강의 실버방패
+    Comment: 낡은 실버방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640235   # Powerful Silver Shield
+    ReqID1: 640072   # Old Silver Shield
+    ReqNum1: 1
+    ReqID2: 640072   # Old Silver Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 75950
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3015
+    Name: 강의 황금방패
+    Comment: 낡은 황금방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640236   # Powerful Golden Shield
+    ReqID1: 640080   # Old Golden Shield
+    ReqNum1: 1
+    ReqID2: 640080   # Old Golden Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 83300
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3016
+    Name: 강의 미스릴방패
+    Comment: 낡은 미스릴방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640239   # Powerful Mithril Shield
+    ReqID1: 640096   # Old Mithril Shield
+    ReqNum1: 1
+    ReqID2: 640096   # Old Mithril Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 105350
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3017
+    Name: 강의 명예방패
+    Comment: 낡은 명예방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640243   # Powerful Shield of Honor
+    ReqID1: 640104   # Old Shield of Honor
+    ReqNum1: 1
+    ReqID2: 640104   # Old Shield of Honor
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 134750
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 3018
+    Name: 강의 제령방패
+    Comment: 낡은 제령방패(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 640245   # Powerful Regal Shield
+    ReqID1: 640112   # Old Regal Shield
+    ReqNum1: 1
+    ReqID2: 640112   # Old Regal Shield
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 149450
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4007
+    Name: 강의 실크햇
+    Comment: 낡은 실크햇(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630237   # Powerful Velvet Hat
+    ReqID1: 630088   # Old Velvet Hat
+    ReqNum1: 1
+    ReqID2: 630088   # Old Velvet Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 9800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4008
+    Name: 강의 투구
+    Comment: 낡은 투구(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620227   # Powerful Helmet
+    ReqID1: 620008   # Old Helmet
+    ReqNum1: 1
+    ReqID2: 620008   # Old Helmet
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 17150
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4009
+    Name: 강의 강철투구
+    Comment: 낡은 강철투구(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620228   # Powerful Steel Helmet
+    ReqID1: 620016   # Old Steel Helmet
+    ReqNum1: 1
+    ReqID2: 620016   # Old Steel Helmet
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4010
+    Name: 강의 베이직캡
+    Comment: 낡은 베이직캡(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620229   # Powerful Basic Cap
+    ReqID1: 620024   # Old Basic Cap
+    ReqNum1: 1
+    ReqID2: 620024   # Old Basic Cap
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 31850
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4011
+    Name: 강의 아이언캡
+    Comment: 낡은 아이언캡(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620230   # Powerful Iron Cap
+    ReqID1: 620032   # Old Iron Cap
+    ReqNum1: 1
+    ReqID2: 620032   # Old Iron Cap
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 39200
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4012
+    Name: 강의 브림캡
+    Comment: 낡은 브림캡(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620231   # Powerful Brim Cap
+    ReqID1: 620040   # Old Brim Cap
+    ReqNum1: 1
+    ReqID2: 620040   # Old Brim Cap
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 46550
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4013
+    Name: 강의 버컬러캡
+    Comment: 낡은 버컬러캡(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620232   # Powerful Buckler Cap
+    ReqID1: 620048   # Old Buckler Cap
+    ReqNum1: 1
+    ReqID2: 620048   # Old Buckler Cap
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 53900
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4014
+    Name: 강의 캐버셋
+    Comment: 낡은 캐버셋(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620233   # Powerful Nasal Helm
+    ReqID1: 620056   # Old Nasal Helm
+    ReqNum1: 1
+    ReqID2: 620056   # Old Nasal Helm
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 61250
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4015
+    Name: 강의 헬멧
+    Comment: 낡은 헬멧(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620234   # Powerful Headpiece
+    ReqID1: 620064   # Old Headpiece
+    ReqNum1: 1
+    ReqID2: 620064   # Old Headpiece
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 68600
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4016
+    Name: 강의 실버헬멧
+    Comment: 낡은 실버헬멧(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620235   # Powerful Argent Helm
+    ReqID1: 620072   # Old Argent Helm
+    ReqNum1: 1
+    ReqID2: 620072   # Old Argent Helm
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 75950
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4017
+    Name: 강의 크레스트
+    Comment: 낡은 크레스트(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620236   # Powerful Diadem
+    ReqID1: 620080   # Old Diadem
+    ReqNum1: 1
+    ReqID2: 620080   # Old Diadem
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 83300
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4018
+    Name: 강의 미스릴헬름
+    Comment: 낡은 미스릴헬름(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620239   # Powerful Mithril Helm
+    ReqID1: 620096   # Old Mithril Helm
+    ReqNum1: 1
+    ReqID2: 620096   # Old Mithril Helm
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 105350
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4019
+    Name: 강의 명예헬름
+    Comment: 낡은 명예헬름(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620243   # Powerful Helm of Honor
+    ReqID1: 620104   # Old Helm of Honor
+    ReqNum1: 1
+    ReqID2: 620104   # Old Helm of Honor
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 134750
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4020
+    Name: 강의 제령무관
+    Comment: 낡은 제령무관(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620245   # Powerful Regal Helm
+    ReqID1: 620112   # Old Regal Helm
+    ReqNum1: 1
+    ReqID2: 620112   # Old Regal Helm
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 149450
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4021
+    Name: 강의 헬름
+    Comment: 낡은 헬름(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 620237   # Powerful Head Bucket
+    ReqID1: 620088   # Old Head Bucket
+    ReqNum1: 1
+    ReqID2: 620088   # Old Head Bucket
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 9800
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4022
+    Name: 강의 두건
+    Comment: 낡은 두건(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630227   # Powerful Hood
+    ReqID1: 630008   # Old Hood
+    ReqNum1: 1
+    ReqID2: 630008   # Old Hood
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 17150
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4023
+    Name: 강의 나무기어
+    Comment: 낡은 나무기어(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630228   # Powerful Wood Gear
+    ReqID1: 630016   # Old Wood Gear
+    ReqNum1: 1
+    ReqID2: 630016   # Old Wood Gear
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4024
+    Name: 강의 가죽기어
+    Comment: 낡은 가죽기어(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630229   # Powerful Leather Gear
+    ReqID1: 630024   # Old Leather Gear
+    ReqNum1: 1
+    ReqID2: 630024   # Old Leather Gear
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 31850
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4025
+    Name: 강의 펠트후드
+    Comment: 낡은 펠트후드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630230   # Powerful Felt Hood
+    ReqID1: 630032   # Old Felt Hood
+    ReqNum1: 1
+    ReqID2: 630032   # Old Felt Hood
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 39200
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4026
+    Name: 강의 베레
+    Comment: 낡은 베레(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630231   # Powerful Beret
+    ReqID1: 630040   # Old Beret
+    ReqNum1: 1
+    ReqID2: 630040   # Old Beret
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 46550
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4027
+    Name: 강의 헌팅캡
+    Comment: 낡은 헌팅캡(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630232   # Powerful Hunting Cap
+    ReqID1: 630048   # Old Hunting Cap
+    ReqNum1: 1
+    ReqID2: 630048   # Old Hunting Cap
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 53900
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4028
+    Name: 강의 터번
+    Comment: 낡은 터번(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630233   # Powerful Turbin
+    ReqID1: 630056   # Old Turban
+    ReqNum1: 1
+    ReqID2: 630056   # Old Turban
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 61250
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4029
+    Name: 강의 소프트햇
+    Comment: 낡은 소프트햇(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630234   # Powerful Soft Hat
+    ReqID1: 630064   # Old Soft Hat
+    ReqNum1: 1
+    ReqID2: 630064   # Old Soft Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 68600
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4030
+    Name: 강의 챙모자
+    Comment: 낡은 챙모자(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630235   # Powerful Vaquero Hat
+    ReqID1: 630072   # Old Vaquero Hat
+    ReqNum1: 1
+    ReqID2: 630072   # Old Vaquero Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 75950
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4031
+    Name: 강의 윗치햇
+    Comment: 낡은 윗치햇(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630236   # Powerful Crone Hat
+    ReqID1: 630080   # Old Crone Hat
+    ReqNum1: 1
+    ReqID2: 630080   # Old Crone Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 83300
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4032
+    Name: 강의 미스릴모자
+    Comment: 낡은 미스릴모자(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630239   # Powerful Mithril Hat
+    ReqID1: 630096   # Old Mithril Hat
+    ReqNum1: 1
+    ReqID2: 630096   # Old Mithril Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 105350
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4033
+    Name: 강의 명예모자
+    Comment: 낡은 명예모자(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630243   # Powerful Hat of Honor
+    ReqID1: 630104   # Old Hat of Honor
+    ReqNum1: 1
+    ReqID2: 630104   # Old Hat of Honor
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 134750
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 4034
+    Name: 강의 제령모
+    Comment: 낡은 제령모(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 630245   # Powerful Regal Hat
+    ReqID1: 630112   # Old Regal Hat
+    ReqNum1: 1
+    ReqID2: 630112   # Old Regal Hat
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 149450
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2048
+    Name: 강의 블래이드
+    Comment: 낡은 블래이드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600246   # Powerful Wakizashi
+    ReqID1: 600096   # Old Wakizashi
+    ReqNum1: 1
+    ReqID2: 600096   # Old Wakizashi
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 14000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2049
+    Name: 강의 석검
+    Comment: 낡은 석검(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600236   # Powerful Stone Sword
+    ReqID1: 600016   # Old Stone Sword
+    ReqNum1: 1
+    ReqID2: 600016   # Old Stone Sword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2050
+    Name: 강의 검
+    Comment: 낡은 검(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600237   # Powerful Sword
+    ReqID1: 600024   # Old Sword
+    ReqNum1: 1
+    ReqID2: 600024   # Old Sword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 35000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2051
+    Name: 강의 세검
+    Comment: 낡은 세검(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600238   # Powerful Epoch Sword
+    ReqID1: 600032   # Old Epoch Sword
+    ReqNum1: 1
+    ReqID2: 600032   # Old Epoch Sword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 45500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2052
+    Name: 강의 카타나
+    Comment: 낡은 카타나(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600239   # Powerful Katana
+    ReqID1: 600040   # Old Katana
+    ReqNum1: 1
+    ReqID2: 600040   # Old Katana
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 56000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2053
+    Name: 강의 요도
+    Comment: 낡은 요도(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600240   # Powerful Dao
+    ReqID1: 600048   # Old Dao
+    ReqNum1: 1
+    ReqID2: 600048   # Old Dao
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 66500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2054
+    Name: 강의 세이버
+    Comment: 낡은 세이버(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600241   # Powerful Sabre
+    ReqID1: 600056   # Old Sabre
+    ReqNum1: 1
+    ReqID2: 600056   # Old Sabre
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 77000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2055
+    Name: 강의 쇼텔
+    Comment: 낡은 쇼텔(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600242   # Powerful Shotel
+    ReqID1: 600064   # Old Shotel
+    ReqNum1: 1
+    ReqID2: 600064   # Old Shotel
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 87500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2056
+    Name: 강의 롱소드
+    Comment: 낡은 롱소드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600243   # Powerful Long Sword
+    ReqID1: 600072   # Old Long Sword
+    ReqNum1: 1
+    ReqID2: 600072   # Old Long Sword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 98000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2057
+    Name: 강의 시미터
+    Comment: 낡은 시미터(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600244   # Powerful Talwar
+    ReqID1: 600080   # Old Talwar
+    ReqNum1: 1
+    ReqID2: 600080   # Old Talwar
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 108500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2058
+    Name: 강의 팔치온
+    Comment: 낡은 팔치온(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600245   # Powerful Shamshir
+    ReqID1: 600088   # Old Shamshir
+    ReqNum1: 1
+    ReqID2: 600088   # Old Shamshir
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 119000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2059
+    Name: 강의 의천검
+    Comment: 낡은 의천검(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600248   # Powerful Sky Blade
+    ReqID1: 600105   # Old Sky Blade
+    ReqNum1: 1
+    ReqID2: 600105   # Old Sky Blade
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 150500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2060
+    Name: 강의 브로드소드
+    Comment: 낡은 브로드소드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600252   # Powerful Broadsword
+    ReqID1: 600113   # Old Broadsword
+    ReqNum1: 1
+    ReqID2: 600113   # Old Broadsword
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 192500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2061
+    Name: 강의 바스타드
+    Comment: 낡은 바스타드(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 600254   # Powerful Langschwert
+    ReqID1: 600121   # Old Langschwert
+    ReqNum1: 1
+    ReqID2: 600121   # Old Langschwert
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 213500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 1044
+    Name: 아기 퐁치치
+    Comment: 알 수 없는 바위 조각(10)
+    ResLv: 1
+    ResID1: 90044   # Baby Ponchichi
+    ReqID1: 64686   # Mysterious Stone Sculpture
+    ReqNum1: 10
+    Probability: 5
+    Fee: 2000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2076
+    Name: 포푸리장인 해머 Neo
+    Comment: 포푸리수제 해머Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 40241   # Potpourri Artisan Hammer Neo
+    ReqID1: 40179   # Poppuri Neo Hammer
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 35
+    Fee: 14000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2062
+    Name: 강의 청동해머
+    Comment: 낡은 청동해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650056   # Powerful Bronze Hammer
+    ReqID1: 650048   # Old Bronze Hammer
+    ReqNum1: 1
+    ReqID2: 650048   # Old Bronze Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 24500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2063
+    Name: 강의 금속해머
+    Comment: 낡은 금속해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650067   # Powerful Metal Hammer
+    ReqID1: 650059   # Old Metal Hammer
+    ReqNum1: 1
+    ReqID2: 650059   # Old Metal Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 35000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2064
+    Name: 강의 가시해머
+    Comment: 낡은 가시해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650078   # Powerful Iron Hammer
+    ReqID1: 650070   # Old Iron Hammer
+    ReqNum1: 1
+    ReqID2: 650070   # Old Iron Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 45500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2065
+    Name: 강의 사각해머
+    Comment: 낡은 사각해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650089   # Powerful Square Hammer
+    ReqID1: 650081   # Old Square Hammer
+    ReqNum1: 1
+    ReqID2: 650081   # Old Square Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 56000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2066
+    Name: 강의 수호해머
+    Comment: 낡은 수호해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650100   # Powerful Black Hammer
+    ReqID1: 650092   # Old Black Hammer
+    ReqNum1: 1
+    ReqID2: 650092   # Old Black Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 66500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2067
+    Name: 강의 기사해머
+    Comment: 낡은 기사해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650111   # Powerful Night Hammer
+    ReqID1: 650103   # Old Night Hammer
+    ReqNum1: 1
+    ReqID2: 650103   # Old Night Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 77000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2068
+    Name: 강의 세트해머
+    Comment: 낡은 세트해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650122   # Powerful Set Hammer
+    ReqID1: 650114   # Old Silver Hammer
+    ReqNum1: 1
+    ReqID2: 650114   # Old Silver Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 87500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2069
+    Name: 강의 옥색해머
+    Comment: 낡은 옥색해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650133   # Powerful Sky Hammer
+    ReqID1: 650125   # '[Old Sky Hammer'
+    ReqNum1: 1
+    ReqID2: 650125   # '[Old Sky Hammer'
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 98000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2070
+    Name: 강의 실버해머
+    Comment: 낡은 실버해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650144   # Powerful Silver Hammer
+    ReqID1: 650136   # Old Silver Hammer
+    ReqNum1: 1
+    ReqID2: 650136   # Old Silver Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 108500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2071
+    Name: 강의 황금해머
+    Comment: 낡은 황금해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650155   # Powerful Gold Hammer
+    ReqID1: 650147   # Old Gold Hammer
+    ReqNum1: 1
+    ReqID2: 650147   # Old Gold Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 119000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2072
+    Name: 강의 크로스핀해머
+    Comment: 낡은 크로스핀해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650166   # Powerful Cross Pin Hammer
+    ReqID1: 650158   # Old Cross Pin Hammer
+    ReqNum1: 1
+    ReqID2: 650158   # Old Cross Pin Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 140000
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2073
+    Name: 강의 미스릴해머
+    Comment: 낡은 미스릴해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650189   # Powerful Mithril Hammer
+    ReqID1: 650181   # Old Mithril Hammer
+    ReqNum1: 1
+    ReqID2: 650181   # Old Mithril Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 150500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2074
+    Name: 강의 명예해머
+    Comment: 낡은 명예해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650234   # Powerful Emperor Hammer
+    ReqID1: 650226   # Old Emperor Hammer
+    ReqNum1: 1
+    ReqID2: 650226   # Old Emperor Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 192500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2075
+    Name: 강의 제령해머
+    Comment: 낡은 제령해머(2) + 니케리움(1)
+    ResLv: 1
+    ResID1: 650257   # Powerful Necro Hammer
+    ReqID1: 650249   # Old Necro Hammer
+    ReqNum1: 1
+    ReqID2: 650249   # Old Necro Hammer
+    ReqNum2: 1
+    ReqID3: 63923   # Nikarium
+    ReqNum3: 1
+    Probability: 35
+    Fee: 213500
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Rare
+    CompoundID: 2077
+    Name: 포푸리 장인 총 Neo
+    Comment: 포푸리수제 총 Neo(1) + 포푸리 강화액(1)
+    ResLv: 1
+    ResID1: 42038
+    ReqID1: 42029
+    ReqNum1: 1
+    ReqID2: 63524   # Poppuri Strength Elixir
+    ReqNum2: 1
+    Probability: 30
+    Fee: 2000
+    WasteItem: 11927   # Poppuri Bean
+  - Table: Compound_Throw
+    CompoundID: 501
+    Name: 다트
+    ResLv: 1
+    ResID1: 12014   # Dart
+    ReqID1: 11055   # Rusty nail
+    ReqNum1: 1
+    ReqID2: 11129   # Cocos nucifera's shell
+    ReqNum2: 1
+    Probability: 35
+    Fee: 4
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 500
+    Name: 원반
+    ResLv: 1
+    ResID1: 12013   # Discus
+    ReqID1: 11003   # Coin
+    ReqNum1: 1
+    ReqID2: 11035   # Lucky Letter
+    ReqNum2: 1
+    Probability: 40
+    Fee: 2
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 502
+    Name: 수리검
+    ResLv: 1
+    ResID1: 12015   # Shuriken
+    ReqID1: 11002   # Rusty chain
+    ReqNum1: 3
+    ReqID2: 11110   # Three-leafed clover
+    ReqNum2: 1
+    ReqID3: 10246   # Twinkle Star
+    ReqNum3: 2
+    Probability: 30
+    Fee: 6
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 503
+    Name: 강 대침
+    Comment: 대침(1)+뾰족한 파편(1)
+    ResLv: 1
+    ResID1: 11459   # Super Big Needle
+    ReqID1: 11404   # Big Needle
+    ReqNum1: 1
+    ReqID2: 11864   # Pointy Object
+    ReqNum2: 1
+    Probability: 50
+    Fee: 3
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 504
+    Name: 강 화침
+    Comment: 화침(1)+뾰족한 파편(1)
+    ResLv: 1
+    ResID1: 11460   # Super Fire Needle
+    ReqID1: 11405   # Fire Needle
+    ReqNum1: 1
+    ReqID2: 11864   # Pointy Object
+    ReqNum2: 1
+    Probability: 50
+    Fee: 6
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 505
+    Name: 강 골침
+    Comment: 골침(1)+뾰족한 파편(1)
+    ResLv: 1
+    ResID1: 11461   # Super Bone Needle
+    ReqID1: 11406   # Bone Needle
+    ReqNum1: 1
+    ReqID2: 11864   # Pointy Object
+    ReqNum2: 1
+    Probability: 50
+    Fee: 9
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 506
+    Name: 강 쇠구슬
+    Comment: 쇠구슬(1)+둥근 파편(1)
+    ResLv: 1
+    ResID1: 11462   # Super Metal Marble
+    ReqID1: 11407   # Metal Marble
+    ReqNum1: 1
+    ReqID2: 11865   # Round Object
+    ReqNum2: 1
+    Probability: 48
+    Fee: 12
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 507
+    Name: 강 징구슬
+    Comment: 징구슬(1)+둥근 파편(1)
+    ResLv: 1
+    ResID1: 11463   # Super Gong Marble
+    ReqID1: 11408   # Gong Marble
+    ReqNum1: 1
+    ReqID2: 11865   # Round Object
+    ReqNum2: 1
+    Probability: 48
+    Fee: 15
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 508
+    Name: 강 폭구슬
+    Comment: 폭구슬(1)+둥근 파편(1)
+    ResLv: 1
+    ResID1: 11464   # Super Marble
+    ReqID1: 11409   # Double-shielded Marble
+    ReqNum1: 1
+    ReqID2: 11865   # Round Object
+    ReqNum2: 1
+    Probability: 48
+    Fee: 18
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 509
+    Name: 강 십자표창
+    Comment: 십자표창(1)+세모난 파편(1)
+    ResLv: 1
+    ResID1: 11465   # Super Cross Spear
+    ReqID1: 11410   # Cross Spear
+    ReqNum1: 1
+    ReqID2: 11866   # Triangular Object
+    ReqNum2: 1
+    Probability: 46
+    Fee: 21
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 510
+    Name: 강 갈고리표창
+    Comment: 갈고리표창(1)+세모난 파편(1)
+    ResLv: 1
+    ResID1: 11466   # Super Hook Spear
+    ReqID1: 11411   # Hook Spear
+    ReqNum1: 1
+    ReqID2: 11866   # Triangular Object
+    ReqNum2: 1
+    Probability: 46
+    Fee: 24
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 511
+    Name: 강 삼첨표창
+    Comment: 삼첨표창(1)+세모난 파편(1)
+    ResLv: 1
+    ResID1: 11467   # Super 3-pointed Spear
+    ReqID1: 11412   # Three-pointed Spear
+    ReqNum1: 1
+    ReqID2: 11866   # Triangular Object
+    ReqNum2: 1
+    Probability: 46
+    Fee: 27
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 512
+    Name: 강 고리환
+    Comment: 고리환(1)+고리모양 파편(1)
+    ResLv: 1
+    ResID1: 11468   # Super Ring
+    ReqID1: 11413   # Ring
+    ReqNum1: 1
+    ReqID2: 11867   # Hook Object
+    ReqNum2: 1
+    Probability: 44
+    Fee: 30
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 513
+    Name: 강 가시환
+    Comment: 가시환(1)+고리모양 파편(1)
+    ResLv: 1
+    ResID1: 11469   # Super Thorny Ring
+    ReqID1: 11414   # Thorny Ring
+    ReqNum1: 1
+    ReqID2: 11867   # Hook Object
+    ReqNum2: 1
+    Probability: 44
+    Fee: 33
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 514
+    Name: 강 톱날환
+    Comment: 톱날환(1)+고리모양 파편(1)
+    ResLv: 1
+    ResID1: 11470   # Super Saw Blade Ring
+    ReqID1: 11415   # Saw Blade Ring
+    ReqNum1: 1
+    ReqID2: 11867   # Hook Object
+    ReqNum2: 1
+    Probability: 44
+    Fee: 36
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 515
+    Name: 강 비수
+    Comment: 비수(1)+칼날 파편(1)
+    ResLv: 1
+    ResID1: 11471   # Super Dagger
+    ReqID1: 11416   # Throwing dagger
+    ReqNum1: 1
+    ReqID2: 11868   # Sharp Piece
+    ReqNum2: 1
+    Probability: 42
+    Fee: 39
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 516
+    Name: 강 버들비
+    Comment: 버들비(1)+칼날 파편(1)
+    ResLv: 1
+    ResID1: 11472   # Super Willow Dagger
+    ReqID1: 11417   # Willow Dagger
+    ReqNum1: 1
+    ReqID2: 11868   # Sharp Piece
+    ReqNum2: 1
+    Probability: 42
+    Fee: 42
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 517
+    Name: 강 전목비
+    Comment: 전목비(1)+칼날 파편(1)
+    ResLv: 1
+    ResID1: 11473   # Super Fir Dagger
+    ReqID1: 11418   # Fir Dagger
+    ReqNum1: 1
+    ReqID2: 11868   # Sharp Piece
+    ReqNum2: 1
+    Probability: 42
+    Fee: 45
+    WasteItem: 12003   # Good Compound waste
+  - Table: Compound_Throw
+    CompoundID: 518
+    Name: 강 매화표
+    Comment: 매화표(1)+칼날 파편(1)
+    ResLv: 1
+    ResID1: 11474   # Super Apricot Dart
+    ReqID1: 11419   # Apricot Dart
+    ReqNum1: 1
+    ReqID2: 11868   # Sharp Piece
+    ReqNum2: 1
+    Probability: 40
+    Fee: 48
+    WasteItem: 12003   # Good Compound waste
+
+Footer:
+  Imports:
+#  - Path: db/import/compound_db.yml

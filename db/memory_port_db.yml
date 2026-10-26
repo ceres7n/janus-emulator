@@ -1,0 +1,30 @@
+# =============================================================================
+#   Memory Port Database  (MEMORY_PORT_DB)
+# =============================================================================
+#
+#   Table Item_MemoryPortParam of the ORIGINAL server data (kto_libconfig.xml, 4 rows): the Memory Port
+#   items (retail GameInfoMgr sub_633E10 by item id; hItemMemoryport). Type = the slot list a character
+#   keeps for it (tbl_memory_port.type: 0 = the 5-slot list, 1 = the 10-slot one); SlotNum = its slots
+#   (read by the client's window).
+# =============================================================================
+
+Header:
+  Type: MEMORY_PORT_DB
+  Version: 1
+
+Body:
+  - ItemId: 7708
+    Type: 0
+    SlotNum: 5
+  - ItemId: 19659
+    Type: 0
+    SlotNum: 5
+  - ItemId: 19805
+    Type: 0
+    SlotNum: 5
+  - ItemId: 19810
+    Type: 0
+    SlotNum: 5
+
+Footer:
+  Imports: []

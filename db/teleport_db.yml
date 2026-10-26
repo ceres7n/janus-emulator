@@ -1,0 +1,1388 @@
+# =============================================================================
+#   TeleportInfo  (TELEPORT_DB)
+# =============================================================================
+#
+#   Original server data (kto_libconfig.xml, 225 rows); field names verbatim.
+#
+#   TeleportInfo — an NPC's TeleportId (db/npc_db.yml): the destinations of the script
+#   functions Teleport_Check / Teleport_Start / Limit_Teleport*. GameInfoMgr sub_628590 reads Id,
+#   MinLevel and the slots Zone0..Zone6 ONLY (Zone7..Zone10 are ignored by the server), keeping
+#   the slots whose Zone is not 0, in order, as {Zone, Cost, LimitCnt, LoadImg}; the script's slot
+#   index counts those kept slots.
+# =============================================================================
+
+Header:
+  Type: TELEPORT_DB
+  Version: 1
+
+Body:
+  - Id: 1
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 3
+    Cost1: 200
+    Zone2: 4
+    Cost2: 300
+    Zone3: 2
+    Cost3: 500
+    Zone4: 6
+    Cost4: 1200
+    Zone5: 5
+    Cost5: 600
+    Zone6: 7
+    Cost6: 1500
+  - Id: 2
+    MinLevel: 5
+    Zone0: 3
+    Cost0: 200
+    Zone1: 33
+    Cost1: 200
+  - Id: 3
+    MinLevel: 5
+    Zone0: 4
+    Cost0: 300
+    Zone1: 43
+    Cost1: 300
+  - Id: 4
+    MinLevel: 5
+    Zone0: 2
+    Cost0: 500
+    Zone1: 54
+    Cost1: 500
+  - Id: 5
+    MinLevel: 5
+    Zone0: 6
+    Cost0: 1200
+    Zone1: 69
+    Cost1: 1200
+  - Id: 8
+    Zone0: 33
+    Zone1: 148
+  - Id: 9
+    MinLevel: 1
+    Zone0: 82
+    Cost0: 1
+    Zone1: 1
+    Cost1: 1
+    Zone2: 33
+    Cost2: 1
+    Zone3: 148
+    Cost3: 1
+    Zone4: 69
+    Cost4: 1
+    Zone5: 5
+    Cost5: 1
+    Zone6: 116
+    Cost6: 1
+  - Id: 10
+    MinLevel: 21
+    Zone0: 187
+    Cost0: 1000
+    Zone1: 188
+    Cost1: 1000
+  - Id: 11
+    MinLevel: 1
+    Zone0: 5
+    Cost0: 1
+    Zone1: 33
+    Cost1: 1
+    Zone2: 148
+    Cost2: 1
+  - Id: 12
+    MinLevel: 1
+    Zone0: 178
+    Cost0: 50
+  - Id: 14
+    MinLevel: 1
+    Zone0: 219
+    Zone1: 43
+  - Id: 15
+    MinLevel: 1
+    Zone0: 1
+    Zone1: 82
+    Zone2: 3
+    Zone3: 4
+    Zone4: 148
+  - Id: 16
+    MinLevel: 1
+    Zone0: 33
+    Cost0: 10
+    Zone1: 148
+    Cost1: 10
+  - Id: 17
+    MinLevel: 1
+    Zone0: 232
+    Cost0: 3
+    Zone1: 54
+    Cost1: 3
+  - Id: 18
+    MinLevel: 1
+    Zone0: 234
+    Cost0: 100
+    Zone1: 235
+    Cost1: 100
+    Zone2: 5
+    Cost2: 100
+    Zone3: 43
+    Cost3: 100
+  - Id: 19
+    MinLevel: 1
+    Zone0: 1
+    Cost0: 3
+    Zone1: 148
+    Cost1: 3
+    Zone2: 33
+    Cost2: 3
+    Zone3: 43
+    Cost3: 3
+    Zone4: 54
+    Cost4: 3
+    Zone5: 69
+    Cost5: 3
+  - Id: 20
+    MinLevel: 1
+    Zone0: 2
+    Cost0: 1
+    Zone1: 4
+    Cost1: 1
+    Zone2: 33
+    Cost2: 1
+    Zone3: 148
+    Cost3: 1
+  - Id: 21
+    MinLevel: 1
+    Zone0: 237
+    Cost0: 5000
+  - Id: 22
+    MinLevel: 1
+    Zone0: 61
+  - Id: 23
+    MinLevel: 1
+    Zone0: 1
+  - Id: 24
+    MinLevel: 130
+    Zone0: 247
+  - Id: 25
+    MinLevel: 130
+    Zone0: 248
+  - Id: 26
+    MinLevel: 130
+    Zone0: 249
+  - Id: 27
+    MinLevel: 130
+    Zone0: 250
+  - Id: 28
+    MinLevel: 130
+    Zone0: 251
+  - Id: 29
+    MinLevel: 130
+    Zone0: 252
+  - Id: 30
+    MinLevel: 130
+    Zone0: 253
+  - Id: 31
+    MinLevel: 130
+    Zone0: 254
+  - Id: 32
+    MinLevel: 130
+    Zone0: 255
+  - Id: 33
+    MinLevel: 130
+    Zone0: 256
+  - Id: 34
+    MinLevel: 130
+    Zone0: 257
+  - Id: 35
+    MinLevel: 130
+    Zone0: 258
+  - Id: 36
+    MinLevel: 130
+    Zone0: 259
+  - Id: 37
+    MinLevel: 130
+    Zone0: 260
+  - Id: 38
+    MinLevel: 130
+    Zone0: 261
+  - Id: 39
+    MinLevel: 130
+    Zone0: 262
+  - Id: 40
+    MinLevel: 130
+    Zone0: 1
+  - Id: 41
+    MinLevel: 1
+    Zone0: 5
+    Zone1: 33
+    Zone2: 1
+    Zone3: 159
+    Zone4: 86
+  - Id: 42
+    MinLevel: 5
+    Zone0: 233
+  - Id: 43
+    MinLevel: 1
+    Zone0: 276
+    Zone1: 270
+    LoadImg1: TeleportImg_1.jpg
+    Zone2: 5
+    LoadImg2: TeleportImg_1.jpg
+  - Id: 44
+    MinLevel: 1
+    Zone0: 282
+    Zone1: 283
+  - Id: 45
+    MinLevel: 1
+    Zone0: 78
+    Zone1: 278
+    Zone2: 279
+    Zone3: 280
+    Zone4: 281
+  - Id: 46
+    MinLevel: 1
+    Zone0: 5
+  - Id: 47
+    MinLevel: 30
+    Zone0: 197
+    Zone1: 207
+  - Id: 48
+    MinLevel: 50
+    Zone0: 198
+    Zone1: 208
+  - Id: 49
+    MinLevel: 70
+    Zone0: 199
+    Zone1: 209
+  - Id: 50
+    MinLevel: 10
+    Zone0: 1
+    Zone1: 1
+    Zone2: 148
+    Zone3: 33
+  - Id: 51
+    MinLevel: 1
+    Zone0: 148
+  - Id: 52
+    MinLevel: 15
+    Zone0: 3
+    Cost0: 300
+  - Id: 53
+    MinLevel: 5
+    Zone0: 33
+    Cost0: 300
+  - Id: 54
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 148
+    Cost1: 100
+    Zone2: 3
+    Cost2: 300
+  - Id: 57
+    MinLevel: 5
+    Zone0: 5
+    Cost0: 1500
+    Zone1: 1
+    Cost1: 500
+    Zone2: 267
+    Cost2: 2000
+    Zone3: 284
+    Cost3: 1500
+  - Id: 58
+    MinLevel: 1
+    Zone0: 1
+  - Id: 59
+    MinLevel: 20
+    Zone0: 270
+    Zone1: 1
+  - Id: 60
+    MinLevel: 5
+    Zone0: 5
+    Cost0: 1500
+    Zone1: 574
+    Cost1: 1000
+  - Id: 61
+    MinLevel: 5
+    Zone0: 43
+    Cost0: 2500
+    Zone1: 429
+    Cost1: 10000
+  - Id: 62
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 4
+    Cost1: 2500
+  - Id: 98
+    MinLevel: 15
+    Zone0: 1
+    Cost0: 500
+  - Id: 67
+    MinLevel: 5
+    Zone0: 169
+    Cost0: 6000
+  - Id: 70
+    MinLevel: 20
+    Zone0: 180
+    Cost0: 500
+  - Id: 71
+    MinLevel: 40
+    Zone0: 181
+    Cost0: 1000
+  - Id: 72
+    MinLevel: 80
+    Zone0: 292
+    Cost0: 3000
+  - Id: 73
+    MinLevel: 100
+    Zone0: 182
+    Cost0: 5000
+  - Id: 74
+    MinLevel: 150
+    Zone0: 194
+    Cost0: 10000
+  - Id: 97
+    MinLevel: 15
+    Zone0: 67
+  - Id: 63
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+  - Id: 75
+    MinLevel: 1
+    Zone0: 106
+    Zone1: 306
+    Zone2: 307
+    Zone3: 308
+  - Id: 76
+    MinLevel: 125
+    Zone0: 311
+    Zone1: 89
+  - Id: 77
+    MinLevel: 10
+    Zone0: 3
+    Zone1: 2
+    Zone2: 284
+    Zone3: 4
+    Zone4: 86
+    Zone5: 169
+  - Id: 99
+    MinLevel: 1
+    Zone0: 3
+    Zone1: 86
+    Zone2: 169
+    Zone3: 148
+    Zone4: 319
+  - Id: 78
+    MinLevel: 120
+    Zone0: 321
+    Zone1: 322
+  - Id: 101
+    MinLevel: 160
+    Zone0: 326
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 102
+    MinLevel: 160
+    Zone0: 327
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 103
+    MinLevel: 160
+    Zone0: 329
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 104
+    MinLevel: 160
+    Zone0: 330
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 105
+    MinLevel: 160
+    Zone0: 331
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 106
+    MinLevel: 160
+    Zone0: 333
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 107
+    MinLevel: 160
+    Zone0: 334
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 108
+    MinLevel: 160
+    Zone0: 335
+    Cost0: 2000
+    Zone1: 324
+    Cost1: 2000
+  - Id: 109
+    MinLevel: 160
+    Zone0: 324
+    Cost0: 50000
+  - Id: 110
+    MinLevel: 160
+    Zone0: 324
+    Cost0: 1
+  - Id: 111
+    MinLevel: 1
+    Zone0: 186
+    Cost0: 20000
+  - Id: 112
+    MinLevel: 41
+    Zone0: 216
+    Cost0: 300000
+  - Id: 113
+    MinLevel: 1
+    Zone0: 343
+    Zone1: 111
+  - Id: 114
+    MinLevel: 1
+    Zone0: 43
+    Zone1: 341
+  - Id: 79
+    MinLevel: 1
+    Zone0: 370
+    Zone1: 372
+    Zone2: 374
+    Zone3: 373
+  - Id: 55
+    MinLevel: 5
+    Zone0: 3
+    Cost0: 300
+    Zone1: 2
+    Cost1: 1000
+    Zone2: 284
+    Cost2: 1500
+    Zone3: 4
+    Cost3: 2500
+    Zone4: 6
+    Cost4: 4000
+    Zone5: 169
+    Cost5: 4000
+    Zone6: 168
+    Cost6: 4000
+    Zone7: 589
+  - Id: 56
+    MinLevel: 5
+    Zone0: 54
+    Cost0: 1000
+    Zone1: 1
+    Cost1: 500
+    Zone2: 6
+    Cost2: 3000
+    Zone3: 2
+    Cost3: 1000
+  - Id: 64
+    MinLevel: 5
+    Zone0: 69
+    Cost0: 3000
+  - Id: 65
+    MinLevel: 5
+    Zone0: 2
+    Cost0: 3000
+    Zone1: 6
+    Cost1: 3000
+    Zone2: 1
+    Cost2: 500
+  - Id: 66
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 170
+    Cost1: 6000
+    Zone2: 171
+    Cost2: 5000
+    Zone4: 589
+    Cost4: 3000
+  - Id: 68
+    MinLevel: 5
+    Zone0: 169
+    Cost0: 5000
+    Zone1: 7
+    Cost1: 5000
+    Zone2: 637
+    Cost2: 5000
+  - Id: 69
+    MinLevel: 5
+    Zone0: 171
+    Cost0: 5000
+    Zone1: 4
+    Cost1: 10000
+    Zone2: 1
+    Cost2: 500
+  - Id: 115
+    MinLevel: 25
+    Zone0: 382
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+  - Id: 116
+    MinLevel: 25
+    Zone0: 383
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 381
+    Cost2: 200
+  - Id: 117
+    MinLevel: 25
+    Zone0: 385
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 383
+    Cost2: 200
+  - Id: 118
+    MinLevel: 25
+    Zone0: 386
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 384
+    Cost2: 200
+  - Id: 119
+    MinLevel: 25
+    Zone0: 387
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 385
+    Cost2: 200
+  - Id: 120
+    MinLevel: 25
+    Zone0: 389
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 387
+    Cost2: 200
+  - Id: 121
+    MinLevel: 25
+    Zone0: 390
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 388
+    Cost2: 200
+  - Id: 122
+    MinLevel: 25
+    Zone0: 391
+    Cost0: 200
+    Zone1: 380
+    Cost1: 200
+    Zone2: 389
+    Cost2: 200
+  - Id: 123
+    MinLevel: 25
+    Zone0: 380
+    Cost0: 2000
+  - Id: 124
+    MinLevel: 25
+    Zone0: 380
+    Cost0: 1
+    Zone1: 382
+    Cost1: 1
+    Zone2: 386
+    Cost2: 1
+    Zone3: 390
+    Cost3: 1
+  - Id: 125
+    MinLevel: 25
+    Zone0: 380
+    Cost0: 1
+    Zone1: 393
+    Cost1: 1
+    Zone2: 383
+    Cost2: 1
+    Zone3: 386
+    Cost3: 1
+    Zone4: 390
+    Cost4: 1
+  - Id: 126
+    MinLevel: 1
+    Zone0: 79
+    Zone1: 396
+    Zone2: 397
+    Zone3: 398
+    Zone4: 200
+    Zone5: 399
+  - Id: 127
+    MinLevel: 70
+    Zone0: 403
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+  - Id: 128
+    MinLevel: 70
+    Zone0: 404
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 402
+    Cost2: 200
+  - Id: 129
+    MinLevel: 70
+    Zone0: 406
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 404
+    Cost2: 200
+  - Id: 130
+    MinLevel: 70
+    Zone0: 407
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 405
+    Cost2: 200
+  - Id: 131
+    MinLevel: 70
+    Zone0: 408
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 406
+    Cost2: 200
+  - Id: 132
+    MinLevel: 70
+    Zone0: 410
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 408
+    Cost2: 200
+  - Id: 133
+    MinLevel: 70
+    Zone0: 411
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 409
+    Cost2: 200
+  - Id: 134
+    MinLevel: 70
+    Zone0: 412
+    Cost0: 200
+    Zone1: 401
+    Cost1: 200
+    Zone2: 410
+    Cost2: 200
+  - Id: 135
+    MinLevel: 70
+    Zone0: 401
+    Cost0: 5000
+  - Id: 136
+    MinLevel: 70
+    Zone0: 401
+    Cost0: 1
+    Zone1: 403
+    Cost1: 1
+    Zone2: 407
+    Cost2: 1
+    Zone3: 411
+    Cost3: 1
+  - Id: 137
+    MinLevel: 70
+    Zone0: 401
+    Cost0: 1
+    Zone1: 414
+    Cost1: 1
+    Zone2: 404
+    Cost2: 1
+    Zone3: 407
+    Cost3: 1
+    Zone4: 411
+    Cost4: 1
+  - Id: 138
+    MinLevel: 110
+    Zone0: 417
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+  - Id: 139
+    MinLevel: 110
+    Zone0: 418
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 416
+    Cost2: 200
+  - Id: 140
+    MinLevel: 110
+    Zone0: 420
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 418
+    Cost2: 200
+  - Id: 141
+    MinLevel: 110
+    Zone0: 421
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 419
+    Cost2: 200
+  - Id: 142
+    MinLevel: 110
+    Zone0: 422
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 420
+    Cost2: 200
+  - Id: 143
+    MinLevel: 110
+    Zone0: 424
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 422
+    Cost2: 200
+  - Id: 144
+    MinLevel: 110
+    Zone0: 425
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 423
+    Cost2: 200
+  - Id: 145
+    MinLevel: 110
+    Zone0: 426
+    Cost0: 200
+    Zone1: 415
+    Cost1: 200
+    Zone2: 424
+    Cost2: 200
+  - Id: 146
+    MinLevel: 110
+    Zone0: 415
+    Cost0: 8000
+  - Id: 147
+    MinLevel: 110
+    Zone0: 415
+    Cost0: 1
+    Zone1: 417
+    Cost1: 1
+    Zone2: 421
+    Cost2: 1
+    Zone3: 425
+    Cost3: 1
+  - Id: 148
+    MinLevel: 110
+    Zone0: 415
+    Cost0: 1
+    Zone1: 428
+    Cost1: 1
+    Zone2: 418
+    Cost2: 1
+    Zone3: 421
+    Cost3: 1
+    Zone4: 425
+    Cost4: 1
+  - Id: 149
+    MinLevel: 150
+    Zone0: 437
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+  - Id: 150
+    MinLevel: 150
+    Zone0: 438
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 436
+    Cost2: 200
+  - Id: 151
+    MinLevel: 150
+    Zone0: 440
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 438
+    Cost2: 200
+  - Id: 152
+    MinLevel: 150
+    Zone0: 441
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 439
+    Cost2: 200
+  - Id: 153
+    MinLevel: 150
+    Zone0: 442
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 440
+    Cost2: 200
+  - Id: 154
+    MinLevel: 150
+    Zone0: 444
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 442
+    Cost2: 200
+  - Id: 155
+    MinLevel: 150
+    Zone0: 445
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 443
+    Cost2: 200
+  - Id: 156
+    MinLevel: 150
+    Zone0: 446
+    Cost0: 200
+    Zone1: 435
+    Cost1: 200
+    Zone2: 444
+    Cost2: 200
+  - Id: 157
+    MinLevel: 150
+    Zone0: 435
+    Cost0: 12000
+  - Id: 158
+    MinLevel: 150
+    Zone0: 435
+    Cost0: 1
+    Zone1: 437
+    Cost1: 1
+    Zone2: 441
+    Cost2: 1
+    Zone3: 445
+    Cost3: 1
+  - Id: 159
+    MinLevel: 150
+    Zone0: 435
+    Cost0: 1
+    Zone1: 448
+    Cost1: 1
+    Zone2: 438
+    Cost2: 1
+    Zone3: 441
+    Cost3: 1
+    Zone4: 445
+    Cost4: 1
+  - Id: 160
+    MinLevel: 1
+    Zone0: 453
+    Zone1: 455
+    Zone2: 454
+    Zone3: 456
+    Zone4: 61
+    Zone5: 59
+  - Id: 161
+    MinLevel: 1
+    Zone0: 458
+    Zone1: 460
+    Zone2: 461
+    Zone3: 214
+  - Id: 162
+    MinLevel: 1
+    Zone0: 476
+    Zone1: 477
+    Zone2: 478
+    Zone3: 210
+    Zone4: 476
+    Zone5: 477
+    Zone6: 478
+    Zone7: 96
+  - Id: 165
+    MinLevel: 150
+    Zone0: 488
+    Zone1: 487
+    Zone2: 511
+  - Id: 166
+    MinLevel: 1
+    Zone0: 509
+    Zone1: 508
+    Zone2: 511
+    Zone3: 502
+  - Id: 167
+    MinLevel: 65
+    Zone0: 1
+    Zone1: 529
+    Zone2: 530
+    Zone3: 531
+    Zone4: 532
+    Zone5: 527
+    Zone6: 528
+    Zone7: 161
+  - Id: 168
+    MinLevel: 135
+    Zone0: 537
+    Zone1: 535
+    Zone2: 1
+    Zone3: 538
+    Zone4: 539
+    Zone5: 540
+    Zone6: 541
+    Zone7: 542
+  - Id: 169
+    MinLevel: 180
+    Zone0: 536
+    Zone1: 533
+    Zone2: 543
+    Zone3: 534
+    Zone4: 1
+  - Id: 170
+    MinLevel: 135
+    Zone0: 537
+    Zone1: 542
+    Zone2: 540
+  - Id: 999
+    MinLevel: 30
+    Zone0: 223
+  - Id: 990
+    MinLevel: 180
+    Zone0: 17
+  - Id: 991
+    MinLevel: 180
+    Zone0: 2
+  - Id: 992
+    MinLevel: 180
+    Zone0: 1
+  - Id: 994
+    MinLevel: 180
+    Zone0: 6
+  - Id: 995
+    MinLevel: 180
+    Zone0: 7
+  - Id: 996
+    MinLevel: 180
+    Zone0: 9
+  - Id: 997
+    MinLevel: 180
+    Zone0: 13
+  - Id: 172
+    MinLevel: 15
+    Zone0: 319
+  - Id: 173
+    MinLevel: 1
+    Zone0: 491
+  - Id: 174
+    MinLevel: 1
+    Zone0: 492
+  - Id: 175
+    MinLevel: 1
+    Zone0: 494
+    Zone1: 495
+  - Id: 176
+    MinLevel: 1
+    Zone0: 217
+    Zone1: 266
+  - Id: 179
+    MinLevel: 1
+    Zone0: 561
+    Cost0: 2000
+    Zone1: 557
+  - Id: 181
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 169
+    Cost1: 3000
+    Zone2: 170
+    Cost2: 3000
+    Zone3: 171
+    Cost3: 4000
+    Zone4: 7
+    Cost4: 4000
+  - Id: 182
+    MinLevel: 5
+    Zone0: 6
+    Cost0: 4000
+    Zone1: 168
+    Cost1: 4000
+    Zone2: 169
+    Cost2: 4000
+    Zone3: 171
+    Cost3: 5000
+    Zone4: 7
+    Cost4: 6000
+    Zone5: 643
+  - Id: 198
+    MinLevel: 200
+    Zone0: 511
+    Cost0: 4500
+    Zone1: 1
+    Cost1: 500
+  - Id: 199
+    MinLevel: 200
+    Zone0: 605
+  - Id: 200
+    MinLevel: 200
+    Zone0: 613
+    Zone1: 611
+    Zone2: 612
+  - Id: 201
+    MinLevel: 200
+    Zone0: 608
+    Zone1: 617
+    Zone2: 611
+    Zone3: 619
+  - Id: 202
+    MinLevel: 200
+    Zone0: 616
+    Zone1: 614
+  - Id: 203
+    MinLevel: 200
+    Zone0: 618
+    Zone1: 607
+    Zone2: 605
+    Zone3: 611
+    Zone4: 612
+  - Id: 204
+    MinLevel: 200
+    Zone0: 606
+    Zone1: 607
+  - Id: 211
+    MinLevel: 200
+    Zone0: 620
+    Zone1: 621
+    Zone2: 623
+    Zone3: 622
+  - Id: 212
+    MinLevel: 200
+    Zone0: 605
+    Zone1: 627
+    Zone2: 625
+  - Id: 183
+    MinLevel: 60
+    Zone0: 330
+    Cost0: 700
+    Zone1: 380
+    Cost1: 1300
+    Zone2: 386
+    Cost2: 1900
+    Zone3: 392
+    Cost3: 2500
+  - Id: 184
+    MinLevel: 60
+    Zone0: 405
+    Cost0: 3100
+    Zone1: 411
+    Cost1: 3700
+    Zone2: 417
+    Cost2: 4300
+  - Id: 185
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 380
+    Cost1: 1300
+    Zone2: 386
+    Cost2: 1900
+    Zone3: 392
+    Cost3: 2500
+  - Id: 186
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 330
+    Cost1: 700
+    Zone2: 386
+    Cost2: 1900
+    Zone3: 392
+    Cost3: 2500
+  - Id: 187
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 330
+    Cost1: 700
+    Zone2: 380
+    Cost2: 1300
+    Zone3: 392
+    Cost3: 2500
+  - Id: 188
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 330
+    Cost1: 700
+    Zone2: 380
+    Cost2: 1300
+    Zone3: 386
+    Cost3: 1900
+  - Id: 189
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 405
+    Cost1: 3100
+    Zone2: 411
+    Cost2: 3700
+    Zone3: 417
+    Cost3: 4300
+  - Id: 190
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 392
+    Cost1: 2500
+    Zone2: 411
+    Cost2: 3700
+    Zone3: 417
+    Cost3: 4300
+  - Id: 191
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 392
+    Cost1: 2500
+    Zone2: 405
+    Cost2: 3100
+    Zone3: 417
+    Cost3: 4300
+  - Id: 192
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 392
+    Cost1: 2500
+    Zone2: 405
+    Cost2: 3100
+    Zone3: 411
+    Cost3: 3700
+  - Id: 193
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 423
+    Cost1: 4900
+    Zone2: 435
+    Cost2: 5500
+    Zone3: 441
+    Cost3: 6100
+    Zone4: 447
+    Cost4: 6700
+  - Id: 194
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 417
+    Cost1: 4300
+    Zone2: 435
+    Cost2: 5500
+    Zone3: 441
+    Cost3: 6100
+    Zone4: 447
+    Cost4: 6700
+  - Id: 195
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 417
+    Cost1: 4300
+    Zone2: 423
+    Cost2: 4900
+    Zone3: 441
+    Cost3: 6100
+    Zone4: 447
+    Cost4: 6700
+  - Id: 196
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 417
+    Cost1: 4300
+    Zone2: 423
+    Cost2: 4900
+    Zone3: 435
+    Cost3: 5500
+    Zone4: 447
+    Cost4: 6700
+  - Id: 197
+    MinLevel: 60
+    Zone0: 324
+    Zone1: 417
+    Cost1: 4300
+    Zone2: 423
+    Cost2: 4900
+    Zone3: 435
+    Cost3: 5500
+    Zone4: 441
+    Cost4: 6100
+  - Id: 205
+    MinLevel: 60
+    Zone0: 598
+  - Id: 206
+    MinLevel: 60
+    Zone0: 599
+  - Id: 207
+    MinLevel: 60
+    Zone0: 600
+  - Id: 208
+    MinLevel: 60
+    Zone0: 601
+  - Id: 209
+    MinLevel: 60
+    Zone0: 602
+  - Id: 210
+    MinLevel: 60
+    Zone0: 603
+  - Id: 215
+    MinLevel: 100
+    Zone0: 639
+    Zone1: 640
+  - Id: 216
+    MinLevel: 5
+    Zone0: 1
+    Cost0: 500
+    Zone1: 169
+    Cost1: 5000
+    Zone2: 170
+    Cost2: 5000
+    Zone3: 171
+    Cost3: 5000
+    Zone4: 7
+    Cost4: 4000
+  - Id: 217
+    MinLevel: 1
+    Zone0: 644
+    Zone1: 645
+    Zone2: 646
+    Zone3: 647
+  - Id: 218
+    MinLevel: 1
+    Zone0: 648
+  - Id: 300
+    MinLevel: 1
+    Zone0: 649
+  - Id: 301
+    MinLevel: 1
+    Zone0: 650
+  - Id: 302
+    MinLevel: 1
+    Zone0: 652
+  - Id: 303
+    MinLevel: 1
+    Zone0: 653
+  - Id: 304
+    MinLevel: 1
+    Zone0: 654
+  - Id: 305
+    MinLevel: 1
+    Zone0: 655
+  - Id: 306
+    MinLevel: 1
+    Zone0: 657
+  - Id: 307
+    MinLevel: 1
+    Zone0: 661
+  - Id: 308
+    MinLevel: 1
+    Zone0: 201
+  - Id: 309
+    MinLevel: 1
+    Zone0: 671
+  - Id: 219
+    MinLevel: 1
+    Zone0: 233
+  - Id: 220
+    MinLevel: 60
+    Zone0: 685
+  - Id: 221
+    MinLevel: 60
+    Zone0: 679
+  - Id: 80
+    MinLevel: 90
+    Zone0: 5
+    Cost0: 1500
+    Zone1: 43
+    Cost1: 6000
+    Zone2: 86
+    Cost2: 3000
+    Zone3: 116
+  - Id: 81
+    MinLevel: 90
+    Zone0: 116
+    Zone1: 166
+    Zone2: 10
+    Zone3: 130
+    Zone4: 165
+    Zone5: 141
+    Zone6: 756
+  - Id: 222
+    MinLevel: 180
+    Zone0: 758
+  - Id: 223
+    MinLevel: 260
+    Zone0: 686
+    Cost0: 5000
+    Zone1: 687
+    Cost1: 5000
+  - Id: 224
+    MinLevel: 260
+    Zone0: 690
+  - Id: 225
+    MinLevel: 260
+    Zone0: 697
+  - Id: 226
+    MinLevel: 260
+    Zone0: 687
+  - Id: 227
+    MinLevel: 260
+    Zone0: 698
+    Zone1: 759
+  - Id: 228
+    MinLevel: 260
+    Zone0: 725
+    Zone1: 697
+  - Id: 229
+    MinLevel: 260
+    Zone0: 752
+    Zone1: 697
+  - Id: 82
+    MinLevel: 1
+    Zone0: 759
+    Zone1: 764
+    Zone2: 768
+    Zone3: 776
+  - Id: 83
+    MinLevel: 1
+    Zone0: 778
+    Zone1: 779
+    Zone2: 780
+    Zone3: 781
+    Zone4: 782
+    Zone5: 783
+    Zone6: 784
+  - Id: 84
+    MinLevel: 1
+    Zone0: 785
+    Zone1: 786
+    Zone2: 787
+    Zone3: 788
+    Zone4: 789
+    Zone5: 790
+    Zone6: 791
+  - Id: 85
+    MinLevel: 1
+    Zone0: 764
+    Zone1: 765
+    Zone2: 766
+    Zone3: 767
+    Zone4: 768
+    Zone5: 769
+    Zone6: 770
+  - Id: 86
+    MinLevel: 1
+    Zone0: 771
+    Zone1: 772
+    Zone2: 773
+    Zone3: 774
+    Zone4: 775
+    Zone5: 776
+    Zone6: 777
+
+Footer:
+  Imports:
+#  - Path: db/import/teleport_db.yml

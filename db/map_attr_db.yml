@@ -1,0 +1,56 @@
+# =============================================================================
+#   Map Attribute Database  (MAP_ATTR_DB)
+# =============================================================================
+#
+#   Table MapAttr of the ORIGINAL server data (17 rows, in its order).
+#
+#   Fields
+#     Type - the byte of a cell in the map's .md3 layer 3                      [key]
+#     Attr - the cell's ground nature (byte 1): 6 = no drilling; a drill whose
+#            GroundNature is set and differs costs twice the life
+#   Retail: ZoneMapAttr::Init -> sub_8209C0 (an absent Type reads 0).
+# =============================================================================
+
+Header:
+  Type: MAP_ATTR_DB
+  Version: 1
+
+Body:
+  - Type: 1
+    Attr: 1
+  - Type: 2
+    Attr: 2
+  - Type: 3
+    Attr: 2
+  - Type: 4
+    Attr: 2
+  - Type: 5
+    Attr: 3
+  - Type: 6
+    Attr: 3
+  - Type: 7
+    Attr: 3
+  - Type: 9
+    Attr: 4
+  - Type: 15
+    Attr: 4
+  - Type: 0
+    Attr: 0
+  - Type: 11
+    Attr: 6
+  - Type: 12
+    Attr: 3
+  - Type: 8
+    Attr: 4
+  - Type: 13
+    Attr: 5
+  - Type: 14
+    Attr: 5
+  - Type: 10
+    Attr: 4
+  - Type: 16
+    Attr: 4
+
+Footer:
+  Imports:
+#  - Path: db/import/map_attr_db.yml

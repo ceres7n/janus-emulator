@@ -1,0 +1,2605 @@
+# =============================================================================
+#   NpcMoveInfo  (NPC_MOVE_DB)
+# =============================================================================
+#
+#   Original server data (kto_libconfig.xml, 335 rows); field names verbatim.
+#
+#   NpcMoveInfo — an NPC's NpcMoveId (db/npc_db.yml): the script functions Move_Check /
+#   Move_Complete. GameInfoMgr sub_6288A0: Zone (1..999) and DestId (the destination's type-9
+#   point of that id), SrcItem0..3 / Cnt0..3 (items needed), MinLevel / MaxLevel (negative -> 0;
+#   Min > Max -> both 0), FType, ChrType, TakeItem.
+# =============================================================================
+
+Header:
+  Type: NPC_MOVE_DB
+  Version: 1
+
+Body:
+  - Id: 4
+    Zone: 47
+    DestId: 3
+    SrcItem0: 11081
+    Cnt0: 1
+    MinLevel: 5
+    MaxLevel: 400
+    FType: -1
+  - Id: 1
+    Zone: 43
+    DestId: 1
+    SrcItem0: 11069
+    Cnt0: 1
+    MinLevel: 100
+    MaxLevel: 400
+    FType: -1
+  - Id: 2
+    Zone: 47
+    DestId: 1
+    SrcItem0: 11080
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 3
+    Zone: 47
+    DestId: 2
+    SrcItem0: 11081
+    Cnt0: 1
+    MinLevel: 5
+    MaxLevel: 400
+    FType: -1
+  - Id: 6
+    Zone: 50
+    DestId: 1
+    SrcItem0: 12005
+    Cnt0: 1
+    SrcItem1: 10052
+    Cnt1: 1
+    MinLevel: 10
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 9
+    Zone: 78
+    DestId: 1
+    SrcItem0: 10204
+    Cnt0: 1
+    MaxLevel: 80
+    FType: -1
+    TakeItem: 1
+  - Id: 14
+    Zone: 85
+    DestId: 1
+    SrcItem0: 10096
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 11
+    Zone: 82
+    DestId: 1
+    SrcItem0: 11155
+    Cnt0: 1
+    FType: -1
+  - Id: 12
+    Zone: 1
+    DestId: 1
+    SrcItem0: 11155
+    Cnt0: 1
+    FType: -1
+  - Id: 13
+    Zone: 83
+    DestId: 1
+    SrcItem0: 11155
+    Cnt0: 2
+    FType: -1
+  - Id: 16
+    Zone: 93
+    DestId: 1
+    SrcItem0: 11179
+    Cnt0: 1
+    FType: -1
+  - Id: 15
+    Zone: 85
+    DestId: 2
+    SrcItem0: 10097
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 17
+    Zone: 110
+    DestId: 1
+    SrcItem0: 11179
+    Cnt0: 1
+    FType: -1
+  - Id: 19
+    Zone: 131
+    DestId: 1
+    SrcItem0: 10160
+    Cnt0: 1
+    SrcItem1: 11026
+    Cnt1: 5
+    FType: -1
+    TakeItem: 1
+  - Id: 78
+    Zone: 314
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 199
+    FType: -1
+    TakeItem: 1
+  - Id: 21
+    Zone: 313
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 40
+    MaxLevel: 69
+    FType: -1
+    TakeItem: 1
+  - Id: 22
+    Zone: 316
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 109
+    FType: -1
+    TakeItem: 1
+  - Id: 24
+    Zone: 186
+    DestId: 1
+    SrcItem0: 11227
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 25
+    Zone: 192
+    DestId: 1
+    SrcItem0: 10091
+    Cnt0: 1
+    SrcItem1: 10292
+    Cnt1: 1
+    FType: -1
+  - Id: 28
+    Zone: 195
+    DestId: 1
+    SrcItem0: 12000
+    Cnt0: 3
+    MinLevel: 21
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 30
+    Zone: 79
+    DestId: 2
+    SrcItem0: 10260
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 31
+    Zone: 201
+    DestId: 1
+    SrcItem0: 11187
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 32
+    Zone: 312
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 149
+    FType: -1
+    TakeItem: 1
+  - Id: 33
+    Zone: 210
+    DestId: 1
+    SrcItem0: 10117
+    Cnt0: 1
+    FType: -1
+  - Id: 36
+    Zone: 215
+    DestId: 1
+    SrcItem0: 10164
+    Cnt0: 1
+    MinLevel: 200
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 37
+    Zone: 216
+    DestId: 1
+    SrcItem0: 24140
+    Cnt0: 1
+    MaxLevel: 80
+    FType: -1
+    TakeItem: 1
+  - Id: 38
+    Zone: 217
+    DestId: 1
+    SrcItem0: 10076
+    Cnt0: 2
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 39
+    Zone: 218
+    DestId: 1
+    SrcItem0: 11080
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 40
+    Zone: 218
+    DestId: 2
+    SrcItem0: 11081
+    Cnt0: 1
+    FType: -1
+  - Id: 41
+    Zone: 218
+    DestId: 3
+    SrcItem0: 11081
+    Cnt0: 1
+    FType: -1
+  - Id: 42
+    Zone: 219
+    DestId: 1
+    SrcItem0: 11021
+    Cnt0: 1
+    SrcItem1: 11022
+    Cnt1: 1
+    MinLevel: 50
+    MaxLevel: 400
+    FType: -1
+  - Id: 43
+    Zone: 3
+    DestId: 1
+    SrcItem0: 11021
+    Cnt0: 1
+    SrcItem1: 11022
+    Cnt1: 1
+    MinLevel: 50
+    MaxLevel: 400
+    FType: -1
+  - Id: 44
+    Zone: 228
+    DestId: 1
+    SrcItem0: 2000
+    Cnt0: 1
+    MinLevel: 21
+    MaxLevel: 50
+    FType: -1
+    TakeItem: 1
+  - Id: 45
+    Zone: 229
+    DestId: 1
+    SrcItem0: 2001
+    Cnt0: 1
+    MinLevel: 51
+    MaxLevel: 100
+    FType: -1
+    TakeItem: 1
+  - Id: 46
+    Zone: 230
+    DestId: 1
+    SrcItem0: 2002
+    Cnt0: 1
+    MinLevel: 101
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 47
+    Zone: 231
+    DestId: 1
+    SrcItem0: 2003
+    Cnt0: 1
+    MinLevel: 151
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 50
+    Zone: 234
+    DestId: 1
+    SrcItem0: 11081
+    Cnt0: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 51
+    Zone: 235
+    DestId: 1
+    SrcItem0: 11081
+    Cnt0: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 53
+    Zone: 188
+    DestId: 1
+    SrcItem0: 11237
+    Cnt0: 3
+    FType: -1
+    TakeItem: 1
+  - Id: 54
+    Zone: 247
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 55
+    Zone: 248
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 56
+    Zone: 249
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 57
+    Zone: 250
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 58
+    Zone: 251
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 59
+    Zone: 252
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 60
+    Zone: 253
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 61
+    Zone: 254
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 62
+    Zone: 255
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 63
+    Zone: 256
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 64
+    Zone: 257
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 65
+    Zone: 258
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 66
+    Zone: 259
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 67
+    Zone: 260
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 68
+    Zone: 261
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 69
+    Zone: 262
+    DestId: 1
+    SrcItem0: 11608
+    Cnt0: 1
+    MinLevel: 130
+    MaxLevel: 400
+    FType: -1
+  - Id: 70
+    Zone: 274
+    DestId: 1
+    SrcItem0: 11730
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 71
+    Zone: 275
+    DestId: 1
+    SrcItem0: 11702
+    Cnt0: 1
+    MinLevel: 80
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 72
+    Zone: 233
+    DestId: 1
+    MinLevel: 5
+    MaxLevel: 400
+    FType: -1
+  - Id: 73
+    Zone: 277
+    DestId: 1
+    SrcItem0: 10091
+    Cnt0: 1
+    SrcItem1: 10292
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 90
+    FType: -1
+  - Id: 74
+    Zone: 277
+    DestId: 2
+    FType: -1
+  - Id: 75
+    Zone: 192
+    DestId: 1
+    SrcItem0: 11771
+    Cnt0: 1
+    SrcItem1: 11772
+    Cnt1: 1
+    SrcItem2: 11773
+    Cnt2: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 76
+    Zone: 33
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 77
+    Zone: 285
+    DestId: 1
+    SrcItem0: 11904
+    Cnt0: 1
+    MinLevel: 40
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 20
+    Zone: 317
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 10
+    MaxLevel: 39
+    FType: -1
+    TakeItem: 1
+  - Id: 79
+    Zone: 304
+    DestId: 2
+    FType: -1
+  - Id: 80
+    Zone: 305
+    DestId: 1
+    FType: -1
+  - Id: 81
+    Zone: 307
+    DestId: 1
+    FType: -1
+  - Id: 82
+    Zone: 307
+    DestId: 2
+    FType: -1
+  - Id: 83
+    Zone: 308
+    DestId: 1
+    FType: -1
+  - Id: 84
+    Zone: 308
+    DestId: 2
+    FType: -1
+  - Id: 85
+    Zone: 311
+    DestId: 1
+    SrcItem0: 63074
+    Cnt0: 1
+    MinLevel: 125
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 86
+    Zone: 315
+    DestId: 1
+    SrcItem0: 63242
+    Cnt0: 1
+    MinLevel: 200
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 87
+    Zone: 325
+    DestId: 1
+    SrcItem0: 2004
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 88
+    Zone: 326
+    DestId: 1
+    SrcItem0: 63298
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 89
+    Zone: 328
+    DestId: 1
+    SrcItem0: 63299
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 90
+    Zone: 329
+    DestId: 1
+    SrcItem0: 63301
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 91
+    Zone: 330
+    DestId: 1
+    SrcItem0: 63302
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 92
+    Zone: 332
+    DestId: 1
+    SrcItem0: 63303
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 93
+    Zone: 333
+    DestId: 1
+    SrcItem0: 63305
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 94
+    Zone: 334
+    DestId: 1
+    SrcItem0: 63306
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 95
+    Zone: 335
+    DestId: 1
+    SrcItem0: 63307
+    Cnt0: 1
+    MinLevel: 160
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 96
+    Zone: 216
+    DestId: 1
+    SrcItem0: 10003
+    Cnt0: 3
+    MinLevel: 15
+    MaxLevel: 40
+    FType: -1
+    TakeItem: 1
+  - Id: 97
+    Zone: 338
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 98
+    Zone: 338
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 99
+    Zone: 338
+    DestId: 4
+    SrcItem0: 63468
+    Cnt0: 5
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 100
+    Zone: 338
+    DestId: 5
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 101
+    Zone: 338
+    DestId: 6
+    SrcItem0: 63469
+    Cnt0: 5
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 102
+    Zone: 338
+    DestId: 7
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 103
+    Zone: 339
+    DestId: 1
+    SrcItem0: 63470
+    Cnt0: 5
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 104
+    Zone: 339
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 105
+    Zone: 340
+    DestId: 1
+    SrcItem0: 63471
+    Cnt0: 30
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 106
+    Zone: 340
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 107
+    Zone: 341
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 108
+    Zone: 341
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 109
+    Zone: 341
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 110
+    Zone: 191
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 111
+    Zone: 341
+    DestId: 4
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 112
+    Zone: 341
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 113
+    Zone: 191
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 114
+    Zone: 338
+    DestId: 1
+    SrcItem0: 10052
+    Cnt0: 5
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+    TakeItem: 1
+  - Id: 115
+    Zone: 379
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 280
+    FType: -1
+  - Id: 116
+    Zone: 372
+    DestId: 1
+    SrcItem0: 63494
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 117
+    Zone: 372
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 118
+    Zone: 377
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 119
+    Zone: 377
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 120
+    Zone: 374
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 121
+    Zone: 372
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 122
+    Zone: 381
+    DestId: 1
+    SrcItem0: 2001
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 123
+    Zone: 382
+    DestId: 1
+    SrcItem0: 63564
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 124
+    Zone: 384
+    DestId: 1
+    SrcItem0: 63565
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 125
+    Zone: 385
+    DestId: 1
+    SrcItem0: 63567
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 126
+    Zone: 386
+    DestId: 1
+    SrcItem0: 63568
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 127
+    Zone: 388
+    DestId: 1
+    SrcItem0: 63569
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 128
+    Zone: 389
+    DestId: 1
+    SrcItem0: 63571
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 129
+    Zone: 390
+    DestId: 1
+    SrcItem0: 63572
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 130
+    Zone: 391
+    DestId: 1
+    SrcItem0: 63573
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 131
+    Zone: 392
+    DestId: 1
+    SrcItem0: 63582
+    Cnt0: 1
+    MinLevel: 25
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 132
+    Zone: 394
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 133
+    Zone: 394
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 134
+    Zone: 395
+    DestId: 1
+    SrcItem0: 63596
+    Cnt0: 6
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 135
+    Zone: 395
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 136
+    Zone: 395
+    DestId: 3
+    SrcItem0: 63584
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 137
+    Zone: 395
+    DestId: 4
+    SrcItem0: 63585
+    Cnt0: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 138
+    Zone: 395
+    DestId: 5
+    SrcItem0: 63586
+    Cnt0: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 139
+    Zone: 395
+    DestId: 6
+    SrcItem0: 63587
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 140
+    Zone: 395
+    DestId: 7
+    SrcItem0: 63588
+    Cnt0: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 141
+    Zone: 402
+    DestId: 1
+    SrcItem0: 2001
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 142
+    Zone: 403
+    DestId: 1
+    SrcItem0: 63628
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 143
+    Zone: 405
+    DestId: 1
+    SrcItem0: 63629
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 144
+    Zone: 406
+    DestId: 1
+    SrcItem0: 63631
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 145
+    Zone: 407
+    DestId: 1
+    SrcItem0: 63632
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 146
+    Zone: 409
+    DestId: 1
+    SrcItem0: 63633
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 147
+    Zone: 410
+    DestId: 1
+    SrcItem0: 63635
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 148
+    Zone: 411
+    DestId: 1
+    SrcItem0: 63636
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 149
+    Zone: 412
+    DestId: 1
+    SrcItem0: 63637
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 150
+    Zone: 413
+    DestId: 1
+    SrcItem0: 63639
+    Cnt0: 1
+    MinLevel: 70
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 151
+    Zone: 416
+    DestId: 1
+    SrcItem0: 2001
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 152
+    Zone: 417
+    DestId: 1
+    SrcItem0: 63665
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 153
+    Zone: 419
+    DestId: 1
+    SrcItem0: 63666
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 154
+    Zone: 420
+    DestId: 1
+    SrcItem0: 63668
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 155
+    Zone: 421
+    DestId: 1
+    SrcItem0: 63669
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 156
+    Zone: 423
+    DestId: 1
+    SrcItem0: 63670
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 157
+    Zone: 424
+    DestId: 1
+    SrcItem0: 63672
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 158
+    Zone: 425
+    DestId: 1
+    SrcItem0: 63673
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 159
+    Zone: 426
+    DestId: 1
+    SrcItem0: 63674
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 160
+    Zone: 427
+    DestId: 1
+    SrcItem0: 63676
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 161
+    Zone: 418
+    DestId: 1
+    SrcItem0: 63667
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 162
+    Zone: 422
+    DestId: 1
+    SrcItem0: 63671
+    Cnt0: 1
+    MinLevel: 110
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 163
+    Zone: 436
+    DestId: 1
+    SrcItem0: 2001
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 164
+    Zone: 437
+    DestId: 1
+    SrcItem0: 63692
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 165
+    Zone: 439
+    DestId: 1
+    SrcItem0: 63693
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 166
+    Zone: 440
+    DestId: 1
+    SrcItem0: 63695
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 167
+    Zone: 441
+    DestId: 1
+    SrcItem0: 63696
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 168
+    Zone: 443
+    DestId: 1
+    SrcItem0: 63697
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 169
+    Zone: 444
+    DestId: 1
+    SrcItem0: 63699
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 170
+    Zone: 445
+    DestId: 1
+    SrcItem0: 63700
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 171
+    Zone: 446
+    DestId: 1
+    SrcItem0: 63701
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 172
+    Zone: 447
+    DestId: 1
+    SrcItem0: 63703
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 173
+    Zone: 438
+    DestId: 1
+    SrcItem0: 63694
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 174
+    Zone: 442
+    DestId: 1
+    SrcItem0: 63698
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 176
+    Zone: 50
+    DestId: 16
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 175
+    Zone: 50
+    DestId: 15
+    SrcItem0: 104
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 177
+    Zone: 453
+    DestId: 8
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+  - Id: 178
+    Zone: 454
+    DestId: 38
+    SrcItem0: 63755
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 179
+    Zone: 456
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+  - Id: 180
+    Zone: 456
+    DestId: 4
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+  - Id: 211
+    Zone: 454
+    DestId: 35
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 181
+    Zone: 454
+    DestId: 33
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 182
+    Zone: 454
+    DestId: 34
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 183
+    Zone: 454
+    DestId: 35
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 184
+    Zone: 454
+    DestId: 36
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 185
+    Zone: 454
+    DestId: 37
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 186
+    Zone: 454
+    DestId: 38
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 187
+    Zone: 454
+    DestId: 39
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 188
+    Zone: 454
+    DestId: 40
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 189
+    Zone: 454
+    DestId: 41
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 190
+    Zone: 454
+    DestId: 42
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 191
+    Zone: 454
+    DestId: 32
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 192
+    Zone: 455
+    DestId: 32
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 193
+    Zone: 455
+    DestId: 33
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 194
+    Zone: 455
+    DestId: 34
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 195
+    Zone: 455
+    DestId: 35
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 196
+    Zone: 455
+    DestId: 36
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 197
+    Zone: 455
+    DestId: 38
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 198
+    Zone: 455
+    DestId: 39
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 199
+    Zone: 455
+    DestId: 40
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 200
+    Zone: 455
+    DestId: 41
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 201
+    Zone: 455
+    DestId: 42
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 202
+    Zone: 454
+    DestId: 36
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 203
+    Zone: 454
+    DestId: 37
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 204
+    Zone: 454
+    DestId: 38
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 205
+    Zone: 454
+    DestId: 39
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 206
+    Zone: 454
+    DestId: 40
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 207
+    Zone: 454
+    DestId: 42
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 208
+    Zone: 454
+    DestId: 32
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 209
+    Zone: 454
+    DestId: 33
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 212
+    Zone: 455
+    DestId: 33
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 241
+    Zone: 455
+    DestId: 35
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 240
+    Zone: 455
+    DestId: 33
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 239
+    Zone: 455
+    DestId: 32
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 238
+    Zone: 455
+    DestId: 42
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 237
+    Zone: 455
+    DestId: 40
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 236
+    Zone: 455
+    DestId: 39
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 235
+    Zone: 455
+    DestId: 38
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 234
+    Zone: 455
+    DestId: 37
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 233
+    Zone: 455
+    DestId: 36
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 232
+    Zone: 454
+    DestId: 42
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 231
+    Zone: 454
+    DestId: 41
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 230
+    Zone: 454
+    DestId: 40
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 229
+    Zone: 454
+    DestId: 39
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 228
+    Zone: 454
+    DestId: 38
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 227
+    Zone: 454
+    DestId: 36
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 226
+    Zone: 454
+    DestId: 35
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 225
+    Zone: 454
+    DestId: 34
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 224
+    Zone: 454
+    DestId: 33
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 223
+    Zone: 454
+    DestId: 32
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 222
+    Zone: 455
+    DestId: 32
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 221
+    Zone: 455
+    DestId: 42
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 220
+    Zone: 455
+    DestId: 41
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 219
+    Zone: 455
+    DestId: 40
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 218
+    Zone: 455
+    DestId: 39
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 217
+    Zone: 455
+    DestId: 38
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 216
+    Zone: 455
+    DestId: 37
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 215
+    Zone: 455
+    DestId: 36
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 214
+    Zone: 455
+    DestId: 35
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 213
+    Zone: 455
+    DestId: 34
+    SrcItem0: 63756
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 242
+    Zone: 456
+    DestId: 7
+    FType: -1
+  - Id: 8
+    Zone: 453
+    DestId: 10
+    SrcItem0: 104
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 10
+    Zone: 61
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 243
+    Zone: 455
+    DestId: 38
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 244
+    Zone: 454
+    DestId: 40
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 210
+    Zone: 454
+    DestId: 34
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 245
+    Zone: 454
+    DestId: 36
+    SrcItem0: 63756
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 246
+    Zone: 455
+    DestId: 40
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 247
+    Zone: 455
+    DestId: 34
+    SrcItem0: 63757
+    Cnt0: 1
+    SrcItem1: 63758
+    Cnt1: 1
+    MinLevel: 1
+    MaxLevel: 150
+    FType: -1
+    TakeItem: 1
+  - Id: 248
+    Zone: 459
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 249
+    Zone: 460
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 250
+    Zone: 460
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 251
+    Zone: 460
+    DestId: 4
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 252
+    Zone: 460
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 253
+    Zone: 460
+    DestId: 6
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 254
+    Zone: 460
+    DestId: 5
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 255
+    Zone: 460
+    DestId: 7
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 256
+    Zone: 460
+    DestId: 8
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 257
+    Zone: 460
+    DestId: 9
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 258
+    Zone: 460
+    DestId: 10
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 259
+    Zone: 461
+    DestId: 1
+    SrcItem0: 63808
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 260
+    Zone: 475
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 261
+    Zone: 476
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 262
+    Zone: 476
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 263
+    Zone: 476
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 264
+    Zone: 476
+    DestId: 4
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 265
+    Zone: 476
+    DestId: 5
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 266
+    Zone: 476
+    DestId: 6
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 267
+    Zone: 479
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 268
+    Zone: 480
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 269
+    Zone: 478
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 270
+    Zone: 481
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 272
+    Zone: 394
+    DestId: 10
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 29
+    Zone: 79
+    DestId: 1
+    SrcItem0: 2003
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 271
+    Zone: 475
+    DestId: 1
+    SrcItem0: 11182
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 34
+    Zone: 304
+    DestId: 1
+    SrcItem0: 1001
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 360
+    FType: -1
+    TakeItem: 1
+  - Id: 35
+    Zone: 457
+    DestId: 2
+    SrcItem0: 10023
+    Cnt0: 1
+    MinLevel: 1
+    MaxLevel: 210
+    FType: -1
+    TakeItem: 1
+  - Id: 291
+    Zone: 488
+    DestId: 1
+    SrcItem0: 63893
+    Cnt0: 1
+    MinLevel: 150
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 292
+    Zone: 527
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 293
+    Zone: 491
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 294
+    Zone: 491
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 295
+    Zone: 493
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 296
+    Zone: 492
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 297
+    Zone: 492
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 298
+    Zone: 493
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 299
+    Zone: 494
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 300
+    Zone: 494
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 301
+    Zone: 494
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 302
+    Zone: 495
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 303
+    Zone: 561
+    DestId: 1
+    MinLevel: 30
+    MaxLevel: 400
+    FType: -1
+  - Id: 304
+    Zone: 33
+    DestId: 2
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 305
+    Zone: 493
+    DestId: 3
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 308
+    Zone: 624
+    DestId: 1
+    MinLevel: 200
+    MaxLevel: 400
+    FType: -1
+  - Id: 315
+    Zone: 611
+    DestId: 1
+    MinLevel: 200
+    MaxLevel: 400
+    FType: -1
+  - Id: 316
+    Zone: 607
+    DestId: 1
+    MinLevel: 200
+    MaxLevel: 400
+    FType: -1
+  - Id: 306
+    Zone: 325
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 307
+    Zone: 330
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 309
+    Zone: 380
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 310
+    Zone: 392
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 311
+    Zone: 411
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 312
+    Zone: 423
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 313
+    Zone: 441
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 314
+    Zone: 324
+    DestId: 1
+    MinLevel: 60
+    MaxLevel: 400
+    FType: -1
+  - Id: 317
+    Zone: 649
+    DestId: 1
+    FType: -1
+  - Id: 318
+    Zone: 655
+    DestId: 1
+    FType: -1
+  - Id: 319
+    Zone: 655
+    DestId: 2
+    FType: -1
+  - Id: 320
+    Zone: 655
+    DestId: 3
+    FType: -1
+  - Id: 321
+    Zone: 649
+    DestId: 2
+    FType: -1
+  - Id: 322
+    Zone: 3
+    DestId: 1
+    MinLevel: 1
+    MaxLevel: 400
+    FType: -1
+  - Id: 323
+    Zone: 111
+    DestId: 1
+    FType: -1
+  - Id: 324
+    Zone: 10
+    DestId: 1
+    FType: -1
+  - Id: 325
+    Zone: 130
+    DestId: 1
+    FType: -1
+  - Id: 326
+    Zone: 141
+    DestId: 1
+    FType: -1
+  - Id: 327
+    Zone: 165
+    DestId: 1
+    FType: -1
+  - Id: 328
+    Zone: 690
+    DestId: 1
+    FType: -1
+  - Id: 329
+    Zone: 698
+    DestId: 1
+    FType: -1
+  - Id: 330
+    Zone: 725
+    DestId: 1
+    FType: -1
+  - Id: 331
+    Zone: 725
+    DestId: 2
+    FType: -1
+  - Id: 332
+    Zone: 752
+    DestId: 1
+    FType: -1
+  - Id: 333
+    Zone: 720
+    DestId: 1
+    FType: -1
+  - Id: 334
+    Zone: 723
+    DestId: 1
+    FType: -1
+  - Id: 335
+    Zone: 698
+    DestId: 2
+    FType: -1
+  - Id: 336
+    Zone: 724
+    DestId: 1
+    FType: -1
+  - Id: 337
+    Zone: 722
+    DestId: 1
+    FType: -1
+  - Id: 338
+    Zone: 698
+    DestId: 3
+    FType: -1
+  - Id: 339
+    Zone: 747
+    DestId: 1
+    FType: -1
+  - Id: 340
+    Zone: 725
+    DestId: 3
+    FType: -1
+  - Id: 341
+    Zone: 750
+    DestId: 1
+    FType: -1
+  - Id: 342
+    Zone: 751
+    DestId: 1
+    FType: -1
+  - Id: 343
+    Zone: 725
+    DestId: 2
+    FType: -1
+  - Id: 344
+    Zone: 749
+    DestId: 1
+    FType: -1
+  - Id: 345
+    Zone: 706
+    DestId: 1
+    FType: -1
+  - Id: 346
+    Zone: 714
+    DestId: 1
+    FType: -1
+  - Id: 347
+    Zone: 746
+    DestId: 1
+    FType: -1
+  - Id: 348
+    Zone: 719
+    DestId: 1
+    FType: -1
+  - Id: 349
+    Zone: 717
+    DestId: 1
+    FType: -1
+  - Id: 350
+    Zone: 748
+    DestId: 1
+    FType: -1
+  - Id: 351
+    Zone: 733
+    DestId: 1
+    FType: -1
+  - Id: 352
+    Zone: 744
+    DestId: 1
+    FType: -1
+  - Id: 353
+    Zone: 794
+    DestId: 1
+    SrcItem0: 66336
+    Cnt0: 1
+    MinLevel: 320
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 354
+    Zone: 797
+    DestId: 1
+    SrcItem0: 66339
+    Cnt0: 1
+    MinLevel: 320
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 355
+    Zone: 799
+    DestId: 1
+    SrcItem0: 66341
+    Cnt0: 1
+    MinLevel: 320
+    MaxLevel: 400
+    FType: -1
+    TakeItem: 1
+  - Id: 356
+    Zone: 793
+    DestId: 1
+    SrcItem0: 66335
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 357
+    Zone: 795
+    DestId: 1
+    SrcItem0: 66337
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 358
+    Zone: 796
+    DestId: 1
+    SrcItem0: 66338
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 359
+    Zone: 798
+    DestId: 1
+    SrcItem0: 66340
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 360
+    Zone: 800
+    DestId: 1
+    SrcItem0: 66342
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 361
+    Zone: 801
+    DestId: 1
+    SrcItem0: 66343
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+  - Id: 362
+    Zone: 802
+    DestId: 1
+    SrcItem0: 66344
+    Cnt0: 1
+    FType: -1
+    TakeItem: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/npc_move_db.yml

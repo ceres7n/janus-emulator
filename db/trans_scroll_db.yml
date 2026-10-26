@@ -1,0 +1,268 @@
+# =============================================================================
+#   Trans Scroll Database  (TRANS_SCROLL_DB)
+# =============================================================================
+#
+#   Table TransScrollInfo of the ORIGINAL server data (kto_libconfig.xml, 82 rows,
+#   in its order): the model a disguise kit (Type 15, SubType 71) turns its user
+#   into. Field names verbatim; Name = the item's name in item_db.yml (display only).
+#
+#   Fields
+#     ID            - the item                                        [key]
+#     TransChrType  - the model (CharacterInfo id; the retail takes 1..18033)
+# =============================================================================
+
+Header:
+  Type: TRANS_SCROLL_DB
+  Version: 1
+
+Body:
+  - ID: 37500
+    Name: Chimu Disguise Kit
+    TransChrType: 2075
+  - ID: 37501
+    Name: Blue Penguin Disguise Kit
+    TransChrType: 2020
+  - ID: 37502
+    Name: Golden Mole Disguise Kit
+    TransChrType: 2035
+  - ID: 37503
+    Name: Torrobie Disguise Kit
+    TransChrType: 2183
+  - ID: 37504
+    Name: Little Cora Disguise Kit
+    TransChrType: 2188
+  - ID: 37505
+    Name: Baby Rabbit Disguise Kit
+    TransChrType: 4001
+  - ID: 37506
+    Name: Baby Buffalo Disguise Kit
+    TransChrType: 4002
+  - ID: 37507
+    Name: Baby Sheep Disguise Kit
+    TransChrType: 4003
+  - ID: 37508
+    Name: Baby Dragon Disguise Kit
+    TransChrType: 4004
+  - ID: 37509
+    Name: Baby Fox Disguise Kit
+    TransChrType: 4005
+  - ID: 37510
+    Name: Baby Lion Disguise Kit
+    TransChrType: 4006
+  - ID: 37511
+    Name: Baby Cat Disguise Kit
+    TransChrType: 4007
+  - ID: 37512
+    Name: Baby Raccoon Disguise Kit
+    TransChrType: 4008
+  - ID: 37526
+    Name: Chimu Disguise Kit EV
+    TransChrType: 2075
+  - ID: 37527
+    Name: Blue Penguin Disguise Kit EV
+    TransChrType: 2020
+  - ID: 37528
+    Name: Golden Mole Disguise Kit Ev
+    TransChrType: 2035
+  - ID: 37529
+    Name: Torobbie Disguise Kit Ev
+    TransChrType: 2183
+  - ID: 37530
+    Name: Cora Disguise Kit
+    TransChrType: 2188
+  - ID: 37531
+    Name: Baby Bunny Disguise Kit Ev
+    TransChrType: 4001
+  - ID: 37532
+    Name: Baby Buffalo Disguise Kit Ev
+    TransChrType: 4002
+  - ID: 37533
+    Name: Baby Sheep Disguise Kit Ev
+    TransChrType: 4003
+  - ID: 37534
+    Name: Baby Dragon Disguise Kit Ev
+    TransChrType: 4004
+  - ID: 37535
+    Name: Baby Fox Disguise Kit Ev
+    TransChrType: 4005
+  - ID: 37536
+    Name: Baby Lion Disguise Kit Ev
+    TransChrType: 4006
+  - ID: 37537
+    Name: Baby Cat Disguise Kit Ev
+    TransChrType: 4007
+  - ID: 37538
+    Name: Baby Raccoon Disguise Kit Ev
+    TransChrType: 4008
+  - ID: 99980
+    Name: Stella Disguise
+    TransChrType: 1221
+  - ID: 99981
+    Name: Miranda Watty
+    TransChrType: 1002
+  - ID: 99982
+    Name: Mirabo Watty
+    TransChrType: 1003
+  - ID: 99983
+    Name: Maiden Ghost
+    TransChrType: 2161
+  - ID: 99984
+    Name: Don Giuvanni
+    TransChrType: 1001
+  - ID: 99985
+    Name: Poppuri
+    TransChrType: 7021
+  - ID: 99986
+    Name: 전설의 스파이시드래곤 변신액자
+    TransChrType: 2029
+  - ID: 99987
+    Name: Tombeth
+    TransChrType: 2072
+  - ID: 99988
+    Name: Count Blood
+    TransChrType: 2138
+  - ID: 37545
+    Name: Maid Lydia Disguise Kit
+    TransChrType: 2131
+  - ID: 37519
+    Name: Crow Disguise Kit
+    TransChrType: 2191
+  - ID: 37546
+    Name: Melon Biscuit Disguise Kit
+    TransChrType: 4045
+  - ID: 37547
+    Name: Strawberry Biscuit Disguise Kit
+    TransChrType: 4046
+  - ID: 37548
+    Name: CA Biscuit Disguise Kit
+    TransChrType: 4047
+  - ID: 37556
+    Name: Santa Bear Disguise Kit
+    TransChrType: 2101
+  - ID: 37557
+    Name: Santa Claus Disguise Kit
+    TransChrType: 4108
+  - ID: 37558
+    Name: Rudolph Disguise Kit
+    TransChrType: 4031
+  - ID: 37559
+    Name: Snowkid Disguise Kit
+    TransChrType: 2098
+  - ID: 37554
+    Name: Young Lady Snow Disguise Kit
+    TransChrType: 8264
+  - ID: 37555
+    Name: Madame Snow Disguise Kit
+    TransChrType: 8266
+  - ID: 37568
+    Name: Thiefmon Disguise Kit Ev
+    TransChrType: 2189
+  - ID: 37569
+    Name: Flower Girl Rin Disguise Kit
+    TransChrType: 8309
+  - ID: 37570
+    Name: Ring Bearer Ran Disguise Kit
+    TransChrType: 8310
+  - ID: 37575
+    Name: Lucky Bear Disguise Kit
+    TransChrType: 4415
+  - ID: 37576
+    Name: Stella Disguise Kit
+    TransChrType: 8371
+  - ID: 37577
+    Name: Kyu Disguise Kit
+    TransChrType: 8340
+  - ID: 37581
+    Name: Al Hauri Disguise Kit
+    TransChrType: 4134
+  - ID: 37582
+    Name: Entertainer Alicia Disguise Kit
+    TransChrType: 4161
+  - ID: 37583
+    Name: Master Mong Disguise Kit
+    TransChrType: 2215
+  - ID: 37584
+    Name: 전설의 스파이시드래곤 변신액자Ev
+    TransChrType: 2029
+  - ID: 37585
+    Name: Tutankhamen Disguise Kit
+    TransChrType: 2097
+  - ID: 37586
+    Name: 카란 변신액자 Ev
+    TransChrType: 2295
+  - ID: 37587
+    Name: 텐터리온 변신액자 Ev
+    TransChrType: 2152
+  - ID: 37588
+    Name: 소키 변신액자 Ev
+    TransChrType: 2216
+  - ID: 37589
+    Name: Aubrey Disguise Kit
+    TransChrType: 8326
+  - ID: 37590
+    Name: Ashley Disguise Kit
+    TransChrType: 8327
+  - ID: 37591
+    Name: Madison Disguise Kit
+    TransChrType: 8328
+  - ID: 37592
+    Name: Hailey Disguise Kit
+    TransChrType: 8329
+  - ID: 37603
+    Name: 토랑이 변신액자
+    TransChrType: 8147
+  - ID: 37604
+    Name: Chapter Chef frame transformation
+    TransChrType: 7034
+  - ID: 37605
+    Name: Chapter uinyeo frame transformation
+    TransChrType: 7165
+  - ID: 37602
+    Name: Witch Pam Disguise Kit
+    TransChrType: 2660
+  - ID: 37601
+    Name: Ice Cream Disguise Kit
+    TransChrType: 2103
+  - ID: 37619
+    Name: Primrose Disguise Kit
+    TransChrType: 8543
+  - ID: 37620
+    Name: Tacky Disguise Kit
+    TransChrType: 8544
+  - ID: 37634
+    Name: 찡찡 모기 변신액자
+    TransChrType: 2774
+  - ID: 37635
+    Name: Handsome Fallen Mosquito Disguise
+    TransChrType: 2771
+  - ID: 37636
+    Name: Cute Genius Mosquito Disguise
+    TransChrType: 2773
+  - ID: 37637
+    Name: Healthy Bachelor Mosquito Disguise
+    TransChrType: 2772
+  - ID: 37641
+    Name: Carnival potpourri frame shear transformation
+    TransChrType: 4545
+  - ID: 37647
+    Name: Rabbit rice cake tray frame transformation
+    TransChrType: 4655
+  - ID: 37644
+    Name: Halloween Model Skeleton Disguise Kit
+    TransChrType: 2196
+  - ID: 37642
+    Name: Halloween Blue Goblin Disguise Kit
+    TransChrType: 2379
+  - ID: 37643
+    Name: Halloween Madam Moncher Disguise Kit
+    TransChrType: 2114
+  - ID: 37645
+    Name: Halloween Marie Toy Disguise Kit
+    TransChrType: 2140
+  - ID: 37646
+    Name: Halloween Requi Disguise Kit
+    TransChrType: 2192
+
+Footer:
+  Imports:
+#  - Path: db/import/trans_scroll_db.yml

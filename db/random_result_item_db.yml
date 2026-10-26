@@ -1,0 +1,859 @@
+# =============================================================================
+#   Random Result Item Database  (RANDOM_RESULT_ITEM_DB)
+# =============================================================================
+#   Table RandomResultItemInfo of the ORIGINAL server data (58 rows) — a quest result's
+#   random reward tables (GameInfoMgr sub_639B50). Each item takes (int)(Rate * 10000) of the
+#   range; one pick (sub_7EB220) is rand() % the total.
+#
+#   Fields
+#     ID              - table id                                                 [key]
+#     ItemN / RateN / CntN - an item, its share (float) and count (0: 1)  (N = 0..9)
+# =============================================================================
+
+Header:
+  Type: RANDOM_RESULT_ITEM_DB
+  Version: 1
+
+Body:
+  - ID: 1
+    Item0: 1008   # Diamond
+    Rate0: 0.500000
+    Cnt0: 10
+    Item1: 1009   # Harkon
+    Rate1: 0.300000
+    Cnt1: 5
+  - ID: 51
+    Item0: 2000   # Pink Potion A
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2200   # Blue Potion A
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 103   # 100 galder coupon
+    Rate2: 0.300000
+    Cnt2: 2
+    Item3: 600002   # Sharp Wooden Sword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601002   # Sharp Poniard
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610002   # Strong Ebony Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603002   # Moon Staff
+    Rate6: 0.010000
+    Cnt6: 1
+  - ID: 52
+    Item0: 2000   # Pink Potion A
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2200   # Blue Potion A
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 103   # 100 galder coupon
+    Rate2: 0.300000
+    Cnt2: 5
+    Item3: 600010   # Sharp Bokken
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601010   # Sharp Knife
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610010   # Strong Wood Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603010   # Moon Kane Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640002   # Strong Wood Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 53
+    Item0: 2001   # Pink Potion B
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2201   # Blue Potion B
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 2
+    Item3: 600018   # Sharp Stone Sword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601018   # Sharp Silver Knife
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610018   # Strong Classic Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603018   # Moon Baton Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640010   # Strong Bronze Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 54
+    Item0: 2001   # Pink Potion B
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2201   # Blue Potion B
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 5
+    Item3: 600026   # Sharp Sword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601026   # Sharp Dagger
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610026   # Strong Antique Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603026   # Moon Bronze Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640018   # Strong Metal Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 55
+    Item0: 2027   # Half Pink Potion
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2227   # Half Blue Potion
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 10
+    Item3: 600034   # Sharp Epoch Sword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601034   # Sharp Dirk
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610034   # Strong Metal Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603034   # Moon Wood Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640026   # Strong Thorn Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 56
+    Item0: 2027   # Half Pink Potion
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2227   # Half Blue Potion
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 15
+    Item3: 600042   # Sharp Katana
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601042   # Sharp Flat Sword
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610042   # Strong Sten Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603042   # Moon Stone Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640034   # Strong Square Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 57
+    Item0: 2005   # First-aid pink potion
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2205   # First-aid blue potion
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 20
+    Item3: 600058   # Sharp Sabre
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601058   # Sharp Kukri
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610058   # Strong Milli-Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603058   # Moon Battle Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640050   # Strong Knight Shield
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650104   # Sharp Night Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 58
+    Item0: 2005   # First-aid pink potion
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2205   # First-aid blue potion
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 25
+    Item3: 600066   # Sharp Shotel
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601066   # Sharp Main-Gauche
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610066   # Strong Blue Seal Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603066   # Moon Silver Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640058   # Strong Crest Shield
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650115   # Sharp Silver Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 59
+    Item0: 2002   # Pink Potion C
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2202   # Blue Potion C
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 30
+    Item3: 600074   # Sharp Long Sword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601074   # Sharp Stiletto
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610074   # Strong Pierce Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603074   # Moon Gold Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640066   # Strong Jade Shield
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650126   # Sharp Sky Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 60
+    Item0: 2002   # Pink Potion C
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2202   # Blue Potion C
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 35
+    Item3: 600090   # Sharp Shamshir
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601090   # Sharp Kalis
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610090   # Strong Shotgun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603090   # Moon Blue Dragon Rod
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640082   # Strong Golden Shield
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650148   # Sharp Gold Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 61
+    Item0: 2003   # Herb Potion
+    Rate0: 0.300000
+    Cnt0: 5
+    Item1: 2203   # Gold Pearl Potion
+    Rate1: 0.300000
+    Cnt1: 5
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 40
+    Item3: 600107   # Sharp Sky Blade
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601107   # Sharp Poignard
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610107   # Strong Stinger Gun
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603107   # Lunar Stick
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640098   # Strong Mithril Shield
+    Rate7: 0.010000
+    Cnt7: 1
+  - ID: 62
+    Item0: 2003   # Herb Potion
+    Rate0: 0.300000
+    Cnt0: 10
+    Item1: 2203   # Gold Pearl Potion
+    Rate1: 0.300000
+    Cnt1: 10
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 50
+    Item3: 600115   # Sharp Edge Broadsword
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601115   # Sharp Edge Khanjar
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610115   # Strong MJS-G5
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603115   # Lunar Arc Stick
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640106   # Strong Shield of Honor
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650227   # Sharp Emperor Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 63
+    Item0: 2003   # Herb Potion
+    Rate0: 0.300000
+    Cnt0: 15
+    Item1: 2203   # Gold Pearl Potion
+    Rate1: 0.300000
+    Cnt1: 15
+    Item2: 104   # 500 galder coupon
+    Rate2: 0.300000
+    Cnt2: 50
+    Item3: 600123   # Sharp Langschwert
+    Rate3: 0.010000
+    Cnt3: 1
+    Item4: 601123   # Sharp Jur
+    Rate4: 0.010000
+    Cnt4: 1
+    Item5: 610123   # Strong Striker
+    Rate5: 0.010000
+    Cnt5: 1
+    Item6: 603123   # Moon Chrome Staff
+    Rate6: 0.010000
+    Cnt6: 1
+    Item7: 640114   # Strong Regal Shield
+    Rate7: 0.010000
+    Cnt7: 1
+    Item8: 650250   # Sharp Regal Hammer
+    Rate8: 0.010000
+    Cnt8: 1
+  - ID: 2
+    Item0: 22451   # Tsetsech Card
+    Rate0: 0.080000
+    Cnt0: 1
+    Item1: 22454   # Little Chagan Card
+    Rate1: 0.080000
+    Cnt1: 1
+    Item2: 22452   # Pastor Tau Card
+    Rate2: 0.080000
+    Cnt2: 1
+    Item3: 22453   # Madam Sarah Card
+    Rate3: 0.080000
+    Cnt3: 1
+    Item4: 22482   # Swampy Suu Card
+    Rate4: 0.080000
+    Cnt4: 1
+    Item5: 22418   # Chochma Card
+    Rate5: 0.200000
+    Cnt5: 1
+    Item6: 22459   # La Befana Card
+    Rate6: 0.200000
+    Cnt6: 1
+    Item7: 22582   # Lethos Card
+    Rate7: 0.200000
+    Cnt7: 1
+  - ID: 70
+    Item0: 64558   # '[Bad] Code C'
+    Rate0: 0.500000
+    Cnt0: 1
+    Item1: 64557   # '[Bad] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64556   # '[Bad] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64555   # '[Bad] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 71
+    Item0: 64558   # '[Bad] Code C'
+    Rate0: 0.400000
+    Cnt0: 1
+    Item1: 64557   # '[Bad] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64556   # '[Bad] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64555   # '[Bad] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 72
+    Item0: 64558   # '[Bad] Code C'
+    Rate0: 0.300000
+    Cnt0: 1
+    Item1: 64557   # '[Bad] Code B'
+    Rate1: 0.400000
+    Cnt1: 1
+    Item2: 64556   # '[Bad] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64555   # '[Bad] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 73
+    Item0: 64558   # '[Bad] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64557   # '[Bad] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64556   # '[Bad] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64555   # '[Bad] Code S'
+    Rate3: 0.200000
+    Cnt3: 1
+  - ID: 74
+    Item0: 64558   # '[Bad] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64557   # '[Bad] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64556   # '[Bad] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64555   # '[Bad] Code S'
+    Rate3: 0.300000
+    Cnt3: 1
+  - ID: 75
+    Item0: 64562   # '[Lousy] Code C'
+    Rate0: 0.500000
+    Cnt0: 1
+    Item1: 64561   # '[Lousy] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64560   # '[Lousy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64559   # '[Lousy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 76
+    Item0: 64562   # '[Lousy] Code C'
+    Rate0: 0.400000
+    Cnt0: 1
+    Item1: 64561   # '[Lousy] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64560   # '[Lousy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64559   # '[Lousy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 77
+    Item0: 64562   # '[Lousy] Code C'
+    Rate0: 0.300000
+    Cnt0: 1
+    Item1: 64561   # '[Lousy] Code B'
+    Rate1: 0.400000
+    Cnt1: 1
+    Item2: 64560   # '[Lousy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64559   # '[Lousy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 78
+    Item0: 64562   # '[Lousy] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64561   # '[Lousy] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64560   # '[Lousy] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64559   # '[Lousy] Code S'
+    Rate3: 0.200000
+    Cnt3: 1
+  - ID: 79
+    Item0: 64562   # '[Lousy] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64561   # '[Lousy] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64560   # '[Lousy] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64559   # '[Lousy] Code S'
+    Rate3: 0.300000
+    Cnt3: 1
+  - ID: 80
+    Item0: 64566   # '[Decent] Code C'
+    Rate0: 0.500000
+    Cnt0: 1
+    Item1: 64565   # '[Decent] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64564   # '[Decent] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64563   # '[Decent] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 81
+    Item0: 64566   # '[Decent] Code C'
+    Rate0: 0.400000
+    Cnt0: 1
+    Item1: 64565   # '[Decent] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64564   # '[Decent] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64563   # '[Decent] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 82
+    Item0: 64566   # '[Decent] Code C'
+    Rate0: 0.300000
+    Cnt0: 1
+    Item1: 64565   # '[Decent] Code B'
+    Rate1: 0.400000
+    Cnt1: 1
+    Item2: 64564   # '[Decent] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64563   # '[Decent] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 83
+    Item0: 64566   # '[Decent] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64565   # '[Decent] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64564   # '[Decent] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64563   # '[Decent] Code S'
+    Rate3: 0.200000
+    Cnt3: 1
+  - ID: 84
+    Item0: 64566   # '[Decent] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64565   # '[Decent] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64564   # '[Decent] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64563   # '[Decent] Code S'
+    Rate3: 0.300000
+    Cnt3: 1
+  - ID: 85
+    Item0: 64570   # '[Great] Code C'
+    Rate0: 0.500000
+    Cnt0: 1
+    Item1: 64569   # '[Great] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64568   # '[Great] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64567   # '[Great] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 86
+    Item0: 64570   # '[Great] Code C'
+    Rate0: 0.400000
+    Cnt0: 1
+    Item1: 64569   # '[Great] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64568   # '[Great] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64567   # '[Great] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 87
+    Item0: 64570   # '[Great] Code C'
+    Rate0: 0.300000
+    Cnt0: 1
+    Item1: 64569   # '[Great] Code B'
+    Rate1: 0.400000
+    Cnt1: 1
+    Item2: 64568   # '[Great] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64567   # '[Great] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 88
+    Item0: 64570   # '[Great] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64569   # '[Great] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64568   # '[Great] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64567   # '[Great] Code S'
+    Rate3: 0.200000
+    Cnt3: 1
+  - ID: 89
+    Item0: 64570   # '[Great] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64569   # '[Great] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64568   # '[Great] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64567   # '[Great] Code S'
+    Rate3: 0.300000
+    Cnt3: 1
+  - ID: 90
+    Item0: 64574   # '[Holy] Code C'
+    Rate0: 0.500000
+    Cnt0: 1
+    Item1: 64573   # '[Holy] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64572   # '[Holy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64571   # '[Holy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 91
+    Item0: 64574   # '[Holy] Code C'
+    Rate0: 0.400000
+    Cnt0: 1
+    Item1: 64573   # '[Holy] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64572   # '[Holy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64571   # '[Holy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 92
+    Item0: 64574   # '[Holy] Code C'
+    Rate0: 0.300000
+    Cnt0: 1
+    Item1: 64573   # '[Holy] Code B'
+    Rate1: 0.400000
+    Cnt1: 1
+    Item2: 64572   # '[Holy] Code A'
+    Rate2: 0.200000
+    Cnt2: 1
+    Item3: 64571   # '[Holy] Code S'
+    Rate3: 0.100000
+    Cnt3: 1
+  - ID: 93
+    Item0: 64574   # '[Holy] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64573   # '[Holy] Code B'
+    Rate1: 0.300000
+    Cnt1: 1
+    Item2: 64572   # '[Holy] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64571   # '[Holy] Code S'
+    Rate3: 0.200000
+    Cnt3: 1
+  - ID: 94
+    Item0: 64574   # '[Holy] Code C'
+    Rate0: 0.200000
+    Cnt0: 1
+    Item1: 64573   # '[Holy] Code B'
+    Rate1: 0.200000
+    Cnt1: 1
+    Item2: 64572   # '[Holy] Code A'
+    Rate2: 0.300000
+    Cnt2: 1
+    Item3: 64571   # '[Holy] Code S'
+    Rate3: 0.300000
+    Cnt3: 1
+  - ID: 30
+    Item0: 757   # Secret Documents
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 758   # Someone's Plans
+    Rate1: 0.100000
+    Cnt1: 1
+    Item2: 66043   # Abandoned Bag
+    Rate2: 0.100000
+    Cnt2: 1
+    Item3: 759   # End of the World Prophecy
+    Rate3: 0.100000
+    Cnt3: 1
+    Item4: 2406   # Raw Tuna
+    Rate4: 0.100000
+    Cnt4: 1
+    Item5: 37108   # Congratulations on 09 years
+    Rate5: 0.200000
+    Cnt5: 2
+    Item6: 66048   # 6th Anniversary Disguise Kit 1
+    Rate6: 0.200000
+    Cnt6: 1
+    Item7: 66050   # TM EXP Booster Potion
+    Rate7: 0.200000
+    Cnt7: 1
+    Item8: 432331   # 6th Anniversary Card Pack
+    Rate8: 0.100000
+    Cnt8: 1
+  - ID: 31
+    Item0: 2000   # Pink Potion A
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 2200   # Blue Potion A
+    Rate1: 0.100000
+    Cnt1: 1
+    Item2: 103   # 100 galder coupon
+    Rate2: 0.100000
+    Cnt2: 1
+    Item3: 104   # 500 galder coupon
+    Rate3: 0.100000
+    Cnt3: 1
+    Item4: 11406   # Bone Needle
+    Rate4: 0.100000
+    Cnt4: 20
+    Item5: 37108   # Congratulations on 09 years
+    Rate5: 0.200000
+    Cnt5: 2
+    Item6: 66049   # 6th Anniversary Disguise Kit 2
+    Rate6: 0.200000
+    Cnt6: 1
+    Item7: 432331   # 6th Anniversary Card Pack
+    Rate7: 0.100000
+    Cnt7: 1
+  - ID: 100
+    Item0: 433347   # New · Black Shadow Box 170 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 101
+    Item0: 433350   # New · Black Shadow Box 185 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 102
+    Item0: 433353   # New · Black Shadow Box 200 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 103
+    Item0: 433356   # New · Black Shadow Box 215 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 104
+    Item0: 433359   # New · Black Shadow Box 230 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 105
+    Item0: 433362   # New · Black Shadow Box 245 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 106
+    Item0: 433365   # New · Black Shadow Box 260 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 107
+    Item0: 433368   # New · Black Shadow Box 275 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 108
+    Item0: 433371   # New · Black Shadow Box 290 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 109
+    Item0: 433374   # New · Black Shadow Box 305 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 110
+    Item0: 433377   # New · Black Shadow Box 320 Full arms
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 111
+    Item0: 433380   # New weapons · Black Shadow Box 335 Full
+    Rate0: 1.000000
+    Cnt0: 1
+  - ID: 20
+    Item0: 66345   # Key 8 material 1
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 66345   # Key 8 material 1
+    Rate1: 0.200000
+    Cnt1: 2
+    Item2: 66345   # Key 8 material 1
+    Rate2: 0.100000
+    Cnt2: 3
+  - ID: 21
+    Item0: 66346   # Key 8 material 2
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 66346   # Key 8 material 2
+    Rate1: 0.200000
+    Cnt1: 2
+    Item2: 66346   # Key 8 material 2
+    Rate2: 0.100000
+    Cnt2: 3
+  - ID: 22
+    Item0: 66347   # Key 8 material 3
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 66347   # Key 8 material 3
+    Rate1: 0.200000
+    Cnt1: 2
+    Item2: 66347   # Key 8 material 3
+    Rate2: 0.100000
+    Cnt2: 3
+  - ID: 23
+    Item0: 66348   # Key 8 material 4
+    Rate0: 0.100000
+    Cnt0: 1
+    Item1: 66348   # Key 8 material 4
+    Rate1: 0.200000
+    Cnt1: 2
+    Item2: 66348   # Key 8 material 4
+    Rate2: 0.100000
+    Cnt2: 3
+
+Footer:
+  Imports:
+#  - Path: db/import/random_result_item_db.yml

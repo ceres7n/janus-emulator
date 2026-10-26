@@ -1,0 +1,52 @@
+# ProjectPAULA - files that never go into git
+
+# Build output. CMake writes the server exes (and GameServer.pdb) into the
+# project root (CMakeLists.txt RUNTIME_OUTPUT_DIRECTORY), so anchor these to /.
+/build/
+/out/
+/.vs/
+/*.exe
+/*.pdb
+/*.ilk
+/*.exp
+/*.lib
+*.obj
+*.tlog
+CMakeUserPresets.json
+# Build logs redirected into the project root
+/build_log.txt
+/configure_log.txt
+
+# Runtime output: logs (logger.cpp writes <prefix>_live.log in the working
+# folder), the start script's log archive, crash dumps (gameserver/main.cpp).
+*_live.log
+/logs/
+/run/
+*.dmp
+
+# The MySQL client DLL copied next to the exes. Ship it in the release zip
+# (or delete this line to commit it, as rAthena does).
+/libmysql.dll
+
+# IDA databases, editor backups, OS files, local settings
+*.i64
+*.idb
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.bak
+*.orig
+*.swp
+*~
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+.DS_Store
+.claude/settings.local.json
+
+# Release packaging output and internal (non-public) notes
+/dist/
+/doc/internal/

@@ -1,0 +1,458 @@
+# =============================================================================
+#   Post Box Level-Up Gift Database  (POST_LEVELUP_GIFT_DB)
+# =============================================================================
+#
+#   Table PostBoxLevelUpGiftInfo of the ORIGINAL server data (kto_libconfig.xml, 33 rows, in its
+#   order): the GM gift a character gets in its gift box on reaching a level (retail Player
+#   level-up sub_75D390 -> sub_76BE80 -> MCmd 3153 -> USPM_Send_GMGiftItem).
+#
+#   Fields
+#     ID        - the row                                                    [key]
+#     Level     - the level that sends it
+#     ChrType   - the character types it goes to (bit type-1: 1 Bunny .. 256 Bear), OR-ed
+#     Sender    - the GM name shown as its sender
+#     Title / Message - the mail's title and text (UTF-8 here, CP949 on the wire)
+#     Items     - up to 8: ItemId, ItemCount (ItemName = the original's label, display only)
+# =============================================================================
+
+Header:
+  Type: POST_LEVELUP_GIFT_DB
+  Version: 1
+
+Body:
+  - ID: 1
+    Level: 15
+    ChrType: 511
+    Sender: GM_독수리
+    Title: 15레벨 달성 축하드립니다.
+    Message: 15레벨 달성을 축하드립니다. 콩지파치의 기능에 대한 안내서도 동봉되어 있으니 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7969
+        ItemCount: 1
+        ItemName: 15레벨 축하상자
+      - ItemId: 557
+        ItemCount: 1
+        ItemName: 콩지파치 안내서
+  - ID: 2
+    Level: 20
+    ChrType: 511
+    Sender: GM_독수리
+    Title: 20레벨 달성 축하드립니다.
+    Message: 20레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7941
+        ItemCount: 1
+        ItemName: 20레벨 축하상자
+  - ID: 3
+    Level: 25
+    ChrType: 511
+    Sender: GM_독수리
+    Title: 25레벨 달성 축하드립니다.
+    Message: 25레벨 달성을 축하드립니다. 데저트 해안의 키퀘스트를 플레이 하실 수 있습니다. 매뉴얼을 동봉하니 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 550
+        ItemCount: 1
+        ItemName: 키퀘스트 안내장
+  - ID: 4
+    Level: 40
+    ChrType: 511
+    Sender: GM_독수리
+    Title: 40레벨 달성 축하드립니다.
+    Message: 40레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7942
+        ItemCount: 1
+        ItemName: 40레벨 축하상자
+  - ID: 5
+    Level: 60
+    ChrType: 513
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 522
+        ItemCount: 1
+        ItemName: 1차전직가이드북_토끼
+  - ID: 6
+    Level: 60
+    ChrType: 1026
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 523
+        ItemCount: 1
+        ItemName: 1차전직가이드북_물소
+  - ID: 7
+    Level: 60
+    ChrType: 2052
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 524
+        ItemCount: 1
+        ItemName: 1차전직가이드북_토끼
+  - ID: 8
+    Level: 60
+    ChrType: 4104
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 525
+        ItemCount: 1
+        ItemName: 1차전직가이드북_물소
+  - ID: 9
+    Level: 60
+    ChrType: 8208
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 526
+        ItemCount: 1
+        ItemName: 1차전직가이드북_토끼
+  - ID: 10
+    Level: 60
+    ChrType: 16416
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 527
+        ItemCount: 1
+        ItemName: 1차전직가이드북_물소
+  - ID: 11
+    Level: 60
+    ChrType: 32832
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 528
+        ItemCount: 1
+        ItemName: 1차전직가이드북_토끼
+  - ID: 12
+    Level: 60
+    ChrType: 65664
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 529
+        ItemCount: 1
+        ItemName: 1차전직가이드북_물소
+  - ID: 13
+    Level: 80
+    ChrType: 262143
+    Sender: GM_독수리
+    Title: 80레벨 달성 축하드립니다.
+    Message: 80레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7944
+        ItemCount: 1
+        ItemName: 80레벨축하상자A
+      - ItemId: 7945
+        ItemCount: 1
+        ItemName: 80레벨축하상자B
+  - ID: 14
+    Level: 100
+    ChrType: 262143
+    Sender: GM_독수리
+    Title: 100레벨 달성 축하드립니다.
+    Message: 100레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7946
+        ItemCount: 2
+        ItemName: 100레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+  - ID: 15
+    Level: 100
+    ChrType: 262143
+    Sender: 네페트리
+    Title: 네페트리 편지
+    Message: 긴급하게 전할 말이 있습니다. 동봉한 편지를 꼭 읽어주세요.
+    Items:
+      - ItemId: 553
+        ItemCount: 1
+        ItemName: 네페트리편지
+  - ID: 16
+    Level: 120
+    ChrType: 262657
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 530
+        ItemCount: 1
+        ItemName: 2차전직가이드북_토끼
+  - ID: 17
+    Level: 120
+    ChrType: 525314
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 531
+        ItemCount: 1
+        ItemName: 2차전직가이드북_물소
+  - ID: 18
+    Level: 120
+    ChrType: 1050628
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 532
+        ItemCount: 1
+        ItemName: 2차전직가이드북_토끼
+  - ID: 19
+    Level: 120
+    ChrType: 2101256
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 533
+        ItemCount: 1
+        ItemName: 2차전직가이드북_물소
+  - ID: 20
+    Level: 120
+    ChrType: 4202512
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 534
+        ItemCount: 1
+        ItemName: 2차전직가이드북_토끼
+  - ID: 21
+    Level: 120
+    ChrType: 8405024
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 535
+        ItemCount: 1
+        ItemName: 2차전직가이드북_물소
+  - ID: 22
+    Level: 120
+    ChrType: 16810048
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 536
+        ItemCount: 1
+        ItemName: 2차전직가이드북_토끼
+  - ID: 23
+    Level: 120
+    ChrType: 33620096
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 537
+        ItemCount: 1
+        ItemName: 2차전직가이드북_물소
+  - ID: 24
+    Level: 140
+    ChrType: 134217727
+    Sender: GM_독수리
+    Title: 140레벨 달성 축하드립니다.
+    Message: 140레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7948
+        ItemCount: 1
+        ItemName: 140레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+  - ID: 25
+    Level: 160
+    ChrType: 134217727
+    Sender: GM_독수리
+    Title: 160레벨 달성 축하드립니다.
+    Message: 160레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7949
+        ItemCount: 1
+        ItemName: 160레벨축하상자
+  - ID: 26
+    Level: 180
+    ChrType: 134217727
+    Sender: GM_독수리
+    Title: 180레벨 달성 축하드립니다.
+    Message: 180레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7950
+        ItemCount: 1
+        ItemName: 180레벨축하상자A
+      - ItemId: 7951
+        ItemCount: 4
+        ItemName: 180레벨축하상자B
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+  - ID: 27
+    Level: 200
+    ChrType: 134217727
+    Sender: GM_독수리
+    Title: 200레벨 달성 축하드립니다.
+    Message: 200레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다.
+    Items:
+      - ItemId: 7952
+        ItemCount: 1
+        ItemName: 200레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+  - ID: 28
+    Level: 135
+    ChrType: 134217727
+    Sender: 발신인 불명
+    Title: 의문의 편지
+    Message: 정체를 알수 없는 편지입니다. 하지만 반드시 읽어주세요.
+    Items:
+      - ItemId: 721
+        ItemCount: 1
+        ItemName: 의문의 편지
+  - ID: 29
+    Level: 180
+    ChrType: 134217727
+    Sender: 네페트리
+    Title: 네페트리 메시지
+    Message: 긴급하게 전할 말이 있습니다. 동봉한 메세지를 꼭 읽어주세요.
+    Items:
+      - ItemId: 722
+        ItemCount: 1
+        ItemName: 네페트리의 메시지
+  - ID: 30
+    Level: 200
+    ChrType: 134217727
+    Sender: 발신인 불명
+    Title: D의 메시지
+    Message: 발신인을 알 수 없는 편지입니다. 동봉한 메세지를 확인해주세요.
+    Items:
+      - ItemId: 755
+        ItemCount: 1
+        ItemName: D의 메시지
+  - ID: 31
+    Level: 31
+    ChrType: 511
+    Sender: GM_독수리
+    Title: 초보 탈출을 축하드립니다.
+    Message: 초보자 탈출을 축하드립니다. 이제 초보자가 아니신 만큼 더 이상 천사 시스템의 이용은 불가능하십니다. 대신 초보자를 탈출하신 기념으로 졸업반지를 드립니다. 유용하게 사용해 주세요.
+    Items:
+      - ItemId: 7342
+        ItemCount: 1
+        ItemName: 졸업반지
+  - ID: 32
+    Level: 60
+    ChrType: 131328
+    Sender: GM_독수리
+    Title: 60레벨 달성 축하드립니다.
+    Message: 60레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 1차 전직에 관한 매뉴얼도 동봉 했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7943
+        ItemCount: 1
+        ItemName: 60레벨축하상자
+      - ItemId: 7953
+        ItemCount: 1
+        ItemName: 레벨업축하상자
+      - ItemId: 762
+        ItemCount: 1
+        ItemName: 1차전직가이드북_곰
+  - ID: 33
+    Level: 120
+    ChrType: 67240192
+    Sender: GM_독수리
+    Title: 120레벨 달성 축하드립니다.
+    Message: 120레벨 달성을 축하드립니다. 작은 선물을 준비 했습니다. 2차 전직에 관한 가이드북도 동봉했습니다. 꼭 읽어봐 주세요.
+    Items:
+      - ItemId: 7947
+        ItemCount: 1
+        ItemName: 120레벨축하상자
+      - ItemId: 763
+        ItemCount: 1
+        ItemName: 2차전직가이드북_곰
+
+Footer:
+  Imports:
+#  - Path: db/import/post_levelup_gift_db.yml

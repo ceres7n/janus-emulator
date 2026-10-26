@@ -1,0 +1,181 @@
+# =============================================================================
+#   NpcCheckLvMsg  (NPC_CHECK_LV_MSG_DB)
+# =============================================================================
+#
+#   Original server data (kto_libconfig.xml, 17 rows); field names verbatim.
+#
+#   NpcCheckLvMsg — NPC PreCheckType 5 (PreCheckArg = ID): GameInfoMgr sub_632E80; the first
+#   of Min0..5 / Max0..5 (both non-zero) holding the player's level gives its Msg (the first
+#   message), else RejectMsg (Npc sub_71E7B0).
+# =============================================================================
+
+Header:
+  Type: NPC_CHECK_LV_MSG_DB
+  Version: 1
+
+Body:
+  - ID: 1
+    Min0: 1
+    Max0: 10
+    Msg0: 1
+    Min1: 11
+    Max1: 20
+    Msg1: 2
+    Min2: 21
+    Max2: 30
+    Msg2: 3
+    Min3: 31
+    Max3: 40
+    Msg3: 4
+    Min4: 41
+    Max4: 50
+    Msg4: 5
+    Min5: 51
+    Max5: 400
+    Msg5: 6
+    RejectMsg: 7
+  - ID: 1000
+    Min0: 1
+    Max0: 50
+    Min1: 51
+    Max1: 100
+    Msg1: 1
+    Min2: 101
+    Max2: 150
+    Msg2: 2
+    Min3: 150
+    Max3: 200
+    Msg3: 3
+    Min4: 201
+    Max4: 300
+    Msg4: 4
+    RejectMsg: 5
+  - ID: 3
+    Min0: 1
+    Max0: 29
+    Msg0: 4
+    Min1: 30
+    Max1: 400
+  - ID: 4
+    Min0: 1
+    Max0: 119
+    Msg0: 14
+    Min1: 120
+    Max1: 149
+    Msg1: 15
+    Min2: 150
+    Max2: 179
+    Msg2: 16
+    Min3: 180
+    Max3: 199
+    Msg3: 17
+    Min4: 200
+    Max4: 259
+    Msg4: 18
+    Min5: 260
+    Max5: 400
+    Msg5: 19
+  - ID: 5
+    Min0: 1
+    Max0: 119
+    Msg0: 14
+    Min1: 120
+    Max1: 149
+    Msg1: 15
+    Min2: 150
+    Max2: 179
+    Msg2: 16
+    Min3: 180
+    Max3: 199
+    Msg3: 17
+    Min4: 200
+    Max4: 259
+    Msg4: 19
+    Min5: 260
+    Max5: 400
+    Msg5: 18
+  - ID: 100
+    Min0: 1
+    Max0: 24
+    Msg0: 10
+    Min1: 25
+    Max1: 69
+    Min2: 70
+    Max2: 400
+    Msg2: 14
+    RejectMsg: 14
+  - ID: 101
+    Min0: 1
+    Max0: 69
+    Msg0: 10
+    Min1: 70
+    Max1: 109
+    Min2: 110
+    Max2: 400
+    Msg2: 14
+    RejectMsg: 14
+  - ID: 102
+    Min0: 1
+    Max0: 109
+    Msg0: 10
+    Min1: 110
+    Max1: 149
+    Min2: 150
+    Max2: 400
+    Msg2: 14
+    RejectMsg: 14
+  - ID: 103
+    Min0: 1
+    Max0: 149
+    Msg0: 10
+    Min1: 150
+    Max1: 189
+    Min2: 190
+    Max2: 400
+    Msg2: 14
+    RejectMsg: 14
+  - ID: 2400
+    Min0: 1
+    Max0: 99
+    Msg0: 5
+    Min1: 100
+    Max1: 400
+    RejectMsg: 5
+  - ID: 2438
+    Min0: 1
+    Max0: 139
+    Min1: 140
+    Max1: 400
+    Msg1: 20
+  - ID: 6
+    Min0: 30
+    Max0: 79
+    RejectMsg: 6
+  - ID: 7
+    Min0: 80
+    Max0: 129
+    RejectMsg: 6
+  - ID: 8
+    Min0: 130
+    Max0: 179
+    RejectMsg: 6
+  - ID: 9
+    Min0: 1
+    Max0: 20
+    Msg0: 4
+    Min1: 21
+    Max1: 400
+  - ID: 10
+    Min0: 1
+    Max0: 20
+    Msg0: 6
+    Min1: 21
+    Max1: 400
+  - ID: 2000
+    Min0: 30
+    Max0: 401
+    RejectMsg: 21
+
+Footer:
+  Imports:
+#  - Path: db/import/npc_check_lv_msg_db.yml

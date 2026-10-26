@@ -1,0 +1,43 @@
+# =============================================================================
+#   Post Setup Database  (POST_SETUP_DB)
+# =============================================================================
+#
+#   Table PostSetupInfo of the ORIGINAL server data (kto_libconfig.xml, 7 rows): the post
+#   box's settings (retail GameInfoMgr u16 table, getter sub_7A01B0; sub_7A01E0 the fee rate).
+#   Comment = the original Korean comment.
+#
+#   SetupType  0 normal mail kept (days)   1 returned mail kept (days)   2 trade mail kept (days)
+#              3 item fee (1/10000 of the item's price)   4 trade fee (1/10000 of the gelders asked)
+#              5 the least fee (gelders)   6 the most gelders a gift / trade carries (x 100,000,000)
+# =============================================================================
+
+Header:
+  Type: POST_SETUP_DB
+  Version: 1
+
+Body:
+  - SetupType: 0
+    Value: 7
+    Comment: 일반 우편 보관 기간/일단위
+  - SetupType: 1
+    Value: 7
+    Comment: 반송된 우편 보관 기간/일단위
+  - SetupType: 2
+    Value: 1
+    Comment: 입금 요청된 우편의 보관 기간/일단위
+  - SetupType: 3
+    Value: 10
+    Comment: 아이템 발송시 수수료/만분의 일 단위/아이템 가격의 정비례
+  - SetupType: 4
+    Value: 10
+    Comment: 입금 요청을 했을때 발생하는 수수료/만분의 일단위/입금 요청한 금액의 정비례
+  - SetupType: 5
+    Value: 500
+    Comment: 수수료가 0이하가 나왔을 때 기본으로 징수되는 수수료. 백분율이 아니라 절대값이다.
+  - SetupType: 6
+    Value: 5
+    Comment: '선물 또는 거래로 보낼수 있는 최대 한도(단위:억)'
+
+Footer:
+  Imports:
+#  - Path: db/import/post_setup_db.yml

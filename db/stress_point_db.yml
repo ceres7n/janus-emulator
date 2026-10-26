@@ -1,0 +1,32 @@
+# =============================================================================
+#   Stress Point Database  (STRESS_POINT_DB)
+# =============================================================================
+#
+#   Table StressPointInfo of the ORIGINAL server data (5 rows, in its order).
+#
+#   Fields
+#     StressType - 0 a probe without an item, 1 an item found, 2 nothing found,  [key]
+#                  3 the drill interrupted (reason 10), 4 the Crazy Drill Mode ended
+#     Point      - added to the Crazy Drill gauge (CCrazyDrillMgr +8)
+#   Retail: sub_63DB20 -> GameInfoMgr +270780 (sub_63DB00).
+# =============================================================================
+
+Header:
+  Type: STRESS_POINT_DB
+  Version: 1
+
+Body:
+  - StressType: 0
+    Point: 0.15
+  - StressType: 1
+    Point: 0.35
+  - StressType: 2
+    Point: 1.5
+  - StressType: 3
+    Point: 0.25
+  - StressType: 4
+    Point: -999
+
+Footer:
+  Imports:
+#  - Path: db/import/stress_point_db.yml

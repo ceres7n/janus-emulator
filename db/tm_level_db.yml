@@ -1,0 +1,1224 @@
+# =============================================================================
+#   TM Level Database  (TM_LEVEL_DB)
+# =============================================================================
+#
+#   Table TM_LEVEL2 of the ORIGINAL server data (kto_libconfig.xml, 601 rows).
+#   The retail GameServer loads Levels 0..500 (GameInfoMgr sub_62A7E0); TM 500 is
+#   the cap (AddTMExp sub_716C30).
+#
+#   Fields
+#     Level     - TM level                                  [key]
+#     NextTmxp  - TM EXP needed to reach the next TM level
+# =============================================================================
+
+Header:
+  Type: TM_LEVEL_DB
+  Version: 1
+
+Body:
+  - Level: 0
+    NextTmxp: 320
+  - Level: 1
+    NextTmxp: 460
+  - Level: 2
+    NextTmxp: 680
+  - Level: 3
+    NextTmxp: 1000
+  - Level: 4
+    NextTmxp: 1440
+  - Level: 5
+    NextTmxp: 2020
+  - Level: 6
+    NextTmxp: 2760
+  - Level: 7
+    NextTmxp: 3680
+  - Level: 8
+    NextTmxp: 4800
+  - Level: 9
+    NextTmxp: 6140
+  - Level: 10
+    NextTmxp: 7720
+  - Level: 11
+    NextTmxp: 9560
+  - Level: 12
+    NextTmxp: 11680
+  - Level: 13
+    NextTmxp: 14100
+  - Level: 14
+    NextTmxp: 16840
+  - Level: 15
+    NextTmxp: 19920
+  - Level: 16
+    NextTmxp: 23360
+  - Level: 17
+    NextTmxp: 27180
+  - Level: 18
+    NextTmxp: 31400
+  - Level: 19
+    NextTmxp: 38360
+  - Level: 20
+    NextTmxp: 45980
+  - Level: 21
+    NextTmxp: 54290
+  - Level: 22
+    NextTmxp: 63320
+  - Level: 23
+    NextTmxp: 73100
+  - Level: 24
+    NextTmxp: 83660
+  - Level: 25
+    NextTmxp: 95030
+  - Level: 26
+    NextTmxp: 107240
+  - Level: 27
+    NextTmxp: 120320
+  - Level: 28
+    NextTmxp: 134300
+  - Level: 29
+    NextTmxp: 159150
+  - Level: 30
+    NextTmxp: 185600
+  - Level: 31
+    NextTmxp: 213700
+  - Level: 32
+    NextTmxp: 243500
+  - Level: 33
+    NextTmxp: 275050
+  - Level: 34
+    NextTmxp: 308400
+  - Level: 35
+    NextTmxp: 343600
+  - Level: 36
+    NextTmxp: 380700
+  - Level: 37
+    NextTmxp: 419750
+  - Level: 38
+    NextTmxp: 460800
+  - Level: 39
+    NextTmxp: 503900
+  - Level: 40
+    NextTmxp: 549100
+  - Level: 41
+    NextTmxp: 596450
+  - Level: 42
+    NextTmxp: 646000
+  - Level: 43
+    NextTmxp: 697800
+  - Level: 44
+    NextTmxp: 751900
+  - Level: 45
+    NextTmxp: 808350
+  - Level: 46
+    NextTmxp: 867200
+  - Level: 47
+    NextTmxp: 928500
+  - Level: 48
+    NextTmxp: 992300
+  - Level: 49
+    NextTmxp: 2449250
+  - Level: 50
+    NextTmxp: 2670350
+  - Level: 51
+    NextTmxp: 2891450
+  - Level: 52
+    NextTmxp: 3112550
+  - Level: 53
+    NextTmxp: 3333650
+  - Level: 54
+    NextTmxp: 3554750
+  - Level: 55
+    NextTmxp: 3775850
+  - Level: 56
+    NextTmxp: 3996950
+  - Level: 57
+    NextTmxp: 4218050
+  - Level: 58
+    NextTmxp: 4439150
+  - Level: 59
+    NextTmxp: 4660250
+  - Level: 60
+    NextTmxp: 4869350
+  - Level: 61
+    NextTmxp: 5065630
+  - Level: 62
+    NextTmxp: 5248260
+  - Level: 63
+    NextTmxp: 5416400
+  - Level: 64
+    NextTmxp: 5569200
+  - Level: 65
+    NextTmxp: 5705800
+  - Level: 66
+    NextTmxp: 5825330
+  - Level: 67
+    NextTmxp: 5926910
+  - Level: 68
+    NextTmxp: 6009650
+  - Level: 69
+    NextTmxp: 6072650
+  - Level: 70
+    NextTmxp: 6135650
+  - Level: 71
+    NextTmxp: 6198650
+  - Level: 72
+    NextTmxp: 6261650
+  - Level: 73
+    NextTmxp: 6324650
+  - Level: 74
+    NextTmxp: 6387650
+  - Level: 75
+    NextTmxp: 6450650
+  - Level: 76
+    NextTmxp: 6513650
+  - Level: 77
+    NextTmxp: 6576650
+  - Level: 78
+    NextTmxp: 6639650
+  - Level: 79
+    NextTmxp: 6702650
+  - Level: 80
+    NextTmxp: 6775650
+  - Level: 81
+    NextTmxp: 6859270
+  - Level: 82
+    NextTmxp: 6954140
+  - Level: 83
+    NextTmxp: 7060900
+  - Level: 84
+    NextTmxp: 7180200
+  - Level: 85
+    NextTmxp: 7312700
+  - Level: 86
+    NextTmxp: 7459070
+  - Level: 87
+    NextTmxp: 7619990
+  - Level: 88
+    NextTmxp: 7796150
+  - Level: 89
+    NextTmxp: 7988250
+  - Level: 90
+    NextTmxp: 8180350
+  - Level: 91
+    NextTmxp: 8372450
+  - Level: 92
+    NextTmxp: 8564550
+  - Level: 93
+    NextTmxp: 8756650
+  - Level: 94
+    NextTmxp: 8948750
+  - Level: 95
+    NextTmxp: 9140850
+  - Level: 96
+    NextTmxp: 9332950
+  - Level: 97
+    NextTmxp: 9525050
+  - Level: 98
+    NextTmxp: 9717150
+  - Level: 99
+    NextTmxp: 9909250
+  - Level: 100
+    NextTmxp: 10091350
+  - Level: 101
+    NextTmxp: 10262730
+  - Level: 102
+    NextTmxp: 10422660
+  - Level: 103
+    NextTmxp: 10570400
+  - Level: 104
+    NextTmxp: 10705200
+  - Level: 105
+    NextTmxp: 10826300
+  - Level: 106
+    NextTmxp: 10932930
+  - Level: 107
+    NextTmxp: 11024310
+  - Level: 108
+    NextTmxp: 11099650
+  - Level: 109
+    NextTmxp: 11158150
+  - Level: 110
+    NextTmxp: 11216650
+  - Level: 111
+    NextTmxp: 11275150
+  - Level: 112
+    NextTmxp: 11333650
+  - Level: 113
+    NextTmxp: 11392150
+  - Level: 114
+    NextTmxp: 11450650
+  - Level: 115
+    NextTmxp: 11509150
+  - Level: 116
+    NextTmxp: 11567650
+  - Level: 117
+    NextTmxp: 11626150
+  - Level: 118
+    NextTmxp: 11684650
+  - Level: 119
+    NextTmxp: 12898150
+  - Level: 120
+    NextTmxp: 13110250
+  - Level: 121
+    NextTmxp: 13322350
+  - Level: 122
+    NextTmxp: 13534450
+  - Level: 123
+    NextTmxp: 13746550
+  - Level: 124
+    NextTmxp: 13958650
+  - Level: 125
+    NextTmxp: 14170750
+  - Level: 126
+    NextTmxp: 14382850
+  - Level: 127
+    NextTmxp: 14594950
+  - Level: 128
+    NextTmxp: 14807050
+  - Level: 129
+    NextTmxp: 15019150
+  - Level: 130
+    NextTmxp: 15231250
+  - Level: 131
+    NextTmxp: 15432350
+  - Level: 132
+    NextTmxp: 15621730
+  - Level: 133
+    NextTmxp: 15798660
+  - Level: 134
+    NextTmxp: 15962400
+  - Level: 135
+    NextTmxp: 16112200
+  - Level: 136
+    NextTmxp: 16247300
+  - Level: 137
+    NextTmxp: 16366930
+  - Level: 138
+    NextTmxp: 16470310
+  - Level: 139
+    NextTmxp: 16556650
+  - Level: 140
+    NextTmxp: 16625150
+  - Level: 141
+    NextTmxp: 16693650
+  - Level: 142
+    NextTmxp: 16762150
+  - Level: 143
+    NextTmxp: 16830650
+  - Level: 144
+    NextTmxp: 16899150
+  - Level: 145
+    NextTmxp: 16967650
+  - Level: 146
+    NextTmxp: 17036150
+  - Level: 147
+    NextTmxp: 17104650
+  - Level: 148
+    NextTmxp: 17173150
+  - Level: 149
+    NextTmxp: 17241650
+  - Level: 150
+    NextTmxp: 17310150
+  - Level: 151
+    NextTmxp: 17396650
+  - Level: 152
+    NextTmxp: 17501970
+  - Level: 153
+    NextTmxp: 17626940
+  - Level: 154
+    NextTmxp: 17772400
+  - Level: 155
+    NextTmxp: 17939200
+  - Level: 156
+    NextTmxp: 18128200
+  - Level: 157
+    NextTmxp: 18340270
+  - Level: 158
+    NextTmxp: 18576290
+  - Level: 159
+    NextTmxp: 18837150
+  - Level: 160
+    NextTmxp: 19123750
+  - Level: 161
+    NextTmxp: 19410350
+  - Level: 162
+    NextTmxp: 19696950
+  - Level: 163
+    NextTmxp: 19983550
+  - Level: 164
+    NextTmxp: 20270150
+  - Level: 165
+    NextTmxp: 20556750
+  - Level: 166
+    NextTmxp: 20843350
+  - Level: 167
+    NextTmxp: 21129950
+  - Level: 168
+    NextTmxp: 21416550
+  - Level: 169
+    NextTmxp: 21703150
+  - Level: 170
+    NextTmxp: 21989750
+  - Level: 171
+    NextTmxp: 22261350
+  - Level: 172
+    NextTmxp: 22517230
+  - Level: 173
+    NextTmxp: 22756660
+  - Level: 174
+    NextTmxp: 22978900
+  - Level: 175
+    NextTmxp: 23183200
+  - Level: 176
+    NextTmxp: 23368800
+  - Level: 177
+    NextTmxp: 23534930
+  - Level: 178
+    NextTmxp: 23680810
+  - Level: 179
+    NextTmxp: 23805650
+  - Level: 180
+    NextTmxp: 23908650
+  - Level: 181
+    NextTmxp: 24011650
+  - Level: 182
+    NextTmxp: 24114650
+  - Level: 183
+    NextTmxp: 24217650
+  - Level: 184
+    NextTmxp: 24320650
+  - Level: 185
+    NextTmxp: 24423650
+  - Level: 186
+    NextTmxp: 24526650
+  - Level: 187
+    NextTmxp: 24629650
+  - Level: 188
+    NextTmxp: 24732650
+  - Level: 189
+    NextTmxp: 24835650
+  - Level: 190
+    NextTmxp: 24938650
+  - Level: 191
+    NextTmxp: 25066650
+  - Level: 192
+    NextTmxp: 25220570
+  - Level: 193
+    NextTmxp: 25401340
+  - Level: 194
+    NextTmxp: 25609900
+  - Level: 195
+    NextTmxp: 25847200
+  - Level: 196
+    NextTmxp: 26114200
+  - Level: 197
+    NextTmxp: 26411870
+  - Level: 198
+    NextTmxp: 26741190
+  - Level: 199
+    NextTmxp: 27103150
+  - Level: 200
+    NextTmxp: 27498750
+  - Level: 201
+    NextTmxp: 27894350
+  - Level: 202
+    NextTmxp: 28289950
+  - Level: 203
+    NextTmxp: 28685550
+  - Level: 204
+    NextTmxp: 29081150
+  - Level: 205
+    NextTmxp: 29476750
+  - Level: 206
+    NextTmxp: 29872350
+  - Level: 207
+    NextTmxp: 30267950
+  - Level: 208
+    NextTmxp: 30663550
+  - Level: 209
+    NextTmxp: 31059150
+  - Level: 210
+    NextTmxp: 31454750
+  - Level: 211
+    NextTmxp: 31833350
+  - Level: 212
+    NextTmxp: 32194230
+  - Level: 213
+    NextTmxp: 32536660
+  - Level: 214
+    NextTmxp: 32859900
+  - Level: 215
+    NextTmxp: 33163200
+  - Level: 216
+    NextTmxp: 33445800
+  - Level: 217
+    NextTmxp: 33706930
+  - Level: 218
+    NextTmxp: 33945810
+  - Level: 219
+    NextTmxp: 34161650
+  - Level: 220
+    NextTmxp: 34353650
+  - Level: 221
+    NextTmxp: 34545650
+  - Level: 222
+    NextTmxp: 34737650
+  - Level: 223
+    NextTmxp: 34929650
+  - Level: 224
+    NextTmxp: 35121650
+  - Level: 225
+    NextTmxp: 35313650
+  - Level: 226
+    NextTmxp: 35505650
+  - Level: 227
+    NextTmxp: 35697650
+  - Level: 228
+    NextTmxp: 35889650
+  - Level: 229
+    NextTmxp: 36081650
+  - Level: 230
+    NextTmxp: 36273650
+  - Level: 231
+    NextTmxp: 36498650
+  - Level: 232
+    NextTmxp: 36757670
+  - Level: 233
+    NextTmxp: 37051740
+  - Level: 234
+    NextTmxp: 37381900
+  - Level: 235
+    NextTmxp: 37749200
+  - Level: 236
+    NextTmxp: 38154700
+  - Level: 237
+    NextTmxp: 38599470
+  - Level: 238
+    NextTmxp: 39084590
+  - Level: 239
+    NextTmxp: 39611150
+  - Level: 240
+    NextTmxp: 40180250
+  - Level: 241
+    NextTmxp: 40749350
+  - Level: 242
+    NextTmxp: 41318450
+  - Level: 243
+    NextTmxp: 41887550
+  - Level: 244
+    NextTmxp: 42456650
+  - Level: 245
+    NextTmxp: 43025750
+  - Level: 246
+    NextTmxp: 43594850
+  - Level: 247
+    NextTmxp: 44163950
+  - Level: 248
+    NextTmxp: 44733050
+  - Level: 249
+    NextTmxp: 45302150
+  - Level: 250
+    NextTmxp: 45871250
+  - Level: 251
+    NextTmxp: 46420350
+  - Level: 252
+    NextTmxp: 46948730
+  - Level: 253
+    NextTmxp: 47455660
+  - Level: 254
+    NextTmxp: 47940400
+  - Level: 255
+    NextTmxp: 48402200
+  - Level: 256
+    NextTmxp: 48840300
+  - Level: 257
+    NextTmxp: 49253930
+  - Level: 258
+    NextTmxp: 49642310
+  - Level: 259
+    NextTmxp: 50004650
+  - Level: 260
+    NextTmxp: 50340150
+  - Level: 261
+    NextTmxp: 50675650
+  - Level: 262
+    NextTmxp: 51011150
+  - Level: 263
+    NextTmxp: 51346650
+  - Level: 264
+    NextTmxp: 51682150
+  - Level: 265
+    NextTmxp: 52017650
+  - Level: 266
+    NextTmxp: 52353150
+  - Level: 267
+    NextTmxp: 52688650
+  - Level: 268
+    NextTmxp: 53024150
+  - Level: 269
+    NextTmxp: 53359650
+  - Level: 270
+    NextTmxp: 53695150
+  - Level: 271
+    NextTmxp: 54072650
+  - Level: 272
+    NextTmxp: 54493270
+  - Level: 273
+    NextTmxp: 54958140
+  - Level: 274
+    NextTmxp: 55468400
+  - Level: 275
+    NextTmxp: 56025200
+  - Level: 276
+    NextTmxp: 56629700
+  - Level: 277
+    NextTmxp: 57283070
+  - Level: 278
+    NextTmxp: 57986490
+  - Level: 279
+    NextTmxp: 58741150
+  - Level: 280
+    NextTmxp: 59548250
+  - Level: 281
+    NextTmxp: 60355350
+  - Level: 282
+    NextTmxp: 61162450
+  - Level: 283
+    NextTmxp: 61969550
+  - Level: 284
+    NextTmxp: 62776650
+  - Level: 285
+    NextTmxp: 63583750
+  - Level: 286
+    NextTmxp: 64390850
+  - Level: 287
+    NextTmxp: 65197950
+  - Level: 288
+    NextTmxp: 66005050
+  - Level: 289
+    NextTmxp: 66812150
+  - Level: 290
+    NextTmxp: 67619250
+  - Level: 291
+    NextTmxp: 68402350
+  - Level: 292
+    NextTmxp: 69160730
+  - Level: 293
+    NextTmxp: 69893660
+  - Level: 294
+    NextTmxp: 70600400
+  - Level: 295
+    NextTmxp: 71280200
+  - Level: 296
+    NextTmxp: 71932300
+  - Level: 297
+    NextTmxp: 72555930
+  - Level: 298
+    NextTmxp: 73150310
+  - Level: 299
+    NextTmxp: 73714650
+  - Level: 300
+    NextTmxp: 74248150
+  - Level: 301
+    NextTmxp: 74781650
+  - Level: 302
+    NextTmxp: 75315150
+  - Level: 303
+    NextTmxp: 75848650
+  - Level: 304
+    NextTmxp: 76382150
+  - Level: 305
+    NextTmxp: 76915650
+  - Level: 306
+    NextTmxp: 77449150
+  - Level: 307
+    NextTmxp: 77982650
+  - Level: 308
+    NextTmxp: 78516150
+  - Level: 309
+    NextTmxp: 79049650
+  - Level: 310
+    NextTmxp: 79583150
+  - Level: 311
+    NextTmxp: 80167650
+  - Level: 312
+    NextTmxp: 80804370
+  - Level: 313
+    NextTmxp: 81494540
+  - Level: 314
+    NextTmxp: 82239400
+  - Level: 315
+    NextTmxp: 83040200
+  - Level: 316
+    NextTmxp: 83898200
+  - Level: 317
+    NextTmxp: 84814670
+  - Level: 318
+    NextTmxp: 85790890
+  - Level: 319
+    NextTmxp: 86828150
+  - Level: 320
+    NextTmxp: 87927750
+  - Level: 321
+    NextTmxp: 89027350
+  - Level: 322
+    NextTmxp: 90126950
+  - Level: 323
+    NextTmxp: 91226550
+  - Level: 324
+    NextTmxp: 92326150
+  - Level: 325
+    NextTmxp: 93425750
+  - Level: 326
+    NextTmxp: 94525350
+  - Level: 327
+    NextTmxp: 95624950
+  - Level: 328
+    NextTmxp: 96724550
+  - Level: 329
+    NextTmxp: 97824150
+  - Level: 330
+    NextTmxp: 98923750
+  - Level: 331
+    NextTmxp: 99996350
+  - Level: 332
+    NextTmxp: 101041230
+  - Level: 333
+    NextTmxp: 102057660
+  - Level: 334
+    NextTmxp: 103044900
+  - Level: 335
+    NextTmxp: 104002200
+  - Level: 336
+    NextTmxp: 104928800
+  - Level: 337
+    NextTmxp: 105823930
+  - Level: 338
+    NextTmxp: 106686810
+  - Level: 339
+    NextTmxp: 107516650
+  - Level: 340
+    NextTmxp: 108312650
+  - Level: 341
+    NextTmxp: 109108650
+  - Level: 342
+    NextTmxp: 109904650
+  - Level: 343
+    NextTmxp: 110700650
+  - Level: 344
+    NextTmxp: 111496650
+  - Level: 345
+    NextTmxp: 112292650
+  - Level: 346
+    NextTmxp: 113088650
+  - Level: 347
+    NextTmxp: 113884650
+  - Level: 348
+    NextTmxp: 114680650
+  - Level: 349
+    NextTmxp: 115476650
+  - Level: 350
+    NextTmxp: 116272650
+  - Level: 351
+    NextTmxp: 117128650
+  - Level: 352
+    NextTmxp: 118045970
+  - Level: 353
+    NextTmxp: 119025940
+  - Level: 354
+    NextTmxp: 120069900
+  - Level: 355
+    NextTmxp: 121179200
+  - Level: 356
+    NextTmxp: 122355200
+  - Level: 357
+    NextTmxp: 123599270
+  - Level: 358
+    NextTmxp: 124912790
+  - Level: 359
+    NextTmxp: 126297150
+  - Level: 360
+    NextTmxp: 127753750
+  - Level: 361
+    NextTmxp: 129210350
+  - Level: 362
+    NextTmxp: 130666950
+  - Level: 363
+    NextTmxp: 132123550
+  - Level: 364
+    NextTmxp: 133580150
+  - Level: 365
+    NextTmxp: 135036750
+  - Level: 366
+    NextTmxp: 136493350
+  - Level: 367
+    NextTmxp: 137949950
+  - Level: 368
+    NextTmxp: 139406550
+  - Level: 369
+    NextTmxp: 140863150
+  - Level: 370
+    NextTmxp: 142319750
+  - Level: 371
+    NextTmxp: 143744350
+  - Level: 372
+    NextTmxp: 145136230
+  - Level: 373
+    NextTmxp: 146494660
+  - Level: 374
+    NextTmxp: 147818900
+  - Level: 375
+    NextTmxp: 149108200
+  - Level: 376
+    NextTmxp: 150361800
+  - Level: 377
+    NextTmxp: 151578930
+  - Level: 378
+    NextTmxp: 152758810
+  - Level: 379
+    NextTmxp: 153900650
+  - Level: 380
+    NextTmxp: 155003650
+  - Level: 381
+    NextTmxp: 156106650
+  - Level: 382
+    NextTmxp: 157209650
+  - Level: 383
+    NextTmxp: 158312650
+  - Level: 384
+    NextTmxp: 159415650
+  - Level: 385
+    NextTmxp: 160518650
+  - Level: 386
+    NextTmxp: 161621650
+  - Level: 387
+    NextTmxp: 162724650
+  - Level: 388
+    NextTmxp: 163827650
+  - Level: 389
+    NextTmxp: 164930650
+  - Level: 390
+    NextTmxp: 166033650
+  - Level: 391
+    NextTmxp: 167205650
+  - Level: 392
+    NextTmxp: 168448070
+  - Level: 393
+    NextTmxp: 169762340
+  - Level: 394
+    NextTmxp: 171149900
+  - Level: 395
+    NextTmxp: 172612200
+  - Level: 396
+    NextTmxp: 174150700
+  - Level: 397
+    NextTmxp: 175766870
+  - Level: 398
+    NextTmxp: 177462190
+  - Level: 399
+    NextTmxp: 179238150
+  - Level: 400
+    NextTmxp: 181096250
+  - Level: 401
+    NextTmxp: 182954350
+  - Level: 402
+    NextTmxp: 184812450
+  - Level: 403
+    NextTmxp: 186670550
+  - Level: 404
+    NextTmxp: 188528650
+  - Level: 405
+    NextTmxp: 190386750
+  - Level: 406
+    NextTmxp: 192244850
+  - Level: 407
+    NextTmxp: 194102950
+  - Level: 408
+    NextTmxp: 195961050
+  - Level: 409
+    NextTmxp: 197819150
+  - Level: 410
+    NextTmxp: 199677250
+  - Level: 411
+    NextTmxp: 201535350
+  - Level: 412
+    NextTmxp: 203393450
+  - Level: 413
+    NextTmxp: 205251550
+  - Level: 414
+    NextTmxp: 207109650
+  - Level: 415
+    NextTmxp: 208967750
+  - Level: 416
+    NextTmxp: 210825850
+  - Level: 417
+    NextTmxp: 212683950
+  - Level: 418
+    NextTmxp: 214542050
+  - Level: 419
+    NextTmxp: 216400150
+  - Level: 420
+    NextTmxp: 218258250
+  - Level: 421
+    NextTmxp: 220079350
+  - Level: 422
+    NextTmxp: 221862730
+  - Level: 423
+    NextTmxp: 223607660
+  - Level: 424
+    NextTmxp: 225313400
+  - Level: 425
+    NextTmxp: 226979200
+  - Level: 426
+    NextTmxp: 228604300
+  - Level: 427
+    NextTmxp: 230187930
+  - Level: 428
+    NextTmxp: 231729310
+  - Level: 429
+    NextTmxp: 233227650
+  - Level: 430
+    NextTmxp: 234682150
+  - Level: 431
+    NextTmxp: 236092000
+  - Level: 432
+    NextTmxp: 237456380
+  - Level: 433
+    NextTmxp: 238774460
+  - Level: 434
+    NextTmxp: 240045400
+  - Level: 435
+    NextTmxp: 241268350
+  - Level: 436
+    NextTmxp: 242442450
+  - Level: 437
+    NextTmxp: 243566830
+  - Level: 438
+    NextTmxp: 244640610
+  - Level: 439
+    NextTmxp: 245662900
+  - Level: 440
+    NextTmxp: 246632800
+  - Level: 441
+    NextTmxp: 247602700
+  - Level: 442
+    NextTmxp: 248572600
+  - Level: 443
+    NextTmxp: 249542500
+  - Level: 444
+    NextTmxp: 250512400
+  - Level: 445
+    NextTmxp: 251482300
+  - Level: 446
+    NextTmxp: 252452200
+  - Level: 447
+    NextTmxp: 253422100
+  - Level: 448
+    NextTmxp: 254392000
+  - Level: 449
+    NextTmxp: 255361900
+  - Level: 450
+    NextTmxp: 256331800
+  - Level: 451
+    NextTmxp: 257301700
+  - Level: 452
+    NextTmxp: 258271600
+  - Level: 453
+    NextTmxp: 259241500
+  - Level: 454
+    NextTmxp: 260211400
+  - Level: 455
+    NextTmxp: 261181300
+  - Level: 456
+    NextTmxp: 262151200
+  - Level: 457
+    NextTmxp: 263121100
+  - Level: 458
+    NextTmxp: 264091000
+  - Level: 459
+    NextTmxp: 265060900
+  - Level: 460
+    NextTmxp: 266030800
+  - Level: 461
+    NextTmxp: 267069700
+  - Level: 462
+    NextTmxp: 268178920
+  - Level: 463
+    NextTmxp: 269359790
+  - Level: 464
+    NextTmxp: 270613650
+  - Level: 465
+    NextTmxp: 271941850
+  - Level: 466
+    NextTmxp: 273345750
+  - Level: 467
+    NextTmxp: 274826720
+  - Level: 468
+    NextTmxp: 276386140
+  - Level: 469
+    NextTmxp: 278025400
+  - Level: 470
+    NextTmxp: 279745900
+  - Level: 471
+    NextTmxp: 281549050
+  - Level: 472
+    NextTmxp: 283436270
+  - Level: 473
+    NextTmxp: 285408990
+  - Level: 474
+    NextTmxp: 287468650
+  - Level: 475
+    NextTmxp: 289616700
+  - Level: 476
+    NextTmxp: 291854600
+  - Level: 477
+    NextTmxp: 294183820
+  - Level: 478
+    NextTmxp: 296605840
+  - Level: 479
+    NextTmxp: 299122150
+  - Level: 480
+    NextTmxp: 301734250
+  - Level: 481
+    NextTmxp: 304346350
+  - Level: 482
+    NextTmxp: 306958450
+  - Level: 483
+    NextTmxp: 309570550
+  - Level: 484
+    NextTmxp: 312182650
+  - Level: 485
+    NextTmxp: 314794750
+  - Level: 486
+    NextTmxp: 317406850
+  - Level: 487
+    NextTmxp: 320018950
+  - Level: 488
+    NextTmxp: 322631050
+  - Level: 489
+    NextTmxp: 325243150
+  - Level: 490
+    NextTmxp: 327855250
+  - Level: 491
+    NextTmxp: 330467350
+  - Level: 492
+    NextTmxp: 333079450
+  - Level: 493
+    NextTmxp: 335691550
+  - Level: 494
+    NextTmxp: 338303650
+  - Level: 495
+    NextTmxp: 340915750
+  - Level: 496
+    NextTmxp: 343527850
+  - Level: 497
+    NextTmxp: 346139950
+  - Level: 498
+    NextTmxp: 348752050
+  - Level: 499
+    NextTmxp: 351364150
+  - Level: 500
+    NextTmxp: 353976250
+  - Level: 501
+    NextTmxp: 356551350
+  - Level: 502
+    NextTmxp: 356551350
+  - Level: 503
+    NextTmxp: 356551350
+  - Level: 504
+    NextTmxp: 356551350
+  - Level: 505
+    NextTmxp: 356551350
+  - Level: 506
+    NextTmxp: 356551350
+  - Level: 507
+    NextTmxp: 356551350
+  - Level: 508
+    NextTmxp: 356551350
+  - Level: 509
+    NextTmxp: 356551350
+  - Level: 510
+    NextTmxp: 356551350
+  - Level: 511
+    NextTmxp: 356551350
+  - Level: 512
+    NextTmxp: 356551350
+  - Level: 513
+    NextTmxp: 356551350
+  - Level: 514
+    NextTmxp: 356551350
+  - Level: 515
+    NextTmxp: 356551350
+  - Level: 516
+    NextTmxp: 356551350
+  - Level: 517
+    NextTmxp: 356551350
+  - Level: 518
+    NextTmxp: 356551350
+  - Level: 519
+    NextTmxp: 356551350
+  - Level: 520
+    NextTmxp: 356551350
+  - Level: 521
+    NextTmxp: 356551350
+  - Level: 522
+    NextTmxp: 356551350
+  - Level: 523
+    NextTmxp: 356551350
+  - Level: 524
+    NextTmxp: 356551350
+  - Level: 525
+    NextTmxp: 356551350
+  - Level: 526
+    NextTmxp: 356551350
+  - Level: 527
+    NextTmxp: 356551350
+  - Level: 528
+    NextTmxp: 356551350
+  - Level: 529
+    NextTmxp: 356551350
+  - Level: 530
+    NextTmxp: 356551350
+  - Level: 531
+    NextTmxp: 356551350
+  - Level: 532
+    NextTmxp: 356551350
+  - Level: 533
+    NextTmxp: 356551350
+  - Level: 534
+    NextTmxp: 356551350
+  - Level: 535
+    NextTmxp: 356551350
+  - Level: 536
+    NextTmxp: 356551350
+  - Level: 537
+    NextTmxp: 356551350
+  - Level: 538
+    NextTmxp: 356551350
+  - Level: 539
+    NextTmxp: 356551350
+  - Level: 540
+    NextTmxp: 356551350
+  - Level: 541
+    NextTmxp: 356551350
+  - Level: 542
+    NextTmxp: 356551350
+  - Level: 543
+    NextTmxp: 356551350
+  - Level: 544
+    NextTmxp: 356551350
+  - Level: 545
+    NextTmxp: 356551350
+  - Level: 546
+    NextTmxp: 356551350
+  - Level: 547
+    NextTmxp: 356551350
+  - Level: 548
+    NextTmxp: 356551350
+  - Level: 549
+    NextTmxp: 356551350
+  - Level: 550
+    NextTmxp: 356551350
+  - Level: 551
+    NextTmxp: 356551350
+  - Level: 552
+    NextTmxp: 356551350
+  - Level: 553
+    NextTmxp: 356551350
+  - Level: 554
+    NextTmxp: 356551350
+  - Level: 555
+    NextTmxp: 356551350
+  - Level: 556
+    NextTmxp: 356551350
+  - Level: 557
+    NextTmxp: 356551350
+  - Level: 558
+    NextTmxp: 356551350
+  - Level: 559
+    NextTmxp: 356551350
+  - Level: 560
+    NextTmxp: 356551350
+  - Level: 561
+    NextTmxp: 356551350
+  - Level: 562
+    NextTmxp: 356551350
+  - Level: 563
+    NextTmxp: 356551350
+  - Level: 564
+    NextTmxp: 356551350
+  - Level: 565
+    NextTmxp: 356551350
+  - Level: 566
+    NextTmxp: 356551350
+  - Level: 567
+    NextTmxp: 356551350
+  - Level: 568
+    NextTmxp: 356551350
+  - Level: 569
+    NextTmxp: 356551350
+  - Level: 570
+    NextTmxp: 356551350
+  - Level: 571
+    NextTmxp: 356551350
+  - Level: 572
+    NextTmxp: 356551350
+  - Level: 573
+    NextTmxp: 356551350
+  - Level: 574
+    NextTmxp: 356551350
+  - Level: 575
+    NextTmxp: 356551350
+  - Level: 576
+    NextTmxp: 356551350
+  - Level: 577
+    NextTmxp: 356551350
+  - Level: 578
+    NextTmxp: 356551350
+  - Level: 579
+    NextTmxp: 356551350
+  - Level: 580
+    NextTmxp: 356551350
+  - Level: 581
+    NextTmxp: 356551350
+  - Level: 582
+    NextTmxp: 356551350
+  - Level: 583
+    NextTmxp: 356551350
+  - Level: 584
+    NextTmxp: 356551350
+  - Level: 585
+    NextTmxp: 356551350
+  - Level: 586
+    NextTmxp: 356551350
+  - Level: 587
+    NextTmxp: 356551350
+  - Level: 588
+    NextTmxp: 356551350
+  - Level: 589
+    NextTmxp: 356551350
+  - Level: 590
+    NextTmxp: 356551350
+  - Level: 591
+    NextTmxp: 356551350
+  - Level: 592
+    NextTmxp: 356551350
+  - Level: 593
+    NextTmxp: 356551350
+  - Level: 594
+    NextTmxp: 356551350
+  - Level: 595
+    NextTmxp: 356551350
+  - Level: 596
+    NextTmxp: 356551350
+  - Level: 597
+    NextTmxp: 356551350
+  - Level: 598
+    NextTmxp: 356551350
+  - Level: 599
+    NextTmxp: 356551350
+  - Level: 600
+    NextTmxp: 356551350
+
+Footer:
+  Imports:
+#  - Path: db/import/tm_level_db.yml

@@ -1,0 +1,64 @@
+# =============================================================================
+#   Drill Grade EXP Database  (DRILL_GRADE_EXP_DB)
+# =============================================================================
+#
+#   Table DrillGradeExpRate of the ORIGINAL server data (21 rows, in its order).
+#
+#   Fields
+#     Grade    - the drill's Grade                                              [key]
+#     ExpRate  - the dig's EXP = ExpRate * depth * (Lv + 400) * 0.0005, at least 1
+#   Retail: sub_639580 keeps the rates by row (row i -> rate[i]); sub_62B9F0 reads
+#   rate[Grade], a Grade above the row count reading the last row.
+# =============================================================================
+
+Header:
+  Type: DRILL_GRADE_EXP_DB
+  Version: 1
+
+Body:
+  - Grade: 0
+    ExpRate: 1
+  - Grade: 1
+    ExpRate: 6
+  - Grade: 2
+    ExpRate: 12
+  - Grade: 3
+    ExpRate: 20
+  - Grade: 4
+    ExpRate: 30
+  - Grade: 5
+    ExpRate: 42
+  - Grade: 6
+    ExpRate: 56
+  - Grade: 7
+    ExpRate: 72
+  - Grade: 8
+    ExpRate: 90
+  - Grade: 9
+    ExpRate: 111
+  - Grade: 10
+    ExpRate: 136
+  - Grade: 11
+    ExpRate: 166
+  - Grade: 12
+    ExpRate: 202
+  - Grade: 13
+    ExpRate: 244
+  - Grade: 14
+    ExpRate: 292
+  - Grade: 15
+    ExpRate: 346
+  - Grade: 16
+    ExpRate: 406
+  - Grade: 17
+    ExpRate: 472
+  - Grade: 18
+    ExpRate: 544
+  - Grade: 19
+    ExpRate: 622
+  - Grade: 20
+    ExpRate: 706
+
+Footer:
+  Imports:
+#  - Path: db/import/drill_grade_exp_db.yml

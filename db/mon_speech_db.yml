@@ -1,0 +1,2449 @@
+# =============================================================================
+#   Monster Speech Database  (MON_SPEECH_DB)
+# =============================================================================
+#
+#   From the ORIGINAL server data (kto_libconfig.xml): MonsterParamEx2.Speech names a MonSpeech_* table
+#   (rows by Type, up to three Speech/Ratio pairs; retail loader sub_621130 -> the monster's 424-byte
+#   slot per Type). One entry per line: the monster, its table, the Type (the situation: 0 hit by a
+#   crit / strong crit, 1 its battle state begins, 3 its tactics state begins; 2 is never said by this
+#   server), the line and its Ratio (the chance out of 1.0; cumulative per Type, retail sub_60CF40).
+# =============================================================================
+
+Header:
+  Type: MON_SPEECH_DB
+  Version: 1
+
+Body:
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '너무 아프군.. 올공이지?'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '너무 아프군.. 올운인감?'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '호..혹시 올명중?'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '컥!'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '앞으로 친해지고 싶었는데...... 큭.....'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '그럼 이만...'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '잘 좀 봐주이소~'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '평화를 사랑하지만.. 한번만 더 결투 신청을 받아주겠소.'
+  - MonsterId: 2035
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '날 불렀소?'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '오.. 놀라워라!'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '이럴수가~'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '컥!'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '앞으로 친해지고 싶었는데...... 큭.....'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '그럼 이만...'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '잘 선택했다..'
+  - MonsterId: 2037
+    Table: MonSpeech_Mole2
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '나의 힘을 보여주지..'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아야 아야! 야무살려~!'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 1
+    Ratio: 0.050000
+    Text: '아파요~ 흑흑!'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 2
+    Ratio: 0.050000
+    Text: '야무 죽네~ 아고고~'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '난 약하지 않아!'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 1
+    Ratio: 0.050000
+    Text: '얕잡아 보지마!'
+  - MonsterId: 2038
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 2
+    Ratio: 0.050000
+    Text: '도토리를 사수하자!'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '컥!'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '앞으로 친해지고 싶었는데...... 큭.....'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '그럼 이만...'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '허걱! *바른 말을 사용합시다*'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '허걱!'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '꽥!'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '몸 좀 풀어야겠군..'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '음냐.. 간다..'
+  - MonsterId: 2046
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '훗훗훗'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '헉 생각보다 쎄군... 쩝...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '약간 아프군...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '헉.. 너 레벨이 몇이야?'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '조용히 숨어 살기도 힘들군...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '오랜만에 사냥이나 한번 할까나...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '심심하던 차에 잘 되었군...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '생애 첫 패배로군...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '해적 체면에 말이 아니로군 쩝...'
+  - MonsterId: 2054
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '이럴수가.. 우연이겠지...? 흑...'
+  - MonsterId: 2055
+    Table: MonSpeech_MiniNorazo
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '...??'
+  - MonsterId: 2055
+    Table: MonSpeech_MiniNorazo
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '.......?'
+  - MonsterId: 2055
+    Table: MonSpeech_MiniNorazo
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '.... ... .....'
+  - MonsterId: 2055
+    Table: MonSpeech_MiniNorazo
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '.... ... ...!!'
+  - MonsterId: 2061
+    Table: MonSpeech_BadHula
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '욱.. 성격 더 나빠지겠네-_-'
+  - MonsterId: 2061
+    Table: MonSpeech_BadHula
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '저주!!!!'
+  - MonsterId: 2061
+    Table: MonSpeech_BadHula
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '저주!!!!'
+  - MonsterId: 2061
+    Table: MonSpeech_BadHula
+    Type: 1
+    Slot: 0
+    Ratio: 0.300000
+    Text: '쿨럭 쿨럭..'
+  - MonsterId: 2063
+    Table: MonSpeech_BloodshotEyeball
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '생각보다 아프다.. 쩝..'
+  - MonsterId: 2063
+    Table: MonSpeech_BloodshotEyeball
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '저주!!!!'
+  - MonsterId: 2063
+    Table: MonSpeech_BloodshotEyeball
+    Type: 1
+    Slot: 0
+    Ratio: 0.300000
+    Text: '나를 어떻게 찾았지.. 쩝..'
+  - MonsterId: 2068
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'good..'
+  - MonsterId: 2068
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: 'not bad..'
+  - MonsterId: 2068
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'welcome..'
+  - MonsterId: 2068
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '....'
+  - MonsterId: 2071
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'good..'
+  - MonsterId: 2071
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: 'not bad..'
+  - MonsterId: 2071
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'welcome..'
+  - MonsterId: 2071
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '....'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 타이즈가 갖고 싶소?'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '크하하~ 아프지 않소'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '날 화나게 했소'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 조그맣던 얼굴이 이렇게 커진 것은 여왕의 저주'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 2108
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 해의 가면으로 상대해주겠소'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 망토가 갖고 싶소?'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '푸하하~ 아프지 않소'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '제대로 상대해주겠소'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 샤프한 얼굴이 이렇게 망가진 것은 여왕의 저주'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 2109
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 달의 가면으로 상대해주겠소'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '망토도 없는 내가 불쌍하지도 않소?'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '앗하하~ 아프지 않소'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '이제 그만 때리시오'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 핸섬한 이목구비가 뭉개진 것은 여왕의 저주'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 2110
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 별의 가면으로 상대해주겠소'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '팔을 우아하게 휘둘러 보시오. 꼴사납소'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '당신의 동작은 촌스럽소. 나를 보시오'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용수의 생명 관절을 다치게 할 셈이오?'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '지금 이 내게 춤을 신청하는 것이오?'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '왜 이자벨과 같은 방식으로 춤을 신청하는 것이오?'
+  - MonsterId: 2111
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '내 춤이 보고 싶소?'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '당신도 춤을 좀 추는군요'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '동작이 거칠어요. 파트너를 바꾸겠어요'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '관절이 망가지겠어요'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '자아~ 나와 함께 춤을 추어요'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '춤 신청이라면 받아들이겠어요'
+  - MonsterId: 2112
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '인형이 되니 더 다양한 동작이 가능해졌어요. 보실래요?'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '부채를 접어 휘둘러 치는 것은 맘에 들지 않는단 뜻이지요'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채를 수평으로 펴는 것은 그만하란 뜻이지요'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채를 떨구는 것은 대화할 의사가 없다는 뜻이지요'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '사교의 기본 예절인 부채대화법을 가르쳐드리지요'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채대화법을 배우고 싶은가 보군요'
+  - MonsterId: 2113
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채 없이 경박스럽게 의사를 전달하지 마세요'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '제 향의 비밀을 밝히겠어요. 그것은 열흘 동안 씻지 않은 몸이에요'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '제 향의 비밀을 밝히겠어요. 향기로운 향수도 뿌려줬어요'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '제 향을 맡으려고 치는 것 치곤 심하군요'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '절 치지 마세요. 향기가 날아가요'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '툭툭 쳐서 배어 나오는 제 향을 맡는 건가요?'
+  - MonsterId: 2114
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '향기로운 몽쉘을 기억하세요'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '머리를 못 감아서 간지럽다. 차라리 머리를 쳐라'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '머리에 들인 3일의 공을 헛되이 만드는구나'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '내 머리를 긁던 꼬챙이 빗으로 찌르고 말 테다'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '3일간 공들여 만든 머리니라. 조심하거라'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '공들여 만든 머리가 흐트러졌다. 용서치 않겠다'
+  - MonsterId: 2115
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '감히 내게 손을 대다니 꼬챙이 빗으로 찌를 테다'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아름다운 장미는 나 빈센또가 지킨다'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '장미꽃들이여~ 내게 힘을 다오~'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '네가 자꾸 이러면 전정가위를 사용할 테다'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '정원에 들어와 장미를 해하는 자. 용서치 않으리~'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '장미꽃을 갖고 싶다면 나와 겨뤄 이겨라'
+  - MonsterId: 2116
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '나의 눈에 띄고도 무사할 것 같은가~'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '컥! (1/1-x)+(1/1+x)+(2/1+x²)+(4/1+x⁴)'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '헉! f(x+1)=2(x+1)*(a(x+1)²+b(x+1)+c)=2*2x*(a(x+1)²+b(x+1)+c)'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '즐! f(x+1)=2(x+1)*(a(x+1)²+b(x+1)+c)'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: 'f(a+h)=f(a)+hf’(a+8h)'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: 'log₄{log₃(log₂y)}=1'
+  - MonsterId: 2139
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: 'χ⁴+2χ²+9=0'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '제 옆에 있나요..'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '아아악~'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '오잇떼'
+  - MonsterId: 2140
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '구다사이'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '동그라미를 그려주세요..'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '끄아악~'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '오잇떼'
+  - MonsterId: 2141
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '구다사이'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '어쭈~반항해?'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '어쭈~ 10겔더에 한 대씩이다!'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '아직 내 소문을 못 들어봤나본데.. 이러다 후회해!'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '어이! 너, 이리와 봐!'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '겔더 가진 것 있으면 내놔!'
+  - MonsterId: 2143
+    Table: MonSpeech_Halli
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '어이! 너 지금 나 노려봤냐?'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '크크.. 간지럽군'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '크크.. 귀엽군. 더 쳐봐!'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '아직 내 소문을 못 들어봤나본데.. 나 등교길의 핏빛망토야!'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '오랜만에 몸 좀 풀어볼까~'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '지금 날 쳤나? 귀엽군!'
+  - MonsterId: 2144
+    Table: MonSpeech_Galli
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '등교길의 핏빛망토 화려하게 재기해 볼까~'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '복장 봐라! 반, 번호, 이름 대!'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '복도에서 누가 뛰어다니래! 이름 대!'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '명찰이랑 학교배지도 안하고 왔지?'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '학교폭력은 처벌 대상인거 몰라?'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '선도부의 권위에 도전하는 거냐? 번호, 이름 대!'
+  - MonsterId: 2171
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '더 때려봐! 이 수첩을 선생님한테 넘겨버릴테니까..'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '펫을 학대하다니.. 벌 받을거야!'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '아퍼~ 왜 때려~'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '잠깐! 뭔가 오해가 있나본데.. 난 펫이야!'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '앗! 난 퓨어퓨리야~'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '난 몬스터가 아냐! 펫이야!'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '날 잘 봐~ 퓨어퓨리라니까..'
+  - MonsterId: 2190
+    Table: MonSpeech_LiarBadPuri
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '쳇! 안속네..'
+  - MonsterId: 2210
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'good..'
+  - MonsterId: 2210
+    Table: MonSpeech_Predator
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: 'not bad..'
+  - MonsterId: 2210
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: 'welcome..'
+  - MonsterId: 2210
+    Table: MonSpeech_Predator
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '....'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '방금 일격에 눈물이 나올 뻔 했어~'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '괜찮은 일격이었어!'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '그래서 내 눈물을 뽑아낼 수 있겠나?'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '그럼 어디 능력껏 내 눈물을 짜내 보라구!'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '내 눈물을 뽑아낼 자신은 있나?'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '내 눈물을 뽑아내기는 쉽지 않을걸?'
+  - MonsterId: 2255
+    Table: MonSpeech_Juvanni
+    Type: 2
+    Slot: 0
+    Ratio: 0.100000
+    Text: '흥! 제법이군..'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '헉 생각보다 쎄군... 쩝...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '약간 아프군...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '헉.. 너 레벨이 몇이야?'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '조용히 숨어 살기도 힘들군...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '오랜만에 사냥이나 한번 할까나...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '심심하던 차에 잘 되었군...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '생애 첫 패배로군...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '해적 체면에 말이 아니로군 쩝...'
+  - MonsterId: 2266
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '이럴수가.. 우연이겠지...? 흑...'
+  - MonsterId: 2270
+    Table: MonSpeech_CutyLittle
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '옹덩이가 작고 예쁜 날 어떻게 찾아냈지?'
+  - MonsterId: 2270
+    Table: MonSpeech_CutyLittle
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '난 싫어! 난 싫어! 쳐다보면 싫어~'
+  - MonsterId: 2270
+    Table: MonSpeech_CutyLittle
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '요즘들어 잘 나가는 나를 이렇게 때려도 돼?'
+  - MonsterId: 2270
+    Table: MonSpeech_CutyLittle
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '부탁할게~ 부탁할게~ 상처주지 않기를..'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '팔을 우아하게 휘둘러 보시오. 꼴사납소'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '당신의 동작은 촌스럽소. 나를 보시오'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용수의 생명 관절을 다치게 할 셈이오?'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '지금 이 내게 춤을 신청하는 것이오?'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '왜 이자벨과 같은 방식으로 춤을 신청하는 것이오?'
+  - MonsterId: 2271
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '내 춤이 보고 싶소?'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '컥! (1/1-x)+(1/1+x)+(2/1+x²)+(4/1+x⁴)'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '헉! f(x+1)=2(x+1)*(a(x+1)²+b(x+1)+c)=2*2x*(a(x+1)²+b(x+1)+c)'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '즐! f(x+1)=2(x+1)*(a(x+1)²+b(x+1)+c)'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: 'f(a+h)=f(a)+hf’(a+8h)'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: 'log₄{log₃(log₂y)}=1'
+  - MonsterId: 2367
+    Table: MonSpeech_GhostBook
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: 'χ⁴+2χ²+9=0'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '제 옆에 있나요..'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '아아악~'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '오잇떼'
+  - MonsterId: 2368
+    Table: MonSpeech_MarieToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '구다사이'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '동그라미를 그려주세요..'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '끄아악~'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '분신사바 분신사바'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '오잇떼'
+  - MonsterId: 2369
+    Table: MonSpeech_MaroToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '구다사이'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '복장 봐라! 반, 번호, 이름 대!'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '복도에서 누가 뛰어다니래! 이름 대!'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '명찰이랑 학교배지도 안하고 왔지?'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '학교폭력은 처벌 대상인거 몰라?'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '선도부의 권위에 도전하는 거냐? 번호, 이름 대!'
+  - MonsterId: 2382
+    Table: MonSpeech_LeaderToy
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '더 때려봐! 이 수첩을 선생님한테 넘겨버릴테니까..'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '부채를 접어 휘둘러 치는 것은 맘에 들지 않는단 뜻이지요'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채를 수평으로 펴는 것은 그만하란 뜻이지요'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채를 떨구는 것은 대화할 의사가 없다는 뜻이지요'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '사교의 기본 예절인 부채대화법을 가르쳐드리지요'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채대화법을 배우고 싶은가 보군요'
+  - MonsterId: 2603
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채 없이 경박스럽게 의사를 전달하지 마세요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '부채를 접어 휘둘러 치는 것은 맘에 들지 않는단 뜻이지요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채를 수평으로 펴는 것은 그만하란 뜻이지요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채를 떨구는 것은 대화할 의사가 없다는 뜻이지요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '사교의 기본 예절인 부채대화법을 가르쳐드리지요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채대화법을 배우고 싶은가 보군요'
+  - MonsterId: 2604
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채 없이 경박스럽게 의사를 전달하지 마세요'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '방금 일격에 머리카락이 흐트러질 뻔 했어~'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '괜찮은 일격이었어!'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '그래서 나를 이길 수 있겠나?'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '그럼 어디 능력껏 나를 쓰러뜨려 보라구!'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '날 이길 자신은 있나?'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '나를 이기기는 쉽지 않을걸?'
+  - MonsterId: 2661
+    Table: MonSpeech_Juvanni2
+    Type: 2
+    Slot: 0
+    Ratio: 0.100000
+    Text: '흥! 제법이군..'
+  - MonsterId: 2770
+    Table: MonSpeech_Event_mogi836
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '히얍 쪼쪼~ 메뚜기피는 내가 접수!! 퐈이아~'
+  - MonsterId: 2770
+    Table: MonSpeech_Event_mogi836
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '쪼~금 간질간질할껄? 히히~'
+  - MonsterId: 2770
+    Table: MonSpeech_Event_mogi836
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '꽉물어버릴테다!!'
+  - MonsterId: 2770
+    Table: MonSpeech_Event_mogi836
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱? 엥엥'
+  - MonsterId: 2771
+    Table: MonSpeech_Event_mogi837
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '난 모기로 변해도 훈모~기~엥엥'
+  - MonsterId: 2771
+    Table: MonSpeech_Event_mogi837
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '쪼~금 간질간질할껄? 히히~'
+  - MonsterId: 2771
+    Table: MonSpeech_Event_mogi837
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '아파~엥엥~'
+  - MonsterId: 2771
+    Table: MonSpeech_Event_mogi837
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱? 엥엥'
+  - MonsterId: 2772
+    Table: MonSpeech_Event_mogi838
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '모기는 영어로 mosquito!! 어떻게 읽는지는 묻지마~'
+  - MonsterId: 2772
+    Table: MonSpeech_Event_mogi838
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '쪼~금 간질간질할껄? 히히~'
+  - MonsterId: 2772
+    Table: MonSpeech_Event_mogi838
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '꽉물어버릴테다!!'
+  - MonsterId: 2772
+    Table: MonSpeech_Event_mogi838
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱? 엥엥'
+  - MonsterId: 2773
+    Table: MonSpeech_Event_mogi839
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '휴가같이떠날 여자모기 급구!!'
+  - MonsterId: 2773
+    Table: MonSpeech_Event_mogi839
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '쪼~금 간질간질할껄? 히히~'
+  - MonsterId: 2773
+    Table: MonSpeech_Event_mogi839
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '꽉물어버릴테다!!'
+  - MonsterId: 2773
+    Table: MonSpeech_Event_mogi839
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱? 엥엥'
+  - MonsterId: 2774
+    Table: MonSpeech_Event_mogi840
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '머리털 많은 애들 피가 맛나~쪽쪽~'
+  - MonsterId: 2774
+    Table: MonSpeech_Event_mogi840
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '쪼~금 간질간질할껄? 히히~'
+  - MonsterId: 2774
+    Table: MonSpeech_Event_mogi840
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '아파~엥엥~'
+  - MonsterId: 2774
+    Table: MonSpeech_Event_mogi840
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱? 엥엥'
+  - MonsterId: 2778
+    Table: MonSpeech_Mon844
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '쉽게 잡혀 줄줄 알고?'
+  - MonsterId: 2778
+    Table: MonSpeech_Mon844
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '당해봐랏! 히히~'
+  - MonsterId: 2778
+    Table: MonSpeech_Mon844
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '달그락 달그락'
+  - MonsterId: 2778
+    Table: MonSpeech_Mon844
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '비켜비켜~'
+  - MonsterId: 2778
+    Table: MonSpeech_Mon844
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '잡아봐라~약오르지롱?'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '크아아아'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '크르르'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '키에에엑!!'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '(…………………..)'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '크륵!?'
+  - MonsterId: 2780
+    Table: MonSpeech_Jinhon1
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '캬악!!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아퍼!! 하지마!!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '너어~ 두고봐!!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '이러지 마!!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아하하!! 놀자!!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '거기서!'
+  - MonsterId: 2781
+    Table: MonSpeech_Jinhon2
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '얍!! 얍!!!'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '그 정도로는…'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '대체 넌 뭐야..'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '크아~'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나.. 너 밉다..'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '저리가..'
+  - MonsterId: 2782
+    Table: MonSpeech_Jinhon3
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '여긴 어디 나는 누구'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '그대를 멸 하리라..'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '헛수고!!'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '크아아~'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '그가 나와 함께 하는한..'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '나는 불멸이다..'
+  - MonsterId: 2783
+    Table: MonSpeech_Jinhon4
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '가상하군..'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나는 철벽이다'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '나의 장벽이..'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '크아아아~'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '가렵다 가려워!!'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '통하지 않아..'
+  - MonsterId: 2784
+    Table: MonSpeech_Jinhon5
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '썩 사라져!!'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '용기가 가상하구나..'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '감히 덤비는가.'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '크아아아아~'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '귀찮은 녀석..'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '여기는 나의 공간..'
+  - MonsterId: 2785
+    Table: MonSpeech_Jinhon6
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '네가 올 곳이 아니다..'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '너는 취약해..'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '구멍 투성이..'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '삐!! 삐익!!'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '011001010011..'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '취약점 발견'
+  - MonsterId: 2786
+    Table: MonSpeech_Worm64
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '너의 데이터는 어디?'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '난폭한 인간이네요.'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '후후훗'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '끝이라고 생각하는건 아니겠죠?'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '어리석은 인간이네요.'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '네페트리에게 속고 있어요.'
+  - MonsterId: 2965
+    Table: MonSpeech_Mon1031
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '인간들은 어찌 이리 어리석은지.'
+  - MonsterId: 3029
+    Table: MonSpeech_Mon1095
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '내가 뭘 잘못했다는 거야!'
+  - MonsterId: 3029
+    Table: MonSpeech_Mon1095
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '흑…. 잘못했어요.'
+  - MonsterId: 3029
+    Table: MonSpeech_Mon1095
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '도망가자. 킥킥킥~!!'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '너무 아프군.. 올공이지?'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '너무 아프군.. 올운인감?'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '호..혹시 올명중?'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '컥!'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '앞으로 친해지고 싶었는데...... 큭.....'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '그럼 이만...'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '잘 좀 봐주이소~'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '평화를 사랑하지만.. 한번만 더 결투 신청을 받아주겠소.'
+  - MonsterId: 16100
+    Table: MonSpeech_GoldenMole
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '날 불렀소?'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아야 아야! 야무살려~!'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 1
+    Ratio: 0.050000
+    Text: '아파요~ 흑흑!'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 0
+    Slot: 2
+    Ratio: 0.050000
+    Text: '야무 죽네~ 아고고~'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '난 약하지 않아!'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 1
+    Ratio: 0.050000
+    Text: '얕잡아 보지마!'
+  - MonsterId: 16103
+    Table: MonSpeech_Yamu
+    Type: 1
+    Slot: 2
+    Ratio: 0.050000
+    Text: '도토리를 사수하자!'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '컥!'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '앞으로 친해지고 싶었는데...... 큭.....'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '그럼 이만...'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '허걱! *바른 말을 사용합시다*'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '허걱!'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '꽥!'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '몸 좀 풀어야겠군..'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '음냐.. 간다..'
+  - MonsterId: 16111
+    Table: MonSpeech_Mole3
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '훗훗훗'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '헉 생각보다 쎄군... 쩝...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '약간 아프군...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '헉.. 너 레벨이 몇이야?'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '조용히 숨어 살기도 힘들군...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '오랜만에 사냥이나 한번 할까나...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '심심하던 차에 잘 되었군...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '생애 첫 패배로군...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '해적 체면에 말이 아니로군 쩝...'
+  - MonsterId: 16119
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '이럴수가.. 우연이겠지...? 흑...'
+  - MonsterId: 16120
+    Table: MonSpeech_MiniNorazo
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '...??'
+  - MonsterId: 16120
+    Table: MonSpeech_MiniNorazo
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '.......?'
+  - MonsterId: 16120
+    Table: MonSpeech_MiniNorazo
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '.... ... .....'
+  - MonsterId: 16120
+    Table: MonSpeech_MiniNorazo
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '.... ... ...!!'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 타이즈가 갖고 싶소?'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '크하하~ 아프지 않소'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '날 화나게 했소'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 조그맣던 얼굴이 이렇게 커진 것은 여왕의 저주'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 16173
+    Table: MonSpeech_Norman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 해의 가면으로 상대해주겠소'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 망토가 갖고 싶소?'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '푸하하~ 아프지 않소'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '제대로 상대해주겠소'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 샤프한 얼굴이 이렇게 망가진 것은 여왕의 저주'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 16174
+    Table: MonSpeech_Arman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 달의 가면으로 상대해주겠소'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '망토도 없는 내가 불쌍하지도 않소?'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '앗하하~ 아프지 않소'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '이제 그만 때리시오'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '나의 핸섬한 이목구비가 뭉개진 것은 여왕의 저주'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '모든 저주는 인간에게 풀라 했소'
+  - MonsterId: 16175
+    Table: MonSpeech_Charman
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용소품인 별의 가면으로 상대해주겠소'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '팔을 우아하게 휘둘러 보시오. 꼴사납소'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '당신의 동작은 촌스럽소. 나를 보시오'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '무용수의 생명 관절을 다치게 할 셈이오?'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '지금 이 내게 춤을 신청하는 것이오?'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '왜 이자벨과 같은 방식으로 춤을 신청하는 것이오?'
+  - MonsterId: 16176
+    Table: MonSpeech_Michel
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '내 춤이 보고 싶소?'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '당신도 춤을 좀 추는군요'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '동작이 거칠어요. 파트너를 바꾸겠어요'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '관절이 망가지겠어요'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '자아~ 나와 함께 춤을 추어요'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '춤 신청이라면 받아들이겠어요'
+  - MonsterId: 16177
+    Table: MonSpeech_Isabelle
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '인형이 되니 더 다양한 동작이 가능해졌어요. 보실래요?'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '부채를 접어 휘둘러 치는 것은 맘에 들지 않는단 뜻이지요'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채를 수평으로 펴는 것은 그만하란 뜻이지요'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채를 떨구는 것은 대화할 의사가 없다는 뜻이지요'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '사교의 기본 예절인 부채대화법을 가르쳐드리지요'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '부채대화법을 배우고 싶은가 보군요'
+  - MonsterId: 16178
+    Table: MonSpeech_Chiffon
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '부채 없이 경박스럽게 의사를 전달하지 마세요'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '제 향의 비밀을 밝히겠어요. 그것은 열흘 동안 씻지 않은 몸이에요'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '제 향의 비밀을 밝히겠어요. 향기로운 향수도 뿌려줬어요'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '제 향을 맡으려고 치는 것 치곤 심하군요'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '절 치지 마세요. 향기가 날아가요'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '툭툭 쳐서 배어 나오는 제 향을 맡는 건가요?'
+  - MonsterId: 16179
+    Table: MonSpeech_Moncher
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '향기로운 몽쉘을 기억하세요'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '머리를 못 감아서 간지럽다. 차라리 머리를 쳐라'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '머리에 들인 3일의 공을 헛되이 만드는구나'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '내 머리를 긁던 꼬챙이 빗으로 찌르고 말 테다'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '3일간 공들여 만든 머리니라. 조심하거라'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '공들여 만든 머리가 흐트러졌다. 용서치 않겠다'
+  - MonsterId: 16180
+    Table: MonSpeech_Fondue
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '감히 내게 손을 대다니 꼬챙이 빗으로 찌를 테다'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 0
+    Ratio: 0.100000
+    Text: '아름다운 장미는 나 빈센또가 지킨다'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 1
+    Ratio: 0.100000
+    Text: '장미꽃들이여~ 내게 힘을 다오~'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 0
+    Slot: 2
+    Ratio: 0.100000
+    Text: '네가 자꾸 이러면 전정가위를 사용할 테다'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 0
+    Ratio: 0.100000
+    Text: '정원에 들어와 장미를 해하는 자. 용서치 않으리~'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 1
+    Ratio: 0.100000
+    Text: '장미꽃을 갖고 싶다면 나와 겨뤄 이겨라'
+  - MonsterId: 16181
+    Table: MonSpeech_Vincentto
+    Type: 1
+    Slot: 2
+    Ratio: 0.100000
+    Text: '나의 눈에 띄고도 무사할 것 같은가~'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 0
+    Ratio: 0.200000
+    Text: '헉 생각보다 쎄군... 쩝...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 1
+    Ratio: 0.200000
+    Text: '약간 아프군...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 0
+    Slot: 2
+    Ratio: 0.200000
+    Text: '헉.. 너 레벨이 몇이야?'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 0
+    Ratio: 0.200000
+    Text: '조용히 숨어 살기도 힘들군...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 1
+    Ratio: 0.200000
+    Text: '오랜만에 사냥이나 한번 할까나...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 1
+    Slot: 2
+    Ratio: 0.200000
+    Text: '심심하던 차에 잘 되었군...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 0
+    Ratio: 0.200000
+    Text: '생애 첫 패배로군...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 1
+    Ratio: 0.200000
+    Text: '해적 체면에 말이 아니로군 쩝...'
+  - MonsterId: 16331
+    Table: MonSpeech_BucA
+    Type: 2
+    Slot: 2
+    Ratio: 0.200000
+    Text: '이럴수가.. 우연이겠지...? 흑...'
+
+Footer:
+  Imports: []

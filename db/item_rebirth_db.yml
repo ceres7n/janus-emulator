@@ -1,0 +1,89 @@
+# =============================================================================
+#   Item Rebirth Database  (ITEM_REBIRTH_DB)
+# =============================================================================
+#
+#   Table Item_RebirthParam of the ORIGINAL server data (kto_libconfig.xml,
+#   10 rows, in its order): what a resurrection item restores. Field names
+#   verbatim; Name = the item's name in item_db.yml (display only).
+#
+#   Fields
+#     ItemId             - the item (item_db.yml: Type 15, Effect 29)   [key]
+#     fHpRestoreRatio    - HP = (int)(MaxHP * ratio)
+#     fMpRestoreRatio    - MP = max(MP, (int)(MaxMP * ratio))
+#     fExpRestoreRatio   - EXP += (int)(the EXP the death cost * ratio)
+#     fTmxpRestoreRatio  - TM EXP += (int)(the TM EXP the death cost * ratio)
+#   Retail use: Resurrect on the death screen (C2S 0x02F7) above
+#   BeginnerRebirthInfo.Level uses the bag's Effect-29 item: UseItemHelper::Use
+#   (sub_6E1AE0) case 29 -> the revive (sub_764260) with these ratios. An Effect-29
+#   item without a row here cannot be used.
+# =============================================================================
+
+Header:
+  Type: ITEM_REBIRTH_DB
+  Version: 1
+
+Body:
+  - ItemId: 19645
+    Name: Resurrect Scroll
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 300
+    Name: Flower of Revival
+    fHpRestoreRatio: 0.2
+    fMpRestoreRatio: 0.2
+    fExpRestoreRatio: 0.8
+    fTmxpRestoreRatio: 0.8
+  - ItemId: 19686
+    Name: Resurrection Scroll
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 63442
+    Name: Resurrection Marble
+    fHpRestoreRatio: 0.2
+    fMpRestoreRatio: 0.2
+    fExpRestoreRatio: 0.8
+    fTmxpRestoreRatio: 0.8
+  - ItemId: 19650
+    Name: Resurrection Scrolls EV
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 19756
+    Name: Resurrect Scrolls Ev
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 19778
+    Name: Resurrect Scroll EV
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 19784
+    Name: Resurrect Scroll Ev
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 301
+    Name: Beginner's Scroll of Revival
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+  - ItemId: 19806
+    Name: Resurrect Scroll (Ev)
+    fHpRestoreRatio: 0.5
+    fMpRestoreRatio: 0.5
+    fExpRestoreRatio: 0.5
+    fTmxpRestoreRatio: 0.5
+
+Footer:
+  Imports:
+#  - Path: db/import/item_rebirth_db.yml

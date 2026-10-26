@@ -1,0 +1,704 @@
+# =============================================================================
+#   Shop Database  (SHOP_DB)
+# =============================================================================
+#
+#   The shop tables of the ORIGINAL server data (kto_libconfig.xml: 70 Shop_* tables,
+#   84 rows), referenced by maps_db.yml ShopTable. One record per row, in the
+#   table's order; field names verbatim; a field only when it has a value.
+#
+#   Fields
+#     Table        - the shop table                                      [key]
+#     NpcType      - the shop's CharacterInfo id: its model
+#     Name         - (derived) the CharacterInfo name of NpcType (Paula English
+#                    when present, else the original)
+#     PosId        - the .md3 type-5 point (by id) it stands on; none -> (600, 600)
+#     PurchaseRate - the shop's buy price rate (<= 0 -> 1.0)
+#     SellingRate  - the shop's sell price rate (<= 0 -> 0.5)
+#     ItemTable    - its item list (shop_item_db.yml)
+#     Script       - the greeting S2C 0x00A8 carries: the Paula backup's English text
+#                    for the same row (80), else the original Korean
+#   Retail: ShopManager::CreateShop (sub_882CF0) makes one ShopNpc (object kind 5)
+#   per row at the zone build; GameInfoMgr sub_629D90 loads the rows.
+# =============================================================================
+
+Header:
+  Type: SHOP_DB
+  Version: 1
+
+Body:
+  - Table: Shop_Square
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hello, I'm a pretty card girl.^^  Blue Potion (A, B, C) and Ice Spirit Cards are on sale today. Don't miss this great opportunity. Please bring me rusty chains and milk leftovers. I will buy them at a good price. Have a nice day!
+  - Table: Shop_Square
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 3
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square
+    Script: Hello! Pink Potion B is on sale today. Come and grab some! Please bring a plastic Pouch and some White Day candy. I will buy them at a good price. Thank you.
+  - Table: Shop_Square
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 5
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hello, I'm a pretty card girl.^^  Blue Potion (A, B, C) and Ice Spirit Cards are on sale today. Don't miss this great opportunity. Please bring me rusty chains and milk leftovers. I will buy them at a good price. Have a nice day!
+  - Table: Shop_Square
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 7
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square
+    Script: Hello! Pink Potion B is on sale today. Come and grab some! Please bring a plastic Pouch and some White Day candy. I will buy them at a good price. Thank you.
+  - Table: Shop_Beach
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Beach_Gate
+    Script: Hello! I am Item Girl, for your information I have shops at each gate where I sell vaious basic items. If you want gear, and other special items, you will have to visit me at a shop inside one of the towns. Here in Desert Beach I will pay well for Fine Sand and Cocos nucifera's shell. Enjoy your stay!
+  - Table: Shop_Relics
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Relic_Gate
+    Script: Hello. Welcome to Caballa Relics. There are many items that are unique to this region like the Dutchman's Pipe and Tachyslite. Have you heard of them? Dutchman's Pipe can be acquired from the Guiana monsters and Tachyslite can be drilled for in the lower parts of Caballa Dungeon. They are rare and expensive items that can only be found here, so I will be buying them for a very high cost. So what can I help you with?
+  - Table: Shop_Swamp
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Swamp
+    Script: Hello. Pink Potion C and Blue Potion C are on sale today. Don't miss the great opportunity. Please bring me Jenny's pictures and dolls. I will buy them a good price. Have a nice day!
+  - Table: Shop_Seabed
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Seabed
+    Script: Hello and welcome to Ghost Blue, the beautiful sea village on Caballa Island. We're buying local goods from Ghost Blue for high prices.
+  - Table: Shop_Beach_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Beach_Town
+    Script: Welcome to Paradise, a miracle that was built on sand! We're paying a lot for Fine Sand and Cocos nucifera's Shell. They both can be found at Desert Beach. How may I help you?
+  - Table: Shop_Beach_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hello~ I'm Card Girl. During your adventure here, you'll be coming across many cards and skills which can be used in many different ways in-game. Unlike Item Girl, I only deal in card related items. Please come to me if you are in need of good cards!
+  - Table: Shop_Seabed_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Seabed_Town
+    Script: Hello and welcome to Aquarius Item Shop located in this beautiful sea village on Caballa Island. We're buying local goods from Ghost Blue for high prices.
+  - Table: Shop_Seabed_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hi there. I'm Card Girl. You will find variety of cards while playing Trickster. You can play Card Battle or learn new skills with it. I handle merchandise that are related to cards.
+  - Table: Shop_Relics_Town
+    NpcType: 5003
+    Name: Merchant Lorena
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Relic_Town
+    Script: There is always something new here at Azteca~ Welcome! There are always new items and a huge variety, so look around and I hope you will become a regular customer! Since you're here I will give you some good advice. Have you heard of the Dutchman's Pipe or Tachyslite? Dutchman's Pipe can be acquired from the Guiana monsters and Tachyslite can be drilled for in the lower parts of Caballa Dungeon. They are special items that are unique to this area and sell very well. So what can I help you with?
+  - Table: Shop_Relics_Town
+    NpcType: 5004
+    Name: Merchant Miguel
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Haha! Welcome! I'm Miguel. I am currently in the business of selling card related items.
+  - Table: Shop_Relics_Town
+    NpcType: 5011
+    Name: Andrew
+    PosId: 3
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Money
+    Script: Hi, I'm Andrew, the Galder Check Seller. 5% of the check amount will be taxed. You need to come to me to cash the check. Be aware that you may not receive full value if you cash it elsewhere.
+  - Table: Shop_Swamp_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: I'm Card Girl! We have some new card packs which came in today. We expect more new releases in the future so please drop by often~
+  - Table: Shop_Swamp_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Swamp_Town
+    Script: Hello. This is newly open 'Carbigal' item shop. We are planning sales in commemoration of opening Carbigal on a large scale. Drop by our shop always~ Thank you.
+  - Table: Shop_Square_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: I'm Card Girl! We have some new card packs which came in today. We expect more new releases in the future so please drop by often~
+  - Table: Shop_Square_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Square
+    Script: Welcome to Megalopolis Square. I'm currently selling Shiny Water which is used to as a compounding material for Lemonade Potion. You can find Lemons from Megalopolis Forest. You can thank me later~
+  - Table: Shop_Snow_Play
+    NpcType: 5005
+    Name: Match Girl Annie
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Snow_Factory
+    Script: Hello~ This is Match Girl's shop. We are buying  5 popular types of presents during Christmas day, and 2 types of underground items at high price. . Be a customer, please~
+  - Table: Shop_Path_NE
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Ceremonia
+    Script: It's always eventful here in Event Garden. How can I help you?
+  - Table: Shop_Path_NE
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: I'm Card Girl! We have some new card packs which came in today. We expect more new releases in the future so please drop by often~
+  - Table: Shop_Volcano
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Volcano
+    Script: Hello. Thank you for visiting the Tapasco Volcano shop~ We have supplied the shop will all your hunting needs so please take a look~ Oh also, there are some items that will sell for a different amount than what it may have been before so please keep that in mind.
+  - Table: Shop_Wharf_Dungeon_Room
+    NpcType: 5006
+    Name: Mrs. Martha
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Wharf_DR
+    Script: Ah~ Come on! Haven't you had hard time to come here? Well, do you want to buy some? Or, want to sell what you have? We buy a Schoolbag at a high price, and Herb Portions and Gold Pearl Portions are, what is it, er.. that's it, on sale and take this opportunity!
+  - Table: Shop_Coral_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hello~ I'm Card Girl. During your adventure here, you'll be coming across many cards and skills which can be used in many different ways in-game. Unlike Item Girl, I only deal in card related items. Please come to me if you are in need of good cards!
+  - Table: Shop_Volcano_Town_Shop
+    NpcType: 5007
+    Name: Clerk Z. Smith
+    PosId: 1
+    PurchaseRate: 1.1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Volcano_Town
+    Script: My precious~ cough cough~ Welcome to Clerk Z. Smith's Shop! Because it is in a dangerous place the cost for the items in shop are a bit more expensive than normal, so I hope you understand. Just a reminder I'm buying items from deceased monsters from this area for a expensive cost!
+  - Table: Shop_Wharf_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Wharf_Gate
+    Script: Hello. Welcome to the Gate of Oops Wharf. We buy back gold and silver coins. Pirate treasures are also in high demand. What can I do for you?
+  - Table: Shop_Wharf
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Wharf_Town
+    Script: Hello. Oops Wharf Shop specializes in gold and silver coins along with various pirate treasures. Our latest product is Diving Gear. Anything you are looking for?
+  - Table: Shop_Square_Bank
+    NpcType: 5011
+    Name: Andrew
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Money
+    Script: Hello there. My name is Andrew and I'm in charge of issuing checks here on Caballa Island. There is a 5% fee when checks are issued. You can cash them with me as well. Other shop NPCs might not give you the maximum value so come and cash them with me here.
+  - Table: Shop_Coral_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Coral_Gate
+    Script: How are you? I'm Item Girl! Not only am I a member of the 7-Princess Club, I also have a full time job selling items here. My stuff comes exclusively  from Pia.
+  - Table: Shop_Marine
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Marine
+    Script: Welcome to Mermaid Palace item shop. We have a variety of products. How can I help you?
+  - Table: Shop_Rose_Dungeon_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_RDG
+    Script: Weclome to the item shop of Vamp Castle. We are buying items that are dropped by monsters inside the castle. How may I help you?
+  - Table: Shop_Path_Wharf_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Path_Wharf_Gate
+    Script: Hi, and welcome to the Techichi Shop located in the Gate of Techichi Volcano. I'm selling items that are needed in your Techichi Volcano expedition, so be sure to look around. Oh, keep in mind the real value of some items are sold differently.
+  - Table: Shop_Snow
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Snow_Gate
+    Script: สวัสดี ยินดีต้อนรับเข้าสู่ Gate of Snow HillShop ดินแดนน้ำแข็งที่มีไอเทมพิเศษให้คุณ!
+  - Table: Shop_Chaos1
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Chaos1
+    Script: Hi, I'm the Item Girl who manages the Special Shop for those who are here to survey the Tower of Chaos. This place looks gloomy and dangerous. I suggest taking plenty of things with you. I came here in a hurry without many things, so they are a bit pricey. You do understand, right?
+  - Table: Shop_Beach_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Beach_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Relics_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Relics_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Wharf_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Wharf_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Seabed_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Seabed_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Rose_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Rose_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Snow_Fiesta
+    NpcType: 5018
+    Name: Robot GB-01
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Snow_Fiesta
+    Script: Beeeep~ This is a special vending machine from Megalo Company. There are Potions, Portable Ports and many more items to enhance your Fiesta experience. Please help yourself. Beeeep~
+  - Table: Shop_Mirage
+    NpcType: 5003
+    Name: Merchant Lorena
+    PosId: 4
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Mirage_Ep3
+    Script: Hello. Welcome to Mirage Island's item shop. What can I help you with?
+  - Table: Shop_Mirage_Play4
+    NpcType: 5004
+    Name: Merchant Miguel
+    PosId: 6
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Mirage_Ep3
+    Script: Welcome. I heard that they're constructing a new city here. Shhh~ Don't you get the feeling that the people and money will be crowding this place soon? Ha Ha Ha... Now we have everything, except the things we don't have. What can I help you with?
+  - Table: Shop_Chaos2
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Chaos2
+    Script: Hi, I'm the Item Girl who manages the Special Shop for those who are here to survey the Tower of Chaos. I'm nervous with the smoke coming out. I suggest taking plenty of things with you. I came to this dangerous place without many things, so they are a bit pricey. You do understand, right?
+  - Table: Shop_Chaos3
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Chaos3
+    Script: How are you? I'm here managing a shop with special items for the Fading Tower. This place is very dangerous so you should make sure to stock up on the items you need. Since this place is so dangerous it is difficult to ship items here, so we lack variety. The prices on the items here are a bit different, I hope you understand.
+  - Table: Shop_Chaos4
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Chaos4
+    Script: How are you? I'm here managing a shop with special items for the Lighthouse of Chaos. This place is very dangerous so you should make sure to stock up on the items you need. Since this place is so dangerous it is difficult to ship items here, so we lack variety. The prices on the items here are a bit different too, I hope you understand.
+  - Table: Shop_Chaos5
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Chaos5
+    Script: How are you? I'm here managing a shop with special items for the Tower of Rose Garden. This place is very dangerous so you should make sure to stock up on the items you need. Since this place is so dangerous it is difficult to ship items here, so we lack variety. The prices on the items here are a bit different too, I hope you understand.
+  - Table: Shop_Abyss_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Abyss_Town
+    Script: Welcome to the Abyss. We hope you enjoy your stay! Some of the items on sale here may be different from the usual price. Please keep that in mind when you make your purchases.
+  - Table: Shop_Path_Wharf_Dungeon_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Path_Wharf_Gate
+    Script: Hi, and welcome to the Techichi Shop located in the Gate of Black Ash Dungeon. I'm selling items that are needed in your Black Ash Dungeon expedition, so be sure to look around. Have a great day~ Oh, keep in mind the real value of some items are sold differently.
+  - Table: Shop_Office_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hi. I am the always beautiful Card Girl! Would you like to take a look at the new cardpacks that just arrived today? I promise you won't be disappointed. I plan on selling more card-related items besides the cardpacks, so stay tuned.
+  - Table: Shop_Office_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Office
+    Script: Hello. Welcome to the Dev shopping mall where variety and satisfaction is guaranteed! There are plenty of awesome items to meet your needs. Enjoy your shopping~ Some of the pricings may be different compared to other places, so keep that in mind.
+  - Table: Shop_Square_Shop2
+    NpcType: 5014
+    Name: Monkey_T
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Square3
+    Script: Hey~ Are you looking for a card key too? I guess you didn't complete Episode 3. Why don't you buy one from me? It will be a bit pricey. Kee kee. Even if you have the card key, they won't let you in unless you're at least level 150.
+  - Table: Shop_SPS_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_SPS
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Beach_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Beach
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Relics_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Relics
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Wharf_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Wharf
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Marine_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Marine
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Mirage_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Mirage
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Seabed_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Seabed
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Rose_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Rose
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Swamp_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Swamp
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Office_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Office
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Snow_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Snow
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Path_Wharf_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Path_Wharf
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Volcano_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Volcano
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Abyss_Spot_Shop
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: Spot_ShopItem_Abyss
+    Script: How are you? I'm Dealer Rat. Yes, really I'm just doing business away from the all seeing eyes of the Megalo Company. Well, considering that I came here through the route of darkness, I've added a danger fee to all the items I sell so it might be a little expensive. Also the only way to know the Compound Slots and stats for the artisan equipment is to buy it. With dangerous weapons risks will always follow.
+  - Table: Shop_Popuri
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Popuri
+    Script: Hello. Welcome to Poppuri Dungeon. Currently I am selling sparkling water that is used for making this area's specialty, Lemonade Potion. Lemons can be easily found in Megalopolis Forest. Ah! Also you can acquired Ginseng Seed in the dungeon. Ginseng Seeds are a specialty of this area. I will always buy it for a high cost. Also keep in mind that certain items will be sold for a different value than usual. Thank you.
+  - Table: Shop_Snow_Dungeon
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Snow_Factory
+    Script: Hello~ Welcome to Gate of Blue Ice Dungeon Shop~ I hope you'll shop here frequently!
+  - Table: Shop_Event_Park_Play1
+    NpcType: 5014
+    Name: Monkey_T
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Event_Park
+    Script: โอ้ ที่นี่อันตรายมาก~ อย่าเพิ่งพูดอะไร ลองมาดูสินค้าในร้านของฉันก่อนสิ อย่าไปเสียดายเงินเลย สินค้าพวกนี้จะช่วยให้คุณรอดพ้นจากอันตรายได้ เชื่อฉันซี่ ฮี่ ฮี่ ฮี่
+  - Table: Shop_Wedding_Gate
+    NpcType: 5022
+    Name: Tuxedo_T
+    PosId: 1
+    PurchaseRate: 5
+    SellingRate: 0.2
+    ItemTable: R_ShopItem_Wedding
+    Script: I'm not here to try to make some money, kee~ I'm here to help the couples prepare for their wonderful and fabulous wedding, kee~ Once you go in you won't be able to check your inventory, so be sure to equip it before you go in! I don't want to hear you telling me that I cheated you, kee~
+  - Table: Shop_Coral_Town
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Coral_Town
+    Script: Hello and welcome to [Blooming Cora]! My name is Item Girl and I sell basic items needed for your travels. By clicking the tabs listed at the top, you can purchase Basic Armor, Drills, Potions, and more. Of course you can sell items too. Also, if you bring me Coral Beach's speciality items such as [Firecrackers] or [Wind Pendants], I will buy them off of you for a good price. Well then, I hope you have a wonderful adventure!
+  - Table: Shop_Fiesta
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Fiesta
+    Script: Hi. Welcome to the Fiesta Ball Room. Here, we sell potions that are useful to adventurers. Buy as much as you need. Thanks~
+  - Table: Shop_Mirage_Gate
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Mirage_Ep3
+    Script: Hello. Welcome to Mirage Island's item shop. What can I help you with?
+  - Table: Shop_TestTown
+    NpcType: 5021
+    Name: Lead Developer
+    PosId: 1
+    PurchaseRate: 0.1
+    SellingRate: 1
+    ItemTable: ShopItem_TestTown5
+    Script: 테스트 상점
+  - Table: Shop_TestTown
+    NpcType: 5020
+    Name: Dark Dealer Rat
+    PosId: 2
+    PurchaseRate: 0.1
+    SellingRate: 1
+    ItemTable: ShopItem_TestTown6
+    Script: 테스트 상점
+  - Table: Shop_TestTown
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 3
+    PurchaseRate: 0.1
+    SellingRate: 1
+    ItemTable: ShopItem_TestTown7
+    Script: 테스트 상점
+  - Table: Shop_TestTown
+    NpcType: 5003
+    Name: Merchant Lorena
+    PosId: 4
+    PurchaseRate: 0.1
+    SellingRate: 1
+    ItemTable: ShopItem_TestTown8
+    Script: 테스트 상점
+  - Table: Shop_Snow_Town_Shop
+    NpcType: 5002
+    Name: Card Girl
+    PosId: 2
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: ShopItem_Square2
+    Script: Hi, I'm the ever-so-cute Card Girl! New cards packs just arrived today. Want to take a look? A lot of cool things are in the card packs. Be sure to check out not only the cards but also the card related items when they come in.
+  - Table: Shop_Snow_Town_Shop
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Snow
+    Script: Hi, welcome to Laplanoel Shopping Mall, the greatest shop offering a variety of items in a clean shopping environment! I have a lot of cool items for you, so be sure to check them out. Have a great day~ Oh, keep in mind, because of how far away we are, some prices might look a little different. Bye-bye now!
+  - Table: Shop_Alteo
+    NpcType: 5023
+    Name: Item Boy Thomas
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Alteo_Gate
+    Script: Hello everyone~ Welcome to Alteo Empire! I started to sell items just like my idol the Item Girl. Heehee~ Look at this frilly outfit. Don't we look alike? I love it! If you see the Item Girl, be sure to tell her to wait for me till I become an adult! Heehee.
+  - Table: Shop_Path_Wharf_Town
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Path_Wharf_Town
+    Script: Hi, and welcome to the Techichi Shop located in the Gate of Techichi Volcano. I'm selling items that are needed in your Techichi Volcano expedition, so be sure to look around. Oh, keep in mind the real value of some items are sold differently.
+  - Table: Shop_Volcano_Gate
+    NpcType: 5009
+    Name: Shopkeeper Laic
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Volcano_Gate
+    Script: Woof! Hello! Welcome to Tapasco Theme Spa~ We are selling items you will need to use at the Theme Spa, as well as [Capsulmatic Coupons], so feel free to look around!
+  - Table: Shop_HarconDef
+    NpcType: 5001
+    Name: Item Girl
+    PosId: 1
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_HarconDef1
+    Script: Hello. Welcome to Arena
+  - Table: Shop_Office2_Town2
+    NpcType: 5014
+    Name: Monkey_T
+    PosId: 10
+    PurchaseRate: 1
+    SellingRate: 0.5
+    ItemTable: R_ShopItem_Office2_Town2
+    Script: Welcome, welcome! I’m Monkey_T, an honest monkey trying to make his way in the world as an honest trader!
+
+Footer:
+  Imports:
+#  - Path: db/import/shop_db.yml

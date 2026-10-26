@@ -1,0 +1,9 @@
+-- ─────────────────────────────────────────────────────────────────────────────
+--  ProjectPAULA — 005: world data (intentionally empty)
+--
+--  Static game data (maps, monsters, items, NPCs, spawns, drops) is loaded from
+--  db/*.yml and data/map/ at server start, not from the database. The
+--  janus-era table mob_instances that this file used to create is no longer
+--  created (no ProjectPAULA code uses it); an existing database keeps it.
+--  The file stays so the numbering of the scripts does not change.
+-- ─────────────────────────────────────────────────────────────────────────────

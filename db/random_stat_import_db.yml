@@ -1,0 +1,230 @@
+# =============================================================================
+#   Random Stat Distribution Curves  (RANDOM_STAT_IMPORT_DB)
+# =============================================================================
+#
+#   Table RandomStatImportTable of the ORIGINAL server data (kto_libconfig.xml,
+#   17 rows): the weight curves a rare item's random stats and compound slots
+#   are rolled with (random_stat_db.yml *Import / MixSlotImport name one).
+#
+#   Fields
+#     Name                    - curve name                              [key]
+#     Step1, Step10..Step100  - weights at the points 0, 10, ..., 100 of the
+#                               value range (0 = interpolate over it)
+#   Retail DistrTblInfoMgr sub_616E70: the 11 weights become 101 (straight lines
+#   between the non-zero steps), then a 10000-entry table of point indexes, each
+#   point getting 10000*weight/total entries; a roll is table[rand() % 10000].
+# =============================================================================
+
+Header:
+  Type: RANDOM_STAT_IMPORT_DB
+  Version: 1
+
+Body:
+  - Name: Down
+    Step1: 5000
+    Step10: 2000
+    Step20: 1000
+    Step30: 80
+    Step40: 30
+    Step50: 20
+    Step60: 10
+    Step70: 9
+    Step80: 5
+    Step90: 2
+    Step100: 1
+  - Name: wp_middle
+    Step1: 1800
+    Step10: 1900
+    Step20: 1975
+    Step30: 1700
+    Step40: 1400
+    Step50: 700
+    Step60: 300
+    Step70: 140
+    Step80: 60
+    Step90: 20
+    Step100: 5
+  - Name: slot
+    Step1: 120
+    Step10: 120
+    Step20: 120
+    Step30: 110
+    Step40: 100
+    Step50: 90
+    Step60: 80
+    Step70: 70
+    Step80: 50
+    Step90: 20
+    Step100: 10
+  - Name: compound1
+    Step1: 100
+    Step10: 800
+    Step20: 1400
+    Step30: 1800
+    Step40: 2020
+    Step50: 1600
+    Step60: 1100
+    Step70: 600
+    Step80: 400
+    Step90: 150
+    Step100: 30
+  - Name: compound2
+    Step1: 200
+    Step10: 1300
+    Step20: 2000
+    Step30: 2400
+    Step40: 1800
+    Step50: 1200
+    Step60: 600
+    Step70: 270
+    Step80: 140
+    Step90: 80
+    Step100: 10
+  - Name: compound3
+    Step1: 200
+    Step10: 1700
+    Step20: 2600
+    Step30: 2100
+    Step40: 1600
+    Step50: 1000
+    Step60: 440
+    Step70: 210
+    Step80: 100
+    Step90: 45
+    Step100: 5
+  - Name: hunter
+    Step1: 100
+    Step10: 110
+    Step20: 110
+    Step30: 100
+    Step40: 90
+    Step50: 80
+    Step60: 70
+    Step70: 60
+    Step80: 40
+    Step90: 20
+    Step100: 10
+  - Name: elemental
+    Step1: 100
+    Step10: 90
+    Step20: 80
+    Step30: 70
+    Step40: 60
+    Step50: 40
+    Step60: 30
+    Step70: 10
+    Step80: 5
+    Step90: 3
+    Step100: 1
+  - Name: eq1
+    Step1: 180
+    Step10: 170
+    Step20: 160
+    Step30: 140
+    Step40: 120
+    Step50: 100
+    Step60: 70
+    Step70: 40
+    Step80: 14
+    Step90: 5
+    Step100: 1
+  - Name: newcom1
+    Step1: 200
+    Step10: 900
+    Step20: 1500
+    Step30: 1800
+    Step40: 2090
+    Step50: 1600
+    Step60: 1000
+    Step70: 500
+    Step80: 300
+    Step90: 100
+    Step100: 10
+  - Name: newcom2
+    Step1: 300
+    Step10: 1400
+    Step20: 2200
+    Step30: 2495
+    Step40: 1700
+    Step50: 1000
+    Step60: 500
+    Step70: 220
+    Step80: 120
+    Step90: 60
+    Step100: 5
+  - Name: newcom3
+    Step1: 300
+    Step10: 2000
+    Step20: 2758
+    Step30: 2000
+    Step40: 1500
+    Step50: 800
+    Step60: 380
+    Step70: 170
+    Step80: 70
+    Step90: 20
+    Step100: 2
+  - Name: R1
+    Step1: 10
+    Step10: 40
+    Step20: 80
+    Step30: 90
+    Step40: 100
+    Step50: 100
+    Step60: 80
+    Step70: 60
+    Step80: 40
+    Step90: 20
+    Step100: 8
+  - Name: R2
+    Step1: 20
+    Step10: 60
+    Step20: 90
+    Step30: 100
+    Step40: 120
+    Step50: 100
+    Step60: 80
+    Step70: 60
+    Step80: 40
+    Step90: 20
+    Step100: 8
+  - Name: R3
+    Step1: 30
+    Step10: 70
+    Step20: 100
+    Step30: 120
+    Step40: 110
+    Step50: 100
+    Step60: 80
+    Step70: 60
+    Step80: 40
+    Step90: 20
+    Step100: 8
+  - Name: pet1
+    Step1: 10
+    Step10: 80
+    Step20: 100
+    Step30: 110
+    Step40: 120
+    Step50: 100
+    Step60: 80
+    Step70: 56
+    Step80: 32
+    Step90: 10
+    Step100: 2
+  - Name: slot2
+    Step1: 27
+    Step10: 10
+    Step20: 10
+    Step30: 10
+    Step40: 10
+    Step50: 10
+    Step60: 4
+    Step70: 3
+    Step80: 3
+    Step90: 3
+    Step100: 10
+
+Footer:
+  Imports:
+#  - Path: db/import/random_stat_import_db.yml

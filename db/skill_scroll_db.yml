@@ -1,0 +1,431 @@
+# =============================================================================
+#   Skill Scroll Database  (SKILL_SCROLL_DB)
+# =============================================================================
+#
+#   Table SkillScroll_Info of the ORIGINAL server data (kto_libconfig.xml,
+#   82 rows, in its order): the skill a scroll item (Type 15, SubType 69) casts.
+#   Field names verbatim; Name = the item's name in item_db.yml, Skill = the
+#   skill's name in skill_db.yml (display only).
+#
+#   Fields
+#     ItemId   - the scroll item                                       [key]
+#     SkillId  - the skill it casts (its own, not a learned one)
+#     Level    - the level it is cast at
+#   Retail use: the client sends C2S 844 [u64 uid][u16 skill] (sub_BEB290); the
+#   server (Player case 844) casts SkillId at Level when it is the item's row and
+#   keeps the item (Player +0xC94); the skill's effect state of ESClass 4/5/6 uses
+#   the item up (UseItem -> sub_6E59C0: S2C 0x0059). The first row of an item
+#   wins (a front-to-back search, sub_636E70).
+#   SkillId not in SkillParam2 (the scroll cannot work): 7006, 7023
+# =============================================================================
+
+Header:
+  Type: SKILL_SCROLL_DB
+  Version: 1
+
+Body:
+  - ItemId: 37000
+    Name: AP Scroll
+    SkillId: 7001
+    Skill: AP Scroll
+    Level: 1
+  - ItemId: 37001
+    Name: MA Scroll
+    SkillId: 7002
+    Skill: MA Scroll
+    Level: 1
+  - ItemId: 37002
+    Name: LK Scroll
+    SkillId: 7003
+    Skill: LK Scroll
+    Level: 1
+  - ItemId: 37003
+    Name: HV Scroll
+    SkillId: 7004
+    Skill: HV Scroll
+    Level: 1
+  - ItemId: 37004
+    Name: DA Scroll
+    SkillId: 7005
+    Skill: DA Scroll
+    Level: 1
+  - ItemId: 37005
+    SkillId: 7006
+    Level: 5
+  - ItemId: 37006
+    Name: Heart Scroll
+    SkillId: 7007
+    Skill: Heart Scroll
+    Level: 1
+  - ItemId: 37007
+    Name: Fairy's Firework
+    SkillId: 7008
+    Skill: Fairy's Fireworks
+    Level: 1
+  - ItemId: 37008
+    Name: White Pearl
+    SkillId: 7009
+    Skill: White Pearl
+    Level: 1
+  - ItemId: 37009
+    Name: Choco of Love
+    SkillId: 7010
+    Skill: Choco of Love
+    Level: 1
+  - ItemId: 37010
+    Name: Angel's Firework
+    SkillId: 7011
+    Skill: White Splash
+    Level: 1
+  - ItemId: 37011
+    Name: Butterfly
+    SkillId: 7012
+    Skill: Butterfly
+    Level: 1
+  - ItemId: 37012
+    Name: Ghost Busted
+    SkillId: 7013
+    Skill: Ghost Busted
+    Level: 1
+  - ItemId: 37013
+    Name: Poppuri Surprise Scroll
+    SkillId: 7014
+    Skill: Suprise Poppuri
+    Level: 1
+  - ItemId: 37014
+    Name: The Winner Firecracker
+    SkillId: 7015
+    Skill: The Winner Firecracker
+    Level: 1
+  - ItemId: 37015
+    Name: Heart Spring
+    SkillId: 7016
+    Skill: Heart Spring
+    Level: 1
+  - ItemId: 37016
+    Name: 1st Anniversary Scroll
+    SkillId: 7017
+    Skill: 1st Anniversary Skill
+    Level: 1
+  - ItemId: 37017
+    Name: Thump Up
+    SkillId: 7018
+    Skill: Thump Up
+    Level: 1
+  - ItemId: 37018
+    Name: Dancing Cora
+    SkillId: 7019
+    Skill: Little Cora Song
+    Level: 1
+  - ItemId: 37019
+    Name: 2nd Anniversary Skill
+    SkillId: 7020
+    Skill: 2nd Anniversary Skill
+    Level: 1
+  - ItemId: 37020
+    Name: Biscuit Explosion
+    SkillId: 7021
+    Skill: Flower Biscuit
+    Level: 1
+  - ItemId: 37021
+    Name: Foam fire
+    SkillId: 7022
+    Skill: Foam Fire
+    Level: 1
+  - ItemId: 37022
+    SkillId: 7023
+    Level: 1
+  - ItemId: 37024
+    Name: Stardust Kiss
+    SkillId: 7024
+    Skill: Star Dust Kiss
+    Level: 1
+  - ItemId: 37025
+    Name: Basic Detection Scroll
+    SkillId: 7025
+    Skill: Basic Detection Scroll
+    Level: 7
+  - ItemId: 37026
+    Name: Super Detection Scroll
+    SkillId: 7026
+    Skill: Super Detection Scroll
+    Level: 7
+  - ItemId: 37028
+    Name: Secret Scroll (MA)
+    SkillId: 7028
+    Skill: Secret Scroll(MA)
+    Level: 1
+  - ItemId: 37027
+    Name: Secret Scroll (AP)
+    SkillId: 7027
+    Skill: Secret Scroll(AP)
+    Level: 1
+  - ItemId: 37029
+    Name: Secret Scroll (LK)
+    SkillId: 7029
+    Skill: Secret Scroll(LK)
+    Level: 1
+  - ItemId: 37030
+    Name: Secret Scroll (HV)
+    SkillId: 7030
+    Skill: Secret Scroll(HV)
+    Level: 1
+  - ItemId: 37031
+    Name: Secret Scroll (DA)
+    SkillId: 7031
+    Skill: Secret Scroll(DA)
+    Level: 1
+  - ItemId: 37032
+    Name: Secret Scroll (AP/Party)
+    SkillId: 7032
+    Skill: Secret Scroll(AP Party)
+    Level: 1
+  - ItemId: 37033
+    Name: Secret Scroll (MA/Party)
+    SkillId: 7033
+    Skill: Secret Scroll(MA Party)
+    Level: 1
+  - ItemId: 37034
+    Name: Secret Scroll (LK/Party)
+    SkillId: 7034
+    Skill: Secret Scroll(LK Party)
+    Level: 1
+  - ItemId: 37035
+    Name: Secret Scroll (HV/Party)
+    SkillId: 7035
+    Skill: Secret Scroll(HV Party)
+    Level: 1
+  - ItemId: 37036
+    Name: Secret Scroll (DA/Party)
+    SkillId: 7036
+    Skill: Secret Scroll(DA Party)
+    Level: 1
+  - ItemId: 37037
+    Name: Secret Scroll (Power)
+    SkillId: 7037
+    Skill: Secret Scroll(Power)
+    Level: 1
+  - ItemId: 37038
+    Name: Secret Scroll (Magic)
+    SkillId: 7038
+    Skill: Secret Scroll(Magic)
+    Level: 1
+  - ItemId: 37039
+    Name: Secret Scroll (Sense)
+    SkillId: 7039
+    Skill: Secret Scroll(Sense)
+    Level: 1
+  - ItemId: 37040
+    Name: Secret Scroll (Charm)
+    SkillId: 7040
+    Skill: Secret Scroll(Charm)
+    Level: 1
+  - ItemId: 37041
+    Name: Secret Scroll (AP) Ev
+    SkillId: 7027
+    Skill: Secret Scroll(AP)
+    Level: 1
+  - ItemId: 37042
+    Name: Secret Scroll (MA) Ev
+    SkillId: 7028
+    Skill: Secret Scroll(MA)
+    Level: 1
+  - ItemId: 37043
+    Name: Secret Scroll (LK) Ev
+    SkillId: 7029
+    Skill: Secret Scroll(LK)
+    Level: 1
+  - ItemId: 37044
+    Name: Secret Scroll (HV) Ev
+    SkillId: 7030
+    Skill: Secret Scroll(HV)
+    Level: 1
+  - ItemId: 37045
+    Name: Secret Scroll (DA) Ev
+    SkillId: 7031
+    Skill: Secret Scroll(DA)
+    Level: 1
+  - ItemId: 37046
+    SkillId: 7032
+    Skill: Secret Scroll(AP Party)
+    Level: 1
+  - ItemId: 37047
+    SkillId: 7033
+    Skill: Secret Scroll(MA Party)
+    Level: 1
+  - ItemId: 37048
+    SkillId: 7034
+    Skill: Secret Scroll(LK Party)
+    Level: 1
+  - ItemId: 37049
+    SkillId: 7035
+    Skill: Secret Scroll(HV Party)
+    Level: 1
+  - ItemId: 37050
+    SkillId: 7036
+    Skill: Secret Scroll(DA Party)
+    Level: 1
+  - ItemId: 37051
+    Name: Power Scroll Ev
+    SkillId: 7037
+    Skill: Secret Scroll(Power)
+    Level: 1
+  - ItemId: 37052
+    Name: Magic Scroll Ev
+    SkillId: 7038
+    Skill: Secret Scroll(Magic)
+    Level: 1
+  - ItemId: 37053
+    Name: Sense Scroll Ev
+    SkillId: 7039
+    Skill: Secret Scroll(Sense)
+    Level: 1
+  - ItemId: 37054
+    Name: Charm Scroll Ev
+    SkillId: 7040
+    Skill: Secret Scroll(Charm)
+    Level: 1
+  - ItemId: 37055
+    Name: Basic Detection Scroll S
+    SkillId: 7025
+    Skill: Basic Detection Scroll
+    Level: 7
+  - ItemId: 37056
+    Name: Super Detection Scroll S
+    SkillId: 7026
+    Skill: Super Detection Scroll
+    Level: 7
+  - ItemId: 37057
+    Name: Super Detection Scroll Ev
+    SkillId: 7026
+    Skill: Super Detection Scroll
+    Level: 7
+  - ItemId: 37058
+    Name: Fairy's Fireworks EV
+    SkillId: 7008
+    Skill: Fairy's Fireworks
+    Level: 1
+  - ItemId: 37065
+    Name: Fairy's Fireworks EV
+    SkillId: 7008
+    Skill: Fairy's Fireworks
+    Level: 1
+  - ItemId: 37064
+    Name: Super Detection Scroll Ev
+    SkillId: 7026
+    Skill: Super Detection Scroll
+    Level: 7
+  - ItemId: 37059
+    Name: Warp Defense Scroll
+    SkillId: 7041
+    Skill: Warp Defense Scroll
+    Level: 1
+  - ItemId: 37060
+    Name: Free Motion Scroll
+    SkillId: 7042
+    Skill: Protection Scroll
+    Level: 1
+  - ItemId: 37061
+    Name: Scroll of the Resolute
+    SkillId: 7043
+    Skill: Scroll of the Resolute
+    Level: 1
+  - ItemId: 37067
+    Name: Warp Defense Scroll Ev
+    SkillId: 7041
+    Skill: Warp Defense Scroll
+    Level: 1
+  - ItemId: 37068
+    Name: Protection Defense Scroll Ev
+    SkillId: 7042
+    Skill: Protection Scroll
+    Level: 1
+  - ItemId: 37069
+    Name: Scroll of the Resolute Ev
+    SkillId: 7043
+    Skill: Scroll of the Resolute
+    Level: 1
+  - ItemId: 37062
+    Name: Scroll of Illumination
+    SkillId: 7044
+    Skill: Scroll of Illumination
+    Level: 1
+  - ItemId: 37063
+    Name: Scroll of Rejuvenation
+    SkillId: 7045
+    Skill: Scroll of Rejuvenation
+    Level: 1
+  - ItemId: 37066
+    Name: Party Detection Scroll
+    SkillId: 7046
+    Skill: Party Detection Scroll
+    Level: 1
+  - ItemId: 37073
+    Name: Super Detection Scroll Ev
+    SkillId: 7026
+    Skill: Super Detection Scroll
+    Level: 7
+  - ItemId: 37076
+    Name: Fairy's Fireworks Ev
+    SkillId: 7008
+    Skill: Fairy's Fireworks
+    Level: 1
+  - ItemId: 37074
+    Name: Warp Defense Scroll Ev
+    SkillId: 7041
+    Skill: Warp Defense Scroll
+    Level: 1
+  - ItemId: 37075
+    Name: Scroll of the Resolute Ev
+    SkillId: 7043
+    Skill: Scroll of the Resolute
+    Level: 1
+  - ItemId: 37070
+    Name: Scroll of Illumination Ev
+    SkillId: 7044
+    Skill: Scroll of Illumination
+    Level: 1
+  - ItemId: 37071
+    Name: Scroll of Rejuvenation Ev
+    SkillId: 7045
+    Skill: Scroll of Rejuvenation
+    Level: 1
+  - ItemId: 37072
+    Name: Party Detection Scroll EV
+    SkillId: 7046
+    Skill: Party Detection Scroll
+    Level: 1
+  - ItemId: 37082
+    Name: Merry Christmas
+    SkillId: 7049
+    Skill: Happy Merry Christmas
+    Level: 1
+  - ItemId: 37083
+    Name: Rudolph Bangle Bangle
+    SkillId: 7050
+    Skill: Bangle Bangle Rudolph
+    Level: 1
+  - ItemId: 37106
+    Name: White splash Ev
+    SkillId: 7011
+    Skill: White Splash
+    Level: 1
+  - ItemId: 37107
+    Name: 하트봄Ev
+    SkillId: 7016
+    Skill: Heart Spring
+    Level: 1
+  - ItemId: 37108
+    Name: Congratulations on 09 years
+    SkillId: 7051
+    Skill: Congratulations ninth anniversary
+    Level: 1
+  - ItemId: 37138
+    Name: Oktokki moon
+    SkillId: 7052
+    Skill: Full Moon oktokki
+    Level: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/skill_scroll_db.yml

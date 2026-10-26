@@ -1,0 +1,192 @@
+# =============================================================================
+#   Monster Debuff Resist Database  (MONSTER_DEBUFF_RESIST_DB)
+# =============================================================================
+#
+#   Table MonsterDebuffResist of the ORIGINAL server data (kto_libconfig.xml, 7 rows):
+#   what a boss (MonsterParamEx2 DebuffSet = the row's ID) shrugs off. For each bit i of a
+#   skill's DebuffBitCode the i-th column below (sub_891F80): 100 = always resisted, n =
+#   resisted when rand()%100 >= n, 0 / omitted = never; every bit resisted -> the boss takes
+#   no effect state but S2C 1247 [u16 boss][u32 the resisted bits].
+#
+#   Fields
+#     ID    - the DebuffSet                                           [key]
+#     Name  - the original's description (Korean)
+#     Stun           - bit  0 (0x00000001)
+#     Paralysis      - bit  1 (0x00000002)
+#     Stone          - bit  2 (0x00000004)
+#     MagicPoison    - bit  3 (0x00000008)
+#     Poison         - bit  4 (0x00000010)
+#     RestrictAvoid  - bit  5 (0x00000020)
+#     RestrictAttack - bit  6 (0x00000040)
+#     RestrictSkill  - bit  7 (0x00000080)
+#     RestrictHeal   - bit  8 (0x00000100)
+#     AP             - bit  9 (0x00000200)
+#     AC             - bit 10 (0x00000400)
+#     DX             - bit 11 (0x00000800)
+#     MA             - bit 12 (0x00001000)
+#     MD             - bit 13 (0x00002000)
+#     DA             - bit 14 (0x00004000)
+#     LK             - bit 15 (0x00008000)
+#     DP             - bit 16 (0x00010000)
+#     HV             - bit 17 (0x00020000)
+#     SPD            - bit 18 (0x00040000)
+#     Cancler        - bit 19 (0x00080000)
+#     APResist       - bit 20 (0x00100000)
+#     GPResist       - bit 21 (0x00200000)
+#     MAResist       - bit 22 (0x00400000)
+#     ThunderResist  - bit 23 (0x00800000)
+#     AirResist      - bit 24 (0x01000000)
+#     WaterResist    - bit 25 (0x02000000)
+#     EarthResist    - bit 26 (0x04000000)
+#     FireResist     - bit 27 (0x08000000)
+#     DarkResist     - bit 28 (0x10000000)
+#     LightResist    - bit 29 (0x20000000)
+#     Dimension      - bit 30 (0x40000000)
+# =============================================================================
+
+Header:
+  Type: MONSTER_DEBUFF_RESIST_DB
+  Version: 1
+
+Body:
+  - ID: 1
+    Name: 혼탑 36층 이하 보스용
+    Stun: 100
+    Paralysis: 100
+    Stone: 100
+    MagicPoison: 50
+    Poison: 50
+    RestrictAvoid: 50
+    RestrictAttack: 100
+    RestrictSkill: 100
+    RestrictHeal: 100
+    AP: 50
+    AC: 50
+    DX: 50
+    MA: 50
+    MD: 100
+    DA: 50
+    LK: 50
+    DP: 100
+    HV: 50
+    SPD: 100
+    Cancler: 50
+    APResist: 100
+    GPResist: 100
+    MAResist: 100
+    Dimension: 100
+  - ID: 2
+    Name: 전설 보스 몬스터 용
+    Dimension: 100
+  - ID: 3
+    Name: 혼탑 48층 이상 보스용
+    Stun: 100
+    Paralysis: 100
+    Stone: 100
+    MagicPoison: 50
+    Poison: 50
+    RestrictAvoid: 50
+    RestrictAttack: 100
+    RestrictSkill: 100
+    RestrictHeal: 100
+    AP: 50
+    AC: 50
+    DX: 50
+    MA: 50
+    MD: 100
+    DA: 50
+    LK: 50
+    DP: 100
+    HV: 50
+    SPD: 100
+    Cancler: 100
+    APResist: 100
+    GPResist: 100
+    MAResist: 100
+    Dimension: 100
+  - ID: 4
+    Name: 수호전 보스 몬스터 용
+    Stun: 100
+    Paralysis: 100
+    Stone: 100
+    RestrictAvoid: 100
+    RestrictAttack: 100
+    RestrictSkill: 100
+    AP: 100
+    AC: 100
+    DX: 100
+    MA: 100
+    MD: 100
+    DA: 100
+    LK: 100
+    DP: 100
+    HV: 100
+    SPD: 100
+    Cancler: 100
+    Dimension: 100
+  - ID: 5
+    Name: 수호전 일반 몬스터 용
+    Dimension: 100
+  - ID: 6
+    Name: 탈타로스 일반
+    Stun: 50
+    Paralysis: 50
+    Stone: 50
+    MagicPoison: 50
+    Poison: 50
+    RestrictAvoid: 50
+    RestrictAttack: 50
+    RestrictSkill: 50
+    RestrictHeal: 50
+    AP: 50
+    AC: 50
+    DX: 50
+    MA: 50
+    MD: 50
+    DA: 50
+    LK: 50
+    DP: 50
+    HV: 50
+    SPD: 50
+    Cancler: 50
+    APResist: 50
+    GPResist: 50
+    MAResist: 50
+    Dimension: 100
+  - ID: 7
+    Name: 탈타로스 보스
+    Stun: 100
+    Paralysis: 100
+    Stone: 100
+    MagicPoison: 50
+    Poison: 50
+    RestrictAvoid: 100
+    RestrictAttack: 100
+    RestrictSkill: 100
+    RestrictHeal: 100
+    AP: 50
+    AC: 50
+    DX: 50
+    MA: 50
+    MD: 100
+    DA: 50
+    LK: 50
+    DP: 100
+    HV: 50
+    SPD: 100
+    Cancler: 100
+    APResist: 100
+    GPResist: 100
+    MAResist: 100
+    ThunderResist: 50
+    AirResist: 50
+    WaterResist: 50
+    EarthResist: 50
+    FireResist: 50
+    DarkResist: 50
+    LightResist: 50
+    Dimension: 100
+
+Footer:
+  Imports:
+#  - Path: db/import/monster_debuff_resist_db.yml

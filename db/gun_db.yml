@@ -1,0 +1,3612 @@
+# =============================================================================
+#   Gun Database  (GUN_DB)
+# =============================================================================
+#
+#   Table Item_GunParam2 of the ORIGINAL server data (kto_libconfig.xml,
+#   597 rows): the gauge and the attack ranges of a gun (an item of SubType 54).
+#   Field names verbatim; zero fields left out; Name = the gun item's name in
+#   item_db.yml. An ID listed twice keeps its FIRST row (3580, 52001): the
+#   retail GunParam hash list appends a duplicate to its bucket and the lookup
+#   (sub_625C30 -> sub_687AC0) returns the first match.
+#
+#   Fields
+#     ID                          - the gun's item id                     [key]
+#     GunType                     - the gun's kind
+#     GaugeSpeed                  - how fast the client's reload gauge fills; the
+#                                   server's shortest time between two shots is
+#                                   (int)((int)(20000 / (GaugeSpeed / 6)) * 0.7) ms
+#     PowRange / PowStartPoint    - the client's power-shot window on the gauge;
+#                                   with GaugeSpeed they key the shot's CRC
+#     MinAttackRange / MaxAttackRange - the player's attack ranges while the gun
+#                                   is equipped (approach = 3*(Min+Max)/4)
+#   Retail use: the equip effect sub_717E70 (ranges, GunAttackStrategy +
+#   NormalBattleFollowing), CMD_BEGIN_ATTACK_GUN (C2S 0x01DD, Player case 477).
+# =============================================================================
+
+Header:
+  Type: GUN_DB
+  Version: 1
+
+Body:
+  - ID: 3500
+    Name: Gun type 1
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 3501
+    Name: Gun type 2
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3502
+    Name: Gun Type3
+    GaugeSpeed: 95
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 3503
+    Name: Gun Type4
+    GaugeSpeed: 115
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3504
+    Name: Drill Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3505
+    Name: '? ?'
+    GaugeSpeed: 115
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3506
+    Name: Ginseng Gun
+    GaugeSpeed: 115
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3507
+    Name: Water Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3508
+    Name: Solar Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3509
+    Name: Mirage Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3511
+    Name: Rose gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3512
+    Name: Drill Gun 40
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3514
+    Name: Pass Drill Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3515
+    Name: 홍룡 총
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 3516
+    Name: Karu Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3517
+    Name: Gaia Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3518
+    Name: Rainbow Water Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3519
+    Name: Tsunami Pistol
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3522
+    Name: Light Snow Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 285
+  - ID: 3523
+    Name: Black Rose Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 3530
+    Name: Black Rose Gun 120
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 3532
+    Name: Weber Rail Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 3534
+    Name: Cello Gun 30
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 3535
+    Name: Cello Gun 90
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3541
+    Name: Christmas Tree Gun 60
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 3542
+    Name: Christmas Tree Gun 120
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3548
+    Name: Christmas Tree Pistol 60
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 3549
+    Name: Christmas Tree Pistol 120
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3550
+    Name: Christmas Tree Pistol 180
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3580
+    Name: Fast-Track Rose Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 3584
+    Name: Gun of Don Juban'ni
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 3585
+    Name: Gun Lx Don Juban'ni
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 17400
+    Name: Chrome Silver Gun
+    GaugeSpeed: 120
+    PowRange: 190
+    PowStartPoint: 150
+    MaxAttackRange: 270
+  - ID: 17401
+    Name: Radiant Golden Gun
+    GaugeSpeed: 135
+    PowRange: 200
+    PowStartPoint: 150
+    MaxAttackRange: 280
+  - ID: 17402
+    Name: Blaster Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17403
+    Name: Bamboo Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17404
+    Name: Xeno Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17406
+    Name: Mercury Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17407
+    Name: Compounder Gas Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17413
+    Name: Flying Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17414
+    Name: Shak Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17416
+    Name: Chrome Silver Gun Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17417
+    Name: Radiant Golden Gun Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17418
+    Name: Blaster Gun Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17421
+    Name: Wandgun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17423
+    Name: Sand Storm Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 17424
+    Name: Iron Silver Gun Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17425
+    Name: Ray Storm Gun Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17436
+    Name: Happy Rifle Form
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17440
+    Name: Princess's Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 17441
+    Name: Banker Rifle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 42001
+    Name: Indiana Rifle
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 42002
+    Name: Compounder Gas Gun 100
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 42003
+    Name: Compounder Gas Gun 140
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 42004
+    Name: Water Pistol Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 42005
+    Name: Don Cavalier's Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 42006
+    Name: 돈 까발리에 건 LX
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 42007
+    Name: Indiana Rifle S
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 42008
+    Name: Water Pistol Gun S
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 42009
+    Name: Ultimate Amadas Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42010
+    Name: Amadas Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42011
+    Name: Dynite Gun 180
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42012
+    Name: Dynite Gun 210
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42013
+    Name: Dynite Gun 240
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42014
+    Name: Dynite Gun 270
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42015
+    Name: Megas Gun 30
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 42016
+    Name: Megas Gun 60
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 42017
+    Name: Gigas Gun 80
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42018
+    Name: Gigas Gun 110
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42019
+    Name: Teras Gun 130
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 42020
+    Name: Teras Gun 160
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 42021
+    Name: Mermaid's Water Gun Neo
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42022
+    Name: Indiana Rifle SS
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 42023
+    Name: Megasugan
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 42024
+    Name: Gigasugan
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 42025
+    Name: Terasugan
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 42026
+    Name: Gun Amadasu
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 42027
+    Name: Geryon Magnum
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 52000
+    Name: Pearl Pistol
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 52001
+    Name: Draconic Bowgun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 52002
+    Name: Koiosu Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 52003
+    Name: Soul Koiosu Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 52004
+    Name: Kronos Gun
+    GaugeSpeed: 160
+    PowRange: 220
+    PowStartPoint: 160
+    MaxAttackRange: 300
+  - ID: 52005
+    Name: Soul Kronos Gun
+    GaugeSpeed: 160
+    PowRange: 220
+    PowStartPoint: 160
+    MaxAttackRange: 300
+  - ID: 76458
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 76478
+    Name: Choux's Pastry Gun 40
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 76512
+    Name: Panda Gun 120
+    GaugeSpeed: 130
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 275
+  - ID: 76521
+    Name: Dino Gun
+    GaugeSpeed: 130
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 275
+  - ID: 76549
+    Name: Koala Gun 160
+    GaugeSpeed: 130
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 275
+  - ID: 76559
+    Name: Parrot Crossbow 180
+    GaugeSpeed: 130
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 275
+  - ID: 76587
+    Name: Red Crab Gun 200
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 76593
+    Name: White Swan Gun
+    GaugeSpeed: 120
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 265
+  - ID: 76594
+    Name: Honeybee Gun 220
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 80040
+    Name: Wedding Cake Knife Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81001
+    Name: Kichen Eagle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81002
+    Name: Shamrock Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81003
+    Name: Auto-Shot Nano Rifle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81006
+    Name: Wedding Rifle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81007
+    Name: Mercury Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81008
+    Name: Blood's Practice Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81009
+    Name: Blood's Assault Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81010
+    Name: Innocent Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81011
+    Name: SI-37 Vindicator Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81012
+    Name: Silpheed Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81013
+    Name: Bejeweled Bow Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81014
+    Name: Golden Mercury Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81016
+    Name: Karan's Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81017
+    Name: Pirate King's Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81018
+    Name: Cupid's SMG-143 MK.II Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81019
+    Name: Lion Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81020
+    Name: Engagement Bow Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81021
+    Name: Princess's Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81022
+    Name: Queen's Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81023
+    Name: Chronos Rifle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81024
+    Name: Flying Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81025
+    Name: Smooth Soul Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81026
+    Name: Seashore Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81027
+    Name: Shak Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81028
+    Name: Aestra Shot Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81029
+    Name: Pistol Elencia Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81030
+    Name: Syringe Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81031
+    Name: Admiral's Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81032
+    Name: Captain Skull's Pistol Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81033
+    Name: Angelic Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81034
+    Name: Lycan Hunting Rifle Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81035
+    Name: Pink Flying Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81036
+    Name: Cupid Bow Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81037
+    Name: Then 120 Gun
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81038
+    Name: Wedding Bubble Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81039
+    Name: Q - total skin group Loudspeakers
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 81041
+    Name: Santa Binoche bowoogeon Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81042
+    Name: Primrose total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81043
+    Name: Arantxa total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81044
+    Name: Flash control in the skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81045
+    Name: Robin in Skin Protector
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81046
+    Name: Ray Gun Shooting Star Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81047
+    Name: Angel Nail Gun lion skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81049
+    Name: Ravenwood Shotgun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81050
+    Name: Elsa Crossbow Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81052
+    Name: Wedding Joy total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81053
+    Name: Leonard Wedding total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81054
+    Name: I kid items total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81055
+    Name: Hen total skin around little money
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81056
+    Name: Welsikogi total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81057
+    Name: Gary total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81059
+    Name: Little oil or total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81060
+    Name: Little rebiahtan total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81061
+    Name: Halloween witch with a total skin Pepe
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81062
+    Name: Halloween Devil Neil Total Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81063
+    Name: Guns Knox Dark Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81064
+    Name: Dark Phoenix's total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81065
+    Name: Santa elf skin total Prix
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81066
+    Name: Martha Santa elf skin total
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81067
+    Name: Spear gun chocolate skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81068
+    Name: Connie bowoogeon Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81069
+    Name: Skin Chic total crop
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81070
+    Name: Oh Orchestra of the total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 81071
+    Name: Ios bowoogeon nose skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87500
+    Name: Fiesta Total Skin
+    GaugeSpeed: 130
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 275
+  - ID: 87501
+    Name: Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87502
+    Name: Christmas Marble Gun Skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87503
+    Name: Carnival total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87505
+    Name: Heart Gun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87507
+    Name: Skin anniversary of 9 total
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87510
+    Name: Cozy Bowgun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87511
+    Name: Chilly Bowgun Form
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 87512
+    Name: Shia fairy potpourri total skin
+    GaugeSpeed: 140
+    PowRange: 200
+    PowStartPoint: 140
+    MaxAttackRange: 285
+  - ID: 510000
+    Name: Wood Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 510001
+    Name: Power Wood Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 510002
+    Name: Shrewd Wood Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 510003
+    Name: Classic Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 510004
+    Name: Power Classic Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 510005
+    Name: Shrewd Classic Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 510006
+    Name: Craft Classic Gun
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 510007
+    Name: Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510008
+    Name: Power Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510009
+    Name: Shrewd Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510010
+    Name: Craft Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510011
+    Name: Odd Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510012
+    Name: Artisan Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510013
+    Name: Master Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510014
+    Name: Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510015
+    Name: Power Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510016
+    Name: Shrewd Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510017
+    Name: Craft Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510018
+    Name: Odd Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510019
+    Name: Artisan Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510020
+    Name: Master Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510021
+    Name: Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510022
+    Name: Power Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510023
+    Name: Shrd. Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510024
+    Name: Craft Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510025
+    Name: Odd Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510026
+    Name: Arts. Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510027
+    Name: Mst. Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510028
+    Name: Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510029
+    Name: Power Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510030
+    Name: Shrewd Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510031
+    Name: Craft Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510032
+    Name: Odd Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510033
+    Name: Artisan Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510034
+    Name: Master Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510035
+    Name: Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510036
+    Name: Power Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510037
+    Name: Shrewd Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510038
+    Name: Craft Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510039
+    Name: Odd Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510040
+    Name: Artisan Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510041
+    Name: Master Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510042
+    Name: Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510043
+    Name: Power Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510044
+    Name: Shrd. Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510045
+    Name: Craft Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510046
+    Name: Odd Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510047
+    Name: Arts. Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510048
+    Name: Mst. Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510049
+    Name: Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510050
+    Name: Power Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510051
+    Name: Shrewd Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510052
+    Name: Craft Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510053
+    Name: Odd Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510054
+    Name: Artisan Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510055
+    Name: Master Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510056
+    Name: Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510057
+    Name: Power Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510058
+    Name: Shrewd Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510059
+    Name: Craft Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510060
+    Name: Odd Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510061
+    Name: Artisan Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510062
+    Name: Master Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510063
+    Name: Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510064
+    Name: Power Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510065
+    Name: Shrewd Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510066
+    Name: Craft Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510067
+    Name: Odd Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510068
+    Name: Artisan Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510069
+    Name: Master Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510070
+    Name: Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510071
+    Name: Power Devli Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510072
+    Name: Shrewd Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510073
+    Name: Craft Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510074
+    Name: Odd Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510075
+    Name: Artisan Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510076
+    Name: Master Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510077
+    Name: Cst. Renaissance Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510078
+    Name: Custom Metal Gun
+    GaugeSpeed: 85
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510079
+    Name: Cst. Stainless Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510080
+    Name: Custom Titan Gun
+    GaugeSpeed: 95
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510081
+    Name: Custom Military Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 510082
+    Name: Cst. Blue Seal Gun
+    GaugeSpeed: 105
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510083
+    Name: Custom Pierce Gun
+    GaugeSpeed: 105
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510084
+    Name: Custom Brutal Gun
+    GaugeSpeed: 110
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510085
+    Name: Custom Cruel Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 510086
+    Name: Custom Devil Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 260
+  - ID: 510087
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 510088
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 510089
+    GaugeSpeed: 85
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610000
+    Name: Old Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610001
+    Name: Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610002
+    Name: Strong Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610003
+    Name: Precise Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610004
+    Name: Morph Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610005
+    Name: Art Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610006
+    Name: Ult. Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610007
+    Name: Chaos Ebony Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610008
+    Name: Old Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610009
+    Name: Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610010
+    Name: Strong Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610011
+    Name: Precise Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610012
+    Name: Morph Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610013
+    Name: Art Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610014
+    Name: Ult. Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610015
+    Name: Chaos Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610016
+    Name: Old Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610017
+    Name: Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610018
+    Name: Strong Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610019
+    Name: Precise Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610020
+    Name: Morph Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610021
+    Name: Art Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610022
+    Name: Ult. Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610023
+    Name: Chaos Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610024
+    Name: Old Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610025
+    Name: Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610026
+    Name: Strong Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610027
+    Name: Precise Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610028
+    Name: Morph Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610029
+    Name: Art Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610030
+    Name: Ult. Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610031
+    Name: Chaos Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610032
+    Name: Old Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610033
+    Name: Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610034
+    Name: Strong Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610035
+    Name: Caballa Neo Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610036
+    Name: Morph Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610037
+    Name: Art Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610038
+    Name: Ult. Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610039
+    Name: Chaos Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610040
+    Name: Old Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610041
+    Name: Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610042
+    Name: Strong Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610043
+    Name: Oops Neo Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610044
+    Name: Morph Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610045
+    Name: Art Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610046
+    Name: Ult. Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610047
+    Name: Chaos Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610048
+    Name: Old Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610049
+    Name: Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610050
+    Name: Strong Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610051
+    Name: Precise Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610052
+    Name: Morph Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610053
+    Name: Art Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610054
+    Name: Ult. Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610055
+    Name: Chaos Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610056
+    Name: Old Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610057
+    Name: Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610058
+    Name: Strong Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610059
+    Name: Precise Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610060
+    Name: Morph Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610061
+    Name: Art Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610062
+    Name: Ult. Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610063
+    Name: Chaos Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610064
+    Name: Old Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610065
+    Name: Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610066
+    Name: Strong Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610067
+    Name: Ghost Gun Neo
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610068
+    Name: Morph Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610069
+    Name: Art Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610070
+    Name: Ult. Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610071
+    Name: Chaos Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610072
+    Name: Old Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610073
+    Name: Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610074
+    Name: Strong Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610075
+    Name: Rose Self-Defense Gun Neo
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610076
+    Name: Morph Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610077
+    Name: Art Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610078
+    Name: Ult. Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610079
+    Name: Chaos Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610080
+    Name: Old Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610081
+    Name: Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610082
+    Name: Strong Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610083
+    Name: Swamp's Gun Neo
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610084
+    Name: Morph Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610085
+    Name: Art Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610086
+    Name: Ultimate Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610087
+    Name: Chaos Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610088
+    Name: Old Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610089
+    Name: Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610090
+    Name: Strong Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610091
+    Name: Precise Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610092
+    Name: Morph Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610093
+    Name: Art Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610094
+    Name: Ultimate Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610095
+    Name: Chaos Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610096
+    Name: Old Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610097
+    Name: Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610098
+    Name: Strong Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610099
+    Name: Snow Hill Gun Neo
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610100
+    Name: Morph Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610101
+    Name: Art Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610102
+    Name: Ultimate Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610103
+    Name: Chaos Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610104
+    Name: Sleek Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610105
+    Name: Old Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610106
+    Name: Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610107
+    Name: Strong Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610108
+    Name: Techichi Gun Neo
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610109
+    Name: Morph Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610110
+    Name: Artisan Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610111
+    Name: Ultimate Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610112
+    Name: Chaos Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610113
+    Name: Old MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610114
+    Name: MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610115
+    Name: Strong MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610116
+    Name: Tapasco Gun Neo
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610117
+    Name: Morph MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610118
+    Name: Artisan MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610119
+    Name: Ultimate MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610120
+    Name: Chaos MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610121
+    Name: Old Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610122
+    Name: Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610123
+    Name: Strong Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610124
+    Name: Precise Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610125
+    Name: Morph Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610126
+    Name: Art Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610127
+    Name: Ultimate Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610128
+    Name: Chaos Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610129
+    Name: Old Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610130
+    Name: Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610131
+    Name: Strong Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610132
+    Name: Precise Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610133
+    Name: Morph Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610134
+    Name: Art Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610135
+    Name: Ultimate Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610136
+    Name: Chaos Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610137
+    Name: Old Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610138
+    Name: Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610139
+    Name: Strong Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610140
+    Name: Precise Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610141
+    Name: Morph Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610142
+    Name: Art Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610143
+    Name: Ultimate Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610144
+    Name: Chaos Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610145
+    Name: Old Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610146
+    Name: Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610147
+    Name: Strong Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610148
+    Name: Precise Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610149
+    Name: Morph Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610150
+    Name: Art Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610151
+    Name: Ultimate Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610152
+    Name: Chaos Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610153
+    Name: Old J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610154
+    Name: J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610155
+    Name: Strong J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610156
+    Name: Precise J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610157
+    Name: Morph J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610158
+    Name: Art J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610159
+    Name: Ultimate J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610160
+    Name: Chaos J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610161
+    Name: Old Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610162
+    Name: Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610163
+    Name: Strong Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610164
+    Name: Precise Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610165
+    Name: Morph Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610166
+    Name: Art Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610167
+    Name: Ultimate Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610168
+    Name: Chaos Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610169
+    Name: Old Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610170
+    Name: Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610171
+    Name: Strong Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610172
+    Name: Precise Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610173
+    Name: Morph Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610174
+    Name: Art Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610175
+    Name: Ultimate Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610176
+    Name: Chaos Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610177
+    Name: Old Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610178
+    Name: Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610179
+    Name: Strong Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610180
+    Name: Precise Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610181
+    Name: Morph Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610182
+    Name: Art Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610183
+    Name: Ultimate Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610184
+    Name: Chaos Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610185
+    Name: Old Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610186
+    Name: Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610187
+    Name: Strong Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610188
+    Name: Precise Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610189
+    Name: Morph Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610190
+    Name: Art Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610191
+    Name: Ultimate Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610192
+    Name: Chaos Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610217
+    Name: Requiem Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610218
+    Name: Requiem Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610219
+    Name: Requiem Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610220
+    Name: Requiem MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610221
+    Name: Phantom Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610222
+    Name: Requiem Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610223
+    Name: Requiem Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610224
+    Name: Requiem Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610225
+    Name: Requiem Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610226
+    Name: Requiem Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610227
+    Name: Requiem Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610228
+    Name: Requiem Mili-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610229
+    Name: Requiem Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610230
+    Name: Requiem Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610231
+    Name: Requiem Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610232
+    Name: Phantom Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610233
+    Name: Phantom MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610235
+    Name: Powerful Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610236
+    Name: Powerful Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610237
+    Name: Powerful Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610238
+    Name: Powerful Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610239
+    Name: Powerful Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610240
+    Name: Powerful Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610241
+    Name: Powerful Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610242
+    Name: Powerful Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610243
+    Name: Powerful Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610244
+    Name: Powerful Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610245
+    Name: Powerful Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610246
+    Name: Powerful Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610247
+    Name: Powerful Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610248
+    Name: Powerful Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610249
+    Name: Powerful Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610250
+    Name: Powerful Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610251
+    Name: Powerful J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610252
+    Name: Powerful MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610253
+    Name: Powerful Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610254
+    Name: Powerful Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610255
+    Name: Powerful Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610256
+    Name: Powerful Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610257
+    Name: Powerful Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610261
+    Name: Gloom Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610262
+    Name: Gloom Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610263
+    Name: Gloom Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610264
+    Name: Gloom Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610265
+    Name: Gloom Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610266
+    Name: Gloom Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610267
+    Name: Gloom Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610268
+    Name: Gloom Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610269
+    Name: Gloom Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610270
+    Name: Gloom Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610271
+    Name: Gloom Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610272
+    Name: Gloom Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610273
+    Name: Gloom Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610274
+    Name: Gloom Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610275
+    Name: Gloom Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610276
+    Name: Gloom Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610277
+    Name: Gloom J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610278
+    Name: Gloom MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610279
+    Name: Gloom Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610280
+    Name: Gloom  Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610281
+    Name: Gloom Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610282
+    Name: Gloom Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610283
+    Name: Gloom Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610287
+    Name: Shadow Wood Gun
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610288
+    Name: Shadow Classic Gun
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610289
+    Name: Shadow Antique Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610290
+    Name: Shadow Metal Gun
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610291
+    Name: Shadow Sten Gun
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610292
+    Name: Shadow Titan Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610293
+    Name: Shadow Milli-Gun
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610294
+    Name: Shadow Blue Seal Gun
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610295
+    Name: Shadow Pierce Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610296
+    Name: Shadow Blunderbuss
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610297
+    Name: Shadow Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610298
+    Name: Shadow Hand Cannon
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610299
+    Name: Shadow Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610300
+    Name: Shadow Stinger Gun
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610301
+    Name: Shadow Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610302
+    Name: Shadow Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610303
+    Name: Shadow J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610304
+    Name: Shadow MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610305
+    Name: Shadow Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610306
+    Name: Shadow Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610307
+    Name: Shadow Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610308
+    Name: Shadow Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610309
+    Name: Shadow Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610313
+    Name: Requiem Maverick Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610314
+    Name: Requiem Lucky 7
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610315
+    Name: Requiem Schneider
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610316
+    Name: Requiem J. Colet
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610317
+    Name: Requiem Hell Keeper
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610318
+    Name: Requiem Striker
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610319
+    Name: Requiem Renegade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610320
+    Name: Requiem Grenade
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610321
+    Name: Requiem Slayer
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610330
+    Name: Altiverse Spiritual Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610331
+    Name: Altiverse Twist Crossbow
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610332
+    Name: Altiverse Flash Bat Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610333
+    Name: Altiverse Thorny Rose Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610334
+    Name: Altiverse Maiden Queen Shotgun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610335
+    Name: Altiverse Crimson Gun
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610336
+    Name: Uddogan of New gloom
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610337
+    Name: Cancer of the classic New gloom
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610338
+    Name: Yen tick cancer New gloom
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610339
+    Name: Metarugan of New gloom
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610340
+    Name: Stainless cancer of the New gloom
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610341
+    Name: Chitangan of New gloom
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610342
+    Name: Military gun of New gloom
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610343
+    Name: Blue Seal of New Cancer gloom
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610344
+    Name: Piercing Gun of New gloom
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610345
+    Name: Brutal cancer of the New gloom
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610346
+    Name: Crew organ of New gloom
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610347
+    Name: Debirugan of New gloom
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610348
+    Name: Maverick cancer of the New gloom
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610349
+    Name: Stinger New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610350
+    Name: Lucky 7 New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610351
+    Name: Schneider of New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610352
+    Name: J collet of New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610353
+    Name: New & Shadow Full MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610354
+    Name: Hell keeper of New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610355
+    Name: Blaster Gun of New gloom
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610356
+    Name: Rinegeido of New gloom
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610357
+    Name: New grenade of gloom
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610358
+    Name: Slayer of New gloom
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610359
+    Name: Uddogan of New Kurokage
+    GaugeSpeed: 90
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 220
+  - ID: 610360
+    Name: Cancer of the classic New Kurokage
+    GaugeSpeed: 100
+    PowRange: 170
+    PowStartPoint: 150
+    MaxAttackRange: 230
+  - ID: 610361
+    Name: Yen tick cancer New Kurokage
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 235
+  - ID: 610362
+    Name: Metarugan of New Kurokage
+    GaugeSpeed: 105
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610363
+    Name: Stainless cancer of the New Kurokage
+    GaugeSpeed: 110
+    PowRange: 175
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610364
+    Name: Chitangan of New Kurokage
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 240
+  - ID: 610365
+    Name: Military gun of New Kurokage
+    GaugeSpeed: 110
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610366
+    Name: Blue Seal of cancer New Kurokage
+    GaugeSpeed: 115
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610367
+    Name: Piercing Gun of New Kurokage
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610368
+    Name: Brutal cancer of the New Kurokage
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610369
+    Name: Crew organ of New Kurokage
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610370
+    Name: Debirugan of New Kurokage
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610371
+    Name: Maverick cancer of the New Kurokage
+    GaugeSpeed: 120
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610372
+    Name: Stinger New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610373
+    Name: Lucky 7 New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610374
+    Name: Schneider of New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610375
+    Name: J collet of New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610376
+    Name: New · Black Shadow Full MJS-G5
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610377
+    Name: Hell keeper of New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610378
+    Name: Blaster Gun of New Kurokage
+    GaugeSpeed: 125
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 245
+  - ID: 610379
+    Name: Rinegeido of New Kurokage
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610380
+    Name: Grenade of New Kurokage
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+  - ID: 610381
+    Name: Slayer of New Kurokage
+    GaugeSpeed: 130
+    PowRange: 180
+    PowStartPoint: 150
+    MaxAttackRange: 250
+
+Footer:
+  Imports:
+#  - Path: db/import/gun_db.yml

@@ -1,0 +1,2904 @@
+# =============================================================================
+#   Skill Card Database  (SKILL_CARD_DB)
+# =============================================================================
+#
+#   Table Item_SkillCardParam of the ORIGINAL server data (kto_libconfig.xml,
+#   305 rows): what a skill card item (Type 28 SubType 55) teaches and needs.
+#   Field names verbatim; the Job text (a display list) is left out; Name = the
+#   card item's name in item_db.yml.
+#
+#   Fields
+#     ID                         - the card's item id                    [key]
+#     SCardType / TMLV           - a class (card type -> class, sub_893990) the
+#     SubSCardType / SubTMLV       player's class or one of its parents must be,
+#                                  with at least that TM level (sub_893CB0);
+#                                  both 0 = any class
+#     AffectionPoint             - TM points the card costs
+#     AffectionSkill             - the skill it teaches (skill_db.yml)
+#     RegisterLevel              - the level the skill is learned at
+#     PreSkill_n / PreSkillLv_n  - skills needed first, at least at that level
+#     Options, JobType1, JobType2 - flags (the original lists OR'ed)
+#   Retail use: UseSkilCardlHelper::Use (sub_6E7460) -> Player::CanLearnSkill
+#   (sub_760760) -> S2C 0x020B; a failure answers S2C 0x01E4 [u8 5][u16 skill][u16 why].
+# =============================================================================
+
+Header:
+  Type: SKILL_CARD_DB
+  Version: 1
+
+Body:
+  - ID: 27001
+    Name: Shockwave
+    SCardType: 2
+    TMLV: 1
+    SubSCardType: 3
+    SubTMLV: 1
+    AffectionPoint: 1
+    AffectionSkill: 1001
+    RegisterLevel: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27002
+    Name: Pumping Heart
+    SCardType: 2
+    TMLV: 25
+    SubSCardType: 3
+    SubTMLV: 25
+    AffectionPoint: 3
+    AffectionSkill: 1002
+    RegisterLevel: 1
+    PreSkill_1: 1004
+    PreSkillLv_1: 1
+    JobType1: 3
+  - ID: 27003
+    Name: Bull's Eye
+    SCardType: 2
+    TMLV: 10
+    SubSCardType: 3
+    SubTMLV: 10
+    AffectionPoint: 2
+    AffectionSkill: 1003
+    RegisterLevel: 1
+    Options: 1
+    JobType1: 3
+  - ID: 27004
+    Name: Burning Rave
+    SCardType: 2
+    TMLV: 20
+    SubSCardType: 3
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 1004
+    RegisterLevel: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27005
+    Name: Armor Breaker
+    SCardType: 2
+    TMLV: 30
+    SubSCardType: 3
+    SubTMLV: 30
+    AffectionPoint: 2
+    AffectionSkill: 1005
+    RegisterLevel: 1
+    PreSkill_1: 1001
+    PreSkillLv_1: 10
+    Options: 3
+    JobType1: 3
+  - ID: 27006
+    Name: Shockvibe
+    SCardType: 2
+    TMLV: 20
+    SubSCardType: 3
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 1006
+    RegisterLevel: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27007
+    Name: Sense Breaker
+    SCardType: 2
+    TMLV: 20
+    SubSCardType: 3
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 1007
+    RegisterLevel: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27008
+    Name: Upper Smash
+    SCardType: 2
+    TMLV: 40
+    SubSCardType: 3
+    SubTMLV: 40
+    AffectionPoint: 2
+    AffectionSkill: 1008
+    RegisterLevel: 1
+    PreSkill_1: 1003
+    PreSkillLv_1: 10
+    Options: 3
+    JobType1: 3
+  - ID: 27009
+    Name: Hyper Beat
+    SCardType: 2
+    TMLV: 45
+    SubSCardType: 3
+    SubTMLV: 45
+    AffectionPoint: 4
+    AffectionSkill: 1009
+    RegisterLevel: 1
+    PreSkill_1: 1003
+    PreSkillLv_1: 10
+    PreSkill_2: 1004
+    PreSkillLv_2: 10
+    Options: 1
+    JobType1: 3
+  - ID: 27010
+    Name: Luck Breaker
+    SCardType: 2
+    TMLV: 20
+    SubSCardType: 3
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 1010
+    RegisterLevel: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27011
+    Name: Tornado Bomb
+    SCardType: 2
+    TMLV: 50
+    SubSCardType: 3
+    SubTMLV: 50
+    AffectionPoint: 3
+    AffectionSkill: 1011
+    RegisterLevel: 1
+    PreSkill_1: 1005
+    PreSkillLv_1: 1
+    Options: 3
+    JobType1: 3
+  - ID: 27012
+    Name: Steel Punch
+    SCardType: 2
+    SubSCardType: 3
+    AffectionSkill: 1012
+    RegisterLevel: 1
+    JobType1: 3
+  - ID: 27101
+    Name: Guard Break
+    SCardType: 4
+    TMLV: 51
+    SubSCardType: 9
+    SubTMLV: 101
+    AffectionPoint: 4
+    AffectionSkill: 1101
+    RegisterLevel: 1
+    PreSkill_1: 1001
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 27102
+    Name: Dash
+    SCardType: 4
+    TMLV: 60
+    SubSCardType: 9
+    SubTMLV: 110
+    AffectionPoint: 3
+    AffectionSkill: 1102
+    RegisterLevel: 1
+    PreSkill_1: 1009
+    PreSkillLv_1: 1
+  - ID: 27103
+    Name: Uppercut
+    SCardType: 4
+    TMLV: 60
+    SubSCardType: 9
+    SubTMLV: 110
+    AffectionPoint: 3
+    AffectionSkill: 1103
+    RegisterLevel: 1
+    PreSkill_1: 1008
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 27104
+    Name: Quad Punch
+    SCardType: 4
+    TMLV: 85
+    SubSCardType: 9
+    SubTMLV: 135
+    AffectionPoint: 3
+    AffectionSkill: 1104
+    RegisterLevel: 1
+    PreSkill_1: 1004
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 27105
+    Name: Eagle Eye
+    SCardType: 4
+    TMLV: 110
+    SubSCardType: 9
+    SubTMLV: 160
+    AffectionPoint: 3
+    AffectionSkill: 1105
+    RegisterLevel: 1
+    PreSkill_1: 1003
+    PreSkillLv_1: 10
+  - ID: 27106
+    Name: Counter Punch
+    SCardType: 4
+    TMLV: 100
+    SubSCardType: 9
+    SubTMLV: 150
+    AffectionPoint: 3
+    AffectionSkill: 1106
+    RegisterLevel: 1
+    PreSkill_1: 1103
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 27107
+    Name: Guard
+    SCardType: 4
+    TMLV: 110
+    SubSCardType: 9
+    SubTMLV: 160
+    AffectionPoint: 5
+    AffectionSkill: 1107
+    RegisterLevel: 1
+    PreSkill_1: 1009
+    PreSkillLv_1: 10
+  - ID: 27108
+    Name: Tetra Punch
+    SCardType: 4
+    TMLV: 120
+    SubSCardType: 9
+    SubTMLV: 170
+    AffectionPoint: 4
+    AffectionSkill: 1108
+    RegisterLevel: 1
+    PreSkill_1: 1104
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 27109
+    Name: Desperate Rally
+    SCardType: 4
+    TMLV: 125
+    SubSCardType: 9
+    SubTMLV: 175
+    AffectionPoint: 4
+    AffectionSkill: 1109
+    RegisterLevel: 1
+    PreSkill_1: 1004
+    PreSkillLv_1: 11
+  - ID: 27110
+    Name: Clinch Release
+    SCardType: 4
+    TMLV: 210
+    SubSCardType: 9
+    SubTMLV: 260
+    AffectionPoint: 8
+    AffectionSkill: 1110
+    RegisterLevel: 1
+    PreSkill_1: 1109
+    PreSkillLv_1: 11
+  - ID: 27201
+    Name: Faint
+    SCardType: 5
+    TMLV: 51
+    SubSCardType: 7
+    SubTMLV: 101
+    AffectionPoint: 4
+    AffectionSkill: 1201
+    RegisterLevel: 1
+    PreSkill_1: 1001
+    PreSkillLv_1: 1
+    Options: 1
+  - ID: 27202
+    Name: Lacerator
+    SCardType: 5
+    TMLV: 60
+    SubSCardType: 7
+    SubTMLV: 110
+    AffectionPoint: 3
+    AffectionSkill: 1202
+    RegisterLevel: 1
+    Options: 3
+  - ID: 27203
+    Name: Berserker
+    SCardType: 5
+    TMLV: 70
+    SubSCardType: 7
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 1203
+    RegisterLevel: 1
+    PreSkill_1: 1002
+    PreSkillLv_1: 7
+  - ID: 27204
+    Name: Piercing Wave
+    SCardType: 5
+    TMLV: 85
+    SubSCardType: 7
+    SubTMLV: 135
+    AffectionPoint: 3
+    AffectionSkill: 1204
+    RegisterLevel: 1
+    Options: 3
+  - ID: 27205
+    Name: Blazing Strike
+    SCardType: 5
+    TMLV: 120
+    SubSCardType: 7
+    SubTMLV: 170
+    AffectionPoint: 4
+    AffectionSkill: 1205
+    RegisterLevel: 1
+    PreSkill_1: 1206
+    PreSkillLv_1: 1
+    Options: 3
+  - ID: 27206
+    Name: Aura of Haste
+    SCardType: 5
+    TMLV: 100
+    SubSCardType: 7
+    SubTMLV: 150
+    AffectionPoint: 3
+    AffectionSkill: 1206
+    RegisterLevel: 1
+    PreSkill_1: 1009
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 27207
+    Name: Tidal Slash
+    SCardType: 5
+    TMLV: 110
+    SubSCardType: 7
+    SubTMLV: 160
+    AffectionPoint: 3
+    AffectionSkill: 1207
+    RegisterLevel: 1
+    PreSkill_1: 1202
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 27208
+    Name: Inferno Blade
+    SCardType: 5
+    TMLV: 125
+    SubSCardType: 7
+    SubTMLV: 175
+    AffectionPoint: 3
+    AffectionSkill: 1208
+    RegisterLevel: 1
+    PreSkill_1: 1204
+    PreSkillLv_1: 10
+  - ID: 27209
+    Name: Tempest Strike
+    SCardType: 5
+    TMLV: 130
+    SubSCardType: 7
+    SubTMLV: 180
+    AffectionPoint: 3
+    AffectionSkill: 1209
+    RegisterLevel: 1
+    PreSkill_1: 1202
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 27210
+    Name: Earthquake Blade
+    SCardType: 5
+    TMLV: 115
+    SubSCardType: 7
+    SubTMLV: 165
+    AffectionPoint: 3
+    AffectionSkill: 1210
+    RegisterLevel: 1
+    PreSkill_1: 1204
+    PreSkillLv_1: 10
+  - ID: 27211
+    Name: Lightning Strike
+    SCardType: 5
+    TMLV: 210
+    SubSCardType: 7
+    SubTMLV: 260
+    AffectionPoint: 5
+    AffectionSkill: 1211
+    RegisterLevel: 1
+    PreSkill_1: 1204
+    PreSkillLv_1: 10
+  - ID: 27301
+    Name: Adrenaline
+    SCardType: 6
+    TMLV: 130
+    AffectionPoint: 4
+    AffectionSkill: 1301
+    RegisterLevel: 1
+    PreSkill_1: 1002
+    PreSkillLv_1: 10
+  - ID: 27302
+    Name: Flash Cut
+    SCardType: 6
+    TMLV: 120
+    AffectionPoint: 4
+    AffectionSkill: 1302
+    RegisterLevel: 1
+    PreSkill_1: 1102
+    PreSkillLv_1: 1
+    PreSkill_2: 1103
+    PreSkillLv_2: 10
+  - ID: 27303
+    Name: Flaming Fist
+    SCardType: 6
+    TMLV: 145
+    AffectionPoint: 4
+    AffectionSkill: 1303
+    RegisterLevel: 1
+    PreSkill_1: 1004
+    PreSkillLv_1: 11
+    PreSkill_2: 1106
+    PreSkillLv_2: 10
+  - ID: 27304
+    Name: Mega Flash Cut
+    SCardType: 6
+    TMLV: 160
+    AffectionPoint: 4
+    AffectionSkill: 1304
+    RegisterLevel: 1
+    PreSkill_1: 1302
+    PreSkillLv_1: 11
+  - ID: 27305
+    Name: Chi Release
+    SCardType: 6
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 1305
+    RegisterLevel: 1
+    PreSkill_1: 1303
+    PreSkillLv_1: 11
+  - ID: 27501
+    Name: Shadow
+    SCardType: 8
+    TMLV: 125
+    AffectionPoint: 4
+    AffectionSkill: 1501
+    RegisterLevel: 1
+    PreSkill_1: 1205
+    PreSkillLv_1: 10
+  - ID: 27502
+    Name: Sonic Slash
+    SCardType: 8
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 1502
+    RegisterLevel: 1
+    PreSkill_1: 1207
+    PreSkillLv_1: 10
+  - ID: 27503
+    Name: Suffocate
+    SCardType: 8
+    TMLV: 130
+    AffectionPoint: 3
+    AffectionSkill: 1503
+    RegisterLevel: 1
+    PreSkill_1: 1007
+    PreSkillLv_1: 10
+  - ID: 27504
+    Name: Gale Strike
+    SCardType: 8
+    TMLV: 145
+    AffectionPoint: 4
+    AffectionSkill: 1504
+    RegisterLevel: 1
+    PreSkill_1: 1209
+    PreSkillLv_1: 10
+  - ID: 27505
+    Name: Chi Sword
+    SCardType: 8
+    TMLV: 170
+    AffectionPoint: 4
+    AffectionSkill: 1505
+    RegisterLevel: 1
+    PreSkill_1: 1204
+    PreSkillLv_1: 11
+  - ID: 27506
+    Name: Chakra Balance
+    SCardType: 8
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 1506
+    RegisterLevel: 1
+    PreSkill_1: 1505
+    PreSkillLv_1: 11
+  - ID: 28001
+    Name: Mana Arrow
+    SCardType: 12
+    TMLV: 1
+    SubSCardType: 13
+    SubTMLV: 1
+    AffectionPoint: 1
+    AffectionSkill: 2001
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28002
+    Name: Invincible Casting
+    SCardType: 12
+    TMLV: 10
+    SubSCardType: 13
+    SubTMLV: 10
+    AffectionPoint: 5
+    AffectionSkill: 2002
+    RegisterLevel: 1
+  - ID: 28003
+    Name: Aura of Mana
+    SCardType: 12
+    TMLV: 20
+    SubSCardType: 13
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 2003
+    RegisterLevel: 1
+    PreSkill_1: 2005
+    PreSkillLv_1: 10
+  - ID: 28004
+    Name: Bottle of Mana
+    SCardType: 12
+    TMLV: 20
+    SubSCardType: 13
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 2004
+    RegisterLevel: 1
+    PreSkill_1: 2005
+    PreSkillLv_1: 10
+  - ID: 28005
+    Name: Cure
+    SCardType: 12
+    TMLV: 10
+    SubSCardType: 13
+    SubTMLV: 10
+    AffectionPoint: 1
+    AffectionSkill: 2005
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28006
+    Name: Mist of Mana
+    SCardType: 12
+    TMLV: 40
+    SubSCardType: 13
+    SubTMLV: 40
+    AffectionPoint: 4
+    AffectionSkill: 2006
+    RegisterLevel: 1
+    PreSkill_1: 2004
+    PreSkillLv_1: 1
+  - ID: 28007
+    Name: Arrow Rush
+    SCardType: 12
+    TMLV: 50
+    SubSCardType: 13
+    SubTMLV: 50
+    AffectionPoint: 4
+    AffectionSkill: 2007
+    RegisterLevel: 1
+    PreSkill_1: 2001
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 28008
+    Name: Mana Ring
+    SCardType: 12
+    TMLV: 20
+    SubSCardType: 13
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 2008
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28009
+    Name: Mana Storm
+    SCardType: 12
+    TMLV: 35
+    SubSCardType: 13
+    SubTMLV: 35
+    AffectionPoint: 2
+    AffectionSkill: 2009
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28010
+    Name: Mana Web
+    SCardType: 12
+    TMLV: 20
+    SubSCardType: 13
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 2010
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28011
+    Name: Rust
+    SCardType: 12
+    TMLV: 20
+    SubSCardType: 13
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 2011
+    RegisterLevel: 1
+    Options: 3
+  - ID: 28012
+    Name: Mana Ring Booster
+    SCardType: 12
+    TMLV: 50
+    SubSCardType: 13
+    SubTMLV: 50
+    AffectionPoint: 3
+    AffectionSkill: 2012
+    RegisterLevel: 1
+    PreSkill_1: 2008
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 28013
+    Name: Mana Shield
+    SCardType: 12
+    TMLV: 30
+    SubSCardType: 13
+    SubTMLV: 30
+    AffectionPoint: 2
+    AffectionSkill: 2013
+    RegisterLevel: 1
+  - ID: 28014
+    Name: Magical Soul
+    SCardType: 12
+    SubSCardType: 13
+    AffectionSkill: 2014
+    RegisterLevel: 1
+  - ID: 28101
+    Name: Bolster Ballad
+    SCardType: 14
+    TMLV: 51
+    SubSCardType: 19
+    SubTMLV: 101
+    AffectionPoint: 3
+    AffectionSkill: 2101
+    RegisterLevel: 1
+  - ID: 28102
+    Name: Seal of Water
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionSkill: 2102
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28103
+    Name: Drip Bomb
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2103
+    RegisterLevel: 1
+    PreSkill_1: 2102
+    Options: 3
+  - ID: 28104
+    Name: Seal of Thunder
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionSkill: 2104
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28105
+    Name: Electro Attack
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2105
+    RegisterLevel: 1
+    PreSkill_1: 2104
+    Options: 3
+  - ID: 28106
+    Name: Seal of Fire
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionSkill: 2106
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28107
+    Name: Whirwind Blaze
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2107
+    RegisterLevel: 1
+    PreSkill_1: 2106
+    Options: 3
+  - ID: 28108
+    Name: Seal of Earth
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionSkill: 2108
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28109
+    Name: Cleaving Terra
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2109
+    RegisterLevel: 1
+    PreSkill_1: 2108
+    Options: 3
+  - ID: 28110
+    Name: Seal of Wind
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionSkill: 2110
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28111
+    Name: Wind Blade
+    SCardType: 14
+    TMLV: 55
+    SubSCardType: 19
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2111
+    RegisterLevel: 1
+    PreSkill_1: 2110
+    Options: 1
+  - ID: 28112
+    Name: Water Web
+    SCardType: 14
+    TMLV: 85
+    SubSCardType: 19
+    SubTMLV: 135
+    AffectionPoint: 2
+    AffectionSkill: 2112
+    RegisterLevel: 1
+    PreSkill_1: 2103
+    PreSkillLv_1: 10
+    PreSkill_2: 2010
+    PreSkillLv_2: 1
+    Options: 1
+  - ID: 28113
+    Name: Electroshock
+    SCardType: 14
+    TMLV: 90
+    SubSCardType: 19
+    SubTMLV: 140
+    AffectionPoint: 2
+    AffectionSkill: 2113
+    RegisterLevel: 1
+    PreSkill_1: 2105
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 28114
+    Name: Incinerate
+    SCardType: 14
+    TMLV: 110
+    SubSCardType: 19
+    SubTMLV: 160
+    AffectionPoint: 3
+    AffectionSkill: 2114
+    RegisterLevel: 1
+    PreSkill_1: 2106
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28115
+    Name: Summon Boulder
+    SCardType: 14
+    TMLV: 115
+    SubSCardType: 19
+    SubTMLV: 165
+    AffectionPoint: 3
+    AffectionSkill: 2115
+    RegisterLevel: 1
+    PreSkill_1: 2108
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28116
+    Name: Whirlwind
+    SCardType: 14
+    TMLV: 105
+    SubSCardType: 19
+    SubTMLV: 155
+    AffectionPoint: 3
+    AffectionSkill: 2116
+    RegisterLevel: 1
+    PreSkill_1: 2110
+    PreSkill_2: 2009
+    PreSkillLv_2: 10
+  - ID: 28117
+    Name: Water Shield
+    SCardType: 14
+    TMLV: 100
+    SubSCardType: 19
+    SubTMLV: 150
+    AffectionPoint: 2
+    AffectionSkill: 2117
+    RegisterLevel: 1
+    PreSkill_1: 2102
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28118
+    Name: Thunder Shield
+    SCardType: 14
+    TMLV: 100
+    SubSCardType: 19
+    SubTMLV: 150
+    AffectionPoint: 2
+    AffectionSkill: 2118
+    RegisterLevel: 1
+    PreSkill_1: 2104
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28119
+    Name: Fire Shield
+    SCardType: 14
+    TMLV: 100
+    SubSCardType: 19
+    SubTMLV: 150
+    AffectionPoint: 2
+    AffectionSkill: 2119
+    RegisterLevel: 1
+    PreSkill_1: 2106
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28120
+    Name: Earth Shield
+    SCardType: 14
+    TMLV: 100
+    SubSCardType: 19
+    SubTMLV: 150
+    AffectionPoint: 2
+    AffectionSkill: 2120
+    RegisterLevel: 1
+    PreSkill_1: 2108
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28121
+    Name: Wind Shield
+    SCardType: 14
+    TMLV: 100
+    SubSCardType: 19
+    SubTMLV: 150
+    AffectionPoint: 2
+    AffectionSkill: 2121
+    RegisterLevel: 1
+    PreSkill_1: 2110
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28122
+    Name: Shard of the Glacier
+    SCardType: 14
+    TMLV: 115
+    SubSCardType: 19
+    SubTMLV: 165
+    AffectionPoint: 3
+    AffectionSkill: 2122
+    RegisterLevel: 1
+    PreSkill_1: 2102
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28123
+    Name: Tesla Field
+    SCardType: 14
+    TMLV: 145
+    SubSCardType: 19
+    SubTMLV: 195
+    AffectionPoint: 3
+    AffectionSkill: 2123
+    RegisterLevel: 1
+    PreSkill_1: 2105
+    PreSkillLv_1: 10
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28124
+    Name: Phoenix Rising
+    SCardType: 14
+    TMLV: 140
+    SubSCardType: 19
+    SubTMLV: 190
+    AffectionPoint: 3
+    AffectionSkill: 2124
+    RegisterLevel: 1
+    PreSkill_1: 2114
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 28125
+    Name: Botulism Cloud
+    SCardType: 14
+    TMLV: 120
+    SubSCardType: 19
+    SubTMLV: 170
+    AffectionPoint: 3
+    AffectionSkill: 2125
+    RegisterLevel: 1
+    PreSkill_1: 2108
+    PreSkill_2: 2010
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28126
+    Name: Razor Gale
+    SCardType: 14
+    TMLV: 135
+    SubSCardType: 19
+    SubTMLV: 185
+    AffectionPoint: 3
+    AffectionSkill: 2126
+    RegisterLevel: 1
+    PreSkill_1: 2111
+    PreSkillLv_1: 10
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28127
+    Name: Icey Shackles
+    SCardType: 14
+    TMLV: 70
+    SubSCardType: 19
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 2127
+    RegisterLevel: 1
+    PreSkill_1: 2102
+    Options: 3
+  - ID: 28128
+    Name: Thunderbolt
+    SCardType: 14
+    TMLV: 70
+    SubSCardType: 19
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 2128
+    RegisterLevel: 1
+    PreSkill_1: 2104
+    Options: 3
+  - ID: 28129
+    Name: Scorching Earth
+    SCardType: 14
+    TMLV: 70
+    SubSCardType: 19
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 2129
+    RegisterLevel: 1
+    PreSkill_1: 2106
+    Options: 3
+  - ID: 28130
+    Name: Deadly Fen
+    SCardType: 14
+    TMLV: 70
+    SubSCardType: 19
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 2130
+    RegisterLevel: 1
+    PreSkill_1: 2108
+    Options: 3
+  - ID: 28131
+    Name: Tornado Blast
+    SCardType: 14
+    TMLV: 70
+    SubSCardType: 19
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 2131
+    RegisterLevel: 1
+    PreSkill_1: 2110
+    Options: 3
+  - ID: 28132
+    Name: Elemental Boost
+    SCardType: 14
+    TMLV: 210
+    SubSCardType: 19
+    SubTMLV: 260
+    AffectionPoint: 5
+    AffectionSkill: 2132
+    RegisterLevel: 1
+    PreSkill_1: 2101
+    PreSkillLv_1: 11
+  - ID: 28201
+    Name: Hinder Snare
+    SCardType: 15
+    TMLV: 51
+    SubSCardType: 17
+    SubTMLV: 101
+    AffectionPoint: 5
+    AffectionSkill: 2201
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28202
+    Name: Dark Pact
+    SCardType: 15
+    TMLV: 55
+    SubSCardType: 17
+    SubTMLV: 105
+    AffectionSkill: 2202
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28203
+    Name: Hellfire
+    SCardType: 15
+    TMLV: 55
+    SubSCardType: 17
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2203
+    RegisterLevel: 1
+    PreSkill_1: 2202
+    Options: 3
+  - ID: 28204
+    Name: Light Pact
+    SCardType: 15
+    TMLV: 55
+    SubSCardType: 17
+    SubTMLV: 105
+    AffectionSkill: 2204
+    RegisterLevel: 1
+    Options: 1
+  - ID: 28205
+    Name: Arrow of Light
+    SCardType: 15
+    TMLV: 55
+    SubSCardType: 17
+    SubTMLV: 105
+    AffectionPoint: 2
+    AffectionSkill: 2205
+    RegisterLevel: 1
+    PreSkill_1: 2204
+    Options: 3
+  - ID: 28206
+    Name: Wicked Flame
+    SCardType: 15
+    TMLV: 60
+    SubSCardType: 17
+    SubTMLV: 110
+    AffectionPoint: 1
+    AffectionSkill: 2206
+    RegisterLevel: 1
+    PreSkill_1: 2203
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 28207
+    Name: Catastrophe Heal
+    SCardType: 15
+    TMLV: 60
+    SubSCardType: 17
+    SubTMLV: 110
+    AffectionPoint: 2
+    AffectionSkill: 2207
+    RegisterLevel: 1
+    PreSkill_1: 2005
+    PreSkillLv_1: 10
+    PreSkill_2: 2204
+  - ID: 28208
+    Name: Dark Lance
+    SCardType: 15
+    TMLV: 95
+    SubSCardType: 17
+    SubTMLV: 145
+    AffectionPoint: 3
+    AffectionSkill: 2208
+    RegisterLevel: 1
+    PreSkill_1: 2202
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28209
+    Name: Light wave
+    SCardType: 15
+    TMLV: 115
+    SubSCardType: 17
+    SubTMLV: 165
+    AffectionPoint: 3
+    AffectionSkill: 2209
+    RegisterLevel: 1
+    PreSkill_1: 2204
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+    Options: 3
+  - ID: 28210
+    Name: Gravity Crush
+    SCardType: 15
+    TMLV: 125
+    SubSCardType: 17
+    SubTMLV: 175
+    AffectionPoint: 4
+    AffectionSkill: 2210
+    RegisterLevel: 1
+    PreSkill_1: 2202
+    PreSkill_2: 2009
+    PreSkillLv_2: 10
+  - ID: 28211
+    Name: Basic Healing
+    SCardType: 15
+    TMLV: 100
+    SubSCardType: 17
+    SubTMLV: 150
+    AffectionPoint: 7
+    AffectionSkill: 2211
+    RegisterLevel: 1
+    PreSkill_1: 2204
+    PreSkill_2: 2207
+    PreSkillLv_2: 1
+  - ID: 28212
+    Name: Dark Barrier
+    SCardType: 15
+    TMLV: 115
+    SubSCardType: 17
+    SubTMLV: 165
+    AffectionPoint: 3
+    AffectionSkill: 2212
+    RegisterLevel: 1
+    PreSkill_1: 2202
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28213
+    Name: Light Shield
+    SCardType: 15
+    TMLV: 95
+    SubSCardType: 17
+    SubTMLV: 145
+    AffectionPoint: 3
+    AffectionSkill: 2213
+    RegisterLevel: 1
+    PreSkill_1: 2204
+    PreSkill_2: 2013
+    PreSkillLv_2: 10
+  - ID: 28214
+    Name: Radiant Strike
+    SCardType: 15
+    TMLV: 120
+    SubSCardType: 17
+    SubTMLV: 170
+    AffectionPoint: 3
+    AffectionSkill: 2214
+    RegisterLevel: 1
+    PreSkill_1: 2205
+    PreSkillLv_1: 10
+    PreSkill_2: 2009
+    PreSkillLv_2: 10
+    Options: 1
+  - ID: 28215
+    Name: Dark Distractor
+    SCardType: 15
+    TMLV: 80
+    SubSCardType: 17
+    SubTMLV: 130
+    AffectionPoint: 4
+    AffectionSkill: 2215
+    RegisterLevel: 1
+    PreSkill_1: 2202
+    PreSkill_2: 2201
+    Options: 3
+  - ID: 28216
+    Name: Heart's Grace
+    SCardType: 15
+    TMLV: 120
+    SubSCardType: 17
+    SubTMLV: 170
+    AffectionPoint: 3
+    AffectionSkill: 2216
+    RegisterLevel: 1
+    PreSkill_1: 2207
+    PreSkillLv_1: 10
+    PreSkill_2: 2003
+    PreSkillLv_2: 10
+  - ID: 28217
+    Name: Withering Disease
+    SCardType: 15
+    TMLV: 135
+    SubSCardType: 17
+    SubTMLV: 185
+    AffectionPoint: 4
+    AffectionSkill: 2217
+    RegisterLevel: 1
+    PreSkill_1: 2210
+    PreSkillLv_1: 10
+  - ID: 28218
+    Name: Shield of Heaven
+    SCardType: 15
+    TMLV: 120
+    SubSCardType: 17
+    SubTMLV: 170
+    AffectionPoint: 5
+    AffectionSkill: 2218
+    RegisterLevel: 1
+    PreSkill_1: 2213
+    PreSkillLv_1: 11
+  - ID: 28219
+    Name: Blood Testament
+    SCardType: 15
+    TMLV: 70
+    SubSCardType: 17
+    SubTMLV: 120
+    AffectionPoint: 5
+    AffectionSkill: 2219
+    RegisterLevel: 1
+    PreSkill_1: 2202
+  - ID: 28220
+    Name: Oath of Light
+    SCardType: 15
+    TMLV: 70
+    SubSCardType: 17
+    SubTMLV: 120
+    AffectionPoint: 5
+    AffectionSkill: 2220
+    RegisterLevel: 1
+    PreSkill_1: 2204
+  - ID: 28221
+    Name: Revival
+    SCardType: 15
+    TMLV: 210
+    SubSCardType: 17
+    SubTMLV: 260
+    AffectionPoint: 8
+    AffectionSkill: 2221
+    RegisterLevel: 1
+    PreSkill_1: 2220
+    PreSkillLv_1: 10
+  - ID: 28301
+    Name: Aqua Bomb
+    SCardType: 16
+    TMLV: 120
+    AffectionPoint: 4
+    AffectionSkill: 2301
+    RegisterLevel: 1
+    PreSkill_1: 2103
+    PreSkillLv_1: 10
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+  - ID: 28302
+    Name: Staff of Thunder
+    SCardType: 16
+    TMLV: 120
+    AffectionPoint: 4
+    AffectionSkill: 2302
+    RegisterLevel: 1
+    PreSkill_1: 2105
+    PreSkillLv_1: 10
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+  - ID: 28303
+    Name: Dragon Storm
+    SCardType: 16
+    TMLV: 125
+    AffectionPoint: 4
+    AffectionSkill: 2303
+    RegisterLevel: 1
+    PreSkill_1: 2107
+    PreSkillLv_1: 10
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+  - ID: 28304
+    Name: Earthquake
+    SCardType: 16
+    TMLV: 120
+    AffectionPoint: 4
+    AffectionSkill: 2304
+    RegisterLevel: 1
+    PreSkill_1: 2109
+    PreSkillLv_1: 10
+    PreSkill_2: 2008
+    PreSkillLv_2: 10
+  - ID: 28305
+    Name: Raging Storm
+    SCardType: 16
+    TMLV: 130
+    AffectionPoint: 4
+    AffectionSkill: 2305
+    RegisterLevel: 1
+    PreSkill_1: 2111
+    PreSkillLv_1: 10
+    PreSkill_2: 2009
+    PreSkillLv_2: 10
+  - ID: 28306
+    Name: Undine's Blessing
+    SCardType: 16
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2306
+    RegisterLevel: 1
+    PreSkill_1: 2117
+    PreSkillLv_1: 5
+  - ID: 28307
+    Name: Raion's Blessing
+    SCardType: 16
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2307
+    RegisterLevel: 1
+    PreSkill_1: 2118
+    PreSkillLv_1: 5
+  - ID: 28308
+    Name: Salamander's Blessing
+    SCardType: 16
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2308
+    RegisterLevel: 1
+    PreSkill_1: 2119
+    PreSkillLv_1: 5
+  - ID: 28309
+    Name: Gnome's Blessing
+    SCardType: 16
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2309
+    RegisterLevel: 1
+    PreSkill_1: 2120
+    PreSkillLv_1: 5
+  - ID: 28310
+    Name: Sylph's Blessing
+    SCardType: 16
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2310
+    RegisterLevel: 1
+    PreSkill_1: 2121
+    PreSkillLv_1: 5
+  - ID: 28311
+    Name: Undine's Garden
+    SCardType: 16
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2311
+    RegisterLevel: 1
+    PreSkill_1: 2102
+  - ID: 28312
+    Name: Raion's Space
+    SCardType: 16
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2312
+    RegisterLevel: 1
+    PreSkill_1: 2104
+  - ID: 28313
+    Name: Salamander's Territory
+    SCardType: 16
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2313
+    RegisterLevel: 1
+    PreSkill_1: 2106
+  - ID: 28314
+    Name: Gnome's Domain
+    SCardType: 16
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2314
+    RegisterLevel: 1
+    PreSkill_1: 2108
+  - ID: 28315
+    Name: Sylph's Playground
+    SCardType: 16
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2315
+    RegisterLevel: 1
+    PreSkill_1: 2110
+  - ID: 28316
+    Name: 차원의틈
+    SCardType: 16
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 2316
+    RegisterLevel: 1
+    PreSkill_1: 2013
+    PreSkillLv_1: 11
+  - ID: 28501
+    Name: Med. Cure
+    SCardType: 18
+    TMLV: 140
+    AffectionPoint: 3
+    AffectionSkill: 2501
+    RegisterLevel: 1
+    PreSkill_1: 2211
+    PreSkillLv_1: 1
+  - ID: 28502
+    Name: Searing Light
+    SCardType: 18
+    TMLV: 130
+    AffectionPoint: 3
+    AffectionSkill: 2502
+    RegisterLevel: 1
+    PreSkill_1: 2205
+    PreSkillLv_1: 10
+    PreSkill_2: 2001
+    PreSkillLv_2: 10
+  - ID: 28503
+    Name: Celestial Strike
+    SCardType: 18
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 2503
+    RegisterLevel: 1
+    PreSkill_1: 2209
+    PreSkillLv_1: 5
+    PreSkill_2: 2214
+    PreSkillLv_2: 5
+    Options: 3
+  - ID: 28504
+    Name: Sacred Oath
+    SCardType: 18
+    TMLV: 145
+    AffectionPoint: 5
+    AffectionSkill: 2504
+    RegisterLevel: 1
+    PreSkill_1: 2220
+    PreSkillLv_1: 11
+  - ID: 28505
+    Name: Refreshing Dew
+    SCardType: 18
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 2505
+    RegisterLevel: 1
+    PreSkill_1: 2504
+    PreSkillLv_1: 11
+  - ID: 28701
+    Name: Scythe
+    SCardType: 20
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 2701
+    RegisterLevel: 1
+    PreSkill_1: 2208
+    PreSkillLv_1: 10
+  - ID: 28702
+    Name: Fear
+    SCardType: 20
+    TMLV: 150
+    AffectionPoint: 5
+    AffectionSkill: 2702
+    RegisterLevel: 1
+    PreSkill_1: 2701
+    PreSkillLv_1: 10
+    PreSkill_2: 2011
+    PreSkillLv_2: 10
+  - ID: 28703
+    Name: Staff of Agony
+    SCardType: 20
+    TMLV: 135
+    AffectionPoint: 4
+    AffectionSkill: 2703
+    RegisterLevel: 1
+    PreSkill_1: 2208
+    PreSkillLv_1: 10
+  - ID: 28704
+    Name: Dark Commando
+    SCardType: 20
+    TMLV: 155
+    AffectionPoint: 5
+    AffectionSkill: 2704
+    RegisterLevel: 1
+    PreSkill_1: 2212
+    PreSkillLv_1: 11
+    PreSkill_2: 2702
+    PreSkillLv_2: 1
+  - ID: 28705
+    Name: Ghostly Whisper
+    SCardType: 20
+    TMLV: 160
+    AffectionPoint: 4
+    AffectionSkill: 2705
+    RegisterLevel: 1
+    PreSkill_1: 2704
+    PreSkillLv_1: 1
+  - ID: 28706
+    Name: Dark Assimilation
+    SCardType: 20
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 2706
+    RegisterLevel: 1
+    PreSkill_1: 2705
+    PreSkillLv_1: 11
+  - ID: 29001
+    Name: Invincible Drill
+    SCardType: 23
+    TMLV: 1
+    SubSCardType: 24
+    SubTMLV: 1
+    AffectionPoint: 1
+    AffectionSkill: 3001
+    RegisterLevel: 1
+  - ID: 29002
+    Name: Stone Strike
+    SCardType: 23
+    TMLV: 1
+    SubSCardType: 24
+    SubTMLV: 1
+    AffectionPoint: 1
+    AffectionSkill: 3002
+    RegisterLevel: 1
+    Options: 3
+  - ID: 29003
+    Name: Heavy Carrier
+    SCardType: 23
+    TMLV: 10
+    SubSCardType: 24
+    SubTMLV: 10
+    AffectionPoint: 1
+    AffectionSkill: 3003
+    RegisterLevel: 1
+  - ID: 29004
+    Name: Sticky Foot
+    SCardType: 23
+    TMLV: 20
+    SubSCardType: 24
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 3004
+    RegisterLevel: 1
+    Options: 3
+  - ID: 29005
+    Name: Armor Destructor
+    SCardType: 23
+    TMLV: 40
+    SubSCardType: 24
+    SubTMLV: 40
+    AffectionPoint: 2
+    AffectionSkill: 3005
+    RegisterLevel: 1
+    PreSkill_1: 3002
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 29006
+    Name: Sixth Sense
+    SCardType: 23
+    TMLV: 1
+    SubSCardType: 24
+    SubTMLV: 1
+    AffectionPoint: 2
+    AffectionSkill: 3006
+    RegisterLevel: 1
+  - ID: 29007
+    Name: Shuriken Master
+    SCardType: 23
+    TMLV: 15
+    SubSCardType: 24
+    SubTMLV: 15
+    AffectionPoint: 2
+    AffectionSkill: 3007
+    RegisterLevel: 1
+  - ID: 29008
+    Name: Gun Carrier
+    SCardType: 23
+    TMLV: 1
+    SubSCardType: 24
+    SubTMLV: 1
+    AffectionPoint: 5
+    AffectionSkill: 3008
+    RegisterLevel: 1
+  - ID: 29009
+    Name: Lucky Seven
+    SCardType: 23
+    TMLV: 50
+    SubSCardType: 24
+    SubTMLV: 50
+    AffectionPoint: 4
+    AffectionSkill: 3009
+    RegisterLevel: 1
+    PreSkill_1: 3005
+    PreSkillLv_1: 1
+    Options: 1
+  - ID: 29010
+    Name: Quick Reload
+    SCardType: 23
+    TMLV: 40
+    SubSCardType: 24
+    SubTMLV: 40
+    AffectionPoint: 5
+    AffectionSkill: 3010
+    RegisterLevel: 1
+    PreSkill_1: 3011
+  - ID: 29011
+    Name: Invincible Reload
+    SCardType: 23
+    TMLV: 20
+    SubSCardType: 24
+    SubTMLV: 20
+    AffectionPoint: 5
+    AffectionSkill: 3011
+    RegisterLevel: 1
+    PreSkill_1: 3008
+  - ID: 29012
+    Name: Gun Booster
+    SCardType: 23
+    TMLV: 30
+    SubSCardType: 24
+    SubTMLV: 30
+    AffectionPoint: 3
+    AffectionSkill: 3012
+    RegisterLevel: 1
+    PreSkill_1: 3011
+  - ID: 29013
+    Name: Basic Detection
+    SCardType: 23
+    TMLV: 35
+    SubSCardType: 24
+    SubTMLV: 35
+    AffectionPoint: 2
+    AffectionSkill: 3013
+    RegisterLevel: 1
+  - ID: 29014
+    Name: Compound Master
+    SCardType: 23
+    TMLV: 70
+    SubSCardType: 24
+    SubTMLV: 70
+    AffectionPoint: 2
+    AffectionSkill: 3014
+    RegisterLevel: 1
+  - ID: 29015
+    Name: Stone Shower
+    SCardType: 23
+    SubSCardType: 24
+    AffectionSkill: 3015
+    RegisterLevel: 1
+  - ID: 29016
+    Name: Anger Management
+    SCardType: 23
+    TMLV: 55
+    SubSCardType: 24
+    SubTMLV: 55
+    AffectionPoint: 2
+    AffectionSkill: 3016
+    RegisterLevel: 1
+    PreSkill_1: 5019
+    PreSkillLv_1: 1
+  - ID: 29101
+    Name: Precise Pitch
+    SCardType: 25
+    TMLV: 51
+    SubSCardType: 30
+    SubTMLV: 101
+    AffectionPoint: 2
+    AffectionSkill: 3101
+    RegisterLevel: 1
+    PreSkill_1: 3007
+    PreSkillLv_1: 10
+  - ID: 29102
+    Name: Item Detector
+    SCardType: 25
+    TMLV: 60
+    SubSCardType: 30
+    SubTMLV: 110
+    AffectionPoint: 4
+    AffectionSkill: 3102
+    RegisterLevel: 1
+    PreSkill_1: 3001
+    PreSkill_2: 3006
+    PreSkillLv_2: 10
+  - ID: 29103
+    Name: Aura of Luck
+    SCardType: 25
+    TMLV: 70
+    SubSCardType: 30
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 3103
+    RegisterLevel: 1
+    PreSkill_1: 3009
+    PreSkillLv_1: 7
+  - ID: 29104
+    Name: Landmine
+    SCardType: 25
+    TMLV: 90
+    SubSCardType: 30
+    SubTMLV: 140
+    AffectionPoint: 3
+    AffectionSkill: 3104
+    RegisterLevel: 1
+  - ID: 29105
+    Name: Pouch of Pain
+    SCardType: 25
+    TMLV: 115
+    SubSCardType: 30
+    SubTMLV: 165
+    AffectionPoint: 4
+    AffectionSkill: 3105
+    RegisterLevel: 1
+    PreSkill_1: 3003
+    PreSkillLv_1: 10
+  - ID: 29106
+    Name: Sticky Icky
+    SCardType: 25
+    TMLV: 105
+    SubSCardType: 30
+    SubTMLV: 155
+    AffectionPoint: 4
+    AffectionSkill: 3106
+    RegisterLevel: 1
+    PreSkill_1: 3004
+    PreSkillLv_1: 10
+    PreSkill_2: 3005
+    PreSkillLv_2: 10
+  - ID: 29107
+    Name: Gas Mask
+    SCardType: 25
+    TMLV: 85
+    SubSCardType: 30
+    SubTMLV: 135
+    AffectionPoint: 3
+    AffectionSkill: 3107
+    RegisterLevel: 1
+  - ID: 29108
+    Name: Lightning Rod
+    SCardType: 25
+    TMLV: 110
+    SubSCardType: 30
+    SubTMLV: 160
+    AffectionPoint: 3
+    AffectionSkill: 3108
+    RegisterLevel: 1
+  - ID: 29109
+    Name: Fan of Knives
+    SCardType: 25
+    TMLV: 130
+    SubSCardType: 30
+    SubTMLV: 180
+    AffectionPoint: 4
+    AffectionSkill: 3109
+    RegisterLevel: 1
+    PreSkill_1: 3101
+    PreSkillLv_1: 11
+  - ID: 29110
+    Name: Chain of Knives
+    SCardType: 25
+    TMLV: 80
+    SubSCardType: 30
+    SubTMLV: 130
+    AffectionPoint: 3
+    AffectionSkill: 3110
+    RegisterLevel: 1
+    PreSkill_1: 3101
+    PreSkillLv_1: 5
+  - ID: 29111
+    Name: Mega Crazy Drilling
+    SCardType: 25
+    TMLV: 80
+    SubSCardType: 30
+    SubTMLV: 130
+    AffectionPoint: 3
+    AffectionSkill: 3111
+    RegisterLevel: 1
+    PreSkill_1: 5019
+    PreSkillLv_1: 1
+  - ID: 29112
+    Name: Rain of Knives
+    SCardType: 25
+    TMLV: 210
+    SubSCardType: 30
+    SubTMLV: 260
+    AffectionPoint: 5
+    AffectionSkill: 3112
+    RegisterLevel: 1
+    PreSkill_1: 3109
+    PreSkillLv_1: 11
+  - ID: 29201
+    Name: Butt Plate
+    SCardType: 26
+    TMLV: 51
+    SubSCardType: 28
+    SubTMLV: 101
+    AffectionPoint: 1
+    AffectionSkill: 3201
+    RegisterLevel: 1
+    PreSkill_1: 3008
+  - ID: 29202
+    Name: Powershot
+    SCardType: 26
+    TMLV: 60
+    SubSCardType: 28
+    SubTMLV: 110
+    AffectionPoint: 3
+    AffectionSkill: 3202
+    RegisterLevel: 1
+    PreSkill_1: 3012
+    PreSkillLv_1: 10
+  - ID: 29203
+    Name: Shooting Spree
+    SCardType: 26
+    TMLV: 70
+    SubSCardType: 28
+    SubTMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 3203
+    RegisterLevel: 1
+    PreSkill_1: 3202
+    PreSkillLv_1: 7
+  - ID: 29204
+    Name: Lucky Fist
+    SCardType: 26
+    TMLV: 95
+    SubSCardType: 28
+    SubTMLV: 145
+    AffectionPoint: 3
+    AffectionSkill: 3204
+    RegisterLevel: 1
+    PreSkill_1: 3009
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 29205
+    Name: Keen Sense
+    SCardType: 26
+    TMLV: 100
+    SubSCardType: 28
+    SubTMLV: 150
+    AffectionPoint: 3
+    AffectionSkill: 3205
+    RegisterLevel: 1
+    PreSkill_1: 3009
+    PreSkillLv_1: 1
+    PreSkill_2: 3012
+    PreSkillLv_2: 10
+  - ID: 29206
+    Name: Double Shot
+    SCardType: 26
+    TMLV: 115
+    SubSCardType: 28
+    SubTMLV: 165
+    AffectionPoint: 4
+    AffectionSkill: 3206
+    RegisterLevel: 1
+    PreSkill_1: 3202
+    PreSkillLv_1: 10
+  - ID: 29207
+    Name: Shield Breaker
+    SCardType: 26
+    TMLV: 125
+    SubSCardType: 28
+    SubTMLV: 175
+    AffectionPoint: 4
+    AffectionSkill: 3207
+    RegisterLevel: 1
+    PreSkill_1: 3009
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 29208
+    Name: Leg Training
+    SCardType: 26
+    TMLV: 130
+    SubSCardType: 28
+    SubTMLV: 180
+    AffectionPoint: 3
+    AffectionSkill: 3208
+    RegisterLevel: 1
+  - ID: 29209
+    Name: Lock-on
+    SCardType: 26
+    TMLV: 110
+    SubSCardType: 28
+    SubTMLV: 160
+    AffectionPoint: 3
+    AffectionSkill: 3209
+    RegisterLevel: 1
+    Options: 3
+  - ID: 29210
+    Name: Speedloader
+    SCardType: 26
+    TMLV: 210
+    SubSCardType: 28
+    SubTMLV: 260
+    AffectionPoint: 5
+    AffectionSkill: 3210
+    RegisterLevel: 1
+    PreSkill_1: 3206
+    PreSkillLv_1: 11
+  - ID: 29301
+    Name: Hide
+    SCardType: 27
+    TMLV: 130
+    AffectionPoint: 5
+    AffectionSkill: 3301
+    RegisterLevel: 1
+    PreSkill_1: 3006
+    PreSkillLv_1: 10
+    PreSkill_2: 3103
+    PreSkillLv_2: 10
+  - ID: 29302
+    Name: Sudden Attack
+    SCardType: 27
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 3302
+    RegisterLevel: 1
+    PreSkill_1: 3301
+    PreSkillLv_1: 10
+  - ID: 29303
+    Name: Strong Mind
+    SCardType: 27
+    TMLV: 140
+    AffectionPoint: 3
+    AffectionSkill: 3303
+    RegisterLevel: 1
+  - ID: 29304
+    Name: Explosives Expert
+    SCardType: 27
+    TMLV: 120
+    AffectionPoint: 4
+    AffectionSkill: 3304
+    RegisterLevel: 1
+    PreSkill_1: 3104
+    PreSkillLv_1: 10
+  - ID: 29305
+    Name: Poison Pouch
+    SCardType: 27
+    TMLV: 125
+    AffectionPoint: 4
+    AffectionSkill: 3305
+    RegisterLevel: 1
+    PreSkill_1: 3105
+    PreSkillLv_1: 11
+  - ID: 29306
+    Name: Poison Assult
+    SCardType: 27
+    TMLV: 135
+    AffectionPoint: 4
+    AffectionSkill: 3306
+    RegisterLevel: 1
+    PreSkill_1: 3007
+    PreSkillLv_1: 1
+    PreSkill_2: 3301
+    PreSkillLv_2: 5
+  - ID: 29307
+    Name: Exploit Weakness
+    SCardType: 27
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 3307
+    RegisterLevel: 1
+    PreSkill_1: 3302
+    PreSkillLv_1: 11
+  - ID: 29501
+    Name: Berserk
+    SCardType: 29
+    TMLV: 135
+    AffectionPoint: 4
+    AffectionSkill: 3501
+    RegisterLevel: 1
+    PreSkill_1: 3203
+    PreSkillLv_1: 10
+    PreSkill_2: 3206
+    PreSkillLv_2: 10
+  - ID: 29502
+    Name: Revealing Eye
+    SCardType: 29
+    TMLV: 130
+    AffectionPoint: 3
+    AffectionSkill: 3502
+    RegisterLevel: 1
+    PreSkill_1: 3006
+    PreSkillLv_1: 10
+  - ID: 29503
+    Name: Gun Overdrive
+    SCardType: 29
+    TMLV: 140
+    AffectionPoint: 3
+    AffectionSkill: 3503
+    RegisterLevel: 1
+    PreSkill_1: 3008
+  - ID: 29504
+    Name: Sharp Sense
+    SCardType: 29
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 3504
+    RegisterLevel: 1
+    PreSkill_1: 3205
+    PreSkillLv_1: 5
+  - ID: 29505
+    Name: Bunker
+    SCardType: 29
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 3505
+    RegisterLevel: 1
+    PreSkill_1: 3502
+    PreSkillLv_1: 11
+  - ID: 29506
+    Name: Bunker Release
+    SCardType: 29
+    TMLV: 240
+    AffectionSkill: 3506
+    RegisterLevel: 1
+    PreSkill_1: 3505
+    PreSkillLv_1: 10
+  - ID: 30001
+    Name: Power Blow
+    SCardType: 33
+    TMLV: 1
+    SubSCardType: 34
+    SubTMLV: 1
+    AffectionPoint: 1
+    AffectionSkill: 4001
+    RegisterLevel: 1
+    Options: 3
+  - ID: 30002
+    Name: Galder Thrower
+    SCardType: 33
+    TMLV: 20
+    SubSCardType: 34
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 4002
+    RegisterLevel: 1
+  - ID: 30003
+    Name: Dodge Master
+    SCardType: 33
+    TMLV: 10
+    SubSCardType: 34
+    SubTMLV: 10
+    AffectionPoint: 1
+    AffectionSkill: 4003
+    RegisterLevel: 1
+  - ID: 30004
+    Name: Shield All
+    SCardType: 33
+    TMLV: 25
+    SubSCardType: 34
+    SubTMLV: 25
+    AffectionPoint: 3
+    AffectionSkill: 4004
+    RegisterLevel: 1
+    PreSkill_1: 4008
+    PreSkillLv_1: 10
+  - ID: 30005
+    Name: Magic Meltdown
+    SCardType: 33
+    TMLV: 20
+    SubSCardType: 34
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 4005
+    RegisterLevel: 1
+    Options: 3
+  - ID: 30006
+    Name: Mag Def Breaker
+    SCardType: 33
+    TMLV: 20
+    SubSCardType: 34
+    SubTMLV: 20
+    AffectionPoint: 1
+    AffectionSkill: 4006
+    RegisterLevel: 1
+    Options: 3
+  - ID: 30007
+    Name: Sturdy Shield
+    SCardType: 33
+    TMLV: 30
+    SubSCardType: 34
+    SubTMLV: 30
+    AffectionPoint: 2
+    AffectionSkill: 4007
+    RegisterLevel: 1
+    Options: 1
+  - ID: 30008
+    Name: Mana Reflector
+    SCardType: 33
+    TMLV: 20
+    SubSCardType: 34
+    SubTMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 4008
+    RegisterLevel: 1
+  - ID: 30009
+    Name: Physical Training
+    SCardType: 33
+    TMLV: 45
+    SubSCardType: 34
+    SubTMLV: 45
+    AffectionPoint: 2
+    AffectionSkill: 4009
+    RegisterLevel: 1
+    Options: 1
+  - ID: 30010
+    Name: Skunk Pouch
+    SCardType: 33
+    TMLV: 40
+    SubSCardType: 34
+    SubTMLV: 40
+    AffectionPoint: 3
+    AffectionSkill: 4010
+    RegisterLevel: 1
+    Options: 3
+  - ID: 30011
+    Name: Titanium Wrist
+    SCardType: 33
+    TMLV: 40
+    SubSCardType: 34
+    SubTMLV: 40
+    AffectionPoint: 3
+    AffectionSkill: 4011
+    RegisterLevel: 1
+    PreSkill_1: 4001
+    PreSkillLv_1: 10
+    Options: 1
+  - ID: 30012
+    Name: Final Blow
+    SCardType: 33
+    TMLV: 50
+    SubSCardType: 34
+    SubTMLV: 50
+    AffectionPoint: 3
+    AffectionSkill: 4012
+    RegisterLevel: 1
+    PreSkill_1: 4007
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 30013
+    Name: Warm Up
+    SCardType: 33
+    SubSCardType: 34
+    AffectionSkill: 4013
+    RegisterLevel: 1
+  - ID: 30101
+    Name: Volley Kick
+    SCardType: 35
+    TMLV: 51
+    SubSCardType: 40
+    SubTMLV: 101
+    AffectionPoint: 1
+    AffectionSkill: 4101
+    RegisterLevel: 1
+    Options: 3
+  - ID: 30102
+    Name: Galder Barrage
+    SCardType: 35
+    TMLV: 60
+    SubSCardType: 40
+    SubTMLV: 110
+    AffectionPoint: 2
+    AffectionSkill: 4102
+    RegisterLevel: 1
+    PreSkill_1: 4002
+    PreSkillLv_1: 10
+  - ID: 30103
+    Name: Team Bolster
+    SCardType: 35
+    TMLV: 65
+    SubSCardType: 40
+    SubTMLV: 115
+    AffectionPoint: 4
+    AffectionSkill: 4103
+    RegisterLevel: 1
+    PreSkill_1: 4004
+    PreSkillLv_1: 10
+  - ID: 30104
+    Name: Siren Song
+    SCardType: 35
+    TMLV: 90
+    SubSCardType: 40
+    SubTMLV: 140
+    AffectionPoint: 3
+    AffectionSkill: 4104
+    RegisterLevel: 1
+    PreSkill_1: 4009
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 30105
+    Name: Evolution
+    SCardType: 35
+    TMLV: 110
+    AffectionPoint: 4
+    AffectionSkill: 4105
+    RegisterLevel: 1
+  - ID: 30106
+    Name: Beast Claw
+    SCardType: 35
+    TMLV: 120
+    AffectionPoint: 3
+    AffectionSkill: 4106
+    RegisterLevel: 1
+    PreSkill_1: 4105
+    PreSkillLv_1: 10
+  - ID: 30107
+    Name: Fatal Wound
+    SCardType: 35
+    TMLV: 130
+    AffectionPoint: 4
+    AffectionSkill: 4107
+    RegisterLevel: 1
+    PreSkill_1: 4105
+    PreSkillLv_1: 10
+  - ID: 30108
+    Name: Sumo Suit
+    SCardType: 35
+    TMLV: 135
+    SubSCardType: 40
+    SubTMLV: 185
+    AffectionPoint: 4
+    AffectionSkill: 4108
+    RegisterLevel: 1
+    PreSkill_1: 4004
+    PreSkillLv_1: 10
+    PreSkill_2: 4007
+    PreSkillLv_2: 10
+    PreSkill_3: 4009
+    PreSkillLv_3: 10
+  - ID: 30109
+    Name: Fist Full of Galders
+    SCardType: 35
+    TMLV: 130
+    SubSCardType: 40
+    SubTMLV: 180
+    AffectionPoint: 4
+    AffectionSkill: 4109
+    RegisterLevel: 1
+    PreSkill_1: 4102
+    PreSkillLv_1: 10
+  - ID: 30110
+    Name: Deadly Funk
+    SCardType: 35
+    TMLV: 160
+    SubSCardType: 40
+    SubTMLV: 210
+    AffectionPoint: 4
+    AffectionSkill: 4110
+    RegisterLevel: 1
+    PreSkill_1: 4010
+    PreSkillLv_1: 11
+  - ID: 30111
+    Name: Aura Shatter
+    SCardType: 35
+    TMLV: 210
+    SubSCardType: 40
+    SubTMLV: 260
+    AffectionPoint: 8
+    AffectionSkill: 4111
+    RegisterLevel: 1
+    PreSkill_1: 4108
+    PreSkillLv_1: 11
+  - ID: 30201
+    Name: Card Strike
+    SCardType: 36
+    TMLV: 51
+    SubSCardType: 38
+    SubTMLV: 101
+    AffectionPoint: 2
+    AffectionSkill: 4201
+    RegisterLevel: 1
+  - ID: 30202
+    Name: Super Hips
+    SCardType: 36
+    TMLV: 60
+    SubSCardType: 38
+    SubTMLV: 110
+    AffectionPoint: 5
+    AffectionSkill: 4202
+    RegisterLevel: 1
+    PreSkill_1: 4003
+    PreSkillLv_1: 10
+  - ID: 30203
+    Name: Bodyguard
+    SCardType: 36
+    TMLV: 65
+    SubSCardType: 38
+    SubTMLV: 115
+    AffectionPoint: 2
+    AffectionSkill: 4203
+    RegisterLevel: 1
+    PreSkill_1: 4009
+    PreSkillLv_1: 1
+  - ID: 30204
+    Name: One pair
+    SCardType: 36
+    TMLV: 125
+    SubSCardType: 38
+    SubTMLV: 175
+    AffectionPoint: 3
+    AffectionSkill: 4204
+    RegisterLevel: 1
+    PreSkill_1: 4201
+    PreSkillLv_1: 10
+  - ID: 30205
+    Name: Impelling Rage
+    SCardType: 36
+    TMLV: 100
+    SubSCardType: 38
+    SubTMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 4205
+    RegisterLevel: 1
+  - ID: 30206
+    Name: Metamorphosis
+    SCardType: 36
+    TMLV: 115
+    AffectionPoint: 4
+    AffectionSkill: 4206
+    RegisterLevel: 1
+  - ID: 30207
+    Name: Wild Nail
+    SCardType: 36
+    TMLV: 125
+    AffectionPoint: 3
+    AffectionSkill: 4207
+    RegisterLevel: 1
+    PreSkill_1: 4206
+    PreSkillLv_1: 10
+  - ID: 30208
+    Name: Flux Capacitor
+    SCardType: 36
+    TMLV: 115
+    SubSCardType: 38
+    SubTMLV: 165
+    AffectionPoint: 2
+    AffectionSkill: 4208
+    RegisterLevel: 1
+    PreSkill_1: 4009
+    PreSkillLv_1: 10
+  - ID: 30209
+    Name: Furious Galder Throw
+    SCardType: 36
+    TMLV: 115
+    SubSCardType: 38
+    SubTMLV: 165
+    AffectionPoint: 4
+    AffectionSkill: 4209
+    RegisterLevel: 1
+    PreSkill_1: 4002
+    PreSkillLv_1: 11
+  - ID: 30210
+    Name: Lady Luck
+    SCardType: 36
+    TMLV: 160
+    SubSCardType: 38
+    SubTMLV: 210
+    AffectionPoint: 4
+    AffectionSkill: 4210
+    RegisterLevel: 1
+    PreSkill_1: 4204
+    PreSkillLv_1: 1
+  - ID: 30211
+    Name: Mass Destruction
+    SCardType: 36
+    TMLV: 210
+    SubSCardType: 38
+    SubTMLV: 260
+    AffectionPoint: 5
+    AffectionSkill: 4211
+    RegisterLevel: 1
+    PreSkill_1: 4209
+    PreSkillLv_1: 10
+  - ID: 30301
+    Name: Entrancing Wink
+    SCardType: 37
+    TMLV: 150
+    AffectionPoint: 5
+    AffectionSkill: 4301
+    RegisterLevel: 1
+    PreSkill_1: 4005
+    PreSkillLv_1: 10
+    PreSkill_2: 4006
+    PreSkillLv_2: 10
+  - ID: 30302
+    Name: 2 Hit Combo
+    SCardType: 37
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 4302
+    RegisterLevel: 1
+    PreSkill_1: 4001
+    PreSkillLv_1: 1
+    PreSkill_2: 4101
+    PreSkillLv_2: 1
+  - ID: 30303
+    Name: Raging Nail
+    SCardType: 37
+    TMLV: 140
+    AffectionPoint: 5
+    AffectionSkill: 4303
+    RegisterLevel: 1
+    PreSkill_1: 4107
+    PreSkillLv_1: 11
+  - ID: 30304
+    Name: Sharp Scream
+    SCardType: 37
+    TMLV: 125
+    AffectionPoint: 5
+    AffectionSkill: 4304
+    RegisterLevel: 1
+    PreSkill_1: 4104
+    PreSkillLv_1: 5
+  - ID: 30305
+    Name: Beast's Instinct
+    SCardType: 37
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 4305
+    RegisterLevel: 1
+    PreSkill_1: 4303
+    PreSkillLv_1: 11
+  - ID: 30501
+    Name: Full House
+    SCardType: 39
+    TMLV: 150
+    AffectionPoint: 4
+    AffectionSkill: 4501
+    RegisterLevel: 1
+    PreSkill_1: 4204
+    PreSkillLv_1: 10
+    PreSkill_2: 4010
+    PreSkillLv_2: 10
+  - ID: 30502
+    Name: Power Charging
+    SCardType: 39
+    TMLV: 135
+    AffectionPoint: 4
+    AffectionSkill: 4502
+    RegisterLevel: 1
+    PreSkill_1: 4205
+    PreSkillLv_1: 10
+  - ID: 30503
+    Name: Heavy Hit
+    SCardType: 39
+    TMLV: 140
+    AffectionPoint: 4
+    AffectionSkill: 4503
+    RegisterLevel: 1
+    PreSkill_1: 4206
+    PreSkillLv_1: 1
+  - ID: 30504
+    Name: '[Summon] Card Soldier'
+    SCardType: 39
+    TMLV: 170
+    AffectionPoint: 6
+    AffectionSkill: 4504
+    RegisterLevel: 1
+    PreSkill_1: 4206
+    PreSkillLv_1: 11
+  - ID: 30505
+    Name: Four of A Kind
+    SCardType: 39
+    TMLV: 240
+    AffectionPoint: 6
+    AffectionSkill: 4505
+    RegisterLevel: 1
+    PreSkill_1: 4501
+    PreSkillLv_1: 11
+  - ID: 31001
+    Name: Fairy's Fireworks
+    AffectionSkill: 5001
+    RegisterLevel: 1
+  - ID: 31002
+    Name: White Pearl
+    AffectionSkill: 5002
+    RegisterLevel: 1
+  - ID: 31003
+    Name: Choco of Love
+    AffectionSkill: 5003
+    RegisterLevel: 1
+  - ID: 31004
+    Name: White splash
+    AffectionSkill: 5004
+    RegisterLevel: 1
+  - ID: 31007
+    Name: Surprise Poppuri
+    AffectionSkill: 5007
+    RegisterLevel: 1
+  - ID: 31008
+    Name: Rejuvenating Firecracker
+    AffectionSkill: 5008
+    RegisterLevel: 1
+  - ID: 31009
+    Name: Heart Spring
+    AffectionSkill: 5009
+    RegisterLevel: 1
+  - ID: 31010
+    Name: 1st Anniversary Skill Card
+    AffectionSkill: 5010
+    RegisterLevel: 1
+  - ID: 31011
+    Name: No.1
+    AffectionSkill: 5011
+    RegisterLevel: 1
+  - ID: 31012
+    Name: 춤추는 코라
+    AffectionSkill: 5012
+    RegisterLevel: 1
+  - ID: 31013
+    Name: 2주년 축하해요
+    AffectionSkill: 5013
+    RegisterLevel: 1
+  - ID: 31014
+    Name: Biscuit Explosion
+    AffectionSkill: 5014
+    RegisterLevel: 1
+  - ID: 31015
+    Name: 거품불꽃
+    AffectionSkill: 5015
+    RegisterLevel: 1
+  - ID: 31017
+    Name: Match Lighting
+    AffectionSkill: 5017
+    RegisterLevel: 1
+  - ID: 31019
+    Name: Crazy Drilling Card
+    TMLV: 15
+    AffectionSkill: 5019
+    RegisterLevel: 1
+  - ID: 31020
+    Name: Half Heart
+    AffectionSkill: 5020
+    RegisterLevel: 1
+  - ID: 31021
+    Name: Half Heart
+    AffectionSkill: 5021
+    RegisterLevel: 1
+  - ID: 31022
+    Name: I Love You
+    AffectionSkill: 5022
+    RegisterLevel: 1
+  - ID: 31023
+    Name: I Love You
+    AffectionSkill: 5023
+    RegisterLevel: 1
+  - ID: 31024
+    Name: Candle Heart
+    AffectionSkill: 5024
+    RegisterLevel: 1
+  - ID: 31025
+    Name: Candle Heart
+    AffectionSkill: 5025
+    RegisterLevel: 1
+  - ID: 31026
+    Name: Rose Heart
+    AffectionSkill: 5026
+    RegisterLevel: 1
+  - ID: 31027
+    Name: Rose Heart
+    AffectionSkill: 5027
+    RegisterLevel: 1
+  - ID: 31028
+    Name: Wish Heart
+    AffectionSkill: 5028
+    RegisterLevel: 1
+  - ID: 31029
+    Name: Wish Heart
+    AffectionSkill: 5029
+    RegisterLevel: 1
+  - ID: 31030
+    Name: Balloon Heart
+    AffectionSkill: 5030
+    RegisterLevel: 1
+  - ID: 31031
+    Name: Balloon Heart
+    AffectionSkill: 5031
+    RegisterLevel: 1
+  - ID: 31032
+    Name: Heart Cloud
+    AffectionSkill: 5032
+    RegisterLevel: 1
+  - ID: 31033
+    Name: Heart Cloud
+    AffectionSkill: 5033
+    RegisterLevel: 1
+  - ID: 31034
+    Name: Flying Hearts
+    AffectionSkill: 5034
+    RegisterLevel: 1
+  - ID: 31035
+    Name: Flying Hearts
+    AffectionSkill: 5035
+    RegisterLevel: 1
+  - ID: 31036
+    Name: Gem Heart
+    AffectionSkill: 5036
+    RegisterLevel: 1
+  - ID: 31037
+    Name: Gem Heart
+    AffectionSkill: 5037
+    RegisterLevel: 1
+  - ID: 31038
+    Name: Lips
+    AffectionSkill: 5038
+    RegisterLevel: 1
+  - ID: 31039
+    Name: Lips
+    AffectionSkill: 5039
+    RegisterLevel: 1
+  - ID: 31040
+    Name: So Into You
+    AffectionSkill: 5040
+    RegisterLevel: 1
+  - ID: 31041
+    Name: So Into You
+    AffectionSkill: 5041
+    RegisterLevel: 1
+  - ID: 31043
+    Name: Oktokki moon
+    AffectionSkill: 5043
+    RegisterLevel: 1
+  - ID: 31101
+    Name: Mind's Eye
+    AffectionSkill: 8001
+    RegisterLevel: 1
+  - ID: 31102
+    Name: Card Identification
+    AffectionSkill: 8002
+    RegisterLevel: 1
+  - ID: 31103
+    Name: Summon Guardian
+    AffectionSkill: 8003
+    RegisterLevel: 1
+  - ID: 31200
+    Name: GM의 응원(공)
+    AffectionSkill: 20000
+    RegisterLevel: 1
+  - ID: 31201
+    Name: GM의 응원(방)
+    AffectionSkill: 20001
+    RegisterLevel: 1
+  - ID: 31202
+    Name: GM의 위엄(공)
+    AffectionSkill: 20002
+    RegisterLevel: 1
+  - ID: 31203
+    Name: GM의 위엄(방)
+    AffectionSkill: 20003
+    RegisterLevel: 1
+  - ID: 31300
+    Name: Demolition
+    SCardType: 43
+    TMLV: 1
+    AffectionSkill: 4701
+    RegisterLevel: 1
+    Options: 1
+    JobType1: 256
+  - ID: 31301
+    Name: Double hammer
+    SCardType: 43
+    TMLV: 10
+    AffectionPoint: 3
+    AffectionSkill: 4702
+    RegisterLevel: 1
+    PreSkill_1: 4701
+    PreSkillLv_1: 1
+    Options: 3
+    JobType1: 256
+  - ID: 31302
+    Name: Strength Training
+    SCardType: 43
+    TMLV: 20
+    AffectionPoint: 2
+    AffectionSkill: 4703
+    RegisterLevel: 1
+    PreSkill_1: 4702
+    PreSkillLv_1: 10
+    JobType1: 256
+  - ID: 31303
+    Name: Concentration
+    SCardType: 43
+    TMLV: 25
+    AffectionPoint: 2
+    AffectionSkill: 4704
+    RegisterLevel: 1
+    PreSkill_1: 4702
+    PreSkillLv_1: 10
+    Options: 1
+    JobType1: 256
+  - ID: 31304
+    Name: Mental Breakdown
+    SCardType: 43
+    TMLV: 30
+    AffectionPoint: 2
+    AffectionSkill: 4705
+    RegisterLevel: 1
+    PreSkill_1: 4704
+    PreSkillLv_1: 1
+    Options: 3
+    JobType1: 256
+  - ID: 31305
+    Name: Shield of Will
+    SCardType: 43
+    TMLV: 35
+    AffectionPoint: 2
+    AffectionSkill: 4706
+    RegisterLevel: 1
+    PreSkill_1: 4704
+    PreSkillLv_1: 1
+    JobType1: 256
+  - ID: 31306
+    Name: Paula Guard
+    SCardType: 43
+    TMLV: 40
+    AffectionPoint: 3
+    AffectionSkill: 4707
+    RegisterLevel: 1
+    PreSkill_1: 4706
+    PreSkillLv_1: 10
+    JobType1: 256
+  - ID: 31307
+    Name: Earthquake Hammer
+    SCardType: 43
+    TMLV: 50
+    AffectionPoint: 3
+    AffectionSkill: 4708
+    RegisterLevel: 1
+    PreSkill_1: 4704
+    PreSkillLv_1: 10
+    JobType1: 256
+  - ID: 31308
+    Name: 기운 찬 해머
+    SCardType: 43
+    TMLV: 1
+    AffectionSkill: 4709
+    JobType1: 256
+  - ID: 31400
+    Name: Crazy Hammer I
+    SCardType: 44
+    TMLV: 60
+    AffectionPoint: 6
+    AffectionSkill: 4801
+    RegisterLevel: 1
+    PreSkill_1: 4703
+    PreSkillLv_1: 10
+  - ID: 31401
+    Name: Invisible Defence
+    SCardType: 44
+    TMLV: 70
+    AffectionPoint: 5
+    AffectionSkill: 4802
+    RegisterLevel: 1
+    PreSkill_1: 4706
+    PreSkillLv_1: 11
+  - ID: 31402
+    Name: Over Swing
+    SCardType: 44
+    TMLV: 90
+    AffectionPoint: 6
+    AffectionSkill: 4803
+    RegisterLevel: 1
+    PreSkill_1: 4708
+    PreSkillLv_1: 10
+  - ID: 31403
+    Name: Crazy Hammer II
+    SCardType: 44
+    TMLV: 90
+    AffectionPoint: 6
+    AffectionSkill: 4804
+    RegisterLevel: 1
+    PreSkill_1: 4801
+    PreSkillLv_1: 11
+  - ID: 31404
+    Name: Mole Hammer
+    SCardType: 44
+    TMLV: 110
+    AffectionPoint: 5
+    AffectionSkill: 4805
+    RegisterLevel: 1
+    PreSkill_1: 4705
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 31405
+    Name: Crazy Hammer III
+    SCardType: 44
+    TMLV: 120
+    AffectionPoint: 6
+    AffectionSkill: 4806
+    RegisterLevel: 1
+    PreSkill_1: 4804
+    PreSkillLv_1: 11
+  - ID: 31406
+    Name: Flying Hammer
+    SCardType: 44
+    TMLV: 120
+    AffectionPoint: 6
+    AffectionSkill: 4807
+    RegisterLevel: 1
+    PreSkill_1: 4803
+    PreSkillLv_1: 11
+  - ID: 31500
+    Name: Aura of Anger
+    SCardType: 45
+    TMLV: 140
+    AffectionPoint: 6
+    AffectionSkill: 4901
+    RegisterLevel: 1
+    PreSkill_1: 4704
+    PreSkillLv_1: 11
+  - ID: 31501
+    Name: Strong Arms
+    SCardType: 45
+    TMLV: 140
+    AffectionPoint: 6
+    AffectionSkill: 4902
+    RegisterLevel: 1
+    PreSkill_1: 4703
+    PreSkillLv_1: 11
+  - ID: 31502
+    Name: Last Defence
+    SCardType: 45
+    TMLV: 150
+    AffectionPoint: 6
+    AffectionSkill: 4903
+    RegisterLevel: 1
+    PreSkill_1: 4802
+    PreSkillLv_1: 11
+  - ID: 31503
+    Name: Bear Attack
+    SCardType: 45
+    TMLV: 170
+    AffectionPoint: 6
+    AffectionSkill: 4904
+    RegisterLevel: 1
+    PreSkill_1: 4805
+    PreSkillLv_1: 10
+    Options: 3
+  - ID: 31504
+    Name: Best Shield
+    SCardType: 45
+    TMLV: 180
+    AffectionPoint: 7
+    AffectionSkill: 4905
+    RegisterLevel: 1
+    PreSkill_1: 4707
+    PreSkillLv_1: 11
+  - ID: 31505
+    Name: Rain of Hammers
+    SCardType: 45
+    TMLV: 190
+    AffectionPoint: 8
+    AffectionSkill: 4906
+    RegisterLevel: 1
+    PreSkill_1: 4902
+    PreSkillLv_1: 11
+  - ID: 31506
+    Name: Hammer Spin
+    SCardType: 45
+    TMLV: 220
+    AffectionPoint: 9
+    AffectionSkill: 4907
+    RegisterLevel: 1
+    PreSkill_1: 4807
+    PreSkillLv_1: 11
+  - ID: 31507
+    Name: Crazy Hammer IV
+    SCardType: 45
+    TMLV: 220
+    AffectionPoint: 9
+    AffectionSkill: 4908
+    RegisterLevel: 1
+    PreSkill_1: 4806
+    PreSkillLv_1: 11
+  - ID: 31508
+    Name: Hammer Spin Booster
+    SCardType: 45
+    TMLV: 240
+    AffectionPoint: 9
+    AffectionSkill: 4909
+    RegisterLevel: 1
+    PreSkill_1: 4907
+    PreSkillLv_1: 11
+  - ID: 31509
+    Name: Crazy Hammer V
+    SCardType: 45
+    TMLV: 240
+    AffectionPoint: 9
+    AffectionSkill: 4910
+    RegisterLevel: 1
+    PreSkill_1: 4908
+    PreSkillLv_1: 11
+
+Footer:
+  Imports:
+#  - Path: db/import/skill_card_db.yml

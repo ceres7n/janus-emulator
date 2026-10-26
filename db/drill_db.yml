@@ -1,0 +1,2862 @@
+# =============================================================================
+#   Drill Database  (DRILL_DB)
+# =============================================================================
+#
+#   Table Item_DrillParam of the ORIGINAL server data (kto_libconfig.xml, 191 rows, in
+#   its order): the drill of each Type-6 item (ItemParam +88). Field names verbatim;
+#   Name = the item's name in item_db.yml (display only).
+#
+#   Fields
+#     Id                - the drill's item id (item_db.yml Type 6)               [key]
+#     Grade             - TM EXP 4*(3*Lv+depth)*Grade on a find; EXP rate row
+#                         (drill_grade_exp_db.yml) of the dig's EXP
+#     GroundNature      - 0 = any ground; else a ground of another nature
+#                         (map_attr_db.yml Attr) costs twice the life
+#     DigDepth          - the deepest result it may report (C2S 0x31)
+#     BarEffArea / BarSpeed / ScoopMass - the client's dig gauge; also in the
+#                         result's CRC and the server's shortest dig time
+#     DrillLife         - the life (= the item's count) of a new drill
+#     DrillEffect       - the client's effect name
+#     CDM_*             - the Crazy Drill Mode (skill 5019): gauge max, stress bonus,
+#                         seconds, BigBang ratio
+#     RandomSpot_Ratio  - read by the drill event (sub_894860)
+#     Wedding_*         - the wedding (CDM +60) gauge / BigBang bonuses
+#   Retail: GameInfoMgr sub_625910 (struct: +8 Grade i16, +12 GroundNature, +16
+#   DigDepth i16, +18 BarEffArea, +20 BarSpeed, +22 ScoopMass, +24 DrillLife, +288..
+#   +312 the floats).
+# =============================================================================
+
+Header:
+  Type: DRILL_DB
+  Version: 1
+
+Body:
+  - Id: 8001
+    Name: Cleaner Drill
+    Grade: 1
+    GroundNature: 1
+    DigDepth: 30
+    BarEffArea: 70
+    BarSpeed: 100
+    ScoopMass: 1
+    DrillLife: 300
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8002
+    Name: Blend Drill
+    Grade: 1
+    GroundNature: 2
+    DigDepth: 30
+    BarEffArea: 60
+    BarSpeed: 90
+    ScoopMass: 1
+    DrillLife: 300
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8003
+    Name: Multi-point Drill
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 30
+    BarEffArea: 90
+    BarSpeed: 120
+    ScoopMass: 1
+    DrillLife: 300
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8004
+    Name: Tornado Drill
+    Grade: 2
+    GroundNature: 1
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 2
+    DrillLife: 400
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8005
+    Name: Jetpump Drill
+    Grade: 2
+    GroundNature: 2
+    DigDepth: 60
+    BarEffArea: 70
+    BarSpeed: 110
+    ScoopMass: 2
+    DrillLife: 400
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8006
+    Name: Multi-pistol Drill
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 140
+    ScoopMass: 2
+    DrillLife: 400
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8007
+    Name: Diamond Drill
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 90
+    BarEffArea: 100
+    BarSpeed: 160
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8008
+    Name: Chaos Drill
+    Grade: 4
+    GroundNature: 4
+    DigDepth: 120
+    BarEffArea: 90
+    BarSpeed: 160
+    ScoopMass: 4
+    DrillLife: 600
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8009
+    Name: Basic Drill
+    Grade: 1
+    DigDepth: 20
+    BarEffArea: 90
+    BarSpeed: 100
+    ScoopMass: 1
+    DrillLife: 250
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8200
+    Name: Blue Drill
+    Grade: 1
+    DigDepth: 80
+    BarEffArea: 130
+    BarSpeed: 60
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8201
+    Name: Green Drill
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 40
+    BarEffArea: 70
+    BarSpeed: 150
+    ScoopMass: 1
+    DrillLife: 200
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8202
+    Name: Yellow Drill
+    Grade: 2
+    DigDepth: 120
+    BarEffArea: 70
+    BarSpeed: 180
+    ScoopMass: 2
+    DrillLife: 80
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8203
+    Name: Pink Drill
+    Grade: 2
+    GroundNature: 2
+    DigDepth: 60
+    BarEffArea: 160
+    BarSpeed: 100
+    ScoopMass: 2
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8204
+    Name: Musume Drill
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 150
+    BarEffArea: 30
+    BarSpeed: 50
+    ScoopMass: 3
+    DrillLife: 200
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8205
+    Name: Gao Drill
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 180
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 3
+    DrillLife: 150
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8206
+    Name: Thorn Drill
+    Grade: 1
+    DigDepth: 20
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8207
+    Name: Titanium Drill
+    Grade: 4
+    GroundNature: 4
+    DigDepth: 30
+    BarEffArea: 100
+    BarSpeed: 100
+    ScoopMass: 4
+    DrillLife: 50
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8229
+    Name: Ghost Drill
+    Grade: 4
+    GroundNature: 4
+    DigDepth: 200
+    BarEffArea: 100
+    BarSpeed: 100
+    ScoopMass: 4
+    DrillLife: 50
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8209
+    Name: Back Drill
+    Grade: 4
+    GroundNature: 4
+    DigDepth: 100
+    BarEffArea: 100
+    BarSpeed: 100
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8210
+    Name: Azteca Drill
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 120
+    BarEffArea: 150
+    BarSpeed: 150
+    ScoopMass: 3
+    DrillLife: 300
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8211
+    Name: Ice Drill
+    Grade: 4
+    GroundNature: 5
+    DigDepth: 180
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8212
+    Name: Tapasco Drill
+    Grade: 4
+    GroundNature: 3
+    DigDepth: 150
+    BarEffArea: 90
+    BarSpeed: 160
+    ScoopMass: 4
+    DrillLife: 150
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8213
+    Name: Marble Drill
+    Grade: 4
+    DigDepth: 250
+    BarEffArea: 100
+    BarSpeed: 120
+    ScoopMass: 5
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8214
+    Name: Swamp Drill
+    Grade: 4
+    GroundNature: 2
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 110
+    ScoopMass: 4
+    DrillLife: 600
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8215
+    Name: Free Drill
+    Grade: 3
+    DigDepth: 70
+    BarEffArea: 100
+    BarSpeed: 120
+    ScoopMass: 3
+    DrillLife: 300
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19900
+    Name: Propeller Drill
+    Grade: 5
+    DigDepth: 120
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+    DrillLife: 1300
+    DrillEffect: drill_cm_19900
+    CDM_GaugeMax: 44
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 14
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19926
+    Name: Flicker Drill
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19901
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19902
+    Name: Flicker Drill 300
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 150
+    ScoopMass: 5
+    DrillLife: 100
+    DrillEffect: drill_cm_19901
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19903
+    Name: Bubble Drill
+    Grade: 6
+    DigDepth: 120
+    BarEffArea: 100
+    BarSpeed: 130
+    ScoopMass: 4
+    DrillLife: 700
+    DrillEffect: drill_cm_19903
+    CDM_GaugeMax: 48
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 16
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19904
+    Name: Snowdrop Drill
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 100
+    BarSpeed: 160
+    ScoopMass: 5
+    DrillLife: 700
+    DrillEffect: drill_cm_19904
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19905
+    Name: Propeller Drill 100
+    Grade: 5
+    DigDepth: 120
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+    DrillLife: 100
+    DrillEffect: drill_cm_19900
+    CDM_GaugeMax: 44
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 14
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19906
+    Name: Angel Drill
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 140
+    BarSpeed: 160
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19906
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19907
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 150
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19907
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19908
+    Name: Propeller Drill_twn
+    Grade: 5
+    DigDepth: 120
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+    DrillLife: 1300
+    DrillEffect: drill_cm_19900
+    CDM_GaugeMax: 44
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 14
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19911
+    Grade: 6
+    DigDepth: 120
+    BarEffArea: 100
+    BarSpeed: 130
+    ScoopMass: 4
+    DrillLife: 700
+    DrillEffect: drill_cm_19903
+    CDM_GaugeMax: 48
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 16
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19912
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 100
+    BarSpeed: 160
+    ScoopMass: 5
+    DrillLife: 700
+    DrillEffect: drill_cm_19904
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8220
+    Name: Mirage Drill
+    Grade: 4
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 140
+    ScoopMass: 5
+    DrillLife: 800
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8010
+    Name: Cleaner AD Drill
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 200
+    BarEffArea: 60
+    BarSpeed: 90
+    ScoopMass: 2
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8011
+    Name: Blend AD Drill
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 200
+    BarEffArea: 60
+    BarSpeed: 90
+    ScoopMass: 2
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8012
+    Name: Multi-point AD Drill
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 200
+    BarEffArea: 60
+    BarSpeed: 90
+    ScoopMass: 2
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8013
+    Name: Tornado AD Drill
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 250
+    BarEffArea: 70
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8014
+    Name: Jetpump AD Drill
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 250
+    BarEffArea: 70
+    BarSpeed: 100
+    ScoopMass: 3
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8015
+    Name: Multi-pistol AD Drill
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 250
+    BarEffArea: 70
+    BarSpeed: 90
+    ScoopMass: 3
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8016
+    Name: Gao AD Drill
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 3
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8219
+    Name: Jr Ice Drill
+    Grade: 3
+    GroundNature: 5
+    DigDepth: 150
+    BarEffArea: 80
+    BarSpeed: 120
+    ScoopMass: 3
+    DrillLife: 200
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8300
+    Name: Master Drill No. 1
+    Grade: 4
+    DigDepth: 20
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8301
+    Name: Sand Drill No. 1
+    Grade: 1
+    GroundNature: 1
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8302
+    Name: Land Drill No. 1
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8303
+    Name: Rock Drill No. 1
+    Grade: 1
+    GroundNature: 4
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8304
+    Name: Master Drill No. 2
+    Grade: 4
+    DigDepth: 30
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8305
+    Name: Sand Drill No. 2
+    Grade: 1
+    GroundNature: 1
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8306
+    Name: Land Drill No. 2
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8307
+    Name: Rock Drill No. 2
+    Grade: 1
+    GroundNature: 4
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 100
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8308
+    Name: Master Drill No. 3
+    Grade: 4
+    DigDepth: 60
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8309
+    Name: Sand Drill No. 3
+    Grade: 2
+    GroundNature: 1
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8310
+    Name: Land Drill No. 3
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8311
+    Name: Rock Drill No. 3
+    Grade: 2
+    GroundNature: 4
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8312
+    Name: Master Drill No. 4
+    Grade: 4
+    DigDepth: 100
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8313
+    Name: Sand Drill No. 4
+    Grade: 2
+    GroundNature: 1
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8314
+    Name: Sea Drill No. 4
+    Grade: 2
+    GroundNature: 2
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8315
+    Name: Land Drill No. 4
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8316
+    Name: Rock Drill No. 4
+    Grade: 2
+    GroundNature: 4
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8317
+    Name: Master Drill No. 5
+    Grade: 4
+    DigDepth: 160
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8318
+    Name: Sand Drill No. 5
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8319
+    Name: Sea Drill No. 5
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8320
+    Name: Land Drill No. 5
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8321
+    Name: Rock Drill No. 5
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8322
+    Name: Master Drill No. 6
+    Grade: 4
+    DigDepth: 200
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8323
+    Name: Sand Drill No. 6
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8324
+    Name: Land Drill No. 6
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8325
+    Name: Rock Drill No. 6
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8326
+    Name: Master Drill No. 7
+    Grade: 4
+    DigDepth: 250
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8327
+    Name: Sand Drill No. 7
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8328
+    Name: Land Drill No. 7
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8329
+    Name: Rock Drill No. 7
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8330
+    Name: Snow Drill No. 7
+    Grade: 3
+    GroundNature: 5
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8331
+    Name: Master Drill No. 8
+    Grade: 4
+    DigDepth: 300
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 200
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8332
+    Name: Sand Drill No. 8
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8333
+    Name: Sea Drill No.8
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8334
+    Name: Land Drill No. 8
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8335
+    Name: Rock Drill No. 8
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8336
+    Name: Snow Drill No. 8
+    Grade: 3
+    GroundNature: 5
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8000
+    Name: Basic Drill
+    Grade: 1
+    DigDepth: 20
+    BarEffArea: 140
+    BarSpeed: 60
+    ScoopMass: 1
+    DrillLife: 600
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8222
+    Name: Children's Day Drill
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 80
+    BarEffArea: 60
+    BarSpeed: 100
+    ScoopMass: 1
+    DrillLife: 50
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19924
+    Name: Propeller Drill X
+    Grade: 5
+    DigDepth: 120
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 4
+    DrillLife: 1300
+    DrillEffect: drill_cm_19900
+    CDM_GaugeMax: 44
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 14
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19901
+    Name: Flicker Drill
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 150
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19901
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8224
+    Name: Yellow-Universal Drill
+    Grade: 1
+    DigDepth: 30
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 80
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8225
+    Name: Blue-Universal Drill
+    Grade: 2
+    DigDepth: 60
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 80
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8226
+    Name: Pink-Universal Drill
+    Grade: 3
+    DigDepth: 100
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 80
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8223
+    Name: 노라드릴 R
+    Grade: 4
+    DigDepth: 200
+    BarEffArea: 100
+    BarSpeed: 100
+    ScoopMass: 4
+    DrillLife: 20
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8227
+    Name: R Drill
+    Grade: 2
+    DigDepth: 250
+    BarEffArea: 100
+    BarSpeed: 120
+    ScoopMass: 5
+    DrillLife: 250
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19927
+    Name: Snow Drill
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 5
+    DrillLife: 1200
+    DrillEffect: drill_cm_19904
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19928
+    Name: Hot Drill
+    Grade: 9
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 5
+    DrillLife: 800
+    DrillEffect: eft_drill_heart
+    CDM_GaugeMax: 60
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 20
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19929
+    Name: Bling Drill
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 110
+    ScoopMass: 5
+    DrillLife: 800
+    DrillEffect: eft_drill_star
+    CDM_GaugeMax: 64
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 21
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8228
+    Name: Sample Drill
+    Grade: 1
+    DigDepth: 20
+    BarEffArea: 90
+    BarSpeed: 100
+    ScoopMass: 1
+    DrillLife: 200
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8208
+    Name: Nora Drill
+    Grade: 4
+    GroundNature: 4
+    DigDepth: 200
+    BarEffArea: 100
+    BarSpeed: 100
+    ScoopMass: 4
+    DrillLife: 5
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19934
+    Name: 포푸리 드릴
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 6
+    DrillLife: 1200
+    DrillEffect: drill_cm_19934
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19937
+    Name: Poppuri Drill Trial
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 6
+    DrillLife: 100
+    DrillEffect: drill_cm_19934
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8337
+    Name: Neo Master Drill No. 1
+    Grade: 4
+    DigDepth: 20
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8338
+    Name: Neo Sand Drill No. 1
+    Grade: 1
+    GroundNature: 1
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8339
+    Name: Neo Land Drill No. 1
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8340
+    Name: Neo Rock Drill No. 1
+    Grade: 1
+    GroundNature: 4
+    DigDepth: 20
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8341
+    Name: Neo Master Drill No. 2
+    Grade: 4
+    DigDepth: 30
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8342
+    Name: Neo Sand Drill No. 2
+    Grade: 1
+    GroundNature: 1
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8343
+    Name: Neo Land Drill No. 2
+    Grade: 1
+    GroundNature: 3
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8344
+    Name: Neo Rock Drill No. 2
+    Grade: 1
+    GroundNature: 4
+    DigDepth: 30
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 1
+    DrillLife: 500
+    CDM_GaugeMax: 28
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 9
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8345
+    Name: Neo Master Drill No. 3
+    Grade: 4
+    DigDepth: 60
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8346
+    Name: Neo Sand Drill No. 3
+    Grade: 2
+    GroundNature: 1
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8347
+    Name: Neo Land Drill No. 3
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8348
+    Name: Neo Rock Drill No. 3
+    Grade: 2
+    GroundNature: 4
+    DigDepth: 60
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 2
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8349
+    Name: Neo Master Drill No. 4
+    Grade: 4
+    DigDepth: 100
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8350
+    Name: Neo Sand Drill No. 4
+    Grade: 2
+    GroundNature: 1
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8351
+    Name: Neo Sea Drill No. 4
+    Grade: 2
+    GroundNature: 2
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8352
+    Name: Neo Land Drill No. 4
+    Grade: 2
+    GroundNature: 3
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8353
+    Name: Neo Rock Drill No. 4
+    Grade: 2
+    GroundNature: 4
+    DigDepth: 100
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 32
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 10
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8354
+    Name: Neo Master Drill No. 5
+    Grade: 4
+    DigDepth: 160
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8355
+    Name: Neo Sand Drill No. 5
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8356
+    Name: Neo Sea Drill No. 5
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8357
+    Name: Neo Land Drill No. 5
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8358
+    Name: Neo Rock Drill No. 5
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 160
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 3
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8359
+    Name: Neo Master Drill No. 6
+    Grade: 4
+    DigDepth: 200
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8360
+    Name: Neo Sand Drill No. 6
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8361
+    Name: Neo Land Drill No. 6
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8362
+    Name: Neo Rock Drill No. 6
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8363
+    Name: Neo Master Drill No. 7
+    Grade: 4
+    DigDepth: 250
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8364
+    Name: Neo Sand Drill No. 7
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8365
+    Name: Neo Land Drill No. 7
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8366
+    Name: Neo Rock Drill No. 7
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8367
+    Name: Neo Snow Drill No. 7
+    Grade: 3
+    GroundNature: 5
+    DigDepth: 250
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8368
+    Name: Neo Master Drill No. 8
+    Grade: 4
+    DigDepth: 300
+    BarEffArea: 100
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 40
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 13
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8369
+    Name: Neo Sand Drill No. 8
+    Grade: 3
+    GroundNature: 1
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8370
+    Name: Neo Sea Drill No. 8
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8371
+    Name: Neo Land Drill No. 8
+    Grade: 3
+    GroundNature: 3
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8372
+    Name: Neo Rock Drill No. 8
+    Grade: 3
+    GroundNature: 4
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8373
+    Name: Neo Snow Drill No.8
+    Grade: 3
+    GroundNature: 5
+    DigDepth: 300
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19938
+    Name: Treble Drill
+    Grade: 10
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 8
+    DrillLife: 800
+    DrillEffect: drill_cm_19938
+    CDM_GaugeMax: 64
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 21
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19939
+    Name: Bat Drill
+    Grade: 11
+    DigDepth: 450
+    BarEffArea: 150
+    BarSpeed: 140
+    ScoopMass: 12
+    DrillLife: 800
+    DrillEffect: drill_cm_19939
+    CDM_GaugeMax: 68
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19909
+    Name: Propeller Drill_twn
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 5
+    DrillLife: 1200
+    DrillEffect: drill_cm_19900
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 410000
+    Name: 빅뱅 드릴
+    Grade: 11
+    DigDepth: 450
+    BarEffArea: 150
+    BarSpeed: 140
+    ScoopMass: 12
+    DrillLife: 9999
+    DrillEffect: drill_cm_19939
+    CDM_GaugeMax: 68
+    CDM_StressBonus: 10
+    CDM_Seconds: 3600
+    CDM_RatioBang: 0.99
+    Wedding_Stress: 20
+    Wedding_RatioBang: 1.98
+  - Id: 19941
+    Name: Puppy Drill
+    Grade: 11
+    DigDepth: 420
+    BarEffArea: 130
+    BarSpeed: 130
+    ScoopMass: 10
+    DrillLife: 800
+    DrillEffect: drill_cm_19942
+    CDM_GaugeMax: 68
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19942
+    Name: Thiefmon Drill
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 160
+    BarSpeed: 160
+    ScoopMass: 13
+    DrillLife: 800
+    DrillEffect: drill_cm_19941
+    CDM_GaugeMax: 72
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 24
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19940
+    Name: Ice Cream Drill
+    Grade: 9
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 8
+    DrillLife: 800
+    DrillEffect: drill_cm_19940
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.2
+    CDM_Seconds: 40
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.4
+    Wedding_RatioBang: 0.24
+  - Id: 19951
+    Name: Angel Drill EV
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 140
+    BarSpeed: 160
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19906
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8374
+    Name: Neo Sea Drill No. 6
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 500
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 8375
+    Name: Sea Drill No. 6
+    Grade: 3
+    GroundNature: 2
+    DigDepth: 200
+    BarEffArea: 80
+    BarSpeed: 80
+    ScoopMass: 4
+    DrillLife: 100
+    CDM_GaugeMax: 36
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 12
+    CDM_RatioBang: 0.05
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.1
+  - Id: 19957
+    Name: Angel Drill Ev
+    Grade: 8
+    DigDepth: 300
+    BarEffArea: 140
+    BarSpeed: 160
+    ScoopMass: 5
+    DrillLife: 1800
+    DrillEffect: drill_cm_19906
+    CDM_GaugeMax: 56
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19958
+    Name: 프릭커 드릴100 Ev
+    Grade: 7
+    DigDepth: 300
+    BarEffArea: 120
+    BarSpeed: 150
+    ScoopMass: 5
+    DrillLife: 100
+    DrillEffect: drill_cm_19901
+    CDM_GaugeMax: 52
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 17
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19947
+    Name: Bat Drill S
+    Grade: 11
+    DigDepth: 450
+    BarEffArea: 150
+    BarSpeed: 150
+    ScoopMass: 12
+    DrillLife: 400
+    DrillEffect: drill_cm_19939
+  - Id: 19956
+    Name: Ice Cream Drill S
+    Grade: 9
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 8
+    DrillLife: 400
+    DrillEffect: drill_cm_19940
+    CDM_GaugeMax: 60
+    CDM_StressBonus: 0.2
+    CDM_Seconds: 40
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.4
+    Wedding_RatioBang: 0.24
+  - Id: 19960
+    Name: Ice Cream Drill S
+    Grade: 9
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 120
+    ScoopMass: 8
+    DrillLife: 800
+    DrillEffect: drill_cm_19940
+    CDM_GaugeMax: 60
+    CDM_StressBonus: 0.2
+    CDM_Seconds: 40
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.4
+    Wedding_RatioBang: 0.24
+  - Id: 19961
+    Name: Speed Drill 60
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 110
+    BarSpeed: 135
+    ScoopMass: 10
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19962
+    Name: Speed Drill 120
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 110
+    BarSpeed: 145
+    ScoopMass: 13
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19963
+    Name: Speed Drill 180
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 110
+    BarSpeed: 155
+    ScoopMass: 16
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19985
+    Name: Speed drill 240
+    Grade: 14
+    DigDepth: 600
+    BarEffArea: 110
+    BarSpeed: 165
+    ScoopMass: 19
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 30
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19986
+    Name: Speed drill 300
+    Grade: 16
+    DigDepth: 700
+    BarEffArea: 110
+    BarSpeed: 175
+    ScoopMass: 22
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 34
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19987
+    Name: Speed drill 360
+    Grade: 18
+    DigDepth: 800
+    BarEffArea: 110
+    BarSpeed: 185
+    ScoopMass: 25
+    DrillLife: 1800
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 38
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19964
+    Name: Crazy Drill 60
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 125
+    ScoopMass: 8
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 36
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19965
+    Name: Crazy Drill 120
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 9
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 44
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19966
+    Name: Crazy Drill 180
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 120
+    BarSpeed: 145
+    ScoopMass: 10
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 52
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19988
+    Name: Crazy drill 240
+    Grade: 14
+    DigDepth: 600
+    BarEffArea: 120
+    BarSpeed: 155
+    ScoopMass: 11
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 60
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19989
+    Name: Crazy drilling 300
+    Grade: 16
+    DigDepth: 700
+    BarEffArea: 120
+    BarSpeed: 165
+    ScoopMass: 12
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 68
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19990
+    Name: Crazy drilling 360
+    Grade: 18
+    DigDepth: 800
+    BarEffArea: 120
+    BarSpeed: 175
+    ScoopMass: 13
+    DrillLife: 1800
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 76
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19967
+    Name: Tank Drill 60
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 125
+    ScoopMass: 6
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19968
+    Name: Tank Drill 120
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 7
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19969
+    Name: Tank Drill 180
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 120
+    BarSpeed: 145
+    ScoopMass: 8
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19991
+    Name: Tank drill 240
+    Grade: 14
+    DigDepth: 600
+    BarEffArea: 120
+    BarSpeed: 155
+    ScoopMass: 9
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 30
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19992
+    Name: Tank drill 300
+    Grade: 16
+    DigDepth: 700
+    BarEffArea: 120
+    BarSpeed: 165
+    ScoopMass: 10
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 34
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19993
+    Name: 360 drill tank
+    Grade: 18
+    DigDepth: 800
+    BarEffArea: 120
+    BarSpeed: 175
+    ScoopMass: 11
+    DrillLife: 2200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 38
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19970
+    Name: Novice Drill 60
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 160
+    BarSpeed: 115
+    ScoopMass: 6
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19971
+    Name: Novice Drill 120
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 160
+    BarSpeed: 125
+    ScoopMass: 7
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19972
+    Name: Novice Drill 180
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 160
+    BarSpeed: 135
+    ScoopMass: 8
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19994
+    Name: Easy drill 240
+    Grade: 14
+    DigDepth: 600
+    BarEffArea: 160
+    BarSpeed: 145
+    ScoopMass: 9
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 30
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19995
+    Name: Easy drill 300
+    Grade: 16
+    DigDepth: 700
+    BarEffArea: 160
+    BarSpeed: 155
+    ScoopMass: 10
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 34
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19996
+    Name: Page 360, we
+    Grade: 18
+    DigDepth: 800
+    BarEffArea: 160
+    BarSpeed: 165
+    ScoopMass: 11
+    DrillLife: 1800
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 38
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19973
+    Name: 스피드 드릴60Ev
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 110
+    BarSpeed: 135
+    ScoopMass: 10
+    DrillLife: 100
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19974
+    Name: Speed Drill 120 Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 110
+    BarSpeed: 145
+    ScoopMass: 13
+    DrillLife: 100
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19975
+    Name: 스피드 드릴180Ev
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 110
+    BarSpeed: 155
+    ScoopMass: 16
+    DrillLife: 100
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19976
+    Name: 크레이지드릴60Ev
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 125
+    ScoopMass: 8
+    DrillLife: 100
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 36
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19977
+    Name: 크레이지드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 9
+    DrillLife: 100
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 44
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19978
+    Name: 크레이지드릴180Ev
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 120
+    BarSpeed: 145
+    ScoopMass: 10
+    DrillLife: 100
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.02
+    CDM_Seconds: 52
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.04
+    Wedding_RatioBang: 0.24
+  - Id: 19979
+    Name: 탱크드릴60Ev
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 120
+    BarSpeed: 125
+    ScoopMass: 6
+    DrillLife: 200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19980
+    Name: 탱크드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 7
+    DrillLife: 200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19981
+    Name: 탱크드릴180Ev
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 120
+    BarSpeed: 145
+    ScoopMass: 8
+    DrillLife: 200
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19982
+    Name: 이지드릴60Ev
+    Grade: 8
+    DigDepth: 350
+    BarEffArea: 160
+    BarSpeed: 115
+    ScoopMass: 6
+    DrillLife: 100
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 18
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19983
+    Name: Easy Drill 120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 160
+    BarSpeed: 125
+    ScoopMass: 7
+    DrillLife: 100
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19984
+    Name: 이지드릴180Ev
+    Grade: 12
+    DigDepth: 500
+    BarEffArea: 160
+    BarSpeed: 135
+    ScoopMass: 8
+    DrillLife: 100
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 26
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 8017
+    Name: GM Drill
+    Grade: 18
+    DigDepth: 800
+    BarEffArea: 160
+    BarSpeed: 185
+    ScoopMass: 25
+    DrillLife: 9999
+    CDM_GaugeMax: 72
+    CDM_StressBonus: 10
+    CDM_Seconds: 3600
+    CDM_RatioBang: 1
+    Wedding_Stress: 10
+    Wedding_RatioBang: 1
+  - Id: 19998
+    Name: 스피드 드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 110
+    BarSpeed: 145
+    ScoopMass: 13
+    DrillLife: 400
+    DrillEffect: drill_cm_19943
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 19999
+    Name: 크레이지드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 9
+    DrillLife: 400
+    DrillEffect: drill_cm_19944
+    CDM_GaugeMax: 30
+    CDM_StressBonus: 0.2
+    CDM_Seconds: 44
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 442501
+    Name: 이지드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 160
+    BarSpeed: 125
+    ScoopMass: 7
+    DrillLife: 400
+    DrillEffect: drill_cm_19945
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+  - Id: 442500
+    Name: 탱크드릴120Ev
+    Grade: 10
+    DigDepth: 400
+    BarEffArea: 120
+    BarSpeed: 135
+    ScoopMass: 7
+    DrillLife: 500
+    DrillEffect: drill_cm_19946
+    CDM_GaugeMax: 50
+    CDM_StressBonus: 0.05
+    CDM_Seconds: 22
+    CDM_RatioBang: 0.12
+    Wedding_Stress: 0.1
+    Wedding_RatioBang: 0.24
+
+Footer:
+  Imports:
+#  - Path: db/import/drill_db.yml

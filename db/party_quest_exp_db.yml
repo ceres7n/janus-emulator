@@ -1,0 +1,116 @@
+# =============================================================================
+#   Party Quest Exp Database  (PARTY_QUEST_EXP_DB)
+# =============================================================================
+#   PartyQuestExpTable of the ORIGINAL server data: the EXP / TM EXP ratio of a party quest's reward by
+#   how many times the character has done it (Times; the loader keeps them in row order, sub_627410
+#   reads Times 1..49 by index and 50 for anything from 50 on).
+# =============================================================================
+
+Header:
+  Type: PARTY_QUEST_EXP_DB
+  Version: 1
+
+Body:
+  - Times: 1
+    Ratio: 1.800000
+  - Times: 2
+    Ratio: 1.200000
+  - Times: 3
+    Ratio: 1.200000
+  - Times: 4
+    Ratio: 1.200000
+  - Times: 5
+    Ratio: 1.700000
+  - Times: 6
+    Ratio: 1.200000
+  - Times: 7
+    Ratio: 1.200000
+  - Times: 8
+    Ratio: 1.200000
+  - Times: 9
+    Ratio: 1.200000
+  - Times: 10
+    Ratio: 1.600000
+  - Times: 11
+    Ratio: 1.100000
+  - Times: 12
+    Ratio: 1.100000
+  - Times: 13
+    Ratio: 1.100000
+  - Times: 14
+    Ratio: 1.100000
+  - Times: 15
+    Ratio: 1.500000
+  - Times: 16
+    Ratio: 1.100000
+  - Times: 17
+    Ratio: 1.100000
+  - Times: 18
+    Ratio: 1.100000
+  - Times: 19
+    Ratio: 1.100000
+  - Times: 20
+    Ratio: 1.400000
+  - Times: 21
+    Ratio: 1.000000
+  - Times: 22
+    Ratio: 1.000000
+  - Times: 23
+    Ratio: 1.000000
+  - Times: 24
+    Ratio: 1.000000
+  - Times: 25
+    Ratio: 2.000000
+  - Times: 26
+    Ratio: 0.500000
+  - Times: 27
+    Ratio: 0.500000
+  - Times: 28
+    Ratio: 0.500000
+  - Times: 29
+    Ratio: 0.500000
+  - Times: 30
+    Ratio: 3.000000
+  - Times: 31
+    Ratio: 0.300000
+  - Times: 32
+    Ratio: 0.300000
+  - Times: 33
+    Ratio: 0.300000
+  - Times: 34
+    Ratio: 0.300000
+  - Times: 35
+    Ratio: 0.300000
+  - Times: 36
+    Ratio: 0.300000
+  - Times: 37
+    Ratio: 0.300000
+  - Times: 38
+    Ratio: 0.300000
+  - Times: 39
+    Ratio: 0.300000
+  - Times: 40
+    Ratio: 0.200000
+  - Times: 41
+    Ratio: 0.200000
+  - Times: 42
+    Ratio: 0.200000
+  - Times: 43
+    Ratio: 0.200000
+  - Times: 44
+    Ratio: 0.200000
+  - Times: 45
+    Ratio: 0.200000
+  - Times: 46
+    Ratio: 0.200000
+  - Times: 47
+    Ratio: 0.200000
+  - Times: 48
+    Ratio: 0.200000
+  - Times: 49
+    Ratio: 0.200000
+  - Times: 50
+    Ratio: 0.100000
+
+Footer:
+  Imports: []

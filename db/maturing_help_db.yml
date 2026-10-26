@@ -1,0 +1,146 @@
+# =============================================================================
+#   Mature Compound Aid Items  (MATURING_HELP_DB)
+# =============================================================================
+#   Table Maturing_Compound_Help of the ORIGINAL server data (kto_libconfig.xml): the elixirs a
+#   mature compound may add (up to two, sub_630A70; two aids must not boost the same field).
+#
+#   Fields
+#     ItemId      - the aid item                                             [key]
+#     ApplyRatio  - added to the lucky-roll rate (0..1)
+#     MinAbility  - x the material's MinAbility, added to the floor value (at least +-1)
+#     MaxAbility  - x the material's MaxAbility, added to the lucky roll's top (at least +-1)
+# =============================================================================
+
+Header:
+  Type: MATURING_HELP_DB
+  Version: 1
+
+Body:
+  - ItemId: 19638
+    ApplyRatio: 0
+    MinAbility: 0.2
+    MaxAbility: 0
+  - ItemId: 19639
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.2
+  - ItemId: 19640
+    ApplyRatio: 0.2
+    MinAbility: 0
+    MaxAbility: 0
+  - ItemId: 19643
+    ApplyRatio: 0
+    MinAbility: 0.2
+    MaxAbility: 0
+  - ItemId: 19644
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.2
+  - ItemId: 19651
+    ApplyRatio: 0.4
+    MinAbility: 0
+    MaxAbility: 0.2
+  - ItemId: 19652
+    ApplyRatio: 0.4
+    MinAbility: 0.2
+    MaxAbility: 0
+  - ItemId: 19662
+    ApplyRatio: 0.3
+    MinAbility: 0
+    MaxAbility: 0
+  - ItemId: 19724
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.25
+  - ItemId: 19725
+    ApplyRatio: 0
+    MinAbility: 0.25
+    MaxAbility: 0
+  - ItemId: 63924
+    ApplyRatio: 0
+    MinAbility: 0.1
+    MaxAbility: 0
+  - ItemId: 19753
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.25
+  - ItemId: 19754
+    ApplyRatio: 0
+    MinAbility: 0.25
+    MaxAbility: 0
+  - ItemId: 19787
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.25
+  - ItemId: 19788
+    ApplyRatio: 0
+    MinAbility: 0.25
+    MaxAbility: 0
+  - ItemId: 19801
+    ApplyRatio: 0
+    MinAbility: 0.2
+    MaxAbility: 0
+  - ItemId: 19802
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.2
+  - ItemId: 19803
+    ApplyRatio: 0.4
+    MinAbility: 0.2
+    MaxAbility: 0
+  - ItemId: 19804
+    ApplyRatio: 0.4
+    MinAbility: 0
+    MaxAbility: 0.2
+  - ItemId: 19816
+    ApplyRatio: 0
+    MinAbility: 0
+    MaxAbility: 0.25
+  - ItemId: 19817
+    ApplyRatio: 0
+    MinAbility: 0.25
+    MaxAbility: 0
+  - ItemId: 60756
+    ApplyRatio: 1
+    MinAbility: 0.15
+    MaxAbility: 0.15
+  - ItemId: 60757
+    ApplyRatio: 1
+    MinAbility: 0.25
+    MaxAbility: 0.25
+  - ItemId: 60758
+    ApplyRatio: 1
+    MinAbility: 0.35
+    MaxAbility: 0.35
+  - ItemId: 60759
+    ApplyRatio: 1
+    MinAbility: 0.45
+    MaxAbility: 0.45
+  - ItemId: 60760
+    ApplyRatio: 1
+    MinAbility: 0.55
+    MaxAbility: 0.55
+  - ItemId: 60761
+    ApplyRatio: 1
+    MinAbility: 0.65
+    MaxAbility: 0.65
+  - ItemId: 60762
+    ApplyRatio: 1
+    MinAbility: 0.75
+    MaxAbility: 0.75
+  - ItemId: 60763
+    ApplyRatio: 1
+    MinAbility: 0.85
+    MaxAbility: 0.85
+  - ItemId: 60764
+    ApplyRatio: 1
+    MinAbility: 0.95
+    MaxAbility: 0.95
+  - ItemId: 60765
+    ApplyRatio: 1
+    MinAbility: 1
+    MaxAbility: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/maturing_help_db.yml

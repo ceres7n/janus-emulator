@@ -1,0 +1,443 @@
+# =============================================================================
+#   Party Quest Result Database  (PARTY_QUEST_RESULT_DB)
+# =============================================================================
+#   The PMonQuestResult_* tables of the ORIGINAL server data (80 tables), read by the same loader as
+#   the monster quests' (GameInfoMgr sub_627F60): one row per Grade, Type 1 = one of the items at random,
+#   ItemN / CntN for N = 0..3 (the loader reads four; Item4 is left out), Gelder, MsgN, RandomTableIDN.
+#   A party quest pays the row of grade 0 (hRewardPartyQuest::Send sub_7EB9E0).
+# =============================================================================
+
+Header:
+  Type: PARTY_QUEST_RESULT_DB
+  Version: 1
+
+Body:
+  - Table: PMonQuestResult_3000
+    Grade: 0
+    Type: 1
+    Item0: 104
+    Cnt0: 1
+    Item1: 103
+    Cnt1: 2
+    Msg0: '몬스터를 모두 사냥하면 파티원들과 함께 반드시 저에게 돌아오셔야 합니다. 그럼 성공을 기원하겠습니다.'
+  - Table: PMonQuestResult_3001
+    Grade: 0
+    Type: 1
+    Item0: 103
+    Cnt0: 2
+    Item1: 104
+    Cnt1: 1
+  - Table: PMonQuestResult_3005
+    Grade: 0
+    Item0: 104
+    Cnt0: 2
+  - Table: PMonQuestResult_3006
+    Grade: 0
+    Item0: 63132
+    Cnt0: 1
+  - Table: PMonQuestResult_3007
+    Grade: 0
+    Type: 1
+    Item0: 104
+    Cnt0: 4
+    Item1: 63133
+    Cnt1: 1
+  - Table: PMonQuestResult_3008
+    Grade: 0
+    Item0: 104
+    Cnt0: 6
+  - Table: PMonQuestResult_3009
+    Grade: 0
+    Item0: 63134
+    Cnt0: 1
+  - Table: PMonQuestResult_3010
+    Grade: 0
+    Type: 1
+    Item0: 104
+    Cnt0: 8
+    Item1: 63135
+    Cnt1: 1
+  - Table: PMonQuestResult_3011
+    Grade: 0
+    Item0: 104
+    Cnt0: 10
+  - Table: PMonQuestResult_3012
+    Grade: 0
+    Item0: 63136
+    Cnt0: 1
+  - Table: PMonQuestResult_3013
+    Grade: 0
+    Type: 1
+    Item0: 104
+    Cnt0: 13
+    Item1: 63137
+    Cnt1: 1
+  - Table: PMonQuestResult_3014
+    Grade: 0
+    Item0: 63138
+    Cnt0: 1
+  - Table: PMonQuestResult_3015
+    Grade: 0
+    Item0: 104
+    Cnt0: 15
+  - Table: PMonQuestResult_3016
+    Grade: 0
+    Item0: 63139
+    Cnt0: 1
+  - Table: PMonQuestResult_3017
+    Grade: 0
+    Item0: 104
+    Cnt0: 17
+  - Table: PMonQuestResult_3018
+    Grade: 0
+    Item0: 63140
+    Cnt0: 1
+  - Table: PMonQuestResult_3019
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 104
+    Cnt1: 1
+    Item2: 63141
+    Cnt2: 1
+  - Table: PMonQuestResult_3020
+    Grade: 0
+    Item0: 63142
+    Cnt0: 1
+  - Table: PMonQuestResult_3021
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 104
+    Cnt1: 6
+    Item2: 63145
+    Cnt2: 1
+  - Table: PMonQuestResult_3022
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 106
+    Cnt1: 2
+    Item2: 63149
+    Cnt2: 1
+  - Table: PMonQuestResult_3023
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 63138
+    Cnt1: 3
+    Item2: 63139
+    Cnt2: 3
+    Item3: 63137
+    Cnt3: 3
+  - Table: PMonQuestResult_3024
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 3
+    Item1: 63140
+    Cnt1: 3
+    Item2: 63141
+    Cnt2: 3
+    Item3: 63142
+    Cnt3: 3
+  - Table: PMonQuestResult_3025
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 3
+    Item1: 63143
+    Cnt1: 3
+    Item2: 63144
+    Cnt2: 3
+    Item3: 63145
+    Cnt3: 3
+  - Table: PMonQuestResult_3026
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 4
+    Item1: 63146
+    Cnt1: 3
+    Item2: 63147
+    Cnt2: 3
+    Item3: 63148
+    Cnt3: 3
+  - Table: PMonQuestResult_3027
+    Grade: 0
+    Type: 1
+    Item0: 63132
+    Cnt0: 3
+    Item1: 63133
+    Cnt1: 3
+  - Table: PMonQuestResult_3028
+    Grade: 0
+    Type: 1
+    Item0: 63134
+    Cnt0: 3
+    Item1: 63135
+    Cnt1: 3
+  - Table: PMonQuestResult_3029
+    Grade: 0
+    Type: 1
+    Item0: 63136
+    Cnt0: 3
+    Item1: 63137
+    Cnt1: 3
+  - Table: PMonQuestResult_3030
+    Grade: 0
+    Type: 1
+    Item0: 63138
+    Cnt0: 3
+    Item1: 63139
+    Cnt1: 3
+  - Table: PMonQuestResult_3031
+    Grade: 0
+    Type: 1
+    Item0: 63140
+    Cnt0: 3
+    Item1: 63142
+    Cnt1: 3
+  - Table: PMonQuestResult_3032
+    Grade: 0
+    Type: 1
+    Item0: 63145
+    Cnt0: 3
+    Item1: 63149
+    Cnt1: 3
+  - Table: PMonQuestResult_3033
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 4
+    Item1: 63152
+    Cnt1: 3
+    Item2: 63153
+    Cnt2: 3
+    Item3: 63154
+    Cnt3: 3
+  - Table: PMonQuestResult_3034
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 4
+    Item1: 63149
+    Cnt1: 3
+    Item2: 63150
+    Cnt2: 3
+    Item3: 63151
+    Cnt3: 3
+  - Table: PMonQuestResult_3035
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 106
+    Cnt1: 2
+    Item2: 63149
+    Cnt2: 1
+  - Table: PMonQuestResult_3036
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 106
+    Cnt1: 2
+    Item2: 63149
+    Cnt2: 1
+  - Table: PMonQuestResult_3037
+    Grade: 0
+    Type: 1
+    Item0: 106
+    Cnt0: 1
+    Item1: 106
+    Cnt1: 2
+    Item2: 63149
+    Cnt2: 1
+  - Table: PMonQuestResult_3500
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3501
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3502
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3503
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3504
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3505
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3506
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3507
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3508
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3511
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3512
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3513
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3514
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3515
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3516
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3517
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3518
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3519
+    Grade: 0
+    Item0: 103
+    Cnt0: 1
+  - Table: PMonQuestResult_3520
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3521
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3522
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3523
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3524
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3525
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3526
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3527
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3528
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3529
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3530
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3531
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3532
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3533
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3534
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3535
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3536
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3537
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3538
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3539
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3540
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3541
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3542
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3543
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3544
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3545
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+  - Table: PMonQuestResult_3546
+    Grade: 0
+    Item0: 104
+    Cnt0: 1
+
+Footer:
+  Imports: []

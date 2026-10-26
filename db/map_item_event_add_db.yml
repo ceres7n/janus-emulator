@@ -1,0 +1,30 @@
+# =============================================================================
+#   Map Item Event Add Database  (MAP_ITEM_EVENT_ADD_DB)
+# =============================================================================
+#
+#   Table MapItem_Event_Add of the ORIGINAL server data (4 rows, in its order).
+#
+#   Fields
+#     Type      - 0 SpecialT, 1 EquipT, 2 Normal1T..3T, 3 an open quest's item    [key]
+#     Rate_Add  - types 0..2: a map type's rate x (1 + Rate_Add) at load; type 3:
+#                 a quest item's rate in type 5 + rate * Rate_Add
+#   Retail: sub_629FF0 -> GameInfoMgr +328976 (sub_648800).
+# =============================================================================
+
+Header:
+  Type: MAP_ITEM_EVENT_ADD_DB
+  Version: 1
+
+Body:
+  - Type: 0
+    Rate_Add: 0
+  - Type: 1
+    Rate_Add: 0.5
+  - Type: 2
+    Rate_Add: 0
+  - Type: 3
+    Rate_Add: 3
+
+Footer:
+  Imports:
+#  - Path: db/import/map_item_event_add_db.yml

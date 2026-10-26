@@ -1,0 +1,312 @@
+# =============================================================================
+#   Random Port Database  (RANDOM_PORT_DB)
+# =============================================================================
+#
+#   Table RandomPortParam of the ORIGINAL server data (kto_libconfig.xml, 51 rows,
+#   in its order): where a broom / port item (Type 15, Effect 28) sends its user.
+#   Field names verbatim; Name = the item's name in item_db.yml (display only);
+#   zero slots are left out.
+#
+#   Fields
+#     ID           - the item                                         [key]
+#     Notice       - the text shown on use (S2C 758)
+#     ZoneID_n / Ratio_n (n = 0..19) - the destinations and their weights; only a
+#                    ZoneID 1..999 counts (the slots are packed in order)
+#   Retail use: UseItemHelper::Use case 28 picks rand() %% (the sum of the counted
+#   Ratios) against them in order (sub_6E0010), then the type-3 zone change to a
+#   random type-7 point of that zone.
+# =============================================================================
+
+Header:
+  Type: RANDOM_PORT_DB
+  Version: 1
+
+Body:
+  - ID: 11333
+    Name: Witch's broomstick
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 1
+    Ratio_0: 20
+    ZoneID_1: 54
+    Ratio_1: 20
+    ZoneID_2: 69
+    Ratio_2: 20
+    ZoneID_3: 67
+    Ratio_3: 10
+    ZoneID_4: 104
+    Ratio_4: 10
+    ZoneID_5: 33
+    Ratio_5: 20
+    ZoneID_6: 148
+    Ratio_6: 20
+    ZoneID_7: 43
+    Ratio_7: 20
+  - ID: 11504
+    Notice: The special powers of the mysterious map have been activated.
+    ZoneID_0: 1
+    Ratio_0: 20
+    ZoneID_1: 33
+    Ratio_1: 20
+    ZoneID_2: 43
+    Ratio_2: 20
+    ZoneID_3: 54
+    Ratio_3: 20
+    ZoneID_4: 69
+    Ratio_4: 20
+    ZoneID_5: 148
+    Ratio_5: 20
+    ZoneID_6: 67
+    Ratio_6: 20
+    ZoneID_7: 104
+    Ratio_7: 20
+    ZoneID_8: 159
+    Ratio_8: 20
+  - ID: 11635
+    Name: Cave Witch's Broom
+    Notice: Filigree, apogee, pedigree, perigee!
+    ZoneID_0: 191
+    Ratio_0: 20
+  - ID: 11636
+    Name: Coffin Witch's Broom
+    Notice: Filigree, apogee, pedigree, perigee!
+    ZoneID_0: 211
+    Ratio_0: 20
+  - ID: 11637
+    Name: Mermaid Witch's Broom
+    Notice: Filigree, apogee, pedigree, perigee!
+    ZoneID_0: 219
+    Ratio_0: 20
+  - ID: 63658
+    Name: La Befana's Broomstick A
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 589
+    Ratio_0: 20
+  - ID: 11886
+    Name: Gift Factory Pass
+    Notice: Welcome to our Gift Factory~
+    ZoneID_0: 84
+    Ratio_0: 20
+  - ID: 11887
+    Name: Tango Cabin Pass
+    Notice: Howdy~ Welcome to Tango Cabin!
+    ZoneID_0: 67
+    Ratio_0: 20
+  - ID: 11888
+    Name: Spicy Island Pass
+    Notice: Cough..Cough..welcome..
+    ZoneID_0: 104
+    Ratio_0: 20
+  - ID: 11797
+    Name: Hologram Port
+    Notice: Off to the Hologram Room!
+    ZoneID_0: 289
+    Ratio_0: 20
+  - ID: 11909
+    Name: 귀환날개(코라비치)
+    Notice: We have arrived.
+    ZoneID_0: 148
+    Ratio_0: 20
+  - ID: 11860
+    Name: Wing Port (Paradise)
+    Notice: You have arrived at Paradise.
+    ZoneID_0: 33
+    Ratio_0: 20
+  - ID: 11863
+    Name: Gold Wing Port
+    Notice: You have arrived at Mermaid Dungeon.
+    ZoneID_0: 267
+    Ratio_0: 20
+  - ID: 11861
+    Name: Wing Port (Caballa Relics)
+    Notice: You have arrived at Azteca.
+    ZoneID_0: 54
+    Ratio_0: 20
+  - ID: 11862
+    Name: Silver Wing Port
+    Notice: You have arrived at Oops Wharf.
+    ZoneID_0: 5
+    Ratio_0: 20
+  - ID: 63093
+    Name: Gray Wing Port
+    Notice: You have arrived at Aquarius.
+    ZoneID_0: 43
+    Ratio_0: 20
+  - ID: 63116
+    Name: Moon Wing
+    Notice: Here we are at the Entrance to Vamp Castle.
+    ZoneID_0: 168
+    Ratio_0: 20
+  - ID: 63117
+    Name: Green Wing Port
+    Notice: You can instantly teleport to Carbigal with this special wing. Hold on tight!
+    ZoneID_0: 69
+    Ratio_0: 20
+  - ID: 63118
+    Name: Snow Wing Port
+    Notice: You have arrived by wing in Snow Hill.
+    ZoneID_0: 589
+    Ratio_0: 20
+  - ID: 63119
+    Name: Wing of Return (Techichi Volcano)
+    Notice: You have arrived Neil Camp by wing
+    ZoneID_0: 637
+    Ratio_0: 20
+  - ID: 63120
+    Name: Wing Port (Tapasco)
+    Notice: 날개를 타고 타바스코 테마탕에 도착하였습니다.
+    ZoneID_0: 643
+    Ratio_0: 20
+  - ID: 63077
+    Name: Rosaline's Story Book (A)
+    Notice: Did you ever hear about Fairy?
+    ZoneID_0: 310
+    Ratio_0: 20
+  - ID: 63434
+    Name: Soul Summoning (Skill)
+    Notice: White smoke wraps around you.
+    ZoneID_0: 376
+    Ratio_0: 20
+  - ID: 63446
+    Name: Holographic Photo
+    Notice: A bright light surrounds you.
+    ZoneID_0: 378
+    Ratio_0: 20
+  - ID: 63726
+    Name: La Befana's Broomstick B
+    Notice: Witch's Broomstick, Go!
+    ZoneID_0: 170
+    Ratio_0: 20
+  - ID: 63739
+    Name: Wing of Return (Abyss)
+    Notice: We are now in Platonia.
+    ZoneID_0: 430
+    Ratio_0: 20
+  - ID: 63879
+    Name: Hologram Port
+    Notice: Now transfering you to Hologram Room~
+    ZoneID_0: 496
+    Ratio_0: 20
+  - ID: 64109
+    Name: Hologram Port
+    Notice: A hidden world of Hologram is opening from the frame.
+    ZoneID_0: 510
+    Ratio_0: 20
+  - ID: 64110
+    Name: Approved Memory Kit 1
+    Notice: Recovers Memory
+    ZoneID_0: 505
+    Ratio_0: 20
+  - ID: 64111
+    Name: Approved Memory Kit 2
+    Notice: Recovers Memory
+    ZoneID_0: 506
+    Ratio_0: 20
+  - ID: 64112
+    Name: Approved Memory Kit 3
+    Notice: Recovers Memory
+    ZoneID_0: 504
+    Ratio_0: 20
+  - ID: 64113
+    Name: Approved Memory Kit 4
+    Notice: Recovers Memory
+    ZoneID_0: 512
+    Ratio_0: 20
+  - ID: 64152
+    Name: Arbiter of Courage Port
+    Notice: Poppuri Dungeon - Teleport to the Courage Trial
+    ZoneID_0: 529
+    Ratio_0: 1
+  - ID: 64153
+    Name: Arbiter of Wisdom Port
+    Notice: Poppuri Dungeon - Teleport to the Wisdom Trial
+    ZoneID_0: 530
+    Ratio_0: 1
+  - ID: 64154
+    Name: Arbiter of Dream Port
+    Notice: Poppuri Dungeon - Teleport to the Dream Trial
+    ZoneID_0: 531
+    Ratio_0: 1
+  - ID: 64155
+    Name: Arbiter of Love Port
+    Notice: Poppuri Dungeon - Teleport to the Love Trial
+    ZoneID_0: 532
+    Ratio_0: 1
+  - ID: 64187
+    Name: Dimensional Key
+    Notice: Open up the dimension and enter into Eclipse's Dimension.
+    ZoneID_0: 535
+    Ratio_0: 1
+  - ID: 64188
+    Name: Dimensional Key
+    Notice: Open up the dimension and enter into Eclipse's Dimension.
+    ZoneID_0: 536
+    Ratio_0: 1
+  - ID: 64361
+    Name: Wing of Return (Pop Dungeon)
+    Notice: You have arrived at Poppuri Dungeon!
+    ZoneID_0: 159
+    Ratio_0: 20
+  - ID: 65593
+    Name: Chrismas move Key
+    Notice: Go~ X-Mas Square
+    ZoneID_0: 319
+    Ratio_0: 1
+  - ID: 64629
+    Name: Teleporting Device (Alteo)
+    Notice: You have reached the Gate of Alteo Empire.
+    ZoneID_0: 605
+    Ratio_0: 20
+  - ID: 64492
+    Name: Wing of Return (Tower of Chaos 1st Floor)
+    Notice: You have reached the first floor of the Tower of Chaos by riding on wings.
+    ZoneID_0: 324
+    Ratio_0: 20
+  - ID: 64674
+    Name: Second Job Change Room Teleporting Scroll
+    Notice: Teleport to Second Job Change Room~
+    ZoneID_0: 636
+    Ratio_0: 20
+  - ID: 64758
+    Name: Desert Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 192
+    Ratio_0: 20
+  - ID: 64759
+    Name: Underground Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 61
+    Ratio_0: 20
+  - ID: 64760
+    Name: Sea Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 214
+    Ratio_0: 20
+  - ID: 64761
+    Name: Swamp Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 200
+    Ratio_0: 20
+  - ID: 64762
+    Name: Ice Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 210
+    Ratio_0: 20
+  - ID: 64763
+    Name: Artist Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 217
+    Ratio_0: 20
+  - ID: 64764
+    Name: Volcano Witch's Broom
+    Notice: Let's go witch's broom~!!
+    ZoneID_0: 201
+    Ratio_0: 20
+  - ID: 64864
+    Name: Port of space travel star
+    Notice: 별의 공간으로 이동합니다. 위험에 대해서는 책임지지 않습니다.
+    ZoneID_0: 691
+    Ratio_0: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/random_port_db.yml

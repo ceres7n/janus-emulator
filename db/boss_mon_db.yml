@@ -1,0 +1,1349 @@
+# =============================================================================
+#   Boss Monster Database  (BOSS_MON_DB)
+# =============================================================================
+#
+#   The BossMon_* tables of the ORIGINAL server data (kto_libconfig.xml, 239 tables,
+#   333 rows; 21 tables empty), referenced by maps_db.yml BossMonsterTable. One record
+#   per row, in the table's order; field names kept exactly as in the tables; a field
+#   is written only when it has a value.
+#
+#   Fields
+#     Table            - table name                                  [key]
+#     BossMonID        - the boss (mob_db.yml Id)                    [key in the table]
+#     BossMonCnt       - how many of it the map keeps
+#     BossMonCheckTime - minutes between two spawns
+#     BossMonRegionID  - the region (0 = the map's type-3 .md3 points)
+#
+#   (MapInfoEx BossMonsterCnt / BossMonCheckTime are not read by the server.)
+#   Retail MonsterManager (GameServer sub_857F10 / sub_859AA0 / sub_85A3F0 / sub_85A480):
+#   every 60 s each entry counts a minute; at BossMonCheckTime minutes, the missing
+#   ones (BossMonCnt - alive) are spawned in the region when the last one died more
+#   than 20 s ago, and the count restarts. A dying boss (Type 3 / 13) counts out of its
+#   entry and stamps the time (sub_858B70).
+# =============================================================================
+
+Header:
+  Type: BOSS_MON_DB
+  Version: 1
+
+Body:
+  - Table: BossMon_Beach_Dungeon10
+    BossMonID: 2097
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Volcano_Play5
+    BossMonID: 3030
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Relics_Dungeon5
+    BossMonID: 2072
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+    BossMonRegionID: 1
+  - Table: BossMon_Snow_Dungeon5
+    BossMonID: 2123
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Rose_Dungeon6
+    BossMonID: 2138
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Swamp_Dungeon7
+    BossMonID: 2152
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Wharf_Play5
+    BossMonID: 2213
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Coral_Play7
+    BossMonID: 2215
+    BossMonCnt: 6
+    BossMonCheckTime: 10
+  - Table: BossMon_Path_Wharf_Play5
+    BossMonID: 2216
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Seabed_Dungeon5
+    BossMonID: 2295
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Seabed_Dungeon10
+    BossMonID: 2413
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Dungeon26
+    BossMonID: 2214
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Seabed_Play6
+    BossMonID: 2223
+    BossMonCnt: 30
+    BossMonCheckTime: 1
+  - Table: BossMon_Relics_Play5
+    BossMonID: 2224
+    BossMonCnt: 30
+    BossMonCheckTime: 1
+  - Table: BossMon_Rose_Play5
+    BossMonID: 2225
+    BossMonCnt: 25
+    BossMonCheckTime: 1
+  - Table: BossMon_Snow_Play5
+    BossMonID: 2227
+    BossMonCnt: 25
+    BossMonCheckTime: 1
+  - Table: BossMon_Relics_Dungeon4
+    BossMonID: 2280
+    BossMonCnt: 2
+    BossMonCheckTime: 1
+  - Table: BossMon_Seabed_Mine4
+    BossMonID: 2291
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Relics_Mine4
+    BossMonID: 2292
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Relics_Mine4
+    BossMonID: 2308
+    BossMonCnt: 3
+    BossMonCheckTime: 1
+  - Table: BossMon_Swamp_Mine4
+    BossMonID: 2293
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Snow_Mine4
+    BossMonID: 2294
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Beach_Play8
+    BossMonID: 2330
+    BossMonCnt: 30
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Play7
+    BossMonID: 2331
+    BossMonCnt: 30
+    BossMonCheckTime: 1
+  - Table: BossMon_Chaos1_Dungeon1
+    BossMonID: 2353
+    BossMonCnt: 12
+    BossMonCheckTime: 7
+  - Table: BossMon_Chaos1_Dungeon2
+    BossMonID: 2354
+    BossMonCnt: 12
+    BossMonCheckTime: 7
+  - Table: BossMon_Chaos1_Dungeon4
+    BossMonID: 2355
+    BossMonCnt: 7
+    BossMonCheckTime: 12
+  - Table: BossMon_Chaos1_Dungeon5
+    BossMonID: 2786
+    BossMonCnt: 1
+  - Table: BossMon_Chaos1_Dungeon6
+    BossMonID: 2357
+    BossMonCnt: 7
+    BossMonCheckTime: 12
+  - Table: BossMon_Chaos1_Dungeon8
+    BossMonID: 2358
+    BossMonCnt: 7
+    BossMonCheckTime: 15
+  - Table: BossMon_Chaos1_Dungeon9
+    BossMonID: 2359
+    BossMonCnt: 7
+    BossMonCheckTime: 15
+  - Table: BossMon_Chaos1_Dungeon10
+    BossMonID: 2360
+    BossMonCnt: 7
+    BossMonCheckTime: 15
+  - Table: BossMon_Chaos1_Dungeon11
+    BossMonID: 2361
+    BossMonCnt: 7
+    BossMonCheckTime: 20
+  - Table: BossMon_Volcano_Mine4
+    BossMonID: 2364
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Mirage_Play6
+    BossMonID: 2391
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 1
+  - Table: BossMon_Chaos2_Dungeon1
+    BossMonID: 2440
+    BossMonCnt: 10
+    BossMonCheckTime: 2
+  - Table: BossMon_Chaos2_Dungeon2
+    BossMonID: 2441
+    BossMonCnt: 10
+    BossMonCheckTime: 3
+  - Table: BossMon_Chaos2_Dungeon4
+    BossMonID: 2442
+    BossMonCnt: 7
+    BossMonCheckTime: 5
+  - Table: BossMon_Chaos2_Dungeon5
+    BossMonID: 2443
+    BossMonCnt: 7
+    BossMonCheckTime: 5
+  - Table: BossMon_Chaos2_Dungeon6
+    BossMonID: 2444
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos2_Dungeon8
+    BossMonID: 2445
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos2_Dungeon9
+    BossMonID: 2446
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos2_Dungeon10
+    BossMonID: 2447
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos2_Dungeon11
+    BossMonID: 2448
+    BossMonCnt: 7
+    BossMonCheckTime: 10
+  - Table: BossMon_Chaos2_Dungeon13
+    BossMonID: 2450
+    BossMonCnt: 1
+    BossMonCheckTime: 25
+  - Table: BossMon_Chaos3_Dungeon1
+    BossMonID: 2481
+    BossMonCnt: 10
+    BossMonCheckTime: 2
+  - Table: BossMon_Chaos3_Dungeon2
+    BossMonID: 2482
+    BossMonCnt: 10
+    BossMonCheckTime: 3
+  - Table: BossMon_Chaos3_Dungeon4
+    BossMonID: 2483
+    BossMonCnt: 7
+    BossMonCheckTime: 5
+  - Table: BossMon_Chaos3_Dungeon5
+    BossMonID: 2484
+    BossMonCnt: 7
+    BossMonCheckTime: 5
+  - Table: BossMon_Chaos3_Dungeon6
+    BossMonID: 2485
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos3_Dungeon8
+    BossMonID: 2486
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos3_Dungeon9
+    BossMonID: 2487
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos3_Dungeon10
+    BossMonID: 2488
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos3_Dungeon11
+    BossMonID: 2889
+    BossMonCnt: 10
+  - Table: BossMon_Chaos3_Dungeon13
+    BossMonID: 2889
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon1
+    BossMonID: 2890
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon2
+    BossMonID: 2514
+    BossMonCnt: 10
+    BossMonCheckTime: 3
+  - Table: BossMon_Chaos4_Dungeon4
+    BossMonID: 2899
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon5
+    BossMonID: 2899
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon6
+    BossMonID: 2900
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon8
+    BossMonID: 2518
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos4_Dungeon9
+    BossMonID: 2911
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon10
+    BossMonID: 2911
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon11
+    BossMonID: 2911
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon13
+    BossMonID: 2912
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon1
+    BossMonID: 2925
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon2
+    BossMonID: 2925
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon4
+    BossMonID: 2931
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon5
+    BossMonID: 2931
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon6
+    BossMonID: 2553
+    BossMonCnt: 7
+    BossMonCheckTime: 8
+  - Table: BossMon_Chaos5_Dungeon8
+    BossMonID: 2939
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon9
+    BossMonID: 2939
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon10
+    BossMonID: 2940
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon11
+    BossMonID: 2949
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon13
+    BossMonID: 2949
+    BossMonCnt: 10
+  - Table: BossMon_Beach_Play
+    BossMonID: 2559
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Relics_Play
+    BossMonID: 2560
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Marine_Play
+    BossMonID: 2561
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Rose_Play
+    BossMonID: 2562
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Snow_Play
+    BossMonID: 2563
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Volcano_Play
+    BossMonID: 2564
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2986
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2987
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2988
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2989
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2990
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2991
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2992
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2993
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2994
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2995
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2996
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2997
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 2998
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 2999
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 3002
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 3003
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_test
+    BossMonID: 3006
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_test
+    BossMonID: 3007
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_testzone
+    BossMonID: 2097
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Snow_Dungeon9
+    BossMonID: 2603
+    BossMonCnt: 4
+    BossMonCheckTime: 1
+  - Table: BossMon_Snow_Dungeon9
+    BossMonID: 2604
+    BossMonCnt: 4
+    BossMonCheckTime: 1
+  - Table: BossMon_Coral_Dungeon2
+    BossMonID: 2624
+    BossMonCnt: 2
+    BossMonCheckTime: 1
+  - Table: BossMon_Office_Dungeon10
+    BossMonID: 2633
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Event_Park_Halloween
+    BossMonID: 2660
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Shadow2
+    BossMonID: 16029
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_Path_Wharf_Dungeon5
+    BossMonID: 2674
+    BossMonCnt: 2
+    BossMonCheckTime: 20
+  - Table: BossMon_Harcon1th
+    BossMonID: 2750
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Harcon2th
+    BossMonID: 2751
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Harcon3th
+    BossMonID: 2752
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_EP6_Harcon
+    BossMonID: 16735
+    BossMonCnt: 1
+  - Table: BossMon_EP6_Harcon
+    BossMonID: 2985
+    BossMonCnt: 1
+    BossMonRegionID: 1
+  - Table: BossMon_Alteo_Dungeon5
+    BossMonID: 2974
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Alteo_Dungeon6
+    BossMonID: 2961
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Alteo_Dungeon7
+    BossMonID: 2962
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Alteo_Dungeon9
+    BossMonID: 16734
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Alteo_Dungeon11
+    BossMonID: 2964
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Chaos3_Dungeon12
+    BossMonID: 2889
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon_Gate
+    BossMonID: 2890
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon3
+    BossMonID: 2899
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon7
+    BossMonID: 2900
+    BossMonCnt: 10
+  - Table: BossMon_Chaos4_Dungeon12
+    BossMonID: 2912
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon3
+    BossMonID: 2923
+    BossMonCnt: 25
+  - Table: BossMon_Chaos5_Dungeon3
+    BossMonID: 2924
+    BossMonCnt: 25
+  - Table: BossMon_Chaos5_Dungeon3
+    BossMonID: 2927
+    BossMonCnt: 20
+  - Table: BossMon_Chaos5_Dungeon3
+    BossMonID: 2926
+    BossMonCnt: 10
+  - Table: BossMon_Chaos5_Dungeon7
+    BossMonID: 2932
+    BossMonCnt: 10
+  - Table: BossMon_Chaos6_Dungeon1
+    BossMonID: 2950
+    BossMonCnt: 10
+  - Table: BossMon_Chaos6_Dungeon2
+    BossMonID: 2953
+    BossMonCnt: 10
+  - Table: BossMon_Chaos6_Dungeon3
+    BossMonID: 2953
+    BossMonCnt: 10
+  - Table: BossMon_Chaos6_Dungeon4
+    BossMonID: 2954
+    BossMonCnt: 10
+  - Table: BossMon_Chaos6_Dungeon5
+    BossMonID: 2780
+    BossMonCnt: 1
+    BossMonCheckTime: 30
+  - Table: BossMon_Chaos6_Dungeon6
+    BossMonID: 2781
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Chaos6_Dungeon7
+    BossMonID: 2782
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Chaos6_Dungeon8
+    BossMonID: 2783
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Chaos6_Dungeon9
+    BossMonID: 2784
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Chaos6_Dungeon10
+    BossMonID: 2785
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Path_Wharf_Mine4
+    BossMonID: 3021
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Volcano_Dungeon17
+    BossMonID: 3035
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Chaos7_Dungeon6
+    BossMonID: 3217
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+    BossMonRegionID: 1
+  - Table: BossMon_Wharf_Dungeon5
+    BossMonID: 2142
+    BossMonCnt: 8
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Dungeon11
+    BossMonID: 2163
+    BossMonCnt: 8
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Dungeon17
+    BossMonID: 2169
+    BossMonCnt: 8
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Dungeon21
+    BossMonID: 2172
+    BossMonCnt: 4
+    BossMonCheckTime: 1
+  - Table: BossMon_Wharf_Dungeon21
+    BossMonID: 2173
+    BossMonCnt: 4
+    BossMonCheckTime: 1
+  - Table: BossMon_Office2_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 1
+  - Table: BossMon_Office2_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 2
+  - Table: BossMon_Office2_Dungeon2
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 2
+  - Table: BossMon_Office2_Dungeon2
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+    BossMonRegionID: 2
+  - Table: BossMon_Office2_Dungeon3
+    BossMonID: 3234
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 1
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 2
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 3
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 4
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 5
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 6
+  - Table: BossMon_Tartaros1_Dungeon1
+    BossMonID: 3305
+    BossMonCnt: 10
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon2
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon2
+    BossMonID: 3237
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon3
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon3
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon4
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon4
+    BossMonID: 3237
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon5
+    BossMonID: 3238
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon5
+    BossMonID: 3237
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon6
+    BossMonID: 3238
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon6
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon7
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon7
+    BossMonID: 3237
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon8
+    BossMonID: 3236
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon8
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon8
+    BossMonID: 3240
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon9
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon9
+    BossMonID: 3237
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon10
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon10
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon11
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon11
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon11
+    BossMonID: 3241
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon12
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon12
+    BossMonID: 3237
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon13
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon13
+    BossMonID: 3237
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon14
+    BossMonID: 3236
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon14
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon14
+    BossMonID: 3240
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon15
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon15
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon15
+    BossMonID: 3241
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon16
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon16
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon17
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon17
+    BossMonID: 3237
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon17
+    BossMonID: 3240
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon18
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon18
+    BossMonID: 3237
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon19
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon19
+    BossMonID: 3237
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon20
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon20
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon21
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon21
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon21
+    BossMonID: 3241
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon22
+    BossMonID: 3238
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon22
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon23
+    BossMonID: 3238
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon23
+    BossMonID: 3237
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon24
+    BossMonID: 3236
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon24
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon24
+    BossMonID: 3240
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon25
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon25
+    BossMonID: 3237
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon25
+    BossMonID: 3241
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon26
+    BossMonID: 3238
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon26
+    BossMonID: 3237
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon27
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon27
+    BossMonID: 3239
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon27
+    BossMonID: 3242
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 1
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3305
+    BossMonCnt: 10
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 2
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 3
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 4
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 5
+  - Table: BossMon_Tartaros1_Dungeon28
+    BossMonID: 3231
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+    BossMonRegionID: 6
+  - Table: BossMon_Tartaros1_Dungeon29
+    BossMonID: 3236
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon29
+    BossMonID: 3238
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon30
+    BossMonID: 3236
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon30
+    BossMonID: 3238
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon31
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon31
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon32
+    BossMonID: 3236
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon32
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon33
+    BossMonID: 3236
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon33
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon34
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon34
+    BossMonID: 3239
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon34
+    BossMonID: 3241
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon35
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon35
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon36
+    BossMonID: 3236
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon36
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon37
+    BossMonID: 3236
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon37
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon38
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon38
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon39
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon39
+    BossMonID: 3239
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon39
+    BossMonID: 3240
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon40
+    BossMonID: 3236
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon40
+    BossMonID: 3238
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon41
+    BossMonID: 3236
+    BossMonCnt: 8
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon41
+    BossMonID: 3238
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon42
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon42
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon43
+    BossMonID: 3236
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon43
+    BossMonID: 3238
+    BossMonCnt: 9
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon44
+    BossMonID: 3236
+    BossMonCnt: 9
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon44
+    BossMonID: 3238
+    BossMonCnt: 1
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon45
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon45
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon46
+    BossMonID: 3236
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon46
+    BossMonID: 3238
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon47
+    BossMonID: 3236
+    BossMonCnt: 7
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon47
+    BossMonID: 3238
+    BossMonCnt: 3
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon48
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon48
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon49
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon49
+    BossMonID: 3238
+    BossMonCnt: 6
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon50
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon50
+    BossMonID: 3239
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon50
+    BossMonID: 3242
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon51
+    BossMonID: 3236
+    BossMonCnt: 6
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon51
+    BossMonID: 3238
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon52
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon52
+    BossMonID: 3239
+    BossMonCnt: 2
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon52
+    BossMonID: 3243
+    BossMonCnt: 1
+    BossMonCheckTime: 4
+  - Table: BossMon_Tartaros1_Dungeon53
+    BossMonID: 3236
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon53
+    BossMonID: 3238
+    BossMonCnt: 5
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon54
+    BossMonID: 3236
+    BossMonCnt: 4
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon54
+    BossMonID: 3238
+    BossMonCnt: 6
+    BossMonCheckTime: 2
+  - Table: BossMon_Tartaros1_Dungeon55
+    BossMonID: 3244
+    BossMonCnt: 1
+    BossMonCheckTime: 10
+  - Table: BossMon_Tartaros2_Dungeon2
+    BossMonID: 3316
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon2
+    BossMonID: 3330
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon3
+    BossMonID: 3316
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon3
+    BossMonID: 3329
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon4
+    BossMonID: 3325
+    BossMonCnt: 1
+    BossMonCheckTime: 60
+  - Table: BossMon_Tartaros2_Dungeon5
+    BossMonID: 3316
+    BossMonCnt: 7
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon5
+    BossMonID: 3311
+    BossMonCnt: 5
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon6
+    BossMonID: 3325
+    BossMonCnt: 1
+    BossMonCheckTime: 50
+  - Table: BossMon_Tartaros2_Dungeon7
+    BossMonID: 3316
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon7
+    BossMonID: 3330
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon8
+    BossMonID: 3316
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon8
+    BossMonID: 3329
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon9
+    BossMonID: 3325
+    BossMonCnt: 1
+    BossMonCheckTime: 40
+  - Table: BossMon_Tartaros2_Dungeon10
+    BossMonID: 3317
+    BossMonCnt: 7
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon10
+    BossMonID: 3312
+    BossMonCnt: 5
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon11
+    BossMonID: 3325
+    BossMonCnt: 2
+    BossMonCheckTime: 30
+  - Table: BossMon_Tartaros2_Dungeon12
+    BossMonID: 3317
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon12
+    BossMonID: 3311
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon13
+    BossMonID: 3317
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon13
+    BossMonID: 3312
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon14
+    BossMonID: 3325
+    BossMonCnt: 2
+    BossMonCheckTime: 20
+  - Table: BossMon_Tartaros2_Dungeon15
+    BossMonID: 3317
+    BossMonCnt: 7
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon15
+    BossMonID: 3313
+    BossMonCnt: 5
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon16
+    BossMonID: 3325
+    BossMonCnt: 2
+    BossMonCheckTime: 10
+  - Table: BossMon_Tartaros2_Dungeon17
+    BossMonID: 3318
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon17
+    BossMonID: 3314
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon18
+    BossMonID: 3318
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon18
+    BossMonID: 3313
+    BossMonCnt: 6
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon19
+    BossMonID: 3318
+    BossMonCnt: 5
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon19
+    BossMonID: 3314
+    BossMonCnt: 7
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon20
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon21
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon22
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon23
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon24
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon25
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon26
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon27
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon28
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon29
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon30
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon31
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon32
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon33
+    BossMonID: 3319
+    BossMonCnt: 10
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon35
+    BossMonID: 3320
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon37
+    BossMonID: 3321
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon38
+    BossMonID: 3322
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon40
+    BossMonID: 3323
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon42
+    BossMonID: 3324
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon43
+    BossMonID: 3309
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+  - Table: BossMon_Tartaros2_Dungeon44
+    BossMonID: 3310
+    BossMonCnt: 1
+    BossMonCheckTime: 1
+
+Footer:
+  Imports:
+#  - Path: db/import/boss_mon_db.yml

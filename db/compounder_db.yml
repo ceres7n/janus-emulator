@@ -1,0 +1,915 @@
+# =============================================================================
+#   Compounder Database  (COMPOUNDER_DB)
+# =============================================================================
+#   Table Compounder_Info of the ORIGINAL server data and the lists it names (GameInfoMgr sub_62B0E0 /
+#   sub_62B210: at most 64 lists, in order) — an NPC's CompounderTable (npc_db.yml) is the first list
+#   of that name; Compound_Start sends its visible CompoundIDs (S2C 188) with its Grade.
+#
+#   Fields
+#     ListName     - the list (one record per row of it, in its order)     [key]
+#     Grade        - the list's grade (sent with it); on every row of the list
+#     CompoundID   - a compound (compound_db.yml)
+#     Probability  - (not read by the compound itself)
+#     Hidden       - 1: not listed to the client
+# =============================================================================
+
+Header:
+  Type: COMPOUNDER_DB
+  Version: 1
+
+Body:
+  - ListName: Compounder_Shop_Square
+    CompoundID: 104
+  - ListName: Compounder_Shop_Square
+    CompoundID: 105
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1000
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1003
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1006
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1009
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1012
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1015
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1018
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1021
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1024
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1027
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1030
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 1033
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 500
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 2002
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 3002
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 4002
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 503
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 504
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 505
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 506
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 507
+  - ListName: Compounder_Shop_Seabed
+    CompoundID: 508
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1001
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1004
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1007
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1010
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1013
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1016
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1019
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1022
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1025
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1028
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1031
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 1034
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 500
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 506
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 507
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 508
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 509
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 510
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 511
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 512
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 513
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 514
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 171
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 172
+  - ListName: Compounder_Shop_Relics
+    Grade: 1
+    CompoundID: 173
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1002
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1005
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1008
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1011
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1014
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1017
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1020
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1023
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1026
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1029
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1032
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 1035
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 512
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 513
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 514
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 515
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 516
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 517
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 174
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 175
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 176
+  - ListName: Compounder_Shop_Swamp
+    Grade: 1
+    CompoundID: 177
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 3000
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 2001
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 2000
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 3001
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 4000
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 4001
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 1036
+  - ListName: Compounder_Shop_Tango
+    Grade: 1
+    CompoundID: 518
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1037
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1038
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1039
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1040
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1041
+  - ListName: Compounder_Shop_Event
+    Grade: 1
+    CompoundID: 1042
+  - ListName: Compounder_Shop_Event2
+    CompoundID: 294
+  - ListName: Compounder_Shop_Event2
+    CompoundID: 295
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 117
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 118
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 120
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 121
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 123
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 124
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 144
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 145
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 147
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 148
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 141
+  - ListName: Compounder_Shop_3rd
+    CompoundID: 142
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 126
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 127
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 129
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 130
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 132
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 133
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 150
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 151
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 153
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 154
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 156
+  - ListName: Compounder_Shop_3rd_2
+    CompoundID: 157
+  - ListName: Compounder_Shop_3rd_3
+    CompoundID: 135
+  - ListName: Compounder_Shop_3rd_3
+    CompoundID: 136
+  - ListName: Compounder_Shop_3rd_3
+    CompoundID: 159
+  - ListName: Compounder_Shop_3rd_3
+    CompoundID: 160
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 138
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 139
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 162
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 163
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 281
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 282
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 283
+  - ListName: Compounder_Shop_3rd_4
+    CompoundID: 284
+  - ListName: R_Compounder_Coral
+    Grade: 1
+    CompoundID: 181
+  - ListName: R_Compounder_Desert
+    Grade: 1
+    CompoundID: 106
+  - ListName: R_Compounder_Desert
+    Grade: 1
+    CompoundID: 108
+  - ListName: R_Compounder_Desert
+    Grade: 1
+    CompoundID: 191
+  - ListName: R_Compounder_Desert
+    Grade: 1
+    CompoundID: 500
+  - ListName: R_Compounder_Seabed
+    Grade: 1
+    CompoundID: 100
+  - ListName: R_Compounder_Seabed
+    Grade: 1
+    CompoundID: 103
+  - ListName: R_Compounder_Square
+    Grade: 1
+    CompoundID: 170
+  - ListName: R_Compounder_Square
+    Grade: 1
+    CompoundID: 182
+  - ListName: R_Compounder_Square
+    Grade: 1
+    CompoundID: 183
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 503
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 504
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 505
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 506
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 507
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 508
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 509
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 510
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 511
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 512
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 513
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 514
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 515
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 516
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 517
+  - ListName: R_Compounder_Nadia
+    Grade: 1
+    CompoundID: 518
+  - ListName: R_Compounder_Relic
+    Grade: 1
+    CompoundID: 192
+  - ListName: R_Compounder_Relic
+    Grade: 1
+    CompoundID: 104
+  - ListName: R_Compounder_Relic
+    Grade: 1
+    CompoundID: 105
+  - ListName: R_Compounder_Relic
+    Grade: 1
+    CompoundID: 196
+  - ListName: R_Compounder_Relic
+    Grade: 1
+    CompoundID: 280
+  - ListName: R_Compounder_Wharf
+    Grade: 1
+    CompoundID: 197
+  - ListName: R_Compounder_Basic
+    CompoundID: 104
+  - ListName: R_Compounder_Basic
+    CompoundID: 105
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 208
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 209
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 217
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 218
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 285
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 286
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 287
+  - ListName: Compounder_Shop_3rd_5
+    CompoundID: 288
+  - ListName: Compounder_Ep3_Basic
+    CompoundID: 220
+  - ListName: R_Compounder_Snow
+    CompoundID: 225
+  - ListName: R_Compounder_Snow
+    CompoundID: 104
+  - ListName: R_Compounder_Snow
+    CompoundID: 105
+  - ListName: R_Compounder_Popuri
+    CompoundID: 221
+  - ListName: R_Compounder_Popuri
+    CompoundID: 222
+  - ListName: R_Compounder_Popuri
+    CompoundID: 223
+  - ListName: R_Compounder_Popuri
+    CompoundID: 224
+  - ListName: R_Compounder_Popuri
+    CompoundID: 279
+  - ListName: R_Compounder_Popuri
+    CompoundID: 2076
+  - ListName: Compounder_Event2
+    CompoundID: 261
+  - ListName: Compounder_Event2
+    CompoundID: 262
+  - ListName: Compounder_Event2
+    CompoundID: 263
+  - ListName: Compounder_Event2
+    CompoundID: 264
+  - ListName: Compounder_Event2
+    CompoundID: 265
+  - ListName: R_Compounder_Path_Wharf
+    CompoundID: 230
+  - ListName: R_Compounder_Path_Wharf
+    CompoundID: 104
+  - ListName: R_Compounder_Path_Wharf
+    CompoundID: 105
+  - ListName: Compounder_Ep4
+    CompoundID: 231
+  - ListName: Compounder_Ep4
+    CompoundID: 232
+  - ListName: Compounder_Ep4
+    CompoundID: 233
+  - ListName: Compounder_Ep4
+    CompoundID: 234
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 2062
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 2021
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 2035
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 3006
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 4008
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 4022
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 2049
+  - ListName: Compounder_Beach_Spot
+    Grade: 1
+    CompoundID: 2007
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 2008
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 2022
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 2036
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 3007
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 4009
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 4023
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 2050
+  - ListName: Compounder_SPS_Spot
+    Grade: 1
+    CompoundID: 2063
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 2009
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 2023
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 2037
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 3008
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 4010
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 4024
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 2051
+  - ListName: Compounder_Relics_Spot
+    Grade: 1
+    CompoundID: 2064
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 2010
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 2024
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 2038
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 3009
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 4011
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 4025
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 2052
+  - ListName: Compounder_Wharf_Spot
+    Grade: 1
+    CompoundID: 2065
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 2011
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 2025
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 2039
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 3010
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 4012
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 4026
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 2053
+  - ListName: Compounder_Marine_Spot
+    Grade: 1
+    CompoundID: 2066
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 2012
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 2026
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 2040
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 3011
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 4013
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 4027
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 2054
+  - ListName: Compounder_Mirage_Spot
+    Grade: 1
+    CompoundID: 2067
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 2013
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 2027
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 2041
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 3012
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 4014
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 4028
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 2055
+  - ListName: Compounder_Seabed_Spot
+    Grade: 1
+    CompoundID: 2068
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 2014
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 2028
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 2042
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 3013
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 4015
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 4029
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 2056
+  - ListName: Compounder_Rose_Spot
+    Grade: 1
+    CompoundID: 2069
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 2015
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 2029
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 2043
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 3014
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 4016
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 4030
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 2057
+  - ListName: Compounder_Swamp_Spot
+    Grade: 1
+    CompoundID: 2070
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 2016
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 2030
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 2044
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 3015
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 4017
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 4031
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 2058
+  - ListName: Compounder_Office_Spot
+    Grade: 1
+    CompoundID: 2071
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 2006
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 2020
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 2034
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 3005
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 4007
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 4021
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 2048
+  - ListName: Compounder_Snow_Spot
+    Grade: 1
+    CompoundID: 2072
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 2017
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 2031
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 2045
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 3016
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 4018
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 4032
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 2059
+  - ListName: Compounder_Path_Wharf_Spot
+    Grade: 1
+    CompoundID: 2073
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 2018
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 2032
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 2046
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 3017
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 4019
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 4033
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 2060
+  - ListName: Compounder_Volcano_Spot
+    Grade: 1
+    CompoundID: 2074
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 2019
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 2033
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 2047
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 3018
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 4020
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 4034
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 2061
+  - ListName: Compounder_Abyss_Spot
+    Grade: 1
+    CompoundID: 2075
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 238
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 239
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 240
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 241
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 242
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 243
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 244
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 245
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 246
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 247
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 248
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 249
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 250
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 251
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 252
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 253
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 254
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 255
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 256
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 257
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 258
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 259
+  - ListName: Compounder_Cuisine_Spot
+    CompoundID: 237
+  - ListName: Compounder_Nadia_Boss
+    CompoundID: 266
+  - ListName: Compounder_Wedding2
+    CompoundID: 270
+  - ListName: Compounder_Wedding2
+    CompoundID: 271
+  - ListName: Compounder_Wedding1
+    CompoundID: 268
+  - ListName: Compounder_Wedding1
+    CompoundID: 269
+  - ListName: Compounder_Techichi_Town
+    Grade: 1
+    CompoundID: 1044
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 202
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 203
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 205
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 206
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 211
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 212
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 214
+  - ListName: Compounder_Shop_3rd_6
+    CompoundID: 215
+  - ListName: Compounder_Volcano_DG
+    Grade: 1
+    CompoundID: 290
+  - ListName: Compounder_Shop_Tartaros
+    CompoundID: 291
+  - ListName: Compounder_Shop_Tartaros
+    CompoundID: 292
+  - ListName: Compounder_Shop_Tartaros
+    CompoundID: 293
+  - ListName: Compounder_Shop_Tartaros
+    CompoundID: 294
+  - ListName: Compounder_Shop_Tartaros
+    CompoundID: 295
+
+Footer:
+  Imports:
+#  - Path: db/import/compounder_db.yml
