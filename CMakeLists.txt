@@ -55,3 +55,5 @@ endforeach()
 
 # Player-side launcher (PaulaLauncher.exe): starts Trickster.bin and points it at the server.
 add_subdirectory(tools/launcher)
+# Player-side launcher with a window (JanusLauncher.exe): host names, suspended start, no console.
+add_subdirectory(tools/janus-launcher)
