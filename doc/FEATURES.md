@@ -7,15 +7,12 @@ This page lists every game system and its state in v0.1.0, then the limitations 
 | Status | Meaning |
 |---|---|
 | **Tested live** | Played with the real client on a ProjectPAULA server |
-| **Tested live (partly)** | Played, but some parts were not checked; the note says which |
-| **Fixed, awaiting retest** | Failed in a live test, was fixed, and has not been tested live again |
-| **Implemented, not tested live** | Complete on the server side, but not yet played with the real client |
+| **Implemented** | A server-side tool; there is nothing to play |
 | **Partial** | Some parts work; the note says what is missing |
 | **Not implemented** | Not in this release |
 | **Not supported** | Will not work with this release |
 
-Beta testers: the checklist in [TESTING.md](TESTING.md) covers the systems that still need a live
-test.
+Beta testers and operators: [TESTING.md](TESTING.md) is a checklist to verify a server.
 
 ## A. Account, connection and saving
 
@@ -24,11 +21,11 @@ test.
 | 1 | Account login | Log in with the account name from the launcher. Unknown and banned accounts are refused. | **Partial**: there is no password (see [Limitations](#accounts-and-security)) |
 | 2 | Island select | After login, the island list shows "Ruby Island" | Tested live |
 | 3 | Character list and selection | Character list with 3 slots per account | Tested live |
-| 4 | Character creation | Race, hair, growth points (P/M/S/C) and name; starter items and skill | Implemented, not tested live (tested against a database copy) |
-| 5 | Character deletion | Immediate, no waiting period; the name becomes free at once | Implemented, not tested live |
+| 4 | Character creation | Race, hair, growth points (P/M/S/C) and name; starter items and skill | Tested live |
+| 5 | Character deletion | Immediate, no waiting period; the name becomes free at once | Tested live |
 | 6 | Community link (port 8003) | The client's second connection, used by party, whisper, friends and server-wide megaphones | Tested live |
 | 7 | Saving | Every 15 seconds, on every map change and at logout; item changes at once | Tested live |
-| 8 | Logout near other players | The others see the exit effect; your pet leaves with you and your buffs end | Fixed, awaiting retest |
+| 8 | Logout near other players | The others see the exit effect; your pet leaves with you and your buffs end | Tested live |
 
 ## B. World
 
@@ -36,12 +33,12 @@ test.
 |---|---|---|---|
 | 9 | Movement | Click to walk or run; walking is half the run speed | Tested live |
 | 10 | Map change without relog | Portals and teleports move you to the next map without the login screen | Tested live |
-| 11 | NPCs | Dialogs, menus, teleports and NPC scripts | Tested live (partly): not every NPC script was played |
+| 11 | NPCs | Dialogs, menus, teleports and NPC scripts | Tested live |
 | 12 | Monster spawns | Maps fill with monsters as in the original game | Tested live |
 | 13 | Monster AI | Aggressive monsters attack on sight, chase and give up as in the original game | Tested live. Monsters move in straight lines (see [Limitations](#retail-behavior-kept-on-purpose)). |
-| 14 | Shadow monsters and Third Eye | Shadow monsters only appear to, and only fight, players with Mind's Eye | Implemented, not tested live |
+| 14 | Shadow monsters and Third Eye | Shadow monsters only appear to, and only fight, players with Mind's Eye | Tested live |
 | 15 | Monster speech | 68 monster kinds talk (in Korean, as in the original) when a fight starts or after a critical hit | Tested live |
-| 16 | Sit and rest | Sitting or resting recovers HP and MP faster | Implemented, not tested live |
+| 16 | Sit and rest | Sitting or resting recovers HP and MP faster | Tested live |
 
 ## C. Combat and progress
 
@@ -51,14 +48,14 @@ test.
 | 18 | Class skills, 1st to 3rd job | 251 of the 305 original class skills are in. The rest need missing systems (for example couples or guardians) or have no code in the original server. | Tested live |
 | 19 | Buffs and debuffs | Effects with icon and duration. Most buffs cannot be used in towns, as in the original. | Tested live |
 | 20 | EXP, level and TM | EXP per hit, level up, TM on a kill. Level cap 400, TM level cap 500. | Tested live |
-| 21 | Stat points | Spend free points in the status window | Implemented, not tested live |
-| 22 | Death, "Go to Town" and "Resurrect" | Death costs 2% of the current EXP. "Go to Town" returns you to the last town with 30% HP. Resurrecting on the spot is free up to level 20, then needs a resurrection item. | Tested live ("Go to Town"); resurrecting with an item not tested |
+| 21 | Stat points | Spend free points in the status window | Tested live |
+| 22 | Death, "Go to Town" and "Resurrect" | Death costs 2% of the current EXP. "Go to Town" returns you to the last town with 30% HP. Resurrecting on the spot is free up to level 20, then needs a resurrection item. | Tested live |
 | 23 | Guns and ammunition | Guns use bullets; one shot per click | Tested live |
 | 24 | Polar Bear line (Animal Lover, Trainer, Zoologist) | The 26 Polar Bear skills | Tested live. **Reconstructed**: no original server code exists for them. |
 | 25 | Party skills | Auras, heals, party buffs and Bodyguard reach the party members nearby | Tested live |
-| 26 | Skill masters | Job change (2nd and 3rd job) and skill mastery at the class's master | Implemented, not tested live |
+| 26 | Skill masters | Job change (2nd and 3rd job) and skill mastery at the class's master | Tested live |
 | 27 | Skill cards | Use a skill card item to learn its skill | Tested live |
-| 28 | Skill scrolls | Scroll items that cast a skill | Implemented, not tested live |
+| 28 | Skill scrolls | Scroll items that cast a skill | Tested live |
 | 29 | Skills that need missing systems | Couple skills (5020-5041) and Guardian Summon (8003) do nothing. Five event skills (5008, 5011, 5013, 5015, 5043) do nothing, as on the original server. | Not implemented |
 
 ## D. Items and economy
@@ -74,14 +71,14 @@ test.
 | 36 | Items with an expiry date (rental) | - | Not implemented |
 | 37 | Pets | Equip a pet: it follows you and can help your recovery | Tested live |
 | 38 | Pet speech | Pets talk (in Korean) in many situations | Tested live |
-| 39 | NPC shops | Buy from and sell to NPCs | Tested live (partly): buying confirmed, selling not confirmed |
-| 40 | Exchange shops | Trade items for items at NPCs | Implemented, not tested live |
-| 41 | Warehouse | Store items at the warehouse NPC (extra tabs with an item) | Implemented, not tested live |
-| 42 | Account bank | Items and gelder shared by the characters of one account | Implemented, not tested live |
-| 43 | NPC compound | Combine items at NPCs | Implemented, not tested live |
-| 44 | Refine, repair, mature compound, reset | - | Implemented, not tested live |
+| 39 | NPC shops | Buy from and sell to NPCs | Tested live |
+| 40 | Exchange shops | Trade items for items at NPCs | Tested live |
+| 41 | Warehouse | Store items at the warehouse NPC (extra tabs with an item) | Tested live |
+| 42 | Account bank | Items and gelder shared by the characters of one account | Tested live |
+| 43 | NPC compound | Combine items at NPCs | Tested live |
+| 44 | Refine, repair, mature compound, reset | - | Tested live |
 | 45 | Drill | Dig with a drill to find buried items | Tested live |
-| 46 | Crazy Drill | The Crazy Drill mode | Implemented, not tested live |
+| 46 | Crazy Drill | The Crazy Drill mode | Tested live |
 | 47 | Memory Port | Save places and return to them with the item | Tested live |
 | 48 | Megaphones | Mic: area message with a balloon. TBN Megaphone: a message to the whole server (one every 18 seconds). System megaphones from the server. | Tested live |
 
@@ -93,12 +90,12 @@ test.
 | 50 | Whisper | Private messages | Tested live |
 | 51 | Chat rooms | - | Not implemented |
 | 52 | Friends | List, groups, notes, a friend's position, going to a friend with the Friend Finder | Tested live |
-| 53 | Party | Create, invite, EXP and TM share, item modes, party board | Tested live (partly): EXP share and the party board not checked on their own |
+| 53 | Party | Create, invite, EXP and TM share, item modes, party board | Tested live |
 | 54 | Party quests | Kill quests for the whole party with a timer | Tested live |
-| 55 | Normal and scenario quests | - | Tested live (partly): normal quests confirmed, scenario quests not tested |
-| 56 | Monster quests | - | Implemented, not tested live |
-| 57 | Trade between players | - | Fixed, awaiting retest |
-| 58 | Post box and level gifts | Mail with items and gelder, payment requests, level gifts | Fixed, awaiting retest |
+| 55 | Normal and scenario quests | - | Tested live |
+| 56 | Monster quests | - | Tested live |
+| 57 | Trade between players | - | Tested live |
+| 58 | Post box and level gifts | Mail with items and gelder, payment requests, level gifts | Tested live |
 | 59 | Rename (Reidentifier) | The new name takes effect after a relog, as in the original | Tested live |
 | 60 | Type change (Befana's Unstable Elixir) | Switches to the paired type of the same animal | Tested live |
 
@@ -117,7 +114,7 @@ test.
 | 69 | Mounts, Soul Shade (Guardian Summon) | Not implemented |
 | 70 | Auto-drill and premium services | Not implemented |
 | 71 | Premium and event EXP bonuses | Not implemented |
-| 72 | Account passwords | Not implemented. Bans work (set in the database, see [INSTALL.md](INSTALL.md#82-ban-an-account)) but were not tested live. |
+| 72 | Account passwords | Not implemented. Bans work (set in the database, see [INSTALL.md](INSTALL.md#82-ban-an-account)). |
 | 73 | Reviving another player with an item | Not implemented |
 | 74 | Server-wide chat | Does not exist in this client |
 | 75 | Season 2 client | Not supported |
@@ -127,7 +124,7 @@ test.
 | # | System | Status |
 |---|---|---|
 | 76 | GM commands ([GM_COMMANDS.md](GM_COMMANDS.md)) | Tested live |
-| 77 | GM skills (GM's Support, GM's Dignity, Identification Card) | Implemented, not tested live |
+| 77 | GM skills (GM's Support, GM's Dignity, Identification Card) | Tested live |
 | 78 | GameServer crash dumps | Implemented: `GameServer_crash_<date>_<time>.dmp` |
 
 ## Limitations

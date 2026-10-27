@@ -1,7 +1,8 @@
 # Beta test checklist (v0.1.0)
 
-This checklist is for beta testers and operators. It starts with what most needs a live test,
-then lists the systems that already passed, for regression checks.
+This checklist is for beta testers and operators who want to verify a server. Every system in it
+passed in game for v0.1.0; it starts with what changed most in this release, then covers the rest
+of the game for regression checks.
 
 ## Before you start
 
@@ -32,7 +33,7 @@ Reidentifier 19647, Befana's Unstable Elixir 19616, Test Dragon Pet 1762, Little
 Maps: 148 Coral Town, 35 Paradise Monster Guild, 13 Beach Field 3. More in
 [GM_COMMANDS.md](GM_COMMANDS.md#ids-useful-for-testing).
 
-## Priority 1: new in v0.1.0
+## 1. New in v0.1.0
 
 ### Login and accounts
 - [ ] An account that exists logs in and reaches the island list.
@@ -56,7 +57,7 @@ Maps: 148 Coral Town, 35 Paradise Monster Guild, 13 Beach Field 3. More in
 - [ ] From another network (public server): login, island, character select, the world, a portal,
   and the party window (community link) all work.
 
-## Priority 2: fixed, awaiting retest
+## 2. Trade, logout and post box
 
 ### Trade between players (A and B)
 - [ ] A asks B to trade, B gets the invitation and accepts: the trade window opens on both.
@@ -87,7 +88,7 @@ Open the post box with the `A` key or from the menu. New mail shows up at the ne
   level normally sends the gift too.
 - [ ] Letters do not show up as "returned" right after login.
 
-## Priority 3: implemented, not yet tested live
+## 3. Characters, world, skills, items and social
 
 ### Characters
 - [ ] Create a character of each race. Check the start in Coral Town, the starter items and the
@@ -124,7 +125,7 @@ Open the post box with the `A` key or from the menu. New mail shows up at the ne
 - [ ] Monster quests: accept, kill, finish, collect the reward.
 - [ ] Scenario quests.
 
-## Regression: systems that already passed
+## 4. Regression checks
 
 Run these after an update, or when you have time.
 
